@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   btree_create_node.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 14:09:16 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/15 11:00:01 by jcarra           ###   ########.fr       */
+/*   Created: 2016/07/21 09:23:12 by jcarra            #+#    #+#             */
+/*   Updated: 2016/12/15 09:54:24 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strchr(const char *s, int c)
+t_btree		*btree_create_node(void *item)
 {
-	int		n;
+	t_btree	*new;
 
-	n = 0;
-	if (!s)
+	if ((new = malloc(sizeof(t_btree))) == NULL)
 		return (NULL);
-	while (s[n] && s[n] != c)
-		n = n + 1;
-	if (s[n] == c)
-		return ((char *)(s + n));
-	return (NULL);
+	new->item = item;
+	new->left = NULL;
+	new->right = NULL;
+	return (new);
 }

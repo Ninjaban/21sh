@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/03 13:41:38 by jcarra            #+#    #+#              #
-#    Updated: 2016/12/12 15:22:03 by jcarra           ###   ########.fr        #
+#    Updated: 2016/12/15 19:10:25 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -15,6 +15,7 @@ NAME			=	libft.a
 SRC_PART1		=	ft_strcmp.c \
 					ft_strncmp.c \
 					ft_strchr.c \
+					ft_strlchr.c \
 					ft_strrchr.c \
 					ft_strlen.c \
 					ft_strdup.c \
@@ -57,7 +58,14 @@ SRC_PART2		=	ft_memalloc.c \
 					ft_revstr.c \
 					ft_tablen.c
 
-SRC_BONUS		=	ft_create_elem.c \
+SRC_BTREE		=	btree_create_node.c \
+					btree_insert_data.c \
+					btree_add_node.c \
+					btree_apply_infix.c \
+					btree_apply_prefix.c \
+					btree_apply_suffix.c
+
+SRC_LIST		=	ft_create_elem.c \
 					ft_list_push_back.c \
 					ft_list_push_front.c \
 					ft_list_size.c \
@@ -72,17 +80,20 @@ SRC_GNL			=	get_next_line.c
 
 DIRSRC_PART1	=	Part\ 1/
 DIRSRC_PART2	=	Part\ 2/
-DIRSRC_BONUS	=	Bonus/
+DIRSRC_BTREE	=	Btree/
+DIRSRC_LIST		=	List/
 DIRSRC_GNL		=	GetNextLine/
 DIRINC			=	include/
 
 PART1			=	$(SRC_PART1:%=$(DIRSRC_PART1)%)
 PART2			=	$(SRC_PART2:%=$(DIRSRC_PART2)%)
-BONUS			=	$(SRC_BONUS:%=$(DIRSRC_BONUS)%)
+BTREE			=	$(SRC_BTREE:%=$(DIRSRC_BTREE)%)
+LIST			=	$(SRC_LIST:%=$(DIRSRC_LIST)%)
 GNL				=	$(SRC_GNL:%=$(DIRSRC_GNL)%)
 OBJS_PART1		=	$(SRC_PART1:.c=.o)
 OBJS_PART2		=	$(SRC_PART2:.c=.o)
-OBJS_BONUS		=	$(SRC_BONUS:.c=.o)
+OBJS_BTREE		=	$(SRC_BTREE:.c=.o)
+OBJS_LIST		=	$(SRC_LIST:.c=.o)
 OBJS_GNL		=	$(SRC_GNL:.c=.o)
 
 CFLAGS			=	-Wall -Wextra -I./$(DIRINC)
@@ -96,32 +107,12 @@ ECHO			=	printf
 all		:		$(NAME)
 
 $(NAME)	:
-				@$(CC) $(CFLAGS) -c $(PART1) $(PART2) $(BONUS) $(GNL)
-				@$(LIB) $(NAME) $(OBJS_PART1) $(OBJS_PART2) $(OBJS_BONUS) $(OBJS_GNL)
+				@$(CC) $(CFLAGS) -c $(PART1) $(PART2) $(BTREE) $(LIST) $(GNL)
+				@$(LIB) $(NAME) $(OBJS_PART1) $(OBJS_PART2) $(OBJS_BTREE) $(OBJS_LIST) $(OBJS_GNL)
 				@$(ECHO) '\033[32m> libft : Compiled\n\033[0m'
 
-part1 :
-				@$(CC) $(CFLAGS) -c $(PART1)
-				@$(LIB) $(NAME) $(OBJS_PART1)
-				@$(ECHO) '\033[32m> libft - Part 1 : Compiled\n\033[0m'
-
-part2 :
-				@$(CC) $(CFLAGS) -c $(PART2)
-				@$(LIB) $(NAME) $(OBJS_PART2)
-				@$(ECHO) '\033[32m> libft - Part 2 : Compiled\n\033[0m'
-
-bonus :
-				@$(CC) $(CFLAGS) -c $(BONUS)
-				@$(LIB) $(NAME) $(OBJS_BONUS)
-				@$(ECHO) '\033[32m> libft - Bonus : Compiled\n\033[0m'
-
-gnl:
-				@$(CC) $(CFLAGS) -c $(GNL)
-				@$(LIB) $(NAME) $(OBJS_GNL)
-				@$(ECHO) '\033[32m> libft - GetNextLine : Compiled\n\033[0m'
-
 clean	:
-				@$(RM) $(OBJS_PART1) $(OBJS_PART2) $(OBJS_BONUS) $(OBJS_GNL)
+				@$(RM) $(OBJS_PART1) $(OBJS_PART2) $(OBJS_BTREE) $(OBJS_LIST) $(OBJS_GNL)
 				@$(ECHO) '\033[31m> libft : Directory cleaned\n\033[0m'
 
 fclean	:		clean
@@ -130,4 +121,4 @@ fclean	:		clean
 
 re		:		fclean all
 
-.PHONY	:		all part1 part2 bonus gnl clean fclean re
+.PHONY	:		all clean fclean re

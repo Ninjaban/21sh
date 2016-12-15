@@ -6,13 +6,13 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 09:04:55 by jcarra            #+#    #+#              #
-#    Updated: 2016/12/12 09:28:55 by jcarra           ###   ########.fr        #
+#    Updated: 2016/12/15 16:24:26 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME		=	minishell
 
-SRC			=	ft_varenv.c \
+#SRC			=	ft_varenv.c \
 				ft_sys.c \
 				ft_delchar.c \
 				ft_unalias.c \
@@ -30,6 +30,20 @@ SRC			=	ft_varenv.c \
 				ft_access.c \
 				ft_exec.c \
 				ft_gestion_error.c \
+				ft_error.c \
+				ft_free.c \
+				ft_parsing_tools.c \
+				ft_parsing.c \
+				ft_shell.c \
+				ft_main.c
+
+SRC			=	ft_varenv.c \
+				ft_delchar.c \
+				ft_sys.c \
+				ft_setenv.c \
+				ft_chdir_tools.c \
+				ft_prompt_path.c \
+				ft_prompt.c \
 				ft_error.c \
 				ft_free.c \
 				ft_parsing_tools.c \

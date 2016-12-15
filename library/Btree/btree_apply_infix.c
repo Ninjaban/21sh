@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   btree_apply_prefix.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 14:09:16 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/15 11:00:01 by jcarra           ###   ########.fr       */
+/*   Created: 2016/07/21 09:29:59 by jcarra            #+#    #+#             */
+/*   Updated: 2016/12/15 09:54:40 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strchr(const char *s, int c)
+void	btree_apply_infix(t_btree *root, void (*applyf)(void *))
 {
-	int		n;
-
-	n = 0;
-	if (!s)
-		return (NULL);
-	while (s[n] && s[n] != c)
-		n = n + 1;
-	if (s[n] == c)
-		return ((char *)(s + n));
-	return (NULL);
+	if (root && applyf)
+	{
+		btree_apply_infix(root->left, applyf);
+		applyf(root);
+		btree_apply_infix(root->right, applyf);
+	}
 }

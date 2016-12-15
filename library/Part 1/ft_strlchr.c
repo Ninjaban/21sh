@@ -1,27 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 14:09:16 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/15 11:00:01 by jcarra           ###   ########.fr       */
+/*   Created: 2016/12/15 11:00:05 by jcarra            #+#    #+#             */
+/*   Updated: 2016/12/15 16:51:18 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strchr(const char *s, int c)
+static int	ft_check(const char s, const char *c)
 {
 	int		n;
 
 	n = 0;
-	if (!s)
-		return (NULL);
-	while (s[n] && s[n] != c)
+	while (c[n] && c[n] != s)
 		n = n + 1;
-	if (s[n] == c)
-		return ((char *)(s + n));
-	return (NULL);
+	return ((c[n]) ? 1 : 0);
+}
+
+int			ft_strlchr(const char *s, const char *c)
+{
+	int		n;
+
+	n = 0;
+	if (!s || !c)
+		return (-1);
+	while (s[n] && ft_check(s[n], c) == 0)
+		n = n + 1;
+	if (ft_check(s[n], c) == 1)
+		return (n);
+	return (-1);
 }

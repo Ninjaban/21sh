@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 13:23:35 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/13 10:06:01 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/15 19:10:01 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,13 @@
 /*
 **	Structure
 */
+
+typedef struct	s_btree
+{
+	struct s_btree	*left;
+	struct s_btree	*right;
+	void			*item;
+}				t_btree;
 
 typedef struct		s_lst
 {
@@ -43,6 +50,7 @@ int					ft_toupper(int c);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(char *str);
+int					ft_strlchr(const char *s, const char *c);
 char				*ft_strdup(char *src);
 char				*ft_strstr(const char *str, const char *src);
 char				*ft_strnstr(const char *str, const char *src, size_t len);
@@ -84,7 +92,7 @@ size_t				ft_tablen(char **tab);
 unsigned long int	ft_revnbr(unsigned long int nbr);
 
 /*
-**	Bonus
+**	List
 */
 
 t_lst				*ft_create_elem(void *data);
@@ -97,5 +105,19 @@ void				ft_list_clear(t_lst **begin_list);
 t_lst				*ft_list_at(t_lst *begin_list, unsigned int nbr);
 void				ft_list_reverse(t_lst **begin_list);
 void				ft_list_foreach(t_lst *begin_list, void (*f)(void *));
+
+/*
+**	Btree
+*/
+
+void				btree_apply_infix(t_btree *root, void (*applyf)(void *));
+void				btree_apply_prefix(t_btree *root, void (*applyf)(void *));
+void				btree_apply_suffix(t_btree *root, void (*applyf)(void *));
+void				btree_insert_data(t_btree **root, void *item,
+										int (*cmpf)(void *, void *));
+void				btree_add_node(t_btree **root, void *item,
+									int (*cmpf)(void *, void *));
+t_btree				*btree_create_node(void *item);
+
 
 #endif

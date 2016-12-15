@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/12 14:14:54 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/15 19:34:33 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,12 @@
 # define TRUE 1
 # define EXIT "exit"
 
+# define PIPE 1
+# define REDIR_R 2
+# define CONCAT_R 3
+# define REDIR_L 4
+# define CONCAT_L 5
+
 /*
 **	Includes
 */
@@ -34,6 +40,7 @@
 # include <sys/wait.h>
 # include <signal.h>
 # include <fcntl.h>
+# include "libft.h"
 
 /*
 **	Structures
@@ -43,7 +50,7 @@ typedef struct	s_cmd
 {
 	char			*name;
 	char			**argv;
-	pid_t			child;
+	char			redir;
 }				t_cmd;
 
 typedef struct	s_alias
@@ -56,7 +63,7 @@ typedef struct	s_alias
 typedef struct	s_sys
 {
 	t_alias			*alias;
-	t_cmd			**cmds;
+	t_btree			*cmds;
 	char			**env;
 	char			**history;
 }				t_sys;
@@ -95,7 +102,7 @@ char			*ft_tild(char *str, char **env);
 char			*ft_varenv(char *str, char **env);
 char			**ft_history_init(char **env);
 char			**ft_getpath(char **env);
-t_cmd			**ft_parsing(char *str, t_sys *sys, int n);
+/*t_cmd			**ft_parsing(char *str, t_sys *sys, int n);*/
 size_t			ft_fpath(char **env, char *str);
 
 /*
@@ -116,5 +123,9 @@ int				fputchar(int c);
 int				ft_goto(char *cmd, int col, int line);
 int				ft_termcaps_end(void);
 int				ft_termcaps_init(void);
+
+void			ft_display(void *node);
+int				ft_cmp_node(void *tree, void *node);
+t_btree			*ft_parsing(char *str, t_sys *sys);
 
 #endif

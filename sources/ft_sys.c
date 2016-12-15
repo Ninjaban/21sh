@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/10 10:15:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/10 10:59:07 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/15 16:24:02 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ void		ft_sys_free(t_sys *sys)
 		ft_free_tab(sys->env);
 	if (sys->history)
 		ft_free_tab(sys->history);
-	if (sys->alias)
-		ft_alias_remove(&(sys->alias));
-	if (sys->cmds)
-		ft_free_cmds(sys->cmds);
+/*	if (sys->alias)
+	ft_alias_remove(&(sys->alias));*/
+/*	if (sys->cmds)
+	ft_free_cmds(sys->cmds);*/
 	free(sys);
 }
