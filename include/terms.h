@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 09:33:31 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 15:54:29 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/16 18:53:39 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,10 @@
 # define KEY_DOW 4348699
 # define KEY_RIG 4414235
 # define KEY_LEF 4479771
+# define KEY_HOM 4741915
+# define KEY_ENS 4610843
+# define KEY_OLE 1146821403
+# define KEY_ORI 1130044187
 
 # include <curses.h>
 # include <term.h>

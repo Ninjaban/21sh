@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 13:32:17 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 16:54:57 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/16 19:30:52 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,48 +15,43 @@
 #include "shell.h"
 #include "terms.h"
 
+static char	*ft_strjoin_init(char *str, char *n, size_t pos)
+{
+	char	*end;
+	char	*tmp;
+	char	*new;
+
+	end = ft_strdup(str + pos);
+	str[pos] = '\0';
+	tmp = ft_strjoin(str, n);
+	new = ft_strjoin(tmp, end);
+	free(end);
+	free(tmp);
+	return (new);
+}
+
 static void	ft_read_print(char **str, int c, size_t *pos)
 {
 	char	*tmp;
 	char	*n;
+	int		len;
 
 	if (c != KEY_RET && c != KEY_TAB)
 	{
 		n = ft_strnew(2);
 		n[0] = (char)c;
-		tmp = ft_strjoin(*str, n);
+		tmp = ft_strjoin_init(*str, n, *pos);
 		free(*str);
 		free(n);
 		*str = tmp;
 	}
 	if (c != KEY_TAB)
 	{
-		ft_putchar(c);
-		*pos = *pos + 1;
-	}
-}
-
-static void	ft_read_delete(char **str, size_t *pos)
-{
-	char	**t;
-	int		len;
-
-	if (*pos > 0 && (*str)[*pos - 1])
-	{
-		(*str)[*pos - 1] = '\a';
-		if ((t = ft_strsplit(*str, "\a")) == NULL)
-			return ;
-		free(*str);
-		*str = (t[0] && t[1]) ? ft_strjoin(t[0], t[1]) : NULL;
-		*str = (!(*str)) ? ft_strdup(t[0]) : *str;
-		*str = (!(*str)) ? ft_strnew(1) : *str;
-		ft_free_tab(t);
-		ft_putstr(*str + (*pos - 1));
-		ft_putstr("  ");
-		len = (int)ft_strlen(*str + *pos) + 3;
+		ft_putstr(*str + *pos);
+		len = (int)ft_strlen(*str + *pos) - 2;
 		while (len-- >= 0)
 			ft_putchar('\b');
-		*pos = *pos - 1;
+		*pos = *pos + 1;
 	}
 }
 
@@ -85,6 +80,38 @@ static void	ft_read_suppr(char **str, size_t *pos)
 	}
 }
 
+static void	ft_read_delete(char **str, size_t *pos)
+{
+	if (*pos > 0 && (*str)[*pos - 1])
+	{
+		*pos = *pos - 1;
+		ft_putstr("\b");
+		ft_read_suppr(&(*str), &(*pos));
+	}
+}
+
+static void	ft_read_keyole(char **str, size_t *pos)
+{
+	while (*pos > 0 && ft_isalnum((*str)[*pos]) == 0)
+	{
+		ft_putchar('\b');
+		*pos = *pos - 1;
+	}
+	while (*pos > 0 && ft_isalnum((*str)[*pos]) == 1)
+	{
+		ft_putchar('\b');
+		*pos = *pos - 1;
+	}
+}
+
+static void	ft_read_keyori(char **str, size_t *pos)
+{
+	while (*pos < ft_strlen(*str) && ft_isalnum((*str)[*pos]) == 0)
+		ft_putchar((*str)[(*pos)++]);
+	while (*pos < ft_strlen(*str) && ft_isalnum((*str)[*pos]) == 1)
+		ft_putchar((*str)[(*pos)++]);
+}
+
 static void	ft_read_move(char **str, int c, size_t *pos)
 {
 	if (c == KEY_LEF && *pos > 0)
@@ -92,8 +119,19 @@ static void	ft_read_move(char **str, int c, size_t *pos)
 		ft_putchar('\b');
 		*pos = *pos - 1;
 	}
+	while (c == KEY_HOM && *pos > 0)
+	{
+		ft_putchar('\b');
+		*pos = *pos - 1;
+	}
 	if (c == KEY_RIG && *pos < ft_strlen(*str))
 		ft_putchar((*str)[(*pos)++]);
+	while (c == KEY_ENS && *pos < ft_strlen(*str))
+		ft_putchar((*str)[(*pos)++]);
+	if (c == KEY_OLE)
+		ft_read_keyole(&(*str), &(*pos));
+	if (c == KEY_ORI)
+		ft_read_keyori(&(*str), &(*pos));
 }
 
 int			ft_read(char **str)
@@ -117,7 +155,8 @@ int			ft_read(char **str)
 			ft_read_delete(&(*str), &n);
 		if (c == KEY_DEL)
 			ft_read_suppr(&(*str), &n);
-		if (c == KEY_UPS || c == KEY_DOW || c == KEY_LEF || c == KEY_RIG)
+		if (c == KEY_HOM || c == KEY_ENS || c == KEY_LEF || c == KEY_RIG ||
+			c == KEY_OLE || c == KEY_ORI)
 			ft_read_move(&(*str), c, &n);
 	}
 	ft_putchar('\n');
