@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 18:53:39 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 14:42:03 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/13 10:09:52 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,19 +69,19 @@ size_t		ft_fpath(char **env, char *str)
 
 char		*ft_getenv(char **env, char *name)
 {
-	char	**t;
+	char	**tab;
 	char	*str;
 
 	if (ft_fpath(env, name) == ft_tablen(env))
 		return (NULL);
-	if ((t = ft_strsplit(env[ft_fpath(env, name)], "=")) == NULL)
+	if ((tab = ft_strsplit(env[ft_fpath(env, name)], "=")) == NULL)
 	{
 		ft_error(ERROR_ALLOC);
 		return (NULL);
 	}
-	if (!t[0] || !t[1])
+	if (!tab[0] || !tab[1])
 		return (NULL);
-	str = ft_strdup(t[1]);
-	ft_free_tab(t);
+	str = ft_strdup(tab[1]);
+	ft_free_tab(tab);
 	return (str);
 }

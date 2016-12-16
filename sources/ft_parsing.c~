@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 13:15:40 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/15 19:37:40 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -212,7 +212,7 @@ static t_cmd	*ft_redir(char redir)
 		return (NULL);
 	cmd->name = NULL;
 	cmd->argv = NULL;
-	cmd->redir = (redir == REDIR_L || redir == CONCAT_L) ? redir - 2 : redir;
+	cmd->redir = redir;
 	return (cmd);
 }
 
@@ -261,10 +261,9 @@ static char		ft_get_redir(char *str, size_t i)
 static t_btree	*ft_create_node(char *str, size_t n, size_t i, char redir)
 {
 	t_btree		*node;
-	char		c;
+
 
 	node = btree_create_node(ft_redir(redir));
-	c = str[i];
 	str[i] = '\0';
 	if ((redir == REDIR_L || redir == CONCAT_L) && (redir != 0))
 		node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
@@ -272,19 +271,16 @@ static t_btree	*ft_create_node(char *str, size_t n, size_t i, char redir)
 		node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
 	if (redir != 0)
 	{
-		n = (redir == CONCAT_L || redir == CONCAT_R) ? i + 2 : i + 1;
-		str[i] = c;
+		n = i + 1;
+		str[i] = '#';
 		i = (ft_strlchr(str + n, "|<>") == -1) ? ft_strlen(str) :
-			ft_strlchr(str + n, "|<>") + n;
-		c = str[i];
+			ft_strlchr(str + n, "|<>") + (i - n + 1);
 		str[i] = '\0';
 		if (redir == REDIR_L || redir == CONCAT_L)
 			node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
 		else
 			node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
-		str[i] = c;
-		while (n < i && str[n] && c != '<')
-			str[n++] = ' ';
+		str[i] = '#';
 	}
 	return (node);
 }
@@ -299,11 +295,11 @@ static void		ft_parsing_multicmd(t_btree **cmds, char *str)
 	while (str[n])
 	{
 		i = (ft_strlchr(str + n, "|<>") == -1) ? ft_strlen(str) :
-			ft_strlchr(str + n, "|<>") + n;
+			ft_strlchr(str + n, "|<>");
 		redir = ft_get_redir(str, i);
 		btree_add_node(&(*cmds), ft_create_node(str, n, i, redir),
 					&ft_cmp_node);
-		n = i;
+		n = i + n;
 		while (str[n] == '|' || str[n] == '<' || str[n] == '>')
 			n = n + 1;
 	}
@@ -318,20 +314,7 @@ void			ft_display(void *node)
 	tmp = (t_cmd *)(((t_btree *)(node))->item);
 	ft_putchar(' ');
 	if (tmp->redir != -1)
-	{
-		if (tmp->redir == 0)
-			ft_putstr(" ; ");
-		if (tmp->redir == 1)
-			ft_putstr(" | ");
-		if (tmp->redir == 2)
-			ft_putstr(" > ");
-		if (tmp->redir == 3)
-			ft_putstr(" >> ");
-		if (tmp->redir == 4)
-			ft_putstr(" < ");
-		if (tmp->redir == 5)
-			ft_putstr(" << ");
-	}
+		ft_putnbr(tmp->redir);
 	else
 		while (tmp->argv[n])
 			ft_putstr(tmp->argv[n++]);
@@ -357,7 +340,6 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 		ft_parsing_multicmd(&cmds, tab[n++]);
 	ft_free_tab(tab);
 	btree_apply_infix(cmds, &ft_display);
-	ft_putendl("");
 	return (NULL);
 	return (cmds);
 }

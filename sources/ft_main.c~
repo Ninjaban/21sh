@@ -6,14 +6,13 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 09:29:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 14:47:31 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/15 16:59:18 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
-#include "terms.h"
 
 static int	ft_check_env(char **env)
 {
@@ -26,25 +25,25 @@ static int	ft_check_env(char **env)
 	return (TRUE);
 }
 
-static char	**ft_tabcpy(char **t)
+static char	**ft_tabcpy(char **tab)
 {
 	char	**cpy;
 	int		n;
 
 	n = 0;
-	if (ft_check_env(t) == FALSE)
+	if (ft_check_env(tab) == FALSE)
 		return (NULL);
-	if ((cpy = malloc(sizeof(char *) * (ft_tablen(t) + 1))) == NULL)
+	if ((cpy = malloc(sizeof(char *) * (ft_tablen(tab) + 1))) == NULL)
 	{
 		ft_error(ERROR_ALLOC);
 		return (NULL);
 	}
-	while (t[n])
+	while (tab[n])
 		cpy[n++] = NULL;
 	cpy[n] = NULL;
 	n = -1;
-	while (t[++n])
-		if ((cpy[n] = ft_strdup(t[n])) == NULL)
+	while (tab[++n])
+		if ((cpy[n] = ft_strdup(tab[n])) == NULL)
 		{
 			ft_error(ERROR_ALLOC);
 			ft_free_tab(cpy);
@@ -68,8 +67,6 @@ int			main(int ac, char **av, char **env)
 	(void)ac;
 	(void)av;
 	if (ft_sys_init(&sys) == 1)
-		return (1);
-	if (ft_termcaps_init(&sys->term_new, &sys->term_save) == FALSE)
 		return (1);
 	if ((sys->env = ft_tabcpy(env)) == NULL)
 	{
