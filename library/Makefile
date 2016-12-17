@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/03 13:41:38 by jcarra            #+#    #+#              #
-#    Updated: 2016/12/15 19:10:25 by jcarra           ###   ########.fr        #
+#    Updated: 2016/12/17 09:01:59 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -74,7 +74,8 @@ SRC_LIST		=	ft_create_elem.c \
 					ft_list_clear.c \
 					ft_list_at.c \
 					ft_list_reverse.c \
-					ft_list_foreach.c
+					ft_list_foreach.c \
+					ft_list_del.c
 
 SRC_GNL			=	get_next_line.c
 

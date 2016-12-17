@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_list_at.c                                       :+:      :+:    :+:   */
+/*   ft_list_del.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/19 10:42:07 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 10:38:22 by jcarra           ###   ########.fr       */
+/*   Created: 2016/12/17 08:59:24 by jcarra            #+#    #+#             */
+/*   Updated: 2016/12/17 09:00:51 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_lst	*ft_list_at(t_lst *begin_list, unsigned int nbr)
+void		ft_list_del(t_lst *node, void (*f)(void *))
 {
-	t_lst			*elem;
-	unsigned int	n;
-
-	n = 0;
-	if ((elem = begin_list) == NULL)
-		return (NULL);
-	while (n < nbr && elem->next != NULL)
-	{
-		elem = elem->next;
-		n = n + 1;
-	}
-	if (n < nbr)
-		return (NULL);
-	return (elem);
+	if (!node || !f)
+		return ;
+	f(node->data);
+	free(node);
 }

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 15:54:26 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/17 10:52:04 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,10 @@ static int	ft_launcher(t_sys **sys, char **str)
 /*	char			*tmp;*/
 
 	ft_affprompt(++n, (*sys)->env);
-	if (ft_read(&(*str)) == FALSE)
+	if (ft_read(&(*str), &(*sys)) == FALSE)
 		ft_error(ERROR_READ);
+	if ((ft_history_maj(&((*sys)->history), *str,(*sys)->env)) == FALSE)
+		ft_error(ERROR_HISTORY);
 	ft_parsing(*str, *sys);
 	/*
 	(*sys)->cmds = NULL;
@@ -97,13 +99,13 @@ void		ft_shell(t_sys *sys, int exit)
 {
 	char	*str;
 /*	char	*tmp;*/
-/*
-	if ((sys->history = ft_history_init(sys->env)) == NULL)
+
+	if (ft_history_init(&sys->history, sys->env) == FALSE)
 	{
-		ft_error(ERROR_READ);
+		ft_error(ERROR_HISTORY);
 		return ;
 	}
-	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
+/*	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
 	ft_error(ERROR_RC);*/
 	while (exit == FALSE)
 	{

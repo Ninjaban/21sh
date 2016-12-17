@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 08:55:19 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/10 11:27:16 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/17 11:28:43 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "error.h"
 #include "shell.h"
 
-static int	ft_history_file(char **env)
+static int	ft_history_file(char **env, int flag)
 {
 	int		fd;
 	char	*tmp;
@@ -29,72 +29,67 @@ static int	ft_history_file(char **env)
 		free(tmp);
 		return (-1);
 	}
-	fd = open(path, O_RDWR | O_CREAT, 0640);
+	fd = open(path, O_RDWR | O_CREAT | flag , 0644);
 	free(tmp);
 	free(path);
 	return (fd);
 }
 
-static void	ft_history_suppr_first(char ***history)
+static void	ft_history_suppr_first(t_lst **history)
 {
-	size_t	n;
+	t_lst	*tmp;
 
-	n = 1;
-	free((*history)[0]);
-	while (n < HISTORY_SIZE)
-	{
-		((*history)[n - 1]) = ((*history)[n]);
-		n = n + 1;
-	}
-	(*history)[n - 1] = NULL;
+	tmp = (*history)->next;
+//	ft_list_del(*history, &free);
+	(*history) = tmp;
 }
 
-int			ft_history_maj(char ***history, char *line, char **env)
+int			ft_history_maj(t_lst **history, char *line, char **env)
 {
-	size_t	n;
+	t_lst	*tmp;
 	int		fd;
 
-	if ((fd = ft_history_file(env)) == -1)
+	if ((fd = ft_history_file(env, O_TRUNC)) == -1)
 		return (FALSE);
-	n = ft_tablen(*history);
-	if (n == HISTORY_SIZE)
-	{
+	if (ft_list_size(*history) == HISTORY_SIZE)
 		ft_history_suppr_first(&(*history));
-		n = n - 1;
+	if (!(*history))
+		*history = ft_create_elem((void *)line);
+	else
+		ft_list_push_back(&(*history), (void *)line);
+	tmp = (*history);
+	while (tmp)
+	{
+		ft_putendl_fd((char *)tmp->data, fd);
+		tmp = tmp->next;
 	}
-	(*history)[n] = ft_strdup(line);
-	n = 0;
-	while ((*history)[n])
-		ft_putendl_fd((*history)[n++], fd);
 	close(fd);
 	return (TRUE);
 }
 
-char		**ft_history_init(char **env)
+int			ft_history_init(t_lst **history, char **env)
 {
-	char	**history;
-	char	*line;
 	size_t	n;
+	char	*line;
 	int		fd;
 
 	if (HISTORY_SIZE <= 0 || !env)
-		return (NULL);
-	if ((history = malloc(sizeof(char *) * (HISTORY_SIZE + 1))) == NULL)
-		return (NULL);
+		return (FALSE);
 	n = 0;
-	while (n <= HISTORY_SIZE)
-		history[n++] = NULL;
-	if ((fd = ft_history_file(env)) == -1)
-		return (NULL);
-	n = 0;
+	*history = NULL;
+	if ((fd = ft_history_file(env, 0)) == -1)
+		return (FALSE);
 	line = NULL;
-	while (n < HISTORY_SIZE && get_next_line(fd, &line) == 0)
+	while (n++ < HISTORY_SIZE && get_next_line(fd, &line) == 1)
 	{
-		history[n++] = ft_strdup(line);
+		if (!(*history))
+			*history = ft_create_elem((void *)ft_strdup(line));
+		else
+			ft_list_push_back(&(*history), (void *)ft_strdup(line));
 		free(line);
 		line = NULL;
 	}
 	free(line);
 	close(fd);
-	return (history);
+	return (TRUE);
 }

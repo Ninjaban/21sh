@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 14:46:21 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/17 11:24:37 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 # define NAME "Minishell"
 # define PROMPT "\033[34;1;4m$: commande nº!#\033[0m - (\033[31m!W\033[0m) => "
-# define HISTORY_SIZE 10
+# define HISTORY_SIZE 1000
 # define FALSE 0
 # define TRUE 1
 # define EXIT "exit"
@@ -67,8 +67,8 @@ typedef struct	s_sys
 	struct termios	term_save;
 	t_alias			*alias;
 	t_btree			*cmds;
+	t_lst			*history;
 	char			**env;
-	char			**history;
 }				t_sys;
 
 /*
@@ -90,10 +90,11 @@ void			*ft_exec(t_sys **sys);
 int				ft_sys_init(t_sys **sys);
 int				ft_access_dir(char *path);
 int				ft_changedir(char *name, char *pwd, char *dir, char ***env);
-int				ft_history_maj(char ***history, char *line, char **env);
+int				ft_history_maj(t_lst **history, char *line, char **env);
 int				ft_alias(t_cmd *cmd, t_alias **alias);
 int				ft_unalias(t_cmd *cmd, t_alias **alias);
 int				ft_set_pwd(char ***env, char *str);
+int				ft_history_init(t_lst **history, char **env);
 char			*ft_access(char *name, char **env);
 char			*ft_joinpath(char *src, char *str);
 char			*ft_delchar(char *str, size_t n);
@@ -103,7 +104,6 @@ char			*ft_getenv(char **env, char *name);
 char			*ft_path_join(char *src, char *str);
 char			*ft_tild(char *str, char **env);
 char			*ft_varenv(char *str, char **env);
-char			**ft_history_init(char **env);
 char			**ft_getpath(char **env);
 /*t_cmd			**ft_parsing(char *str, t_sys *sys, int n);*/
 size_t			ft_fpath(char **env, char *str);
@@ -123,3 +123,5 @@ int				ft_cmp_node(void *tree, void *node);
 t_btree			*ft_parsing(char *str, t_sys *sys);
 
 #endif
+
+

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 13:32:17 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 19:30:52 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/17 10:50:40 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,13 +134,66 @@ static void	ft_read_move(char **str, int c, size_t *pos)
 		ft_read_keyori(&(*str), &(*pos));
 }
 
-int			ft_read(char **str)
+static void	ft_read_history_clear(char *str)
 {
 	size_t	n;
+
+	n = ft_strlen(str);
+	while (n-- > 0)
+		ft_putchar(' ');
+	n = ft_strlen(str);
+	while (n-- > 0)
+		ft_putchar('\b');
+}
+
+static void	ft_read_history_down(char **str, t_sys **sys, size_t *i, size_t *pos)
+{
+	t_lst	*tmp;
+
+	if (*i >= (size_t)ft_list_size((*sys)->history) - 1)
+		return ;
+	*i = *i + 1;
+	ft_read_move(&(*str), KEY_HOM, &(*pos));
+	ft_read_history_clear(*str);
+	tmp = ft_list_at((*sys)->history, *i);
+	free(*str);
+	if (tmp)
+		*str = ft_strdup(tmp->data);
+	ft_putstr(*str);
+	*pos = ft_strlen(*str);
+}
+
+static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
+{
+	t_lst	*tmp;
+
+	if (*i == 0)
+		return ;
+	if (*i == HISTORY_SIZE + 1)
+	{
+		ft_history_maj(&(*sys)->history, ft_strdup(*str), (*sys)->env);
+		*i = (size_t)ft_list_size((*sys)->history) - 1;
+	}
+	*i = *i - 1;
+	ft_read_move(&(*str), KEY_HOM, &(*pos));
+	ft_read_history_clear(*str);
+	tmp = ft_list_at((*sys)->history, *i);
+	free(*str);
+	if (tmp)
+		*str = ft_strdup(tmp->data);
+	ft_putstr(*str);
+	*pos = ft_strlen(*str);
+}
+
+int			ft_read(char **str, t_sys **sys)
+{
+	size_t	n;
+	size_t	i;
 	char	exit;
 	int		c;
 
 	n = 0;
+	i = HISTORY_SIZE + 1;
 	exit = FALSE;
 	*str = ft_strnew(1);
 	while (exit == FALSE)
@@ -158,6 +211,10 @@ int			ft_read(char **str)
 		if (c == KEY_HOM || c == KEY_ENS || c == KEY_LEF || c == KEY_RIG ||
 			c == KEY_OLE || c == KEY_ORI)
 			ft_read_move(&(*str), c, &n);
+		if (c == KEY_UPS)
+			ft_read_history_up(&(*str), &(*sys), &i, &n);
+		if (c == KEY_DOW)
+			ft_read_history_down(&(*str), &(*sys), &i, &n);
 	}
 	ft_putchar('\n');
 	return (TRUE);

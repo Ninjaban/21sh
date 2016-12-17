@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 13:23:35 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/15 19:10:01 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/17 09:01:28 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,16 +95,17 @@ unsigned long int	ft_revnbr(unsigned long int nbr);
 **	List
 */
 
-t_lst				*ft_create_elem(void *data);
 void				ft_list_push_back(t_lst **begin_list, void *data);
 void				ft_list_push_front(t_lst **begin_list, void *data);
-int					ft_list_size(t_lst *begin_list);
-t_lst				*ft_list_last(t_lst *begin_list);
-t_lst				*ft_list_push_params(int ac, char **av);
-void				ft_list_clear(t_lst **begin_list);
-t_lst				*ft_list_at(t_lst *begin_list, unsigned int nbr);
+void				ft_list_del(t_lst *node, void (*f)(void *));
 void				ft_list_reverse(t_lst **begin_list);
 void				ft_list_foreach(t_lst *begin_list, void (*f)(void *));
+void				ft_list_clear(t_lst **begin_list);
+int					ft_list_size(t_lst *begin_list);
+t_lst				*ft_create_elem(void *data);
+t_lst				*ft_list_last(t_lst *begin_list);
+t_lst				*ft_list_push_params(int ac, char **av);
+t_lst				*ft_list_at(t_lst *begin_list, unsigned int nbr);
 
 /*
 **	Btree

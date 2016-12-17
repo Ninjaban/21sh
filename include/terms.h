@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 09:33:31 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 18:53:39 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/17 09:50:26 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,6 @@ int					fputchar(int c);
 int					ft_goto(char *cmd, int col, int line);
 int					ft_termcaps_change(struct termios *term);
 int					ft_termcaps_init(struct termios *term, struct termios *save);
-int					ft_read(char **str);
+int					ft_read(char **str, t_sys **sys);
 
 #endif
