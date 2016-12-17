@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 09:04:55 by jcarra            #+#    #+#              #
-#    Updated: 2016/12/17 09:52:14 by jcarra           ###   ########.fr        #
+#    Updated: 2016/12/17 13:20:34 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -40,6 +40,7 @@ NAME		=	minishell
 SRC			=	ft_read.c \
 				ft_history.c \
 				ft_init.c \
+				ft_gestion_error.c \
 				ft_varenv.c \
 				ft_delchar.c \
 				ft_sys.c \

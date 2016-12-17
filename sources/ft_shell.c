@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 10:52:04 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/17 13:32:14 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,21 @@ static void	ft_free(t_cmd ***cmds, char **str)
 static int	ft_launcher(t_sys **sys, char **str)
 {
 	static size_t	n = 0;
-/*	char			*tmp;*/
+	char			*tmp;
 
 	ft_affprompt(++n, (*sys)->env);
 	if (ft_read(&(*str), &(*sys)) == FALSE)
 		ft_error(ERROR_READ);
-	if ((ft_history_maj(&((*sys)->history), *str,(*sys)->env)) == FALSE)
-		ft_error(ERROR_HISTORY);
-	ft_parsing(*str, *sys);
+	if ((tmp = ft_strtrim(*str)) != NULL)
+	{
+		free(tmp);
+		if ((ft_history_maj(&((*sys)->history), *str,(*sys)->env)) == FALSE)
+			ft_error(ERROR_HISTORY);
+		else if ((tmp = ft_gestion_error(*str)) != NULL)
+			ft_error(tmp);
+		else
+			ft_parsing(*str, *sys);
+	}
 	/*
 	(*sys)->cmds = NULL;
 	*str = NULL;
