@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 09:29:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 14:47:31 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/19 13:44:39 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,6 @@ static char	**ft_tabcpy(char **t)
 	return (cpy);
 }
 
-void		sig_handler(int signo)
-{
-	if (signo == SIGINT)
-	{
-		ft_putstr("\n\033[34;1;4m$: commande nº#\033[0m - (\033[31m...\033[0m) => ");
-	}
-}
-
 int			main(int ac, char **av, char **env)
 {
 	t_sys	*sys;
@@ -76,8 +68,8 @@ int			main(int ac, char **av, char **env)
 		ft_error(ERROR_ENV);
 		return (1);
 	}
-/*	if (signal(SIGINT, sig_handler) == SIG_ERR)
-	return (1);*/
+	if (signal(SIGINT, SIG_IGN) == SIG_ERR);
+	return (1);
 	ft_shell(sys, FALSE);
 	ft_sys_free(sys);
 	return (0);

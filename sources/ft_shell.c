@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 13:32:14 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/19 13:13:40 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,10 @@ static int	ft_launcher(t_sys **sys, char **str)
 			ft_error(ERROR_HISTORY);
 		else if ((tmp = ft_gestion_error(*str)) != NULL)
 			ft_error(tmp);
+		else if (((*sys)->cmds = ft_parsing(*str, *sys)) == NULL)
+			ft_error(ERROR_ALLOC);
 		else
-			ft_parsing(*str, *sys);
+			return (TRUE);
 	}
 	/*
 	(*sys)->cmds = NULL;
@@ -117,18 +119,18 @@ void		ft_shell(t_sys *sys, int exit)
 	while (exit == FALSE)
 	{
 		ft_termcaps_change(&sys->term_new);
-		ft_launcher(&sys, &str);
-/*		if (ft_launcher(&sys, &str) == TRUE)
+/*		ft_launcher(&sys, &str);*/
+		if (ft_launcher(&sys, &str) == TRUE)
 		{
-		ft_termcaps_change(&sys->term_save);
+			ft_termcaps_change(&sys->term_save);
 			if ((tmp = ft_exec(&sys)) != NULL)
 			{
 				if (ft_strcmp(tmp, EXIT) != 0)
 					ft_error(tmp);
 				else
 					exit = TRUE;
-					}
-}*/
+			}
+		}
 /*		ft_free(&(sys->cmds), &str);*/
 	}
 }

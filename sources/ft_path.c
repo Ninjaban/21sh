@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 18:40:13 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/13 10:08:48 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/19 11:43:31 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ static void	ft_verifpath(char ***path)
 char		**ft_getpath(char **env)
 {
 	char	**tab;
+	char	*tmp;
 	int		n;
 	int		i;
 
@@ -43,10 +44,13 @@ char		**ft_getpath(char **env)
 		if (ft_strncmp(env[n], "PATH=", 4) == 0)
 		{
 			i = 0;
-			while (env[n][i] != '=')
-				env[n][i++] = ':';
-			env[n][i] = ':';
-			tab = ft_strsplit(env[n], ":");
+			if ((tmp = ft_strdup(env[n])) == NULL)
+				return (NULL);
+			while (tmp[i] != '=')
+				tmp[i++] = ':';
+			tmp[i] = ':';
+			tab = ft_strsplit(tmp, ":");
+			free(tmp);
 			ft_verifpath(&tab);
 			return (tab);
 		}

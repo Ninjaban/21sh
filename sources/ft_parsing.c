@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 13:15:40 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/20 09:25:45 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -212,7 +212,7 @@ static t_cmd	*ft_redir(char redir)
 		return (NULL);
 	cmd->name = NULL;
 	cmd->argv = NULL;
-	cmd->redir = (redir == REDIR_L || redir == CONCAT_L) ? redir - 2 : redir;
+	cmd->redir = redir;
 	return (cmd);
 }
 
@@ -266,10 +266,10 @@ static t_btree	*ft_create_node(char *str, size_t n, size_t i, char redir)
 	node = btree_create_node(ft_redir(redir));
 	c = str[i];
 	str[i] = '\0';
-	if ((redir == REDIR_L || redir == CONCAT_L) && (redir != 0))
-		node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
-	else
-		node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
+//	if ((redir == REDIR_L || redir == CONCAT_L) && (redir != 0))
+//		node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
+//	else
+	node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
 	if (redir != 0)
 	{
 		n = (redir == CONCAT_L || redir == CONCAT_R) ? i + 2 : i + 1;
@@ -278,10 +278,10 @@ static t_btree	*ft_create_node(char *str, size_t n, size_t i, char redir)
 			ft_strlchr(str + n, "|<>") + n;
 		c = str[i];
 		str[i] = '\0';
-		if (redir == REDIR_L || redir == CONCAT_L)
-			node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
-		else
-			node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
+//		if (redir == REDIR_L || redir == CONCAT_L)
+//			node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
+//		else
+		node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
 		str[i] = c;
 		while (n < i && str[n] && c != '<')
 			str[n++] = ' ';
@@ -356,8 +356,5 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 	while (tab[n])
 		ft_parsing_multicmd(&cmds, tab[n++]);
 	ft_free_tab(tab);
-	btree_apply_infix(cmds, &ft_display);
-	ft_putendl("");
-	return (NULL);
 	return (cmds);
 }

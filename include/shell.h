@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 13:20:05 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/20 08:49:39 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@
 # include <signal.h>
 # include <fcntl.h>
 # include <termios.h>
+# include <dirent.h>
 # include "libft.h"
 
 /*
@@ -123,5 +124,3 @@ int				ft_cmp_node(void *tree, void *node);
 t_btree			*ft_parsing(char *str, t_sys *sys);
 
 #endif
-
-

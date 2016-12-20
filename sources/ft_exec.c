@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/08 15:23:44 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/19 13:29:45 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 #include "shell.h"
 #include "error.h"
 
-static void	ft_exec_child(t_cmd *cmds, t_sys *sys)
+static void	ft_exec_child(t_sys *sys)
 {
-	char	*cmd;
+/*	char	*cmd;
 
 	if ((cmd = ft_access(cmds->name, sys->env)) != NULL)
 	{
@@ -24,7 +24,7 @@ static void	ft_exec_child(t_cmd *cmds, t_sys *sys)
 			ft_error(ERROR_EXEC);
 		free(cmd);
 	}
-	exit(0);
+	exit(0);*/
 }
 
 static int	ft_builtins(t_cmd *cmds, t_sys **sys)
@@ -51,6 +51,12 @@ static int	ft_builtins(t_cmd *cmds, t_sys **sys)
 
 void		*ft_exec(t_sys **sys)
 {
+
+	return (NULL);
+}
+/*
+void		*ft_exec(t_sys **sys)
+{
 	size_t	n;
 	int		status;
 
@@ -75,3 +81,4 @@ void		*ft_exec(t_sys **sys)
 	}
 	return (NULL);
 }
+*/
