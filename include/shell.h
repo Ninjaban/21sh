@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/20 08:49:39 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/20 11:34:26 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,14 @@ typedef struct	s_cmd
 {
 	char			*name;
 	char			**argv;
-	char			redir;
 }				t_cmd;
+
+typedef struct	s_node
+{
+	char			node;
+	t_cmd			*cmd;
+	char			redir;
+}				t_node;
 
 typedef struct	s_alias
 {

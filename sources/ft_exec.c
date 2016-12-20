@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/19 13:29:45 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/20 11:16:14 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,17 @@ static int	ft_builtins(t_cmd *cmds, t_sys **sys)
 	return (TRUE);
 }
 
+void		ft_exec_node(void *root)
+{
+	t_btree	*node;
+	int		pdes[2];
+
+	node = (t_btree *)root;
+}
+
 void		*ft_exec(t_sys **sys)
 {
-
+	btree_apply_infix((*sys)->cmds, &ft_exec_node);
 	return (NULL);
 }
 /*

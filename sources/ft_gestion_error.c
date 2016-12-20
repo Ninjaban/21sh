@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:41:52 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 13:59:58 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/20 11:26:12 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,7 @@ void		*ft_gestion_error(char *str)
 			return (ERROR_SYNTAX);
 		n = n + 1;
 	}
+	if (ft_check(tmp[ft_strlen(tmp) - 1], "<>|") == 1)
+		return (ERROR_SYNTAX);
 	return (NULL);
 }

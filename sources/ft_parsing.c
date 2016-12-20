@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/20 09:25:45 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/20 11:39:10 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -190,7 +190,6 @@ static t_cmd	*ft_parsecmd(char *str, char *tmp, char **tab)
 	}
 	cmd->name = NULL;
 	cmd->argv = NULL;
-	cmd->redir = -1;
 	ft_parenthesis_undo(&tab);
 	if ((cmd->name = ft_strdup(tab[0])) == NULL)
 	{
@@ -204,16 +203,16 @@ static t_cmd	*ft_parsecmd(char *str, char *tmp, char **tab)
 	return (cmd);
 }
 
-static t_cmd	*ft_redir(char redir)
+static t_node	*ft_new_node(char node, char *str, char redir)
 {
-	t_cmd		*cmd;
+	t_node		*new;
 
-	if ((cmd = malloc(sizeof(t_cmd))) == NULL)
+	if ((new = malloc(sizeof(t_node *))) == NULL)
 		return (NULL);
-	cmd->name = NULL;
-	cmd->argv = NULL;
-	cmd->redir = redir;
-	return (cmd);
+	new->node = node;
+	new->cmd = ft_parsecmd(str, NULL, NULL);
+	new->redir = redir;
+	return (new);
 }
 
 static int		ft_check_sep(t_cmd *tree, t_cmd *node)
