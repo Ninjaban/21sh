@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/19 13:13:40 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/21 10:24:37 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,8 @@ void		ft_shell(t_sys *sys, int exit)
 	while (exit == FALSE)
 	{
 		ft_termcaps_change(&sys->term_new);
-/*		ft_launcher(&sys, &str);*/
+		ft_launcher(&sys, &str);
+		/*
 		if (ft_launcher(&sys, &str) == TRUE)
 		{
 			ft_termcaps_change(&sys->term_save);
@@ -131,6 +132,7 @@ void		ft_shell(t_sys *sys, int exit)
 					exit = TRUE;
 			}
 		}
+		*/
 /*		ft_free(&(sys->cmds), &str);*/
 	}
 }

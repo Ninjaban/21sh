@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/20 11:34:26 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/21 10:22:14 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,5 +128,7 @@ int				ft_chdir(char ***env, char *str);
 void			ft_display(void *node);
 int				ft_cmp_node(void *tree, void *node);
 t_btree			*ft_parsing(char *str, t_sys *sys);
+int				ft_false_node(void *root, void *item);
+int				ft_true_node(void *root, void *item);
 
 #endif

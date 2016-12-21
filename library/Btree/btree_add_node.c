@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/15 18:16:38 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/15 19:23:48 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/21 13:05:07 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,10 @@ void	btree_add_node(t_btree **root, void *item,
 	if (!(*root))
 		*root = (t_btree *)item;
 	while (exit == 0)
+	{
 		if (cmpf(tree, item) < 0)
 			exit = ft_next(&tree, &tree->left, item);
 		else
 			exit = ft_next(&tree, &tree->right, item);
+	}
 }

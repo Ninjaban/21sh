@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 09:29:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/19 13:44:39 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/12/21 10:14:29 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,8 @@ int			main(int ac, char **av, char **env)
 		ft_error(ERROR_ENV);
 		return (1);
 	}
-	if (signal(SIGINT, SIG_IGN) == SIG_ERR);
-	return (1);
+/*	if (signal(SIGINT, SIG_IGN) == SIG_ERR);
+	return (1);*/
 	ft_shell(sys, FALSE);
 	ft_sys_free(sys);
 	return (0);
