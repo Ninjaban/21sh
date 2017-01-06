@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/19 09:39:23 by jcarra            #+#    #+#             */
-/*   Updated: 2016/11/09 11:31:39 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/06 09:40:19 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ void	ft_list_push_back(t_lst **begin_list, void *data)
 	t_lst	*new_elem;
 	t_lst	*elem;
 
-	new_elem = ft_create_elem(data);
+	if (!begin_list || !data)
+		return ;
+	if ((new_elem = ft_create_elem(data)) == NULL)
+		return ;
 	elem = *begin_list;
 	if (elem == NULL)
 		*begin_list = new_elem;

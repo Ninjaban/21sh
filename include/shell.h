@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/21 10:22:14 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/06 21:46:14 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 */
 
 # define NAME "Minishell"
-# define PROMPT "\033[34;1;4m$: commande nº!#\033[0m - (\033[31m!W\033[0m) => "
+# define PROMPT "\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m) => "
 # define HISTORY_SIZE 1000
 # define FALSE 0
 # define TRUE 1
@@ -38,6 +38,7 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <sys/wait.h>
+# include <dirent.h>
 # include <signal.h>
 # include <fcntl.h>
 # include <termios.h>
@@ -59,6 +60,7 @@ typedef struct	s_node
 	char			node;
 	t_cmd			*cmd;
 	char			redir;
+	int				fd;
 }				t_node;
 
 typedef struct	s_alias
@@ -130,5 +132,14 @@ int				ft_cmp_node(void *tree, void *node);
 t_btree			*ft_parsing(char *str, t_sys *sys);
 int				ft_false_node(void *root, void *item);
 int				ft_true_node(void *root, void *item);
+
+/*
+**	Auto-completion
+*/
+
+void			ft_completion(char **str, size_t pos, char **env, char dassault);
+void			ft_removecompl(char **str);
+char			ft_checkcompl(char *str);
+int				match(char *s1, char *s2);
 
 #endif

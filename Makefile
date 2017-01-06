@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 09:04:55 by jcarra            #+#    #+#              #
-#    Updated: 2016/12/19 12:57:09 by jcarra           ###   ########.fr        #
+#    Updated: 2017/01/06 14:17:00 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -39,7 +39,9 @@ NAME		=	minishell
 				ft_shell.c \
 				ft_main.c
 
-SRC			=	ft_read.c \
+SRC			=	match.c \
+				ft_completion.c \
+				ft_read.c \
 				ft_history.c \
 				ft_init.c \
 				ft_gestion_error.c \

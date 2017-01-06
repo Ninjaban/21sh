@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 13:32:17 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/19 13:02:47 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/06 22:14:44 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,26 @@
 #include "error.h"
 #include "shell.h"
 #include "terms.h"
+
+void		ft_print(char *str, size_t pos, char inc)
+{
+	static size_t	len_s = 0;
+	int				n;
+
+	n = (int)pos;
+	while (n-- > 0)
+		ft_putchar('\b');
+	n = (int)len_s;
+	while (n-- > 0)
+		ft_putchar(' ');
+	while (len_s-- > 0)
+		ft_putchar('\b');
+	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 12 : ft_strlen(str);
+	n = (int)len_s - 1;
+	ft_putstr(str);
+	while (n-- >= (int)pos + inc)
+		ft_putchar('\b');
+}
 
 static char	*ft_strjoin_init(char *str, char *n, size_t pos)
 {
@@ -30,11 +50,10 @@ static char	*ft_strjoin_init(char *str, char *n, size_t pos)
 	return (new);
 }
 
-static void	ft_read_print(char **str, int c, size_t *pos)
+static void	ft_read_print(char **str, int c, size_t *pos, char **env)
 {
 	char	*tmp;
 	char	*n;
-	int		len;
 
 	if (c != KEY_RET && c != KEY_TAB)
 	{
@@ -45,14 +64,17 @@ static void	ft_read_print(char **str, int c, size_t *pos)
 		free(n);
 		*str = tmp;
 	}
+	ft_completion(&(*str), (c == KEY_TAB) ? (*pos) : (*pos) + 1, env, (c == KEY_TAB) ? 1 : 0);
+	ft_print(*str, (*pos), (c == KEY_TAB) ? 0 : 1);
 	if (c != KEY_TAB)
-	{
-		ft_putstr(*str + *pos);
-		len = (int)ft_strlen(*str + *pos) - 2;
-		while (len-- >= 0)
-			ft_putchar('\b');
 		*pos = *pos + 1;
-	}
+//	ft_putstr(*str + *pos);
+//	len = (int)ft_strlen(*str + *pos) - 2;
+//	len = (ft_checkcompl(*str) == 1) ? len - 12 : len;
+//	while (len-- >= 0)
+//		;
+//		ft_putchar('\b');
+//	*pos = *pos + 1;
 }
 
 static void	ft_read_suppr(char **str, size_t *pos)
@@ -70,13 +92,15 @@ static void	ft_read_suppr(char **str, size_t *pos)
 		*str = (!(*str)) ? ft_strdup(t[0]) : *str;
 		*str = (!(*str)) ? ft_strnew(1) : *str;
 		ft_free_tab(t);
-		ft_putstr(*str + *pos);
-		ft_putchar(' ');
-		n = (int)ft_strlen(*str + *pos);
-		while (n-- >= 0)
-			ft_putchar('\b');
+		ft_print(*str, (*pos), 0);
 		if (*pos > ft_strlen(*str) && *pos > 0)
 			*pos = *pos - 1;
+//		ft_putstr(*str + *pos);
+//		ft_putchar(' ');
+		n = (int)ft_strlen(*str + *pos);
+		while (n-- >= 0)
+			;
+//			ft_putchar('\b');
 	}
 }
 
@@ -85,7 +109,7 @@ static void	ft_read_delete(char **str, size_t *pos)
 	if (*pos > 0 && (*str)[*pos - 1])
 	{
 		*pos = *pos - 1;
-		ft_putstr("\b");
+		ft_putchar('\b');
 		ft_read_suppr(&(*str), &(*pos));
 	}
 }
@@ -114,6 +138,7 @@ static void	ft_read_keyori(char **str, size_t *pos)
 
 static void	ft_read_move(char **str, int c, size_t *pos)
 {
+	ft_print(*str, *pos, 0);
 	if (c == KEY_LEF && *pos > 0)
 	{
 		ft_putchar('\b');
@@ -140,10 +165,12 @@ static void	ft_read_history_clear(char *str)
 
 	n = ft_strlen(str);
 	while (n-- > 0)
-		ft_putchar(' ');
+		;
+//		ft_putchar(' ');
 	n = ft_strlen(str);
 	while (n-- > 0)
-		ft_putchar('\b');
+		;
+//		ft_putchar('\b');
 }
 
 static void	ft_read_history_down(char **str, t_sys **sys, size_t *i, size_t *pos)
@@ -159,7 +186,7 @@ static void	ft_read_history_down(char **str, t_sys **sys, size_t *i, size_t *pos
 	free(*str);
 	if (tmp)
 		*str = ft_strdup(tmp->data);
-	ft_putstr(*str);
+//	ft_putstr(*str);
 	*pos = ft_strlen(*str);
 }
 
@@ -181,7 +208,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 	free(*str);
 	if (tmp)
 		*str = ft_strdup(tmp->data);
-	ft_putstr(*str);
+//	ft_putstr(*str);
 	*pos = ft_strlen(*str);
 }
 
@@ -200,8 +227,9 @@ int			ft_read(char **str, t_sys **sys)
 	{
 		c = 0;
 		read(0, &c, sizeof (int));
-		if (ft_isprint(c))
-			ft_read_print(&(*str), c, &n);
+		ft_removecompl(&(*str));
+		if (ft_isprint(c) || c == KEY_TAB)
+			ft_read_print(&(*str), c, &n, (*sys)->env);
 		if (c == KEY_RET)
 			exit = TRUE;
 		if (c == KEY_BAC)
