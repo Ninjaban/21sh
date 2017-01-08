@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 13:32:17 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/06 22:14:44 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/08 12:03:55 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -186,7 +186,7 @@ static void	ft_read_history_down(char **str, t_sys **sys, size_t *i, size_t *pos
 	free(*str);
 	if (tmp)
 		*str = ft_strdup(tmp->data);
-//	ft_putstr(*str);
+	ft_putstr(*str);
 	*pos = ft_strlen(*str);
 }
 
@@ -208,7 +208,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 	free(*str);
 	if (tmp)
 		*str = ft_strdup(tmp->data);
-//	ft_putstr(*str);
+	ft_putstr(*str);
 	*pos = ft_strlen(*str);
 }
 
