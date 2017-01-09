@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/21 10:24:37 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/09 16:53:58 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,9 @@ static int	ft_launcher(t_sys **sys, char **str)
 	if ((tmp = ft_strtrim(*str)) != NULL)
 	{
 		free(tmp);
-		if ((ft_history_maj(&((*sys)->history), *str,(*sys)->env)) == FALSE)
+		ft_parse_parenthesis(&(*sys), &(*str), ' ', ' ');
+		ft_putendl(*str);
+		if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
 			ft_error(ERROR_HISTORY);
 		else if ((tmp = ft_gestion_error(*str)) != NULL)
 			ft_error(tmp);

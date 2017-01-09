@@ -6,12 +6,13 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/03 09:56:08 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/09 20:47:39 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "shell.h"
+#include "error.h"
 
 static char		**ft_tabcpy(char **tab)
 {
@@ -130,29 +131,82 @@ t_cmd			**ft_parsing(char *str, t_sys *sys, int n)
 }
 */
 
-static char		*ft_parse_parenthesis(char *str, char c, char r)
+static void		ft_parse_backslash(char *str)
+{
+	size_t		n;
+
+	n = 0;
+	if ((str)[n + 1] == 'b')
+		(str)[n] = '\b';
+	else if ((str)[n + 1] == 't')
+		(str)[n] = '\t';
+	else if ((str)[n + 1] == 'n')
+		(str)[n] = '\n';
+	else if ((str)[n + 1] == 'v')
+		(str)[n] = '\v';
+	else if ((str)[n + 1] == 'f')
+		(str)[n] = '\f';
+	else if ((str)[n + 1] == 'r')
+		(str)[n] = '\r';
+	else
+		return;
+}
+
+static char		ft_parse_parenthesis_open(char *str, char c, char r, char type)
+{
+	size_t		n;
+
+	n = 0;
+	while (str[n] && str[n] != ((type == 0) ? '\"' : '\''))
+	{
+		if (str[n] == c)
+			str[n] = r;
+		if (type == 1 && str[n] == '\\')
+			ft_parse_backslash(str + n);
+		n = n + 1;
+	}
+	if (str[n] != ((type == 0) ? '\"' : '\''))
+		return (FALSE);
+	while ((str)[n++])
+		(str)[n - 1] = (str)[n];
+	return (TRUE);
+}
+
+void			ft_parse_parenthesis(t_sys **sys, char **str, char c, char r)
 {
 	size_t		n;
 	char		*tmp;
-	int			open;
+	char		*new;
 
 	n = 0;
-	open = FALSE;
-	while (str[n])
+	while ((*str)[n])
 	{
-		if (str[n] == '\"')
+		if ((*str)[n] == '\"' || (*str)[n] == '\'')
 		{
-			if ((tmp = ft_delchar(str, (n > 0 && str[n - 1] == '\\')
-									? n - 1 : n)) == NULL)
-				return (NULL);
-			str = tmp;
-			open = (open == TRUE) ? FALSE : TRUE;
+			if (ft_parse_parenthesis_open((*str) + n + 1, c, r,
+				((*str)[n] == '\"') ? 0 : 1) == FALSE && sys != NULL)
+			{
+				ft_putstr("<quotes> ");
+				if (ft_read(&tmp, &(*sys)) == FALSE)
+					ft_error(ERROR_READ);
+			}
+			else
+				n = n + 1;
+			new = ft_strjoin("'\\n'", tmp);
+			free(tmp);
+			tmp = ft_strjoin(*str, new);
+			free(new);
+			free(*str);
+			*str = tmp;
+//			if ((tmp = ft_delchar(str, (n > 0 && str[n - 1] == '\\')
+//									? n - 1 : n)) == NULL)
+//				return (NULL);
+//			str = tmp;
+//			open = (open == TRUE) ? FALSE : TRUE;
 		}
-		if (open == TRUE && str[n] == c)
-			str[n] = r;
-		n = n + 1;
+		else
+			n = n + 1;
 	}
-	return (str);
 }
 
 static void		ft_parenthesis_undo(char ***tab)
@@ -178,8 +232,7 @@ static t_cmd	*ft_parsecmd(char *str, char *tmp, char **tab)
 {
 	t_cmd		*cmd;
 
-	if ((tmp = ft_parse_parenthesis(ft_strdup(str), ' ', '\a')) == NULL)
-		return (NULL);
+	ft_parse_parenthesis(NULL, &str, ' ', '\a');
 	if ((tab = ft_strsplit(tmp, " \t\n")) == NULL || !tab[0])
 		return (NULL);
 	free(tmp);
@@ -443,6 +496,6 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 		ft_parsing_multicmd(&cmds, tab[n++]);
 	}
 	ft_free_tab(tab);
-	btree_apply_infix(cmds, &ft_display);
+//	btree_apply_infix(cmds, &ft_display);
 	return (cmds);
 }

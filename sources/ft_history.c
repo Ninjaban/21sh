@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 08:55:19 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 11:42:55 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/09 08:36:16 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,12 @@ static void	ft_history_suppr_first(t_lst **history)
 int			ft_history_maj(t_lst **history, char *line, char **env)
 {
 	t_lst	*tmp;
+	char	*cpy;
 	int		fd;
 
+	if ((cpy = ft_strtrim(line)) == NULL)
+		return (FALSE);
+	free(cpy);
 	if ((fd = ft_history_file(env, O_TRUNC)) == -1)
 		return (FALSE);
 	if (ft_list_size(*history) == HISTORY_SIZE)
