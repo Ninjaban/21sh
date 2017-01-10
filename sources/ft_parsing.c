@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/09 20:47:39 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/10 09:19:12 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,6 +150,9 @@ static void		ft_parse_backslash(char *str)
 		(str)[n] = '\r';
 	else
 		return;
+	n = n + 1;
+	while ((str)[n++])
+		(str)[n - 1] = (str)[n];
 }
 
 static char		ft_parse_parenthesis_open(char *str, char c, char r, char type)
@@ -161,7 +164,7 @@ static char		ft_parse_parenthesis_open(char *str, char c, char r, char type)
 	{
 		if (str[n] == c)
 			str[n] = r;
-		if (type == 1 && str[n] == '\\')
+		if (type == 1 && str[n] == '\\' && c != r)
 			ft_parse_backslash(str + n);
 		n = n + 1;
 	}
@@ -181,31 +184,28 @@ void			ft_parse_parenthesis(t_sys **sys, char **str, char c, char r)
 	n = 0;
 	while ((*str)[n])
 	{
-		if ((*str)[n] == '\"' || (*str)[n] == '\'')
+		if ((((*str)[n] == '\"' || (*str)[n] == '\'')) &&
+			((ft_parse_parenthesis_open((*str) + n + 1, c, r,
+			((*str)[n] == '\"') ? 0 : 1) == FALSE && sys != NULL)))
 		{
-			if (ft_parse_parenthesis_open((*str) + n + 1, c, r,
-				((*str)[n] == '\"') ? 0 : 1) == FALSE && sys != NULL)
-			{
-				ft_putstr("<quotes> ");
-				if (ft_read(&tmp, &(*sys)) == FALSE)
-					ft_error(ERROR_READ);
-			}
-			else
-				n = n + 1;
+			ft_putstr("<quotes> ");
+			if (ft_read(&tmp, &(*sys)) == FALSE)
+				ft_error(ERROR_READ);
 			new = ft_strjoin("'\\n'", tmp);
 			free(tmp);
 			tmp = ft_strjoin(*str, new);
 			free(new);
 			free(*str);
 			*str = tmp;
-//			if ((tmp = ft_delchar(str, (n > 0 && str[n - 1] == '\\')
-//									? n - 1 : n)) == NULL)
-//				return (NULL);
-//			str = tmp;
-//			open = (open == TRUE) ? FALSE : TRUE;
 		}
 		else
+		{
+			if (((*str)[n] == '\"' || (*str)[n] == '\'') &&
+				((ft_delchar(&(*str), n)) == FALSE))
+				return ;
 			n = n + 1;
+		}
+//			open = (open == TRUE) ? FALSE : TRUE;
 	}
 }
 
@@ -496,6 +496,6 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 		ft_parsing_multicmd(&cmds, tab[n++]);
 	}
 	ft_free_tab(tab);
-//	btree_apply_infix(cmds, &ft_display);
+	btree_apply_infix(cmds, &ft_display);
 	return (cmds);
 }

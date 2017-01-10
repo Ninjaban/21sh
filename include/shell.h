@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/09 16:46:09 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/10 08:38:49 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,7 @@ void			ft_sys_free(t_sys *sys);
 void			ft_parse_parenthesis(t_sys **sys, char **str, char c, char r);
 void			*ft_gestion_error(char *str);
 void			*ft_exec(t_sys **sys);
+char			ft_delchar(char **str, size_t n);
 int				ft_sys_init(t_sys **sys);
 int				ft_access_dir(char *path);
 int				ft_changedir(char *name, char *pwd, char *dir, char ***env);
@@ -108,7 +109,6 @@ int				ft_history_init(t_lst **history, char **env);
 int				ft_read(char **str, t_sys **sys);
 char			*ft_access(char *name, char **env);
 char			*ft_joinpath(char *src, char *str);
-char			*ft_delchar(char *str, size_t n);
 char			*ft_strcut(char *str, size_t s, size_t e);
 char			*ft_check_alias(char *str, t_alias *alias);
 char			*ft_getenv(char **env, char *name);
