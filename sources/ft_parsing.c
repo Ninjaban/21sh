@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/10 09:19:12 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/11 08:42:36 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -155,7 +155,7 @@ static void		ft_parse_backslash(char *str)
 		(str)[n - 1] = (str)[n];
 }
 
-static char		ft_parse_parenthesis_open(char *str, char c, char r, char type)
+static void		ft_parse_parenthesis_open(char *str, char c, char r, char type)
 {
 	size_t		n;
 
@@ -168,44 +168,27 @@ static char		ft_parse_parenthesis_open(char *str, char c, char r, char type)
 			ft_parse_backslash(str + n);
 		n = n + 1;
 	}
-	if (str[n] != ((type == 0) ? '\"' : '\''))
-		return (FALSE);
 	while ((str)[n++])
 		(str)[n - 1] = (str)[n];
-	return (TRUE);
 }
 
-void			ft_parse_parenthesis(t_sys **sys, char **str, char c, char r)
+void			ft_parse_parenthesis(char **str, char c, char r)
 {
 	size_t		n;
-	char		*tmp;
-	char		*new;
 
 	n = 0;
 	while ((*str)[n])
 	{
-		if ((((*str)[n] == '\"' || (*str)[n] == '\'')) &&
-			((ft_parse_parenthesis_open((*str) + n + 1, c, r,
-			((*str)[n] == '\"') ? 0 : 1) == FALSE && sys != NULL)))
+		if ((*str)[n] == '\"' || (*str)[n] == '\'')
 		{
-			ft_putstr("<quotes> ");
-			if (ft_read(&tmp, &(*sys)) == FALSE)
-				ft_error(ERROR_READ);
-			new = ft_strjoin("'\\n'", tmp);
-			free(tmp);
-			tmp = ft_strjoin(*str, new);
-			free(new);
-			free(*str);
-			*str = tmp;
-		}
-		else
-		{
+			ft_parse_parenthesis_open((*str) + n + 1, c, r,
+									  ((*str)[n] == '\"') ? 0 : 1);
 			if (((*str)[n] == '\"' || (*str)[n] == '\'') &&
 				((ft_delchar(&(*str), n)) == FALSE))
 				return ;
-			n = n + 1;
 		}
-//			open = (open == TRUE) ? FALSE : TRUE;
+		else
+			n = n + 1;
 	}
 }
 
@@ -228,14 +211,14 @@ static void		ft_parenthesis_undo(char ***tab)
 	}
 }
 
-static t_cmd	*ft_parsecmd(char *str, char *tmp, char **tab)
+static t_cmd	*ft_parsecmd(char *str)
 {
 	t_cmd		*cmd;
+	char		**tab;
 
-	ft_parse_parenthesis(NULL, &str, ' ', '\a');
-	if ((tab = ft_strsplit(tmp, " \t\n")) == NULL || !tab[0])
+	ft_parse_parenthesis(&str, ' ', '\a');
+	if ((tab = ft_strsplit(str, " \t")) == NULL || !tab[0])
 		return (NULL);
-	free(tmp);
 	if ((cmd = malloc(sizeof(t_cmd))) == NULL)
 	{
 		ft_free_tab(tab);
@@ -263,7 +246,7 @@ static t_node	*ft_new_node(char node, char *str, char redir, int fd)
 	if ((new = malloc(sizeof(t_node))) == NULL)
 		return (NULL);
 	new->node = node;
-	new->cmd = (str) ? ft_parsecmd(ft_strdup(str), NULL, NULL) : NULL;
+	new->cmd = (str) ? ft_parsecmd(ft_strdup(str)) : NULL;
 	new->redir = redir;
 	new->fd = fd;
 	return (new);

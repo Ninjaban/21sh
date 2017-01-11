@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/09 16:53:58 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/11 08:23:05 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,52 @@ static void	ft_free(t_cmd ***cmds, char **str)
 	}
 }
 */
+
+static char	ft_parse_parenthesis_open(char *str, char type)
+{
+	size_t		n;
+
+	n = 0;
+	while (str[n] && str[n] != ((type == 0) ? '\"' : '\''))
+		n = n + 1;
+	if (str[n] != ((type == 0) ? '\"' : '\''))
+		return (FALSE);
+	str[n] = (type == 0) ? '\a' : '\t';
+	return (TRUE);
+}
+
+static void	ft_check_parenthesis(t_sys **sys, char **str)
+{
+	size_t		n;
+	char		*tmp;
+	char		*new;
+
+	n = 0;
+	while ((*str)[n])
+	{
+		if ((((*str)[n] == '\"' || (*str)[n] == '\'')) &&
+			((ft_parse_parenthesis_open((*str) + n + 1,
+				((*str)[n] == '\"') ? 0 : 1) == FALSE)))
+		{
+			ft_putstr("<quotes> ");
+			if (ft_read(&tmp, &(*sys)) == FALSE)
+				ft_error(ERROR_READ);
+			new = ft_strjoin("'\\n'", tmp);
+			free(tmp);
+			tmp = ft_strjoin(*str, new);
+			free(new);
+			free(*str);
+			*str = tmp;
+		}
+		else
+			n = n + 1;
+	}
+	n = 0;
+	while ((*str)[++n])
+		if ((*str)[n] == '\a' || (*str)[n] == '\t')
+			(*str)[n] = ((*str)[n] == '\a') ? '\"' : '\'';
+}
+
 static int	ft_launcher(t_sys **sys, char **str)
 {
 	static size_t	n = 0;
@@ -41,7 +87,7 @@ static int	ft_launcher(t_sys **sys, char **str)
 	if ((tmp = ft_strtrim(*str)) != NULL)
 	{
 		free(tmp);
-		ft_parse_parenthesis(&(*sys), &(*str), ' ', ' ');
+		ft_check_parenthesis(&(*sys), &(*str));
 		ft_putendl(*str);
 		if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
 			ft_error(ERROR_HISTORY);

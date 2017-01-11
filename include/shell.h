@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/10 08:38:49 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/11 08:15:21 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void			ft_init_changedir(char **pwd, char **t, char ***env);
 void			ft_alias_remove(t_alias **alias);
 void			ft_tild_file(char **str, char c, char r);
 void			ft_sys_free(t_sys *sys);
-void			ft_parse_parenthesis(t_sys **sys, char **str, char c, char r);
+void			ft_parse_parenthesis(char **str, char c, char r);
 void			*ft_gestion_error(char *str);
 void			*ft_exec(t_sys **sys);
 char			ft_delchar(char **str, size_t n);
