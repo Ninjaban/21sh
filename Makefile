@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 09:04:55 by jcarra            #+#    #+#              #
-#    Updated: 2017/01/12 08:22:58 by jcarra           ###   ########.fr        #
+#    Updated: 2017/01/12 08:29:44 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -79,13 +79,11 @@ ECHO		=	printf
 MAKE		=	make -C
 
 
-all		:		$(OBJS) $(NAME)
-
-$(OBJS)	:
-				@$(CC) $(CFLAGS) -c $(SRCS)
+all		:		$(NAME)
 
 $(NAME)	:
 				@$(MAKE) $(DIRLIB)
+				@$(CC) $(CFLAGS) -c $(SRCS)
 				@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) $(LFLAGS)
 				@$(ECHO) '\033[32m> Compiled\n\033[0m'
 

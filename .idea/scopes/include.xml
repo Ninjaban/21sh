@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="include" pattern="file[21sh]:include/*.h||file[21sh]:library/include/*.h" />
+</component>

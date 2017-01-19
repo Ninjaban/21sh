@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "error.h"
 #include "shell.h"
 #include "terms.h"
 

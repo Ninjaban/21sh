@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 13:23:35 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/06 10:09:44 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/12 09:39:09 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ void				ft_list_del(t_lst *node, void (*f)(void *));
 void				ft_list_reverse(t_lst **begin_list);
 void				ft_list_foreach(t_lst *begin_list, void (*f)(void *));
 void				ft_list_clear(t_lst **begin_list, void (*f)(void *));
+void				ft_list_sort(t_lst **begin, int (*f)(const char *, const char *));
 int					ft_list_size(t_lst *begin_list);
 t_lst				*ft_create_elem(void *data);
 t_lst				*ft_list_last(t_lst *begin_list);

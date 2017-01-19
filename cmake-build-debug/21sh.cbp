@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="21sh"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/jcarra/Ninjaban/21sh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/jcarra/Ninjaban/21sh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/jcarra/Ninjaban/21sh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="21sh">
+				<Option output="/Users/jcarra/Ninjaban/21sh/cmake-build-debug/21sh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jcarra/Ninjaban/21sh/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 21sh"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="21sh/fast">
+				<Option output="/Users/jcarra/Ninjaban/21sh/cmake-build-debug/21sh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jcarra/Ninjaban/21sh/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 21sh/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jcarra/Ninjaban/21sh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/include/error.h">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/include/shell.h">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/include/terms.h">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Btree/btree_add_node.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Btree/btree_apply_infix.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Btree/btree_apply_prefix.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Btree/btree_apply_suffix.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Btree/btree_create_node.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Btree/btree_insert_data.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/GetNextLine/get_next_line.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_create_elem.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_at.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_clear.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_del.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_foreach.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_last.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_push_back.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_push_front.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_push_params.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_reverse.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_size.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_sort.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_atoi.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalnum.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalpha.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isascii.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isdigit.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isprint.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strchr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strcmp.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strdup.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlchr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlen.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strncmp.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strnstr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strrchr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strstr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_tolower.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_toupper.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_itoa.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memalloc.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memdel.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar_fd.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl_fd.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr_fd.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr_fd.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revnbr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revstr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strclr.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strdel.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strequ.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striter.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striteri.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strjoin.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmap.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmapi.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnequ.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnew.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsplit.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsub.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strtrim.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_tablen.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/include/get_next_line.h">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/include/libft.h">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/pipe.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_access.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_alias.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_chdir.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_chdir_tools.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_completion.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_delchar.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_echo.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_env.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_error.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_exec.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_free.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_gestion_error.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_history.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_init.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_main.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing_tools.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_path.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_prompt.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_prompt_path.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_read.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_setenv.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_shell.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_sys.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_unalias.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_unsetenv.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_varenv.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/match.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -6,10 +6,11 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/06 09:01:22 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/12 08:24:05 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/12 10:09:21 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 #include "shell.h"
 
@@ -20,16 +21,17 @@
 
 static char	*ft_wordcpy(char *str, size_t start, size_t end)
 {
+	size_t	n;
 	char	*cpy;
 
+	n = 0;
 	if ((cpy = malloc(end - start + 1)) == NULL)
 		return (NULL);
 	while (start < end)
 	{
-		cpy[start] = str[start];
-		start = start + 1;
+		cpy[n++] = str[start++];
 	}
-	cpy[start] = '\0';
+	cpy[n] = '\0';
 	return (cpy);
 }
 
@@ -113,7 +115,7 @@ static char	*ft_getpattern(char *str)
 	n = ft_strlen(str);
 	while (n > 0 && str[n] != '/')
 		n = n - 1;
-	return (ft_strdup(str + n + 1));
+	return (ft_strdup((n == 0) ? str : str + n + 1));
 }
 
 /*
@@ -176,6 +178,9 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 		return ;
 	if ((word = ft_getword(*str, pos)) == NULL)
 		return ;
+	if ((tmp = ft_strtrim(word)) == NULL)
+		return ;
+	free(tmp);
 	if (word[0] == '/' || (word[0] == '.' && word[1] == '/'))
 	{
 		list = NULL;
@@ -185,7 +190,7 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	}
 	else
 		list = ft_getexec(ft_getpath(env));
-	ft_putendl(word);
+//	ft_list_sort(&list, &ft_strcmp);
 	if ((tmp = ft_getprob(list, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);
 	ft_list_clear(&list, &free);
@@ -226,3 +231,4 @@ char		ft_checkcompl(char *str)
 			return (1);
 	return (0);
 }
+#pragma clang diagnostic pop
