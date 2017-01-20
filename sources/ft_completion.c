@@ -28,9 +28,7 @@ static char	*ft_wordcpy(char *str, size_t start, size_t end)
 	if ((cpy = malloc(end - start + 1)) == NULL)
 		return (NULL);
 	while (start < end)
-	{
 		cpy[n++] = str[start++];
-	}
 	cpy[n] = '\0';
 	return (cpy);
 }
@@ -130,7 +128,7 @@ static char	*ft_getprob(t_lst *list, char *str)
 	pattern = ft_strjoin(str, "*");
 	free(str);
 	tmp = list;
-	while (tmp && match(tmp->data, pattern) == 0)
+	while (tmp && ft_strcmp(tmp->data, str) != 0 && match(tmp->data, pattern) == 0)
 		tmp = tmp->next;
 	free(pattern);
 	if (tmp)
@@ -170,9 +168,10 @@ static void	ft_setcompletion(char **str, size_t pos, char *try, char tabul)
 
 void		ft_completion(char **str, size_t pos, char **env, char dassault)
 {
-	t_lst	*list;
-	char	*word;
-	char	*tmp;
+	static t_lst	*list = NULL;
+	t_lst			*pattern;
+	char			*word;
+	char			*tmp;
 
 	if (!str || !(*str))
 		return ;
@@ -181,19 +180,22 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	if ((tmp = ft_strtrim(word)) == NULL)
 		return ;
 	free(tmp);
+	pattern = NULL;
 	if (word[0] == '/' || (word[0] == '.' && word[1] == '/'))
 	{
-		list = NULL;
 		tmp = ft_getcdir(word);
-		ft_opendir(&list, tmp);
+		ft_opendir(&pattern, tmp);
 		free(tmp);
 	}
-	else
+	else if (!list)
+	{
 		list = ft_getexec(ft_getpath(env));
-//	ft_list_sort(&list, &ft_strcmp);
-	if ((tmp = ft_getprob(list, ft_getpattern(word))) != NULL)
+		ft_list_sort(&list, &ft_strcmp);
+	}
+	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);
-	ft_list_clear(&list, &free);
+	if (pattern)
+		ft_list_clear(&pattern, &free);
 }
 
 void		ft_removecompl(char **str)
@@ -231,4 +233,3 @@ char		ft_checkcompl(char *str)
 			return (1);
 	return (0);
 }
-#pragma clang diagnostic pop

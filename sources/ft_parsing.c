@@ -136,18 +136,8 @@ static void		ft_parse_backslash(char *str)
 	size_t		n;
 
 	n = 0;
-	if ((str)[n + 1] == 'b')
-		(str)[n] = '\b';
-	else if ((str)[n + 1] == 't')
-		(str)[n] = '\t';
-	else if ((str)[n + 1] == 'n')
+	if ((str)[n + 1] == 'n')
 		(str)[n] = '\n';
-	else if ((str)[n + 1] == 'v')
-		(str)[n] = '\v';
-	else if ((str)[n + 1] == 'f')
-		(str)[n] = '\f';
-	else if ((str)[n + 1] == 'r')
-		(str)[n] = '\r';
 	else
 		return;
 	n = n + 1;
@@ -191,7 +181,7 @@ void			ft_parse_parenthesis(char **str, char c, char r)
 			n = n + 1;
 	}
 }
-
+/*
 static void		ft_parenthesis_undo(char ***tab)
 {
 	size_t		n;
@@ -210,13 +200,13 @@ static void		ft_parenthesis_undo(char ***tab)
 		n = n + 1;
 	}
 }
-
+*/
 static t_cmd	*ft_parsecmd(char *str)
 {
 	t_cmd		*cmd;
 	char		**tab;
 
-	ft_parse_parenthesis(&str, ' ', '\a');
+//	ft_parse_parenthesis(&str, ' ', '\a');
 	if ((tab = ft_strsplit(str, " \t")) == NULL || !tab[0])
 		return (NULL);
 	if ((cmd = malloc(sizeof(t_cmd))) == NULL)
@@ -226,7 +216,7 @@ static t_cmd	*ft_parsecmd(char *str)
 	}
 	cmd->name = NULL;
 	cmd->argv = NULL;
-	ft_parenthesis_undo(&tab);
+//	ft_parenthesis_undo(&tab);
 	if ((cmd->name = ft_strdup(tab[0])) == NULL)
 	{
 		ft_free_tab(tab);
@@ -454,31 +444,54 @@ int				ft_false_node(void *root, void *item)
 	return (0);
 }
 
-t_btree			*ft_parsing(char *str, t_sys *sys)
+static void		ft_add_node(t_btree **cmds, char **tab, int n)
+{
+	if (tab[n])
+	{
+		if (n > 0)
+			btree_add_node(&(*cmds), btree_create_node(
+					ft_new_node(FALSE, NULL, FALSE, FALSE)), &ft_false_node);
+		ft_parsing_multicmd(&(*cmds), tab[n]);
+		ft_add_node(&(*cmds), tab, n + 1);
+	}
+}
+
+t_btree			*ft_parsing_line(char *str, t_sys *sys)
 {
 	t_btree		*cmds;
 	char		**tab;
 	char		*tmp;
-	int			n;
 
-	if (!str)
-		return (NULL);
-	cmds = NULL;
 	tmp = ft_tild(ft_varenv(str, sys->env), sys->env);
 	ft_tild_file(&str, '\a', '~');
 	if ((tab = ft_strsplit((tmp == NULL) ? str : tmp, ";")) == NULL)
+	{
+		free(str);
 		return (NULL);
+	}
+	free(str);
 	free(tmp);
-	n = 0;
 	cmds = btree_create_node(ft_new_node(FALSE, NULL, FALSE, FALSE));
-	while (tab[n])
+	ft_add_node(&cmds, tab, 0);
+/*	while (tab[n])
 	{
 		if (n > 0)
 			btree_add_node(&cmds, btree_create_node(
-							   ft_new_node(FALSE, NULL, FALSE, FALSE)), &ft_false_node);
+					ft_new_node(FALSE, NULL, FALSE, FALSE)), &ft_false_node);
 		ft_parsing_multicmd(&cmds, tab[n++]);
-	}
+	}*/
 	ft_free_tab(tab);
 	btree_apply_infix(cmds, &ft_display);
+	return (cmds);
+}
+
+t_btree			*ft_parsing(char *str, t_sys *sys)
+{
+	t_btree		*cmds;
+//	char		*new;
+
+	if (!str)
+		return (NULL);
+	cmds = ft_parsing_line(str, sys);
 	return (cmds);
 }

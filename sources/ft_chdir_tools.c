@@ -45,7 +45,7 @@ int			ft_set_pwd(char ***env, char *str)
 {
 	char	**pwd;
 
-	if ((pwd = ft_strsplit((*env)[ft_fpath((*env), "PWD")], "=")) == NULL)
+	if ((pwd = ft_strsplit((*env)[ft_fpath((*env), "PWD=")], "=")) == NULL)
 	{
 		ft_error(ERROR_ALLOC);
 		return (FALSE);

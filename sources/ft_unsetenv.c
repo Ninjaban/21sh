@@ -52,7 +52,7 @@ static void		ft_init_pwd(char ***env)
 	char		*path;
 	char		*tmp;
 
-	if ((tmp = ft_getenv((*env), "HOME")) == NULL)
+	if ((tmp = ft_getenv((*env), "HOME=")) == NULL)
 		return ;
 	path = ft_strjoin("PWD=", tmp);
 	free(tmp);

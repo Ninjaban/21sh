@@ -22,7 +22,7 @@ static int	ft_history_file(char **env, int flag)
 
 	if (!env)
 		return (-1);
-	if ((tmp = ft_getenv(env, "HOME")) == NULL)
+	if ((tmp = ft_getenv(env, "HOME=")) == NULL)
 		return (-1);
 	if ((path = ft_strjoin(tmp, "/.42sh_history")) == NULL)
 	{

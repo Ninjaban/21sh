@@ -19,9 +19,9 @@ static int	ft_check_env(char **env)
 {
 	if (!env || !(env[0]))
 		return (FALSE);
-	if (ft_fpath(env, "PWD") == ft_tablen(env))
+	if (ft_fpath(env, "PWD=") == ft_tablen(env))
 		return (FALSE);
-	if (ft_fpath(env, "HOME") == ft_tablen(env))
+	if (ft_fpath(env, "HOME=") == ft_tablen(env))
 		return (FALSE);
 	return (TRUE);
 }

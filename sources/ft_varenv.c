@@ -17,6 +17,7 @@
 static char	*ft_getvalue(char *str, char **env)
 {
 	char	*value;
+	char	*tmp;
 	char	c;
 	int		n;
 
@@ -25,7 +26,9 @@ static char	*ft_getvalue(char *str, char **env)
 		n = n + 1;
 	c = str[n];
 	str[n] = '\0';
-	value = ft_getenv(env, str);
+	tmp = ft_strjoin(str, "=");
+	value = ft_getenv(env, tmp);
+	free(tmp);
 	str[n] = c;
 	return (value);
 }

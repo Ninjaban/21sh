@@ -54,7 +54,7 @@ static int	ft_init_chdir_path(char **tab, char ***env)
 	char	**path;
 
 	n = -1;
-	if ((path = ft_strsplit((*env)[ft_fpath((*env), "PWD")], "=")) == NULL)
+	if ((path = ft_strsplit((*env)[ft_fpath((*env), "PWD=")], "=")) == NULL)
 	{
 		ft_error(ERROR_ALLOC);
 		return (FALSE);
@@ -75,12 +75,12 @@ static int	ft_old(char ***env)
 {
 	char	**old;
 
-	if (ft_fpath((*env), "OLDPWD") == ft_tablen((*env)))
+	if (ft_fpath((*env), "OLDPWD=") == ft_tablen((*env)))
 	{
 		ft_error(ERROR_ENV);
 		return (FALSE);
 	}
-	if ((old = ft_strsplit((*env)[ft_fpath((*env), "OLDPWD")], "=")) == NULL)
+	if ((old = ft_strsplit((*env)[ft_fpath((*env), "OLDPWD=")], "=")) == NULL)
 	{
 		ft_error(ERROR_ALLOC);
 		return (FALSE);
@@ -99,13 +99,13 @@ int			ft_chdir(char ***env, char *str)
 {
 	char		**tab;
 
-	if (ft_fpath(*env, "PWD") == ft_tablen(*env))
+	if (ft_fpath(*env, "PWD=") == ft_tablen(*env))
 	{
 		ft_error(ERROR_ENV);
 		return (FALSE);
 	}
 	if (!str)
-		return (ft_chdir_path(ft_getenv(*env, "HOME"), &(*env)));
+		return (ft_chdir_path(ft_getenv(*env, "HOME="), &(*env)));
 	if (ft_strcmp(str, "-") == 0)
 		return (ft_old(&(*env)));
 	if (str[0] == '/')

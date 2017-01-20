@@ -18,7 +18,7 @@
 */
 
 # define NAME "Minishell"
-# define PROMPT "\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m) => "
+# define PROMPT "\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)\n"
 # define HISTORY_SIZE 1000
 # define FALSE 0
 # define TRUE 1

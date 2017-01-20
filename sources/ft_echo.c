@@ -22,15 +22,7 @@ void		ft_echo(char **argv, char **env)
 	n = 1;
 	while (argv[n])
 	{
-		if (argv[n][0] == '$')
-		{
-			tmp = ft_getenv(env, argv[n] + 1);
-			if (tmp)
-				ft_putstr(tmp);
-			free(tmp);
-		}
-		else
-			ft_putstr(argv[n]);
+		ft_putstr(argv[n]);
 		if (argv[++n])
 			ft_putstr(" ");
 	}

@@ -77,7 +77,7 @@ static char		*ft_tild_new(char **tab, char **env)
 	new = ft_strdup(tab[0]);
 	while (tab[++n])
 	{
-		genv = ft_getenv(env, "HOME");
+		genv = ft_getenv(env, "HOME=");
 		tmp = ft_strjoin(new, genv);
 		free(genv);
 		free(new);
@@ -103,7 +103,7 @@ char			*ft_tild(char *str, char **env)
 	}
 	new = ft_tild_new(tab, env);
 	tmp = (str[ft_strlen(str) - 1] == '~') ?
-		ft_strjoin(new, ft_getenv(env, "HOME")) : ft_strdup(new);
+		ft_strjoin(new, ft_getenv(env, "HOME=")) : ft_strdup(new);
 	free(new);
 	new = tmp;
 	ft_free_tab(tab);

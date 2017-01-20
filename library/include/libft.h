@@ -86,6 +86,7 @@ char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
 char				*ft_itoa(int n);
 char				*ft_revstr(char *str);
+char				**ft_explode(char const *s, char const *c);
 char				**ft_strsplit(char const *s, char const *c);
 char				*ft_revstr(char *str);
 size_t				ft_tablen(char **tab);

@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/16 09:04:55 by jcarra            #+#    #+#              #
-#    Updated: 2017/01/20 14:37:31 by jcarra           ###   ########.fr        #
+#    Updated: 2017/01/20 14:37:01 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -85,6 +85,7 @@ all		:		$(NAME)
 				@$(ECHO) '\033[32m>\033[0m $(NAME) : [\033[34mAll\033[0m] ->\033[32m	Ready\n\033[0m'
 
 $(NAME)	:		.libft .hide
+				@$(MAKE) $(DIRLIB)
 				$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) $(LFLAGS)
 
 .hide	:		$(OBJS)
