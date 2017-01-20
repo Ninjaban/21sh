@@ -5,39 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2016/11/16 09:04:55 by jcarra            #+#    #+#              #
-#    Updated: 2017/01/20 14:37:31 by jcarra           ###   ########.fr        #
+#    Created: 2017/01/20 15:07:26 by jcarra            #+#    #+#              #
+#    Updated: 2017/01/20 15:23:14 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME		=	21sh
-
-#SRC			=	ft_glob.c \
-				ft_completion.c \
-				ft_varenv.c \
-				ft_sys.c \
-				ft_delchar.c \
-				ft_unalias.c \
-				ft_alias.c \
-				ft_history.c \
-				ft_prompt_path.c \
-				ft_prompt.c \
-				ft_chdir_tools.c \
-				ft_chdir.c \
-				ft_unsetenv.c \
-				ft_setenv.c \
-				ft_env.c \
-				ft_echo.c \
-				ft_path.c \
-				ft_access.c \
-				ft_exec.c \
-				ft_gestion_error.c \
-				ft_error.c \
-				ft_free.c \
-				ft_parsing_tools.c \
-				ft_parsing.c \
-				ft_shell.c \
-				ft_main.c
 
 SRC			=	match.c \
 				ft_completion.c \
@@ -67,12 +40,11 @@ DIRINC		=	include/
 DIRLIB		=	library/
 
 SRCS		=	$(SRC:%=$(DIRSRC)%)
-OBJS		=	$(SRC:.c=.o)
 LIBS		=	$(LIB:%=$(DIRLIB)%)
 
 OBJS		=	$(SRCS:.c=.o)
 
-CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC) -g3
+CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC)
 LFLAGS		=	-lncurses
 
 CC			=	gcc
@@ -85,7 +57,7 @@ all		:		$(NAME)
 				@$(ECHO) '\033[32m>\033[0m $(NAME) : [\033[34mAll\033[0m] ->\033[32m	Ready\n\033[0m'
 
 $(NAME)	:		.libft .hide
-				$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) $(LFLAGS)
+				@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) $(LFLAGS)
 
 .hide	:		$(OBJS)
 				@touch .hide
