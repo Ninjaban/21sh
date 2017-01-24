@@ -14,25 +14,12 @@
 #include "shell.h"
 #include "error.h"
 
-static void	ft_exec_child(t_sys *sys)
-{
-/*	char	*cmd;
-
-	if ((cmd = ft_access(cmds->name, sys->env)) != NULL)
-	{
-		if (execve(cmd, cmds->argv, sys->env) == -1)
-			ft_error(ERROR_EXEC);
-		free(cmd);
-	}
-	exit(0);*/
-}
-
 static int	ft_builtins(t_cmd *cmds, t_sys **sys)
 {
 	if (ft_strcmp(cmds->name, "echo") == 0)
 		ft_echo(cmds->argv, (*sys)->env);
 	else if ((ft_strcmp(cmds->name, "setenv") == 0) ||
-			(ft_strcmp(cmds->name, "export") == 0))
+			 (ft_strcmp(cmds->name, "export") == 0))
 		ft_setenv(cmds->argv[1], &((*sys)->env), FALSE);
 	else if (ft_strcmp(cmds->name, "unsetenv") == 0)
 		ft_unsetenv(&((*sys)->env), cmds->argv[1]);
@@ -47,6 +34,19 @@ static int	ft_builtins(t_cmd *cmds, t_sys **sys)
 	else
 		return (FALSE);
 	return (TRUE);
+}
+
+static void	ft_exec_child(t_sys *sys)
+{
+/*	char	*cmd;
+
+	if ((cmd = ft_access(cmds->name, sys->env)) != NULL)
+	{
+		if (execve(cmd, cmds->argv, sys->env) == -1)
+			ft_error(ERROR_EXEC);
+		free(cmd);
+	}
+	exit(0);*/
 }
 
 void		ft_exec_node(void *root)

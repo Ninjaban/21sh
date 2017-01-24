@@ -181,7 +181,7 @@ void			ft_parse_parenthesis(char **str, char c, char r)
 			n = n + 1;
 	}
 }
-/*
+
 static void		ft_parenthesis_undo(char ***tab)
 {
 	size_t		n;
@@ -200,13 +200,13 @@ static void		ft_parenthesis_undo(char ***tab)
 		n = n + 1;
 	}
 }
-*/
+
 static t_cmd	*ft_parsecmd(char *str)
 {
 	t_cmd		*cmd;
 	char		**tab;
 
-//	ft_parse_parenthesis(&str, ' ', '\a');
+	ft_parse_parenthesis(&str, ' ', '\a');
 	if ((tab = ft_strsplit(str, " \t")) == NULL || !tab[0])
 		return (NULL);
 	if ((cmd = malloc(sizeof(t_cmd))) == NULL)
@@ -216,7 +216,7 @@ static t_cmd	*ft_parsecmd(char *str)
 	}
 	cmd->name = NULL;
 	cmd->argv = NULL;
-//	ft_parenthesis_undo(&tab);
+	ft_parenthesis_undo(&tab);
 	if ((cmd->name = ft_strdup(tab[0])) == NULL)
 	{
 		ft_free_tab(tab);
@@ -403,11 +403,15 @@ static void		ft_init_node(t_btree **cmds, char *str, int fd)
 static void		ft_parsing_multicmd(t_btree **cmds, char *str)
 {
 	size_t		n;
+	char		change;
 
 	n = ft_strlen(str);
+	change = TRUE;
 	while (n > 0)
 	{
-		if (str[n] == '|' || str[n] == '<' || str[n] == '>')
+		if (str[n] == '\"' || str[n] == '\'')
+			change = (change == TRUE) ? FALSE : TRUE;
+		if (change == TRUE && (str[n] == '|' || str[n] == '<' || str[n] == '>'))
 		{
 			if (n > 0 && (str[n - 1] == '<' || str[n - 1] == '>'))
 				n = n - 1;
@@ -451,6 +455,7 @@ static void		ft_add_node(t_btree **cmds, char **tab, int n)
 		if (n > 0)
 			btree_add_node(&(*cmds), btree_create_node(
 					ft_new_node(FALSE, NULL, FALSE, FALSE)), &ft_false_node);
+		ft_tild_file(&(tab[n]), '\a', ';');
 		ft_parsing_multicmd(&(*cmds), tab[n]);
 		ft_add_node(&(*cmds), tab, n + 1);
 	}
@@ -463,10 +468,11 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	char		*tmp;
 
 	tmp = ft_tild(ft_varenv(str, sys->env), sys->env);
-//	ft_tild_file(&str, '\a', '~');
+	ft_tild_file(&tmp, ';', '\a');
 	if ((tab = ft_strsplit(tmp, ";")) == NULL)
 	{
 		free(str);
+		free(tmp);
 		return (NULL);
 	}
 	free(str);
