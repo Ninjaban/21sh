@@ -48,6 +48,7 @@ static void	*ft_exec_node(t_btree *root, t_sys **sys)
 	pid_t	child;
 
 	node = root;
+	pipe(pdes);
 	if ((child = fork) == -1)
 		return (ERROR_FORK);
 	if (child == 0)
