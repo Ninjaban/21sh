@@ -54,13 +54,17 @@ char			*ft_check_alias(char *str, t_alias *alias)
 void			ft_tild_file(char **str, char c, char r)
 {
 	size_t		n;
+	char		change;
 
 	n = 0;
+	change = TRUE;
 	if (!str || !(*str))
 		return ;
 	while ((*str)[n])
 	{
-		if ((*str)[n] == c && n > 0 && ft_isalnum((*str)[n - 1]) == 1)
+		if ((*str)[n] == '\"' || (*str)[n] == '\'')
+			change = (change == TRUE) ? FALSE : TRUE;
+		if ((*str)[n] == c && (change == FALSE || (n > 0 && ft_isalnum((*str)[n - 1]) == 1)))
 			(*str)[n] = r;
 		n = n + 1;
 	}
@@ -106,8 +110,8 @@ char			*ft_tild(char *str, char **env)
 		ft_strjoin(new, ft_getenv(env, "HOME=")) : ft_strdup(new);
 	free(new);
 	new = tmp;
-	ft_free_tab(tab);
 	ft_tild_file(&new, '\a', '~');
+	ft_free_tab(tab);
 	free(str);
 	return (new);
 }

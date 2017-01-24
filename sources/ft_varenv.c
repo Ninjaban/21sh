@@ -52,19 +52,28 @@ char		*ft_varenv(char *str, char **env)
 	char	*cpy;
 	char	*tmp;
 	char	*new;
+	char	change;
 
 	new = NULL;
 	cpy = str;
-	while ((tmp = ft_strchr(cpy, '$')) != NULL)
+	tmp = str;
+	change = TRUE;
+	while (*tmp)
 	{
-		*tmp = '\0';
-		new = ft_init_join(new, ft_strdup(cpy));
-		*tmp = '$';
-		new = ft_init_join(new, ft_getvalue(++tmp, env));
-		cpy = tmp;
-		cpy++;
-		while (ft_isalnum(*cpy) == 1)
-			cpy++;
+		if (*tmp == '\'')
+			change = (change == TRUE) ? FALSE : TRUE;
+		if (*tmp == '$' && change == TRUE)
+		{
+			*tmp = '\0';
+			new = ft_init_join(new, ft_strdup(cpy));
+			*tmp = '$';
+			new = ft_init_join(new, ft_getvalue(++tmp, env));
+			while (ft_isalnum(*tmp) == 1)
+				tmp++;
+			cpy = tmp;
+		}
+		else
+			tmp++;
 	}
 	new = ft_init_join(new, ft_strdup(cpy));
 	return (new);

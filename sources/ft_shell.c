@@ -57,10 +57,10 @@ static void	ft_check_parenthesis(t_sys **sys, char **str)
 			((ft_parse_parenthesis_open((*str) + n + 1,
 				((*str)[n] == '\"') ? 0 : 1) == FALSE)))
 		{
-			ft_putstr("<quotes> ");
+			ft_putstr("<quotes>\n");
 			if (ft_read(&tmp, &(*sys)) == FALSE)
 				ft_error(ERROR_READ);
-			new = ft_strjoin("'\\n'", tmp);
+			new = ft_strjoin(((*str)[n] == '\"') ? "'\\n'" : "\\n", tmp);
 			free(tmp);
 			tmp = ft_strjoin(*str, new);
 			free(new);

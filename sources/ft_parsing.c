@@ -463,8 +463,8 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	char		*tmp;
 
 	tmp = ft_tild(ft_varenv(str, sys->env), sys->env);
-	ft_tild_file(&str, '\a', '~');
-	if ((tab = ft_strsplit((tmp == NULL) ? str : tmp, ";")) == NULL)
+//	ft_tild_file(&str, '\a', '~');
+	if ((tab = ft_strsplit(tmp, ";")) == NULL)
 	{
 		free(str);
 		return (NULL);
