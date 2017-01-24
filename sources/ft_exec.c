@@ -36,30 +36,43 @@ static int	ft_builtins(t_cmd *cmds, t_sys **sys)
 	return (TRUE);
 }
 
-static void	ft_exec_child(t_sys *sys)
+static void	ft_exec_child(t_btree *root, t_sys **sys, int pdes[2])
 {
-/*	char	*cmd;
 
-	if ((cmd = ft_access(cmds->name, sys->env)) != NULL)
-	{
-		if (execve(cmd, cmds->argv, sys->env) == -1)
-			ft_error(ERROR_EXEC);
-		free(cmd);
-	}
-	exit(0);*/
 }
 
-void		ft_exec_node(void *root)
+static void	*ft_exec_node(t_btree *root, t_sys **sys)
 {
 	t_btree	*node;
 	int		pdes[2];
+	pid_t	child;
 
-	node = (t_btree *)root;
+	node = root;
+	if ((child = fork) == -1)
+		return (ERROR_FORK);
+	if (child == 0)
+		ft_exec_child(root->left, &(*sys), pdes);
 }
 
 void		*ft_exec(t_sys **sys)
 {
-	btree_apply_infix((*sys)->cmds, &ft_exec_node);
+	t_btree	*node;
+	pid_t	child;
+
+	node = (*sys)->cmds;
+	while (node)
+	{
+		if ((child = fork) == -1)
+			return (ERROR_FORK);
+		if (child == 0)
+		{
+			ft_exec_node(node->left, &(*sys));
+			ft_error(ERROR_EXEC);
+			exit(1);
+		}
+		wait(NULL);
+		node = node->right;
+	}
 	return (NULL);
 }
 /*
