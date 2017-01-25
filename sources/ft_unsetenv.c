@@ -44,7 +44,6 @@ static void		ft_del_line(char ***env, size_t i)
 	tab[j] = NULL;
 	ft_free_tab(*env);
 	(*env) = tab;
-	ft_putendl("L'environement a été modifiée.");
 }
 
 static void		ft_init_pwd(char ***env)
@@ -65,7 +64,7 @@ void			ft_unsetenv(char ***env, char *str)
 	size_t		n;
 
 	if ((n = ft_find_path(*env, str)) == ft_tablen(*env))
-		ft_putendl("Variable non trouvé.");
+		ft_putendl_fd("Variable non trouvé.", 2);
 	else if (ft_strcmp(str, "PWD") == 0)
 		ft_init_pwd(&(*env));
 	else if (ft_strcmp(str, "HOME") != 0)

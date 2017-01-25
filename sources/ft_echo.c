@@ -14,10 +14,9 @@
 #include "shell.h"
 #include "error.h"
 
-void		ft_echo(char **argv, char **env)
+void		ft_echo(char **argv)
 {
 	size_t	n;
-	char	*tmp;
 
 	n = 1;
 	while (argv[n])

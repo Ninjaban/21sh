@@ -25,4 +25,6 @@
 # define ERROR_RC "Erreur lors du traitement du ~/.42shrc."
 # define ERROR_HISTORY "Erreur lors du traitement de l'historique."
 
+void			ft_error(char *error);
+
 #endif

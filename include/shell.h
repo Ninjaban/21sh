@@ -30,6 +30,9 @@
 # define REDIR_L 4
 # define CONCAT_L 5
 
+# define PIPE_OUT 0
+# define PIPE_IN 1
+
 /*
 **	Includes
 */
@@ -84,7 +87,6 @@ typedef struct	s_sys
 **	Functions
 */
 
-void			ft_error(char *error);
 void			ft_free_tab(char **t);
 void			ft_free_cmds(t_cmd **cmds);
 void			ft_shell(t_sys *sys, int exit);
@@ -96,7 +98,6 @@ void			ft_tild_file(char **str, char c, char r);
 void			ft_sys_free(t_sys *sys);
 void			ft_parse_parenthesis(char **str, char c, char r);
 void			*ft_gestion_error(char *str);
-void			*ft_exec(t_sys **sys);
 char			ft_delchar(char **str, size_t n);
 int				ft_sys_init(t_sys **sys);
 int				ft_access_dir(char *path);
@@ -120,20 +121,30 @@ char			**ft_getpath(char **env);
 size_t			ft_fpath(char **env, char *str);
 
 /*
+**	Parsing
+*/
+
+int				ft_true_node(void *root, void *item);
+int				ft_false_node(void *root, void *item);
+t_btree			*ft_parsing_line(char *str, t_sys *sys);
+t_btree			*ft_parsing(char *str, t_sys *sys);
+
+/*
+**	Exec
+*/
+
+void			*ft_exec_node(t_btree *root, t_sys **sys);
+void			*ft_exec(t_sys **sys);
+
+/*
 **	Builtins
 */
 
-void			ft_echo(char **argv, char **env);
+void			ft_echo(char **argv);
 void			ft_env(char **env);
 void			ft_unsetenv(char ***env, char *str);
 void			ft_setenv(char *str, char ***env, int b);
 int				ft_chdir(char ***env, char *str);
-
-void			ft_display(void *node);
-int				ft_cmp_node(void *tree, void *node);
-t_btree			*ft_parsing(char *str, t_sys *sys);
-int				ft_false_node(void *root, void *item);
-int				ft_true_node(void *root, void *item);
 
 /*
 **	Auto-completion
@@ -143,5 +154,8 @@ void			ft_completion(char **str, size_t pos, char **env, char dassault);
 void			ft_removecompl(char **str);
 char			ft_checkcompl(char *str);
 int				match(char *s1, char *s2);
+
+
+void			ft_display(void *node);
 
 #endif

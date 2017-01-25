@@ -488,6 +488,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	}*/
 	ft_free_tab(tab);
 	btree_apply_infix(cmds, &ft_display);
+	ft_putendl("");
 	return (cmds);
 }
 

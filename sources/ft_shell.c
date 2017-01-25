@@ -88,7 +88,6 @@ static int	ft_launcher(t_sys **sys, char **str)
 	{
 		free(tmp);
 		ft_check_parenthesis(&(*sys), &(*str));
-		ft_putendl(*str);
 		if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
 			ft_error(ERROR_HISTORY);
 		else if ((tmp = ft_gestion_error(*str)) != NULL)
@@ -155,7 +154,7 @@ static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 void		ft_shell(t_sys *sys, int exit)
 {
 	char	*str;
-/*	char	*tmp;*/
+	char	*tmp;
 
 	if (ft_history_init(&sys->history, sys->env) == FALSE)
 	{
@@ -167,8 +166,7 @@ void		ft_shell(t_sys *sys, int exit)
 	while (exit == FALSE)
 	{
 		ft_termcaps_change(&sys->term_new);
-		ft_launcher(&sys, &str);
-		/*
+//		ft_launcher(&sys, &str);
 		if (ft_launcher(&sys, &str) == TRUE)
 		{
 			ft_termcaps_change(&sys->term_save);
@@ -180,7 +178,6 @@ void		ft_shell(t_sys *sys, int exit)
 					exit = TRUE;
 			}
 		}
-		*/
 /*		ft_free(&(sys->cmds), &str);*/
 	}
 }

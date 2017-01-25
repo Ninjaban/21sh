@@ -17,7 +17,7 @@
 static int	ft_builtins(t_cmd *cmds, t_sys **sys)
 {
 	if (ft_strcmp(cmds->name, "echo") == 0)
-		ft_echo(cmds->argv, (*sys)->env);
+		ft_echo(cmds->argv);
 	else if ((ft_strcmp(cmds->name, "setenv") == 0) ||
 			 (ft_strcmp(cmds->name, "export") == 0))
 		ft_setenv(cmds->argv[1], &((*sys)->env), FALSE);
@@ -36,11 +36,47 @@ static int	ft_builtins(t_cmd *cmds, t_sys **sys)
 	return (TRUE);
 }
 
-static void	ft_exec_child(t_btree *root, t_sys **sys, int pdes[2])
+static void	ft_exec_child(t_node *node, t_sys **sys)
 {
+	char	*name;
 
+	if ((ft_builtins(node->cmd, &(*sys)) == FALSE) && (name = ft_access(node->cmd->name, (*sys)->env)) != NULL)
+		if (execve(name, node->cmd->argv, (*sys)->env) == -1)
+			ft_error(ERROR_EXEC);
+	exit(1);
 }
 
+static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
+{
+	t_node	*node;
+	pid_t	child;
+	int		pdes[2];
+
+	pipe(pdes);
+	node = (t_node *)(root->item);
+	if ((child = fork()) == -1)
+		return (ERROR_FORK);
+	if (child == 0)
+	{
+		if (node->redir == PIPE)
+		{
+			ft_putendl("ls");
+			dup2(pdes[PIPE_IN], STDOUT_FILENO);
+			close(pdes[PIPE_OUT]);
+			ft_exec_node(root->left, &(*sys));
+		}
+	}
+	else if (node->redir == PIPE)
+	{
+		ft_putendl("cat");
+		dup2(pdes[PIPE_OUT], STDIN_FILENO);
+		close(pdes[PIPE_IN]);
+	}
+	ft_exec_child(root->right->item, &(*sys));
+	return (NULL);
+}
+
+/*
 static void	*ft_exec_node(t_btree *root, t_sys **sys)
 {
 	t_btree	*node;
@@ -49,25 +85,42 @@ static void	*ft_exec_node(t_btree *root, t_sys **sys)
 
 	node = root;
 	pipe(pdes);
-	if ((child = fork) == -1)
-		return (ERROR_FORK);
-	if (child == 0)
-		ft_exec_child(root->left, &(*sys), pdes);
+    if (((t_node *)(node->left->item))->redir != FALSE)
+    {
+        if ((child = fork) == -1)
+            return (ERROR_FORK);
+        if (child == 0)
+            ft_exec_node(root->left, &(*sys), pdes);
+    }
+}
+*/
+
+void		*ft_exec_node(t_btree *root, t_sys **sys)
+{
+	char	*tmp;
+
+	if (((t_node *)(root->item))->redir == FALSE)
+		ft_exec_child(root->item, &(*sys));
+	else if ((tmp = ft_exec_rdr(root, &(*sys))) != NULL)
+		return (tmp);
+	return (NULL);
 }
 
 void		*ft_exec(t_sys **sys)
 {
 	t_btree	*node;
 	pid_t	child;
+	char	*tmp;
 
 	node = (*sys)->cmds;
 	while (node)
 	{
-		if ((child = fork) == -1)
+		if ((child = fork()) == -1)
 			return (ERROR_FORK);
 		if (child == 0)
 		{
-			ft_exec_node(node->left, &(*sys));
+			if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
+				return (tmp);
 			ft_error(ERROR_EXEC);
 			exit(1);
 		}
