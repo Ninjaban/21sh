@@ -33,6 +33,9 @@
 # define PIPE_OUT 0
 # define PIPE_IN 1
 
+# define LEFT 0
+# define RIGHT 1
+
 /*
 **	Includes
 */

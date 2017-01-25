@@ -46,6 +46,15 @@ static void	ft_exec_child(t_node *node, t_sys **sys)
 	exit(1);
 }
 
+static void ft_init_redir(t_node *node, int pdes[2], char way)
+{
+    if (node->redir == PIPE || node->redir == REDIR_R || node->redir == CONCAT_R)
+    {
+        dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT], (way == LEFT) ? STDOUT_FILENO : STDIN_FILENO);
+        close(pdes[(way == LEFT) ? PIPE_OUT : PIPE_IN]);
+    }
+}
+
 static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
 {
 	t_node	*node;
@@ -58,20 +67,11 @@ static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
 		return (ERROR_FORK);
 	if (child == 0)
 	{
-		if (node->redir == PIPE)
-		{
-			ft_putendl("ls");
-			dup2(pdes[PIPE_IN], STDOUT_FILENO);
-			close(pdes[PIPE_OUT]);
-			ft_exec_node(root->left, &(*sys));
-		}
+        ft_init_redir(node, pdes, LEFT);
+        ft_exec_node(root->left, &(*sys));
+        exit(1);
 	}
-	else if (node->redir == PIPE)
-	{
-		ft_putendl("cat");
-		dup2(pdes[PIPE_OUT], STDIN_FILENO);
-		close(pdes[PIPE_IN]);
-	}
+    ft_init_redir(node, pdes, RIGHT);
 	ft_exec_child(root->right->item, &(*sys));
 	return (NULL);
 }
