@@ -47,30 +47,28 @@ static void	ft_exec_child(t_node *node, t_sys **sys)
 	exit(1);
 }
 
-#include <stdio.h>
 
 static void	ft_exec_file(t_node *node, char redir)
 {
 	char	*name;
 	char	*line;
-	int		fd;
 	int		flags;
+	int		fd;
 
 	flags = 0;
 	name = ft_strjoin("./", node->cmd->name);
-	ft_putendl(name);
 	if (access(name, F_OK) == 0)
 		flags = (redir == REDIR_R) ? O_TRUNC : O_APPEND;
 	if ((fd = open(name, O_WRONLY | O_CREAT | flags, 0644)) == -1)
 	{
 		free(name);
-		perror("21sh");
 		ft_error(ERROR_NOTFOUND);
 		return;
 	}
 	free(name);
 	while (get_next_line(0, &line) == 1)
 		ft_putendl_fd(line, fd);
+	exit(1);
 }
 
 static void ft_init_redir(t_node *node, int pdes[2], char way)
