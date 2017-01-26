@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -514,17 +514,17 @@ CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o: ../library/Part\ 1/ft_atoi.c
+CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o: ../library/Part_1/ft_atoi.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_atoi.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_atoi.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_atoi.c" > CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_atoi.c > CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_atoi.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_atoi.c -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o.requires:
 
@@ -538,17 +538,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o.provides.build: CMakeFiles/21sh.d
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o: ../library/Part\ 1/ft_isalnum.c
+CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o: ../library/Part_1/ft_isalnum.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalnum.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalnum.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalnum.c" > CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalnum.c > CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalnum.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalnum.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o.requires:
 
@@ -562,17 +562,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o: ../library/Part\ 1/ft_isalpha.c
+CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o: ../library/Part_1/ft_isalpha.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalpha.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalpha.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalpha.c" > CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalpha.c > CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalpha.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalpha.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o.requires:
 
@@ -586,17 +586,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o: ../library/Part\ 1/ft_isascii.c
+CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o: ../library/Part_1/ft_isascii.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isascii.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isascii.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isascii.c" > CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isascii.c > CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isascii.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isascii.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o.requires:
 
@@ -610,17 +610,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o: ../library/Part\ 1/ft_isdigit.c
+CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o: ../library/Part_1/ft_isdigit.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isdigit.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isdigit.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isdigit.c" > CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isdigit.c > CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isdigit.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isdigit.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o.requires:
 
@@ -634,17 +634,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o: ../library/Part\ 1/ft_isprint.c
+CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o: ../library/Part_1/ft_isprint.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isprint.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isprint.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isprint.c" > CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isprint.c > CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isprint.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isprint.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o.requires:
 
@@ -658,17 +658,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o: ../library/Part\ 1/ft_strchr.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o: ../library/Part_1/ft_strchr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strchr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strchr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strchr.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strchr.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o.requires:
 
@@ -682,17 +682,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o: ../library/Part\ 1/ft_strcmp.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o: ../library/Part_1/ft_strcmp.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strcmp.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strcmp.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strcmp.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strcmp.c > CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strcmp.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strcmp.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o.requires:
 
@@ -706,17 +706,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o: ../library/Part\ 1/ft_strdup.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o: ../library/Part_1/ft_strdup.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strdup.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strdup.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strdup.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strdup.c > CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strdup.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strdup.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o.requires:
 
@@ -730,17 +730,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o: ../library/Part\ 1/ft_strlchr.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o: ../library/Part_1/ft_strlchr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlchr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlchr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlchr.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlchr.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o.requires:
 
@@ -754,17 +754,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o: ../library/Part\ 1/ft_strlen.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o: ../library/Part_1/ft_strlen.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlen.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlen.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlen.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlen.c > CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlen.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlen.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o.requires:
 
@@ -778,17 +778,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o: ../library/Part\ 1/ft_strncmp.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o: ../library/Part_1/ft_strncmp.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strncmp.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strncmp.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strncmp.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strncmp.c > CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strncmp.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strncmp.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o.requires:
 
@@ -802,17 +802,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o: ../library/Part\ 1/ft_strnstr.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o: ../library/Part_1/ft_strnstr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strnstr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strnstr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strnstr.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strnstr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strnstr.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strnstr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o.requires:
 
@@ -826,17 +826,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o: ../library/Part\ 1/ft_strrchr.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o: ../library/Part_1/ft_strrchr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strrchr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strrchr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strrchr.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strrchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strrchr.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strrchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o.requires:
 
@@ -850,17 +850,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o: ../library/Part\ 1/ft_strstr.c
+CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o: ../library/Part_1/ft_strstr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strstr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strstr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strstr.c" > CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strstr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strstr.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strstr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o.requires:
 
@@ -874,17 +874,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o: ../library/Part\ 1/ft_tolower.c
+CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o: ../library/Part_1/ft_tolower.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_tolower.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_tolower.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_tolower.c" > CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_tolower.c > CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_tolower.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_tolower.c -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o.requires:
 
@@ -898,17 +898,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o: ../library/Part\ 1/ft_toupper.c
+CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o: ../library/Part_1/ft_toupper.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_toupper.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_toupper.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_toupper.c" > CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_toupper.c > CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_toupper.c" -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_1/ft_toupper.c -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o.requires:
 
@@ -922,17 +922,17 @@ CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o: ../library/Part\ 2/ft_itoa.c
+CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o: ../library/Part_2/ft_itoa.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_itoa.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_itoa.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_itoa.c" > CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_itoa.c > CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_itoa.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_itoa.c -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o.requires:
 
@@ -946,17 +946,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o.provides.build: CMakeFiles/21sh.d
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o: ../library/Part\ 2/ft_memalloc.c
+CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o: ../library/Part_2/ft_memalloc.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memalloc.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memalloc.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memalloc.c" > CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memalloc.c > CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memalloc.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memalloc.c -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o.requires:
 
@@ -970,17 +970,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o.provides.build: CMakeFiles/21
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o: ../library/Part\ 2/ft_memdel.c
+CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o: ../library/Part_2/ft_memdel.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memdel.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memdel.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memdel.c" > CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memdel.c > CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memdel.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memdel.c -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o.requires:
 
@@ -994,17 +994,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o: ../library/Part\ 2/ft_putchar.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o: ../library/Part_2/ft_putchar.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar.c > CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o.requires:
 
@@ -1018,17 +1018,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o: ../library/Part\ 2/ft_putchar_fd.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o: ../library/Part_2/ft_putchar_fd.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar_fd.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar_fd.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar_fd.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o.requires:
 
@@ -1042,17 +1042,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o.provides.build: CMakeFiles/
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o: ../library/Part\ 2/ft_putendl.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o: ../library/Part_2/ft_putendl.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl.c > CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o.requires:
 
@@ -1066,17 +1066,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o: ../library/Part\ 2/ft_putendl_fd.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o: ../library/Part_2/ft_putendl_fd.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl_fd.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl_fd.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl_fd.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o.requires:
 
@@ -1090,17 +1090,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o.provides.build: CMakeFiles/
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o: ../library/Part\ 2/ft_putnbr.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o: ../library/Part_2/ft_putnbr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr.c > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o.requires:
 
@@ -1114,17 +1114,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o: ../library/Part\ 2/ft_putnbr_fd.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o: ../library/Part_2/ft_putnbr_fd.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr_fd.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr_fd.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr_fd.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o.requires:
 
@@ -1138,17 +1138,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o.provides.build: CMakeFiles/2
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o: ../library/Part\ 2/ft_putstr.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o: ../library/Part_2/ft_putstr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr.c > CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o.requires:
 
@@ -1162,17 +1162,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o: ../library/Part\ 2/ft_putstr_fd.c
+CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o: ../library/Part_2/ft_putstr_fd.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr_fd.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr_fd.c" > CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr_fd.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o.requires:
 
@@ -1186,17 +1186,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o.provides.build: CMakeFiles/2
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o: ../library/Part\ 2/ft_revnbr.c
+CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o: ../library/Part_2/ft_revnbr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revnbr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revnbr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revnbr.c" > CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revnbr.c > CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revnbr.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revnbr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o.requires:
 
@@ -1210,17 +1210,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o: ../library/Part\ 2/ft_revstr.c
+CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o: ../library/Part_2/ft_revstr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revstr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revstr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revstr.c" > CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revstr.c > CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revstr.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revstr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o.requires:
 
@@ -1234,17 +1234,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o: ../library/Part\ 2/ft_strclr.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o: ../library/Part_2/ft_strclr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strclr.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strclr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strclr.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strclr.c > CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strclr.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strclr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o.requires:
 
@@ -1258,17 +1258,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o: ../library/Part\ 2/ft_strdel.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o: ../library/Part_2/ft_strdel.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strdel.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strdel.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strdel.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strdel.c > CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strdel.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strdel.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o.requires:
 
@@ -1282,17 +1282,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o: ../library/Part\ 2/ft_strequ.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o: ../library/Part_2/ft_strequ.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strequ.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strequ.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strequ.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strequ.c > CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strequ.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strequ.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o.requires:
 
@@ -1306,17 +1306,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o: ../library/Part\ 2/ft_striter.c
+CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o: ../library/Part_2/ft_striter.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striter.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striter.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striter.c" > CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striter.c > CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striter.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striter.c -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o.requires:
 
@@ -1330,17 +1330,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o: ../library/Part\ 2/ft_striteri.c
+CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o: ../library/Part_2/ft_striteri.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striteri.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striteri.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striteri.c" > CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striteri.c > CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striteri.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striteri.c -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o.requires:
 
@@ -1354,17 +1354,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o.provides.build: CMakeFiles/21
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o: ../library/Part\ 2/ft_strjoin.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o: ../library/Part_2/ft_strjoin.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strjoin.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strjoin.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strjoin.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strjoin.c > CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strjoin.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strjoin.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o.requires:
 
@@ -1378,17 +1378,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o: ../library/Part\ 2/ft_strmap.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o: ../library/Part_2/ft_strmap.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmap.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmap.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmap.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmap.c > CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmap.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmap.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o.requires:
 
@@ -1402,17 +1402,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o: ../library/Part\ 2/ft_strmapi.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o: ../library/Part_2/ft_strmapi.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmapi.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmapi.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmapi.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmapi.c > CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmapi.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmapi.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o.requires:
 
@@ -1426,17 +1426,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o: ../library/Part\ 2/ft_strnequ.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o: ../library/Part_2/ft_strnequ.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnequ.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnequ.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnequ.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnequ.c > CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnequ.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnequ.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o.requires:
 
@@ -1450,17 +1450,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o: ../library/Part\ 2/ft_strnew.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o: ../library/Part_2/ft_strnew.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnew.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnew.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnew.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnew.c > CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnew.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnew.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o.requires:
 
@@ -1474,17 +1474,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o: ../library/Part\ 2/ft_strsplit.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o: ../library/Part_2/ft_strsplit.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsplit.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsplit.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsplit.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsplit.c > CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsplit.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsplit.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o.requires:
 
@@ -1498,17 +1498,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o.provides.build: CMakeFiles/21
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o: ../library/Part\ 2/ft_strsub.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o: ../library/Part_2/ft_strsub.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsub.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsub.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsub.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsub.c > CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsub.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsub.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o.requires:
 
@@ -1522,17 +1522,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o.provides.build: CMakeFiles/21sh
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o: ../library/Part\ 2/ft_strtrim.c
+CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o: ../library/Part_2/ft_strtrim.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strtrim.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strtrim.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strtrim.c" > CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strtrim.c > CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strtrim.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strtrim.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o.requires:
 
@@ -1546,17 +1546,17 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o.provides.build: CMakeFiles/21s
 
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o: ../library/Part\ 2/ft_tablen.c
+CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o: ../library/Part_2/ft_tablen.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o   -c "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_tablen.c"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o   -c /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_tablen.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_tablen.c" > CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_tablen.c > CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_tablen.c" -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/library/Part_2/ft_tablen.c -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o.requires:
 

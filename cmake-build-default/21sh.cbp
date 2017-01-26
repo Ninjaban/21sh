@@ -152,136 +152,136 @@
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/List/ft_list_sort.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_atoi.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_atoi.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalnum.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalnum.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isalpha.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isalpha.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isascii.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isascii.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isdigit.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isdigit.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_isprint.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_isprint.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strchr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strchr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strcmp.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strcmp.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strdup.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strdup.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlchr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlchr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strlen.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strlen.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strncmp.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strncmp.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strnstr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strnstr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strrchr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strrchr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_strstr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_strstr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_tolower.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_tolower.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 1/ft_toupper.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_1/ft_toupper.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_itoa.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_itoa.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memalloc.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memalloc.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_memdel.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_memdel.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putchar_fd.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putchar_fd.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putendl_fd.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putendl_fd.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putnbr_fd.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putnbr_fd.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_putstr_fd.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_putstr_fd.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revnbr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revnbr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_revstr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_revstr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strclr.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strclr.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strdel.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strdel.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strequ.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strequ.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striter.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striter.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_striteri.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_striteri.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strjoin.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strjoin.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmap.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmap.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strmapi.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strmapi.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnequ.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnequ.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strnew.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strnew.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsplit.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsplit.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strsub.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsub.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_strtrim.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strtrim.c">
 			<Option target="21sh"/>
 		</Unit>
-		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part 2/ft_tablen.c">
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_tablen.c">
 			<Option target="21sh"/>
 		</Unit>
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/include/get_next_line.h">
