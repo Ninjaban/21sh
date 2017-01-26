@@ -40,17 +40,46 @@ static void	ft_exec_child(t_node *node, t_sys **sys)
 {
 	char	*name;
 
-	if ((ft_builtins(node->cmd, &(*sys)) == FALSE) && (name = ft_access(node->cmd->name, (*sys)->env)) != NULL)
+	if ((ft_builtins(node->cmd, &(*sys)) == FALSE) && (name = ft_access
+			(node->cmd->name, (*sys)->env)) != NULL)
 		if (execve(name, node->cmd->argv, (*sys)->env) == -1)
 			ft_error(ERROR_EXEC);
 	exit(1);
 }
 
+#include <stdio.h>
+
+static void	ft_exec_file(t_node *node, char redir)
+{
+	char	*name;
+	char	*line;
+	int		fd;
+	int		flags;
+
+	flags = 0;
+	name = ft_strjoin("./", node->cmd->name);
+	ft_putendl(name);
+	if (access(name, F_OK) == 0)
+		flags = (redir == REDIR_R) ? O_TRUNC : O_APPEND;
+	if ((fd = open(name, O_WRONLY | O_CREAT | flags, 0644)) == -1)
+	{
+		free(name);
+		perror("21sh");
+		ft_error(ERROR_NOTFOUND);
+		return;
+	}
+	free(name);
+	while (get_next_line(0, &line) == 1)
+		ft_putendl_fd(line, fd);
+}
+
 static void ft_init_redir(t_node *node, int pdes[2], char way)
 {
-    if (node->redir == PIPE || node->redir == REDIR_R || node->redir == CONCAT_R)
+    if (node->redir == PIPE || node->redir == REDIR_R || node->redir ==
+														CONCAT_R)
     {
-        dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT], (way == LEFT) ? STDOUT_FILENO : STDIN_FILENO);
+        dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT],
+			(way == LEFT) ? STDOUT_FILENO : STDIN_FILENO);
         close(pdes[(way == LEFT) ? PIPE_OUT : PIPE_IN]);
     }
 }
@@ -72,7 +101,11 @@ static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
         exit(1);
 	}
     ft_init_redir(node, pdes, RIGHT);
-	ft_exec_child(root->right->item, &(*sys));
+	if (node->redir != REDIR_R && node->redir != CONCAT_R)
+		ft_exec_child(root->right->item, &(*sys));
+	else
+		ft_exec_file(root->right->item, (node->redir == REDIR_R) ?
+												REDIR_R : CONCAT_R);
 	return (NULL);
 }
 
