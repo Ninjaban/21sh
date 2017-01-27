@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/11 08:15:21 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/27 12:19:25 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -136,7 +136,7 @@ t_btree			*ft_parsing(char *str, t_sys *sys);
 **	Exec
 */
 
-void			*ft_exec_node(t_btree *root, t_sys **sys);
+void			*ft_exec_node(t_btree *root, t_sys **sys, int pdes[2], char way);
 void			*ft_exec(t_sys **sys);
 
 /*

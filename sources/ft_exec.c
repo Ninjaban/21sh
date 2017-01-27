@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/20 11:16:14 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/27 12:21:57 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,27 +128,26 @@ static void	ft_exec_read_file(t_node *node, int pdes[2], char way)
 static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
 {
 	t_node	*node;
-	pid_t	child;
 	int		pdes[2];
 
 	pipe(pdes);
 	node = (t_node *)(root->item);
-	if ((child = fork()) == -1)
-		return (ERROR_FORK);
-	if (child == 0)
-	{
-		if (node->redir == REDIR_L)
-			ft_exec_read_file(root->right->item, pdes, LEFT);
-		else
-			ft_exec_node(root->left, &(*sys), pdes, LEFT);
-	}
 	if (node->redir == REDIR_R || node->redir == CONCAT_R)
+	{
 		ft_exec_file(root->right->item, (node->redir == REDIR_R) ?
 							REDIR_R : CONCAT_R, pdes, RIGHT);
+		ft_exec_node(root->left, &(*sys), pdes, LEFT);
+	}
 	else if (node->redir == REDIR_L)
+	{
+		ft_exec_read_file(root->right->item, pdes, LEFT);
 		ft_exec_node(root->left, &(*sys), pdes, RIGHT);
-	else if ((ft_builtins(node->cmd, &(*sys)) == FALSE)
+	}
+	else if (ft_builtins(node->cmd, &(*sys)) == FALSE)
+	{
 		ft_exec_child(root->right->item, &(*sys), pdes, RIGHT);
+		ft_exec_node(root->left, &(*sys), pdes, LEFT);
+	}
 
 	return (NULL);
 }
@@ -177,8 +176,10 @@ void		*ft_exec_node(t_btree *root, t_sys **sys, int pdes[2], char way)
 	char	*tmp;
 
 	if (((t_node *)(root->item))->redir == FALSE)
-		if (ft_builtins(node->cmd, &(*sys)) == FALSE)
+	{
+		if (ft_builtins(((t_node *)(root->item))->cmd, &(*sys)) == FALSE)
 			ft_exec_child(root->item, &(*sys), pdes, way);
+	}
 	else if ((tmp = ft_exec_rdr(root, &(*sys))) != NULL)
 		return (tmp);
 	return (NULL);
@@ -187,7 +188,6 @@ void		*ft_exec_node(t_btree *root, t_sys **sys, int pdes[2], char way)
 void		*ft_exec(t_sys **sys)
 {
 	t_btree	*node;
-	pid_t	child;
 	char	*tmp;
 
 	node = (*sys)->cmds;
