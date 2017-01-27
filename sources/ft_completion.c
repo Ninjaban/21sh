@@ -190,7 +190,7 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	else if (!list)
 	{
 		list = ft_getexec(ft_getpath(env));
-		ft_list_sort(&list, &ft_strcmp);
+//		ft_list_sort(&list, &ft_strcmp);
 	}
 	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);

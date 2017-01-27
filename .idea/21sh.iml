@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/library/GetNextLine/get_next_line.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/include/libft.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/include/get_next_line.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Btree/btree_add_node.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Btree/btree_apply_suffix.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Btree/btree_apply_infix.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Btree/btree_create_node.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Btree/btree_apply_prefix.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Btree/btree_insert_data.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_striteri.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_tablen.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putstr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strnequ.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_memalloc.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putnbr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strjoin.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strsub.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_itoa.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strmap.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putendl_fd.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putnbr_fd.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putstr_fd.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strdel.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strnew.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strclr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strsplit.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putchar_fd.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_striter.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strtrim.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putendl.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strequ.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_strmapi.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_memdel.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_revstr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_putchar.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_2/ft_revnbr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strncmp.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_isdigit.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strnstr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strrchr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strlchr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strchr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strlen.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strcmp.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_toupper.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_tolower.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_isprint.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_atoi.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strstr.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_isalpha.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_strdup.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_isascii.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Part_1/ft_isalnum.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_push_params.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_push_front.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_push_back.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_sort.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_del.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_reverse.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_at.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_size.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_foreach.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_create_elem.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_clear.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/library/List/ft_list_last.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/terms.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/shell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/error.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pipe.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_shell.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_chdir.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_unalias.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_unsetenv.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_alias.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_path.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_parsing_tools.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_error.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_delchar.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/match.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_prompt.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_read.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_access.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_completion.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_prompt_path.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_history.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_sys.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_setenv.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_env.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_chdir_tools.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_varenv.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_parsing.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_gestion_error.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_exec.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_init.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_free.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/ft_echo.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib64/gcc/x86_64-suse-linux/4.8/include-fixed" />
+          <root url="file:///usr/lib64/gcc/x86_64-suse-linux/4.8/include" />
+          <root url="file:///usr/local/include" />
+          <root url="file:///usr/x86_64-suse-linux/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib64/gcc/x86_64-suse-linux/4.8/include-fixed" />
+          <root url="file:///usr/lib64/gcc/x86_64-suse-linux/4.8/include" />
+          <root url="file:///usr/local/include" />
+          <root url="file:///usr/x86_64-suse-linux/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

@@ -174,16 +174,37 @@ void		*ft_exec(t_sys **sys)
 	node = (*sys)->cmds;
 	while (node)
 	{
-		if ((child = fork()) == -1)
-			return (ERROR_FORK);
-		if (child == 0)
+		if (((t_node *)(node->left->item))->redir == FALSE)
 		{
-			if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
-				return (tmp);
-			ft_error(ERROR_EXEC);
-			exit(1);
+            if (ft_strcmp_case(((t_node *)(node->left->item))->cmd->name,
+                               "exit") == 0)
+                return (EXIT);
+			if (ft_builtins(((t_node *)(node->left->item))->cmd, &(*sys)) ==
+				FALSE)
+			{
+				if ((child = fork()) == -1)
+					return (ERROR_FORK);
+				if (child == 0)
+				{
+					ft_exec_child(node->left->item, &(*sys));
+					exit(1);
+				}
+				wait(NULL);
+			}
 		}
-		wait(NULL);
+		else
+		{
+			if ((child = fork()) == -1)
+				return (ERROR_FORK);
+			if (child == 0)
+			{
+				if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
+					return (tmp);
+				ft_error(ERROR_EXEC);
+				exit(1);
+			}
+			wait(NULL);
+		}
 		node = node->right;
 	}
 	return (NULL);

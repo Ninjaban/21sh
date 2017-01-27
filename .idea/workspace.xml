@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="false" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f1a6ef3-688f-4517-87e2-2ac45f7a8718" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/.part1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/.part2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/.part3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/.part4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/.part5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Btree/btree_add_node.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Btree/btree_apply_infix.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Btree/btree_apply_prefix.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Btree/btree_apply_suffix.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Btree/btree_create_node.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Btree/btree_insert_data.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/GetNextLine/get_next_line.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_create_elem.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_at.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_clear.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_del.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_foreach.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_last.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_push_back.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_push_front.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_push_params.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_reverse.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_size.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/List/ft_list_sort.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_atoi.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_isalnum.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_isalpha.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_isascii.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_isdigit.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_isprint.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strchr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strcmp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strdup.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strlchr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strlen.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strncmp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strnstr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strrchr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_strstr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_tolower.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_1/ft_toupper.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_itoa.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_memalloc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_memdel.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putchar.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putchar_fd.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putendl.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putendl_fd.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putnbr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putnbr_fd.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putstr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_putstr_fd.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_revnbr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_revstr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strclr.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strdel.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strequ.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_striter.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_striteri.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strjoin.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strmap.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strmapi.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strnequ.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strnew.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strsplit.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strsub.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_strtrim.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/Part_2/ft_tablen.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/libft.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_access.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_alias.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_chdir.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_chdir_tools.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_completion.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_echo.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_env.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_exec.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_setenv.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_unalias.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/ft_unsetenv.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/match.o" afterPath="" />
+    </list>
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ft_exec.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_exec.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="180" column="30" lean-forward="false" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="30" />
+              <folding>
+                <element signature="e#892#910#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_shell.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/ft_shell.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_strcmp_case.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/Part_1/ft_strcmp_case.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shell.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/shell.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/include/shell.h" />
+        <option value="$PROJECT_DIR$/sources/ft_completion.c" />
+        <option value="$PROJECT_DIR$/library/Makefile" />
+        <option value="$PROJECT_DIR$/library/include/libft.h" />
+        <option value="$PROJECT_DIR$/sources/ft_exec.c" />
+        <option value="$PROJECT_DIR$/library/Part_1/ft_strcmp_case.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="31" />
+    <option name="width" value="1428" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Part_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library/Part_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="21sh" TARGET_NAME="21sh" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="21sh" TARGET_NAME="21sh" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="21sh" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="21sh" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="21sh" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="21sh" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="21sh" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="21sh" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="21sh" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="21sh" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="21sh" TARGET_NAME="21sh" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="21sh" RUN_TARGET_NAME="21sh">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.21sh" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="973000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="31" width="1428" height="1000" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24474053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sources/ft_exec.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_completion.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/include/libft.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/shell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/Part_1/ft_strcmp_case.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_exec.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="180" column="30" lean-forward="false" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="30" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_shell.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

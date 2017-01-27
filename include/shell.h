@@ -136,7 +136,7 @@ t_btree			*ft_parsing(char *str, t_sys *sys);
 **	Exec
 */
 
-void			*ft_exec_node(t_btree *root, t_sys **sys, int pdes[2], char way);
+void			*ft_exec_node(t_btree *root, t_sys **sys);
 void			*ft_exec(t_sys **sys);
 
 /*

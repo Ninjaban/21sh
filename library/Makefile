@@ -14,6 +14,7 @@ NAME			=	libft.a
 
 SRC_PART1		=	ft_strcmp.c \
 					ft_strncmp.c \
+					ft_strcmp_case.c \
 					ft_strchr.c \
 					ft_strlchr.c \
 					ft_strrchr.c \
