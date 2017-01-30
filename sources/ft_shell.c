@@ -16,7 +16,7 @@
 #include "terms.h"
 
 /*
-static void	ft_free(t_cmd ***cmds, char **str)
+static void	ft_free(t_cmd **cmds, char **str)
 {
 	if (str && *str)
 	{
@@ -25,12 +25,12 @@ static void	ft_free(t_cmd ***cmds, char **str)
 	}
 	if (cmds && *cmds)
 	{
-		ft_free_cmds(*cmds);
+		free((*cmds)->name);
+		ft_free_tab((*cmds)->argv);
 		*cmds = NULL;
 	}
 }
 */
-
 static char	ft_parse_parenthesis_open(char *str, char type)
 {
 	size_t		n;
@@ -97,36 +97,23 @@ static int	ft_launcher(t_sys **sys, char **str)
 		else
 			return (TRUE);
 	}
-	/*
-	(*sys)->cmds = NULL;
-	*str = NULL;
-	if (get_next_line(0, &(*str)) == -1)
-		ft_error(ERROR_READ);
-	else if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
-		ft_error(ERROR_ALLOC);
-	else if (((*sys)->cmds = ft_parsing(*str, *sys, 0)) == NULL)
-		ft_error(ERROR_ALLOC);
-	else if ((tmp = ft_gestion_error((*sys)->cmds)) != NULL)
-		ft_error(tmp);
-	else
-		return (TRUE);
-	*/
 	return (FALSE);
 }
 /*
-static void	ft_shrc_launch(t_sys **sys)
+static void	ft_shrc_launch(t_sys **sys, t_cmd *cmds)
 {
-	if ((ft_strcmp((*sys)->cmds[0]->name, "setenv") == 0) ||
-		(ft_strcmp((*sys)->cmds[0]->name, "export") == 0))
-		ft_setenv((*sys)->cmds[0]->argv[1], &((*sys)->env), FALSE);
-	else if (ft_strcmp((*sys)->cmds[0]->name, "alias") == 0)
-		ft_alias((*sys)->cmds[0], &((*sys)->alias));
+	if ((ft_strcmp(cmds->name, "setenv") == 0) ||
+		(ft_strcmp(cmds->name, "export") == 0))
+		ft_setenv(cmds->argv[1], &((*sys)->env), FALSE);
+	else if (ft_strcmp(cmds->name, "alias") == 0)
+		ft_alias(cmds, &((*sys)->alias));
 }
 
 static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 {
 	char	*tmp;
 	char	*path;
+	t_cmd	*cmds;
 
 	(*sys)->alias = NULL;
 	tmp = ft_getenv((*sys)->env, "HOME");
@@ -137,17 +124,16 @@ static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 	free(path);
 	while (get_next_line(fd, &str) == 1)
 	{
-		if ((ft_history_maj(&((*sys)->history), str, (*sys)->env)) == FALSE)
-			ft_error(ERROR_ALLOC);
-		else if (((*sys)->cmds = ft_parsing(str, *sys, 0)) == NULL)
-			ft_error(ERROR_ALLOC);
-		else if ((tmp = ft_gestion_error((*sys)->cmds)) != NULL)
+		ft_putendl(str);
+		if ((tmp = ft_gestion_error(str)) != NULL)
 			ft_error(tmp);
-		else if ((*sys)->cmds[0])
-		ft_shrc_launch(&(*sys));
-		ft_free(&((*sys)->cmds), &str);
+		else if ((cmds = ft_parsecmd(str)) == NULL)
+			ft_error(ERROR_ALLOC);
+		else if (cmds)
+			ft_shrc_launch(&(*sys), cmds);
+		ft_free(&cmds, &str);
 	}
-	ft_free(&((*sys)->cmds), &str);
+	ft_free(&cmds, &str);
 	return (TRUE);
 }
 */
@@ -161,12 +147,12 @@ void		ft_shell(t_sys *sys, int exit)
 		ft_error(ERROR_HISTORY);
 		return ;
 	}
-/*	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
-	ft_error(ERROR_RC);*/
+//	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
+//		ft_error(ERROR_RC);
 	while (exit == FALSE)
 	{
+		str = NULL;
 		ft_termcaps_change(&sys->term_new);
-//		ft_launcher(&sys, &str);
 		if (ft_launcher(&sys, &str) == TRUE)
 		{
 			ft_termcaps_change(&sys->term_save);
@@ -178,6 +164,7 @@ void		ft_shell(t_sys *sys, int exit)
 					exit = TRUE;
 			}
 		}
-/*		ft_free(&(sys->cmds), &str);*/
+//		ft_free(&(sys->cmds), &str);
 	}
+	ft_sys_free(sys);
 }

@@ -71,7 +71,7 @@ static int	ft_match(char *s1, char *s2, int n, int i)
 	return (0);
 }
 
-int		match(char *s1, char *s2)
+int			match(char *s1, char *s2)
 {
 	if (ft_match(s1, s2, 0, 0) == 1)
 		return (1);

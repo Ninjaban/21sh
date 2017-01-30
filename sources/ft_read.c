@@ -67,13 +67,6 @@ static void	ft_read_print(char **str, int c, size_t *pos, char **env)
 	ft_print(*str, (*pos), (c == KEY_TAB) ? 0 : 1);
 	if (c != KEY_TAB)
 		*pos = *pos + 1;
-//	ft_putstr(*str + *pos);
-//	len = (int)ft_strlen(*str + *pos) - 2;
-//	len = (ft_checkcompl(*str) == 1) ? len - 12 : len;
-//	while (len-- >= 0)
-//		;
-//		ft_putchar('\b');
-//	*pos = *pos + 1;
 }
 
 static void	ft_read_suppr(char **str, size_t *pos)
@@ -93,12 +86,6 @@ static void	ft_read_suppr(char **str, size_t *pos)
 		ft_print(*str, (*pos), 0);
 		if (*pos > ft_strlen(*str) && *pos > 0)
 			*pos = *pos - 1;
-//		ft_putstr(*str + *pos);
-//		ft_putchar(' ');
-//		n = (int)ft_strlen(*str + *pos);
-//		while (n-- >= 0)
-//			;
-//			ft_putchar('\b');
 	}
 }
 
@@ -169,7 +156,7 @@ static void	ft_read_history_clear(char *str)
 		ft_putchar('\b');
 }
 
-static void	ft_read_history_down(char **str, t_sys **sys, size_t *i, size_t *pos)
+static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 {
 	t_lst	*tmp;
 
@@ -222,7 +209,7 @@ int			ft_read(char **str, t_sys **sys)
 	while (exit == FALSE)
 	{
 		c = 0;
-		read(0, &c, sizeof (int));
+		read(0, &c, sizeof(int));
 		ft_removecompl(&(*str));
 		if (ft_isprint(c) || c == KEY_TAB)
 			ft_read_print(&(*str), c, &n, (*sys)->env);
@@ -238,7 +225,7 @@ int			ft_read(char **str, t_sys **sys)
 		if (c == KEY_UPS)
 			ft_read_history_up(&(*str), &(*sys), &i, &n);
 		if (c == KEY_DOW)
-			ft_read_history_down(&(*str), &(*sys), &i, &n);
+			ft_read_history_do(&(*str), &(*sys), &i, &n);
 	}
 	ft_print(*str, n, 0);
 	ft_putchar('\n');

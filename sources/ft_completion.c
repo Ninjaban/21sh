@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/06 09:01:22 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/12 10:09:21 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/01/30 09:11:59 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -190,7 +190,7 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	else if (!list)
 	{
 		list = ft_getexec(ft_getpath(env));
-//		ft_list_sort(&list, &ft_strcmp);
+		ft_list_sort(&list, &ft_strcmp);
 	}
 	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);

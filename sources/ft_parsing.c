@@ -201,7 +201,7 @@ static void		ft_parenthesis_undo(char ***tab)
 	}
 }
 
-static t_cmd	*ft_parsecmd(char *str)
+t_cmd			*ft_parsecmd(char *str)
 {
 	t_cmd		*cmd;
 	char		**tab;

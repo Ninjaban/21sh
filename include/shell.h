@@ -17,7 +17,7 @@
 **	Macros
 */
 
-# define NAME "Minishell"
+# define NAME "21sh"
 # define PROMPT "\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)\n"
 # define HISTORY_SIZE 1000
 # define FALSE 0
@@ -129,6 +129,7 @@ size_t			ft_fpath(char **env, char *str);
 
 int				ft_true_node(void *root, void *item);
 int				ft_false_node(void *root, void *item);
+t_cmd			*ft_parsecmd(char *str);
 t_btree			*ft_parsing_line(char *str, t_sys *sys);
 t_btree			*ft_parsing(char *str, t_sys *sys);
 

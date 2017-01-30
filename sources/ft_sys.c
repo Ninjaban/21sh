@@ -29,11 +29,7 @@ void		ft_sys_free(t_sys *sys)
 {
 	if (sys->env)
 		ft_free_tab(sys->env);
-/*	if (sys->history)
-	ft_free_tab(sys->history);*/
-/*	if (sys->alias)
-	ft_alias_remove(&(sys->alias));*/
-/*	if (sys->cmds)
-	ft_free_cmds(sys->cmds);*/
+	if (sys->alias)
+		ft_list_clear(&(sys->history), &free);
 	free(sys);
 }
