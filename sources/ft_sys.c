@@ -25,11 +25,35 @@ int			ft_sys_init(t_sys **sys)
 	return (0);
 }
 
+void		ft_free_alias(t_alias *alias)
+{
+	t_alias	*next;
+
+	while (alias)
+	{
+		next = alias->next;
+		free(alias->key);
+		free(alias->value);
+		alias = next;
+	}
+}
+
+void		ft_delete_node(void *node)
+{
+	free(((t_node *)(((t_btree *)node)->item))->cmd->name);
+	ft_free_tab(((t_node *)(((t_btree *)node)->item))->cmd->argv);
+	free(((t_node *)(((t_btree *)node)->item))->cmd);
+	free(((t_btree *)node)->item);
+	free(node);
+}
+
 void		ft_sys_free(t_sys *sys)
 {
 	if (sys->env)
 		ft_free_tab(sys->env);
 	if (sys->alias)
-		ft_list_clear(&(sys->history), &free);
+		ft_free_alias(sys->alias);
+	if (sys->cmds)
+		btree_apply_suffix(sys->cmds, &ft_delete_node);
 	free(sys);
 }

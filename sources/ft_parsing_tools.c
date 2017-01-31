@@ -28,27 +28,33 @@ char			*ft_strcut(char *str, size_t s, size_t e)
 	return (new);
 }
 
-char			*ft_check_alias(char *str, t_alias *alias)
+int				ft_check_alias(char **str, t_alias *alias, int n)
 {
 	t_alias		*tmp;
 	char		*new;
+	char		*cpy;
 
 	tmp = alias;
 	while (tmp)
 	{
-		if ((ft_strncmp(str, tmp->key, ft_strlen(tmp->key) - 1) == 0) &&
-			(ft_strlen(tmp->key) <= ft_strlen(str)) &&
-			((str[ft_strlen(tmp->key)] == ' ') ||
-			(str[ft_strlen(tmp->key)] == '\0')))
+		if ((ft_strncmp(&(*str[n]), tmp->key, ft_strlen(tmp->key) - 1) == 0) &&
+			(ft_strlen(tmp->key) <= ft_strlen(&((*str)[n]))) &&
+			(((*str)[n + ft_strlen(tmp->key)] == ' ') ||
+			((*str)[n + ft_strlen(tmp->key)] == '\0')))
 		{
-			new = ft_strcut(str, ft_strlen(tmp->key), ft_strlen(str));
-			str = ft_strjoin(tmp->value, new);
+			(*str)[n] = '\0';
+			cpy = ft_strdup((*str));
+			new = ft_strjoin(cpy, tmp->value);
+			free(cpy);
+			cpy = ft_strjoin(new, &((*str)[n + ft_strlen(tmp->key)]));
 			free(new);
-			return (str);
+			free(*str);
+			*str = cpy;
+			return (ft_strlen(tmp->value));
 		}
 		tmp = tmp->next;
 	}
-	return (ft_strdup(str));
+	return (0);
 }
 
 void			ft_tild_file(char **str, char c, char r)
@@ -64,7 +70,8 @@ void			ft_tild_file(char **str, char c, char r)
 	{
 		if ((*str)[n] == '\"' || (*str)[n] == '\'')
 			change = (change == TRUE) ? FALSE : TRUE;
-		if ((*str)[n] == c && (change == FALSE || (n > 0 && ft_isalnum((*str)[n - 1]) == 1)))
+		if ((*str)[n] == c && (change == FALSE ||
+			(n > 0 && ft_isalnum((*str)[n - 1]) == 1)))
 			(*str)[n] = r;
 		n = n + 1;
 	}

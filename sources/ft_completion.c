@@ -124,15 +124,18 @@ static char	*ft_getprob(t_lst *list, char *str)
 {
 	t_lst	*tmp;
 	char	*pattern;
+	char	*ret;
 
 	pattern = ft_strjoin(str, "*");
-	free(str);
 	tmp = list;
 	while (tmp && ft_strcmp(tmp->data, str) != 0 && match(tmp->data, pattern) == 0)
 		tmp = tmp->next;
+	free(str);
+	if (tmp)
+		ret = tmp->data + ft_strlen(pattern) - 1;
 	free(pattern);
 	if (tmp)
-		return (tmp->data + ft_strlen(pattern) - 1);
+		return (ret);
 	return (NULL);
 }
 
@@ -190,7 +193,7 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	else if (!list)
 	{
 		list = ft_getexec(ft_getpath(env));
-		ft_list_sort(&list, &ft_strcmp);
+//		ft_list_sort(&list, &ft_strcmp);
 	}
 	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);

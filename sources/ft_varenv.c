@@ -59,10 +59,9 @@ char		*ft_varenv(char *str, char **env)
 	tmp = str;
 	change = TRUE;
 	while (*tmp)
-	{
 		if (*tmp == '\'')
 			change = (change == TRUE) ? FALSE : TRUE;
-		if (*tmp == '$' && change == TRUE)
+		else if (*tmp == '$' && change == TRUE)
 		{
 			*tmp = '\0';
 			new = ft_init_join(new, ft_strdup(cpy));
@@ -74,7 +73,5 @@ char		*ft_varenv(char *str, char **env)
 		}
 		else
 			tmp++;
-	}
-	new = ft_init_join(new, ft_strdup(cpy));
-	return (new);
+	return (ft_init_join(new, ft_strdup(cpy)));
 }

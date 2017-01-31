@@ -43,7 +43,8 @@ char			*ft_access(char *name, char **env)
 	char		**path;
 	char		*tmp;
 
-	if ((ft_strncmp(name, "/", 0) == 0 || ft_strncmp(name, "./", 1) == 0) && access(name, F_OK) == 0)
+	if ((ft_strncmp(name, "/", 0) == 0 || ft_strncmp(name, "./", 1) == 0) &&
+			access(name, F_OK) == 0)
 	{
 		if (access(name, X_OK) != 0)
 		{

@@ -43,7 +43,11 @@ static int	ft_check(const char s, const char *c)
 	return ((c[n] == s) ? 1 : 0);
 }
 
-
+static char	*ft_return(char *tmp)
+{
+	free(tmp);
+	return (ERROR_SYNTAX);
+}
 
 char		*ft_gestion_error_init(char *str)
 {
@@ -77,7 +81,7 @@ void		*ft_gestion_error(char *str)
 	while (n < ft_strlen(tmp))
 	{
 		if (ft_check(tmp[n], "|&") == 1 && ft_check(tmp[n + 1], "|&<>") == 1)
-			return (ERROR_SYNTAX);
+			return (ft_return(tmp));
 		n = n + 1;
 	}
 	n = 0;
@@ -85,10 +89,11 @@ void		*ft_gestion_error(char *str)
 	{
 		if (ft_check(tmp[n], "<>") == 1 &&
 			(ft_check(tmp[n + 1], "|") == 1 || ft_check(tmp[n + 2], "<>") == 1))
-			return (ERROR_SYNTAX);
+			return (ft_return(tmp));
 		n = n + 1;
 	}
 	if (ft_check(tmp[ft_strlen(tmp) - 1], "<>|") == 1)
-		return (ERROR_SYNTAX);
+		return (ft_return(tmp));
+	free(tmp);
 	return (NULL);
 }

@@ -134,21 +134,20 @@ static void	ft_init_redir(t_node *node, int pdes[2], char way)
 {
 	int		stdout;
 
-    if (node->redir == PIPE || node->redir == REDIR_R ||
+	if (node->redir == PIPE || node->redir == REDIR_R ||
 		node->redir == CONCAT_R || node->redir == REDIR_L ||
 		node->redir == CONCAT_L)
-    {
+	{
 		if (node->fd == 1)
 			stdout = STDOUT_FILENO;
 		else if (node->fd == 2)
 			stdout = STDERR_FILENO;
 		else
 			stdout = node->fd;
-		dup2(pdes[(way == LEFT)
-				                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ? PIPE_IN : PIPE_OUT],
-			 (way == LEFT) ? stdout : STDIN_FILENO);
+		dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT],
+			(way == LEFT) ? stdout : STDIN_FILENO);
 		close(pdes[(way == LEFT) ? PIPE_OUT : PIPE_IN]);
-    }
+	}
 }
 
 static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
@@ -163,16 +162,16 @@ static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
 		return (ERROR_FORK);
 	if (child == 0)
 	{
-        ft_init_redir(node, pdes, LEFT);
+		ft_init_redir(node, pdes, LEFT);
 		if (node->redir == REDIR_L)
 			ft_exec_read_file(root->right->item);
 		else if (node->redir == CONCAT_L)
 			ft_exec_read_boucle(root->right->item);
 		else
 			ft_exec_node(root->left, &(*sys));
-        exit(1);
+		exit(1);
 	}
-    ft_init_redir(node, pdes, RIGHT);
+	ft_init_redir(node, pdes, RIGHT);
 	if (node->redir == REDIR_R || node->redir == CONCAT_R)
 		ft_exec_file(root->right->item, (node->redir == REDIR_R) ?
 												REDIR_R : CONCAT_R);
@@ -185,28 +184,8 @@ static void	*ft_exec_rdr(t_btree *root, t_sys **sys)
 	}
 	else
 		ft_exec_child(root->right->item, &(*sys));
-
 	return (NULL);
 }
-
-/*
-static void	*ft_exec_node(t_btree *root, t_sys **sys)
-{
-	t_btree	*node;
-	int		pdes[2];
-	pid_t	child;
-
-	node = root;
-	pipe(pdes);
-    if (((t_node *)(node->left->item))->redir != FALSE)
-    {
-        if ((child = fork) == -1)
-            return (ERROR_FORK);
-        if (child == 0)
-            ft_exec_node(root->left, &(*sys), pdes);
-    }
-}
-*/
 
 void		*ft_exec_node(t_btree *root, t_sys **sys)
 {
@@ -230,9 +209,9 @@ void		*ft_exec(t_sys **sys)
 	{
 		if (((t_node *)(node->left->item))->redir == FALSE)
 		{
-            if (ft_strcmp_case(((t_node *)(node->left->item))->cmd->name,
-                               "exit") == 0)
-                return (EXIT);
+			if (ft_strcmp_case(((t_node *)(node->left->item))->cmd->name,
+							"exit") == 0)
+				return (EXIT);
 			if (ft_builtins(((t_node *)(node->left->item))->cmd, &(*sys)) ==
 				FALSE)
 			{
@@ -263,31 +242,3 @@ void		*ft_exec(t_sys **sys)
 	}
 	return (NULL);
 }
-/*
-void		*ft_exec(t_sys **sys)
-{
-	size_t	n;
-	int		status;
-
-	n = 0;
-	while ((*sys)->cmds[n])
-	{
-		if ((*sys)->cmds[n]->name)
-		{
-			if (ft_strcmp((*sys)->cmds[n]->name, "exit") == 0)
-				return (EXIT);
-			if (ft_builtins((*sys)->cmds[n], &(*sys)) == FALSE)
-			{
-				if (((*sys)->cmds[n]->child = fork()) == -1)
-					return (ERROR_FORK);
-				if ((*sys)->cmds[n]->child == 0)
-					ft_exec_child((*sys)->cmds[n], *sys);
-				else
-					wait(&status);
-			}
-		}
-		n = n + 1;
-	}
-	return (NULL);
-}
-*/

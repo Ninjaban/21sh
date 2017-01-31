@@ -27,109 +27,6 @@ static char		**ft_tabcpy(char **tab)
 	dst[n] = NULL;
 	return (dst);
 }
-/*
-static char		*ft_parse_parenthesis(char *str, char c, char r)
-{
-	size_t		n;
-	char		*tmp;
-	int			open;
-
-	n = 0;
-	open = FALSE;
-	while (str[n])
-	{
-		if (str[n] == '\"')
-		{
-			if ((tmp = ft_delchar(str, (n > 0 && str[n - 1] == '\\')
-									? n - 1 : n)) == NULL)
-				return (NULL);
-			str = tmp;
-			open = (open == TRUE) ? FALSE : TRUE;
-		}
-		if (open == TRUE && str[n] == c)
-			str[n] = r;
-		n = n + 1;
-	}
-	return (str);
-}
-
-static void		ft_parenthesis_undo(char ***tab)
-{
-	size_t		n;
-	size_t		i;
-
-	n = 0;
-	while ((*tab) && (*tab)[n])
-	{
-		i = 0;
-		while ((*tab)[n][i])
-		{
-			if ((*tab)[n][i] == '\a')
-				(*tab)[n][i] = ' ';
-			i = i + 1;
-		}
-		n = n + 1;
-	}
-}
-
-static t_cmd	*ft_parsecmd(char *str, char *tmp, char **tab)
-{
-	t_cmd		*cmd;
-
-	if ((tmp = ft_parse_parenthesis(ft_strdup(str), ' ', '\a')) == NULL)
-		return (NULL);
-	if ((tab = ft_strsplit(tmp, " \t\n")) == NULL || !tab[0])
-		return (NULL);
-	free(tmp);
-	if ((cmd = malloc(sizeof(t_cmd))) == NULL)
-	{
-		ft_free_tab(tab);
-		return (NULL);
-	}
-	cmd->name = NULL;
-	cmd->argv = NULL;
-	ft_parenthesis_undo(&tab);
-	if ((cmd->name = ft_strdup(tab[0])) == NULL)
-	{
-		ft_free_tab(tab);
-		free(cmd);
-		return (NULL);
-	}
-	cmd->argv = ft_tabcpy(tab);
-	ft_free_tab(tab);
-	free(str);
-	return (cmd);
-}
-
-t_cmd			**ft_parsing(char *str, t_sys *sys, int n)
-{
-	t_cmd		**cmds;
-	char		**tab;
-	char		*tmp;
-
-	if (!str)
-		return (NULL);
-	tmp = ft_tild(ft_varenv(str, sys->env), sys->env);
-	ft_tild_file(&str, '\a', '~');
-	if ((tab = ft_strsplit((tmp == NULL) ? str : tmp, ";")) == NULL)
-		return (NULL);
-	free(tmp);
-	if ((cmds = malloc(sizeof(t_cmd) * (ft_tablen(tab) + 1))) == NULL)
-		return (NULL);
-	while ((size_t)n <= ft_tablen(tab))
-		cmds[n++] = NULL;
-	n = -1;
-	while (tab[++n])
-		if ((cmds[n] = ft_parsecmd(ft_check_alias(tab[n], sys->alias), NULL,
-									NULL)) == NULL)
-		{
-			ft_free_cmds(cmds);
-			return (NULL);
-		}
-	ft_free_tab(tab);
-	return (cmds);
-}
-*/
 
 static void		ft_parse_backslash(char *str)
 {
@@ -139,7 +36,7 @@ static void		ft_parse_backslash(char *str)
 	if ((str)[n + 1] == 'n')
 		(str)[n] = '\n';
 	else
-		return;
+		return ;
 	n = n + 1;
 	while ((str)[n++])
 		(str)[n - 1] = (str)[n];
@@ -172,7 +69,7 @@ void			ft_parse_parenthesis(char **str, char c, char r)
 		if ((*str)[n] == '\"' || (*str)[n] == '\'')
 		{
 			ft_parse_parenthesis_open((*str) + n + 1, c, r,
-									  ((*str)[n] == '\"') ? 0 : 1);
+									((*str)[n] == '\"') ? 0 : 1);
 			if (((*str)[n] == '\"' || (*str)[n] == '\'') &&
 				((ft_delchar(&(*str), n)) == FALSE))
 				return ;
@@ -242,34 +139,6 @@ static t_node	*ft_new_node(char node, char *str, char redir, int fd)
 	return (new);
 }
 
-/*
-static int		ft_check_sep(t_cmd *tree, t_cmd *node)
-{
-	int			t;
-	int			n;
-
-	if (tree->redir >= PIPE && tree->redir <= CONCAT_L)
-		t = 1;
-	if (tree->redir == FALSE)
-		t = 0;
-	if (node->redir >= PIPE && node->redir <= CONCAT_L)
-		n = 1;
-	if (node->redir == FALSE)
-		n = 0;
-	return (t - n);
-}
-
-int				ft_cmp_node(void *tree, void *node)
-{
-	t_cmd		*tmp;
-
-	tmp = ((t_cmd *)(((t_btree *)tree)->item));
-	if (tmp->redir != -1)
-		return (ft_check_sep(tmp, ((t_cmd *)(((t_btree *)node)->item))));
-	return (0);
-}
-*/
-
 static char		ft_get_redir(char *str, size_t i)
 {
 	char		redir;
@@ -299,89 +168,6 @@ static int		ft_get_redir_fd(char *str, size_t i)
 		n = n + 1;
 	return (ft_atoi(str + ((i - n == 0) ? i - n : i - n + 1)));
 }
-/*
-static t_btree	*ft_create_node(char *str, size_t n, size_t i, char redir)
-{
-	t_btree		*node;
-	char		c;
-
-	node = btree_create_node(ft_redir(redir));
-	c = str[i];
-	str[i] = '\0';
-//	if ((redir == REDIR_L || redir == CONCAT_L) && (redir != 0))
-//		node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
-//	else
-	node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
-	if (redir != 0)
-	{
-		n = (redir == CONCAT_L || redir == CONCAT_R) ? i + 2 : i + 1;
-		str[i] = c;
-		i = (ft_strlchr(str + n, "|<>") == -1) ? ft_strlen(str) :
-			ft_strlchr(str + n, "|<>") + n;
-		c = str[i];
-		str[i] = '\0';
-//		if (redir == REDIR_L || redir == CONCAT_L)
-//			node->left = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
-//		else
-		node->right = btree_create_node(ft_parsecmd(ft_strdup(str + n), NULL, NULL));
-		str[i] = c;
-		while (n < i && str[n] && c != '<')
-			str[n++] = ' ';
-	}
-	return (node);
-}
-
-static void		ft_parsing_multicmd(t_btree **cmds, char *str)
-{
-	size_t		n;
-	size_t		i;
-	char		redir;
-
-	n = 0;
-	while (str[n])
-	{
-		i = (ft_strlchr(str + n, "|<>") == -1) ? ft_strlen(str) :
-			ft_strlchr(str + n, "|<>") + n;
-		redir = ft_get_redir(str, i);
-		btree_add_node(&(*cmds), ft_create_node(str, n, i, redir),
-					&ft_cmp_node);
-		n = i;
-		while (str[n] == '|' || str[n] == '<' || str[n] == '>')
-			n = n + 1;
-	}
-}
-*/
-void			ft_display(void *node)
-{
-	t_node		*root;
-	t_cmd		*cmd;
-	int			n;
-
-	n = 0;
-	root = (t_node *)((t_btree *)node)->item;
-	cmd = (t_cmd *)(root->cmd);
-	if (root->node == FALSE)
-		ft_putstr(" ; ");
-	else if (root->redir != FALSE)
-	{
-		ft_putnbr(root->fd);
-		if (root->redir == 1)
-			ft_putstr(" | ");
-		else if (root->redir == 2)
-			ft_putstr(" > ");
-		else if (root->redir == 3)
-			ft_putstr(" >> ");
-		else if (root->redir == 4)
-			ft_putstr(" < ");
-		else if (root->redir == 5)
-			ft_putstr(" << ");
-		else
-			ft_putnbr(root->redir);
-	}
-	else
-		while (cmd->argv[n])
-			ft_putstr(cmd->argv[n++]);
-}
 
 static void		ft_init_node(t_btree **cmds, char *str, int fd)
 {
@@ -392,12 +178,12 @@ static void		ft_init_node(t_btree **cmds, char *str, int fd)
 	if ((redir = ft_get_redir(str, n)) != FALSE)
 	{
 		btree_add_node(&(*cmds), btree_create_node(
-						   ft_new_node(TRUE, NULL, redir, fd)), &ft_true_node);
+						ft_new_node(TRUE, NULL, redir, fd)), &ft_true_node);
 		while (str[n] == '|' || str[n] == '<' || str[n] == '>')
 			n = n + 1;
 	}
 	btree_add_node(&(*cmds), btree_create_node(
-					   ft_new_node(TRUE, str + n, FALSE, FALSE)), &ft_true_node);
+					ft_new_node(TRUE, str + n, FALSE, FALSE)), &ft_true_node);
 }
 
 static void		ft_parsing_multicmd(t_btree **cmds, char *str)
@@ -461,6 +247,31 @@ static void		ft_add_node(t_btree **cmds, char **tab, int n)
 	}
 }
 
+void			ft_parsing_alias(char **str, t_sys *sys)
+{
+	size_t		n;
+	char		change;
+	int			nb;
+
+	n = 0;
+	change = TRUE;
+	while ((*str)[n])
+	{
+		if ((*str)[n] == '\"' || (*str)[n] == '\'')
+			change = (change == TRUE) ? FALSE : TRUE;
+		nb = 0;
+		if (change == TRUE)
+			nb = ft_check_alias(&(*str), sys->alias, n);
+		if (nb != 0)
+			n = n + nb;
+		else
+			while (ft_isalnum((*str)[n]) == 1)
+				n = n + 1;
+		while ((*str)[n] && ft_isalnum((*str)[n]) == 0)
+			n = n + 1;
+	}
+}
+
 t_btree			*ft_parsing_line(char *str, t_sys *sys)
 {
 	t_btree		*cmds;
@@ -468,6 +279,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	char		*tmp;
 
 	tmp = ft_tild(ft_varenv(str, sys->env), sys->env);
+	ft_parsing_alias(&tmp, sys);
 	ft_tild_file(&tmp, ';', '\a');
 	if ((tab = ft_strsplit(tmp, ";")) == NULL)
 	{
@@ -479,23 +291,13 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	free(tmp);
 	cmds = btree_create_node(ft_new_node(FALSE, NULL, FALSE, FALSE));
 	ft_add_node(&cmds, tab, 0);
-/*	while (tab[n])
-	{
-		if (n > 0)
-			btree_add_node(&cmds, btree_create_node(
-					ft_new_node(FALSE, NULL, FALSE, FALSE)), &ft_false_node);
-		ft_parsing_multicmd(&cmds, tab[n++]);
-	}*/
 	ft_free_tab(tab);
-	btree_apply_infix(cmds, &ft_display);
-	ft_putendl("");
 	return (cmds);
 }
 
 t_btree			*ft_parsing(char *str, t_sys *sys)
 {
 	t_btree		*cmds;
-//	char		*new;
 
 	if (!str)
 		return (NULL);

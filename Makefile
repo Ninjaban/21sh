@@ -52,7 +52,7 @@ LIBS		=	$(LIB:%=$(DIRLIB)%)
 
 OBJS		=	$(SRCS:.c=.o)
 
-CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC)
+CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC) -g3
 LFLAGS		=	-lncurses
 
 CC			=	gcc

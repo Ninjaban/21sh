@@ -71,6 +71,5 @@ int			main(int ac, char **av, char **env)
 /*	if (signal(SIGINT, SIG_IGN) == SIG_ERR);
 	return (1);*/
 	ft_shell(sys, FALSE);
-	ft_sys_free(sys);
 	return (0);
 }

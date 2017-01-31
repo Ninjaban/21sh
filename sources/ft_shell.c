@@ -15,8 +15,7 @@
 #include "error.h"
 #include "terms.h"
 
-/*
-static void	ft_free(t_cmd **cmds, char **str)
+static void	ft_free(t_cmd **cmds, char **str, t_btree **cmd)
 {
 	if (str && *str)
 	{
@@ -27,10 +26,15 @@ static void	ft_free(t_cmd **cmds, char **str)
 	{
 		free((*cmds)->name);
 		ft_free_tab((*cmds)->argv);
+		free(*cmds);
 		*cmds = NULL;
 	}
+	if (cmd && *cmd)
+	{
+		btree_apply_suffix(*cmd, &ft_delete_node);
+	}
 }
-*/
+
 static char	ft_parse_parenthesis_open(char *str, char type)
 {
 	size_t		n;
@@ -130,9 +134,9 @@ static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 			ft_error(ERROR_ALLOC);
 		else if (cmds)
 			ft_shrc_launch(&(*sys), cmds);
-//		ft_free(&cmds, &str);
+		ft_free(&cmds, NULL, NULL);
 	}
-//	ft_free(&cmds, &str);
+	ft_free(&cmds, &str, NULL);
 	return (TRUE);
 }
 
@@ -163,7 +167,6 @@ void		ft_shell(t_sys *sys, int exit)
 					exit = TRUE;
 			}
 		}
-//		ft_free(&(sys->cmds), &str);
+		ft_free(NULL, NULL, &(sys->cmds));
 	}
-	ft_sys_free(sys);
 }

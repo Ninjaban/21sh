@@ -114,7 +114,7 @@ int				ft_read(char **str, t_sys **sys);
 char			*ft_access(char *name, char **env);
 char			*ft_joinpath(char *src, char *str);
 char			*ft_strcut(char *str, size_t s, size_t e);
-char			*ft_check_alias(char *str, t_alias *alias);
+int				ft_check_alias(char **str, t_alias *alias, int n);
 char			*ft_getenv(char **env, char *name);
 char			*ft_path_join(char *src, char *str);
 char			*ft_tild(char *str, char **env);
@@ -159,6 +159,11 @@ void			ft_removecompl(char **str);
 char			ft_checkcompl(char *str);
 int				match(char *s1, char *s2);
 
+/*
+**	Free
+*/
+
+void			ft_delete_node(void *node);
 
 void			ft_display(void *node);
 
