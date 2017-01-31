@@ -99,7 +99,7 @@ static int	ft_launcher(t_sys **sys, char **str)
 	}
 	return (FALSE);
 }
-/*
+
 static void	ft_shrc_launch(t_sys **sys, t_cmd *cmds)
 {
 	if ((ft_strcmp(cmds->name, "setenv") == 0) ||
@@ -116,27 +116,26 @@ static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 	t_cmd	*cmds;
 
 	(*sys)->alias = NULL;
-	tmp = ft_getenv((*sys)->env, "HOME");
+	tmp = ft_getenv((*sys)->env, "HOME=");
 	path = ft_strjoin(tmp, "/.42shrc");
 	free(tmp);
-	if ((fd = open(path, O_RDWR | O_CREAT, 0640)) == -1)
+	if (access(path, F_OK) != 0 || (fd = open(path, O_RDONLY)) == -1)
 		return (FALSE);
 	free(path);
 	while (get_next_line(fd, &str) == 1)
 	{
-		ft_putendl(str);
 		if ((tmp = ft_gestion_error(str)) != NULL)
 			ft_error(tmp);
 		else if ((cmds = ft_parsecmd(str)) == NULL)
 			ft_error(ERROR_ALLOC);
 		else if (cmds)
 			ft_shrc_launch(&(*sys), cmds);
-		ft_free(&cmds, &str);
+//		ft_free(&cmds, &str);
 	}
-	ft_free(&cmds, &str);
+//	ft_free(&cmds, &str);
 	return (TRUE);
 }
-*/
+
 void		ft_shell(t_sys *sys, int exit)
 {
 	char	*str;
@@ -147,8 +146,8 @@ void		ft_shell(t_sys *sys, int exit)
 		ft_error(ERROR_HISTORY);
 		return ;
 	}
-//	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
-//		ft_error(ERROR_RC);
+	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
+		ft_error(ERROR_RC);
 	while (exit == FALSE)
 	{
 		str = NULL;

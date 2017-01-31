@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /Users/jcarra/Ninjaban/21sh
+/Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /Users/jcarra/Ninjaban/21sh
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/jcarra/Ninjaban/21sh/cmake-build-default

@@ -102,7 +102,6 @@ set(SOURCE_FILES
         sources/ft_unalias.c
         sources/ft_unsetenv.c
         sources/ft_varenv.c
-        sources/match.c
-        pipe.c)
+        sources/match.c)
 
 add_executable(21sh ${SOURCE_FILES})

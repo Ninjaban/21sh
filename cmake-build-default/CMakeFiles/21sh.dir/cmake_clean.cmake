@@ -90,7 +90,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o"
   "CMakeFiles/21sh.dir/sources/ft_varenv.c.o"
   "CMakeFiles/21sh.dir/sources/match.c.o"
-  "CMakeFiles/21sh.dir/pipe.c.o"
   "21sh.pdb"
   "21sh"
 )

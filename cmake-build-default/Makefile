@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jcarra/Ninjaban/21sh/cmake-build-default
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -1824,33 +1824,6 @@ library/Part_2/ft_tablen.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s
 .PHONY : library/Part_2/ft_tablen.c.s
 
-pipe.o: pipe.c.o
-
-.PHONY : pipe.o
-
-# target to build an object file
-pipe.c.o:
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/pipe.c.o
-.PHONY : pipe.c.o
-
-pipe.i: pipe.c.i
-
-.PHONY : pipe.i
-
-# target to preprocess a source file
-pipe.c.i:
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/pipe.c.i
-.PHONY : pipe.c.i
-
-pipe.s: pipe.c.s
-
-.PHONY : pipe.s
-
-# target to generate assembly for a file
-pipe.c.s:
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/pipe.c.s
-.PHONY : pipe.c.s
-
 sources/ft_access.o: sources/ft_access.c.o
 
 .PHONY : sources/ft_access.o
@@ -2805,9 +2778,6 @@ help:
 	@echo "... library/Part_2/ft_tablen.o"
 	@echo "... library/Part_2/ft_tablen.i"
 	@echo "... library/Part_2/ft_tablen.s"
-	@echo "... pipe.o"
-	@echo "... pipe.i"
-	@echo "... pipe.s"
 	@echo "... sources/ft_access.o"
 	@echo "... sources/ft_access.i"
 	@echo "... sources/ft_access.s"
