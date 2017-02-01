@@ -10,13 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SELECT_H
-# define SELECT_H
+#ifndef TERMS_H
+# define TERMS_H
 
 # define KEY_TAB 9
 # define KEY_RET 10
 # define KEY_ESC 27
-# define KEY_SPA 32
 # define KEY_BAC 127
 # define KEY_DEL 2117294875
 
@@ -44,7 +43,8 @@ typedef struct		s_win
 int					fputchar(int c);
 int					ft_goto(char *cmd, int col, int line);
 int					ft_termcaps_change(struct termios *term);
-int					ft_termcaps_init(struct termios *term, struct termios *save);
+int					ft_termcaps_init(struct termios *term,
+										struct termios *save);
 int					ft_read(char **str, t_sys **sys);
 
 #endif

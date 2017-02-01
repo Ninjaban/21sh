@@ -1986,6 +1986,60 @@ sources/ft_completion.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_completion.c.s
 .PHONY : sources/ft_completion.c.s
 
+sources/ft_completion_norme.o: sources/ft_completion_norme.c.o
+
+.PHONY : sources/ft_completion_norme.o
+
+# target to build an object file
+sources/ft_completion_norme.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o
+.PHONY : sources/ft_completion_norme.c.o
+
+sources/ft_completion_norme.i: sources/ft_completion_norme.c.i
+
+.PHONY : sources/ft_completion_norme.i
+
+# target to preprocess a source file
+sources/ft_completion_norme.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_completion_norme.c.i
+.PHONY : sources/ft_completion_norme.c.i
+
+sources/ft_completion_norme.s: sources/ft_completion_norme.c.s
+
+.PHONY : sources/ft_completion_norme.s
+
+# target to generate assembly for a file
+sources/ft_completion_norme.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_completion_norme.c.s
+.PHONY : sources/ft_completion_norme.c.s
+
+sources/ft_completion_tools.o: sources/ft_completion_tools.c.o
+
+.PHONY : sources/ft_completion_tools.o
+
+# target to build an object file
+sources/ft_completion_tools.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o
+.PHONY : sources/ft_completion_tools.c.o
+
+sources/ft_completion_tools.i: sources/ft_completion_tools.c.i
+
+.PHONY : sources/ft_completion_tools.i
+
+# target to preprocess a source file
+sources/ft_completion_tools.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_completion_tools.c.i
+.PHONY : sources/ft_completion_tools.c.i
+
+sources/ft_completion_tools.s: sources/ft_completion_tools.c.s
+
+.PHONY : sources/ft_completion_tools.s
+
+# target to generate assembly for a file
+sources/ft_completion_tools.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_completion_tools.c.s
+.PHONY : sources/ft_completion_tools.c.s
+
 sources/ft_delchar.o: sources/ft_delchar.c.o
 
 .PHONY : sources/ft_delchar.o
@@ -2337,6 +2391,114 @@ sources/ft_parsing.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing.c.s
 .PHONY : sources/ft_parsing.c.s
 
+sources/ft_parsing_cmd.o: sources/ft_parsing_cmd.c.o
+
+.PHONY : sources/ft_parsing_cmd.o
+
+# target to build an object file
+sources/ft_parsing_cmd.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o
+.PHONY : sources/ft_parsing_cmd.c.o
+
+sources/ft_parsing_cmd.i: sources/ft_parsing_cmd.c.i
+
+.PHONY : sources/ft_parsing_cmd.i
+
+# target to preprocess a source file
+sources/ft_parsing_cmd.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.i
+.PHONY : sources/ft_parsing_cmd.c.i
+
+sources/ft_parsing_cmd.s: sources/ft_parsing_cmd.c.s
+
+.PHONY : sources/ft_parsing_cmd.s
+
+# target to generate assembly for a file
+sources/ft_parsing_cmd.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.s
+.PHONY : sources/ft_parsing_cmd.c.s
+
+sources/ft_parsing_init.o: sources/ft_parsing_init.c.o
+
+.PHONY : sources/ft_parsing_init.o
+
+# target to build an object file
+sources/ft_parsing_init.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o
+.PHONY : sources/ft_parsing_init.c.o
+
+sources/ft_parsing_init.i: sources/ft_parsing_init.c.i
+
+.PHONY : sources/ft_parsing_init.i
+
+# target to preprocess a source file
+sources/ft_parsing_init.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_init.c.i
+.PHONY : sources/ft_parsing_init.c.i
+
+sources/ft_parsing_init.s: sources/ft_parsing_init.c.s
+
+.PHONY : sources/ft_parsing_init.s
+
+# target to generate assembly for a file
+sources/ft_parsing_init.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_init.c.s
+.PHONY : sources/ft_parsing_init.c.s
+
+sources/ft_parsing_node.o: sources/ft_parsing_node.c.o
+
+.PHONY : sources/ft_parsing_node.o
+
+# target to build an object file
+sources/ft_parsing_node.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o
+.PHONY : sources/ft_parsing_node.c.o
+
+sources/ft_parsing_node.i: sources/ft_parsing_node.c.i
+
+.PHONY : sources/ft_parsing_node.i
+
+# target to preprocess a source file
+sources/ft_parsing_node.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_node.c.i
+.PHONY : sources/ft_parsing_node.c.i
+
+sources/ft_parsing_node.s: sources/ft_parsing_node.c.s
+
+.PHONY : sources/ft_parsing_node.s
+
+# target to generate assembly for a file
+sources/ft_parsing_node.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_node.c.s
+.PHONY : sources/ft_parsing_node.c.s
+
+sources/ft_parsing_parenthesis.o: sources/ft_parsing_parenthesis.c.o
+
+.PHONY : sources/ft_parsing_parenthesis.o
+
+# target to build an object file
+sources/ft_parsing_parenthesis.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o
+.PHONY : sources/ft_parsing_parenthesis.c.o
+
+sources/ft_parsing_parenthesis.i: sources/ft_parsing_parenthesis.c.i
+
+.PHONY : sources/ft_parsing_parenthesis.i
+
+# target to preprocess a source file
+sources/ft_parsing_parenthesis.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.i
+.PHONY : sources/ft_parsing_parenthesis.c.i
+
+sources/ft_parsing_parenthesis.s: sources/ft_parsing_parenthesis.c.s
+
+.PHONY : sources/ft_parsing_parenthesis.s
+
+# target to generate assembly for a file
+sources/ft_parsing_parenthesis.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.s
+.PHONY : sources/ft_parsing_parenthesis.c.s
+
 sources/ft_parsing_tools.o: sources/ft_parsing_tools.c.o
 
 .PHONY : sources/ft_parsing_tools.o
@@ -2579,6 +2741,33 @@ sources/ft_shell.s: sources/ft_shell.c.s
 sources/ft_shell.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_shell.c.s
 .PHONY : sources/ft_shell.c.s
+
+sources/ft_shell_norme.o: sources/ft_shell_norme.c.o
+
+.PHONY : sources/ft_shell_norme.o
+
+# target to build an object file
+sources/ft_shell_norme.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o
+.PHONY : sources/ft_shell_norme.c.o
+
+sources/ft_shell_norme.i: sources/ft_shell_norme.c.i
+
+.PHONY : sources/ft_shell_norme.i
+
+# target to preprocess a source file
+sources/ft_shell_norme.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_shell_norme.c.i
+.PHONY : sources/ft_shell_norme.c.i
+
+sources/ft_shell_norme.s: sources/ft_shell_norme.c.s
+
+.PHONY : sources/ft_shell_norme.s
+
+# target to generate assembly for a file
+sources/ft_shell_norme.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_shell_norme.c.s
+.PHONY : sources/ft_shell_norme.c.s
 
 sources/ft_sys.o: sources/ft_sys.c.o
 
@@ -2931,6 +3120,12 @@ help:
 	@echo "... sources/ft_completion.o"
 	@echo "... sources/ft_completion.i"
 	@echo "... sources/ft_completion.s"
+	@echo "... sources/ft_completion_norme.o"
+	@echo "... sources/ft_completion_norme.i"
+	@echo "... sources/ft_completion_norme.s"
+	@echo "... sources/ft_completion_tools.o"
+	@echo "... sources/ft_completion_tools.i"
+	@echo "... sources/ft_completion_tools.s"
 	@echo "... sources/ft_delchar.o"
 	@echo "... sources/ft_delchar.i"
 	@echo "... sources/ft_delchar.s"
@@ -2970,6 +3165,18 @@ help:
 	@echo "... sources/ft_parsing.o"
 	@echo "... sources/ft_parsing.i"
 	@echo "... sources/ft_parsing.s"
+	@echo "... sources/ft_parsing_cmd.o"
+	@echo "... sources/ft_parsing_cmd.i"
+	@echo "... sources/ft_parsing_cmd.s"
+	@echo "... sources/ft_parsing_init.o"
+	@echo "... sources/ft_parsing_init.i"
+	@echo "... sources/ft_parsing_init.s"
+	@echo "... sources/ft_parsing_node.o"
+	@echo "... sources/ft_parsing_node.i"
+	@echo "... sources/ft_parsing_node.s"
+	@echo "... sources/ft_parsing_parenthesis.o"
+	@echo "... sources/ft_parsing_parenthesis.i"
+	@echo "... sources/ft_parsing_parenthesis.s"
 	@echo "... sources/ft_parsing_tools.o"
 	@echo "... sources/ft_parsing_tools.i"
 	@echo "... sources/ft_parsing_tools.s"
@@ -2997,6 +3204,9 @@ help:
 	@echo "... sources/ft_shell.o"
 	@echo "... sources/ft_shell.i"
 	@echo "... sources/ft_shell.s"
+	@echo "... sources/ft_shell_norme.o"
+	@echo "... sources/ft_shell_norme.i"
+	@echo "... sources/ft_shell_norme.s"
 	@echo "... sources/ft_sys.o"
 	@echo "... sources/ft_sys.i"
 	@echo "... sources/ft_sys.s"

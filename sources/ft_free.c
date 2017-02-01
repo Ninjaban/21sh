@@ -26,19 +26,22 @@ void			ft_free_tab(char **tab)
 	}
 }
 
-void			ft_free_cmds(t_cmd **cmds)
+void			ft_free(t_cmd **cmds, char **str, t_btree **cmd)
 {
-	int			n;
-
-	n = 0;
-	if (cmds)
+	if (str && *str)
 	{
-		while (cmds[n])
-		{
-			free(cmds[n]->name);
-			ft_free_tab(cmds[n]->argv);
-			free(cmds[n++]);
-		}
-		free(cmds);
+		free(*str);
+		*str = NULL;
+	}
+	if (cmds && *cmds)
+	{
+		free((*cmds)->name);
+		ft_free_tab((*cmds)->argv);
+		free(*cmds);
+		*cmds = NULL;
+	}
+	if (cmd && *cmd)
+	{
+		btree_apply_suffix(*cmd, &ft_delete_node);
 	}
 }

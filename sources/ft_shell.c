@@ -15,68 +15,6 @@
 #include "error.h"
 #include "terms.h"
 
-static void	ft_free(t_cmd **cmds, char **str, t_btree **cmd)
-{
-	if (str && *str)
-	{
-		free(*str);
-		*str = NULL;
-	}
-	if (cmds && *cmds)
-	{
-		free((*cmds)->name);
-		ft_free_tab((*cmds)->argv);
-		free(*cmds);
-		*cmds = NULL;
-	}
-	if (cmd && *cmd)
-	{
-		btree_apply_suffix(*cmd, &ft_delete_node);
-	}
-}
-
-static char	ft_parse_parenthesis_open(char *str, char type)
-{
-	size_t		n;
-
-	n = 0;
-	while (str[n] && str[n] != ((type == 0) ? '\"' : '\''))
-		n = n + 1;
-	if (str[n] != ((type == 0) ? '\"' : '\''))
-		return (FALSE);
-	str[n] = (type == 0) ? '\a' : '\t';
-	return (TRUE);
-}
-
-static void	ft_check_parenthesis(t_sys **sys, char **str, char *tmp, size_t n)
-{
-	char		*new;
-
-	while ((*str)[n])
-	{
-		if ((((*str)[n] == '\"' || (*str)[n] == '\'')) &&
-			((ft_parse_parenthesis_open((*str) + n + 1,
-				((*str)[n] == '\"') ? 0 : 1) == FALSE)))
-		{
-			ft_putstr("<quotes>\n");
-			if (ft_read(&tmp, &(*sys)) == FALSE)
-				ft_error(ERROR_READ);
-			new = ft_strjoin(((*str)[n] == '\"') ? "'\\n'" : "\\n", tmp);
-			free(tmp);
-			tmp = ft_strjoin(*str, new);
-			free(new);
-			free(*str);
-			*str = tmp;
-		}
-		else
-			n = n + 1;
-	}
-	n = 0;
-	while ((*str)[++n])
-		if ((*str)[n] == '\a' || (*str)[n] == '\t')
-			(*str)[n] = ((*str)[n] == '\a') ? '\"' : '\'';
-}
-
 static int	ft_launcher(t_sys **sys, char **str)
 {
 	static size_t	n = 0;
@@ -153,7 +91,7 @@ void		ft_shell(t_sys *sys, int exit)
 		if (ft_launcher(&sys, &str) == TRUE)
 		{
 			ft_termcaps_change(&sys->term_save);
-			if ((tmp = ft_exec(&sys, sys->cmds, NULL)) != NULL)
+			if ((tmp = ft_exec(&sys, sys->cmds, NULL, 0)) != NULL)
 			{
 				if (ft_strcmp(tmp, EXIT) != 0)
 					ft_error(tmp);

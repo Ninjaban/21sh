@@ -120,16 +120,20 @@ char			*ft_path_join(char *src, char *str);
 char			*ft_tild(char *str, char **env);
 char			*ft_varenv(char *str, char **env);
 char			**ft_getpath(char **env);
-/*t_cmd			**ft_parsing(char *str, t_sys *sys, int n);*/
 size_t			ft_fpath(char **env, char *str);
 
 /*
 **	Parsing
 */
 
+void			ft_parenthesis_undo(char ***tab);
+void			ft_parse_parenthesis(char **str, char c, char r);
+void			ft_init_node(t_btree **cmds, char *str, int fd);
 int				ft_true_node(void *root, void *item);
 int				ft_false_node(void *root, void *item);
+int				ft_get_redir_fd(char *str, size_t i);
 t_cmd			*ft_parsecmd(char *str);
+t_node			*ft_new_node(char node, char *str, char redir, int fd);
 t_btree			*ft_parsing_line(char *str, t_sys *sys);
 t_btree			*ft_parsing(char *str, t_sys *sys);
 
@@ -142,7 +146,7 @@ void			ft_exec_file(t_node *node, char redir);
 void			ft_exec_read_file(t_node *node);
 void			ft_exec_read_boucle(t_node *node);
 void			*ft_exec_node(t_btree *root, t_sys **sys);
-void			*ft_exec(t_sys **sys, t_btree *node, char *tmp);
+void			*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child);
 int				ft_exec_open_file(char *str, char redir);
 
 /*
@@ -160,16 +164,29 @@ int				ft_builtins(t_cmd *cmds, t_sys **sys);
 **	Auto-completion
 */
 
-void			ft_completion(char **str, size_t pos, char **env, char dassault);
+void			ft_completion(char **str, size_t pos, char **env,
+							char dassault);
 void			ft_removecompl(char **str);
+void			ft_opendir(t_lst **list, char *path);
+void			ft_setcompletion(char **str, size_t pos, char *try, char tabul);
+void			ft_completion_norme(char *word, t_lst **pattern, t_lst **list,
+								char **env);
 char			ft_checkcompl(char *str);
+char			*ft_getword(char *str, size_t pos);
+char			*ft_color(char *color, char *str);
+char			*ft_getcdir(char *str);
+char			*ft_getpattern(char *str);
+char			*ft_getprob(t_lst *list, char *str);
 int				match(char *s1, char *s2);
+t_lst			*ft_getexec(char **path);
 
 /*
 **	Free
 */
 
 void			ft_delete_node(void *node);
+void			ft_free_tab(char **tab);
+void			ft_free(t_cmd **cmds, char **str, t_btree **cmd);
 
 /*
 **	Read
@@ -182,6 +199,13 @@ void			ft_read_delete(char **str, size_t *pos);
 void			ft_read_keyole(char **str, size_t *pos);
 void			ft_read_keyori(char **str, size_t *pos);
 void			ft_read_move(char **str, int c, size_t *pos);
+
+/*
+**	Main
+*/
+
+void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp,
+									size_t n);
 
 void			ft_display(void *node);
 

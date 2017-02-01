@@ -26,7 +26,7 @@ static int	ft_next(t_btree **tree, t_btree **next, void *item)
 	}
 }
 
-void	btree_add_node(t_btree **root, void *item,
+void		btree_add_node(t_btree **root, void *item,
 						int (*cmpf)(void *, void *))
 {
 	t_btree	*tree;

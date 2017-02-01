@@ -12,16 +12,6 @@
 
 #include "libft.h"
 
-static void	ft_free(char **tab)
-{
-	int		n;
-
-	n = 0;
-	while (tab[n])
-		free(tab[n++]);
-	free(tab);
-}
-
 static int	check_c(char c, char const *check)
 {
 	size_t	n;
@@ -103,6 +93,6 @@ char		**ft_strsplit(char const *s, char const *c)
 		tab[word--] = NULL;
 	sav = tab;
 	if ((tab = complete_tab(s, c, tab)) == NULL)
-		ft_free(sav);
+		return (NULL);
 	return (tab);
 }

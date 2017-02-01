@@ -95,6 +95,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/21sh.dir/sources/ft_exec_child.c.o"
   "CMakeFiles/21sh.dir/sources/ft_builtins.c.o"
   "CMakeFiles/21sh.dir/sources/ft_exec_init.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o"
   "21sh.pdb"
   "21sh"
 )

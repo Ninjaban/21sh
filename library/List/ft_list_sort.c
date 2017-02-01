@@ -57,5 +57,3 @@ void	ft_list_sort(t_lst **begin, int (*f)(const char *, const char *))
 		}
 	}
 }
-
-

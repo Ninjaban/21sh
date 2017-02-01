@@ -23,12 +23,12 @@
 **	Structure
 */
 
-typedef struct	s_btree
+typedef struct		s_btree
 {
 	struct s_btree	*left;
 	struct s_btree	*right;
 	void			*item;
-}				t_btree;
+}					t_btree;
 
 typedef struct		s_lst
 {
@@ -103,7 +103,8 @@ void				ft_list_del(t_lst *node, void (*f)(void *));
 void				ft_list_reverse(t_lst **begin_list);
 void				ft_list_foreach(t_lst *begin_list, void (*f)(void *));
 void				ft_list_clear(t_lst **begin_list, void (*f)(void *));
-void				ft_list_sort(t_lst **begin, int (*f)(const char *, const char *));
+void				ft_list_sort(t_lst **begin, int (*f)(const char *,
+														const char *));
 int					ft_list_size(t_lst *begin_list);
 t_lst				*ft_create_elem(void *data);
 t_lst				*ft_list_last(t_lst *begin_list);
@@ -122,6 +123,5 @@ void				btree_insert_data(t_btree **root, void *item,
 void				btree_add_node(t_btree **root, void *item,
 									int (*cmpf)(void *, void *));
 t_btree				*btree_create_node(void *item);
-
 
 #endif

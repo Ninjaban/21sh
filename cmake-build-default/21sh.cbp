@@ -308,6 +308,12 @@
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_completion.c">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_completion_norme.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_completion_tools.c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_delchar.c">
 			<Option target="21sh"/>
 		</Unit>
@@ -347,6 +353,18 @@
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing.c">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing_cmd.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing_init.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing_node.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing_parenthesis.c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_parsing_tools.c">
 			<Option target="21sh"/>
 		</Unit>
@@ -372,6 +390,9 @@
 			<Option target="21sh"/>
 		</Unit>
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_shell.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_shell_norme.c">
 			<Option target="21sh"/>
 		</Unit>
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_sys.c">

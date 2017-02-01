@@ -27,6 +27,8 @@ SRC			=	ft_unalias.c \
 				ft_builtins.c \
 				match.c \
 				ft_completion.c \
+				ft_completion_norme.c \
+				ft_completion_tools.c \
 				ft_read.c \
 				ft_read_print.c \
 				ft_read_move.c \
@@ -42,8 +44,13 @@ SRC			=	ft_unalias.c \
 				ft_error.c \
 				ft_free.c \
 				ft_parsing_tools.c \
+				ft_parsing_parenthesis.c \
+				ft_parsing_node.c \
+				ft_parsing_cmd.c \
+				ft_parsing_init.c \
 				ft_parsing.c \
 				ft_shell.c \
+				ft_shell_norme.c \
 				ft_main.c
 
 LIB			=	libft.a

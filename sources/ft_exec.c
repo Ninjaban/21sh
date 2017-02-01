@@ -34,10 +34,8 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 	return (NULL);
 }
 
-void		*ft_exec(t_sys **sys, t_btree *node, char *tmp)
+void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 {
-	pid_t	child;
-
 	while (node)
 	{
 		if (((t_node *)(node->left->item))->redir == FALSE)
@@ -51,6 +49,8 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp)
 				return (ERROR_FORK);
 			if (child == 0)
 			{
+				if (signal(SIGINT, SIG_DFL) == SIG_ERR)
+					return (ERROR_FORK);
 				if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
 					return (tmp);
 				ft_error(ERROR_EXEC);

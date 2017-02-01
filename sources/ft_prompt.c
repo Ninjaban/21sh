@@ -71,7 +71,7 @@ static int		ft_nbcmd(char **str, size_t nbcmd)
 	return (FALSE);
 }
 
-static int		ft_color(char **str)
+static int		ft_color_prompt(char **str)
 {
 	char	*tmp;
 	size_t	n;
@@ -105,7 +105,7 @@ void			ft_affprompt(size_t nbcmd, char **env)
 	{
 		while (*str)
 		{
-			if (!ft_color(&str))
+			if (!ft_color_prompt(&str))
 				if (!ft_nbcmd(&str, nbcmd))
 				{
 					if (!(ret = ft_path(&str, env)))
