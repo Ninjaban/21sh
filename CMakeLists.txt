@@ -102,6 +102,6 @@ set(SOURCE_FILES
         sources/ft_unalias.c
         sources/ft_unsetenv.c
         sources/ft_varenv.c
-        sources/match.c)
+        sources/match.c sources/ft_read_print.c sources/ft_read_move.c sources/ft_exec_child.c sources/ft_builtins.c sources/ft_exec_init.c)
 
 add_executable(21sh ${SOURCE_FILES})

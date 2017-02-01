@@ -22,9 +22,14 @@ SRC			=	ft_unalias.c \
 				ft_env.c \
 				ft_access.c \
 				ft_exec.c \
+				ft_exec_child.c \
+				ft_exec_init.c \
+				ft_builtins.c \
 				match.c \
 				ft_completion.c \
 				ft_read.c \
+				ft_read_print.c \
+				ft_read_move.c \
 				ft_history.c \
 				ft_init.c \
 				ft_gestion_error.c \

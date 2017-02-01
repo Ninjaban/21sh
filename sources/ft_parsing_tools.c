@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "error.h"
 #include "shell.h"
 
 char			*ft_strcut(char *str, size_t s, size_t e)
@@ -37,7 +36,7 @@ int				ft_check_alias(char **str, t_alias *alias, int n)
 	tmp = alias;
 	while (tmp)
 	{
-		if ((ft_strncmp(&(*str[n]), tmp->key, ft_strlen(tmp->key) - 1) == 0) &&
+		if ((ft_strncmp(*str + n, tmp->key, ft_strlen(tmp->key) - 1) == 0) &&
 			(ft_strlen(tmp->key) <= ft_strlen(&((*str)[n]))) &&
 			(((*str)[n + ft_strlen(tmp->key)] == ' ') ||
 			((*str)[n + ft_strlen(tmp->key)] == '\0')))
@@ -50,7 +49,7 @@ int				ft_check_alias(char **str, t_alias *alias, int n)
 			free(new);
 			free(*str);
 			*str = cpy;
-			return (ft_strlen(tmp->value));
+			return ((int)ft_strlen(tmp->value));
 		}
 		tmp = tmp->next;
 	}

@@ -68,8 +68,8 @@ int			main(int ac, char **av, char **env)
 		ft_error(ERROR_ENV);
 		return (1);
 	}
-/*	if (signal(SIGINT, SIG_IGN) == SIG_ERR);
-	return (1);*/
+//	if (signal(SIGINT, SIG_IGN) == SIG_ERR)
+//		return (1);
 	ft_shell(sys, FALSE);
 	return (0);
 }

@@ -2241,6 +2241,126 @@ CMakeFiles/21sh.dir/sources/match.c.o.provides: CMakeFiles/21sh.dir/sources/matc
 CMakeFiles/21sh.dir/sources/match.c.o.provides.build: CMakeFiles/21sh.dir/sources/match.c.o
 
 
+CMakeFiles/21sh.dir/sources/ft_read_print.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_print.c.o: ../sources/ft_read_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/21sh.dir/sources/ft_read_print.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_print.c.o   -c /Users/jcarra/Ninjaban/21sh/sources/ft_read_print.c
+
+CMakeFiles/21sh.dir/sources/ft_read_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_print.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/sources/ft_read_print.c > CMakeFiles/21sh.dir/sources/ft_read_print.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_print.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/sources/ft_read_print.c -o CMakeFiles/21sh.dir/sources/ft_read_print.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_print.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_print.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_print.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_print.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_print.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_print.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_print.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_print.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_read_move.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_move.c.o: ../sources/ft_read_move.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/21sh.dir/sources/ft_read_move.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_move.c.o   -c /Users/jcarra/Ninjaban/21sh/sources/ft_read_move.c
+
+CMakeFiles/21sh.dir/sources/ft_read_move.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_move.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/sources/ft_read_move.c > CMakeFiles/21sh.dir/sources/ft_read_move.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_move.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_move.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/sources/ft_read_move.c -o CMakeFiles/21sh.dir/sources/ft_read_move.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_move.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_move.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_move.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_move.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_move.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_move.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_move.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_move.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_exec_child.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_exec_child.c.o: ../sources/ft_exec_child.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/21sh.dir/sources/ft_exec_child.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec_child.c.o   -c /Users/jcarra/Ninjaban/21sh/sources/ft_exec_child.c
+
+CMakeFiles/21sh.dir/sources/ft_exec_child.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_exec_child.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/sources/ft_exec_child.c > CMakeFiles/21sh.dir/sources/ft_exec_child.c.i
+
+CMakeFiles/21sh.dir/sources/ft_exec_child.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_exec_child.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/sources/ft_exec_child.c -o CMakeFiles/21sh.dir/sources/ft_exec_child.c.s
+
+CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.provides: CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_exec_child.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_builtins.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_builtins.c.o: ../sources/ft_builtins.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/21sh.dir/sources/ft_builtins.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_builtins.c.o   -c /Users/jcarra/Ninjaban/21sh/sources/ft_builtins.c
+
+CMakeFiles/21sh.dir/sources/ft_builtins.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_builtins.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/sources/ft_builtins.c > CMakeFiles/21sh.dir/sources/ft_builtins.c.i
+
+CMakeFiles/21sh.dir/sources/ft_builtins.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_builtins.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/sources/ft_builtins.c -o CMakeFiles/21sh.dir/sources/ft_builtins.c.s
+
+CMakeFiles/21sh.dir/sources/ft_builtins.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_builtins.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_builtins.c.o.provides: CMakeFiles/21sh.dir/sources/ft_builtins.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_builtins.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_builtins.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_builtins.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_builtins.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_exec_init.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_exec_init.c.o: ../sources/ft_exec_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/21sh.dir/sources/ft_exec_init.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec_init.c.o   -c /Users/jcarra/Ninjaban/21sh/sources/ft_exec_init.c
+
+CMakeFiles/21sh.dir/sources/ft_exec_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_exec_init.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jcarra/Ninjaban/21sh/sources/ft_exec_init.c > CMakeFiles/21sh.dir/sources/ft_exec_init.c.i
+
+CMakeFiles/21sh.dir/sources/ft_exec_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_exec_init.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jcarra/Ninjaban/21sh/sources/ft_exec_init.c -o CMakeFiles/21sh.dir/sources/ft_exec_init.c.s
+
+CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.provides: CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_exec_init.c.o
+
+
 # Object files for target 21sh
 21sh_OBJECTS = \
 "CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o" \
@@ -2333,7 +2453,12 @@ CMakeFiles/21sh.dir/sources/match.c.o.provides.build: CMakeFiles/21sh.dir/source
 "CMakeFiles/21sh.dir/sources/ft_unalias.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_varenv.c.o" \
-"CMakeFiles/21sh.dir/sources/match.c.o"
+"CMakeFiles/21sh.dir/sources/match.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_print.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_move.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_exec_child.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_builtins.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_exec_init.c.o"
 
 # External object files for target 21sh
 21sh_EXTERNAL_OBJECTS =
@@ -2429,9 +2554,14 @@ CMakeFiles/21sh.dir/sources/match.c.o.provides.build: CMakeFiles/21sh.dir/source
 21sh: CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_varenv.c.o
 21sh: CMakeFiles/21sh.dir/sources/match.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_print.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_move.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_exec_child.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_builtins.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_exec_init.c.o
 21sh: CMakeFiles/21sh.dir/build.make
 21sh: CMakeFiles/21sh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Linking C executable 21sh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Linking C executable 21sh"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/21sh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2530,6 +2660,11 @@ CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_unalias.c.o.require
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_varenv.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/match.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_print.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_move.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_builtins.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.requires
 
 .PHONY : CMakeFiles/21sh.dir/requires
 

@@ -48,13 +48,10 @@ static char	ft_parse_parenthesis_open(char *str, char type)
 	return (TRUE);
 }
 
-static void	ft_check_parenthesis(t_sys **sys, char **str)
+static void	ft_check_parenthesis(t_sys **sys, char **str, char *tmp, size_t n)
 {
-	size_t		n;
-	char		*tmp;
 	char		*new;
 
-	n = 0;
 	while ((*str)[n])
 	{
 		if ((((*str)[n] == '\"' || (*str)[n] == '\'')) &&
@@ -91,12 +88,12 @@ static int	ft_launcher(t_sys **sys, char **str)
 	if ((tmp = ft_strtrim(*str)) != NULL)
 	{
 		free(tmp);
-		ft_check_parenthesis(&(*sys), &(*str));
+		ft_check_parenthesis(&(*sys), &(*str), NULL, 0);
 		if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
 			ft_error(ERROR_HISTORY);
 		else if ((tmp = ft_gestion_error(*str)) != NULL)
 			ft_error(tmp);
-		else if (((*sys)->cmds = ft_parsing(*str, *sys)) == NULL)
+		else if (((*sys)->cmds = ft_parsing(ft_strdup(*str), *sys)) == NULL)
 			ft_error(ERROR_ALLOC);
 		else
 			return (TRUE);
@@ -146,10 +143,7 @@ void		ft_shell(t_sys *sys, int exit)
 	char	*tmp;
 
 	if (ft_history_init(&sys->history, sys->env) == FALSE)
-	{
-		ft_error(ERROR_HISTORY);
-		return ;
-	}
+		return (ft_error(ERROR_HISTORY));
 	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
 		ft_error(ERROR_RC);
 	while (exit == FALSE)
@@ -159,7 +153,7 @@ void		ft_shell(t_sys *sys, int exit)
 		if (ft_launcher(&sys, &str) == TRUE)
 		{
 			ft_termcaps_change(&sys->term_save);
-			if ((tmp = ft_exec(&sys)) != NULL)
+			if ((tmp = ft_exec(&sys, sys->cmds, NULL)) != NULL)
 			{
 				if (ft_strcmp(tmp, EXIT) != 0)
 					ft_error(tmp);
@@ -169,4 +163,5 @@ void		ft_shell(t_sys *sys, int exit)
 		}
 		ft_free(NULL, NULL, &(sys->cmds));
 	}
+	ft_sys_free(sys);
 }

@@ -29,7 +29,7 @@ static int	ft_history_file(char **env, int flag)
 		free(tmp);
 		return (-1);
 	}
-	fd = open(path, O_RDWR | O_CREAT | flag , 0644);
+	fd = open(path, O_RDWR | O_CREAT | flag, 0644);
 	free(tmp);
 	free(path);
 	return (fd);

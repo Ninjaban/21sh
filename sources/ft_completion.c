@@ -25,11 +25,10 @@ static char	*ft_wordcpy(char *str, size_t start, size_t end)
 	char	*cpy;
 
 	n = 0;
-	if ((cpy = malloc(end - start + 1)) == NULL)
+	if ((cpy = ft_strnew(end - start + 1)) == NULL)
 		return (NULL);
 	while (start < end)
 		cpy[n++] = str[start++];
-	cpy[n] = '\0';
 	return (cpy);
 }
 
@@ -128,7 +127,8 @@ static char	*ft_getprob(t_lst *list, char *str)
 
 	pattern = ft_strjoin(str, "*");
 	tmp = list;
-	while (tmp && ft_strcmp(tmp->data, str) != 0 && match(tmp->data, pattern) == 0)
+	while (tmp && ft_strcmp(tmp->data, str) != 0 &&
+			match(tmp->data, pattern) == 0)
 		tmp = tmp->next;
 	free(str);
 	if (tmp)
@@ -165,8 +165,27 @@ static void	ft_setcompletion(char **str, size_t pos, char *try, char tabul)
 	if (!tabul)
 		tmp = ft_color("\e[0m\a", tmp);
 	new = ft_strjoin(tmp, *str + pos);
+	free(tmp);
 	free(*str);
 	*str = new;
+}
+
+static void	ft_completion_norme(char *word, t_lst **pattern, t_lst **list,
+								char **env)
+{
+	char	*tmp;
+
+	if (word[0] == '/' || (word[0] == '.' && word[1] == '/'))
+	{
+		tmp = ft_getcdir(word);
+		ft_opendir(&(*pattern), tmp);
+		free(tmp);
+	}
+	else if (!(*list))
+	{
+		*list = ft_getexec(ft_getpath(env));
+//		ft_list_sort(&(*list), &ft_strcmp);
+	}
 }
 
 void		ft_completion(char **str, size_t pos, char **env, char dassault)
@@ -181,22 +200,17 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	if ((word = ft_getword(*str, pos)) == NULL)
 		return ;
 	if ((tmp = ft_strtrim(word)) == NULL)
+	{
+		free(word);
 		return ;
+	}
 	free(tmp);
 	pattern = NULL;
-	if (word[0] == '/' || (word[0] == '.' && word[1] == '/'))
-	{
-		tmp = ft_getcdir(word);
-		ft_opendir(&pattern, tmp);
-		free(tmp);
-	}
-	else if (!list)
-	{
-		list = ft_getexec(ft_getpath(env));
-//		ft_list_sort(&list, &ft_strcmp);
-	}
-	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern, ft_getpattern(word))) != NULL)
+	ft_completion_norme(word, &pattern, &list, env);
+	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern,
+						ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);
+	free(word);
 	if (pattern)
 		ft_list_clear(&pattern, &free);
 }

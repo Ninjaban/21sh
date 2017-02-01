@@ -1878,6 +1878,33 @@ sources/ft_alias.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_alias.c.s
 .PHONY : sources/ft_alias.c.s
 
+sources/ft_builtins.o: sources/ft_builtins.c.o
+
+.PHONY : sources/ft_builtins.o
+
+# target to build an object file
+sources/ft_builtins.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_builtins.c.o
+.PHONY : sources/ft_builtins.c.o
+
+sources/ft_builtins.i: sources/ft_builtins.c.i
+
+.PHONY : sources/ft_builtins.i
+
+# target to preprocess a source file
+sources/ft_builtins.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_builtins.c.i
+.PHONY : sources/ft_builtins.c.i
+
+sources/ft_builtins.s: sources/ft_builtins.c.s
+
+.PHONY : sources/ft_builtins.s
+
+# target to generate assembly for a file
+sources/ft_builtins.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_builtins.c.s
+.PHONY : sources/ft_builtins.c.s
+
 sources/ft_chdir.o: sources/ft_chdir.c.o
 
 .PHONY : sources/ft_chdir.o
@@ -2093,6 +2120,60 @@ sources/ft_exec.s: sources/ft_exec.c.s
 sources/ft_exec.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec.c.s
 .PHONY : sources/ft_exec.c.s
+
+sources/ft_exec_child.o: sources/ft_exec_child.c.o
+
+.PHONY : sources/ft_exec_child.o
+
+# target to build an object file
+sources/ft_exec_child.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_child.c.o
+.PHONY : sources/ft_exec_child.c.o
+
+sources/ft_exec_child.i: sources/ft_exec_child.c.i
+
+.PHONY : sources/ft_exec_child.i
+
+# target to preprocess a source file
+sources/ft_exec_child.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_child.c.i
+.PHONY : sources/ft_exec_child.c.i
+
+sources/ft_exec_child.s: sources/ft_exec_child.c.s
+
+.PHONY : sources/ft_exec_child.s
+
+# target to generate assembly for a file
+sources/ft_exec_child.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_child.c.s
+.PHONY : sources/ft_exec_child.c.s
+
+sources/ft_exec_init.o: sources/ft_exec_init.c.o
+
+.PHONY : sources/ft_exec_init.o
+
+# target to build an object file
+sources/ft_exec_init.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_init.c.o
+.PHONY : sources/ft_exec_init.c.o
+
+sources/ft_exec_init.i: sources/ft_exec_init.c.i
+
+.PHONY : sources/ft_exec_init.i
+
+# target to preprocess a source file
+sources/ft_exec_init.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_init.c.i
+.PHONY : sources/ft_exec_init.c.i
+
+sources/ft_exec_init.s: sources/ft_exec_init.c.s
+
+.PHONY : sources/ft_exec_init.s
+
+# target to generate assembly for a file
+sources/ft_exec_init.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_exec_init.c.s
+.PHONY : sources/ft_exec_init.c.s
 
 sources/ft_free.o: sources/ft_free.c.o
 
@@ -2390,6 +2471,60 @@ sources/ft_read.s: sources/ft_read.c.s
 sources/ft_read.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read.c.s
 .PHONY : sources/ft_read.c.s
+
+sources/ft_read_move.o: sources/ft_read_move.c.o
+
+.PHONY : sources/ft_read_move.o
+
+# target to build an object file
+sources/ft_read_move.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_move.c.o
+.PHONY : sources/ft_read_move.c.o
+
+sources/ft_read_move.i: sources/ft_read_move.c.i
+
+.PHONY : sources/ft_read_move.i
+
+# target to preprocess a source file
+sources/ft_read_move.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_move.c.i
+.PHONY : sources/ft_read_move.c.i
+
+sources/ft_read_move.s: sources/ft_read_move.c.s
+
+.PHONY : sources/ft_read_move.s
+
+# target to generate assembly for a file
+sources/ft_read_move.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_move.c.s
+.PHONY : sources/ft_read_move.c.s
+
+sources/ft_read_print.o: sources/ft_read_print.c.o
+
+.PHONY : sources/ft_read_print.o
+
+# target to build an object file
+sources/ft_read_print.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_print.c.o
+.PHONY : sources/ft_read_print.c.o
+
+sources/ft_read_print.i: sources/ft_read_print.c.i
+
+.PHONY : sources/ft_read_print.i
+
+# target to preprocess a source file
+sources/ft_read_print.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_print.c.i
+.PHONY : sources/ft_read_print.c.i
+
+sources/ft_read_print.s: sources/ft_read_print.c.s
+
+.PHONY : sources/ft_read_print.s
+
+# target to generate assembly for a file
+sources/ft_read_print.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_print.c.s
+.PHONY : sources/ft_read_print.c.s
 
 sources/ft_setenv.o: sources/ft_setenv.c.o
 
@@ -2784,6 +2919,9 @@ help:
 	@echo "... sources/ft_alias.o"
 	@echo "... sources/ft_alias.i"
 	@echo "... sources/ft_alias.s"
+	@echo "... sources/ft_builtins.o"
+	@echo "... sources/ft_builtins.i"
+	@echo "... sources/ft_builtins.s"
 	@echo "... sources/ft_chdir.o"
 	@echo "... sources/ft_chdir.i"
 	@echo "... sources/ft_chdir.s"
@@ -2808,6 +2946,12 @@ help:
 	@echo "... sources/ft_exec.o"
 	@echo "... sources/ft_exec.i"
 	@echo "... sources/ft_exec.s"
+	@echo "... sources/ft_exec_child.o"
+	@echo "... sources/ft_exec_child.i"
+	@echo "... sources/ft_exec_child.s"
+	@echo "... sources/ft_exec_init.o"
+	@echo "... sources/ft_exec_init.i"
+	@echo "... sources/ft_exec_init.s"
 	@echo "... sources/ft_free.o"
 	@echo "... sources/ft_free.i"
 	@echo "... sources/ft_free.s"
@@ -2841,6 +2985,12 @@ help:
 	@echo "... sources/ft_read.o"
 	@echo "... sources/ft_read.i"
 	@echo "... sources/ft_read.s"
+	@echo "... sources/ft_read_move.o"
+	@echo "... sources/ft_read_move.i"
+	@echo "... sources/ft_read_move.s"
+	@echo "... sources/ft_read_print.o"
+	@echo "... sources/ft_read_print.i"
+	@echo "... sources/ft_read_print.s"
 	@echo "... sources/ft_setenv.o"
 	@echo "... sources/ft_setenv.i"
 	@echo "... sources/ft_setenv.s"

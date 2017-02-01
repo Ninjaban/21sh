@@ -13,26 +13,7 @@
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
-/*
-static void	*ft_gestion_cmd(t_cmd *cmd)
-{
-	if (cmd)
-		return (NULL);
-	return (NULL);
-}
 
-void		*ft_gestion_error(t_cmd **cmds)
-{
-	size_t	n;
-	char	*tmp;
-
-	n = 0;
-	while (cmds[n])
-		if ((tmp = (char *)ft_gestion_cmd(cmds[n++])) != NULL)
-			return (tmp);
-	return (NULL);
-}
-*/
 static int	ft_check(const char s, const char *c)
 {
 	int		n;

@@ -137,8 +137,13 @@ t_btree			*ft_parsing(char *str, t_sys *sys);
 **	Exec
 */
 
+void			ft_exec_child(t_node *node, t_sys **sys);
+void			ft_exec_file(t_node *node, char redir);
+void			ft_exec_read_file(t_node *node);
+void			ft_exec_read_boucle(t_node *node);
 void			*ft_exec_node(t_btree *root, t_sys **sys);
-void			*ft_exec(t_sys **sys);
+void			*ft_exec(t_sys **sys, t_btree *node, char *tmp);
+int				ft_exec_open_file(char *str, char redir);
 
 /*
 **	Builtins
@@ -149,6 +154,7 @@ void			ft_env(char **env);
 void			ft_unsetenv(char ***env, char *str);
 void			ft_setenv(char *str, char ***env, int b);
 int				ft_chdir(char ***env, char *str);
+int				ft_builtins(t_cmd *cmds, t_sys **sys);
 
 /*
 **	Auto-completion
@@ -164,6 +170,18 @@ int				match(char *s1, char *s2);
 */
 
 void			ft_delete_node(void *node);
+
+/*
+**	Read
+*/
+
+void			ft_print(char *str, size_t pos, char inc);
+void			ft_read_print(char **str, int c, size_t *pos, char **env);
+void			ft_read_suppr(char **str, size_t *pos);
+void			ft_read_delete(char **str, size_t *pos);
+void			ft_read_keyole(char **str, size_t *pos);
+void			ft_read_keyori(char **str, size_t *pos);
+void			ft_read_move(char **str, int c, size_t *pos);
 
 void			ft_display(void *node);
 

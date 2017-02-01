@@ -222,8 +222,7 @@ int				ft_true_node(void *root, void *item)
 	if (((t_node *)(((t_btree *)item)->item))->redir != FALSE)
 		return (-1);
 	if (!((t_btree *)root)->right)
-		return ((((t_node *)(((t_btree *)root)->item))->node != FALSE)
-				? 0 : -1);
+		return ((((t_node *)(((t_btree *)root)->item))->node != 0) ? 0 : -1);
 	return (-1);
 }
 

@@ -23,10 +23,10 @@ char		*ft_strtrim(char const *s)
 		return (NULL);
 	n = 0;
 	start = 0;
-	end = ft_strlen((char *)s) - 1;
+	end = (int)ft_strlen((char *)s) - 1;
 	while (s[start] == ' ' || s[start] == '\t' || s[start] == '\n')
 		start = start + 1;
-	while (s[end] == ' ' || s[end] == '\t' || s[end] == '\n')
+	while (end > 0 && (s[end] == ' ' || s[end] == '\t' || s[end] == '\n'))
 		end = end - 1;
 	if (end < start)
 		return (NULL);
