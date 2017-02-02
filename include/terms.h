@@ -13,6 +13,7 @@
 #ifndef TERMS_H
 # define TERMS_H
 
+# define KEY_EOF 4
 # define KEY_TAB 9
 # define KEY_RET 10
 # define KEY_ESC 27

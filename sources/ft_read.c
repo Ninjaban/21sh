@@ -55,7 +55,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 		return ;
 	if (*i == HISTORY_SIZE + 1)
 	{
-		ft_history_maj(&(*sys)->history, ft_strdup(*str), (*sys)->env);
+		ft_history_maj(&(*sys)->history, *str, (*sys)->env);
 		*i = (size_t)ft_list_size((*sys)->history);
 	}
 	*i = *i - 1;

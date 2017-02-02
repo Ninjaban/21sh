@@ -63,16 +63,20 @@ void			ft_parsing_alias(char **str, t_sys *sys)
 	while ((*str)[n])
 	{
 		if ((*str)[n] == '\"' || (*str)[n] == '\'')
+		{
 			change = (change == TRUE) ? FALSE : TRUE;
+			n = n + 1;
+		}
 		nb = 0;
 		if (change == TRUE)
 			nb = ft_check_alias(&(*str), sys->alias, n);
 		if (nb != 0)
 			n = n + nb;
 		else
-			while (ft_isalnum((*str)[n]) == 1)
+			while ((*str)[n] && (*str)[n] != ' ' && (*str)[n] != '\n' &&
+					(*str)[n] != '\"' && (*str)[n] != '\'')
 				n = n + 1;
-		while ((*str)[n] && ft_isalnum((*str)[n]) == 0)
+		while ((*str)[n] && ((*str)[n] == ' ' || (*str)[n] == '\n'))
 			n = n + 1;
 	}
 }
