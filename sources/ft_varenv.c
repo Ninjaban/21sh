@@ -47,21 +47,20 @@ static char	*ft_init_join(char *new, char *str)
 	return (tmp);
 }
 
-char		*ft_varenv(char *str, char **env)
+char		*ft_varenv(char *str, char **env, char change)
 {
 	char	*cpy;
 	char	*tmp;
 	char	*new;
-	char	change;
 
 	new = NULL;
 	cpy = str;
 	tmp = str;
-	change = TRUE;
 	while (*tmp)
+	{
 		if (*tmp == '\'')
 			change = (change == TRUE) ? FALSE : TRUE;
-		else if (*tmp == '$' && change == TRUE)
+		if (*tmp == '$' && change == TRUE)
 		{
 			*tmp = '\0';
 			new = ft_init_join(new, ft_strdup(cpy));
@@ -73,5 +72,6 @@ char		*ft_varenv(char *str, char **env)
 		}
 		else
 			tmp++;
+	}
 	return (ft_init_join(new, ft_strdup(cpy)));
 }

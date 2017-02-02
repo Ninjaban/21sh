@@ -61,10 +61,10 @@ static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
 		ft_error(ERROR_ALLOC);
 		return (FALSE);
 	}
-	if (!tab[0])
+	if (!tab[0] || !tab[1])
 	{
-		free(tab);
-		ft_error(ERROR_ALLOC);
+		ft_free_tab(tab);
+		ft_error((!tab[0]) ? ERROR_ALLOC : ERROR_SYNTAX);
 		return (FALSE);
 	}
 	tmp = *alias;

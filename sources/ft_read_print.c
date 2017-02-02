@@ -68,6 +68,8 @@ void		ft_read_print(char **str, int c, size_t *pos, char **env)
 	ft_print(*str, (*pos), (c == KEY_TAB) ? 0 : 1);
 	if (c != KEY_TAB)
 		*pos = *pos + 1;
+	else
+		ft_read_keyori(&(*str), &(*pos));
 }
 
 void		ft_read_suppr(char **str, size_t *pos)

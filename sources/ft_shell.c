@@ -98,8 +98,8 @@ void		ft_shell(t_sys *sys, int exit)
 				else
 					exit = TRUE;
 			}
+			ft_free(NULL, NULL, &(sys->cmds));
 		}
-		ft_free(NULL, NULL, &(sys->cmds));
 	}
 	ft_sys_free(sys);
 }
