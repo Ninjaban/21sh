@@ -27,7 +27,6 @@ static int	ft_launcher(t_sys **sys, char **str)
 	{
 		free(tmp);
 		ft_check_parenthesis(&(*sys), &(*str), NULL, 0);
-		ft_putendl(*str);
 		if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
 			ft_error(ERROR_HISTORY);
 		else if ((tmp = ft_gestion_error(*str)) != NULL)

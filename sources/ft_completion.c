@@ -14,10 +14,29 @@
 #include "libft.h"
 #include "shell.h"
 
+static void	ft_delete_tree(void *root)
+{
+	if (root)
+	{
+		if (((t_btree *)root)->item)
+		{
+			free(((t_btree *)root)->item);
+		}
+		free(root);
+	}
+}
+
+int			ft_cmpf(void *tree, void *item)
+{
+	if (tree && item)
+		return (ft_strcmp(((t_btree *)tree)->item, ((t_btree *)item)->item));
+	return (0);
+}
+
 void		ft_completion(char **str, size_t pos, char **env, char dassault)
 {
-	static t_lst	*list = NULL;
-	t_lst			*pattern;
+	static t_btree	*list = NULL;
+	t_btree			*pattern;
 	char			*word;
 	char			*tmp;
 
@@ -34,11 +53,13 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	pattern = NULL;
 	ft_completion_norme(word, &pattern, &list, env);
 	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern,
+//	if ((tmp = ft_getprob(list,
 						ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);
 	free(word);
 	if (pattern)
-		ft_list_clear(&pattern, &free);
+		btree_apply_suffix(pattern, &ft_delete_tree);
+//		ft_list_clear(&pattern, &free);
 }
 
 void		ft_removecompl(char **str)
