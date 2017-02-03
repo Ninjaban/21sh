@@ -48,27 +48,7 @@ char		*ft_getpattern(char *str)
 /*
 **	Main de la completion
 */
-/*
-char		*ft_getprob(t_lst *list, char *str)
-{
-	t_lst	*tmp;
-	char	*pattern;
-	char	*ret;
 
-	pattern = ft_strjoin(str, "*");
-	tmp = list;
-	while (tmp && ft_strcmp(tmp->data, str) != 0 &&
-		   match(tmp->data, pattern) == 0)
-		tmp = tmp->next;
-	free(str);
-	if (tmp)
-		ret = tmp->data + ft_strlen(pattern) - 1;
-	free(pattern);
-	if (tmp)
-		return (ret);
-	return (NULL);
-}
-*/
 char		*ft_getprob(t_btree *list, char *str)
 {
 	t_btree	*tmp;
@@ -85,7 +65,8 @@ char		*ft_getprob(t_btree *list, char *str)
 		else
 			tmp = (nb < 0) ? tmp->left : tmp->right;
 	pattern = ft_strjoin(str, "*");
-	if (tmp && (ft_strcmp(tmp->item, str) == 0 || match(tmp->item, pattern) == 1))
+	if (tmp && (ft_strcmp(tmp->item, str) == 0 ||
+			match(tmp->item, pattern) == 1))
 		ret = tmp->item + ft_strlen(str);
 	else
 		ret = NULL;
@@ -132,8 +113,5 @@ void		ft_completion_norme(char *word, t_btree **pattern, t_btree **list,
 		free(tmp);
 	}
 	else if (!(*list))
-	{
 		*list = ft_getexec(ft_getpath(env));
-//		ft_list_sort(&(*list), &ft_strcmp);
-	}
 }
