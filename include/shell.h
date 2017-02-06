@@ -201,6 +201,7 @@ void			ft_affprompt(size_t nbcmd, char **env);
 **	Read
 */
 
+void			ft_sigint(int sig);
 void			ft_print(char *str, size_t pos, char inc);
 void			ft_read_print(char **str, int c, size_t *pos, char **env);
 void			ft_read_suppr(char **str, size_t *pos);

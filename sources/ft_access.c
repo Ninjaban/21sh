@@ -69,6 +69,7 @@ int				ft_access_dir(char *path)
 {
 	struct stat	*buf;
 
+	ft_putendl(path);
 	if (path && access(path, F_OK) != 0)
 	{
 		ft_error(ERROR_DNOTFOUND);

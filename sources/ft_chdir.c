@@ -29,18 +29,12 @@ static int	ft_chdir_path(char *path, char ***env)
 
 static int	ft_set_path(char **path, char *str)
 {
-	size_t	n;
 	char	*tmp;
 
-	if (ft_strcmp(str, "..") != 0)
+	if (ft_strcmp(str, "..") != 0 && ft_strcmp(str, "cd") != 0)
 		tmp = ft_path_join(*path, str);
 	else
-	{
-		n = ft_strlen(*path);
-		while (n > 0 && (*path)[n] != '/')
-			n = n - 1;
-		tmp = (n > 0) ? ft_strcut(*path, 0, n) : ft_strdup("/");
-	}
+		tmp = ft_getcdir(*path);
 	free(*path);
 	*path = tmp;
 	if (!tmp)

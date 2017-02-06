@@ -5,7 +5,7 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 13:32:17 by jcarra            #+#    #+#             */
+/*   Created: 20\]=[=6/12/16 13:32:17 by jcarra            #+#    #+#             */
 /*   Updated: 2017/01/09 16:45:59 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -13,6 +13,23 @@
 #include "libft.h"
 #include "shell.h"
 #include "terms.h"
+
+size_t		position;
+char		**line;
+
+void		ft_sigint(int sig)
+{
+	if (sig != SIGINT)
+		return ;
+	ft_putendl("");
+	ft_affprompt(0, NULL);
+	if (line)
+	{
+		free(*line);
+		*line = ft_strnew(1);
+		position = 0;
+	}
+}
 
 static void	ft_read_history_clear(char *str)
 {
@@ -91,27 +108,30 @@ static char	ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 
 int			ft_read(char **str, t_sys **sys)
 {
-	size_t	n;
 	size_t	i;
 	char	exit;
 	int		c;
 
-	n = 0;
+	position = 0;
 	i = HISTORY_SIZE + 1;
 	exit = FALSE;
 	*str = ft_strnew(1);
+	line = &(*str);
 	while (exit == FALSE)
 	{
 		c = 0;
 		read(0, &c, sizeof(int));
 		ft_removecompl(&(*str));
-		exit = ft_read_check(c, &(*str), &(*sys), &n);
+		exit = ft_read_check(c, &(*str), &(*sys), &position);
+		if (c == KEY_EOF && !ft_strlen(*str))
+			return (FALSE);
 		if (c == KEY_UPS)
-			ft_read_history_up(&(*str), &(*sys), &i, &n);
+			ft_read_history_up(&(*str), &(*sys), &i, &position);
 		if (c == KEY_DOW)
-			ft_read_history_do(&(*str), &(*sys), &i, &n);
+			ft_read_history_do(&(*str), &(*sys), &i, &position);
 	}
-	ft_print(*str, n, 0);
+	ft_print(*str, position, 0);
 	ft_putchar('\n');
+	ft_putendl(*str);
 	return (TRUE);
 }

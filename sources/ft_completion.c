@@ -19,9 +19,7 @@ static void	ft_delete_tree(void *root)
 	if (root)
 	{
 		if (((t_btree *)root)->item)
-		{
 			free(((t_btree *)root)->item);
-		}
 		free(root);
 	}
 }

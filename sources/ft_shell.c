@@ -21,8 +21,13 @@ static int	ft_launcher(t_sys **sys, char **str)
 	char			*tmp;
 
 	ft_affprompt(++n, (*sys)->env);
+	signal(SIGINT, &ft_sigint);
 	if (ft_read(&(*str), &(*sys)) == FALSE)
-		ft_error(ERROR_READ);
+	{
+		signal(SIGINT, SIG_IGN);
+		return (FALSE);
+	}
+	signal(SIGINT, SIG_IGN);
 	if ((tmp = ft_strtrim(*str)) != NULL)
 	{
 		free(tmp);
@@ -100,6 +105,9 @@ void		ft_shell(t_sys *sys, int exit)
 			}
 			ft_free(NULL, NULL, &(sys->cmds));
 		}
+		else
+			exit = TRUE;
 	}
+	ft_termcaps_change(&sys->term_save);
 	ft_sys_free(sys);
 }
