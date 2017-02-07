@@ -88,7 +88,7 @@ void		ft_setcompletion(char **str, size_t pos, char *try, char tabul)
 	new = ft_strdup(*str);
 	(*str)[pos] = c;
 	if (!tabul)
-		new = ft_color("\a\e[1;4m", new);
+		new = ft_color("\a\e[4;36m", new);
 	tmp = ft_strjoin(new, try);
 	free(new);
 	if (!tabul)

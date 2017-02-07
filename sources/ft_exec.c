@@ -20,7 +20,11 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 		return (NULL);
 	if (ft_strcmp_case(((t_node *)(node->left->item))->cmd->name,
 					"exit") == 0)
+	{
+		if (((t_node *)(node->left->item))->cmd->argv[1])
+			exit(ft_atoi(((t_node *)(node->left->item))->cmd->argv[1]));
 		return (EXIT);
+	}
 	if (ft_builtins(((t_node *)(node->left->item))->cmd, &(*sys)) ==
 		FALSE)
 	{

@@ -51,7 +51,9 @@ void		ft_opendir(t_btree **list, char *path)
 	while ((files = readdir(dir)) != NULL)
 		if (ft_strcmp(files->d_name, ".") && ft_strcmp(files->d_name, ".."))
 			btree_add_node(&(*list),
-				btree_create_node(ft_strdup(files->d_name)), &ft_cmpf);
+				btree_create_node((files->d_type == DT_DIR) ?
+					ft_strjoin(files->d_name, "/") : ft_strdup(files->d_name)),
+					&ft_cmpf);
 	closedir(dir);
 }
 

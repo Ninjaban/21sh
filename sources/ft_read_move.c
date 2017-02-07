@@ -16,12 +16,12 @@
 
 void		ft_read_keyole(char **str, size_t *pos)
 {
-	while (*pos > 0 && ft_isalnum((*str)[*pos]) == 0)
+	while (*pos > 0 && (*str)[*pos] == ' ')
 	{
 		ft_putchar('\b');
 		*pos = *pos - 1;
 	}
-	while (*pos > 0 && ft_isalnum((*str)[*pos]) == 1)
+	while (*pos > 0 && (*str)[*pos] != ' ')
 	{
 		ft_putchar('\b');
 		*pos = *pos - 1;
@@ -30,9 +30,9 @@ void		ft_read_keyole(char **str, size_t *pos)
 
 void		ft_read_keyori(char **str, size_t *pos)
 {
-	while (*pos < ft_strlen(*str) && ft_isalnum((*str)[*pos]) == 0)
+	while (*pos < ft_strlen(*str) && (*str)[*pos] == ' ' && (*str)[*pos])
 		ft_putchar((*str)[(*pos)++]);
-	while (*pos < ft_strlen(*str) && ft_isalnum((*str)[*pos]) == 1)
+	while (*pos < ft_strlen(*str) && (*str)[*pos] != ' ' && (*str)[*pos])
 		ft_putchar((*str)[(*pos)++]);
 }
 

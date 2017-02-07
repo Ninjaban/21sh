@@ -132,6 +132,5 @@ int			ft_read(char **str, t_sys **sys)
 	}
 	ft_print(*str, position, 0);
 	ft_putchar('\n');
-	ft_putendl(*str);
 	return (TRUE);
 }
