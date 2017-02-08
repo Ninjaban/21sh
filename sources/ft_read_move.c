@@ -14,6 +14,18 @@
 #include "shell.h"
 #include "terms.h"
 
+void		ft_read_history_clear(char *str)
+{
+	size_t	n;
+
+	n = ft_strlen(str);
+	while (n-- > 0)
+		ft_putchar(' ');
+	n = ft_strlen(str);
+	while (n-- > 0)
+		ft_putchar('\b');
+}
+
 void		ft_read_keyole(char **str, size_t *pos)
 {
 	while (*pos > 0 && (*str)[*pos] == ' ')

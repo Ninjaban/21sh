@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 20\]=[=6/12/16 13:32:17 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/09 16:45:59 by jcarra           ###   ########.fr       */
+/*   Created: 2017/02/08 09:33:43 by jcarra            #+#    #+#             */
+/*   Updated: 2017/02/08 09:33:44 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 #include "shell.h"
 #include "terms.h"
 
-size_t		position;
-char		**line;
+size_t		g_position;
+char		**g_line;
 
 void		ft_sigint(int sig)
 {
@@ -23,24 +23,12 @@ void		ft_sigint(int sig)
 		return ;
 	ft_putendl("");
 	ft_affprompt(0, NULL);
-	if (line)
+	if (g_line)
 	{
-		free(*line);
-		*line = ft_strnew(1);
-		position = 0;
+		free(*g_line);
+		*g_line = ft_strnew(1);
+		g_position = 0;
 	}
-}
-
-static void	ft_read_history_clear(char *str)
-{
-	size_t	n;
-
-	n = ft_strlen(str);
-	while (n-- > 0)
-		ft_putchar(' ');
-	n = ft_strlen(str);
-	while (n-- > 0)
-		ft_putchar('\b');
 }
 
 static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
@@ -112,25 +100,25 @@ int			ft_read(char **str, t_sys **sys)
 	char	exit;
 	int		c;
 
-	position = 0;
+	g_position = 0;
 	i = HISTORY_SIZE + 1;
 	exit = FALSE;
 	*str = ft_strnew(1);
-	line = &(*str);
+	g_line = &(*str);
 	while (exit == FALSE)
 	{
 		c = 0;
 		read(0, &c, sizeof(int));
 		ft_removecompl(&(*str));
-		exit = ft_read_check(c, &(*str), &(*sys), &position);
+		exit = ft_read_check(c, &(*str), &(*sys), &g_position);
 		if (c == KEY_EOF && !ft_strlen(*str))
 			return (FALSE);
 		if (c == KEY_UPS)
-			ft_read_history_up(&(*str), &(*sys), &i, &position);
+			ft_read_history_up(&(*str), &(*sys), &i, &g_position);
 		if (c == KEY_DOW)
-			ft_read_history_do(&(*str), &(*sys), &i, &position);
+			ft_read_history_do(&(*str), &(*sys), &i, &g_position);
 	}
-	ft_print(*str, position, 0);
+	ft_print(*str, g_position, 0);
 	ft_putchar('\n');
 	return (TRUE);
 }

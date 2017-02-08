@@ -37,8 +37,8 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 			ft_exec_child(node->left->item, &(*sys));
 			exit(1);
 		}
-		wait(NULL);
 	}
+	wait(NULL);
 	return (NULL);
 }
 

@@ -70,6 +70,6 @@ int			main(int ac, char **av, char **env)
 	}
 	if (signal(SIGINT, SIG_IGN) == SIG_ERR)
 		return (1);
-	ft_shell(sys, FALSE);
+	ft_shell(sys, FALSE, NULL, NULL);
 	return (0);
 }

@@ -146,7 +146,7 @@ char			*ft_access(char *name, char **env);
 */
 
 void			ft_echo(char **argv);
-void			ft_env(char **env);
+void			ft_env(char **argv, char **env);
 void			ft_unsetenv(char ***env, char *str);
 void			ft_setenv(char *str, char ***env, int b);
 int				ft_alias(t_cmd *cmd, t_alias **alias);
@@ -209,6 +209,7 @@ void			ft_read_delete(char **str, size_t *pos);
 void			ft_read_keyole(char **str, size_t *pos);
 void			ft_read_keyori(char **str, size_t *pos);
 void			ft_read_move(char **str, int c, size_t *pos);
+void			ft_read_history_clear(char *str);
 int				ft_read(char **str, t_sys **sys);
 
 /*
@@ -217,7 +218,7 @@ int				ft_read(char **str, t_sys **sys);
 
 void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp,
 									size_t n);
-void			ft_shell(t_sys *sys, int exit);
+void			ft_shell(t_sys *sys, int exit, char *str, char *tmp);
 int				ft_history_maj(t_lst **history, char *line, char **env);
 int				ft_sys_init(t_sys **sys);
 

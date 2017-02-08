@@ -80,11 +80,8 @@ static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 	return (TRUE);
 }
 
-void		ft_shell(t_sys *sys, int exit)
+void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 {
-	char	*str;
-	char	*tmp;
-
 	if (ft_history_init(&sys->history, sys->env) == FALSE)
 		return (ft_error(ERROR_HISTORY));
 	if (ft_shrc_init(&sys, NULL, 0) == FALSE)

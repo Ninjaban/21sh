@@ -17,14 +17,14 @@
   <component name="ChangeListManager">
     <list default="true" id="bfca7331-97d6-4ab1-8cbb-63d77c4051d8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/error.h" afterPath="$PROJECT_DIR$/include/error.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_access.c" afterPath="$PROJECT_DIR$/sources/ft_access.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_completion_norme.c" afterPath="$PROJECT_DIR$/sources/ft_completion_norme.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_completion_tools.c" afterPath="$PROJECT_DIR$/sources/ft_completion_tools.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/shell.h" afterPath="$PROJECT_DIR$/include/shell.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_builtins.c" afterPath="$PROJECT_DIR$/sources/ft_builtins.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_env.c" afterPath="$PROJECT_DIR$/sources/ft_env.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_exec.c" afterPath="$PROJECT_DIR$/sources/ft_exec.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_main.c" afterPath="$PROJECT_DIR$/sources/ft_main.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_read.c" afterPath="$PROJECT_DIR$/sources/ft_read.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_read_move.c" afterPath="$PROJECT_DIR$/sources/ft_read_move.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_read_print.c" afterPath="$PROJECT_DIR$/sources/ft_read_print.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_shell.c" afterPath="$PROJECT_DIR$/sources/ft_shell.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -44,12 +44,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ft_read.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/ft_read.c">
+      <file leaf-file-name="shell.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/shell.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1080">
+              <caret line="211" column="49" lean-forward="false" selection-start-line="211" selection-start-column="49" selection-end-line="211" selection-end-column="49" />
+              <folding>
+                <element signature="e#1320#1340#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,7 +60,27 @@
         <entry file="file://$PROJECT_DIR$/sources/ft_read_print.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1020">
-              <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+              <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_read.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/ft_read.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_shell.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_shell.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,18 +89,38 @@
       <file leaf-file-name="ft_read_move.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/ft_read_move.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="210">
+              <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ft_chdir.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sources/ft_chdir.c">
+      <file leaf-file-name="ft_env.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_env.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="855">
+              <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_main.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_strsplit.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/Part_2/ft_strsplit.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1230">
+              <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -87,58 +129,18 @@
       <file leaf-file-name="ft_exec.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/ft_exec.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="555">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ft_access.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/ft_access.c">
+      <file leaf-file-name="ft_builtins.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_builtins.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ft_completion.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/ft_completion.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ft_completion_norme.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/ft_completion_norme.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/error.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ft_completion_tools.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/ft_completion_tools.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -168,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/Part 2/ft_explode.c" />
         <option value="$PROJECT_DIR$/sources/ft_unsetenv.c" />
         <option value="$PROJECT_DIR$/sources/ft_echo.c" />
         <option value="$PROJECT_DIR$/pipe.c" />
@@ -185,7 +186,6 @@
         <option value="$PROJECT_DIR$/ft_read_move.c" />
         <option value="$PROJECT_DIR$/sources/ft_exec_child.c" />
         <option value="$PROJECT_DIR$/sources/ft_exec_init.c" />
-        <option value="$PROJECT_DIR$/sources/ft_builtins.c" />
         <option value="$PROJECT_DIR$/sources/ft_shell_norme.c" />
         <option value="$PROJECT_DIR$/sources/ft_prompt.c" />
         <option value="$PROJECT_DIR$/library/List/ft_list_sort.c" />
@@ -207,18 +207,20 @@
         <option value="$PROJECT_DIR$/sources/ft_free.c" />
         <option value="$PROJECT_DIR$/sources/ft_sys.c" />
         <option value="$PROJECT_DIR$/sources/ft_completion.c" />
-        <option value="$PROJECT_DIR$/sources/ft_shell.c" />
-        <option value="$PROJECT_DIR$/include/shell.h" />
-        <option value="$PROJECT_DIR$/sources/ft_main.c" />
-        <option value="$PROJECT_DIR$/sources/ft_read.c" />
-        <option value="$PROJECT_DIR$/sources/ft_exec.c" />
         <option value="$PROJECT_DIR$/sources/ft_completion_norme.c" />
         <option value="$PROJECT_DIR$/sources/ft_read_print.c" />
         <option value="$PROJECT_DIR$/sources/ft_completion_tools.c" />
-        <option value="$PROJECT_DIR$/sources/ft_read_move.c" />
         <option value="$PROJECT_DIR$/include/error.h" />
         <option value="$PROJECT_DIR$/sources/ft_access.c" />
         <option value="$PROJECT_DIR$/sources/ft_chdir.c" />
+        <option value="$PROJECT_DIR$/sources/ft_builtins.c" />
+        <option value="$PROJECT_DIR$/sources/ft_exec.c" />
+        <option value="$PROJECT_DIR$/sources/ft_env.c" />
+        <option value="$PROJECT_DIR$/sources/ft_shell.c" />
+        <option value="$PROJECT_DIR$/sources/ft_main.c" />
+        <option value="$PROJECT_DIR$/sources/ft_read.c" />
+        <option value="$PROJECT_DIR$/sources/ft_read_move.c" />
+        <option value="$PROJECT_DIR$/include/shell.h" />
       </list>
     </option>
   </component>
@@ -561,12 +563,13 @@
       <workItem from="1486021929545" duration="12954000" />
       <workItem from="1486108091265" duration="13301000" />
       <workItem from="1486367619960" duration="5349000" />
-      <workItem from="1486453910045" duration="4952000" />
+      <workItem from="1486453910045" duration="5126000" />
+      <workItem from="1486540234481" duration="2919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125251000" />
+    <option name="totallyTimeSpent" value="128344000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -615,14 +618,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/List/ft_list_del.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -686,13 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/Part_2/ft_strsplit.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -793,7 +781,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_exec_init.c" />
     <entry file="file://$PROJECT_DIR$/sources/ft_exec_child.c" />
-    <entry file="file://$PROJECT_DIR$/sources/ft_builtins.c" />
     <entry file="file://$PROJECT_DIR$/library/Part_1/ft_strcmp_case.c" />
     <entry file="file://$PROJECT_DIR$/library/Btree/btree_add_node.c">
       <provider selected="true" editor-type-id="text-editor">
@@ -827,32 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/shell.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="219" column="45" lean-forward="false" selection-start-line="219" selection-start-column="45" selection-end-line="219" selection-end-column="45" />
-          <folding>
-            <element signature="e#1320#1340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_shell.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_parsing_tools.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -869,34 +830,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_chdir.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_access.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_completion.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_completion_norme.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
+        <state relative-caret-position="1350">
           <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_completion_tools.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_read_print.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_read_move.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -909,42 +870,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_completion_tools.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="38" lean-forward="false" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/Part_2/ft_strsplit.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_builtins.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_exec.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="555">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_completion.c">
+    <entry file="file://$PROJECT_DIR$/sources/ft_env.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="855">
+          <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_access.c">
+    <entry file="file://$PROJECT_DIR$/sources/ft_shell.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+        <state relative-caret-position="885">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_read_print.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_read_move.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/shell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="211" column="49" lean-forward="false" selection-start-line="211" selection-start-column="49" selection-end-line="211" selection-end-column="49" />
+          <folding>
+            <element signature="e#1320#1340#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_read.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_chdir.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>

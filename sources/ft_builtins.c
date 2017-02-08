@@ -23,7 +23,7 @@ int			ft_builtins(t_cmd *cmds, t_sys **sys)
 	else if (ft_strcmp(cmds->name, "unsetenv") == 0)
 		ft_unsetenv(&((*sys)->env), cmds->argv[1]);
 	else if (ft_strcmp(cmds->name, "env") == 0)
-		ft_env((*sys)->env);
+		ft_env(cmds->argv, (*sys)->env);
 	else if (ft_strcmp(cmds->name, "cd") == 0)
 		ft_chdir(&((*sys)->env), cmds->argv[1]);
 	else if (ft_strcmp(cmds->name, "alias") == 0)
