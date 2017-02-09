@@ -24,6 +24,24 @@
 # define TRUE 1
 # define EXIT "exit"
 
+/*
+**	CMD	= ;
+**	AND	= &&
+**	OR	= ||
+*/
+
+# define CMD 0
+# define AND 1
+# define OR 2
+
+/*
+**	PIPE		= |
+**	REDIR_R		= >
+**	CONCAT_R	= >>
+**	REDIR_L		= <
+**	CONCAT_L	= <<
+*/
+
 # define PIPE 1
 # define REDIR_R 2
 # define CONCAT_R 3

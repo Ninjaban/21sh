@@ -81,7 +81,6 @@ static char	**complete_tab(char const *s, char const *c, char **tab)
 char		**ft_strsplit(char const *s, char const *c)
 {
 	char	**tab;
-	char	**sav;
 	int		word;
 
 	if (s == NULL || c == NULL)
@@ -91,7 +90,6 @@ char		**ft_strsplit(char const *s, char const *c)
 		return (NULL);
 	while (word >= 0)
 		tab[word--] = NULL;
-	sav = tab;
 	if ((tab = complete_tab(s, c, tab)) == NULL)
 		return (NULL);
 	return (tab);

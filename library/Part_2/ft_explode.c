@@ -17,9 +17,9 @@ static int	check_c(char c, char const *check)
 	size_t	n;
 
 	n = 0;
-	while (check[n] && check[n] != c)
+	while (check[n] && check[n] == c)
 		n = n + 1;
-	if (check[n] && check[n] == c)
+	if (!check[n])
 		return (1);
 	return (0);
 }
@@ -31,11 +31,15 @@ static int	count_word(char const *s, char const *c)
 
 	n = 0;
 	word = 0;
+	while (check_c(s[n], c) == 1 && s[n])
+		n = n + 1;
 	while (s[n])
 	{
-		if (check_c(s[n], c) == 1)
-			word = word + 1;
-		n = n + 1;
+		word = word + 1;
+		while (s[n] && check_c(s[n], c) == 0)
+			n = n + 1;
+		while (check_c(s[n], c) == 1 && s[n])
+			n = n + 1;
 	}
 	return (word);
 }
@@ -58,6 +62,8 @@ static char	**complete_tab(char const *s, char const *c, char **tab)
 
 	n = 0;
 	i = 0;
+	while (check_c(s[n], c) == 1 && s[n])
+		n = n + 1;
 	while (s[n])
 	{
 		if ((tab[i] = malloc(size_word(s, c, n) + 1)) == NULL)
@@ -66,7 +72,7 @@ static char	**complete_tab(char const *s, char const *c, char **tab)
 		while (s[n] && check_c(s[n], c) == 0)
 			tab[i][j++] = s[n++];
 		tab[i++][j] = '\0';
-		if (check_c(s[n], c) == 1 && s[n])
+		while (check_c(s[n], c) == 1 && s[n])
 			n = n + 1;
 	}
 	return (tab);
@@ -75,7 +81,6 @@ static char	**complete_tab(char const *s, char const *c, char **tab)
 char		**ft_explode(char const *s, char const *c)
 {
 	char	**tab;
-	char	**sav;
 	int		word;
 
 	if (s == NULL || c == NULL)
@@ -85,7 +90,6 @@ char		**ft_explode(char const *s, char const *c)
 		return (NULL);
 	while (word >= 0)
 		tab[word--] = NULL;
-	sav = tab;
 	if ((tab = complete_tab(s, c, tab)) == NULL)
 		return (NULL);
 	return (tab);
