@@ -6,13 +6,38 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/20 11:16:14 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/02/10 14:44:17 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
+
+static void	ft_exec_parent(pid_t child)
+{
+	int	status;
+
+	if (child > 0)
+	{
+		if (waitpid(child, &status, 0) > 0)
+		{
+			if (WIFEXITED(status) && !WEXITSTATUS(status))
+				ft_putstr(">> normal exit\n");
+			else if (WIFEXITED(status) && WEXITSTATUS(status))
+			{
+				if (WEXITSTATUS(status) == 127)
+					ft_putstr(">> exec fail\n");
+				else
+					ft_putstr(">> normal non-zero\n");
+			}
+			else
+				ft_putstr(">> not normal exit\n");
+		}
+		else
+			ft_putstr(">> waitpid fail\n");
+	}
+}
 
 static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 {
@@ -37,7 +62,10 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 			ft_exec_child(node->left->item, &(*sys));
 			exit(1);
 		}
+		ft_exec_parent(child);
 	}
+	else
+		ft_putendl(">> exec builtin");
 	wait(NULL);
 	return (NULL);
 }
@@ -64,6 +92,7 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 				ft_error(ERROR_EXEC);
 				exit(1);
 			}
+			ft_exec_parent(child);
 			wait(NULL);
 		}
 		node = node->right;
