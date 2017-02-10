@@ -15,7 +15,7 @@
 #include "error.h"
 #include "terms.h"
 
-static int	ft_launcher(t_sys **sys, char **str)
+static int	ft_launcher(t_sys **sys, char **str, int *exit)
 {
 	static size_t	n = 0;
 	char			*tmp;
@@ -25,7 +25,7 @@ static int	ft_launcher(t_sys **sys, char **str)
 	if (ft_read(&(*str), &(*sys)) == FALSE)
 	{
 		signal(SIGINT, SIG_IGN);
-		return (FALSE);
+		return (((*exit) = TRUE) - TRUE);
 	}
 	signal(SIGINT, SIG_IGN);
 	if ((tmp = ft_strtrim(*str)) != NULL)
@@ -90,7 +90,7 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 	{
 		str = NULL;
 		ft_termcaps_change(&sys->term_new);
-		if (ft_launcher(&sys, &str) == TRUE)
+		if (ft_launcher(&sys, &str, &exit) == TRUE)
 		{
 			ft_termcaps_change(&sys->term_save);
 			if ((tmp = ft_exec(&sys, sys->cmds, NULL, 0)) != NULL)
@@ -102,8 +102,6 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 			}
 			ft_free(NULL, NULL, &(sys->cmds));
 		}
-		else
-			exit = TRUE;
 	}
 	ft_termcaps_change(&sys->term_save);
 	ft_sys_free(sys);

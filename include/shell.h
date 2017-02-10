@@ -22,6 +22,7 @@
 # define HISTORY_SIZE 1000
 # define FALSE 0
 # define TRUE 1
+# define ERROR 2
 # define EXIT "exit"
 
 /*
