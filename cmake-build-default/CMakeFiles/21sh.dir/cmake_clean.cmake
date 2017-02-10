@@ -102,6 +102,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o"
   "CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o"
   "CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o"
+  "CMakeFiles/21sh.dir/main.c.o"
   "21sh.pdb"
   "21sh"
 )

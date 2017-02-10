@@ -67,6 +67,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strsub.c" "/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o"
   "/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_strtrim.c" "/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o"
   "/Users/jcarra/Ninjaban/21sh/library/Part_2/ft_tablen.c" "/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o"
+  "/Users/jcarra/Ninjaban/21sh/main.c" "/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles/21sh.dir/main.c.o"
   "/Users/jcarra/Ninjaban/21sh/sources/ft_access.c" "/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles/21sh.dir/sources/ft_access.c.o"
   "/Users/jcarra/Ninjaban/21sh/sources/ft_alias.c" "/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles/21sh.dir/sources/ft_alias.c.o"
   "/Users/jcarra/Ninjaban/21sh/sources/ft_builtins.c" "/Users/jcarra/Ninjaban/21sh/cmake-build-default/CMakeFiles/21sh.dir/sources/ft_builtins.c.o"

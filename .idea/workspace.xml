@@ -16,10 +16,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfca7331-97d6-4ab1-8cbb-63d77c4051d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/21sh.dSYM/Contents/Resources/DWARF/21sh" afterPath="$PROJECT_DIR$/21sh.dSYM/Contents/Resources/DWARF/21sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/shell.h" afterPath="$PROJECT_DIR$/include/shell.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_shell.c" afterPath="$PROJECT_DIR$/sources/ft_shell.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-default/21sh.cbp" afterPath="$PROJECT_DIR$/cmake-build-default/21sh.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/21sh.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-default/Makefile" afterPath="$PROJECT_DIR$/cmake-build-default/Makefile" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -71,12 +76,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ft_shell.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ft_shell.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/ft_shell.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#48#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/ft_unsetenv.c" />
         <option value="$PROJECT_DIR$/sources/ft_echo.c" />
         <option value="$PROJECT_DIR$/pipe.c" />
         <option value="$PROJECT_DIR$/sources/ft_chdir_tools.c" />
@@ -176,6 +192,7 @@
         <option value="$PROJECT_DIR$/sources/ft_parsing.c" />
         <option value="$PROJECT_DIR$/include/shell.h" />
         <option value="$PROJECT_DIR$/sources/ft_shell.c" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -290,6 +307,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="21sh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmake-build-default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -303,6 +334,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/sources" />
     </key>
   </component>
@@ -522,12 +554,12 @@
       <workItem from="1486540234481" duration="3055000" />
       <workItem from="1486626576549" duration="7026000" />
       <workItem from="1486643056475" duration="222000" />
-      <workItem from="1486712939961" duration="1982000" />
+      <workItem from="1486712939961" duration="2206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137710000" />
+    <option name="totallyTimeSpent" value="137934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,13 +608,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/List/ft_list_del.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/List/ft_list_clear.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -910,8 +935,18 @@
     <entry file="file://$PROJECT_DIR$/sources/ft_shell.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

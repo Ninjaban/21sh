@@ -1824,6 +1824,33 @@ library/Part_2/ft_tablen.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s
 .PHONY : library/Part_2/ft_tablen.c.s
 
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/main.c.s
+.PHONY : main.c.s
+
 sources/ft_access.o: sources/ft_access.c.o
 
 .PHONY : sources/ft_access.o
@@ -3102,6 +3129,9 @@ help:
 	@echo "... library/Part_2/ft_tablen.o"
 	@echo "... library/Part_2/ft_tablen.i"
 	@echo "... library/Part_2/ft_tablen.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... sources/ft_access.o"
 	@echo "... sources/ft_access.i"
 	@echo "... sources/ft_access.s"

@@ -290,6 +290,9 @@
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/library/include/libft.h">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/Users/jcarra/Ninjaban/21sh/main.c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/Users/jcarra/Ninjaban/21sh/sources/ft_access.c">
 			<Option target="21sh"/>
 		</Unit>
