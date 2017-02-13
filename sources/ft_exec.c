@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/13 11:56:34 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/13 12:44:39 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,16 @@ static int	ft_exec_parent(pid_t child)
 		if (waitpid(child, &status, 0) > 0)
 		{
 			if (WIFEXITED(status) && !WEXITSTATUS(status))
-			{ft_putstr(">> normal exit\n"); return (0);}
-			else if (WIFEXITED(status) && WEXITSTATUS(status))
 			{
-				if (WEXITSTATUS(status) == 127)
-				{ft_putstr(">> exec fail\n"); return (1);}
-				else
-				{ft_putstr(">> normal non-zero\n"); return (1);}
+				ft_putstr(">> normal exit\n");
+				return (0);
 			}
 			else
-			{ft_putstr(">> not normal exit\n"); return (1);}
+			{
+				ft_putstr(">> not normal exit\n");
+				return (1);
+			}
 		}
-		else
-		{ft_putstr(">> waitpid fail\n"); return (1);}
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:02:39 by jcarra            #+#    #+#             */
-/*   Updated: 2016/11/17 22:04:17 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/02/13 12:28:06 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ static void	ft_env_print(char **tab)
 static int	ft_env_launch(char **argv, char **tab, size_t n)
 {
 	pid_t	child;
+	int		status;
 
 	if ((child = fork()) == -1)
 	{
@@ -69,6 +70,16 @@ static int	ft_env_launch(char **argv, char **tab, size_t n)
 		execve(argv[n], argv + n, tab);
 		ft_error(ERROR_EXEC);
 		exit(1);
+	}
+	else if (child > 0)
+	{
+		if (waitpid(child, &status, 0) > 0)
+		{
+			if (WIFEXITED(status) && !WEXITSTATUS(status))
+				return (TRUE);
+		}
+		else
+			return (FALSE);
 	}
 	return (TRUE);
 }
