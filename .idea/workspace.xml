@@ -17,10 +17,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bfca7331-97d6-4ab1-8cbb-63d77c4051d8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_read.c" afterPath="$PROJECT_DIR$/sources/ft_read.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_read_move.c" afterPath="$PROJECT_DIR$/sources/ft_read_move.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_read_print.c" afterPath="$PROJECT_DIR$/sources/ft_read_print.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_shell_norme.c" afterPath="$PROJECT_DIR$/sources/ft_shell_norme.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/shell.h" afterPath="$PROJECT_DIR$/include/shell.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_echo.c" afterPath="$PROJECT_DIR$/sources/ft_echo.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_env.c" afterPath="$PROJECT_DIR$/sources/ft_env.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_setenv.c" afterPath="$PROJECT_DIR$/sources/ft_setenv.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/ft_unsetenv.c" afterPath="$PROJECT_DIR$/sources/ft_unsetenv.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -40,14 +41,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shell.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="shell.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/shell.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="230" column="57" lean-forward="false" selection-start-line="230" selection-start-column="57" selection-end-line="230" selection-end-column="57" />
+            <state relative-caret-position="480">
+              <caret line="167" column="4" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
               <folding>
                 <element signature="e#1492#1512#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_setenv.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_setenv.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_unsetenv.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_unsetenv.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="75" column="27" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_env.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_env.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="877">
+              <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,11 +93,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ft_shell_norme.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ft_shell_norme.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/ft_shell_norme.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
               <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_builtins.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/ft_builtins.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -102,16 +143,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="terms.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/terms.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -136,9 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pipe.c" />
-        <option value="$PROJECT_DIR$/sources/ft_chdir_tools.c" />
-        <option value="$PROJECT_DIR$/sources/match.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/sources/ft_delchar.c" />
         <option value="$PROJECT_DIR$/library/Makefile" />
@@ -171,7 +199,6 @@
         <option value="$PROJECT_DIR$/sources/ft_chdir.c" />
         <option value="$PROJECT_DIR$/sources/ft_builtins.c" />
         <option value="$PROJECT_DIR$/sources/ft_exec.c" />
-        <option value="$PROJECT_DIR$/sources/ft_env.c" />
         <option value="$PROJECT_DIR$/library/Part_2/ft_strsplit.c" />
         <option value="$PROJECT_DIR$/library/Part_2/ft_explode.c" />
         <option value="$PROJECT_DIR$/sources/ft_parsing.c" />
@@ -180,13 +207,17 @@
         <option value="$PROJECT_DIR$/sources/ft_exec_child.c" />
         <option value="$PROJECT_DIR$/sources/ft_prompt_path.c" />
         <option value="$PROJECT_DIR$/sources/ft_prompt.c" />
-        <option value="$PROJECT_DIR$/include/shell.h" />
         <option value="$PROJECT_DIR$/sources/ft_shell.c" />
         <option value="$PROJECT_DIR$/include/terms.h" />
         <option value="$PROJECT_DIR$/sources/ft_read_print.c" />
         <option value="$PROJECT_DIR$/sources/ft_read_move.c" />
         <option value="$PROJECT_DIR$/sources/ft_read.c" />
         <option value="$PROJECT_DIR$/sources/ft_shell_norme.c" />
+        <option value="$PROJECT_DIR$/sources/ft_echo.c" />
+        <option value="$PROJECT_DIR$/sources/ft_env.c" />
+        <option value="$PROJECT_DIR$/sources/ft_setenv.c" />
+        <option value="$PROJECT_DIR$/sources/ft_unsetenv.c" />
+        <option value="$PROJECT_DIR$/include/shell.h" />
       </list>
     </option>
   </component>
@@ -581,12 +612,12 @@
       <workItem from="1486626576549" duration="7026000" />
       <workItem from="1486643056475" duration="222000" />
       <workItem from="1486712939961" duration="5314000" />
-      <workItem from="1486973009190" duration="1736000" />
+      <workItem from="1486973009190" duration="2801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142778000" />
+    <option name="totallyTimeSpent" value="143843000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,27 +666,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/Part_2/ft_strtrim.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/Part_1/ft_strncmp.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_init.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_gestion_error.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -803,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_env.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_parsing_node.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -865,6 +868,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="67" lean-forward="true" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -879,14 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="100" column="65" lean-forward="false" selection-start-line="100" selection-start-column="65" selection-end-line="100" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_builtins.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -933,16 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/shell.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="230" column="57" lean-forward="false" selection-start-line="230" selection-start-column="57" selection-end-line="230" selection-end-column="57" />
-          <folding>
-            <element signature="e#1492#1512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/terms.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -975,6 +961,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_shell_norme.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_builtins.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_echo.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_read.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -983,11 +993,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_shell_norme.c">
+    <entry file="file://$PROJECT_DIR$/sources/ft_env.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="877">
+          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_setenv.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_unsetenv.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="75" column="27" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/shell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="167" column="4" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
+          <folding>
+            <element signature="e#1492#1512#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

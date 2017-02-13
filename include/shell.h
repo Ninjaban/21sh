@@ -163,10 +163,10 @@ char			*ft_access(char *name, char **env);
 **	Builtins
 */
 
-void			ft_echo(char **argv);
-void			ft_env(char **argv, char **env);
-void			ft_unsetenv(char ***env, char *str);
-void			ft_setenv(char *str, char ***env, int b);
+int				ft_echo(char **argv);
+int				ft_env(char **argv, char **env);
+int				ft_unsetenv(char ***env, char *str);
+int				ft_setenv(char *str, char ***env, int b);
 int				ft_alias(t_cmd *cmd, t_alias **alias);
 int				ft_unalias(t_cmd *cmd, t_alias **alias);
 int				ft_chdir(char ***env, char *str);

@@ -25,7 +25,7 @@ static size_t	ft_find_path(char **env, char *str)
 	return (n);
 }
 
-static void		ft_del_line(char ***env, size_t i)
+static int		ft_del_line(char ***env, size_t i)
 {
 	char		**tab;
 	size_t		n;
@@ -34,7 +34,7 @@ static void		ft_del_line(char ***env, size_t i)
 	j = 0;
 	n = 0;
 	if ((tab = malloc(sizeof(char *) * ft_tablen(*env))) == NULL)
-		return ;
+		return (FALSE);
 	while ((*env)[n])
 	{
 		if (n != i)
@@ -44,6 +44,7 @@ static void		ft_del_line(char ***env, size_t i)
 	tab[j] = NULL;
 	ft_free_tab(*env);
 	(*env) = tab;
+	return (TRUE);
 }
 
 static void		ft_init_pwd(char ***env)
@@ -59,14 +60,19 @@ static void		ft_init_pwd(char ***env)
 		ft_setenv(path, &(*env), TRUE);
 }
 
-void			ft_unsetenv(char ***env, char *str)
+int				ft_unsetenv(char ***env, char *str)
 {
 	size_t		n;
 
 	if ((n = ft_find_path(*env, str)) == ft_tablen(*env))
+	{
 		ft_putendl_fd("Variable non trouvé.", 2);
+		return (FALSE);
+	}
 	else if (ft_strcmp(str, "PWD") == 0)
 		ft_init_pwd(&(*env));
 	else if (ft_strcmp(str, "HOME") != 0)
-		ft_del_line(&(*env), n);
+		if (ft_del_line(&(*env), n) == FALSE)
+			return (FALSE);
+	return (TRUE);
 }

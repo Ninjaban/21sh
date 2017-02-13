@@ -57,7 +57,7 @@ static void		ft_add_var(char ***env, char *str, size_t n)
 	*env = tab;
 }
 
-void			ft_setenv(char *str, char ***env, int bool)
+int				ft_setenv(char *str, char ***env, int bool)
 {
 	char	**tab;
 	size_t	n;
@@ -65,13 +65,13 @@ void			ft_setenv(char *str, char ***env, int bool)
 	if ((tab = ft_strsplit(str, "=")) == NULL)
 	{
 		ft_error(ERROR_ALLOC);
-		return ;
+		return (FALSE);
 	}
 	if (ft_tablen(tab) != 2)
 	{
 		ft_free_tab(tab);
 		ft_error(ERROR_SYNTAX);
-		return ;
+		return (FALSE);
 	}
 	if ((n = ft_find_path(*env, tab[0])) != ft_tablen(*env))
 		ft_change_var(&(*env), str, n);
@@ -80,4 +80,5 @@ void			ft_setenv(char *str, char ***env, int bool)
 	ft_free_tab(tab);
 	if (bool == TRUE)
 		free(str);
+	return (TRUE);
 }

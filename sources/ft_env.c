@@ -55,21 +55,25 @@ static void	ft_env_print(char **tab)
 			ft_putendl(tab[n++]);
 }
 
-static void	ft_env_launch(char **argv, char **tab, size_t n)
+static int	ft_env_launch(char **argv, char **tab, size_t n)
 {
 	pid_t	child;
 
 	if ((child = fork()) == -1)
+	{
 		ft_error(ERROR_FORK);
+		return (FALSE);
+	}
 	else if (child == 0)
 	{
 		execve(argv[n], argv + n, tab);
 		ft_error(ERROR_EXEC);
 		exit(1);
 	}
+	return (TRUE);
 }
 
-void		ft_env(char **argv, char **env)
+int			ft_env(char **argv, char **env)
 {
 	size_t	n;
 	char	**tab;
@@ -80,7 +84,8 @@ void		ft_env(char **argv, char **env)
 	ft_env_set(argv, &tab, &n);
 	if (argv[n] == NULL)
 		ft_env_print(tab);
-	else
-		ft_env_launch(argv, tab, n);
+	else if (ft_env_launch(argv, tab, n) == FALSE)
+		return (FALSE);
 	ft_free_tab(tab);
+	return (TRUE);
 }

@@ -14,7 +14,7 @@
 #include "shell.h"
 #include "error.h"
 
-void		ft_echo(char **argv)
+int		ft_echo(char **argv)
 {
 	size_t	n;
 
@@ -26,4 +26,5 @@ void		ft_echo(char **argv)
 			ft_putstr(" ");
 	}
 	ft_putstr("\n");
+	return (TRUE);
 }
