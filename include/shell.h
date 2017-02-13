@@ -22,7 +22,6 @@
 # define HISTORY_SIZE 1000
 # define FALSE 0
 # define TRUE 1
-# define ERROR 2
 # define EXIT "exit"
 
 /*
@@ -229,7 +228,7 @@ void			ft_read_keyole(char **str, size_t *pos);
 void			ft_read_keyori(char **str, size_t *pos);
 void			ft_read_move(char **str, int c, size_t *pos);
 void			ft_read_history_clear(char *str);
-int				ft_read(char **str, t_sys **sys);
+int				ft_read(char **str, t_sys **sys, size_t n);
 
 /*
 **	Main

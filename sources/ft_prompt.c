@@ -61,9 +61,9 @@ static int		ft_nbcmd(char **str, size_t nbcmd)
 		if (ft_strncmp(*str, "!#", 1) == 0)
 		{
 			if (nbcmd == 0)
-				ft_putstr("#");
+				ft_putstr_fd("#", 0);
 			else
-				ft_putnbr(nbcmd);
+				ft_putnbr_fd(nbcmd, 0);
 			(*str)++;
 			return (TRUE);
 		}
@@ -76,7 +76,6 @@ static int		ft_color_prompt(char **str)
 	char	*tmp;
 	size_t	n;
 
-	tmp = NULL;
 	if (str && *str)
 		if (**str == '\033')
 		{
@@ -84,7 +83,7 @@ static int		ft_color_prompt(char **str)
 			if (*tmp)
 			{
 				n = tmp - *str;
-				write(1, *str, n);
+				write(0, *str, n);
 				while (*str != tmp - 1)
 					(*str)++;
 				return (TRUE);
@@ -109,9 +108,9 @@ void			ft_affprompt(size_t nbcmd, char **env)
 				if (!ft_nbcmd(&str, nbcmd))
 				{
 					if (!(ret = ft_path(&str, env)))
-						ft_putchar(*str);
+						ft_putchar_fd(*str, 0);
 					else if (ret == -1)
-						ft_putstr("...");
+						ft_putstr_fd("...", 0);
 				}
 			str++;
 		}

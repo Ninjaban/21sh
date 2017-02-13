@@ -22,7 +22,7 @@ static int	ft_launcher(t_sys **sys, char **str, int *exit)
 
 	ft_affprompt(++n, (*sys)->env);
 	signal(SIGINT, &ft_sigint);
-	if (ft_read(&(*str), &(*sys)) == FALSE)
+	if (ft_read(&(*str), &(*sys), n) == FALSE)
 	{
 		signal(SIGINT, SIG_IGN);
 		return (((*exit) = TRUE) - TRUE);

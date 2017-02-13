@@ -21,17 +21,17 @@ void		ft_print(char *str, size_t pos, char inc)
 
 	n = (int)pos;
 	while (n-- > 0)
-		ft_putchar('\b');
+		ft_putchar_fd('\b', 0);
 	n = (int)len_s;
 	while (n-- > 0)
-		ft_putchar(' ');
+		ft_putchar_fd(' ', 0);
 	while (len_s-- > 0)
-		ft_putchar('\b');
+		ft_putchar_fd('\b', 0);
 	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 13 : ft_strlen(str);
 	n = (int)len_s - 1;
-	ft_putstr(str);
+	ft_putstr_fd(str, 0);
 	while (n-- >= (int)pos + inc)
-		ft_putchar('\b');
+		ft_putchar_fd('\b', 0);
 }
 
 static char	*ft_strjoin_init(char *str, char *n, size_t pos)

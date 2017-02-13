@@ -20,19 +20,19 @@ void		ft_prompt_path(char **t, char bool)
 	char	**dir;
 
 	if (bool == FALSE)
-		ft_putstr(t[1]);
+		ft_putstr_fd(t[1], 0);
 	else
 	{
 		dir = ft_strsplit(t[1], "/");
 		n = 0;
 		if (!dir)
 		{
-			ft_putstr("...");
+			ft_putstr_fd("...", 0);
 			return ;
 		}
 		while (dir[n])
 			n = n + 1;
-		ft_putstr((n > 0) ? dir[n - 1] : "/");
+		ft_putstr_fd((n > 0) ? dir[n - 1] : "/", 0);
 		ft_free_tab(dir);
 	}
 }

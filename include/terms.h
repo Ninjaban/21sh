@@ -16,7 +16,6 @@
 # define KEY_EOF 4
 # define KEY_TAB 9
 # define KEY_RET 10
-# define KEY_ESC 27
 # define KEY_BAC 127
 # define KEY_DEL 2117294875
 
@@ -33,19 +32,10 @@
 # include <term.h>
 # include <sys/ioctl.h>
 
-typedef struct		s_win
-{
-	size_t			col;
-	size_t			row;
-	size_t			nbcol;
-	size_t			sizecol;
-}					t_win;
-
 int					fputchar(int c);
 int					ft_goto(char *cmd, int col, int line);
 int					ft_termcaps_change(struct termios *term);
 int					ft_termcaps_init(struct termios *term,
 										struct termios *save);
-int					ft_read(char **str, t_sys **sys);
 
 #endif

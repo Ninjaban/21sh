@@ -99,17 +99,17 @@ void		ft_exec_read_boucle(t_node *node)
 {
 	char	*line;
 
-	ft_putstr_fd("<key='", 2);
-	ft_putstr_fd(node->cmd->name, 2);
-	ft_putstr_fd("'>\n", 2);
+	ft_putstr_fd("<key='", 0);
+	ft_putstr_fd(node->cmd->name, 0);
+	ft_putstr_fd("'>\n", 0);
 	while (get_next_line(0, &line) == 1 &&
 		ft_strcmp(node->cmd->name, line) != 0)
 	{
-		ft_putstr_fd("<key='", 2);
-		ft_putstr_fd(node->cmd->name, 2);
-		ft_putstr_fd("'>\n", 2);
+		ft_putstr_fd("<key='", 0);
+		ft_putstr_fd(node->cmd->name, 0);
+		ft_putstr_fd("'>\n", 0);
 		ft_putendl(line);
 	}
-	ft_putendl_fd("---", 2);
+	ft_putendl_fd("---", 0);
 	exit(0);
 }
