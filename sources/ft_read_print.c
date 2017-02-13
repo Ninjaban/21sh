@@ -97,7 +97,7 @@ void		ft_read_delete(char **str, size_t *pos)
 	if (*pos > 0 && (*str)[*pos - 1])
 	{
 		*pos = *pos - 1;
-		ft_putchar('\b');
+		ft_putchar_fd('\b', 0);
 		ft_read_suppr(&(*str), &(*pos));
 	}
 }

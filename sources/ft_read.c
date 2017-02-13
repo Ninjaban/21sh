@@ -23,7 +23,7 @@ void		ft_sigint(int sig)
 {
 	if (sig != SIGINT)
 		return ;
-	ft_putendl("");
+	ft_putendl_fd("", 0);
 	ft_affprompt(nb, env);
 	if (g_line)
 	{
@@ -47,7 +47,7 @@ static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 	{
 		free(*str);
 		if ((*str = ft_strdup(tmp->data)) != NULL)
-			ft_putstr(*str);
+			ft_putstr_fd(*str, 0);
 		*pos = (*str) ? ft_strlen(*str) : 0;
 	}
 	else
@@ -73,7 +73,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 	{
 		free(*str);
 		if ((*str = ft_strdup(tmp->data)) != NULL)
-			ft_putstr(*str);
+			ft_putstr_fd(*str, 0);
 		*pos = (*str) ? ft_strlen(*str) : 0;
 	}
 	else
@@ -123,6 +123,6 @@ int			ft_read(char **str, t_sys **sys, size_t n)
 			ft_read_history_do(&(*str), &(*sys), &i, &g_position);
 	}
 	ft_print(*str, g_position, 0);
-	ft_putchar('\n');
+	ft_putchar_fd('\n', 0);
 	return (TRUE);
 }
