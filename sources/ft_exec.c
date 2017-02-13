@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/10 14:44:17 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/13 11:56:34 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "shell.h"
 #include "error.h"
 
-static void	ft_exec_parent(pid_t child)
+static int	ft_exec_parent(pid_t child)
 {
 	int	status;
 
@@ -23,20 +23,21 @@ static void	ft_exec_parent(pid_t child)
 		if (waitpid(child, &status, 0) > 0)
 		{
 			if (WIFEXITED(status) && !WEXITSTATUS(status))
-				ft_putstr(">> normal exit\n");
+			{ft_putstr(">> normal exit\n"); return (0);}
 			else if (WIFEXITED(status) && WEXITSTATUS(status))
 			{
 				if (WEXITSTATUS(status) == 127)
-					ft_putstr(">> exec fail\n");
+				{ft_putstr(">> exec fail\n"); return (1);}
 				else
-					ft_putstr(">> normal non-zero\n");
+				{ft_putstr(">> normal non-zero\n"); return (1);}
 			}
 			else
-				ft_putstr(">> not normal exit\n");
+			{ft_putstr(">> not normal exit\n"); return (1);}
 		}
 		else
-			ft_putstr(">> waitpid fail\n");
+		{ft_putstr(">> waitpid fail\n"); return (1);}
 	}
+	return (0);
 }
 
 static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
@@ -72,6 +73,9 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 
 void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 {
+	int	ret;
+
+	ret = 0;
 	while (node)
 	{
 		if (node->left && ((t_node *)(node->left->item))->redir == FALSE)
@@ -92,10 +96,17 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 				ft_error(ERROR_EXEC);
 				exit(1);
 			}
-			ft_exec_parent(child);
+			ret = ft_exec_parent(child);
 			wait(NULL);
 		}
-		node = node->right;
+		if (ret == 0 && ((t_node *)(node->item))->node == OR)
+			while (node && ((t_node *)(node->item))->node == OR)
+				node = node->right;
+		else if (ret != 0 && ((t_node *)(node->item))->node == AND)
+			while (node && ((t_node *)(node->item))->node == AND)
+				node = node->right;
+		else
+			node = node->right;
 	}
 	return (NULL);
 }
