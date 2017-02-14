@@ -39,7 +39,7 @@ static void		ft_parsing_multicmd(t_btree **cmds, char *str)
 	ft_init_node(&(*cmds), str + n, ft_get_redir_fd(str, n));
 }
 
-static void		ft_add_node(t_btree **cmds, char **tab, int n, char redir)
+static void		ft_add_node(t_btree **cmds, char **tab, char redir, int n)
 {
 	if (tab[n])
 	{

@@ -41,6 +41,8 @@ static int	ft_launcher(t_sys **sys, char **str, int *exit)
 		else
 			return (TRUE);
 	}
+	else
+		n = n - 1;
 	return (FALSE);
 }
 
