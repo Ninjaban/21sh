@@ -37,21 +37,21 @@ static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 {
 	t_lst	*tmp;
 
-	if (*i >= (size_t)ft_list_size((*sys)->history) - 1)
+	if (*i >= (size_t)ft_list_size((*sys)->history))
 		return ;
 	*i = *i + 1;
 	ft_read_move(&(*str), KEY_HOM, &(*pos));
 	ft_read_history_clear(*str);
 	tmp = ft_list_at((*sys)->history, *i);
+	free(*str);
 	if (tmp)
 	{
-		free(*str);
 		if ((*str = ft_strdup(tmp->data)) != NULL)
 			ft_putstr_fd(*str, 0);
-		*pos = (*str) ? ft_strlen(*str) : 0;
 	}
 	else
-		*i = *i - 1;
+		*str = ft_strnew(1);
+	*pos = (tmp && *str) ? ft_strlen(*str) : 0;
 }
 
 static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
@@ -60,7 +60,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 
 	if (*i == 0)
 		return ;
-	if (*i == HISTORY_SIZE + 1)
+	if (*i == (size_t)ft_list_size((*sys)->history))
 	{
 		ft_history_maj(&(*sys)->history, *str, (*sys)->env);
 		*i = (size_t)ft_list_size((*sys)->history);
@@ -105,7 +105,7 @@ int			ft_read(char **str, t_sys **sys, size_t n)
 	nb = n;
 	env = (*sys)->env;
 	g_position = 0;
-	i = HISTORY_SIZE + 1;
+	i = HISTORY_SIZE;
 	exit = FALSE;
 	*str = ft_strnew(1);
 	g_line = &(*str);
