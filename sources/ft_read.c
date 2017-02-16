@@ -60,7 +60,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 
 	if (*i == 0)
 		return ;
-	if (*i == HISTORY_SIZE + 1)
+	if (*i == (size_t)ft_list_size((*sys)->history))
 	{
 		ft_history_maj(&(*sys)->history, ft_strdup(*str), (*sys)->env);
 		*i = (size_t)ft_list_size((*sys)->history) - 1;
@@ -105,7 +105,7 @@ int			ft_read(char **str, t_sys **sys, size_t n)
 	nb = n;
 	env = (*sys)->env;
 	g_position = 0;
-	i = HISTORY_SIZE + 1;
+	i = HISTORY_SIZE;
 	exit = FALSE;
 	*str = ft_strnew(1);
 	g_line = &(*str);
