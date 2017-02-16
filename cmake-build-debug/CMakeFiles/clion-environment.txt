@@ -1,1 +1,0 @@
-CMake: 3.6.3@/Users/jcarra/Linux/CLion.app/Contents/bin/cmake/bin/cmake

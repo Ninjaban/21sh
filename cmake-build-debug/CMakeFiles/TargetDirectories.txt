@@ -1,3 +1,0 @@
-/Users/jcarra/Ninjaban/21sh/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/jcarra/Ninjaban/21sh/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/jcarra/Ninjaban/21sh/cmake-build-debug/CMakeFiles/21sh.dir
