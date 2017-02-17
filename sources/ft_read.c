@@ -57,21 +57,22 @@ static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 {
 	t_lst	*tmp;
+	char	ret;
 
 	if (*i == 0)
 		return ;
 	if (*i == (size_t)ft_list_size((*sys)->history))
 	{
-		ft_history_maj(&(*sys)->history, ft_strdup(*str), (*sys)->env);
-		*i = (size_t)ft_list_size((*sys)->history) - 1;
+		ret = ft_history_maj(&(*sys)->history, ft_strdup(*str), (*sys)->env);
+		*i = (size_t)ft_list_size((*sys)->history) - ((ret) ? 1 : 0);
 	}
 	*i = *i - 1;
 	ft_read_move(&(*str), KEY_HOM, &(*pos));
 	ft_read_history_clear(*str);
 	tmp = ft_list_at((*sys)->history, *i);
-    free(*str);
 	if (tmp)
 	{
+		free(*str);
 		if ((*str = ft_strdup(tmp->data)) != NULL)
 			ft_putstr_fd(*str, 0);
 	}
@@ -105,7 +106,7 @@ int			ft_read(char **str, t_sys **sys, size_t n)
 	nb = n;
 	env = (*sys)->env;
 	g_position = 0;
-	i = HISTORY_SIZE;
+	i = (size_t)ft_list_size((*sys)->history);
 	exit = FALSE;
 	*str = ft_strnew(1);
 	g_line = &(*str);
