@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/13 12:44:39 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/17 12:29:57 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,18 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 	ret = 0;
 	while (node)
 	{
+		/*
+		if (((t_node *)(node->item))->node == OR)
+			ft_putendl("OR");
+		else if (((t_node *)(node->item))->node == AND)
+			ft_putendl("AND");
+		else if (((t_node *)(node->item))->node == CMD)
+			ft_putendl("CMD");
+		else if (((t_node *)(node->item))->redir == FALSE)
+			ft_putendl("NULL");
+		else
+		{ft_putnbr(((t_node *)(node->item))->redir); ft_putendl(" REDIR");}
+		*/
 		if (node->left && ((t_node *)(node->left->item))->redir == FALSE)
 		{
 			if ((tmp = ft_exec_norme(node, child, &(*sys))) != NULL)
