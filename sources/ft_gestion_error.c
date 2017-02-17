@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:41:52 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/20 11:26:12 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/02/17 12:05:31 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,34 @@ static int	ft_check(const char s, const char *c)
 	return ((c[n] == s) ? 1 : 0);
 }
 
+static int	ft_check_start(const char *tmp)
+{
+	size_t	n;
+
+	n = 0;
+	if (tmp)
+		while (tmp[n] && ft_check(tmp[n], "; \t") == 1)
+			n++;
+	if (tmp[n] && ft_check(tmp[n], "|&><") == 1)
+		return (FALSE);
+	n = 0;
+	while (n < ft_strlen(tmp))
+	{
+		if (tmp[n] && tmp[n + 1] && tmp[n + 2] && ft_check(tmp[n], "|&")
+			&& ft_check(tmp[n + 1], "|&<>") && ft_check(tmp[n + 2], "|&<>"))
+			return (FALSE);
+		n = n + 1;
+	}
+	return (TRUE);
+}
+
 static char	*ft_return(char *tmp)
 {
 	free(tmp);
 	return (ERROR_SYNTAX);
 }
 
-char		*ft_gestion_error_init(char *str)
+static char	*ft_gestion_error_init(char *str)
 {
 	size_t	n;
 	char	**tab;
@@ -58,13 +79,8 @@ void		*ft_gestion_error(char *str)
 
 	if ((tmp = ft_gestion_error_init(str)) == NULL)
 		return (ERROR_ALLOC);
-	n = 0;
-	while (n < ft_strlen(tmp))
-	{
-		if (ft_check(tmp[n], "|&") == 1 && ft_check(tmp[n + 1], "|&<>") == 1)
-			return (ft_return(tmp));
-		n = n + 1;
-	}
+	if (ft_check_start(tmp) == FALSE)
+		return (ft_return(tmp));
 	n = 0;
 	while (n < ft_strlen(tmp))
 	{

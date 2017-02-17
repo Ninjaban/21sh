@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/11 08:42:36 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/02/17 11:58:54 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	tmp = ft_tild(ft_varenv(str, sys->env, TRUE), sys->env);
 	ft_parsing_alias(&tmp, sys);
 	ft_tild_file(&tmp, ';', '\a');
-	if ((tab = ft_strsplit(tmp, ";")) == NULL)
+	if ((tab = ft_parsing_split(tmp, ";|&")) == NULL)
 	{
 		free(str);
 		free(tmp);
@@ -98,6 +98,14 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	}
 	free(str);
 	free(tmp);
+
+	int n = 0;
+	while (tab[n])
+	{
+		ft_putendl(tab[n]);
+		n++;
+	}
+
 	cmds = btree_create_node(ft_new_node(FALSE, NULL, FALSE, FALSE));
 	ft_add_node(&cmds, tab, CMD, 0);
 	ft_free_tab(tab);
