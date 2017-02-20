@@ -117,25 +117,31 @@ void			ft_display(void *root)
 {
 	t_node		*node;
 
-	node = ((t_btree *)root)->item;
-	if (node->node)
-		ft_putstr(" ; ");
-	else if (node->redir != FALSE)
+	if ((node = ((t_btree *)root)->item))
 	{
-		if (node->redir == PIPE)
-			ft_putstr(" | ");
-		else if (node->redir == REDIR_R)
-			ft_putstr(" > ");
-		else if (node->redir == REDIR_L)
-			ft_putstr(" < ");
-		else if (node->redir == CONCAT_R)
-			ft_putstr(" >> ");
-		else if (node->redir == CONCAT_L)
-			ft_putstr(" << ");
+		if (!node->node)
+			ft_putstr(" ; ");
+		else if (node->node == AND)
+			ft_putstr(" && ");
+		else if (node->node == OR)
+			ft_putstr(" || ");
+		else if (node->redir != FALSE)
+		{
+			if (node->redir == PIPE)
+				ft_putstr(" | ");
+			else if (node->redir == REDIR_R)
+				ft_putstr(" > ");
+			else if (node->redir == REDIR_L)
+				ft_putstr(" < ");
+			else if (node->redir == CONCAT_R)
+				ft_putstr(" >> ");
+			else if (node->redir == CONCAT_L)
+				ft_putstr(" << ");
+		}
+		else if (node->redir == FALSE && node->cmd)
+			for (int n = 0; node->cmd->argv[n]; ++n)
+				ft_putstr(node->cmd->argv[n]);
 	}
-	else if (node->redir == FALSE)
-		for (int n = 0 ; node->cmd->argv[n] ; ++n)
-			ft_putstr(node->cmd->argv[n]);
 }
 
 t_btree			*ft_parsing(char *str, t_sys *sys)
@@ -146,5 +152,6 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 		return (NULL);
 	cmds = ft_parsing_line(str, sys);
 	btree_apply_infix(cmds, &ft_display);
+	ft_putendl("");
 	return (cmds);
 }
