@@ -15,16 +15,16 @@
 #include "terms.h"
 
 size_t		g_position;
-size_t		nb;
+size_t		g_nb;
 char		**g_line;
-char		**env;
+char		**g_env;
 
 void		ft_sigint(int sig)
 {
 	if (sig != SIGINT)
 		return ;
 	ft_putendl_fd("", 0);
-	ft_affprompt(nb, env);
+	ft_affprompt(g_nb, g_env);
 	if (g_line)
 	{
 		free(*g_line);
@@ -103,8 +103,8 @@ int			ft_read(char **str, t_sys **sys, size_t n)
 	char	exit;
 	int		c;
 
-	nb = n;
-	env = (*sys)->env;
+	g_nb = n;
+	g_env = (*sys)->env;
 	g_position = 0;
 	i = (size_t)ft_list_size((*sys)->history);
 	exit = FALSE;

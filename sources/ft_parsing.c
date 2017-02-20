@@ -91,6 +91,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	ft_parsing_alias(&tmp, sys);
 	ft_tild_file(&tmp, ';', '\a');
 	if ((tab = ft_parsing_split(tmp, ";|&")) == NULL)
+//	if ((tab = ft_parsing_split(tmp, ";")) == NULL)
 	{
 		free(str);
 		free(tmp);
@@ -112,6 +113,31 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	return (cmds);
 }
 
+void			ft_display(void *root)
+{
+	t_node		*node;
+
+	node = ((t_btree *)root)->item;
+	if (node->node)
+		ft_putstr(" ; ");
+	else if (node->redir != FALSE)
+	{
+		if (node->redir == PIPE)
+			ft_putstr(" | ");
+		else if (node->redir == REDIR_R)
+			ft_putstr(" > ");
+		else if (node->redir == REDIR_L)
+			ft_putstr(" < ");
+		else if (node->redir == CONCAT_R)
+			ft_putstr(" >> ");
+		else if (node->redir == CONCAT_L)
+			ft_putstr(" << ");
+	}
+	else if (node->redir == FALSE)
+		for (int n = 0 ; node->cmd->argv[n] ; ++n)
+			ft_putstr(node->cmd->argv[n]);
+}
+
 t_btree			*ft_parsing(char *str, t_sys *sys)
 {
 	t_btree		*cmds;
@@ -119,5 +145,6 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 	if (!str)
 		return (NULL);
 	cmds = ft_parsing_line(str, sys);
+	btree_apply_infix(cmds, &ft_display);
 	return (cmds);
 }
