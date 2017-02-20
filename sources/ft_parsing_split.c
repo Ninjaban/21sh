@@ -5,96 +5,145 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/17 11:06:39 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/02/17 11:46:44 by mrajaona         ###   ########.fr       */
+/*   Created: 2017/02/20 14:10:53 by mrajaona          #+#    #+#             */
+/*   Updated: 2017/02/20 15:20:53 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	check_c(char c, char const *check)
+static int	check_c(char c)
 {
 	size_t	n;
+	char	*check;
 
 	n = 0;
+	check = ";|&";
 	while (check[n] && check[n] != c)
 		n = n + 1;
 	if (check[n] && check[n] == c)
-		return (1);
+	{
+		if (n == 0)
+			return (1);
+		return (2);
+	}
 	return (0);
 }
 
-static int	count_word(char const *s, char const *c)
+static int	count_word(char const *s)
 {
 	int		n;
 	int		word;
 
 	n = 0;
 	word = 0;
-	while (s[n] && check_c(s[n], ";") == 1)
+	while (check_c(s[n]) == 1 && s[n])
 		n = n + 1;
 	while (s[n])
 	{
+		if (check_c(s[n]) == 1 && s[n])
+		{
+			word = word + 1;
+			while (check_c(s[n]) == 1 && s[n])
+				n = n + 1;
+		}
 		word = word + 1;
-		while (s[n] && check_c(s[n], c) == 0)
+		while (s[n] && check_c(s[n]) == 0)
+		{
 			n = n + 1;
-		while (check_c(s[n], c) == 1 && s[n])
-			n = n + 1;
-		if (s[n] && check_c(s[n], "|&") == 1)
-			n = n + 1;
+			if (s[n] && check_c(s[n]) == 2)
+			{
+				if (s[n + 1] && check_c(s[n + 1]) == 2)
+				{
+					if (!(s[n + 2]) || (s[n + 2] && check_c(s[n + 2]) == 0))
+						word = word + 1;
+					else
+						n = n + 2;
+				}
+				else
+					n = n + 1;
+			}
+		}
+		if (s[n] && check_c(s[n]) == 2)
+		{
+			while (s[n] && check_c(s[n]) == 2)
+				n = n + 1;
+		}
 	}
 	return (word);
 }
 
-static int	size_word(char const *s, char const *c, int n)
+static int	size_word(char const *s, int n)
 {
 	int		len;
 
 	len = 0;
-	while (s[n + len] && check_c(s[n + len], c) == 0)
-		len = len + 1;
+	if (check_c(s[n]) == 0)
+		while (s[n + len] && check_c(s[n + len]) == 0)
+		{
+			len = len + 1;
+			if (s[n + len] && check_c(s[n + len]) == 2)
+			{
+				if (s[n + len + 1] && check_c(s[n + len + 1]) == 2)
+				{
+					if (!(s[n + len + 2]) || (s[n + len + 2] && check_c(s[n + len + 2]) == 0))
+						(void)n;
+					else
+						len = len + 2;
+				}
+				else
+					len = len + 1;
+			}
+		}
+	else
+		while (s[n + len] && check_c(s[n + len]) != 0)
+			len = len + 1;
 	return (len);
 }
 
-static char	**complete_tab(char const *s, char const *c, char **tab)
+static char	**complete_tab(char const *s, char **tab)
 {
 	int		n;
 	int		i;
 	int		j;
-
+	int		size;
 	n = 0;
 	i = 0;
-	while (check_c(s[n], ";") == 1 && s[n])
-		n = n + 1;
 	while (s[n])
 	{
-		if ((tab[i] = malloc(size_word(s, c, n) + 1)) == NULL)
+		if (check_c(s[n]) == 1)
+			size = 1;
+		else
+			size = size_word(s, n);
+		if ((tab[i] = malloc(size + 1)) == NULL)
 			return (NULL);
 		j = 0;
-		while (s[n] && check_c(s[n], c) == 0)
+		size += n;
+		while (n < size)
 			tab[i][j++] = s[n++];
 		tab[i++][j] = '\0';
-		while (check_c(s[n], c) == 1 && s[n])
-			n = n + 1;
-		if (s[n] && check_c(s[n], "|&") == 1)
-			n = n + 1;
+		if (check_c(s[n] == 1))
+		{
+			while (s[n] && (check_c(s[n]) == 1 || s[n] == ' ' || s[n] == '\t'))
+				n = n + 1;
+		}
 	}
 	return (tab);
 }
 
-char		**ft_parsing_split(char const *s, char const *c)
+char		**ft_parsing_split(char const *s)
 {
 	char	**tab;
 	int		word;
 
-	if (s == NULL || c == NULL)
+	if (s == NULL)
 		return (NULL);
-	word = count_word(s, c);
+	word = count_word(s);
 	if ((tab = malloc(sizeof(char *) * (word + 1))) == NULL)
 		return (NULL);
 	while (word >= 0)
 		tab[word--] = NULL;
-	if ((tab = complete_tab(s, c, tab)) == NULL)
+	if ((tab = complete_tab(s, tab)) == NULL)
 		return (NULL);
 	return (tab);
 }

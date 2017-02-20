@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/17 12:29:57 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/20 14:03:32 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,10 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 		}
 		ft_exec_parent(child);
 	}
-	else
+	else if (ft_exec_builtins(((t_node *)(node->left->item))->cmd, &(*sys)) == TRUE)
 		ft_putendl(">> exec builtin");
+	else
+		ft_putendl(">> fail builtin");
 	wait(NULL);
 	return (NULL);
 }

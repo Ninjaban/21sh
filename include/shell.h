@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/17 12:14:41 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/20 14:04:52 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,7 +126,7 @@ t_cmd			*ft_parsecmd(char *str);
 t_node			*ft_new_node(char node, char *str, char redir, int fd);
 t_btree			*ft_parsing_line(char *str, t_sys *sys);
 t_btree			*ft_parsing(char *str, t_sys *sys);
-char			**ft_parsing_split(char const *s, char const *c);
+char			**ft_parsing_split(char const *s);
 
 /*
 **	Gestion d'erreur
@@ -171,7 +171,8 @@ int				ft_setenv(char *str, char ***env, int b);
 int				ft_alias(t_cmd *cmd, t_alias **alias);
 int				ft_unalias(t_cmd *cmd, t_alias **alias);
 int				ft_chdir(char ***env, char *str);
-int				ft_builtins(t_cmd *cmds, t_sys **sys);
+int				ft_builtins(t_cmd *cmds);
+int				ft_exec_builtins(t_cmd *cmds, t_sys **sys);
 
 /*
 **	Auto-completion
