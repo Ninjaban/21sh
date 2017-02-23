@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/20 14:04:52 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/23 10:50:23 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@
 **	CONCAT_L	= <<
 */
 
+# define NOREDIR 0
 # define PIPE 1
 # define REDIR_R 2
 # define CONCAT_R 3

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/20 15:21:52 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/23 12:12:53 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,38 @@ static void		ft_parsing_multicmd(t_btree **cmds, char *str)
 	ft_init_node(&(*cmds), str + n, ft_get_redir_fd(str, n));
 }
 
-static void		ft_add_node(t_btree **cmds, char **tab, char redir, int n)
+static void		ft_add_node(t_btree **cmds, char **tab, int n)
 {
+	char	node;
+
+	node = FALSE;
 	if (tab[n])
 	{
+
+		if (ft_strcmp(tab[n], ";") == 0)
+		{
+			node = CMD;
+			n++;
+		}
+		else if (ft_strcmp(tab[n], "&&") == 0)
+		{
+			node = AND;
+			n++;
+		}
+		else if (ft_strcmp(tab[n], "||") == 0)
+		{
+			node = OR;
+			n++;
+		}
+
 		if (n > 0)
 			btree_add_node(&(*cmds), btree_create_node(
-					ft_new_node(FALSE, NULL, redir, FALSE)), &ft_false_node);
+					ft_new_node(node, NULL, FALSE, FALSE)), &ft_false_node);
+//		else if (node != FALSE)
+//			((t_node *)((*cmds)->item))->node = node;
 		ft_tild_file(&(tab[n]), '\a', ';');
 		ft_parsing_multicmd(&(*cmds), tab[n]);
-		ft_add_node(&(*cmds), tab, redir, n + 1);
+		ft_add_node(&(*cmds), tab, n + 1);
 	}
 }
 
@@ -96,7 +118,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 		free(tmp);
 		return (NULL);
 	}
-
+/*
 	int n = 0;
 	ft_putendl("TAB :");
 	while (tab[n])
@@ -105,11 +127,11 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 		n++;
 	}
 	ft_putendl("DONE\n");
-
+*/
 	free(str);
 	free(tmp);
 	cmds = btree_create_node(ft_new_node(FALSE, NULL, FALSE, FALSE));
-	ft_add_node(&cmds, tab, CMD, 0);
+	ft_add_node(&cmds, tab, 0);
 	ft_free_tab(tab);
 	return (cmds);
 }
@@ -121,6 +143,8 @@ void			ft_display(void *root)
 	if ((node = ((t_btree *)root)->item))
 	{
 		if (!node->node)
+			ft_putstr(" NULL ");
+		else if (node->node == CMD)
 			ft_putstr(" ; ");
 		else if (node->node == AND)
 			ft_putstr(" && ");
