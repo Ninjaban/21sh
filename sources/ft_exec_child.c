@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/10 14:44:31 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/23 10:46:20 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void		ft_exec_child(t_node *node, t_sys **sys)
 
 	ft_putstr(">> exec_child : ");
 	ft_putendl(node->cmd->name);
-	if (ft_builtins(node->cmd, &(*sys)) == FALSE)
+	if (ft_builtins(node->cmd) == FALSE)
 	{
 		if ((name = ft_access(node->cmd->name, (*sys)->env)) != NULL)
 			if (execve(name, node->cmd->argv, (*sys)->env) == -1)
