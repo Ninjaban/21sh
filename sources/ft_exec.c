@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/20 14:03:32 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/23 10:41:38 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 			exit(ft_atoi(((t_node *)(node->left->item))->cmd->argv[1]));
 		return (EXIT);
 	}
-	if (ft_builtins(((t_node *)(node->left->item))->cmd, &(*sys)) ==
+	if (ft_builtins(((t_node *)(node->left->item))->cmd) ==
 		FALSE)
 	{
 		if ((child = fork()) == -1)
