@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/20 15:07:26 by jcarra            #+#    #+#              #
-#    Updated: 2017/02/17 10:55:24 by mrajaona         ###   ########.fr        #
+#    Updated: 2017/02/24 10:44:45 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -44,6 +44,7 @@ SRC			=	ft_unalias.c \
 				ft_error.c \
 				ft_free.c \
 				ft_parsing_split.c \
+				ft_parsing_split_tools.c \
 				ft_parsing_tools.c \
 				ft_parsing_parenthesis.c \
 				ft_parsing_node.c \

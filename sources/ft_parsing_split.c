@@ -6,11 +6,12 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/20 14:10:53 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/02/20 15:20:53 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/24 10:43:36 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "shell.h"
 
 static int	check_c(char c)
 {
@@ -30,49 +31,6 @@ static int	check_c(char c)
 	return (0);
 }
 
-static int	count_word(char const *s)
-{
-	int		n;
-	int		word;
-
-	n = 0;
-	word = 0;
-	while (check_c(s[n]) == 1 && s[n])
-		n = n + 1;
-	while (s[n])
-	{
-		if (check_c(s[n]) == 1 && s[n])
-		{
-			word = word + 1;
-			while (check_c(s[n]) == 1 && s[n])
-				n = n + 1;
-		}
-		word = word + 1;
-		while (s[n] && check_c(s[n]) == 0)
-		{
-			n = n + 1;
-			if (s[n] && check_c(s[n]) == 2)
-			{
-				if (s[n + 1] && check_c(s[n + 1]) == 2)
-				{
-					if (!(s[n + 2]) || (s[n + 2] && check_c(s[n + 2]) == 0))
-						word = word + 1;
-					else
-						n = n + 2;
-				}
-				else
-					n = n + 1;
-			}
-		}
-		if (s[n] && check_c(s[n]) == 2)
-		{
-			while (s[n] && check_c(s[n]) == 2)
-				n = n + 1;
-		}
-	}
-	return (word);
-}
-
 static int	size_word(char const *s, int n)
 {
 	int		len;
@@ -86,7 +44,8 @@ static int	size_word(char const *s, int n)
 			{
 				if (s[n + len + 1] && check_c(s[n + len + 1]) == 2)
 				{
-					if (!(s[n + len + 2]) || (s[n + len + 2] && check_c(s[n + len + 2]) == 0))
+					if (!(s[n + len + 2]) || (s[n + len + 2]
+											&& check_c(s[n + len + 2]) == 0))
 						(void)n;
 					else
 						len = len + 2;
@@ -107,6 +66,7 @@ static char	**complete_tab(char const *s, char **tab)
 	int		i;
 	int		j;
 	int		size;
+
 	n = 0;
 	i = 0;
 	while (s[n])
@@ -123,10 +83,8 @@ static char	**complete_tab(char const *s, char **tab)
 			tab[i][j++] = s[n++];
 		tab[i++][j] = '\0';
 		if (check_c(s[n] == 1))
-		{
 			while (s[n] && (check_c(s[n]) == 1 || s[n] == ' ' || s[n] == '\t'))
 				n = n + 1;
-		}
 	}
 	return (tab);
 }
@@ -138,7 +96,7 @@ char		**ft_parsing_split(char const *s)
 
 	if (s == NULL)
 		return (NULL);
-	word = count_word(s);
+	word = ft_parsing_count_word(s);
 	if ((tab = malloc(sizeof(char *) * (word + 1))) == NULL)
 		return (NULL);
 	while (word >= 0)

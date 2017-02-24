@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/23 12:12:53 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/24 10:55:43 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,28 +46,22 @@ static void		ft_add_node(t_btree **cmds, char **tab, int n)
 	node = FALSE;
 	if (tab[n])
 	{
-
-		if (ft_strcmp(tab[n], ";") == 0)
+		if (ft_strcmp(tab[n], ";") == 0 || ft_strcmp(tab[n], "&&") == 0
+			|| ft_strcmp(tab[n], "||") == 0)
 		{
-			node = CMD;
+			/*
+			if (ft_strcmp(tab[n], ";") == 0)
+				node = CMD;
+			else if (ft_strcmp(tab[n], "&&") == 0)
+				node = AND;
+			else if (ft_strcmp(tab[n], "||") == 0)
+				node = OR;
+			*/
 			n++;
 		}
-		else if (ft_strcmp(tab[n], "&&") == 0)
-		{
-			node = AND;
-			n++;
-		}
-		else if (ft_strcmp(tab[n], "||") == 0)
-		{
-			node = OR;
-			n++;
-		}
-
 		if (n > 0)
 			btree_add_node(&(*cmds), btree_create_node(
 					ft_new_node(node, NULL, FALSE, FALSE)), &ft_false_node);
-//		else if (node != FALSE)
-//			((t_node *)((*cmds)->item))->node = node;
 		ft_tild_file(&(tab[n]), '\a', ';');
 		ft_parsing_multicmd(&(*cmds), tab[n]);
 		ft_add_node(&(*cmds), tab, n + 1);
@@ -118,16 +112,6 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 		free(tmp);
 		return (NULL);
 	}
-/*
-	int n = 0;
-	ft_putendl("TAB :");
-	while (tab[n])
-	{
-		ft_putendl(tab[n]);
-		n++;
-	}
-	ft_putendl("DONE\n");
-*/
 	free(str);
 	free(tmp);
 	cmds = btree_create_node(ft_new_node(FALSE, NULL, FALSE, FALSE));
@@ -136,6 +120,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	return (cmds);
 }
 
+// A enlever
 void			ft_display(void *root)
 {
 	t_node		*node;
@@ -176,7 +161,7 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 	if (!str)
 		return (NULL);
 	cmds = ft_parsing_line(str, sys);
-	btree_apply_infix(cmds, &ft_display);
-	ft_putendl("");
+	btree_apply_infix(cmds, &ft_display); // A enlever
+	ft_putendl(""); // A enlever
 	return (cmds);
 }

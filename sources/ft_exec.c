@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/23 12:00:03 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/24 10:57:19 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ static int	ft_exec_parent(pid_t child)
 		{
 			if (WIFEXITED(status) && !WEXITSTATUS(status))
 			{
-				ft_putstr(">> normal exit\n");
+				ft_putstr(">> normal exit\n"); // A enlever
 				return (0);
 			}
 			else
 			{
-				ft_putstr(">> not normal exit\n");
+				ft_putstr(">> not normal exit\n"); // A enlever
 				return (1);
 			}
 		}
@@ -63,9 +63,9 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys)
 		ft_exec_parent(child);
 	}
 	else if (ft_exec_builtins(((t_node *)(node->left->item))->cmd, &(*sys)) == TRUE)
-		ft_putendl(">> exec builtin");
+		ft_putendl(">> exec builtin"); 	// A enlever
 	else
-		ft_putendl(">> fail builtin");
+		ft_putendl(">> fail builtin"); 	// A enlever
 	wait(NULL);
 	return (NULL);
 }
@@ -98,35 +98,38 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 			ret = ft_exec_parent(child);
 			wait(NULL);
 		}
-
+		 // TEST
 		ft_putstr("ret -> "); ft_putnbr(ret); ft_putendl("");
-
+		ft_putstr("redir -> ");
 		if (((t_node *)(node->item))->node == OR)
-			ft_putendl(" OR");
+			ft_putendl("OR");
 		else if (((t_node *)(node->item))->node == AND)
-			ft_putendl(" AND");
+			ft_putendl("AND");
 		else if (((t_node *)(node->item))->node == CMD)
-			ft_putendl(" CMD");
+			ft_putendl("CMD");
 		else if (((t_node *)(node->item))->redir == FALSE)
-			ft_putendl(" NULL");
+			ft_putendl("NULL");
 		else
-		{ft_putnbr(((t_node *)(node->item))->redir); ft_putendl(" REDIR");}
-
+		{
+			ft_putnbr(((t_node *)(node->item))->redir);
+			ft_putendl("REDIR");
+		}
+		// Fin Test
 		if (ret == 0 && ((t_node *)(node->item))->node == OR)
 		{
-			ft_putendl("exec_or");
+			ft_putendl("exec_or"); // A enlever
 			while (node && ((t_node *)(node->item))->node == OR)
 				node = node->right;
 		}
 		else if (ret != 0 && ((t_node *)(node->item))->node == AND)
 		{
-			ft_putendl("exec_and");
+			ft_putendl("exec_and"); // A enlever
 			while (node && ((t_node *)(node->item))->node == AND)
 				node = node->right;
 		}
 		else
 		{
-			ft_putendl("exec_else");
+			ft_putendl("exec_else"); // A enlever
 			node = node->right;
 		}
 	}
