@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/24 10:55:43 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/02/28 13:25:17 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ static void		ft_parsing_multicmd(t_btree **cmds, char *str)
 		}
 		n = n - 1;
 	}
-	ft_putendl(str + n);
 	ft_init_node(&(*cmds), str + n, ft_get_redir_fd(str, n));
 }
 
@@ -116,10 +115,6 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	free(str);
 	free(tmp);
 	cmds = btree_create_node(ft_new_node(CMD, NULL, FALSE, FALSE));
-
-	for (int i = 0 ; tab[i] ; ++i)
-		ft_putendl(tab[i]);
-
 	ft_add_node(&cmds, tab, 0);
 	ft_free_tab(tab);
 	return (cmds);
@@ -166,7 +161,7 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 	if (!str)
 		return (NULL);
 	cmds = ft_parsing_line(str, sys);
-	btree_apply_prefix(cmds, &ft_display); // A enlever
+	btree_apply_infix(cmds, &ft_display); // A enlever
 	ft_putendl(""); // A enlever
 	return (cmds);
 }
