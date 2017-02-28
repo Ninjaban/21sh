@@ -16,14 +16,16 @@
 int				ft_true_node(void *root, void *item)
 {
 	if (((t_btree *)root)->right &&
-		((t_node *)(((t_btree *)root)->item))->node == FALSE)
+			(((t_node *)(((t_btree *)root)->item))->node == CMD ||
+			((t_node *)(((t_btree *)root)->item))->node == AND ||
+			((t_node *)(((t_btree *)root)->item))->node == OR))
 		return (0);
 	if (((t_btree *)root)->left)
 		return (-1);
 	if (((t_node *)(((t_btree *)item)->item))->redir != FALSE)
 		return (-1);
 	if (!((t_btree *)root)->right)
-		return ((((t_node *)(((t_btree *)root)->item))->node != 0) ? 0 : -1);
+		return ((((t_node *)(((t_btree *)root)->item))->node == TRUE) ? 0 : -1);
 	return (-1);
 }
 
