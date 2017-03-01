@@ -6,28 +6,28 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/01 12:27:49 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/01 12:49:42 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
 
 static char	*ft_chdir_opt_p(char *path, char opt)
 {
+	char *tmp;
+
+	tmp = NULL;
 	if (opt == 'P')
 	{
-		ft_putendl("OPTION -P");
-/*
-  #include <limits.h>
-  #include <stdlib.h>
-  char *tmp = NULL;
-  tmp = realpath(path, tmp);
-  free(path);
-  path = tmp;
-*/
-		ft_putendl(path);
+		ft_putendl("OPTION -P"); // A enlever
+		ft_putendl(path); // A enlever
+		tmp = realpath(path, tmp);
+		free(path);
+		path = tmp;
+		ft_putendl(path); // A enlever
 	}
 	return (path);
 }
