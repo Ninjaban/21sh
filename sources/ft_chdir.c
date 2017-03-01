@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/01 12:07:05 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/01 12:27:49 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 #include "shell.h"
 #include "error.h"
 
-/*
-#include <limits.h>
-#include <stdlib.h>
-char *tmp = NULL;
-tmp = realpath(path, tmp);
-free(path);
-path = tmp;
-*/
-
-static int	ft_chdir_path(char *path, char ***env, char opt)
+static char	*ft_chdir_opt_p(char *path, char opt)
 {
-	/*
-	** . .. removed
-	** CHECK SLINKS
-	*/
-	ft_putendl(path);
 	if (opt == 'P')
 	{
 		ft_putendl("OPTION -P");
+/*
+  #include <limits.h>
+  #include <stdlib.h>
+  char *tmp = NULL;
+  tmp = realpath(path, tmp);
+  free(path);
+  path = tmp;
+*/
 		ft_putendl(path);
 	}
+	return (path);
+}
+
+static int	ft_chdir_path(char *path, char ***env, char opt)
+{
+	path = ft_chdir_opt_p(path, opt);
 	if (ft_access_dir(path) == 1)
 	{
 		ft_set_pwd(&(*env), path);
@@ -84,7 +84,7 @@ static int	ft_init_chdir_path(char **tab, char ***env, char opt)
 	return (TRUE);
 }
 
-static int	ft_old(char ***env)
+static int	ft_old(char ***env, int opt)
 {
 	char	**old;
 
@@ -103,8 +103,8 @@ static int	ft_old(char ***env)
 		ft_free_tab(old);
 		return (FALSE);
 	}
-	//chdir(old[1]);
-	ft_chdir(env, old);
+	old[1] = ft_chdir_opt_p(old[1], opt);
+	chdir(old[1]);
 	ft_free_tab(old);
 	return (TRUE);
 }
@@ -162,7 +162,7 @@ int			ft_chdir(char ***env, char **argv)
 	if (!str)
 		return (ft_chdir_path(ft_getenv(*env, "HOME="), &(*env), opt));
 	if (ft_strcmp(str, "-") == 0)
-		return (ft_old(&(*env)));
+		return (ft_old(&(*env), opt));
 	if (str[0] == '/')
 		return (ft_chdir_path(ft_strdup(str), &(*env), opt));
 	if ((tab = ft_strsplit(str, "/")) == NULL)
