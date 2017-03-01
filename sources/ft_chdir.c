@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/01 11:48:00 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/01 12:07:05 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,8 @@ static int	ft_old(char ***env)
 		ft_free_tab(old);
 		return (FALSE);
 	}
-	chdir(old[1]);
+	//chdir(old[1]);
+	ft_chdir(env, old);
 	ft_free_tab(old);
 	return (TRUE);
 }
