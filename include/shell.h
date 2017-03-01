@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/24 10:44:05 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/01 11:16:54 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -173,7 +173,7 @@ int				ft_unsetenv(char ***env, char *str);
 int				ft_setenv(char *str, char ***env, int b);
 int				ft_alias(t_cmd *cmd, t_alias **alias);
 int				ft_unalias(t_cmd *cmd, t_alias **alias);
-int				ft_chdir(char ***env, char *str);
+int				ft_chdir(char ***env, char **argv);
 int				ft_builtins(t_cmd *cmds);
 int				ft_exec_builtins(t_cmd *cmds, t_sys **sys);
 

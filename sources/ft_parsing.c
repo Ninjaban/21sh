@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/28 13:25:17 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/01 11:01:46 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,6 +120,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	return (cmds);
 }
 
+/*
 // A enlever
 void			ft_display(void *root)
 {
@@ -153,6 +154,7 @@ void			ft_display(void *root)
 				ft_putstr(node->cmd->argv[n]);
 	}
 }
+*/
 
 t_btree			*ft_parsing(char *str, t_sys *sys)
 {
@@ -161,7 +163,7 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 	if (!str)
 		return (NULL);
 	cmds = ft_parsing_line(str, sys);
-	btree_apply_infix(cmds, &ft_display); // A enlever
-	ft_putendl(""); // A enlever
+//	btree_apply_infix(cmds, &ft_display); // A enlever
+//	ft_putendl(""); // A enlever
 	return (cmds);
 }

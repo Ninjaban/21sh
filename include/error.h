@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:19:14 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 10:05:42 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/01 11:18:39 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 # define ERROR_ENV "Erreur d'environement."
 # define ERROR_RC "Erreur lors du traitement du ~/.42shrc."
 # define ERROR_HISTORY "Erreur lors du traitement de l'historique."
+# define ERROR_OPTION "Option invalide."
 
 void			ft_error(char *error);
 
