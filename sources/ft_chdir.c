@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 14:11:13 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/02 14:31:25 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,14 +93,13 @@ static int	ft_old(char ***env, int opt)
 		ft_error(ERROR_ALLOC);
 		return (FALSE);
 	}
+	chdir(old[1]);
+	old[1] = ft_chdir_opt_p(old[1], opt);
 	if (ft_set_pwd(&(*env), old[1]) == FALSE)
 	{
 		ft_free_tab(old);
 		return (FALSE);
 	}
-	chdir(old[1]);
-	old[1] = ft_chdir_opt_p(old[1], opt);
-	ft_putendl(old[1]);
 	ft_free_tab(old);
 	return (TRUE);
 }
