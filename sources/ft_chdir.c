@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 13:59:28 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/02 14:11:13 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,23 +17,27 @@
 static int	ft_chdir_path(char *path, char **tab, char ***env, char opt)
 {
 	char	**cdpath;
+	int		res;
 
+	res = FALSE;
 	cdpath = ft_getcdpath(*env);
 	if (path && access(path, F_OK) != 0 && cdpath)
-		if (ft_chdir_cdpath(&path, cdpath, tab) == FALSE)
+		if ((res = ft_chdir_cdpath(&path, cdpath, tab)) == FALSE)
 			return (FALSE);
+	if (cdpath)
+		ft_free_tab(cdpath);
 	if (ft_access_dir(path) == TRUE)
 	{
 		chdir(path);
 		if (opt == 'P')
 			path = ft_chdir_opt_p(path, opt);
 		ft_set_pwd(&(*env), path);
+		if (res == TRUE)
+			ft_putendl(path);
 		free(path);
 		return (TRUE);
 	}
 	free(path);
-	if (cdpath)
-		ft_free_tab(cdpath);
 	return (FALSE);
 }
 
@@ -96,6 +100,7 @@ static int	ft_old(char ***env, int opt)
 	}
 	chdir(old[1]);
 	old[1] = ft_chdir_opt_p(old[1], opt);
+	ft_putendl(old[1]);
 	ft_free_tab(old);
 	return (TRUE);
 }
