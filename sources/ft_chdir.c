@@ -6,39 +6,22 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/01 12:49:42 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/02 11:15:23 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
 
-static char	*ft_chdir_opt_p(char *path, char opt)
-{
-	char *tmp;
-
-	tmp = NULL;
-	if (opt == 'P')
-	{
-		ft_putendl("OPTION -P"); // A enlever
-		ft_putendl(path); // A enlever
-		tmp = realpath(path, tmp);
-		free(path);
-		path = tmp;
-		ft_putendl(path); // A enlever
-	}
-	return (path);
-}
-
 static int	ft_chdir_path(char *path, char ***env, char opt)
 {
-	path = ft_chdir_opt_p(path, opt);
 	if (ft_access_dir(path) == 1)
 	{
-		ft_set_pwd(&(*env), path);
 		chdir(path);
+		if (opt == 'P')
+			path = ft_chdir_opt_p(path, opt);
+		ft_set_pwd(&(*env), path);
 		free(path);
 		return (TRUE);
 	}
@@ -103,46 +86,10 @@ static int	ft_old(char ***env, int opt)
 		ft_free_tab(old);
 		return (FALSE);
 	}
-	old[1] = ft_chdir_opt_p(old[1], opt);
 	chdir(old[1]);
+	old[1] = ft_chdir_opt_p(old[1], opt);
 	ft_free_tab(old);
 	return (TRUE);
-}
-
-static char	ft_chdir_opt(char *arg)
-{
-	char	opt;
-	int		n;
-
-	opt = 'L';
-	n = 1;
-	while (arg[n])
-	{
-		if (arg[n] == 'L' || arg[n] == 'P')
-			opt = arg[n];
-		else
-			return (-1);
-		n++;
-	}
-	return (opt);
-}
-
-static int	ft_chdir_options(char **argv, char *opt)
-{
-	int	n;
-
-	*opt = 'L';
-	n = 1;
-	while (argv[n] && argv[n][0] == '-' && ft_strcmp(argv[n], "-") != 0)
-	{
-		if ((*opt = ft_chdir_opt(argv[n])) < 0)
-		{
-			ft_error(ERROR_OPTION);
-			return (FALSE);
-		}
-		n++;
-	}
-	return (n);
 }
 
 int			ft_chdir(char ***env, char **argv)
