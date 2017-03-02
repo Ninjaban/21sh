@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/20 15:07:26 by jcarra            #+#    #+#              #
-#    Updated: 2017/03/02 11:06:45 by mrajaona         ###   ########.fr        #
+#    Updated: 2017/03/02 13:48:53 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -16,6 +16,7 @@ SRC			=	ft_unalias.c \
 				ft_alias.c \
 				ft_chdir_tools.c \
 				ft_chdir_opt.c \
+				ft_chdir_cdpath.c \
 				ft_chdir.c \
 				ft_echo.c \
 				ft_unsetenv.c \

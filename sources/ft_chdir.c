@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 11:15:23 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/02 13:59:28 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,15 @@
 #include "shell.h"
 #include "error.h"
 
-static int	ft_chdir_path(char *path, char ***env, char opt)
+static int	ft_chdir_path(char *path, char **tab, char ***env, char opt)
 {
-	if (ft_access_dir(path) == 1)
+	char	**cdpath;
+
+	cdpath = ft_getcdpath(*env);
+	if (path && access(path, F_OK) != 0 && cdpath)
+		if (ft_chdir_cdpath(&path, cdpath, tab) == FALSE)
+			return (FALSE);
+	if (ft_access_dir(path) == TRUE)
 	{
 		chdir(path);
 		if (opt == 'P')
@@ -26,10 +32,12 @@ static int	ft_chdir_path(char *path, char ***env, char opt)
 		return (TRUE);
 	}
 	free(path);
+	if (cdpath)
+		ft_free_tab(cdpath);
 	return (FALSE);
 }
 
-static int	ft_set_path(char **path, char *str)
+int			ft_chdir_set_path(char **path, char *str)
 {
 	char	*tmp;
 
@@ -57,12 +65,12 @@ static int	ft_init_chdir_path(char **tab, char ***env, char opt)
 	}
 	while (tab[++n])
 		if ((ft_strcmp(tab[n], ".") != 0) &&
-			(ft_set_path(&(path[1]), tab[n]) == FALSE))
+			(ft_chdir_set_path(&(path[1]), tab[n]) == FALSE))
 		{
 			ft_error(ERROR_ALLOC);
 			return (FALSE);
 		}
-	ft_chdir_path(ft_strdup(path[1]), &(*env), opt);
+	ft_chdir_path(ft_strdup(path[1]), tab, &(*env), opt);
 	ft_free_tab(path);
 	return (TRUE);
 }
@@ -107,11 +115,11 @@ int			ft_chdir(char ***env, char **argv)
 		return (FALSE);
 	}
 	if (!str)
-		return (ft_chdir_path(ft_getenv(*env, "HOME="), &(*env), opt));
+		return (ft_chdir_path(ft_getenv(*env, "HOME="), NULL, &(*env), opt));
 	if (ft_strcmp(str, "-") == 0)
 		return (ft_old(&(*env), opt));
 	if (str[0] == '/')
-		return (ft_chdir_path(ft_strdup(str), &(*env), opt));
+		return (ft_chdir_path(ft_strdup(str), NULL, &(*env), opt));
 	if ((tab = ft_strsplit(str, "/")) == NULL)
 	{
 		ft_error(ERROR_ALLOC);

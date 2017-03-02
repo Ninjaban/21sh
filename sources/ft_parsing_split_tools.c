@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/24 10:12:40 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/02/24 10:45:10 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/02 14:00:03 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int			ft_parsing_count_word(char const *s)
 				n = n + 1;
 		}
 		word = word + 1;
-		count_word_norme(s, &n, & word);
+		count_word_norme(s, &n, &word);
 		if (s[n] && check_c(s[n]) == 2)
 		{
 			while (s[n] && check_c(s[n]) == 2)

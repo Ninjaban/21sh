@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_path.c                                          :+:      :+:    :+:   */
+/*   ft_chdir_cdpath.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/17 18:40:13 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 11:47:19 by mrajaona         ###   ########.fr       */
+/*   Created: 2017/03/02 13:44:22 by mrajaona          #+#    #+#             */
+/*   Updated: 2017/03/02 13:57:16 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,18 @@
 
 static void	ft_verifpath(char ***path)
 {
-	char	*tmp;
 	int		n;
 
 	n = 0;
 	while ((*path)[n])
 	{
-		if ((*path)[n][ft_strlen((*path)[n]) - 1] != '/')
-		{
-			tmp = ft_strjoin((*path)[n], "/");
-			free((*path)[n]);
-			(*path)[n] = tmp;
-		}
+		if ((*path)[n][ft_strlen((*path)[n]) - 1] == '/')
+			(*path)[n][ft_strlen((*path)[n]) - 1] = '\0';
 		n = n + 1;
 	}
 }
 
-char		**ft_getpath(char **env)
+char		**ft_getcdpath(char **env)
 {
 	char	**tab;
 	char	*tmp;
@@ -41,7 +36,7 @@ char		**ft_getpath(char **env)
 
 	n = -1;
 	while (env[++n])
-		if (ft_strncmp(env[n], "PATH=", 4) == 0)
+		if (ft_strncmp(env[n], "CDPATH=", 6) == 0)
 		{
 			i = 0;
 			if ((tmp = ft_strdup(env[n])) == NULL)
@@ -55,4 +50,26 @@ char		**ft_getpath(char **env)
 			return (tab);
 		}
 	return (NULL);
+}
+
+int			ft_chdir_cdpath(char **path, char **cdpath, char **tab)
+{
+	int	m;
+	int	n;
+
+	m = -1;
+	while (cdpath[++m] && access(*path, F_OK) != 0)
+	{
+		free(*path);
+		n = -1;
+		while (tab[++n])
+			if ((ft_strcmp(tab[n], ".") != 0) &&
+				(ft_chdir_set_path(&(cdpath[m]), tab[n]) == FALSE))
+			{
+				ft_error(ERROR_ALLOC);
+				return (FALSE);
+			}
+		*path = ft_strdup(cdpath[m]);
+	}
+	return (TRUE);
 }
