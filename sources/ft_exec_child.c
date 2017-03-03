@@ -44,7 +44,7 @@ int			ft_exec_open_file(char *str, char redir)
 	if ((fd = open(name, O_WRONLY | O_CREAT | flags, 0644)) == -1)
 	{
 		free(name);
-		return (ft_error_int(ERROR_NOTFOUND));
+		return (ft_error_int(ERROR_NOTFOUND, -1));
 	}
 	free(name);
 	return (fd);
