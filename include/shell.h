@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 13:58:00 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/03 09:01:20 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,10 @@
 # define CMD 3
 # define AND 4
 # define OR 5
+
+# define CHAR_CMD -1
+# define CHAR_AND -2
+# define CHAR_OR -3
 
 /*
 **	PIPE		= |

@@ -66,7 +66,7 @@ int			ft_chdir_cdpath(char **path, char **cdpath, char **tab)
 			if ((ft_strcmp(tab[n], ".") != 0) &&
 				(ft_chdir_set_path(&(cdpath[m]), tab[n]) == FALSE))
 			{
-				ft_error(ERROR_ALLOC);
+				ft_log(TYPE_ERROR, ERROR_ALLOC);
 				return (FALSE);
 			}
 		*path = ft_strdup(cdpath[m]);

@@ -29,12 +29,12 @@ static char		*ft_trypath(char *name, char **path)
 				return (tmp);
 			else
 			{
-				ft_error(ERROR_PERMS);
+				ft_log(TYPE_WARNING, ERROR_PERMS);
 				return (NULL);
 			}
 		}
 	}
-	ft_error(ERROR_NOTFOUND);
+	ft_log(TYPE_WARNING, ERROR_NOTFOUND);
 	return (NULL);
 }
 
@@ -48,16 +48,16 @@ char			*ft_access(char *name, char **env)
 	{
 		if (access(name, X_OK) != 0)
 		{
-			ft_error(ERROR_PERMS);
+			ft_log(TYPE_WARNING, ERROR_PERMS);
 			return (NULL);
 		}
 		if ((tmp = ft_strdup(name)) == NULL)
-			ft_error(ERROR_ALLOC);
+			ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (tmp);
 	}
 	if ((path = ft_getpath(env)) == NULL)
 	{
-		ft_error(ERROR_ENV);
+		ft_log(TYPE_WARNING, ERROR_ENV);
 		return (NULL);
 	}
 	tmp = ft_trypath(name, path);
@@ -71,12 +71,12 @@ int				ft_access_dir(char *path)
 
 	if (path && access(path, F_OK) != 0)
 	{
-		ft_error(ERROR_DNOTFOUND);
+		ft_log(TYPE_WARNING, ERROR_DNOTFOUND);
 		return (-1);
 	}
 	if ((buf = malloc(sizeof(struct stat))) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (-1);
 	}
 	if (stat(path, buf) == -1)
@@ -89,6 +89,6 @@ int				ft_access_dir(char *path)
 		free(buf);
 		return (TRUE);
 	}
-	ft_error(ERROR_NOTDIR);
+	ft_log(TYPE_WARNING, ERROR_NOTDIR);
 	return (FALSE);
 }

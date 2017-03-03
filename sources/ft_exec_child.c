@@ -18,8 +18,8 @@ void		ft_exec_child(t_node *node, t_sys **sys)
 {
 	char	*name;
 
-	ft_putstr(">> exec_child : "); // A enlever
-	ft_putendl(node->cmd->name); // A enlever
+	ft_log(TYPE_INFO, ">> exec_child : "); // A enlever
+	ft_log(TYPE_INFO, node->cmd->name); // A enlever
 	if (ft_builtins(node->cmd) == FALSE)
 	{
 		if ((name = ft_access(node->cmd->name, (*sys)->env)) != NULL)
@@ -44,8 +44,7 @@ int			ft_exec_open_file(char *str, char redir)
 	if ((fd = open(name, O_WRONLY | O_CREAT | flags, 0644)) == -1)
 	{
 		free(name);
-		ft_error(ERROR_NOTFOUND);
-		return (-1);
+		return (ft_error_int(ERROR_NOTFOUND));
 	}
 	free(name);
 	return (fd);
@@ -81,15 +80,9 @@ void		ft_exec_read_file(t_node *node)
 
 	name = ft_strjoin("./", node->cmd->name);
 	if (access(name, F_OK) != 0)
-	{
-		ft_error(ERROR_NOTFOUND);
-		return ;
-	}
+		return (ft_error(ERROR_NOTFOUND));
 	if ((fd = open(name, O_RDONLY)) == -1)
-	{
-		ft_error(ERROR_READ);
-		return ;
-	}
+		return (ft_error(ERROR_READ));
 	while (get_next_line(fd, &line) == 1)
 		ft_putendl(line);
 	exit(0);

@@ -58,7 +58,7 @@ int			ft_chdir_options(char **argv, char *opt)
 	{
 		if ((*opt = ft_chdir_opt(argv[n])) < 0)
 		{
-			ft_error(ERROR_OPTION);
+			ft_log(TYPE_WARNING, ERROR_OPTION);
 			return (FALSE);
 		}
 		n++;

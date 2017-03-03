@@ -17,11 +17,9 @@
 
 static int	ft_check_env(char **env)
 {
-	if (!env || !(env[0]))
-		return (FALSE);
-	if (ft_fpath(env, "PWD=") == ft_tablen(env))
-		return (FALSE);
-	if (ft_fpath(env, "HOME=") == ft_tablen(env))
+	if (!env || !(env[0]) ||
+		ft_fpath(env, "PWD=") == ft_tablen(env) ||
+		ft_fpath(env, "HOME=") == ft_tablen(env))
 		return (FALSE);
 	return (TRUE);
 }
@@ -36,7 +34,7 @@ static char	**ft_tabcpy(char **t)
 		return (NULL);
 	if ((cpy = malloc(sizeof(char *) * (ft_tablen(t) + 1))) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (NULL);
 	}
 	while (t[n])
@@ -46,7 +44,7 @@ static char	**ft_tabcpy(char **t)
 	while (t[++n])
 		if ((cpy[n] = ft_strdup(t[n])) == NULL)
 		{
-			ft_error(ERROR_ALLOC);
+			ft_log(TYPE_ERROR, ERROR_ALLOC);
 			ft_free_tab(cpy);
 			return (NULL);
 		}
@@ -60,16 +58,22 @@ int			main(int ac, char **av, char **env)
 	(void)ac;
 	(void)av;
 	if (ft_sys_init(&sys) == 1)
-		return (1);
+		return (ft_error_int(ERROR_LAUNCH, 1));
 	if (ft_termcaps_init(&sys->term_new, &sys->term_save) == FALSE)
-		return (1);
+	{
+		ft_log(TYPE_WARNING, ERROR_TERM);
+		return (ft_error_int(ERROR_LAUNCH, 1));
+	}
 	if ((sys->env = ft_tabcpy(env)) == NULL)
 	{
-		ft_error(ERROR_ENV);
-		return (1);
+		ft_log(TYPE_WARNING, ERROR_ENV);
+		return (ft_error_int(ERROR_LAUNCH, 1));
 	}
 	if (signal(SIGINT, SIG_IGN) == SIG_ERR)
-		return (1);
+	{
+		ft_log(TYPE_WARNING, ERROR_SIGNAL);
+		return (ft_error_int(ERROR_LAUNCH, 1));
+	}
 	ft_shell(sys, FALSE, NULL, NULL);
 	return (0);
 }

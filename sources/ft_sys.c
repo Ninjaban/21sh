@@ -17,7 +17,10 @@
 int			ft_sys_init(t_sys **sys)
 {
 	if ((*sys = malloc(sizeof(t_sys))) == NULL)
+	{
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (1);
+	}
 	(*sys)->env = NULL;
 	(*sys)->history = NULL;
 	(*sys)->alias = NULL;

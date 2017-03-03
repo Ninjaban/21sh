@@ -22,7 +22,7 @@ static char	**ft_tabcpy(char **t)
 	n = 0;
 	if ((cpy = malloc(sizeof(char *) * (ft_tablen(t) + 1))) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (NULL);
 	}
 	while (t[n])
@@ -32,7 +32,7 @@ static char	**ft_tabcpy(char **t)
 	while (t[++n])
 		if ((cpy[n] = ft_strdup(t[n])) == NULL)
 		{
-			ft_error(ERROR_ALLOC);
+			ft_log(TYPE_ERROR, ERROR_ALLOC);
 			ft_free_tab(cpy);
 			return (NULL);
 		}
@@ -62,13 +62,13 @@ static int	ft_env_launch(char **argv, char **tab, size_t n)
 
 	if ((child = fork()) == -1)
 	{
-		ft_error(ERROR_FORK);
+		ft_log(TYPE_ERROR, ERROR_FORK);
 		return (FALSE);
 	}
 	else if (child == 0)
 	{
 		execve(argv[n], argv + n, tab);
-		ft_error(ERROR_EXEC);
+		ft_log(TYPE_ERROR, ERROR_EXEC);
 		exit(1);
 	}
 	else if (child > 0)

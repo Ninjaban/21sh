@@ -32,19 +32,19 @@ static int		ft_alias_init(t_cmd *cmd, t_alias **alias)
 
 	if ((tab = ft_strsplit(cmd->argv[1], "=")) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	if (!tab[0])
 	{
 		free(tab);
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	if (((*alias) = ft_alias_new(tab[0], tab[1])) == NULL)
 	{
 		ft_free_tab(tab);
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	ft_free_tab(tab);
@@ -58,13 +58,14 @@ static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
 
 	if ((tab = ft_strsplit(cmd->argv[1], "=")) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	if (!tab[0] || !tab[1])
 	{
 		ft_free_tab(tab);
-		ft_error((!tab[0]) ? ERROR_ALLOC : ERROR_SYNTAX);
+		ft_log((!tab[0]) ? TYPE_ERROR : TYPE_WARNING,
+			(!tab[0]) ? ERROR_ALLOC : ERROR_SYNTAX);
 		return (FALSE);
 	}
 	tmp = *alias;
@@ -73,7 +74,7 @@ static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
 	if ((tmp->next = ft_alias_new(tab[0], tab[1])) == NULL)
 	{
 		ft_free_tab(tab);
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	ft_free_tab(tab);

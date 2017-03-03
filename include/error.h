@@ -26,7 +26,26 @@
 # define ERROR_RC "Erreur lors du traitement du ~/.42shrc."
 # define ERROR_HISTORY "Erreur lors du traitement de l'historique."
 # define ERROR_OPTION "Option invalide."
+# define ERROR_LAUNCH "Le shell ne peut pas être lancé."
+# define ERROR_SIGNAL "Erreur lors de la mise en place des signaux."
+# define ERROR_TERM "Erreur lors de l'initialisation du terminal."
+
+/*
+**	ft_log pour faire des affichage d'information, de warning ou d'erreur
+**	simple, a utiliser de preferance.
+**
+**	les ft_error sont a utiliser en cas de return ou d'exit. Pour ft_error_int,
+**	le second paramettre est la valeur de retour de la fonction.
+*/
+
+# define TYPE_INFO 0
+# define TYPE_WARNING 1
+# define TYPE_ERROR 2
+
+void			ft_log(char type, char *log);
 
 void			ft_error(char *error);
+void			*ft_error_void(char *error);
+int				ft_error_int(char *error, int exit);
 
 #endif

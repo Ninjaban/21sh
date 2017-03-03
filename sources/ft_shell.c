@@ -33,11 +33,11 @@ static int	ft_launcher(t_sys **sys, char **str, int *exit)
 		free(tmp);
 		ft_check_parenthesis(&(*sys), &(*str), NULL, 0);
 		if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
-			ft_error(ERROR_HISTORY);
+			ft_log(TYPE_WARNING, ERROR_HISTORY);
 		else if ((tmp = ft_gestion_error(*str)) != NULL)
-			ft_error(tmp);
+			ft_log(TYPE_WARNING, tmp);
 		else if (((*sys)->cmds = ft_parsing(ft_strdup(*str), *sys)) == NULL)
-			ft_error(ERROR_ALLOC);
+			ft_log(TYPE_ERROR, ERROR_ALLOC);
 		else
 			return (TRUE);
 	}
@@ -71,9 +71,9 @@ static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 	while (get_next_line(fd, &str) == 1)
 	{
 		if ((tmp = ft_gestion_error(str)) != NULL)
-			ft_error(tmp);
+			ft_log(TYPE_WARNING, tmp);
 		else if ((cmds = ft_parsecmd(str)) == NULL)
-			ft_error(ERROR_ALLOC);
+			ft_log(TYPE_ERROR, ERROR_ALLOC);
 		else if (cmds)
 			ft_shrc_launch(&(*sys), cmds);
 		ft_free(&cmds, NULL, NULL);
@@ -87,7 +87,7 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 	if (ft_history_init(&sys->history, sys->env) == FALSE)
 		return (ft_error(ERROR_HISTORY));
 	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
-		ft_error(ERROR_RC);
+		ft_log(TYPE_WARNING, ERROR_RC);
 	while (exit == FALSE)
 	{
 		str = NULL;
@@ -98,7 +98,7 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 			if ((tmp = ft_exec(&sys, sys->cmds, NULL, 0)) != NULL)
 			{
 				if (ft_strcmp(tmp, EXIT) != 0)
-					ft_error(tmp);
+					ft_log(TYPE_WARNING, tmp);
 				else
 					exit = TRUE;
 			}

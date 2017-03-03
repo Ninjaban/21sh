@@ -39,7 +39,7 @@ void		ft_check_parenthesis(t_sys **sys, char **str, char *tmp, size_t n)
 		{
 			ft_putstr("<quotes>\n");
 			if (ft_read(&tmp, &(*sys), 0) == FALSE)
-				ft_error(ERROR_READ);
+				ft_log(TYPE_WARNING, ERROR_READ);
 			new = ft_strjoin(((*str)[n] == '\"') ? "'\\n'" : "\\n", tmp);
 			free(tmp);
 			tmp = ft_strjoin(*str, new);

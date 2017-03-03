@@ -24,12 +24,12 @@ static int	ft_exec_parent(pid_t child)
 		{
 			if (WIFEXITED(status) && !WEXITSTATUS(status))
 			{
-				ft_putstr(">> normal exit\n"); // A enlever
+				ft_log(TYPE_INFO, ">> normal exit"); // A enlever
 				return (0);
 			}
 			else
 			{
-				ft_putstr(">> not normal exit\n"); // A enlever
+				ft_log(TYPE_INFO, ">> not normal exit"); // A enlever
 				return (1);
 			}
 		}
@@ -65,12 +65,12 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys, int *ret)
 	else if (ft_exec_builtins(((t_node *)(node->left->item))->cmd,
 								&(*sys)) == TRUE)
 	{
-		ft_putendl(">> exec builtin"); 	// A enlever
+		ft_log(TYPE_INFO, ">> exec builtin"); 	// A enlever
 		*ret = 0;
 	}
 	else
 	{
-		ft_putendl(">> fail builtin"); 	// A enlever
+		ft_log(TYPE_INFO, ">> fail builtin"); 	// A enlever
 		*ret = 1;
 	}
 	wait(NULL);
@@ -107,7 +107,7 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 					return (ERROR_FORK);
 				if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
 					return (tmp);
-				ft_error(ERROR_EXEC);
+				ft_log(TYPE_ERROR, ERROR_EXEC);
 				exit(1);
 			}
 			ret = ft_exec_parent(child);

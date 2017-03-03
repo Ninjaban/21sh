@@ -47,7 +47,7 @@ int			ft_set_pwd(char ***env, char *str)
 
 	if ((pwd = ft_strsplit((*env)[ft_fpath((*env), "PWD=")], "=")) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	ft_setenv(ft_cvar("OLDPWD", pwd[1]), &(*env), TRUE);
@@ -76,7 +76,7 @@ char		*ft_getenv(char **env, char *name)
 		return (NULL);
 	if ((t = ft_strsplit(env[ft_fpath(env, name)], "=")) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (NULL);
 	}
 	if (!t[0] || !t[1])

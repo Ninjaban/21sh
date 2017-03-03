@@ -30,10 +30,7 @@ static void		ft_change_var(char ***env, char *str, size_t n)
 	char		*tmp;
 
 	if ((tmp = ft_strdup(str)) == NULL)
-	{
-		ft_error(ERROR_ALLOC);
-		return ;
-	}
+		return (ft_error(ERROR_ALLOC));
 	free((*env)[n]);
 	(*env)[n] = tmp;
 }
@@ -44,10 +41,7 @@ static void		ft_add_var(char ***env, char *str, size_t n)
 	int		i;
 
 	if ((tab = malloc(sizeof(char *) * (n + 2))) == NULL)
-	{
-		ft_error(ERROR_ALLOC);
-		return ;
-	}
+		return (ft_error(ERROR_ALLOC));
 	i = -1;
 	while ((*env)[++i])
 		tab[i] = ft_strdup((*env)[i]);
@@ -64,13 +58,13 @@ int				ft_setenv(char *str, char ***env, int bool)
 
 	if ((tab = ft_strsplit(str, "=")) == NULL)
 	{
-		ft_error(ERROR_ALLOC);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	if (ft_tablen(tab) != 2)
 	{
 		ft_free_tab(tab);
-		ft_error(ERROR_SYNTAX);
+		ft_log(TYPE_ERROR, ERROR_SYNTAX);
 		return (FALSE);
 	}
 	if ((n = ft_find_path(*env, tab[0])) != ft_tablen(*env))
