@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 14:31:25 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/03 14:19:15 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,23 +60,19 @@ static int	ft_init_chdir_path(char **tab, char ***env, char opt)
 {
 	int		n;
 	char	**path;
+	int		ret;
 
 	n = -1;
 	if ((path = ft_strsplit((*env)[ft_fpath((*env), "PWD=")], "=")) == NULL)
-	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
-	}
+		return (ft_error_int(ERROR_ALLOC, FALSE));
 	while (tab[++n])
 		if ((ft_strcmp(tab[n], ".") != 0) &&
 			(ft_chdir_set_path(&(path[1]), tab[n]) == FALSE))
-		{
-			ft_log(TYPE_ERROR, ERROR_ALLOC);
-			return (FALSE);
-		}
-	ft_chdir_path(ft_strdup(path[1]), tab, &(*env), opt);
+			return (ft_error_int(ERROR_ALLOC, FALSE));
+	ret = ft_chdir_path(ft_strdup(path[1]), tab, &(*env), opt);
 	ft_free_tab(path);
-	return (TRUE);
+	ft_free_tab(tab);
+	return (ret);
 }
 
 static int	ft_old(char ***env, int opt)
@@ -89,10 +85,7 @@ static int	ft_old(char ***env, int opt)
 		return (FALSE);
 	}
 	if ((old = ft_strsplit((*env)[ft_fpath((*env), "OLDPWD=")], "=")) == NULL)
-	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
-	}
+		return (ft_error_int(ERROR_ALLOC, FALSE));
 	chdir(old[1]);
 	old[1] = ft_chdir_opt_p(old[1], opt);
 	if (ft_set_pwd(&(*env), old[1]) == FALSE)
@@ -125,11 +118,6 @@ int			ft_chdir(char ***env, char **argv)
 	if (str[0] == '/')
 		return (ft_chdir_path(ft_strdup(str), NULL, &(*env), opt));
 	if ((tab = ft_strsplit(str, "/")) == NULL)
-	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
-	}
-	ft_init_chdir_path(tab, &(*env), opt);
-	ft_free_tab(tab);
-	return (TRUE);
+		return (ft_error_int(ERROR_ALLOC, FALSE));
+	return (ft_init_chdir_path(tab, &(*env), opt));
 }
