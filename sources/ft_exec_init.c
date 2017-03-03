@@ -28,8 +28,9 @@ static void	ft_init_redir(t_node *node, int pdes[2], char way)
 			stdout = STDERR_FILENO;
 		else
 			stdout = node->fd;
-		dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT],
-			(way == LEFT) ? stdout : STDIN_FILENO);
+		if (dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT],
+			(way == LEFT) ? stdout : STDIN_FILENO) == -1)
+			ft_log(TYPE_INFO, "DUP FAIL");
 		close(pdes[(way == LEFT) ? PIPE_OUT : PIPE_IN]);
 	}
 }
@@ -79,6 +80,7 @@ void		*ft_exec_node(t_btree *root, t_sys **sys)
 {
 	char	*tmp;
 
+	ft_log(TYPE_INFO, "exec node");
 	if (((t_node *)(root->item))->redir == FALSE)
 		ft_exec_child(root->item, &(*sys));
 	else if ((tmp = ft_exec_rdr(root, &(*sys))) != NULL)

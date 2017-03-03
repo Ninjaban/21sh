@@ -27,8 +27,8 @@ void		ft_exec_child(t_node *node, t_sys **sys)
 				ft_error(ERROR_EXEC);
 	}
 	else
-		exit(ft_exec_builtins(node->cmd, sys));
-	exit(1);
+		exit((ft_exec_builtins(node->cmd, sys) == TRUE) ? 0 : 1);
+	exit(0);
 }
 
 int			ft_exec_open_file(char *str, char redir)
@@ -69,7 +69,7 @@ void		ft_exec_file(t_node *node, char redir)
 		fd = ft_atoi(node->cmd->name + 1);
 	while (get_next_line(0, &line) == 1)
 		ft_putendl_fd(line, fd);
-	exit(0);
+	exit(1);
 }
 
 void		ft_exec_read_file(t_node *node)
@@ -85,7 +85,7 @@ void		ft_exec_read_file(t_node *node)
 		return (ft_error(ERROR_READ));
 	while (get_next_line(fd, &line) == 1)
 		ft_putendl(line);
-	exit(0);
+	exit(1);
 }
 
 void		ft_exec_read_boucle(t_node *node)
@@ -104,5 +104,5 @@ void		ft_exec_read_boucle(t_node *node)
 		ft_putendl(line);
 	}
 	ft_putendl_fd("---", 0);
-	exit(0);
+	exit(1);
 }
