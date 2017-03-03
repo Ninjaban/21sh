@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:19:14 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/01 11:18:39 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/03 13:25:45 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@
 
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur
-**	simple, a utiliser de preferance.
+**	simple, a utiliser de preference.
 **
 **	les ft_error sont a utiliser en cas de return ou d'exit. Pour ft_error_int,
 **	le second paramettre est la valeur de retour de la fonction.
