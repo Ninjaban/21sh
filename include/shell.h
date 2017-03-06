@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/03 09:01:20 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/06 12:10:01 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,6 +107,7 @@ typedef struct	s_sys
 	t_btree			*cmds;
 	t_lst			*history;
 	char			**env;
+	char			**shvar;
 }				t_sys;
 
 /*
@@ -183,6 +184,11 @@ int				ft_chdir_set_path(char **path, char *str);
 int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
 char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
+
+int				ft_set(char *str, char ***env, char ***shvar, int bool);
+int				ft_unset(char ***env, char ***shvar, char *str);
+int				ft_export(char *str, char ***env, char ***shvar, int bool);
+
 int				ft_builtins(t_cmd *cmds);
 int				ft_exec_builtins(t_cmd *cmds, t_sys **sys);
 
