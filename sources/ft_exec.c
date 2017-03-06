@@ -103,6 +103,7 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 				return (ERROR_FORK);
 			if (child == 0)
 			{
+				ft_log(TYPE_INFO, ">> exec fork");
 				if (signal(SIGINT, SIG_DFL) == SIG_ERR)
 					return (ERROR_FORK);
 				if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
