@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:05:48 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/06 12:06:04 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 11:54:03 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,21 +61,27 @@ int				ft_export(char *str, char ***env, char ***shvar, int bool)
 		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
+	if (ft_tablen(tab) == 1)
+	{
+		if ((n = ft_find_path(*shvar, tab[0])) != ft_tablen(*shvar))
+		{
+			ft_setenv((*shvar)[n], env, FALSE);
+			ft_unsetenv(shvar, tab[0]);
+			ft_free_tab(tab);
+			if (bool == TRUE)
+				free(str);
+			return (TRUE);
+		}
+	}
 	if (ft_tablen(tab) != 2)
 	{
-		(void)shvar;
-		// exporter la variable locale tab[0]
-		// ft_setenv(tab[0]);
-		// ft_unset(tab[0]);
-	}
-	else if (ft_tablen(tab) != 2)
-	{
 		ft_free_tab(tab);
-		ft_log(TYPE_ERROR, ERROR_SYNTAX);
-		return (FALSE);
+		return (ft_error_int("ERROR_SYNTAX", FALSE));
 	}
+	if ((n = ft_find_path(*shvar, tab[0])) != ft_tablen(*shvar))
+		ft_unsetenv(shvar, tab[0]);
 	if ((n = ft_find_path(*env, tab[0])) != ft_tablen(*env))
-			ft_change_var(&(*env), str, n);
+		ft_change_var(&(*env), str, n);
 	else
 		ft_add_var(&(*env), str, n);
 	ft_free_tab(tab);
