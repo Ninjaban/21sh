@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 10:41:30 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 13:47:39 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -175,7 +175,7 @@ char			*ft_access(char *name, char **env);
 int				ft_echo(char **argv);
 int				ft_env(char **argv, char **env);
 int				ft_unsetenv(char ***env, char *str);
-int				ft_setenv(char *str, char ***env, int b);
+int				ft_setenv(char *str, char ***env, char ***shvar, int b);
 int				ft_alias(t_cmd *cmd, t_alias **alias);
 int				ft_unalias(t_cmd *cmd, t_alias **alias);
 int				ft_chdir(char ***env, char **argv);
@@ -185,9 +185,9 @@ int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
 char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
 
-int				ft_set(char *str, char ***env, char ***shvar, int bool);
+int				ft_set(char **cmd, char ***env, char ***shvar);
 int				ft_unset(char ***env, char ***shvar, char **str);
-int				ft_export(char *str, char ***env, char ***shvar, int bool);
+int				ft_export(char **cmd, char ***env, char ***shvar);
 
 int				ft_builtins(t_cmd *cmds);
 int				ft_exec_builtins(t_cmd *cmds, t_sys **sys);

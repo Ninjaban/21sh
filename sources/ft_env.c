@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:02:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 12:00:36 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 13:34:22 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static char	**ft_tabcpy(char **t)
 static void	ft_env_set(char **argv, char ***tab, size_t *n)
 {
 	while (argv[*n] && ft_strchr(argv[*n], '=') != NULL)
-		ft_setenv(argv[(*n)++], &(*tab), FALSE);
+		ft_setenv(argv[(*n)++], &(*tab), NULL, FALSE);
 }
 
 static void	ft_env_print(char **tab)

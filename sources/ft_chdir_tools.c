@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 18:53:39 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 14:42:03 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/07 13:33:10 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,8 @@ int			ft_set_pwd(char ***env, char *str)
 		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
-	ft_setenv(ft_cvar("OLDPWD", pwd[1]), &(*env), TRUE);
-	ft_setenv(ft_cvar("PWD", str), &(*env), TRUE);
+	ft_setenv(ft_cvar("OLDPWD", pwd[1]), &(*env), NULL, TRUE);
+	ft_setenv(ft_cvar("PWD", str), &(*env), NULL, TRUE);
 	ft_free_tab(pwd);
 	return (TRUE);
 }

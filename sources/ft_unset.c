@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:42:03 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/07 11:02:50 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 14:05:51 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ static void		ft_init_pwd(char ***env)
 	path = ft_strjoin("PWD=", tmp);
 	free(tmp);
 	if (path)
-		ft_setenv(path, &(*env), TRUE);
+		ft_setenv(path, &(*env), NULL, TRUE);
 }
 
 int				ft_unset(char ***env, char ***shvar, char **str)
@@ -83,8 +83,8 @@ int				ft_unset(char ***env, char ***shvar, char **str)
 		else if (ft_strcmp(str[x], "PWD") == 0)
 			ft_init_pwd(&(*env));
 		else if (ft_strcmp(str[x], "HOME") != 0)
-			if (ft_del_line((n == ft_tablen(*env) ?	&(*shvar) : &(*env)),
-							(n == ft_tablen(*env) ?	m : n)) == FALSE)
+			if (ft_del_line((n == ft_tablen(*env) ? &(*shvar) : &(*env)),
+							(n == ft_tablen(*env) ? m : n)) == FALSE)
 				return (FALSE);
 		x++;
 	}

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 10:53:56 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 14:02:15 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@ int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 	if (ft_strcmp(cmds->name, "echo") == 0)
 		return (ft_echo(cmds->argv));
 	else if (ft_strcmp(cmds->name, "setenv") == 0)
-		return (ft_setenv(cmds->argv[1], &((*sys)->env), FALSE));
+		return (ft_setenv(cmds->argv[1], &((*sys)->env),
+							&((*sys)->shvar), FALSE));
 	else if (ft_strcmp(cmds->name, "export") == 0)
-		return (ft_export(cmds->argv[1], &((*sys)->env), &((*sys)->shvar), FALSE));
+		return (ft_export(cmds->argv, &((*sys)->env), &((*sys)->shvar)));
 	else if (ft_strcmp(cmds->name, "set") == 0)
-		return (ft_set(cmds->argv[1], &((*sys)->env), &((*sys)->shvar), FALSE));
+		return (ft_set(cmds->argv, &((*sys)->env), &((*sys)->shvar)));
 	else if (ft_strcmp(cmds->name, "unset") == 0)
 		return (ft_unset(&((*sys)->env), &((*sys)->shvar), cmds->argv + 1));
 	else if (ft_strcmp(cmds->name, "unsetenv") == 0)

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 10:20:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 11:49:13 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 13:40:19 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ static size_t	ft_find_path(char **env, char *str)
 	n = 0;
 	while (env[n])
 	{
-		ft_log(TYPE_INFO, env[n]);
 		if (ft_strncmp(env[n++], str, ft_strlen(str) - 1) == 0)
 			return (n - 1);
 	}
@@ -60,7 +59,7 @@ static void		ft_init_pwd(char ***env)
 	path = ft_strjoin("PWD=", tmp);
 	free(tmp);
 	if (path)
-		ft_setenv(path, &(*env), TRUE);
+		ft_setenv(path, &(*env), NULL, TRUE);
 }
 
 int				ft_unsetenv(char ***env, char *str)

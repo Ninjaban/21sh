@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:16:47 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/07 11:05:44 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 14:05:23 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void		ft_add_var(char ***shvar, char *str, size_t n)
 	*shvar = tab;
 }
 
-static int	ft_shvar_print(char **env, char **shvar)
+static int		ft_shvar_print(char **env, char **shvar)
 {
 	size_t	n;
 
@@ -70,23 +70,17 @@ static int	ft_shvar_print(char **env, char **shvar)
 	return (TRUE);
 }
 
-int				ft_set(char *str, char ***env, char ***shvar, int bool)
+static void		ft_set_tool(char *str, char ***env, char ***shvar)
 {
 	char	**tab;
 	size_t	n;
 
-	if (str == NULL)
-		return (ft_shvar_print(*env, *shvar));
 	if ((tab = ft_strsplit(str, "=")) == NULL)
-	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
-	}
+		return (ft_log(TYPE_ERROR, ERROR_ALLOC));
 	if (ft_tablen(tab) != 2)
 	{
 		ft_free_tab(tab);
-		ft_log(TYPE_ERROR, ERROR_SYNTAX);
-		return (FALSE);
+		return (ft_log(TYPE_ERROR, ERROR_SYNTAX));
 	}
 	else if ((n = ft_find_path(*env, tab[0])) != ft_tablen(*env))
 		ft_change_var(&(*env), str, n);
@@ -95,7 +89,21 @@ int				ft_set(char *str, char ***env, char ***shvar, int bool)
 	else
 		ft_add_var(&(*shvar), str, n);
 	ft_free_tab(tab);
-	if (bool == TRUE)
-		free(str);
+}
+
+int				ft_set(char **cmd, char ***env, char ***shvar)
+{
+	size_t	x;
+
+	x = 0;
+	if (!(cmd[1]))
+		return (ft_shvar_print(*env, *shvar));
+//	if (INVALID_OPTION)
+//		return (FALSE);
+	while (cmd[++x])
+	{
+		ft_log(TYPE_INFO, cmd[x]);
+		ft_set_tool(cmd[x], env, shvar);
+	}
 	return (TRUE);
 }

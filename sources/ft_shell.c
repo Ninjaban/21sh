@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/12 08:09:11 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/07 13:38:23 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static void	ft_shrc_launch(t_sys **sys, t_cmd *cmds)
 {
 	if ((ft_strcmp(cmds->name, "setenv") == 0) ||
 		(ft_strcmp(cmds->name, "export") == 0))
-		ft_setenv(cmds->argv[1], &((*sys)->env), FALSE);
+		ft_setenv(cmds->argv[1], &((*sys)->env), NULL, FALSE);
 	else if (ft_strcmp(cmds->name, "alias") == 0)
 		ft_alias(cmds, &((*sys)->alias));
 }
