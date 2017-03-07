@@ -36,6 +36,8 @@ int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 		return (ft_alias(cmds, &((*sys)->alias)));
 	else if (ft_strcmp(cmds->name, "unalias") == 0)
 		return (ft_unalias(cmds, &((*sys)->alias)));
+	else if (ft_strcmp(cmds->name, "keymap") == 0)
+		return (ft_keymap(&((*sys)->keymap), cmds->argv, *sys));
 	else
 		return (FALSE);
 }
@@ -60,6 +62,8 @@ int			ft_builtins(t_cmd *cmds)
 	else if (ft_strcmp(cmds->name, "alias") == 0)
 		return (TRUE);
 	else if (ft_strcmp(cmds->name, "unalias") == 0)
+		return (TRUE);
+	else if (ft_strcmp(cmds->name, "keymap") == 0)
 		return (TRUE);
 	else
 		return (FALSE);

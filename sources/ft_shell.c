@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 13:38:23 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 14:28:57 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,7 @@ static int	ft_launcher(t_sys **sys, char **str, int *exit)
 
 static void	ft_shrc_launch(t_sys **sys, t_cmd *cmds)
 {
-	if ((ft_strcmp(cmds->name, "setenv") == 0) ||
-		(ft_strcmp(cmds->name, "export") == 0))
+	if (ft_strcmp(cmds->name, "setenv") == 0)
 		ft_setenv(cmds->argv[1], &((*sys)->env), NULL, FALSE);
 	else if (ft_strcmp(cmds->name, "alias") == 0)
 		ft_alias(cmds, &((*sys)->alias));
@@ -86,6 +85,8 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 {
 	if (ft_history_init(&sys->history, sys->env) == FALSE)
 		return (ft_error(ERROR_HISTORY));
+	if ((sys->keymap = ft_keymap_init()) == NULL)
+		return (ft_error(ERROR_KEYMAP));
 	if (ft_shrc_init(&sys, NULL, 0) == FALSE)
 		ft_log(TYPE_WARNING, ERROR_RC);
 	while (exit == FALSE)

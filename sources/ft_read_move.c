@@ -48,25 +48,25 @@ void		ft_read_keyori(char **str, size_t *pos)
 		ft_putchar_fd((*str)[(*pos)++], 0);
 }
 
-void		ft_read_move(char **str, int c, size_t *pos)
+void		ft_read_move(char **str, int c, size_t *pos, t_sys *sys)
 {
 	ft_print(*str, *pos, 0);
-	if (c == KEY_LEF && *pos > 0)
+	if (c == sys->keymap[KEY_LEF] && *pos > 0)
 	{
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
 	}
-	while (c == KEY_HOM && *pos > 0)
+	while (c == sys->keymap[KEY_HOM] && *pos > 0)
 	{
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
 	}
-	if (c == KEY_RIG && *pos < ft_strlen(*str))
+	if (c == sys->keymap[KEY_RIG] && *pos < ft_strlen(*str))
 		ft_putchar_fd((*str)[(*pos)++], 0);
-	while (c == KEY_ENS && *pos < ft_strlen(*str))
+	while (c == sys->keymap[KEY_ENS] && *pos < ft_strlen(*str))
 		ft_putchar_fd((*str)[(*pos)++], 0);
-	if (c == KEY_OLE)
+	if (c == sys->keymap[KEY_OLE])
 		ft_read_keyole(&(*str), &(*pos));
-	if (c == KEY_ORI)
+	if (c == sys->keymap[KEY_ORI])
 		ft_read_keyori(&(*str), &(*pos));
 }

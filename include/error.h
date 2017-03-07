@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:19:14 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 10:58:58 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 14:21:15 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@
 # define ERROR_LAUNCH "Le shell ne peut pas être lancé."
 # define ERROR_SIGNAL "Erreur lors de la mise en place des signaux."
 # define ERROR_TERM "Erreur lors de l'initialisation du terminal."
+# define ERROR_KEYMAP "Erreur lors de l'initialisation du mappage de touche."
 # define ERROR_VNOTFOUND "Variable non trouvée."
+
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur
 **	simple, a utiliser de preference.
