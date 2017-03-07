@@ -6,13 +6,15 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/20 15:07:26 by jcarra            #+#    #+#              #
-#    Updated: 2017/03/06 11:58:34 by mrajaona         ###   ########.fr        #
+#    Updated: 2017/03/07 09:42:20 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME		=	21sh
 
-SRC			=	ft_unalias.c \
+SRC			=	ft_keymap.c \
+                ft_keymap_tools.c \
+                ft_unalias.c \
 				ft_alias.c \
 				ft_chdir_tools.c \
 				ft_chdir_opt.c \

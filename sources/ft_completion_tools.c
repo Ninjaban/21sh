@@ -75,6 +75,7 @@ t_btree		*ft_getexec(char **path)
 	btree_add_node(&(list), btree_create_node(ft_strdup("unsetenv")), &ft_cmpf);
 	btree_add_node(&(list), btree_create_node(ft_strdup("export")), &ft_cmpf);
 	btree_add_node(&(list), btree_create_node(ft_strdup("cd")), &ft_cmpf);
+	btree_add_node(&(list), btree_create_node(ft_strdup("keymap")), &ft_cmpf);
 	ft_free_tab(path);
 	return (list);
 }

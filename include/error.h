@@ -29,6 +29,7 @@
 # define ERROR_LAUNCH "Le shell ne peut pas être lancé."
 # define ERROR_SIGNAL "Erreur lors de la mise en place des signaux."
 # define ERROR_TERM "Erreur lors de l'initialisation du terminal."
+# define ERROR_KEYMAP "Erreur lors de l'initialisation du mappage de touche."
 
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur

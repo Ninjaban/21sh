@@ -49,12 +49,12 @@ static char	*ft_strjoin_init(char *str, char *n, size_t pos)
 	return (new);
 }
 
-void		ft_read_print(char **str, int c, size_t *pos, char **env)
+void		ft_read_print(char **str, int c, size_t *pos, t_sys **sys)
 {
 	char	*tmp;
 	char	*n;
 
-	if (c != KEY_RET && c != KEY_TAB)
+	if (c != (*sys)->keymap[KEY_TAB])
 	{
 		n = ft_strnew(2);
 		n[0] = (char)c;
@@ -63,10 +63,10 @@ void		ft_read_print(char **str, int c, size_t *pos, char **env)
 		free(n);
 		*str = tmp;
 	}
-	ft_completion(&(*str), (c == KEY_TAB) ? (*pos) : (*pos) + 1,
-				env, (c == KEY_TAB) ? 1 : 0);
-	ft_print(*str, (*pos), (c == KEY_TAB) ? 0 : 1);
-	if (c != KEY_TAB)
+	ft_completion(&(*str), (c == (*sys)->keymap[KEY_TAB]) ? (*pos) : (*pos) + 1,
+				  (*sys)->env, (c == (*sys)->keymap[KEY_TAB]) ? 1 : 0);
+	ft_print(*str, (*pos), (c == (*sys)->keymap[KEY_TAB]) ? 0 : 1);
+	if (c != (*sys)->keymap[KEY_TAB])
 		*pos = *pos + 1;
 	else
 		ft_read_keyori(&(*str), &(*pos));

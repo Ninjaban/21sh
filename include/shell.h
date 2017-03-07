@@ -106,6 +106,7 @@ typedef struct	s_sys
 	t_alias			*alias;
 	t_btree			*cmds;
 	t_lst			*history;
+	int				*keymap;
 	char			**env;
 	char			**shvar;
 }				t_sys;
@@ -182,6 +183,7 @@ int				ft_chdir(char ***env, char **argv);
 int				ft_chdir_options(char **argv, char *opt);
 int				ft_chdir_set_path(char **path, char *str);
 int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
+char			ft_keymap(int **keymap, char **argv, t_sys *sys);
 char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
 
@@ -241,12 +243,12 @@ void			ft_affprompt(size_t nbcmd, char **env);
 
 void			ft_sigint(int sig);
 void			ft_print(char *str, size_t pos, char inc);
-void			ft_read_print(char **str, int c, size_t *pos, char **env);
+void			ft_read_print(char **str, int c, size_t *pos, t_sys **sys);
 void			ft_read_suppr(char **str, size_t *pos);
 void			ft_read_delete(char **str, size_t *pos);
 void			ft_read_keyole(char **str, size_t *pos);
 void			ft_read_keyori(char **str, size_t *pos);
-void			ft_read_move(char **str, int c, size_t *pos);
+void			ft_read_move(char **str, int c, size_t *pos, t_sys *sys);
 void			ft_read_history_clear(char *str);
 int				ft_read(char **str, t_sys **sys, size_t n);
 
