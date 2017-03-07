@@ -53,10 +53,14 @@ static void	ft_key_print_value(int value)
 	str = (value == KEY_ENS_DEF) ? "END" : str;
 	str = (value == KEY_BAC_DEF) ? "DELETE" : str;
 	if (str)
+	{
+		ft_putstr("\e[33;1m");
 		ft_putstr(str);
+		ft_putstr("\e[0m");
+	}
 	else if (value >= 1 && value <= 29)
 	{
-		ft_putstr("CTRL - ");
+		ft_putstr("\e[36mCTRL\e[0m - ");
 		ft_putchar((char)value + 64);
 	}
 	else if (value >= 30 && value <= 255)
@@ -70,8 +74,9 @@ static void	ft_keymap_print(int *keymap)
 	n = 0;
 	while (n < KEY_SIZE)
 	{
+		ft_putstr("\e[32m");
 		ft_key_print_type(n);
-		ft_putstr(": ");
+		ft_putstr("\e[0m: ");
 		ft_key_print_value(keymap[n]);
 		ft_putchar('\n');
 		n = n + 1;
