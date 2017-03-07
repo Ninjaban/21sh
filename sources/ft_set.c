@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:16:47 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/06 12:19:46 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/07 11:05:44 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,13 @@ static int	ft_shvar_print(char **env, char **shvar)
 {
 	size_t	n;
 
+	(void)env;
+	/*
 	n = 0;
 	if (env)
 		while (env[n])
 			ft_putendl(env[n++]);
+	*/
 	n = 0;
 	if (shvar)
 		while (shvar[n])
@@ -85,7 +88,9 @@ int				ft_set(char *str, char ***env, char ***shvar, int bool)
 		ft_log(TYPE_ERROR, ERROR_SYNTAX);
 		return (FALSE);
 	}
-	if ((n = ft_find_path(*shvar, tab[0])) != ft_tablen(*shvar))
+	else if ((n = ft_find_path(*env, tab[0])) != ft_tablen(*env))
+		ft_change_var(&(*env), str, n);
+	else if ((n = ft_find_path(*shvar, tab[0])) != ft_tablen(*shvar))
 		ft_change_var(&(*shvar), str, n);
 	else
 		ft_add_var(&(*shvar), str, n);
