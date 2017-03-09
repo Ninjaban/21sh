@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 13:47:39 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 10:55:08 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -174,7 +174,7 @@ char			*ft_access(char *name, char **env);
 */
 
 int				ft_echo(char **argv);
-int				ft_env(char **argv, char **env);
+int				ft_env(char **argv, char **env, char ***shvar);
 int				ft_unsetenv(char ***env, char *str);
 int				ft_setenv(char *str, char ***env, char ***shvar, int b);
 int				ft_alias(t_cmd *cmd, t_alias **alias);

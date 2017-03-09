@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:02:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 13:34:22 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 11:04:36 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ static char	**ft_tabcpy(char **t)
 	return (cpy);
 }
 
-static void	ft_env_set(char **argv, char ***tab, size_t *n)
+static void	ft_env_set(char **argv, char ***tab, char ***shvar, size_t *n)
 {
 	while (argv[*n] && ft_strchr(argv[*n], '=') != NULL)
-		ft_setenv(argv[(*n)++], &(*tab), NULL, FALSE);
+		ft_setenv(argv[(*n)++], &(*tab), shvar, FALSE);
 }
 
 static void	ft_env_print(char **tab)
@@ -84,7 +84,7 @@ static int	ft_env_launch(char **argv, char **tab, size_t n)
 	return (TRUE);
 }
 
-int			ft_env(char **argv, char **env)
+int			ft_env(char **argv, char **env, char ***shvar)
 {
 	size_t	n;
 	char	**tab;
@@ -92,7 +92,7 @@ int			ft_env(char **argv, char **env)
 	n = (ft_strcmp(argv[1], "-i") == 0) ? 2 : 1;
 	tab = (ft_strcmp(argv[1], "-i") == 0) ?
 		ft_strsplit(" ", " ") : ft_tabcpy(env);
-	ft_env_set(argv, &tab, &n);
+	ft_env_set(argv, &tab, shvar, &n);
 	if (argv[n] == NULL)
 		ft_env_print(tab);
 	else if (ft_env_launch(argv, tab, n) == FALSE)

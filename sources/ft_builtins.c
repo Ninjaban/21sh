@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/07 14:02:15 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 11:04:54 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 	else if (ft_strcmp(cmds->name, "unsetenv") == 0)
 		return (ft_unsetenv(&((*sys)->env), cmds->argv[1]));
 	else if (ft_strcmp(cmds->name, "env") == 0)
-		return (ft_env(cmds->argv, (*sys)->env));
+		return (ft_env(cmds->argv, (*sys)->env, &((*sys)->shvar)));
 	else if (ft_strcmp(cmds->name, "cd") == 0)
 		return (ft_chdir(&((*sys)->env), cmds->argv));
 	else if (ft_strcmp(cmds->name, "alias") == 0)

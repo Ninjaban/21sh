@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:16:47 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/07 14:05:23 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 11:06:28 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,9 +101,6 @@ int				ft_set(char **cmd, char ***env, char ***shvar)
 //	if (INVALID_OPTION)
 //		return (FALSE);
 	while (cmd[++x])
-	{
-		ft_log(TYPE_INFO, cmd[x]);
 		ft_set_tool(cmd[x], env, shvar);
-	}
 	return (TRUE);
 }
