@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 11:18:32 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/07 15:27:02 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 10:44:09 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,29 @@
 **
 ** \c CTRL, \cx CTRL + x
 ** \nnn octal, \xHH hex, \uHHHH unicode, \UHHHHHHHH unicode
+*/
+
+/*
+** Color patterns
+** 256 Color	”\x1b[{bg};5;{ColorNumber}m"
+** TrueColor	"\x1b[${bg};2;${red};${green};${blue}m\n"
+**
+** \e does not work. Use \033 or \x1b
+** ';' and ':' are valid delimiters
+**
+** values for {bg}
+**	text color : 38
+** 	background color : 48
+**
+** values for {ColorNumber}
+**	decimal value included between 0 and 256
+**
+** values for {red} {green} {blue}
+** 	decimal values included between 0 and 255
+**	RGB values of the desired color
+**
+** 256 color table and ANSI formatting
+** 	see http://misc.flogisoft.com/bash/tip_colors_and_formatting
 */
 
 # define SIZE 4096
