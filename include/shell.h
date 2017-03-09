@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/09 10:55:08 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 13:01:10 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -188,7 +188,7 @@ char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
 
 int				ft_set(char **cmd, char ***env, char ***shvar);
-int				ft_unset(char ***env, char ***shvar, char **str);
+int				ft_unset(char ***env, char ***shvar, char **cmd);
 int				ft_export(char **cmd, char ***env, char ***shvar);
 
 int				ft_builtins(t_cmd *cmds);
