@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:42:03 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/07 14:05:51 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 12:56:37 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,16 @@ static void		ft_init_pwd(char ***env)
 	if (path)
 		ft_setenv(path, &(*env), NULL, TRUE);
 }
+
+/*
+  If -v is specified, name refers to a variable name and the shell shall unset it and remove
+  it from the environment. Read-only variables cannot be unset.
+
+  If -f is specified, name refers to a function and the shell shall unset the function definition.
+
+  If  neither  -f nor -v is specified, name refers to a variable; if a variable by that name
+  does not exist, it is unspecified whether a function by that name, if any, shall be unset
+*/
 
 int				ft_unset(char ***env, char ***shvar, char **str)
 {
