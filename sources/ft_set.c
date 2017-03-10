@@ -6,25 +6,13 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:16:47 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/09 11:06:28 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/10 10:47:33 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
-
-static size_t	ft_find_path(char **shvar, char *str)
-{
-	size_t		n;
-
-	n = 0;
-	if (shvar)
-		while (shvar[n])
-			if (ft_strncmp(shvar[n++], str, ft_strlen(str) - 1) == 0)
-				return (n - 1);
-	return (n);
-}
 
 static void		ft_change_var(char ***shvar, char *str, size_t n)
 {

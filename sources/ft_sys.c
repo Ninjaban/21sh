@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/10 10:15:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/06 12:19:10 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/10 10:20:13 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,18 @@
 int			ft_sys_init(t_sys **sys)
 {
 	if ((*sys = malloc(sizeof(t_sys))) == NULL)
-	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (1);
-	}
+		return (ft_error_int(ERROR_ALLOC, 1));
 	(*sys)->env = NULL;
 	if (((*sys)->shvar = malloc(sizeof(char **))) == NULL)
 	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (1);
+		free(*sys);
+		return (ft_error_int(ERROR_ALLOC, 1));
+	}
+	if (((*sys)->ftvar = malloc(sizeof(char **))) == NULL)
+	{
+		free((*sys)->shvar);
+		free(*sys);
+		return (ft_error_int(ERROR_ALLOC, 1));
 	}
 	*((*sys)->shvar) = NULL;
 	(*sys)->history = NULL;

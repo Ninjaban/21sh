@@ -6,24 +6,13 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 09:04:01 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 14:47:03 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/10 10:46:00 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
-
-static size_t	ft_find_path(char **env, char *str)
-{
-	size_t		n;
-
-	n = 0;
-	while (env[n])
-		if (ft_strncmp(env[n++], str, ft_strlen(str) - 1) == 0)
-			return (n - 1);
-	return (n);
-}
 
 static int		ft_path(char **str, char **env)
 {

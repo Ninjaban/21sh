@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/09 13:01:10 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/10 10:49:44 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,12 @@ typedef struct	s_alias
 	struct s_alias	*next;
 }				t_alias;
 
+/*
+** env		-> environment variables
+** shvar	-> local variables
+** ftvar	-> local functions (cannot add functions yet)
+*/
+
 typedef struct	s_sys
 {
 	struct termios	term_new;
@@ -109,6 +115,7 @@ typedef struct	s_sys
 	int				*keymap;
 	char			**env;
 	char			**shvar;
+	char			**ftvar;
 }				t_sys;
 
 /*
@@ -148,12 +155,15 @@ void			*ft_gestion_error(char *str);
 */
 
 int				ft_set_pwd(char ***env, char *str);
+int				ft_del_line(char ***env, size_t i);
 char			ft_delchar(char **str, size_t n);
 char			*ft_strcut(char *str, size_t s, size_t e);
 char			*ft_getenv(char **env, char *name);
 char			*ft_path_join(char *src, char *str);
 char			**ft_getpath(char **env);
 size_t			ft_fpath(char **env, char *str);
+size_t			ft_find_path(char **tab, char *str);
+void			ft_init_pwd(char ***env);
 
 /*
 **	Exec
@@ -188,7 +198,7 @@ char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
 
 int				ft_set(char **cmd, char ***env, char ***shvar);
-int				ft_unset(char ***env, char ***shvar, char **cmd);
+int				ft_unset(char ***env, char ***shvar, char ***ftvar, char **cmd);
 int				ft_export(char **cmd, char ***env, char ***shvar);
 
 int				ft_builtins(t_cmd *cmds);
