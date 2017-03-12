@@ -6,67 +6,13 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:42:03 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/09 13:21:25 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/10 10:45:42 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
-
-static size_t	ft_find_path(char **env, char *str)
-{
-	size_t		n;
-
-	n = 0;
-	while (env[n])
-		if (ft_strncmp(env[n++], str, ft_strlen(str) - 1) == 0)
-			return (n - 1);
-	return (n);
-}
-
-static int		ft_del_line(char ***env, size_t i)
-{
-	char		**tab;
-	size_t		n;
-	size_t		j;
-
-	j = 0;
-	n = 0;
-	if ((tab = malloc(sizeof(char *) * ft_tablen(*env))) == NULL)
-		return (FALSE);
-	while ((*env)[n])
-	{
-		if (n != i)
-			tab[j++] = ft_strdup((*env)[n]);
-		n = n + 1;
-	}
-	tab[j] = NULL;
-	ft_free_tab(*env);
-	(*env) = tab;
-	return (TRUE);
-}
-
-static void		ft_init_pwd(char ***env)
-{
-	char		*path;
-	char		*tmp;
-
-	if ((tmp = ft_getenv((*env), "HOME=")) == NULL)
-		return ;
-	path = ft_strjoin("PWD=", tmp);
-	free(tmp);
-	if (path)
-		ft_setenv(path, &(*env), NULL, TRUE);
-}
-
-/*
-  If -v is specified, name refers to a variable name. (default)
-  Read-only variables cannot be unset.
-
-  If -f is specified, name refers to a function.
-  The shell shall unset the function definition.
-*/
 
 static int		ft_unset_opt(size_t *x, char *opt, char **cmd)
 {
@@ -88,6 +34,19 @@ static int		ft_unset_opt(size_t *x, char *opt, char **cmd)
 	return (TRUE);
 }
 
+static int		ft_unset_ft(char ***ftvar, char *str)
+{
+	size_t		n;
+
+	ft_log(TYPE_WARNING, "Option -f non supportée.");
+	n = ft_find_path(*ftvar, str);
+	if (n == ft_tablen(*ftvar))
+		return (ft_error_int(ERROR_VNOTFOUND, FALSE));
+	else if (ft_del_line(&(*ftvar), n) == FALSE)
+		return (FALSE);
+	return (TRUE);
+}
+
 static int		ft_unset_var(char ***env, char ***shvar, char *str)
 {
 	size_t		n;
@@ -106,7 +65,7 @@ static int		ft_unset_var(char ***env, char ***shvar, char *str)
 	return (TRUE);
 }
 
-int				ft_unset(char ***env, char ***shvar, char **cmd)
+int				ft_unset(char ***env, char ***shvar, char ***ftvar, char **cmd)
 {
 	size_t		x;
 	int			ret;
@@ -121,13 +80,10 @@ int				ft_unset(char ***env, char ***shvar, char **cmd)
 		return (FALSE);
 	while (cmd[x])
 	{
-		if (opt == 'v')
-		{
-			if (ft_unset_var(env, shvar, cmd[x]) != TRUE && ret == TRUE)
-				ret = FALSE;
-		}
-		else
-			ft_log(TYPE_WARNING, "Option -f non supportée.");
+		if (((opt == 'v' && ft_unset_var(env, shvar, cmd[x]) != TRUE)
+			|| (opt == 'f' && ft_unset_ft(ftvar, cmd[x]) != TRUE))
+			&& ret == TRUE)
+			ret = FALSE;
 		x++;
 	}
 	return (ret);
