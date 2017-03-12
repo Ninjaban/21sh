@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/03 15:47:46 by jcarra            #+#    #+#             */
-/*   Updated: 2016/11/03 16:36:27 by jcarra           ###   ########.fr       */
+/*   Created: 2016/11/05 09:34:14 by mrajaona          #+#    #+#             */
+/*   Updated: 2016/11/05 10:33:05 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_esc.h"
 
-void	ft_putendl_fd(char *str, int fd)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*tmp;
+	unsigned char	*ptr;
 
-	if (str != NULL)
+	ptr = b;
+	while (len)
 	{
-		tmp = ft_eval(str);
-		write(fd, tmp, ft_strlen(tmp));
-		free(tmp);
+		*(ptr + len - 1) = (unsigned char)c;
+		len--;
 	}
-	ft_putchar_fd('\n', fd);
+	return (b);
 }

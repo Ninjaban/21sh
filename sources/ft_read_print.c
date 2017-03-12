@@ -27,7 +27,7 @@ void		ft_print(char *str, size_t pos, char inc)
 		ft_putchar_fd(' ', 0);
 	while (len_s-- > 0)
 		ft_putchar_fd('\b', 0);
-	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 13 : ft_strlen(str);
+	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
 	n = (int)len_s - 1;
 	ft_putstr_fd(str, 0);
 	while (n-- >= (int)pos + inc)

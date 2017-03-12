@@ -23,15 +23,21 @@ SRC_PART1		=	ft_strcmp.c \
 					ft_atoi.c \
 					ft_strstr.c \
 					ft_strnstr.c \
+					ft_memset.c \
 					ft_tolower.c \
 					ft_toupper.c \
 					ft_isalpha.c \
 					ft_isdigit.c \
 					ft_isalnum.c \
 					ft_isprint.c \
-					ft_isascii.c
+					ft_isascii.c \
+					ft_isoct.c \
+					ft_ishex.c
 
-SRC_PART2		=	ft_memalloc.c \
+SRC_PART2		=   ft_esc_hex.c \
+                    ft_eval_esc.c \
+                    ft_evaluator.c \
+                    ft_memalloc.c \
 					ft_memdel.c \
 					ft_strclr.c \
 					ft_strdel.c \

@@ -6,22 +6,16 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 15:47:46 by jcarra            #+#    #+#             */
-/*   Updated: 2016/11/03 16:36:27 by jcarra           ###   ########.fr       */
+/*   Updated: 2016/11/17 11:07:36 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_esc.h"
 
-void	ft_putendl_fd(char *str, int fd)
+void	ft_putstr(char *str)
 {
-	char	*tmp;
-
 	if (str != NULL)
-	{
-		tmp = ft_eval(str);
-		write(fd, tmp, ft_strlen(tmp));
-		free(tmp);
-	}
-	ft_putchar_fd('\n', fd);
+		write(1, str, ft_strlen(str));
+	else
+		write(1, "(null)", ft_strlen("(null)"));
 }

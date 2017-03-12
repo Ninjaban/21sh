@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_ishex.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/03 15:47:46 by jcarra            #+#    #+#             */
-/*   Updated: 2016/11/03 16:36:27 by jcarra           ###   ########.fr       */
+/*   Created: 2016/12/27 10:36:23 by mrajaona          #+#    #+#             */
+/*   Updated: 2016/12/27 10:36:24 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_esc.h"
 
-void	ft_putendl_fd(char *str, int fd)
+int	ft_ishex(int c)
 {
-	char	*tmp;
-
-	if (str != NULL)
-	{
-		tmp = ft_eval(str);
-		write(fd, tmp, ft_strlen(tmp));
-		free(tmp);
-	}
-	ft_putchar_fd('\n', fd);
+	return (ft_isdigit(c) || ('A' <= c && c <= 'F') || ('a' <= c && c <= 'f'));
 }

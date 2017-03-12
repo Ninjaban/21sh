@@ -88,11 +88,11 @@ void		ft_setcompletion(char **str, size_t pos, char *try, char tabul)
 	new = ft_strdup(*str);
 	(*str)[pos] = c;
 	if (!tabul)
-		new = ft_color("\a\e[4;36m", new);
+		new = ft_color("\a\x1b[4;38;5;249m", new);
 	tmp = ft_strjoin(new, try);
 	free(new);
 	if (!tabul)
-		tmp = ft_color("\e[0m\a", tmp);
+		tmp = ft_color("\033[0m\a", tmp);
 	new = ft_strjoin(tmp, *str + pos);
 	free(tmp);
 	free(*str);

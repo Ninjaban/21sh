@@ -11,11 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_esc.h"
 
 void	ft_putstr(char *str)
 {
+	char	*tmp;
+
 	if (str != NULL)
-		write(1, str, ft_strlen(str));
+	{
+		tmp = ft_eval(str);
+		write(1, tmp, ft_strlen(tmp));
+		free(tmp);
+	}
 	else
 		write(1, "(null)", ft_strlen("(null)"));
 }

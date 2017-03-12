@@ -40,6 +40,7 @@ typedef struct		s_lst
 **	Part 1
 */
 
+void				*ft_memset(void *b, int c, size_t len);
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
 int					ft_isalnum(int c);
@@ -52,6 +53,8 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_strcmp_case(const char *s1, const char *s2);
 int					ft_atoi(char *str);
 int					ft_strlchr(const char *s, const char *c);
+int					ft_ishex(int c);
+int					ft_isoct(int c);
 char				*ft_strdup(char *src);
 char				*ft_strstr(const char *str, const char *src);
 char				*ft_strnstr(const char *str, const char *src, size_t len);
