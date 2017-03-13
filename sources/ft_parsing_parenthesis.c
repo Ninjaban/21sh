@@ -45,86 +45,56 @@ static void		ft_parse_parenthesis_open(char *str, char c, char r, char type)
 		(str)[n - 1] = (str)[n];
 }
 */
-static char	ft_parse_parenthesis_open_check(char *str)
-{
-	size_t	n;
 
-	n = 0;
-	while (str[n])
-	{
-		if (str[n] == '\"' || str[n] == '\'')
-			return (FALSE);
-		n = n + 1;
-	}
-	return (TRUE);
-}
-
-static void	ft_parse_parenthesis_change_char(char **src, size_t n, char c,
+static void	ft_parse_parenthesis_change_char(char **src, size_t *n, char c,
 												char r)
 {
 	char	type;
 
-	type = ((*src)[n] == '\"') ? FALSE : TRUE;
-	while ((*src)[n] && (*src)[n] != '\"' && (*src)[n] != '\'')
+	type = ((*src)[(*n)++] == '\"') ? FALSE : TRUE;
+	while ((*src)[*n] && (*src)[*n] != ((!type) ? '\"' : '\''))
 	{
-		if ((*src)[n] == c)
-			(*src)[n] = r;
-		if ((*src)[n] == '\\' && type == TRUE)
-			ft_parse_backslash(*src + n);
-		n = n + 1;
+		if ((*src)[*n] == c)
+			(*src)[*n] = r;
+		if ((*src)[*n] == '\\' && type == TRUE)
+			ft_parse_backslash(*src + *n);
+		*n = *n + 1;
 	}
 }
 
-static char	ft_parse_parenthesis_open_rec(char **src, char *str, char c, char r)
+static void	ft_parse_parenthesis_open_init(char **src, char c, char r)
 {
+	char	*str;
 	size_t	n;
-	char	*lastchar;
 
 	n = 0;
-	lastchar = NULL;
+	str = ft_strdup(*src);
 	while (str[n])
 	{
 		if (str[n] == '\"' || str[n] == '\'')
-		{
-			if (!lastchar || str[n] != *lastchar)
-				lastchar = str + n;
-			else
-			{
-				ft_parse_parenthesis_change_char(&(*src), lastchar - str, c, r);
-				*lastchar = '\a';
-				str[n] = '\a';
-				n = 0;
-			}
-		}
+			ft_parse_parenthesis_change_char(&(*src), &n, c, r);
 		n = n + 1;
 	}
-	return ((ft_parse_parenthesis_open_check(str)) ? TRUE : FALSE);
-}
-
-static char	ft_parse_parenthesis_open_init(char **src, char c, char r)
-{
-	char	*str;
-
-	str = ft_strdup(*src);
-	if (ft_parse_parenthesis_open_rec(&(*src), str, c, r) == FALSE)
-	{
-		free(str);
-		return (FALSE);
-	}
 	free(str);
-	return (TRUE);
 }
 
 void			ft_parse_parenthesis(char **str, char c, char r)
 {
     size_t      n;
+	char		type;
 
     n = 0;
 	ft_parse_parenthesis_open_init(&(*str), c, r);
     while ((*str)[n])
     {
         if ((*str)[n] == '\"' || (*str)[n] == '\'')
-            ft_delchar(&(*str), n);
+		{
+			type = ((*str)[n] == '\"') ? FALSE : TRUE;
+			ft_delchar(&(*str), n);
+			while ((*str)[n] && (*str)[n] != ((!type) ? '\"' : '\''))
+				n = n + 1;
+			ft_delchar(&(*str), n);
+		}
         else
             n = n + 1;
     }
