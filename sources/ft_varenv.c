@@ -22,7 +22,7 @@ static char	*ft_getvalue(char *str, char **env)
 	int		n;
 
 	n = 0;
-	while (ft_isalnum(str[n]) == 1)
+	while (str[n] && str[n] != ' ' && str[n] != '\t')
 		n = n + 1;
 	c = str[n];
 	str[n] = '\0';
@@ -66,7 +66,7 @@ char		*ft_varenv(char *str, char **env, char change)
 			new = ft_init_join(new, ft_strdup(cpy));
 			*tmp = '$';
 			new = ft_init_join(new, ft_getvalue(++tmp, env));
-			while (ft_isalnum(*tmp) == 1)
+			while (*tmp && *tmp != ' ' && *tmp != '\t')
 				tmp++;
 			cpy = tmp;
 		}

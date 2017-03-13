@@ -30,7 +30,7 @@ static void		ft_parsing_multicmd(t_btree **cmds, char *str)
 				n = n - 1;
 			ft_init_node(&(*cmds), str + n, ft_get_redir_fd(str, n));
 			n = n - 1;
-			while (n > 0 && ft_isdigit(str[n]))
+			while (n > 0 && str[n] != ' ' && str[n] != '\t')
 				n = n - 1;
 			str[++n] = '\0';
 		}

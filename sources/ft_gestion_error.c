@@ -37,7 +37,7 @@ static int	ft_check_start(const char *tmp)
 	n = 0;
 	while (n < ft_strlen(tmp))
 	{
-		if (tmp[n] && tmp[n + 1] && tmp[n + 2] && ft_check(tmp[n], "|&")
+		if (tmp[n] && tmp[n + 1] && tmp[n + 2] && ft_check(tmp[n], "|")
 			&& ft_check(tmp[n + 1], "|&<>") && ft_check(tmp[n + 2], "|&<>"))
 			return (FALSE);
 		n = n + 1;

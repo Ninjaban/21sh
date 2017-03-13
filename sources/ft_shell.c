@@ -35,7 +35,7 @@ static int	ft_launcher(t_sys **sys, char **str, int *exit)
 		if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
 			ft_log(TYPE_WARNING, ERROR_HISTORY);
 		else if ((tmp = ft_gestion_error(*str)) != NULL)
-			ft_log(TYPE_WARNING, tmp);
+			ft_log(TYPE_ERROR, tmp);
 		else if (((*sys)->cmds = ft_parsing(ft_strdup(*str), *sys)) == NULL)
 			ft_log(TYPE_ERROR, ERROR_ALLOC);
 		else

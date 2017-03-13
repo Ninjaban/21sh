@@ -13,15 +13,34 @@
 #include "libft.h"
 #include "ft_esc.h"
 
+static char	ft_putcheck(char *str)
+{
+	size_t	n;
+
+	n = 0;
+	while (str[n])
+	{
+		if (!ft_strncmp(str + n, "\x1b[", 2))
+			return (1);
+		n = n + 1;
+	}
+	return (0);
+}
+
 void	ft_putendl_fd(char *str, int fd)
 {
 	char	*tmp;
 
 	if (str != NULL)
 	{
-		tmp = ft_eval(str);
-		write(fd, tmp, ft_strlen(tmp));
-		free(tmp);
+		if (ft_putcheck(str))
+		{
+			tmp = ft_eval(str);
+			write(fd, tmp, ft_strlen(tmp));
+			free(tmp);
+		}
+		else
+			write(fd, str, ft_strlen(str));
 	}
 	ft_putchar_fd('\n', fd);
 }
