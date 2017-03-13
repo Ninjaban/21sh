@@ -14,43 +14,25 @@
 #include "shell.h"
 #include "error.h"
 
-static char	ft_parse_parenthesis_open_check(char *str)
-{
-	size_t	n;
-
-	n = 0;
-	while (str[n])
-	{
-		if (str[n] == '\"' || str[n] == '\'')
-			return (FALSE);
-		n = n + 1;
-	}
-	return (TRUE);
-}
-
 static char	ft_parse_parenthesis_open_rec(char *str)
 {
 	size_t	n;
-	char	*lastchar;
+	char	type;
 
 	n = 0;
-	lastchar = NULL;
 	while (str[n])
 	{
 		if (str[n] == '\"' || str[n] == '\'')
 		{
-			if (!lastchar || str[n] != *lastchar)
-				lastchar = str + n;
-			else
-			{
-				*lastchar = '\a';
-				str[n] = '\a';
-				n = 0;
-			}
+			type = (str[n] == '\"') ? FALSE : TRUE;
+			while (str[n] && str[n] != ((!type) ? '\"' : '\''))
+				n = n + 1;
+			if (!str[n])
+				return (FALSE);
 		}
 		n = n + 1;
 	}
-	return ((ft_parse_parenthesis_open_check(str)) ? TRUE : FALSE);
+	return (TRUE);
 }
 
 static char	ft_parse_parenthesis_open_init(char *src)
