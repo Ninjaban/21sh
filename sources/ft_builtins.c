@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/13 11:04:55 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/13 14:42:42 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,6 @@ int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 		return (ft_keymap(&((*sys)->keymap), cmds->argv, *sys));
 	else if (ft_strcmp(cmds->name, "history") == 0)
 		return (ft_hist_built(cmds->argv, &((*sys)->history)));
-	else if (cmds->name[0] == '!')
-		return (TRUE);
 	else
 		return (FALSE);
 }
@@ -71,8 +69,6 @@ int			ft_builtins(t_cmd *cmds)
 	else if (ft_strcmp(cmds->name, "keymap") == 0)
 		return (TRUE);
 	else if (ft_strcmp(cmds->name, "history") == 0)
-		return (TRUE);
-	else if (cmds->name[0] == '!')
 		return (TRUE);
 	else
 		return (FALSE);
