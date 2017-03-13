@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2017/01/20 15:07:26 by jcarra            #+#    #+#              #
-#    Updated: 2017/03/13 10:53:18 by mrajaona         ###   ########.fr        #
+#    Created: 2017/03/13 11:47:01 by mrajaona          #+#    #+#              #
+#    Updated: 2017/03/13 11:47:12 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -41,6 +41,7 @@ SRC			=	ft_keymap.c \
 				ft_read.c \
 				ft_read_print.c \
 				ft_read_move.c \
+				ft_read_copy.c \
 				ft_history.c \
 				ft_init.c \
 				ft_gestion_error.c \

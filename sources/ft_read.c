@@ -83,6 +83,8 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 
 static char	ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 {
+	static char	cpy = FALSE;
+
 	if (c == (*sys)->keymap[KEY_RET])
 		return (TRUE);
 	if (ft_isprint(c) || c == (*sys)->keymap[KEY_TAB])
@@ -95,6 +97,16 @@ static char	ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 		c == (*sys)->keymap[KEY_LEF] || c == (*sys)->keymap[KEY_RIG] ||
 		c == (*sys)->keymap[KEY_OLE] || c == (*sys)->keymap[KEY_ORI])
 		ft_read_move(&(*str), c, &(*n), (*sys));
+	if (c == (*sys)->keymap[KEY_PST])
+		ft_read_cpy_past(&(*str), &(*n), FALSE, FALSE);
+	if (c == (*sys)->keymap[KEY_CPY])
+	{
+		ft_read_cpy_past(&(*str), &(*n), TRUE, (cpy) ? FALSE : TRUE);
+		ft_read_suppr(&(*str), &(*n));
+		cpy = TRUE;
+	}
+	else
+		cpy = FALSE;
 	return (FALSE);
 }
 

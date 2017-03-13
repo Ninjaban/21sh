@@ -120,9 +120,7 @@ void			ft_parse_parenthesis(char **str, char c, char r)
     size_t      n;
 
     n = 0;
-    ft_putendl_fd((*str), 0);
 	ft_parse_parenthesis_open_init(&(*str), c, r);
-    ft_putendl_fd((*str), 0);
     while ((*str)[n])
     {
         if ((*str)[n] == '\"' || (*str)[n] == '\'')
@@ -130,25 +128,6 @@ void			ft_parse_parenthesis(char **str, char c, char r)
         else
             n = n + 1;
     }
-    ft_putendl_fd((*str), 0);
-	/*
-	size_t		n;
-
-	n = 0;
-	while ((*str)[n])
-	{
-		if ((*str)[n] == '\"' || (*str)[n] == '\'')
-		{
-			ft_parse_parenthesis_open_init((*str) + n + 1, c, r,
-									((*str)[n] == '\"') ? 0 : 1);
-			if (((*str)[n] == '\"' || (*str)[n] == '\'') &&
-				((ft_delchar(&(*str), n)) == FALSE))
-				return ;
-		}
-		else
-			n = n + 1;
-	}
-	 */
 }
 
 void			ft_parenthesis_undo(char ***tab)
