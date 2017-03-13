@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2017/01/20 15:07:26 by jcarra            #+#    #+#              #
-#    Updated: 2017/03/13 09:51:45 by jcarra           ###   ########.fr        #
+#    Created: 2017/03/13 11:47:01 by mrajaona          #+#    #+#              #
+#    Updated: 2017/03/13 14:25:58 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -28,6 +28,7 @@ SRC			=	ft_keymap.c \
 				ft_set.c \
 				ft_unset.c \
 				ft_unset_tools.c \
+				ft_history_builtin.c \
 				ft_access.c \
 				ft_exec.c \
 				ft_exec_child.c \
@@ -42,6 +43,7 @@ SRC			=	ft_keymap.c \
 				ft_read_move.c \
 				ft_read_copy.c \
 				ft_history.c \
+				ft_history_tools.c \
 				ft_init.c \
 				ft_gestion_error.c \
 				ft_path.c \
