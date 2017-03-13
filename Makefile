@@ -6,7 +6,7 @@
 #    By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/13 11:47:01 by mrajaona          #+#    #+#              #
-#    Updated: 2017/03/13 11:47:12 by mrajaona         ###   ########.fr        #
+#    Updated: 2017/03/13 14:25:58 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -43,6 +43,7 @@ SRC			=	ft_keymap.c \
 				ft_read_move.c \
 				ft_read_copy.c \
 				ft_history.c \
+				ft_history_tools.c \
 				ft_init.c \
 				ft_gestion_error.c \
 				ft_path.c \

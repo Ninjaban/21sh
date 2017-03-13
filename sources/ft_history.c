@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 08:55:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/09 08:36:16 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/13 14:24:17 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,13 +58,13 @@ int			ft_history_maj(t_lst **history, char *line, char **env)
 	if (ft_list_size(*history) == HISTORY_SIZE)
 		ft_history_suppr_first(&(*history));
 	if (!(*history))
-		*history = ft_create_elem((void *)line);
+		*history = ft_create_hist_elem(line);
 	else
-		ft_list_push_back(&(*history), (void *)line);
+		ft_list_push_back_id(&(*history), line);
 	tmp = (*history);
 	while (tmp)
 	{
-		ft_putendl_fd((char *)tmp->data, fd);
+		ft_putendl_fd(((t_hist *)(tmp->data))->line, fd);
 		tmp = tmp->next;
 	}
 	close(fd);
@@ -87,9 +87,9 @@ int			ft_history_init(t_lst **history, char **env)
 	while (n++ < HISTORY_SIZE && get_next_line(fd, &line) == 1)
 	{
 		if (!(*history))
-			*history = ft_create_elem((void *)ft_strdup(line));
+			*history = ft_create_hist_elem(ft_strdup(line));
 		else
-			ft_list_push_back(&(*history), (void *)ft_strdup(line));
+			ft_list_push_back_id(&(*history), ft_strdup(line));
 		free(line);
 		line = NULL;
 	}

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 18:54:52 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 13:19:50 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/13 12:50:01 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,11 @@ int				ft_access_dir(char *path)
 	if (path && access(path, F_OK) != 0)
 	{
 		ft_log(TYPE_WARNING, ERROR_DNOTFOUND);
+		return (-1);
+	}
+	if (path && access(path, X_OK) != 0)
+	{
+		ft_log(TYPE_WARNING, ERROR_PERMS);
 		return (-1);
 	}
 	if ((buf = malloc(sizeof(struct stat))) == NULL)

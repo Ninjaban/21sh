@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 13:14:08 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/03 14:19:15 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/13 12:45:06 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int			ft_chdir_set_path(char **path, char *str)
 	free(*path);
 	*path = tmp;
 	if (!tmp)
-		return (FALSE);
+		return (ft_error_int("getcdir", FALSE));
 	return (TRUE);
 }
 
