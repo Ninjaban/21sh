@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/10 10:15:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/10 10:20:13 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/14 10:15:20 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int			ft_sys_init(t_sys **sys)
 		return (ft_error_int(ERROR_ALLOC, 1));
 	}
 	*((*sys)->shvar) = NULL;
+	*((*sys)->ftvar) = NULL;
 	(*sys)->history = NULL;
 	(*sys)->alias = NULL;
 	(*sys)->cmds = NULL;
