@@ -17,19 +17,8 @@
 static char	*ft_getvalue(char *str, char **env)
 {
 	char	*value;
-	char	*tmp;
-	char	c;
-	int		n;
 
-	n = 0;
-	while (str[n] && str[n] != ' ' && str[n] != '\t')
-		n = n + 1;
-	c = str[n];
-	str[n] = '\0';
-	tmp = ft_strjoin(str, "=");
-	value = ft_getenv(env, tmp);
-	free(tmp);
-	str[n] = c;
+	value = ft_getenv(env, str);
 	return (value);
 }
 
@@ -38,18 +27,20 @@ static char	*ft_checkvalue(char *str, t_sys *sys)
 	char	*value;
 	char	*key;
 	char	c;
+	int		n;
 
-	while (*str && *str != ' ' && *str != '\t')
-		str++;
-	c = *str;
-	*str = '\0';
+	n = 0;
+	while (str[n] && str[n] != ' ' && str[n] != '\t')
+		n = n + 1;
+	c = str[n];
+	str[n] = '\0';
 	key = ft_strjoin(str, "=");
-	if (ft_fpath(sys->ftvar, key) != ft_tablen(sys->ftvar))
-		value = ft_getvalue(key, sys->ftvar);
-	else
+	if (ft_fpath(sys->env, key) != ft_tablen(sys->env))
 		value = ft_getvalue(key, sys->env);
+	else
+		value = ft_getvalue(key, sys->shvar);
 	free(key);
-	*str = c;
+	str[n] = c;
 	return (value);
 }
 
@@ -76,7 +67,6 @@ static char	*ft_init_new(char *new, char *tmp, char *cpy, t_sys *sys)
 	*tmp = '$';
 	if ((value = ft_checkvalue(++tmp, sys)) != NULL)
 		new = ft_init_join(new, value);
-//	free(value);
 	return (new);
 }
 
