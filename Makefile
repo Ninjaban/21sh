@@ -54,6 +54,7 @@ SRC			=	ft_keymap.c \
 				ft_prompt.c \
 				ft_error.c \
 				ft_free.c \
+				ft_signal.c \
 				ft_parsing_split.c \
 				ft_parsing_split_tools.c \
 				ft_parsing_tools.c \

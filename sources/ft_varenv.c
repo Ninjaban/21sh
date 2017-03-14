@@ -33,6 +33,26 @@ static char	*ft_getvalue(char *str, char **env)
 	return (value);
 }
 
+static char	*ft_checkvalue(char *str, t_sys *sys)
+{
+	char	*value;
+	char	*key;
+	char	c;
+
+	while (*str && *str != ' ' && *str != '\t')
+		str++;
+	c = *str;
+	*str = '\0';
+	key = ft_strjoin(str, "=");
+	if (ft_fpath(sys->ftvar, key) != ft_tablen(sys->ftvar))
+		value = ft_getvalue(key, sys->ftvar);
+	else
+		value = ft_getvalue(key, sys->env);
+	free(key);
+	*str = c;
+	return (value);
+}
+
 static char	*ft_init_join(char *new, char *str)
 {
 	char	*tmp;
@@ -47,7 +67,20 @@ static char	*ft_init_join(char *new, char *str)
 	return (tmp);
 }
 
-char		*ft_varenv(char *str, char **env, char change)
+static char	*ft_init_new(char *new, char *tmp, char *cpy, t_sys *sys)
+{
+	char	*value;
+
+	*tmp = '\0';
+	new = ft_init_join(new, ft_strdup(cpy));
+	*tmp = '$';
+	if ((value = ft_checkvalue(++tmp, sys)) != NULL)
+		new = ft_init_join(new, value);
+//	free(value);
+	return (new);
+}
+
+char		*ft_varenv(char *str, t_sys *sys, char change)
 {
 	char	*cpy;
 	char	*tmp;
@@ -62,10 +95,7 @@ char		*ft_varenv(char *str, char **env, char change)
 			change = (change == TRUE) ? FALSE : TRUE;
 		if (*tmp == '$' && change == TRUE)
 		{
-			*tmp = '\0';
-			new = ft_init_join(new, ft_strdup(cpy));
-			*tmp = '$';
-			new = ft_init_join(new, ft_getvalue(++tmp, env));
+			new = ft_init_new(new, tmp, cpy, sys);
 			while (*tmp && *tmp != ' ' && *tmp != '\t')
 				tmp++;
 			cpy = tmp;

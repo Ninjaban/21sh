@@ -140,7 +140,7 @@ int				ft_check_alias(char **str, t_alias *alias, int n);
 int				ft_true_node(void *root, void *item);
 int				ft_false_node(void *root, void *item);
 int				ft_get_redir_fd(char *str, size_t i);
-char			*ft_varenv(char *str, char **env, char change);
+char			*ft_varenv(char *str, t_sys *sys, char change);
 char			*ft_tild(char *str, char **env);
 t_cmd			*ft_parsecmd(char *str);
 t_node			*ft_new_node(char node, char *str, char redir, int fd);
@@ -271,6 +271,13 @@ void			ft_read_move(char **str, int c, size_t *pos, t_sys *sys);
 void			ft_read_history_clear(char *str);
 void			ft_read_cpy_past(char **str, size_t *n, char type, char new);
 int				ft_read(char **str, t_sys **sys, size_t n);
+
+/*
+**	Signaux
+*/
+
+char			ft_signal_start(void);
+char			ft_signal_stop(void);
 
 /*
 **	Main

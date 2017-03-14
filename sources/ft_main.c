@@ -69,11 +69,8 @@ int			main(int ac, char **av, char **env)
 		ft_log(TYPE_WARNING, ERROR_ENV);
 		return (ft_error_int(ERROR_LAUNCH, 1));
 	}
-	if (signal(SIGINT, SIG_IGN) == SIG_ERR)
-	{
-		ft_log(TYPE_WARNING, ERROR_SIGNAL);
-		return (ft_error_int(ERROR_LAUNCH, 1));
-	}
+	if (ft_signal_stop() == FALSE)
+		return (1);
 	ft_shell(sys, FALSE, NULL, NULL);
 	return (0);
 }

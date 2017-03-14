@@ -55,7 +55,7 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys, int *ret)
 			return (ERROR_FORK);
 		if (child == 0)
 		{
-			if (signal(SIGINT, SIG_DFL) == SIG_ERR)
+			if (ft_signal_start() == FALSE)
 				return (ERROR_FORK);
 			ft_exec_child(node->left->item, &(*sys));
 			exit(1);
@@ -104,7 +104,7 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 			if (child == 0)
 			{
 				ft_log(TYPE_INFO, ">> exec fork");
-				if (signal(SIGINT, SIG_DFL) == SIG_ERR)
+				if (ft_signal_start() == FALSE)
 					return (ERROR_FORK);
 				if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
 					return (tmp);

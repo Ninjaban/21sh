@@ -103,7 +103,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	char		**tab;
 	char		*tmp;
 
-	tmp = ft_tild(ft_varenv(str, sys->env, TRUE), sys->env);
+	tmp = ft_tild(ft_varenv(str, sys, TRUE), sys->env);
 	ft_parsing_alias(&tmp, sys);
 	ft_tild_file(&tmp, ';', '\a');
 	if ((tab = ft_parsing_split(tmp)) == NULL)
