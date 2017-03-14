@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/13 14:25:33 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/13 15:35:34 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -202,12 +202,10 @@ int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
 char			ft_keymap(int **keymap, char **argv, t_sys *sys);
 char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
-
 int				ft_set(char **cmd, char ***env, char ***shvar);
 int				ft_unset(char ***env, char ***shvar, char ***ftvar, char **cmd);
 int				ft_export(char **cmd, char ***env, char ***shvar);
 int				ft_hist_built(char **argv, t_lst **history);
-
 int				ft_builtins(t_cmd *cmds);
 int				ft_exec_builtins(t_cmd *cmds, t_sys **sys);
 
@@ -283,6 +281,7 @@ char			ft_signal_stop(void);
 **	Main
 */
 
+void			ft_check_excl(t_sys **sys, char **str);
 void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp,
 									size_t n);
 void			ft_shell(t_sys *sys, int exit, char *str, char *tmp);
@@ -290,3 +289,13 @@ int				ft_history_maj(t_lst **history, char *line, char **env);
 int				ft_sys_init(t_sys **sys);
 
 #endif
+
+
+
+
+
+
+
+
+
+

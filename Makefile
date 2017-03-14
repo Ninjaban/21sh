@@ -6,13 +6,14 @@
 #    By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/13 11:47:01 by mrajaona          #+#    #+#              #
-#    Updated: 2017/03/13 14:25:58 by mrajaona         ###   ########.fr        #
+#    Updated: 2017/03/13 15:34:18 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME		=	21sh
 
-SRC			=	ft_keymap.c \
+SRC			=	ft_shell_excl.c \
+				ft_keymap.c \
                 ft_keymap_tools.c \
                 ft_unalias.c \
 				ft_alias.c \
