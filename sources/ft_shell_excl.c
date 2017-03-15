@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 15:21:07 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/15 15:25:00 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 16:05:20 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -229,5 +229,4 @@ void		ft_check_excl(t_sys **sys, char **str)
 	res = ft_update_str(res, st);
 	free(*str);
 	*str = res;
-	ft_log(TYPE_INFO, *str);
 }

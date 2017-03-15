@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/01 11:01:46 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 16:02:28 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ static void		ft_add_node(t_btree **cmds, char **tab, int n)
 		}
 		else
 		{
-//			ft_tild_file(&(tab[n]), '\a', ';'); // A verifier pour les && et les || dans les ""
 			ft_parsing_multicmd(&(*cmds), tab[n]);
 			ft_add_node(&(*cmds), tab, n + 1);
 		}
@@ -120,42 +119,6 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	return (cmds);
 }
 
-/*
-// A enlever
-void			ft_display(void *root)
-{
-	t_node		*node;
-
-	if ((node = ((t_btree *)root)->item))
-	{
-		if (!node->node)
-			ft_putstr(" NULL ");
-		else if (node->node == CMD)
-			ft_putstr(" ; ");
-		else if (node->node == AND)
-			ft_putstr(" && ");
-		else if (node->node == OR)
-			ft_putstr(" || ");
-		else if (node->redir != FALSE)
-		{
-			if (node->redir == PIPE)
-				ft_putstr(" | ");
-			else if (node->redir == REDIR_R)
-				ft_putstr(" > ");
-			else if (node->redir == REDIR_L)
-				ft_putstr(" < ");
-			else if (node->redir == CONCAT_R)
-				ft_putstr(" >> ");
-			else if (node->redir == CONCAT_L)
-				ft_putstr(" << ");
-		}
-		else if (node->redir == FALSE && node->cmd)
-			for (int n = 0; node->cmd->argv[n]; ++n)
-				ft_putstr(node->cmd->argv[n]);
-	}
-}
-*/
-
 t_btree			*ft_parsing(char *str, t_sys *sys)
 {
 	t_btree		*cmds;
@@ -163,7 +126,5 @@ t_btree			*ft_parsing(char *str, t_sys *sys)
 	if (!str)
 		return (NULL);
 	cmds = ft_parsing_line(str, sys);
-//	btree_apply_infix(cmds, &ft_display); // A enlever
-//	ft_putendl(""); // A enlever
 	return (cmds);
 }

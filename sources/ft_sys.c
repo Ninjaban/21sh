@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/10 10:15:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:52:09 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 16:03:22 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void		ft_delete_node(void *node)
 	}
 }
 
-void	ft_free_hist(void *data)
+void		ft_free_hist(void *data)
 {
 	if (data)
 	{
