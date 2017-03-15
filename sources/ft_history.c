@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 08:55:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 14:40:07 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 14:45:26 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,13 +87,13 @@ int			ft_history_init(t_lst **history, char **env)
 	while (n++ < HISTORY_SIZE && get_next_line(fd, &line) == 1)
 	{
 		if (!(*history))
-			*history = ft_create_hist_elem(line);
+			*history = ft_create_hist_elem(ft_strdup(line));
 		else
-			ft_list_push_back_id(&(*history), line);
-		//free(line);
-		//line = NULL;
+			ft_list_push_back_id(&(*history), ft_strdup(line));
+		free(line);
+		line = NULL;
 	}
-	//free(line);
+	free(line);
 	close(fd);
 	return (TRUE);
 }

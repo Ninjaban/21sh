@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/10 10:15:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 14:33:47 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 14:47:41 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,15 +77,15 @@ static void	ft_free_hist(void *data)
 {
 	if (data)
 	{
-		ft_putendl(((t_hist *)data)->line);
-		free(((t_hist *)data)->line);
+		//ft_putendl(((t_hist *)data)->line);
+		//if (((t_hist *)data)->line)
+		//	free(((t_hist *)data)->line);
 		free(data);
 	}
 }
 
 void		ft_sys_free(t_sys *sys)
 {
-	ft_log(TYPE_INFO, "sys free");
 	if (sys->env)
 		ft_free_tab(sys->env);
 	if (sys->shvar)
