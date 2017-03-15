@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 14:23:11 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/15 11:53:04 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 15:14:03 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_lst	*ft_create_hist_elem(char *line)
 		free(new_elem);
 		return (NULL);
 	}
-	data->line = line;
+	data->line = ft_strdup(line);
 	data->id = id;
 	new_elem->data = (void *)data;
 	id++;
