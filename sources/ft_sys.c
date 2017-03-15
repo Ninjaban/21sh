@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/10 10:15:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 14:47:41 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 10:47:24 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,9 +77,7 @@ static void	ft_free_hist(void *data)
 {
 	if (data)
 	{
-		//ft_putendl(((t_hist *)data)->line);
-		//if (((t_hist *)data)->line)
-		//	free(((t_hist *)data)->line);
+		free(((t_hist *)data)->line);
 		free(data);
 	}
 }
@@ -92,12 +90,9 @@ void		ft_sys_free(t_sys *sys)
 		ft_free_tab(sys->shvar);
 	if (sys->ftvar)
 		ft_free_tab(sys->ftvar);
-	if (sys->keymap)
-		free(sys->keymap);
 	if (sys->alias)
 		ft_free_alias(sys->alias);
 	if (sys->history)
 		ft_list_clear(&(sys->history), &ft_free_hist);
 	free(sys);
 }
-

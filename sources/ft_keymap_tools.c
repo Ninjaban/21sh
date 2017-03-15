@@ -57,9 +57,6 @@ char		ft_keymap_set(int **keymap, char **argv, t_sys *sys)
 {
 	char	macro;
 
-	if (!argv[2])
-		return ((char)ft_error_int("Cette macro de touche n'existe pas.",
-								   FALSE));
 	macro = -1;
 	macro = (!ft_strcmp(argv[2], "EOF")) ? (char)KEY_EOF : macro;
 	macro = (!ft_strcmp(argv[2], "TAB")) ? (char)KEY_TAB : macro;

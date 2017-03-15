@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 15:21:07 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/15 14:26:13 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 13:47:40 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static char	*ft_hist_str(char *str)
 		}
 		res[len + 1] = '\0';
 	}
-	else if (*str == '{') // verifier le comportement original csh
+	else if (*str == '{') // verifier le comportement original
 	{
 		len = 1;
 		while (str[len] && str[len] != '}')
@@ -220,6 +220,8 @@ void		ft_check_excl(t_sys **sys, char **str)
 						&& *(s + 1) != '=' && *(s + 1) != '(')
 					s++;
 		}
+		else if (*s == '^')
+			; // A FAIRE
 		s++;
 		if (cmd)
 		{
