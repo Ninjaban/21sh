@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 14:23:11 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/13 14:27:00 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 11:53:04 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ t_lst	*ft_create_hist_elem(char *line)
 {
 	t_lst		*new_elem;
 	t_hist		*data;
-	static int	id = 0;
+	static int	id = 1;
 
-	if ((new_elem = malloc(sizeof(t_lst))) == NULL)
+	if ((new_elem = (t_lst *)malloc(sizeof(t_lst))) == NULL)
 		return (NULL);
 	new_elem->next = NULL;
 	if ((data = (t_hist *)malloc(sizeof(t_hist))) == NULL)

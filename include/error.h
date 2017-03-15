@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:19:14 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/13 12:49:49 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 11:57:44 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@
 # define ERROR_TERM "Erreur lors de l'initialisation du terminal."
 # define ERROR_KEYMAP "Erreur lors de l'initialisation du mappage de touche."
 # define ERROR_VNOTFOUND "Variable non trouvée."
+# define ERROR_HIST "Event not found"
 
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur
