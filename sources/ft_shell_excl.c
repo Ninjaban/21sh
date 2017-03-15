@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 15:21:07 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/15 13:20:50 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 13:47:40 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** search s2 in s1
 */
 
-int	ft_hist_match(char *s1, char *s2)
+int			ft_hist_match(char *s1, char *s2)
 {
 	if (!(*s1) && !(*s2))
 		return (1);
@@ -45,10 +45,7 @@ static char	*ft_hist_str(char *str)
 	size_t	len;
 	size_t	i;
 
-	if (*str == '!')
-		return (NULL);
 	res = NULL;
-
 	if (*str == '?')
 	{
 		len = 1;
@@ -86,19 +83,19 @@ static char	*ft_hist_str(char *str)
 		while (str[len] && str[len] != ' ' && str[len] != '\t'
 				&& str[len] != '\n' && str[len] != '=' && str[len] != '(')
 			len++;
-		if ((res = (char *)malloc(sizeof(char) * (len + 1))) == NULL)
+		if ((res = (char *)malloc(sizeof(char) * (len + 2))) == NULL)
 			return (ft_error_void(ERROR_ALLOC));
 		i = 0;
 		while (i < len)
 		{
-			res[i] = str[i + 1];
+			res[i] = str[i];
 			i++;
 		}
-		res[len - 1] = '?';
-		res[len] = '\0';
+		res[len] = '?';
+		res[len + 1] = '\0';
 	}
-
-	ft_log(TYPE_INFO, res);
+	if (!res)
+		return (ft_error_void(ERROR_HIST));
 	return (res);
 }
 
@@ -109,6 +106,8 @@ static char	*ft_hist_last(t_lst *history)
 	tmp = history;
 	while (tmp && tmp->next)
 		tmp = tmp->next;
+	if (!tmp)
+		ft_log(TYPE_ERROR, ERROR_HIST);
 	return (tmp ? ((t_hist *)(tmp->data))->line : NULL);
 }
 
@@ -128,6 +127,8 @@ static char	*ft_hist_find(t_lst *history, char *str)
 		tmp = tmp->next;
 	}
 	free(str);
+	if (!res)
+		return (ft_error_void(ERROR_HIST));
 	return (res);
 }
 
@@ -139,7 +140,7 @@ static char	*ft_hist_id(t_lst *history, char *str)
 	id = ft_atoi(str);
 	tmp = history;
 	if (id > 0 && id < ((t_hist *)(tmp->data))->id)
-		return (NULL);
+		return (ft_error_void(ERROR_HIST));
 	if (id < 0)
 	{
 		while (tmp && tmp->next)
@@ -148,16 +149,15 @@ static char	*ft_hist_id(t_lst *history, char *str)
 		tmp = history;
 	}
 	if (id < ((t_hist *)(tmp->data))->id)
-		return (NULL);
+		return (ft_error_void(ERROR_HIST));
 	while (tmp)
 	{
 		if (id == ((t_hist *)(tmp->data))->id)
 			return (((t_hist *)(tmp->data))->line);
 		tmp = tmp->next;
 	}
-	return (NULL);
+	return (ft_error_void(ERROR_HIST));
 }
-
 
 static char	*ft_update_str(char *dest, char *str)
 {
@@ -173,21 +173,20 @@ static char	*ft_update_str(char *dest, char *str)
 	return (res);
 }
 
-void	ft_check_excl(t_sys **sys, char **str)
+void		ft_check_excl(t_sys **sys, char **str)
 {
 	char	*s;
 	char	*st;
 	char	*cmd;
 	char	*res;
 
-	ft_log(TYPE_WARNING, "START");
 	s = *str;
 	st = *str;
 	res = ft_update_str(NULL, "\0");
 	while (*s)
 	{
 		cmd = NULL;
-		if (*s == '!'&& *(s + 1) && *(s + 1) != ' ' && *(s + 1) != '\t'
+		if (*s == '!' && *(s + 1) && *(s + 1) != ' ' && *(s + 1) != '\t'
 			&& *(s + 1) != '\n' && *(s + 1) != '=' && *(s + 1) != '(')
 		{
 			*s = '\0';
@@ -195,10 +194,6 @@ void	ft_check_excl(t_sys **sys, char **str)
 			s++;
 			if (*s == '!')
 				cmd = ft_hist_last((*sys)->history);
-			else if (*s == '?')
-				cmd = ft_hist_find((*sys)->history, ft_hist_str(s));
-			else if (*s == '{')
-				cmd = ft_hist_find((*sys)->history, ft_hist_str(s));
 			else if (ft_isdigit(*s) || (*s == '-' && ft_isdigit(*(s + 1))))
 				cmd = ft_hist_id((*sys)->history, s);
 			else
@@ -220,24 +215,22 @@ void	ft_check_excl(t_sys **sys, char **str)
 					s++;
 			}
 			else
-				while (*s && *(s + 1) && *(s + 1) != ' ' && *(s + 1) != '\t'
-					   && *(s + 1) != '\n' && *(s + 1) != '=' && *(s + 1) != '(')
+				while (*s && *(s + 1) && *(s + 1) != ' '
+						&& *(s + 1) != '\t' && *(s + 1) != '\n'
+						&& *(s + 1) != '=' && *(s + 1) != '(')
 					s++;
 		}
-
 		else if (*s == '^')
-			;
-
+			; // A FAIRE
 		s++;
 		if (cmd)
 		{
 			res = ft_update_str(res, cmd);
 			st = s;
 		}
-
 	}
 	res = ft_update_str(res, st);
 	free(*str);
 	*str = res;
-	ft_log(TYPE_WARNING, "END");
+	ft_log(TYPE_INFO, *str);
 }
