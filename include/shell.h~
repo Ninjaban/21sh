@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:52:54 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/13 15:35:34 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -246,7 +246,6 @@ void			ft_delete_node(void *node);
 void			ft_free_tab(char **tab);
 void			ft_free(t_cmd **cmds, char **str, t_btree **cmd);
 void			ft_sys_free(t_sys *sys);
-void			ft_free_hist(void *data);
 
 /*
 **	Prompt
@@ -290,3 +289,13 @@ int				ft_history_maj(t_lst **history, char *line, char **env);
 int				ft_sys_init(t_sys **sys);
 
 #endif
+
+
+
+
+
+
+
+
+
+

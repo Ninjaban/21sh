@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 08:55:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:16:38 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 15:52:05 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static void	ft_history_suppr_first(t_lst **history)
 	t_lst	*tmp;
 
 	tmp = (*history)->next;
-	ft_list_del(*history, &free);
+	ft_list_del(*history, &ft_free_hist);
 	(*history) = tmp;
 }
 
