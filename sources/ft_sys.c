@@ -79,6 +79,10 @@ void		ft_sys_free(t_sys *sys)
 		ft_free_tab(sys->env);
 	if (sys->shvar)
 		ft_free_tab(sys->shvar);
+	if (sys->ftvar)
+		ft_free_tab(sys->ftvar);
+	if (sys->keymap)
+		free(sys->keymap);
 	if (sys->alias)
 		ft_free_alias(sys->alias);
 	if (sys->history)
