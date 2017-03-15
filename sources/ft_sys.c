@@ -77,8 +77,8 @@ static void	ft_free_hist(void *data)
 {
 	if (data)
 	{
-		free(((t_hist *)data)->line);
-		free(data);
+		ft_strdel(((t_hist *)data)->line);
+		ft_strdel(data);
 	}
 }
 

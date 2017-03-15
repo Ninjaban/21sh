@@ -109,4 +109,5 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 	}
 	ft_termcaps_change(&sys->term_save);
 	ft_sys_free(sys);
+	free(str);
 }
