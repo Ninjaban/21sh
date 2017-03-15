@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 15:21:07 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/15 16:05:20 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/15 16:20:42 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,6 +118,9 @@ static char	*ft_hist_find(t_lst *history, char *str)
 
 	if (!str)
 		return (NULL);
+	ft_log(TYPE_INFO, str);
+	if (*str == '\0' || ft_strcmp(str, "?") == 0 || ft_strcmp(str, "??") == 0)
+		return (ft_error_void(ERROR_HIST));
 	tmp = history;
 	res = NULL;
 	while (tmp)
@@ -227,6 +230,8 @@ void		ft_check_excl(t_sys **sys, char **str)
 		}
 	}
 	res = ft_update_str(res, st);
+	if (ft_strcmp(*str, res) != 0)
+		ft_log(TYPE_INFO, res);
 	free(*str);
 	*str = res;
 }
