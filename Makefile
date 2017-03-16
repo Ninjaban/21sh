@@ -6,7 +6,7 @@
 #    By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/13 11:47:01 by mrajaona          #+#    #+#              #
-#    Updated: 2017/03/13 15:34:18 by mrajaona         ###   ########.fr        #
+#    Updated: 2017/03/16 12:38:55 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -20,6 +20,7 @@ SRC			=	ft_shell_excl.c \
 				ft_chdir_tools.c \
 				ft_chdir_opt.c \
 				ft_chdir_cdpath.c \
+				ft_chdir_trim.c \
 				ft_chdir.c \
 				ft_echo.c \
 				ft_unsetenv.c \
@@ -30,6 +31,8 @@ SRC			=	ft_shell_excl.c \
 				ft_unset.c \
 				ft_unset_tools.c \
 				ft_history_builtin.c \
+				ft_hist_str.c \
+				ft_hist_find.c \
 				ft_access.c \
 				ft_exec.c \
 				ft_exec_child.c \

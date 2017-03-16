@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:19:14 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 13:37:10 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/16 12:45:33 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@
 # define ERROR_KEYMAP "Erreur lors de l'initialisation du mappage de touche."
 # define ERROR_VNOTFOUND "Variable non trouvée."
 # define ERROR_HIST "Evénement introuvable."
+# define ERROR_HIST_SYNTAX "Evénement incorrect."
 
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur

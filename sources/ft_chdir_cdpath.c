@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 13:44:22 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/03 13:40:49 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/16 13:05:28 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,10 @@ int			ft_chdir_cdpath(char **path, char **cdpath, char **tab)
 		while (tab[++n])
 			if ((ft_strcmp(tab[n], ".") != 0) &&
 				(ft_chdir_set_path(&(cdpath[m]), tab[n]) == FALSE))
+			{
+				free(*path);
 				return (ft_error_int(ERROR_ALLOC, FALSE));
+			}
 		*path = ft_strdup(cdpath[m]);
 	}
 	return (TRUE);

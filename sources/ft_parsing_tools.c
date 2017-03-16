@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 10:33:28 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/13 10:07:37 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/16 11:01:56 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,7 @@ char			*ft_tild(char *str, char **env)
 	char		**tab;
 	char		*tmp;
 	char		*new;
+	char		*home;
 
 	ft_tild_file(&str, '~', '\a');
 	if ((tab = ft_strsplit(str, "~")) == NULL)
@@ -112,8 +113,10 @@ char			*ft_tild(char *str, char **env)
 		return (NULL);
 	}
 	new = ft_tild_new(tab, env);
+	home = ft_getenv(env, "HOME=");
 	tmp = (str[ft_strlen(str) - 1] == '~') ?
-		ft_strjoin(new, ft_getenv(env, "HOME=")) : ft_strdup(new);
+		ft_strjoin(new, home) : ft_strdup(new);
+	free(home);
 	free(new);
 	new = tmp;
 	ft_tild_file(&new, '\a', '~');
@@ -121,3 +124,4 @@ char			*ft_tild(char *str, char **env)
 	free(str);
 	return (new);
 }
+

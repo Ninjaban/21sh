@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:52:54 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/16 12:40:05 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -199,6 +199,7 @@ int				ft_chdir(char ***env, char **argv);
 int				ft_chdir_options(char **argv, char *opt);
 int				ft_chdir_set_path(char **path, char *str);
 int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
+void			ft_path_trim(char **str);
 char			ft_keymap(int **keymap, char **argv, t_sys *sys);
 char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
@@ -206,6 +207,10 @@ int				ft_set(char **cmd, char ***env, char ***shvar);
 int				ft_unset(char ***env, char ***shvar, char ***ftvar, char **cmd);
 int				ft_export(char **cmd, char ***env, char ***shvar);
 int				ft_hist_built(char **argv, t_lst **history);
+char			*ft_hist_str(char *str);
+char			*ft_hist_id(t_lst *history, char *str);
+char			*ft_hist_find(t_lst *history, char *str);
+char			*ft_hist_last(t_lst *history);
 int				ft_builtins(t_cmd *cmds);
 int				ft_exec_builtins(t_cmd *cmds, t_sys **sys);
 

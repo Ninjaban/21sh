@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:16:47 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/15 16:03:00 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/16 13:02:04 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,13 +44,10 @@ static int		ft_shvar_print(char **env, char **shvar)
 {
 	size_t	n;
 
-	(void)env;
-	/*
 	n = 0;
 	if (env)
 		while (env[n])
 			ft_putendl(env[n++]);
-	*/
 	n = 0;
 	if (shvar)
 		while (shvar[n])
