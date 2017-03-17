@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 15:21:07 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/17 10:23:31 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/17 10:36:12 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,6 @@ void		ft_check_excl(t_sys **sys, char **str)
 
 	s = *str;
 	st = *str;
-	ft_log(TYPE_INFO, *str);
 	res = ft_update_str(NULL, "\0");
 	while (*s)
 		ft_check_excl_norme(sys, &s, &st, &res);
