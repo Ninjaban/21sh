@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:42:03 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/10 10:45:42 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/17 10:43:52 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ static int		ft_unset_ft(char ***ftvar, char *str)
 {
 	size_t		n;
 
-	ft_log(TYPE_WARNING, "Option -f non supportée.");
 	n = ft_find_path(*ftvar, str);
 	if (n == ft_tablen(*ftvar))
 		return (ft_error_int(ERROR_VNOTFOUND, FALSE));

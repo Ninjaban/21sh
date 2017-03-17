@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/20 11:16:14 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/17 10:42:41 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ void		*ft_exec_node(t_btree *root, t_sys **sys)
 {
 	char	*tmp;
 
-	ft_log(TYPE_INFO, "exec node");
 	if (((t_node *)(root->item))->redir == FALSE)
 		ft_exec_child(root->item, &(*sys));
 	else if ((tmp = ft_exec_rdr(root, &(*sys))) != NULL)
