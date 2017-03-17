@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 15:21:07 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/16 13:00:24 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/17 10:23:31 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,16 @@ static void	ft_check_excl_norme(t_sys **sys, char **s, char **st, char **res)
 	char	*cmd;
 
 	cmd = NULL;
-	if (**s == '!' && *(*s + 1) && *(*s + 1) != ' ' && *(*s + 1) != '\t'
-		&& *(*s + 1) != '\n' && *(*s + 1) != '=' && *(*s + 1) != '(')
+	if (**s == 0x5c && *(*s + 1) && *(*s + 1) == '!')
+	{
+		**s = '\0';
+		*res = ft_update_str(*res, *st);
+		*res = ft_update_str(*res, "!");
+		(*s)++;
+		*st = *s + 1;
+	}
+	else if (**s == '!' && *(*s + 1) && *(*s + 1) != ' ' && *(*s + 1) != '\t'
+			&& *(*s + 1) != '\n' && *(*s + 1) != '=' && *(*s + 1) != '(')
 	{
 		**s = '\0';
 		*res = ft_update_str(*res, *st);
@@ -95,6 +103,7 @@ void		ft_check_excl(t_sys **sys, char **str)
 
 	s = *str;
 	st = *str;
+	ft_log(TYPE_INFO, *str);
 	res = ft_update_str(NULL, "\0");
 	while (*s)
 		ft_check_excl_norme(sys, &s, &st, &res);
