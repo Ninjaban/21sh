@@ -66,7 +66,10 @@ static int	ft_shrc_init(t_sys **sys, char *str, int fd)
 	path = ft_strjoin(tmp, "/.42shrc");
 	free(tmp);
 	if (access(path, F_OK) != 0 || (fd = open(path, O_RDONLY)) == -1)
+	{
+		free(path);
 		return (FALSE);
+	}
 	free(path);
 	while (get_next_line(fd, &str) == 1)
 	{
