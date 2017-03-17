@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 10:27:53 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/13 14:21:26 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/17 11:49:47 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,13 +81,13 @@ static int	ft_hist_tools(t_lst **history, char opt, int n)
 		return (ft_error_int(ERROR_ALLOC, FALSE));
 	tmp = *history;
 	if ((size = ft_list_size(*history)) > n)
-		while (size > n + 1)
+		while (size > n)
 		{
 			tmp = tmp->next;
 			size--;
 		}
 	m = 0;
-	while (tmp && m <= n)
+	while (tmp && m < n)
 	{
 		tab[m] = (t_hist *)(tmp->data);
 		tmp = tmp->next;
@@ -117,6 +117,6 @@ int			ft_hist_built(char **argv, t_lst **history)
 		else
 			n = ft_atoi(argv[x]);
 	}
-	ft_hist_tools(history, opt, n);
+	ft_hist_tools(history, opt, n + 1);
 	return (TRUE);
 }
