@@ -36,6 +36,7 @@ void		ft_alias_remove(t_alias **alias)
 		ft_alias_free(&(tmp));
 		tmp = next;
 	}
+	*alias = NULL;
 }
 
 static void	ft_alias_remove_if(t_alias **alias, char *name)

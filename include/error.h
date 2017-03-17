@@ -33,6 +33,7 @@
 # define ERROR_VNOTFOUND "Variable non trouvée."
 # define ERROR_HIST "Evénement introuvable."
 # define ERROR_HIST_SYNTAX "Evénement incorrect."
+# define ERROR_ALIAS "Cet alias existe déjà."
 
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur
