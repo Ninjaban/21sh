@@ -292,6 +292,7 @@ void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp,
 									size_t n);
 void			ft_shell(t_sys *sys, int exit, char *str, char *tmp);
 int				ft_history_maj(t_lst **history, char *line, char **env);
+int				ft_shrc_init(t_sys **sys, char *str, int fd);
 int				ft_sys_init(t_sys **sys);
 
 #endif

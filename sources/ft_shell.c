@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "shell.h"
 #include "error.h"
 #include "terms.h"
@@ -47,44 +46,6 @@ static int	ft_launcher(t_sys **sys, char **str, int *exit)
 	return (FALSE);
 }
 
-static void	ft_shrc_launch(t_sys **sys, t_cmd *cmds)
-{
-	if (ft_strcmp(cmds->name, "setenv") == 0)
-		ft_setenv(cmds->argv[1], &((*sys)->env), NULL, FALSE);
-	else if (ft_strcmp(cmds->name, "alias") == 0)
-		ft_alias(cmds, &((*sys)->alias));
-}
-
-static int	ft_shrc_init(t_sys **sys, char *str, int fd)
-{
-	char	*tmp;
-	char	*path;
-	t_cmd	*cmds;
-
-	(*sys)->alias = NULL;
-	tmp = ft_getenv((*sys)->env, "HOME=");
-	path = ft_strjoin(tmp, "/.42shrc");
-	free(tmp);
-	if (access(path, F_OK) != 0 || (fd = open(path, O_RDONLY)) == -1)
-	{
-		free(path);
-		return (FALSE);
-	}
-	free(path);
-	while (get_next_line(fd, &str) == 1)
-	{
-		if ((tmp = ft_gestion_error(str)) != NULL)
-			ft_log(TYPE_WARNING, tmp);
-		else if ((cmds = ft_parsecmd(str)) == NULL)
-			ft_log(TYPE_ERROR, ERROR_ALLOC);
-		else if (cmds)
-			ft_shrc_launch(&(*sys), cmds);
-		ft_free(&cmds, NULL, NULL);
-	}
-	ft_free(&cmds, &str, NULL);
-	return (TRUE);
-}
-
 void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 {
 	if (ft_history_init(&sys->history, sys->env) == FALSE)
@@ -108,8 +69,8 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 					exit = TRUE;
 			}
 			ft_free(NULL, NULL, &(sys->cmds));
-			free(str);
 		}
+        free(str);
 	}
 	ft_termcaps_change(&sys->term_save);
 	ft_sys_free(sys);

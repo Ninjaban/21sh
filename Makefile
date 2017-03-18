@@ -68,6 +68,7 @@ SRC			=	ft_shell_excl.c \
 				ft_parsing_init.c \
 				ft_parsing.c \
 				ft_shell.c \
+				ft_shell_shrc.c \
 				ft_shell_norme.c \
 				ft_main.c
 
