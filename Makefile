@@ -38,6 +38,7 @@ SRC			=	ft_shell_excl.c \
 				ft_exec_child.c \
 				ft_exec_init.c \
 				ft_builtins.c \
+				ft_help.c \
 				match.c \
 				ft_completion.c \
 				ft_completion_norme.c \

@@ -201,6 +201,7 @@ int				ft_chdir_set_path(char **path, char *str);
 int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
 void			ft_path_trim(char **str);
 char			ft_keymap(int **keymap, char **argv, t_sys *sys);
+char			ft_help(char **av, char **env);
 char			*ft_chdir_opt_p(char *path, char opt);
 char			**ft_getcdpath(char **env);
 int				ft_set(char **cmd, char ***env, char ***shvar);

@@ -41,6 +41,8 @@ int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 		return (ft_keymap(&((*sys)->keymap), cmds->argv, *sys));
 	else if (ft_strcmp(cmds->name, "history") == 0)
 		return (ft_hist_built(cmds->argv, &((*sys)->history)));
+	else if (ft_strcmp(cmds->name, "help") == 0)
+		return (ft_help(cmds->argv, (*sys)->env));
 	else
 		return (FALSE);
 }
@@ -69,6 +71,8 @@ int			ft_builtins(t_cmd *cmds)
 	else if (ft_strcmp(cmds->name, "keymap") == 0)
 		return (TRUE);
 	else if (ft_strcmp(cmds->name, "history") == 0)
+		return (TRUE);
+	else if (ft_strcmp(cmds->name, "help") == 0)
 		return (TRUE);
 	else
 		return (FALSE);

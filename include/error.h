@@ -34,6 +34,8 @@
 # define ERROR_HIST "Evénement introuvable."
 # define ERROR_HIST_SYNTAX "Evénement incorrect."
 # define ERROR_ALIAS "Cet alias existe déjà."
+# define ERROR_BUILTIN "Ce builtin n'existe pas."
+# define ERROR_HELP "Fichier d'aide introuvable."
 
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur
