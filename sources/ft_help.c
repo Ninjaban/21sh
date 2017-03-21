@@ -48,7 +48,7 @@ static char	*ft_help_getname(char **av, char **env)
 	char	*home;
 	char	*path;
 
-	if ((home = ft_getenv(env, "HOME")) == NULL)
+	if ((home = ft_getenv(env, "HOME=")) == NULL)
 		return (ft_error_void(ERROR_HELP));
 	if ((path = ft_help_strjoin(home, "/.help/")) == NULL)
 		return (ft_error_void(ERROR_ALLOC));
