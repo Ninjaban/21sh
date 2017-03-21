@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/16 12:40:05 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/21 10:53:01 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,7 +180,7 @@ void			ft_exec_file(t_node *node, char redir);
 void			ft_exec_read_file(t_node *node);
 void			ft_exec_read_boucle(t_node *node);
 void			*ft_exec_node(t_btree *root, t_sys **sys);
-void			*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child);
+void			*ft_exec(t_sys **sys, t_btree *node, char *tmp);
 int				ft_exec_open_file(char *str, char redir);
 int				ft_access_dir(char *path);
 char			*ft_access(char *name, char **env);

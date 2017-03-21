@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:28:54 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/21 10:53:08 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 		if (ft_launcher(&sys, &str, &exit) == TRUE)
 		{
 			ft_termcaps_change(&sys->term_save);
-			if ((tmp = ft_exec(&sys, sys->cmds, NULL, 0)) != NULL)
+			if ((tmp = ft_exec(&sys, sys->cmds, NULL)) != NULL)
 			{
 				if (ft_strcmp(tmp, EXIT) != 0)
 					ft_log(TYPE_WARNING, tmp);

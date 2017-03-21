@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 16:00:34 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/21 10:56:33 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,10 @@ static int	ft_exec_parent(pid_t child)
 	return (0);
 }
 
-static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys, int *ret)
+static char	*ft_exec_built(t_btree *node, t_sys **sys, int *ret)
 {
-	if (!node->left->item || !((t_node *)(node->left->item))->cmd)
-		return (NULL);
-	if (ft_strcmp_case(((t_node *)(node->left->item))->cmd->name,
-					"exit") == 0)
-	{
-		if (((t_node *)(node->left->item))->cmd->argv[1])
-			exit(ft_atoi(((t_node *)(node->left->item))->cmd->argv[1]));
-		return (EXIT);
-	}
+	pid_t	child;
+
 	if (ft_builtins(((t_node *)(node->left->item))->cmd) ==
 		FALSE)
 	{
@@ -65,7 +58,42 @@ static char	*ft_exec_norme(t_btree *node, pid_t child, t_sys **sys, int *ret)
 	return (NULL);
 }
 
-void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
+static char	*ft_exec_norme(t_btree *node, t_sys **sys, int *ret)
+{
+	if (!node->left->item || !((t_node *)(node->left->item))->cmd)
+		return (NULL);
+	if (ft_strcmp_case(((t_node *)(node->left->item))->cmd->name,
+					"exit") == 0)
+	{
+		if (((t_node *)(node->left->item))->cmd->argv[1])
+			exit(ft_atoi(((t_node *)(node->left->item))->cmd->argv[1]));
+		return (EXIT);
+	}
+	return (ft_exec_built(node, sys, ret));
+}
+
+static char	*ft_exec_norme2(t_btree *node, t_sys **sys, int *ret)
+{
+	char	*tmp;
+	pid_t	child;
+
+	tmp = NULL;
+	if ((child = fork()) == -1)
+		return (ERROR_FORK);
+	if (child == 0)
+	{
+		if (ft_signal_start() == FALSE)
+			return (ERROR_FORK);
+		if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
+			return (tmp);
+		exit(ft_error_int(ERROR_EXEC, 1));
+	}
+	*ret = ft_exec_parent(child);
+	wait(NULL);
+	return (NULL);
+}
+
+void		*ft_exec(t_sys **sys, t_btree *node, char *tmp)
 {
 	int	ret;
 
@@ -82,24 +110,11 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child)
 			return (NULL);
 		if (node->left && ((t_node *)(node->left->item))->redir == FALSE)
 		{
-			if ((tmp = ft_exec_norme(node, child, &(*sys), &ret)) != NULL)
+			if ((tmp = ft_exec_norme(node, &(*sys), &ret)) != NULL)
 				return (tmp);
 		}
-		else
-		{
-			if ((child = fork()) == -1)
-				return (ERROR_FORK);
-			if (child == 0)
-			{
-				if (ft_signal_start() == FALSE)
-					return (ERROR_FORK);
-				if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
-					return (tmp);
-				exit(ft_error_int(ERROR_EXEC, 1));
-			}
-			ret = ft_exec_parent(child);
-			wait(NULL);
-		}
+		else if ((tmp = ft_exec_norme2(node, &(*sys), &ret)) != NULL)
+			return (tmp);
 		node = node->right;
 	}
 	return (NULL);
