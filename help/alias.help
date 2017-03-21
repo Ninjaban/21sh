@@ -1,0 +1,10 @@
+[builtin] alias
+
+Usage :
+alias [key=value]
+
+Description :
+Affiche les alias actuels.
+
+Dans le cas où un argument est envoyé,
+ajoute l'argument aux alias.

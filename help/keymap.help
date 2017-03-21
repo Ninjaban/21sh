@@ -1,0 +1,16 @@
+[builtin] keymap
+
+Usage :
+keymap
+keymap --set [MACRO]
+keymap --reset
+
+Description :
+Affiche la keymap existante ainsi que
+les macros des commandes disponibles
+
+l'option set permet de la modifier en
+utilisant les macros disponibles.
+
+l'option reset remet la keymap par
+défault.

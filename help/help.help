@@ -1,0 +1,22 @@
+[builtin] help
+
+Usage :
+help [builtin]
+
+Description :
+Affiche l'aide d'utilisation d'un builtin donné.
+
+Liste des builtin :
+      -> alias
+      -> cd
+      -> echo
+      -> env
+      -> export
+      -> help
+      -> history
+      -> keymap
+      -> set
+      -> setenv
+      -> unalias
+      -> unset
+      -> unsetenv
