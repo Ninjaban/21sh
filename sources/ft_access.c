@@ -65,6 +65,12 @@ char			*ft_access(char *name, char **env)
 	return (tmp);
 }
 
+static char		ft_free_int(struct stat *buf, char exit)
+{
+	free(buf);
+	return (exit);
+}
+
 int				ft_access_dir(char *path)
 {
 	struct stat	*buf;
@@ -80,20 +86,11 @@ int				ft_access_dir(char *path)
 		return (-1);
 	}
 	if ((buf = malloc(sizeof(struct stat))) == NULL)
-	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (-1);
-	}
+		return (ft_error_int(ERROR_ALLOC, -1));
 	if (stat(path, buf) == -1)
-	{
-		free(buf);
-		return (-1);
-	}
+		return (ft_free_int(buf, -1));
 	if (S_ISDIR(buf->st_mode))
-	{
-		free(buf);
-		return (TRUE);
-	}
+		return (ft_free_int(buf, TRUE));
 	ft_log(TYPE_WARNING, ERROR_NOTDIR);
 	return (FALSE);
 }

@@ -14,65 +14,28 @@
 #include "error.h"
 #include "shell.h"
 
-static t_alias	*ft_alias_new(char *key, char *value)
+static t_alias	*ft_alias_last(t_alias *first)
 {
-	t_alias	*new;
+	t_alias		*tmp;
 
-	if ((new = malloc(sizeof(t_alias))) == NULL)
-		return (NULL);
-	new->key = ft_strdup(key);
-	new->value = (value != NULL) ? ft_strdup(value) : NULL;
-	new->next = NULL;
-	return (new);
+	tmp = first;
+	while (tmp && tmp->next)
+		tmp = tmp->next;
+	return (tmp);
 }
 
-static int		ft_alias_init(t_cmd *cmd, t_alias **alias)
+static char		ft_alias_check(t_alias *alias, char *key)
 {
-	char	**tab;
+	t_alias		*tmp;
 
-	if ((tab = ft_strsplit(cmd->argv[1], "=")) == NULL)
+	tmp = alias;
+	while (tmp && tmp->next)
 	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
+		if (ft_strcmp(tmp->key, key) == 0)
+			return (FALSE);
+		tmp = tmp->next;
 	}
-	if (!tab[0])
-	{
-		free(tab);
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
-	}
-	if (((*alias) = ft_alias_new(tab[0], tab[1])) == NULL)
-	{
-		ft_free_tab(tab);
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
-	}
-	ft_free_tab(tab);
 	return (TRUE);
-}
-
-static t_alias  *ft_alias_last(t_alias *first)
-{
-    t_alias     *tmp;
-
-    tmp = first;
-    while (tmp && tmp->next)
-        tmp = tmp->next;
-    return (tmp);
-}
-
-static char     ft_alias_check(t_alias *alias, char *key)
-{
-    t_alias     *tmp;
-
-    tmp = alias;
-    while (tmp && tmp->next)
-    {
-        if (ft_strcmp(tmp->key, key) == 0)
-            return (FALSE);
-        tmp = tmp->next;
-    }
-    return (TRUE);
 }
 
 static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
@@ -86,17 +49,17 @@ static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
 	{
 		ft_free_tab(tab);
 		ft_log((!tab[0]) ? TYPE_ERROR : TYPE_WARNING,
-			(!tab[0]) ? ERROR_ALLOC : ERROR_SYNTAX);
+				(!tab[0]) ? ERROR_ALLOC : ERROR_SYNTAX);
 		return (FALSE);
 	}
-    if (ft_alias_check(*alias, tab[0]) == FALSE)
-        return (ft_error_int(ERROR_ALIAS, FALSE));
-    tmp = (!(*alias)) ? *alias : ft_alias_last(*alias);
-    if (!(*alias))
-        tmp = ft_alias_new(tab[0], tab[1]);
-    else
-        tmp->next = ft_alias_new(tab[0], tab[1]);
-    ft_free_tab(tab);
+	if (ft_alias_check(*alias, tab[0]) == FALSE)
+		return (ft_error_int(ERROR_ALIAS, FALSE));
+	tmp = (!(*alias)) ? *alias : ft_alias_last(*alias);
+	if (!(*alias))
+		tmp = ft_alias_new(tab[0], tab[1]);
+	else
+		tmp->next = ft_alias_new(tab[0], tab[1]);
+	ft_free_tab(tab);
 	if ((!(*alias) ? tmp : tmp->next) == NULL)
 		return (ft_error_int(ERROR_ALLOC, FALSE));
 	return (TRUE);

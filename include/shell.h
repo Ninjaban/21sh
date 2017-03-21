@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/16 12:40:05 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/21 10:53:01 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,7 +180,7 @@ void			ft_exec_file(t_node *node, char redir);
 void			ft_exec_read_file(t_node *node);
 void			ft_exec_read_boucle(t_node *node);
 void			*ft_exec_node(t_btree *root, t_sys **sys);
-void			*ft_exec(t_sys **sys, t_btree *node, char *tmp, pid_t child);
+void			*ft_exec(t_sys **sys, t_btree *node, char *tmp);
 int				ft_exec_open_file(char *str, char redir);
 int				ft_access_dir(char *path);
 char			*ft_access(char *name, char **env);
@@ -189,6 +189,15 @@ char			*ft_access(char *name, char **env);
 **	Builtins
 */
 
+void			ft_path_trim(char **str);
+char			ft_keymap(int **keymap, char **argv, t_sys *sys);
+char			ft_help(char **av, char **env);
+char			*ft_chdir_opt_p(char *path, char opt);
+char			*ft_hist_str(char *str);
+char			*ft_hist_id(t_lst *history, char *str);
+char			*ft_hist_find(t_lst *history, char *str);
+char			*ft_hist_last(t_lst *history);
+char			**ft_getcdpath(char **env);
 int				ft_echo(char **argv);
 int				ft_env(char **argv, char **env, char ***shvar);
 int				ft_unsetenv(char ***env, char *str);
@@ -199,21 +208,14 @@ int				ft_chdir(char ***env, char **argv);
 int				ft_chdir_options(char **argv, char *opt);
 int				ft_chdir_set_path(char **path, char *str);
 int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
-void			ft_path_trim(char **str);
-char			ft_keymap(int **keymap, char **argv, t_sys *sys);
-char			ft_help(char **av, char **env);
-char			*ft_chdir_opt_p(char *path, char opt);
-char			**ft_getcdpath(char **env);
 int				ft_set(char **cmd, char ***env, char ***shvar);
 int				ft_unset(char ***env, char ***shvar, char ***ftvar, char **cmd);
 int				ft_export(char **cmd, char ***env, char ***shvar);
 int				ft_hist_built(char **argv, t_lst **history);
-char			*ft_hist_str(char *str);
-char			*ft_hist_id(t_lst *history, char *str);
-char			*ft_hist_find(t_lst *history, char *str);
-char			*ft_hist_last(t_lst *history);
 int				ft_builtins(t_cmd *cmds);
 int				ft_exec_builtins(t_cmd *cmds, t_sys **sys);
+int				ft_alias_init(t_cmd *cmd, t_alias **alias);
+t_alias			*ft_alias_new(char *key, char *value);
 
 /*
 **	Auto-completion
@@ -275,7 +277,7 @@ void			ft_read_keyori(char **str, size_t *pos);
 void			ft_read_move(char **str, int c, size_t *pos, t_sys *sys);
 void			ft_read_history_clear(char *str);
 void			ft_read_cpy_past(char **str, size_t *n, char type, char new);
-int				ft_read(char **str, t_sys **sys, size_t n);
+int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 
 /*
 **	Signaux

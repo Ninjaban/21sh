@@ -36,6 +36,7 @@
 # define ERROR_ALIAS "Cet alias existe déjà."
 # define ERROR_BUILTIN "Ce builtin n'existe pas."
 # define ERROR_HELP "Fichier d'aide introuvable."
+# define ERROR_MACRO "Cette macro n'existe pas."
 
 /*
 **	ft_log pour faire des affichage d'information, de warning ou d'erreur

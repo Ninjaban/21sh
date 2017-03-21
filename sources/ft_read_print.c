@@ -64,7 +64,7 @@ void		ft_read_print(char **str, int c, size_t *pos, t_sys **sys)
 		*str = tmp;
 	}
 	ft_completion(&(*str), (c == (*sys)->keymap[KEY_TAB]) ? (*pos) : (*pos) + 1,
-				  (*sys)->env, (c == (*sys)->keymap[KEY_TAB]) ? 1 : 0);
+				(*sys)->env, (c == (*sys)->keymap[KEY_TAB]) ? 1 : 0);
 	ft_print(*str, (*pos), (c == (*sys)->keymap[KEY_TAB]) ? 0 : 1);
 	if (c != (*sys)->keymap[KEY_TAB])
 		*pos = *pos + 1;

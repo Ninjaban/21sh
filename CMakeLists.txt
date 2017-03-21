@@ -230,6 +230,6 @@ set(SOURCE_FILES
         unicode/ft_esc_hex.c
         unicode/ft_eval_esc.c
         unicode/ft_evaluator.c
-        unicode/main.c sources/ft_help.c)
+        unicode/main.c sources/ft_help.c sources/ft_alias_init.c)
 
 add_executable(21sh ${SOURCE_FILES})

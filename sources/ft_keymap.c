@@ -37,11 +37,8 @@ static void	ft_key_print_type(size_t key)
 		ft_putstr(str);
 }
 
-static void	ft_key_print_value(int value)
+static void	ft_key_print_value(int value, char *str)
 {
-	char	*str;
-
-	str = NULL;
 	str = (value == KEY_TAB_DEF) ? "TABULATION" : str;
 	str = (value == KEY_DEL_DEF) ? "ERASE" : str;
 	str = (value == KEY_RET_DEF) ? "RETURN" : str;
@@ -77,7 +74,7 @@ static void	ft_keymap_print(int *keymap)
 		ft_putstr("\x1b[38;5;98m");
 		ft_key_print_type(n);
 		ft_putstr("\e[0m: ");
-		ft_key_print_value(keymap[n]);
+		ft_key_print_value(keymap[n], NULL);
 		ft_putchar('\n');
 		n = n + 1;
 	}

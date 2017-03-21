@@ -78,7 +78,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 	}
 	else
 		*i = *i + 1;
-    *pos = (tmp && *str) ? ft_strlen(*str) : 0;
+	*pos = (tmp && *str) ? ft_strlen(*str) : 0;
 }
 
 static char	ft_read_check(int c, char **str, t_sys **sys, size_t *n)
@@ -110,17 +110,15 @@ static char	ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 	return (FALSE);
 }
 
-int			ft_read(char **str, t_sys **sys, size_t n)
+int			ft_read(char **str, t_sys **sys, size_t n, char exit)
 {
 	size_t	i;
-	char	exit;
 	int		c;
 
 	g_nb = n;
 	g_env = (*sys)->env;
 	g_position = 0;
 	i = (size_t)ft_list_size((*sys)->history);
-	exit = FALSE;
 	*str = ft_strnew(1);
 	g_line = &(*str);
 	while (exit == FALSE)
