@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 12:31:35 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/16 13:06:52 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/21 11:20:17 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ static char	*ft_hist_str_brace(char *str)
 	i = 0;
 	while (i < len)
 	{
-		if (str[len] && (str[len] == ' ' || str[len] != '\t'
-							|| str[len] != '\n' || str[len] != '='
-							|| str[len] != '('))
+		if (str[i + 1] && (str[i + 1] == ' ' || str[i + 1] == '\t'
+							|| str[i + 1] == '\n' || str[i + 1] == '='
+							|| str[i + 1] == '('))
 		{
 			free(res);
 			return (ft_error_void(ERROR_HIST_SYNTAX));
