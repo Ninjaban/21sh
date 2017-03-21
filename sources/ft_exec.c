@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/21 10:56:33 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/21 11:28:22 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static char	*ft_exec_built(t_btree *node, t_sys **sys, int *ret)
 	return (NULL);
 }
 
-static char	*ft_exec_norme(t_btree *node, t_sys **sys, int *ret)
+static char	*ft_exec_left(t_btree *node, t_sys **sys, int *ret)
 {
 	if (!node->left->item || !((t_node *)(node->left->item))->cmd)
 		return (NULL);
@@ -72,7 +72,7 @@ static char	*ft_exec_norme(t_btree *node, t_sys **sys, int *ret)
 	return (ft_exec_built(node, sys, ret));
 }
 
-static char	*ft_exec_norme2(t_btree *node, t_sys **sys, int *ret)
+static char	*ft_exec_else(t_btree *node, t_sys **sys, int *ret)
 {
 	char	*tmp;
 	pid_t	child;
@@ -110,10 +110,10 @@ void		*ft_exec(t_sys **sys, t_btree *node, char *tmp)
 			return (NULL);
 		if (node->left && ((t_node *)(node->left->item))->redir == FALSE)
 		{
-			if ((tmp = ft_exec_norme(node, &(*sys), &ret)) != NULL)
+			if ((tmp = ft_exec_left(node, &(*sys), &ret)) != NULL)
 				return (tmp);
 		}
-		else if ((tmp = ft_exec_norme2(node, &(*sys), &ret)) != NULL)
+		else if ((tmp = ft_exec_else(node, &(*sys), &ret)) != NULL)
 			return (tmp);
 		node = node->right;
 	}
