@@ -33,8 +33,7 @@ int			ft_cmpf(void *tree, void *item)
 
 void		ft_completion(char **str, size_t pos, char **env, char dassault)
 {
-	static t_btree	*list = NULL;
-	t_btree			*pattern;
+	t_btree			*list;
 	char			*word;
 	char			*tmp;
 
@@ -48,14 +47,13 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 		return ;
 	}
 	free(tmp);
-	pattern = NULL;
-	ft_completion_norme(word, &pattern, &list, env);
-	if ((tmp = ft_getprob((pattern == NULL) ? list : pattern,
-						ft_getpattern(word))) != NULL)
+	list = NULL;
+	ft_completion_norme(word, &list, env);
+	if ((tmp = ft_getprob(list, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);
 	free(word);
-	if (pattern)
-		btree_apply_suffix(pattern, &ft_delete_tree);
+	if (list)
+		btree_apply_suffix(list, &ft_delete_tree);
 }
 
 void		ft_removecompl(char **str)

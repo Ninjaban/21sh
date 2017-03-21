@@ -99,19 +99,15 @@ void		ft_setcompletion(char **str, size_t pos, char *try, char tabul)
 	*str = new;
 }
 
-void		ft_completion_norme(char *word, t_btree **pattern, t_btree **list,
-								char **env)
+void		ft_completion_norme(char *word, t_btree **list, char **env)
 {
 	char	*tmp;
 
-	if (word[0] == '/' || (word[0] == '.' && word[1] == '/') ||
-		(word[0] == '.' && word[1] == '.' && word[2] == '/'))
-	{
-		*pattern = btree_create_node(ft_strdup("."));
-		tmp = ft_getcdir(word);
-		ft_opendir(&(*pattern), tmp);
-		free(tmp);
-	}
-	else if (!(*list))
-		*list = ft_getexec(ft_getpath(env));
+	*list = ft_getexec(ft_getpath(env));
+	tmp = ft_getcdir(word);
+	if (word[0] == '/' || tmp[0] != '/')
+		ft_opendir(&(*list), tmp);
+	else
+		ft_opendir(&(*list), "./");
+	free(tmp);
 }

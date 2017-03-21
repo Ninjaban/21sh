@@ -65,7 +65,7 @@ t_btree		*ft_getexec(char **path)
 	n = 0;
 	if (!path)
 		return (NULL);
-	list = btree_create_node("NULL");
+	list = btree_create_node(ft_strdup("null"));
 	while (path[n])
 		ft_opendir(&list, path[n++]);
 	btree_add_node(&(list), btree_create_node(ft_strdup("alias")), &ft_cmpf);

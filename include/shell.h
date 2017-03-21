@@ -226,8 +226,7 @@ void			ft_completion(char **str, size_t pos, char **env,
 void			ft_removecompl(char **str);
 void			ft_opendir(t_btree **list, char *path);
 void			ft_setcompletion(char **str, size_t pos, char *try, char tabul);
-void			ft_completion_norme(char *word, t_btree **pattern,
-									t_btree **list, char **env);
+void			ft_completion_norme(char *word, t_btree **list, char **env);
 char			ft_checkcompl(char *str);
 char			*ft_getword(char *str, size_t pos);
 char			*ft_color(char *color, char *str);
