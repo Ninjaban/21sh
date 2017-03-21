@@ -16,6 +16,7 @@ SRC			=	ft_shell_excl.c \
 				ft_keymap.c \
                 ft_keymap_tools.c \
                 ft_unalias.c \
+                ft_alias_init.c \
 				ft_alias.c \
 				ft_chdir_tools.c \
 				ft_chdir_opt.c \
