@@ -74,8 +74,7 @@ char		ft_keymap_set(int **keymap, char **argv, t_sys *sys)
 	macro = (!ft_strcmp(argv[2], "W-LEFT")) ? (char)KEY_OLE : macro;
 	macro = (!ft_strcmp(argv[2], "W-RIGHT")) ? (char)KEY_ORI : macro;
 	if (macro == -1)
-		return ((char)ft_error_int("Cette macro de touche n'existe pas.",
-								   FALSE));
+		return ((char)ft_error_int(ERROR_MACRO, FALSE));
 	ft_keymap_get(&(*keymap), macro, sys);
 	return (TRUE);
 }

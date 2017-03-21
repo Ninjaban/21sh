@@ -13,6 +13,21 @@
 #include "libft.h"
 #include "shell.h"
 
+static int	ft_exec_builtins_other(t_cmd *cmds, t_sys **sys)
+{
+	if (ft_strcmp(cmds->name, "alias") == 0)
+		return (ft_alias(cmds, &((*sys)->alias)));
+	else if (ft_strcmp(cmds->name, "unalias") == 0)
+		return (ft_unalias(cmds, &((*sys)->alias)));
+	else if (ft_strcmp(cmds->name, "keymap") == 0)
+		return (ft_keymap(&((*sys)->keymap), cmds->argv, *sys));
+	else if (ft_strcmp(cmds->name, "history") == 0)
+		return (ft_hist_built(cmds->argv, &((*sys)->history)));
+	else if (ft_strcmp(cmds->name, "help") == 0)
+		return (ft_help(cmds->argv, (*sys)->env));
+	return (FALSE);
+}
+
 int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 {
 	if (ft_strcmp(cmds->name, "echo") == 0)
@@ -33,18 +48,25 @@ int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 		return (ft_env(cmds->argv, (*sys)->env, &((*sys)->shvar)));
 	else if (ft_strcmp(cmds->name, "cd") == 0)
 		return (ft_chdir(&((*sys)->env), cmds->argv));
-	else if (ft_strcmp(cmds->name, "alias") == 0)
-		return (ft_alias(cmds, &((*sys)->alias)));
-	else if (ft_strcmp(cmds->name, "unalias") == 0)
-		return (ft_unalias(cmds, &((*sys)->alias)));
-	else if (ft_strcmp(cmds->name, "keymap") == 0)
-		return (ft_keymap(&((*sys)->keymap), cmds->argv, *sys));
-	else if (ft_strcmp(cmds->name, "history") == 0)
-		return (ft_hist_built(cmds->argv, &((*sys)->history)));
-	else if (ft_strcmp(cmds->name, "help") == 0)
-		return (ft_help(cmds->argv, (*sys)->env));
+	else if (ft_exec_builtins_other(cmds, &(*sys)) == TRUE)
+		return (TRUE);
 	else
 		return (FALSE);
+}
+
+static int	ft_builtins_other(t_cmd *cmds)
+{
+	if (ft_strcmp(cmds->name, "alias") == 0)
+		return (TRUE);
+	else if (ft_strcmp(cmds->name, "unalias") == 0)
+		return (TRUE);
+	else if (ft_strcmp(cmds->name, "keymap") == 0)
+		return (TRUE);
+	else if (ft_strcmp(cmds->name, "history") == 0)
+		return (TRUE);
+	else if (ft_strcmp(cmds->name, "help") == 0)
+		return (TRUE);
+	return (FALSE);
 }
 
 int			ft_builtins(t_cmd *cmds)
@@ -64,15 +86,7 @@ int			ft_builtins(t_cmd *cmds)
 		return (TRUE);
 	else if (ft_strcmp(cmds->name, "cd") == 0)
 		return (TRUE);
-	else if (ft_strcmp(cmds->name, "alias") == 0)
-		return (TRUE);
-	else if (ft_strcmp(cmds->name, "unalias") == 0)
-		return (TRUE);
-	else if (ft_strcmp(cmds->name, "keymap") == 0)
-		return (TRUE);
-	else if (ft_strcmp(cmds->name, "history") == 0)
-		return (TRUE);
-	else if (ft_strcmp(cmds->name, "help") == 0)
+	else if (ft_builtins_other(cmds) == TRUE)
 		return (TRUE);
 	else
 		return (FALSE);
