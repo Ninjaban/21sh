@@ -42,7 +42,7 @@ char		*ft_getpattern(char *str)
 	n = ft_strlen(str);
 	while (n > 0 && str[n] != '/')
 		n = n - 1;
-	return (ft_strdup((n == 0) ? str : str + n + 1));
+	return (ft_strdup((str[n] == '/') ? str + n + 1 : str));
 }
 
 /*
@@ -60,10 +60,12 @@ char		*ft_getprob(t_btree *list, char *str)
 	exit = FALSE;
 	tmp = list;
 	while (exit == FALSE && (nb = ft_strcmp(tmp->item, str)) != 0)
+	{
 		if (((nb < 0) ? tmp->left : tmp->right) == NULL)
 			exit = TRUE;
 		else
 			tmp = (nb < 0) ? tmp->left : tmp->right;
+	}
 	pattern = ft_strjoin(str, "*");
 	if (tmp && (ft_strcmp(tmp->item, str) == 0 ||
 			match(tmp->item, pattern) == 1))

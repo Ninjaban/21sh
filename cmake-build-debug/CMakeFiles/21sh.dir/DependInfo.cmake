@@ -77,6 +77,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/jonathan/Project/21sh/library/Part_2/ft_tablen.c" "/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o"
   "/home/jonathan/Project/21sh/sources/ft_access.c" "/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_access.c.o"
   "/home/jonathan/Project/21sh/sources/ft_alias.c" "/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_alias.c.o"
+  "/home/jonathan/Project/21sh/sources/ft_alias_init.c" "/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_alias_init.c.o"
   "/home/jonathan/Project/21sh/sources/ft_builtins.c" "/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_builtins.c.o"
   "/home/jonathan/Project/21sh/sources/ft_chdir.c" "/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_chdir.c.o"
   "/home/jonathan/Project/21sh/sources/ft_chdir_cdpath.c" "/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o"

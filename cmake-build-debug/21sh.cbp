@@ -325,6 +325,9 @@
 		<Unit filename="/home/jonathan/Project/21sh/sources/ft_alias.c">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/home/jonathan/Project/21sh/sources/ft_alias_init.c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/home/jonathan/Project/21sh/sources/ft_builtins.c">
 			<Option target="21sh"/>
 		</Unit>

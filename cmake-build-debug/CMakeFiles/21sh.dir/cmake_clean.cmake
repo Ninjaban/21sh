@@ -209,6 +209,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o"
   "CMakeFiles/21sh.dir/unicode/main.c.o"
   "CMakeFiles/21sh.dir/sources/ft_help.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_alias_init.c.o"
   "21sh.pdb"
   "21sh"
 )

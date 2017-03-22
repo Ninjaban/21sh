@@ -2094,6 +2094,33 @@ sources/ft_alias.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_alias.c.s
 .PHONY : sources/ft_alias.c.s
 
+sources/ft_alias_init.o: sources/ft_alias_init.c.o
+
+.PHONY : sources/ft_alias_init.o
+
+# target to build an object file
+sources/ft_alias_init.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_alias_init.c.o
+.PHONY : sources/ft_alias_init.c.o
+
+sources/ft_alias_init.i: sources/ft_alias_init.c.i
+
+.PHONY : sources/ft_alias_init.i
+
+# target to preprocess a source file
+sources/ft_alias_init.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_alias_init.c.i
+.PHONY : sources/ft_alias_init.c.i
+
+sources/ft_alias_init.s: sources/ft_alias_init.c.s
+
+.PHONY : sources/ft_alias_init.s
+
+# target to generate assembly for a file
+sources/ft_alias_init.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_alias_init.c.s
+.PHONY : sources/ft_alias_init.c.s
+
 sources/ft_builtins.o: sources/ft_builtins.c.o
 
 .PHONY : sources/ft_builtins.o
@@ -6021,6 +6048,9 @@ help:
 	@echo "... sources/ft_alias.o"
 	@echo "... sources/ft_alias.i"
 	@echo "... sources/ft_alias.s"
+	@echo "... sources/ft_alias_init.o"
+	@echo "... sources/ft_alias_init.i"
+	@echo "... sources/ft_alias_init.s"
 	@echo "... sources/ft_builtins.o"
 	@echo "... sources/ft_builtins.i"
 	@echo "... sources/ft_builtins.s"
