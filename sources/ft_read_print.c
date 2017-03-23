@@ -14,7 +14,7 @@
 #include "shell.h"
 #include "terms.h"
 
-void		ft_print(char *str, size_t pos, char inc)
+void		ft_print(char *str, size_t pos, int inc)
 {
 	static size_t	len_s = 0;
 	int				n;

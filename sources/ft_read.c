@@ -45,13 +45,11 @@ static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 	tmp = ft_list_at((*sys)->history, (unsigned int)(*i));
 	free(*str);
 	if (tmp)
-	{
-		if ((*str = ft_strdup(((t_hist *)(tmp->data))->line)) != NULL)
-			ft_putstr_fd(*str, 0);
-	}
+		*str = ft_strdup(((t_hist *)(tmp->data))->line);
 	else
 		*str = ft_strnew(1);
-	*pos = (tmp && *str) ? ft_strlen(*str) : 0;
+	*pos = ft_strlen(*str);
+	ft_print(*str, 0, *pos);
 }
 
 static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
@@ -66,19 +64,16 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 		ret = (char)ft_history_maj(&(*sys)->history, *str, (*sys)->env);
 		*i = (size_t)ft_list_size((*sys)->history) - ((ret) ? 1 : 0);
 	}
-	*i = *i - 1;
 	ft_read_move(&(*str), (*sys)->keymap[KEY_HOM], &(*pos), (*sys));
 	ft_read_history_clear(*str);
-	tmp = ft_list_at((*sys)->history, (unsigned int)(*i));
-	if (tmp)
+	if ((tmp = ft_list_at((*sys)->history, (unsigned int)(*i - 1))))
 	{
+		*i = *i - 1;
 		free(*str);
-		if ((*str = ft_strdup(((t_hist *)(tmp->data))->line)) != NULL)
-			ft_putstr_fd(*str, 0);
+		*str = ft_strdup(((t_hist *)(tmp->data))->line);
 	}
-	else
-		*i = *i + 1;
 	*pos = (tmp && *str) ? ft_strlen(*str) : 0;
+	ft_print(*str, 0, *pos);
 }
 
 static char	ft_read_check(int c, char **str, t_sys **sys, size_t *n)
