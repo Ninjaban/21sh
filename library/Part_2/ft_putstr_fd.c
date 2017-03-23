@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 15:47:46 by jcarra            #+#    #+#             */
-/*   Updated: 2016/11/03 16:35:59 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/23 14:48:59 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static char	ft_putcheck(char *str)
 	return (0);
 }
 
-void	ft_putstr_fd(char *str, int fd)
+void		ft_putstr_fd(char *str, int fd)
 {
 	char	*tmp;
 

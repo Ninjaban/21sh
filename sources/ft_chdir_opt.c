@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 11:02:57 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/02 14:32:02 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/23 14:37:18 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,16 @@ char		*ft_chdir_opt_p(char *path, char opt)
 	char	*tmp;
 	size_t	bufsize;
 
-	tmp = NULL;
 	bufsize = 4096;
+	tmp = NULL;
 	if (opt == 'P')
 	{
 		free(path);
-		tmp = getcwd(tmp, bufsize);
-		path = tmp;
+		if ((tmp = getcwd(tmp, bufsize)) != NULL)
+		{
+			path = ft_strdup(tmp);
+			free(tmp);
+		}
 		chdir(path);
 	}
 	return (path);

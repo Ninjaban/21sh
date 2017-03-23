@@ -10,4 +10,4 @@ Si aucun argument n'est spécifié, affiche
 l'environnement.
 
 Si un nom de variable sans valeur est donné,
-la variable locale correspondant est exportée.
+la variable locale correspondante est exportée.
