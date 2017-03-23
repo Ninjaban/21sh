@@ -35,7 +35,7 @@ int				ft_alias_init(t_cmd *cmd, t_alias **alias)
 		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
-	if (!tab[0])
+	if (!tab[0] || !tab[1])
 	{
 		free(tab);
 		ft_log(TYPE_ERROR, ERROR_ALLOC);

@@ -29,7 +29,7 @@ static char		ft_alias_check(t_alias *alias, char *key)
 	t_alias		*tmp;
 
 	tmp = alias;
-	while (tmp && tmp->next)
+	while (tmp)
 	{
 		if (ft_strcmp(tmp->key, key) == 0)
 			return (FALSE);
@@ -48,8 +48,7 @@ static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
 	if (!tab[0] || !tab[1])
 	{
 		ft_free_tab(tab);
-		ft_log((!tab[0]) ? TYPE_ERROR : TYPE_WARNING,
-				(!tab[0]) ? ERROR_ALLOC : ERROR_SYNTAX);
+		ft_log(TYPE_ERROR, ERROR_ALLOC);
 		return (FALSE);
 	}
 	if (ft_alias_check(*alias, tab[0]) == FALSE)
@@ -91,11 +90,7 @@ int				ft_alias(t_cmd *cmd, t_alias **alias)
 		if (ft_alias_init(cmd, &(*alias)) == FALSE)
 			return (FALSE);
 	}
-	else
-	{
-		ft_unalias(cmd, &(*alias));
-		if (ft_alias_add(cmd, &(*alias)) == FALSE)
-			return (FALSE);
-	}
+	else if (ft_alias_add(cmd, &(*alias)) == FALSE)
+		return (FALSE);
 	return (TRUE);
 }

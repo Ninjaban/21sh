@@ -290,8 +290,7 @@ char			ft_signal_stop(void);
 */
 
 void			ft_check_excl(t_sys **sys, char **str);
-void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp,
-									size_t n);
+void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp);
 void			ft_shell(t_sys *sys, int exit, char *str, char *tmp);
 int				ft_history_maj(t_lst **history, char *line, char **env);
 int				ft_shrc_init(t_sys **sys, char *str, int fd);
