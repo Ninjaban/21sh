@@ -4,16 +4,26 @@ Usage :
 cd [-LP] [directory]
 
 Description :
-Remplace le dossier courant par celui spécifié, et modifie la variable PWD en conséquence. Le répertoire peut être désigné par un chemin absolu ou relatif.
+Remplace le dossier courant par celui
+spécifié, et modifie la variable PWD en
+conséquence. Le répertoire peut être désigné
+par un chemin absolu ou relatif.
 
-Si aucun argument n'est spécifié, le dossier spécifié dans la variable HOME est utilisé
+Si aucun argument n'est spécifié, le dossier
+spécifié dans la variable HOME est utilisé
 
-Si le chemin spécifié est relatif (ne commence pas par \), le dossier est recherché dans le dossier courant.
+Si le chemin spécifié est relatif (ne
+commence pas par \), le dossier est
+recherché dans le dossier courant.
 
-Si l'argument - est utilisé à la place d'un nom de dossier, le dossier spécifié dans la variable OLDPWD, si elle existe, est utilisé.
+Si l'argument - est utilisé à la place d'un
+nom de dossier, le dossier spécifié dans la
+variable OLDPWD, si elle existe, est utilisé.
 
-L'option -L ne remplace pas les liens symboliques par le dossier pointé.
+L'option -L ne remplace pas les liens
+symboliques par le dossier pointé.
 
-L'option -P remplace les liens symboliques par le dossier pointé.
+L'option -P remplace les liens symboliques
+par le dossier pointé.
 
 l'option -L est utilisée par défaut.

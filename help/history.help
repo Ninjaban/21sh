@@ -1,13 +1,16 @@
 [builtin] history
 
 Usage :
-hisstory [-hr] [n]
+history [-hr] [n]
 
 Description :
 Affiche l'historique récent.
 
-L'option -r affiche l'événement le plus récent en premier.
+L'option -r affiche l'événement le plus
+récent en premier.
 
-L'option -h n'affiche pas l'index de l'historique avant la commande.
+L'option -h n'affiche pas l'index de
+l'historique avant la commande.
 
-Si un nombre n positif est donné, les n éléments les plus récents sont affichés.
+Si un nombre n positif est donné, les n
+éléments les plus récents sont affichés.

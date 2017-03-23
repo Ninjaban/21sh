@@ -6,4 +6,5 @@ set [var=value]...
 Description :
 Crée une variable locale.
 
-Si aucun argument n'est donné, affiche les variables locales et d'environnement.
+Si aucun argument n'est donné, affiche les
+variables locales et d'environnement.

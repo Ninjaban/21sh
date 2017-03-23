@@ -6,6 +6,8 @@ setenv [var[=name]]
 Description :
 Crée une variable d'environnement.
 
-Si aucun argument n'est spécifié, affiche l'environnement.
+Si aucun argument n'est spécifié, affiche
+l'environnement.
 
-Si un nom de variable sans valeur est donné, la variable locale correspondant est exportée.
+Si un nom de variable sans valeur est donné,
+la variable locale correspondant est exportée.
