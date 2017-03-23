@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/06 09:01:22 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/30 09:11:59 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/23 14:53:17 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,12 +60,10 @@ char		*ft_getprob(t_btree *list, char *str)
 	exit = FALSE;
 	tmp = list;
 	while (exit == FALSE && (nb = ft_strcmp(tmp->item, str)) != 0)
-	{
 		if (((nb < 0) ? tmp->left : tmp->right) == NULL)
 			exit = TRUE;
 		else
 			tmp = (nb < 0) ? tmp->left : tmp->right;
-	}
 	pattern = ft_strjoin(str, "*");
 	if (tmp && (ft_strcmp(tmp->item, str) == 0 ||
 			match(tmp->item, pattern) == 1))

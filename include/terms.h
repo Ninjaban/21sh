@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 09:33:31 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/17 09:50:26 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/23 14:47:21 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@
 # define KEY_ENS_DEF 4610843
 # define KEY_OLE_DEF 23
 # define KEY_ORI_DEF 5
-
 
 # define KEY_EOF 0
 # define KEY_TAB 1

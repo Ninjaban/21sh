@@ -6,7 +6,7 @@
 /*   By: mrajaona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 11:18:32 by mrajaona          #+#    #+#             */
-/*   Updated: 2017/03/07 15:27:02 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/23 14:49:57 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,9 @@ typedef struct	s_eval
 ** Functions
 */
 
-void	ft_esc_c(t_eval *e);
-void	ft_esc_hex(t_eval *e);
-char	ft_esc_x(char *token, size_t *n);
-char	*ft_eval(char *str);
+void			ft_esc_c(t_eval *e);
+void			ft_esc_hex(t_eval *e);
+char			ft_esc_x(char *token, size_t *n);
+char			*ft_eval(char *str);
 
 #endif
