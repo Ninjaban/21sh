@@ -1,0 +1,11 @@
+[builtin] unset
+
+Usage :
+unset [-fv] [name]...
+
+Description :
+Supprime les variables données en argument.
+
+Si l'option -f est spécifiées, les noms correspondent à des fonctions shell.
+
+Si l'option -v est spécifiée, les noms correspondent à des variables.

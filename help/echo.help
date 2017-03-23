@@ -4,7 +4,7 @@ Usage :
 echo [string]
 
 Description :
-Affiche une ou plusieurs chaines de charatères
+Affiche une ou plusieurs chaîne de charatères
 sur la sortie standard par défault.
-Peux aussi affiche le contenu des variables
-d'environnement et des variables locals.
+Peut aussi afficher le contenu des variables
+d'environnement et des variables locales.

@@ -1,0 +1,13 @@
+[builtin] export
+
+Usage :
+export [name[=value]]...
+
+Description :
+Exporte les variables vers l'environnement.
+
+Si aucun argument n'est spécifié, affiche l'environnement.
+
+Si un nom de variable sans valeur est donné, la variable locale correspondant est exportée.
+
+Si un nom de variable avec une valeur est donné, cette variable est créée dans l'environnement.

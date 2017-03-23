@@ -1,0 +1,7 @@
+[builtin] unsetenv
+
+Usage :
+unsetenv name
+
+Description :
+Supprime une variable d'environnement.

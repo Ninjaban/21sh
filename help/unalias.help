@@ -5,7 +5,7 @@ unalias [-a | key]
 
 Description :
 Si l'option -a est utilisé, supprime
-tout les alias.
+tous les alias.
 
 Si un nom d'alias est utilisé, supprime
 l'alias en question.

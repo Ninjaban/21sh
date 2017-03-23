@@ -6,7 +6,7 @@ help [builtin]
 Description :
 Affiche l'aide d'utilisation d'un builtin donné.
 
-Liste des builtin :
+Liste des builtins :
       -> alias
       -> cd
       -> echo
