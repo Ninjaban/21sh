@@ -30,7 +30,8 @@ static char	*ft_checkvalue(char *str, t_sys *sys)
 	int		n;
 
 	n = 0;
-	while (str[n] && str[n] != ' ' && str[n] != '\t')
+	while (str[n] && str[n] != ' ' && str[n] != '\t' &&
+			str[n] != '\"' && str[n] != '$')
 		n = n + 1;
 	c = str[n];
 	str[n] = '\0';
