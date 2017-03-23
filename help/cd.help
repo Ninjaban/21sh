@@ -8,7 +8,7 @@ Remplace le dossier courant par celui spécifié, et modifie la variable PWD en 
 
 Si aucun argument n'est spécifié, le dossier spécifié dans la variable HOME est utilisé
 
-Si le chemin spécifié est relatif (ne commence pas par \), le dossier est recherché dans le dossier courant, puis dans les dossiers spécifiés par la variable CDPATH si elle existe.
+Si le chemin spécifié est relatif (ne commence pas par \), le dossier est recherché dans le dossier courant.
 
 Si l'argument - est utilisé à la place d'un nom de dossier, le dossier spécifié dans la variable OLDPWD, si elle existe, est utilisé.
 
