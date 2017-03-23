@@ -87,7 +87,9 @@ char		*ft_varenv(char *str, t_sys *sys, char change)
 		if (*tmp == '$' && change == TRUE)
 		{
 			new = ft_init_new(new, tmp, cpy, sys);
-			while (*tmp && *tmp != ' ' && *tmp != '\t')
+			++tmp;
+			while (*tmp && *tmp != ' ' && *tmp != '\t' &&
+					*tmp != '\"' && *tmp != '$')
 				tmp++;
 			cpy = tmp;
 		}

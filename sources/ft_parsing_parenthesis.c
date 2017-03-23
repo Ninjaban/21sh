@@ -54,7 +54,8 @@ static void	ft_parse_parenthesis_open_init(char **src, char c, char r)
 	{
 		if (str[n] == '\"' || str[n] == '\'')
 			ft_parse_parenthesis_change_char(&(*src), &n, c, r);
-		n = n + 1;
+		else
+			n = n + 1;
 	}
 	free(str);
 }
