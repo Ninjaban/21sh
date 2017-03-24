@@ -29,37 +29,39 @@ static char	ft_parse_parenthesis_open_rec(char *str)
 			while (str[n] && str[n] != ((type == FALSE) ? '\"' : '\''))
 				n = n + 1;
 			if (!str[n])
-				return (FALSE);
+				return (type);
 		}
 		n = n + 1;
 	}
-	return (TRUE);
+	return (-1);
 }
 
 static char	ft_parse_parenthesis_open_init(char *src)
 {
 	char	*str;
+	char	type;
 
 	str = ft_strdup(src);
-	if (ft_parse_parenthesis_open_rec(str) == FALSE)
+	if ((type = ft_parse_parenthesis_open_rec(str)) != -1)
 	{
 		free(str);
-		return (FALSE);
+		return (type);
 	}
 	free(str);
-	return (TRUE);
+	return (-1);
 }
 
 void		ft_check_parenthesis(t_sys **sys, char **str, char *tmp)
 {
 	char		*new;
+	char		type;
 
-	while (ft_parse_parenthesis_open_init(*str) == FALSE)
+	while ((type = ft_parse_parenthesis_open_init(*str)) != -1)
 	{
 		ft_putstr("<quotes>\n");
 		if (ft_read(&tmp, &(*sys), 0, FALSE) == FALSE)
 			ft_log(TYPE_WARNING, ERROR_READ);
-		new = ft_strjoin("\\n", tmp);
+		new = ft_strjoin((type == FALSE) ? "\"'\\n'\"" : "\\n", tmp);
 		free(tmp);
 		tmp = ft_strjoin(*str, new);
 		free(new);
