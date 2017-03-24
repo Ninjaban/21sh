@@ -1,7 +1,7 @@
 [builtin] unalias
 
 Usage :
-unalias [-a | key]
+unalias [-a | "key"]
 
 Description :
 Si l'option -a est utilisé, supprime
