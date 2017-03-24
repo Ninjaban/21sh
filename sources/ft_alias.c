@@ -52,7 +52,10 @@ static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
 		return (FALSE);
 	}
 	if (ft_alias_check(*alias, tab[0]) == FALSE)
+	{
+		ft_free_tab(tab);
 		return (ft_error_int(ERROR_ALIAS, FALSE));
+	}
 	tmp = (!(*alias)) ? *alias : ft_alias_last(*alias);
 	if (!(*alias))
 		tmp = ft_alias_new(tab[0], tab[1]);

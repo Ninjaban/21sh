@@ -49,6 +49,7 @@ static void	ft_alias_remove_if(t_alias **alias, char *name)
 	tmp = *alias;
 	prev = NULL;
 	while (tmp)
+	{
 		if (ft_strcmp(tmp->key, name) == 0)
 		{
 			if (prev == NULL)
@@ -66,6 +67,7 @@ static void	ft_alias_remove_if(t_alias **alias, char *name)
 			prev = tmp;
 			tmp = tmp->next;
 		}
+	}
 }
 
 int			ft_unalias(t_cmd *cmd, t_alias **alias)

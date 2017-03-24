@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:02:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/09 11:04:36 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/09 11:04:36 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,19 +55,18 @@ static void	ft_env_print(char **tab)
 			ft_putendl(tab[n++]);
 }
 
-static int	ft_env_launch(char **argv, char **tab, size_t n)
+static int	ft_env_launch(char **argv, char **tab, char **env, size_t n)
 {
 	pid_t	child;
 	int		status;
+	char	*name;
 
 	if ((child = fork()) == -1)
-	{
-		ft_log(TYPE_ERROR, ERROR_FORK);
-		return (FALSE);
-	}
+		return (ft_error_int(ERROR_FORK, FALSE));
 	else if (child == 0)
 	{
-		execve(argv[n], argv + n, tab);
+		name = ft_access(argv[n], env);
+		execve(name, argv + n, tab);
 		ft_log(TYPE_ERROR, ERROR_EXEC);
 		exit(1);
 	}
@@ -95,7 +94,7 @@ int			ft_env(char **argv, char **env, char ***shvar)
 	ft_env_set(argv, &tab, shvar, &n);
 	if (argv[n] == NULL)
 		ft_env_print(tab);
-	else if (ft_env_launch(argv, tab, n) == FALSE)
+	else if (ft_env_launch(argv, tab, env, n) == FALSE)
 		return (FALSE);
 	ft_free_tab(tab);
 	return (TRUE);
