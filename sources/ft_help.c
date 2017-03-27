@@ -101,5 +101,6 @@ char		ft_help(char **av, char **env)
 		exit(ft_error_int(ERROR_EXEC, 1));
 	}
 	wait(NULL);
+	ft_free_tab(argv);
 	return (TRUE);
 }
