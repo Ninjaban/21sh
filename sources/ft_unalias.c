@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 09:20:20 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/08 15:35:17 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/27 09:34:33 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,15 +39,13 @@ void		ft_alias_remove(t_alias **alias)
 	*alias = NULL;
 }
 
-static void	ft_alias_remove_if(t_alias **alias, char *name)
+static void	ft_alias_remove_if(t_alias **alias, char *name, t_alias *prev)
 {
 	t_alias	*tmp;
-	t_alias *prev;
 
 	if (!alias)
 		return ;
 	tmp = *alias;
-	prev = NULL;
 	while (tmp)
 	{
 		if (ft_strcmp(tmp->key, name) == 0)
@@ -81,7 +79,7 @@ int			ft_unalias(t_cmd *cmd, t_alias **alias)
 			ft_alias_remove(&(*alias));
 		else
 			while (cmd->argv[++n])
-				ft_alias_remove_if(&(*alias), cmd->argv[n]);
+				ft_alias_remove_if(&(*alias), cmd->argv[n], NULL);
 	}
 	return (TRUE);
 }
