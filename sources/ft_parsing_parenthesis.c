@@ -45,18 +45,15 @@ static void	ft_parse_parenthesis_change_char(char **src, size_t *n, char c,
 
 static void	ft_parse_parenthesis_open_init(char **src, char c, char r)
 {
-	char	*str;
-	size_t	n;
+	size_t	i;
 
-	n = 0;
-	str = ft_strdup(*src);
-	while (str[n])
+	i = 0;
+	while ((*src)[i])
 	{
-		if (str[n] == '\"' || str[n] == '\'')
-			ft_parse_parenthesis_change_char(&(*src), &n, c, r);
-		n = n + 1;
+		if ((*src)[i] == '\"' || (*src)[i] == '\'')
+			ft_parse_parenthesis_change_char(&(*src), &i, c, r);
+		i = i + 1;
 	}
-	free(str);
 }
 
 void		ft_parse_parenthesis(char **str, char c, char r)
