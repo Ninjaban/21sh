@@ -142,6 +142,7 @@ int				ft_false_node(void *root, void *item);
 int				ft_get_redir_fd(char *str, size_t i);
 char			*ft_varenv(char *str, t_sys *sys, char change);
 char			*ft_tild(char *str, char **env);
+char			*ft_parsing_semicolon(char *str);
 t_cmd			*ft_parsecmd(char *str);
 t_node			*ft_new_node(char node, char *str, char redir, int fd);
 t_btree			*ft_parsing_line(char *str, t_sys *sys);

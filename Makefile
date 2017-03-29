@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/13 11:47:01 by jcarra            #+#    #+#              #
-#    Updated: 2017/03/16 12:38:55 by jcarra           ###   ########.fr        #
+#    Updated: 2017/03/29 17:15:38 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -65,6 +65,7 @@ SRC			=	ft_shell_excl.c \
 				ft_parsing_split_tools.c \
 				ft_parsing_tools.c \
 				ft_parsing_parenthesis.c \
+				ft_parsing_semicolon.c \
 				ft_parsing_node.c \
 				ft_parsing_cmd.c \
 				ft_parsing_init.c \

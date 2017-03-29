@@ -58,7 +58,7 @@ void		ft_check_parenthesis(t_sys **sys, char **str, char *tmp)
 
 	while ((type = ft_parse_parenthesis_open_init(*str)) != -1)
 	{
-		ft_putstr("<quotes>\n");
+		ft_putstr((type == FALSE) ? "<dquotes>\n" : "<quotes>\n");
 		if (ft_read(&tmp, &(*sys), 0, FALSE) == FALSE)
 			ft_log(TYPE_WARNING, ERROR_READ);
 		new = ft_strjoin((type == FALSE) ? "\"'\\n'\"" : "\\n", tmp);
