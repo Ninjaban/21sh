@@ -10,57 +10,81 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** FICHIER :: SHELL HEADER
+**   Fichier contenant toutes les structures, defines et prototypes qui
+**   concernent le shell directement.
+*/
+
 #ifndef SHELL_H
 # define SHELL_H
 
 /*
-**	<-- Define -->
+** DEFINES :: Motif général
+**   NAME				Nom du shell
+**   PROMPT				Prompt de base, avec les couleurs
+**   HISTORY_SIZE		Taille maximale de l'historique sauvegardé
+**   TRUE - FALSE		mots clés classiques
+**   EXIT				mot clé de sortie du terminal
 */
 
-# define NAME "21sh"
-# define PROMPT "\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)"
-# define HISTORY_SIZE 25
-# define FALSE 0
-# define TRUE 1
-# define EXIT "exit"
+# define NAME			"21sh"
+# define PROMPT			"\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)"
+# define HISTORY_SIZE	25
+# define FALSE			0
+# define TRUE			1
+# define EXIT			"exit"
 
 /*
-**	CMD	= ;
-**	AND	= &&
-**	OR	= ||
+** DEFINES :: Mots clés de condition
+**   CMD				point virgule ;
+**   AND				double ET &&
+**   OR					double OU ||
+**   CHAR_CMD			?
+**   CHAR_AND			?
+**   CHAR_OR			?
 */
 
-# define CMD 3
-# define AND 4
-# define OR 5
-
-# define CHAR_CMD -1
-# define CHAR_AND -2
-# define CHAR_OR -3
+# define CMD			3
+# define AND			4
+# define OR				5
+# define CHAR_CMD		-1
+# define CHAR_AND		-2
+# define CHAR_OR		-3
 
 /*
-**	PIPE		= |
-**	REDIR_R		= >
-**	CONCAT_R	= >>
-**	REDIR_L		= <
-**	CONCAT_L	= <<
+** DEFINES :: Mots clés de redirection
+**	 NOREDIR				N'est pas un caractère de redirection ?
+**	 PIPE				|  pipe
+**	 REDIR_R				>  redirection droite simple
+**	 CONCAT_R			>> redirection droite double
+**	 REDIR_L				<  redirection gauche simple
+**	 CONCAT_L			<< redirection gauche double
+**	 PIPE_OUT			?
+**	 PIPE_IN			?
 */
 
-# define NOREDIR 0
-# define PIPE 1
-# define REDIR_R 2
-# define CONCAT_R 3
-# define REDIR_L 4
-# define CONCAT_L 5
+# define NOREDIR		0
+# define PIPE			1
+# define REDIR_R		2
+# define CONCAT_R		3
+# define REDIR_L		4
+# define CONCAT_L		5
 
-# define PIPE_OUT 0
-# define PIPE_IN 1
-
-# define LEFT 0
-# define RIGHT 1
+# define PIPE_OUT		0
+# define PIPE_IN		1
 
 /*
-**	<-- Includes -->
+** DEFINES :: ?
+**	LEFT				quelque chose à gauche ?
+**	RIGHT				quelque chose à droite ?
+*/
+
+# define LEFT 			0
+# define RIGHT 			1
+
+/*
+** INCLUDES
 */
 
 # include <unistd.h>
@@ -75,7 +99,12 @@
 # include "libft.h"
 
 /*
-**	<-- Structures -->
+** STRUCTURE :: CoMmanDe
+**   Structure de gestion des commandes
+**
+** VARIABLES
+**   char*			name		path complet de la commande
+**   char**			argv		arguments de la commande
 */
 
 typedef struct	s_cmd
@@ -83,6 +112,19 @@ typedef struct	s_cmd
 	char			*name;
 	char			**argv;
 }				t_cmd;
+
+/*
+** STRUCTURE :: NODE
+**   Structure de gestion des noeuds de l'arbre binaire
+**
+** VARIABLES
+**   char			node		CMD, AND, ou OR. FALSE si ce n'est pas une
+** 																	  condition.
+**   t_cmd*			cmd			structure de la commande en cours, NULL si ce
+**														  n'est pas une commande
+**	 char			redir		un des defines de redirection. FALSE sinon
+** 	 int			fd			file descriptor
+*/
 
 typedef struct	s_node
 {
@@ -92,12 +134,31 @@ typedef struct	s_node
 	int				fd;
 }				t_node;
 
+/*
+** STRUCTURE :: ALIAS
+**   Liste chaînée des alias
+**
+** VARIABLES
+**   char*			key			clé de l'alias
+**   char*			value		valeur de l'alias
+**   t_alias*		next		alias suivant dans la structure
+*/
+
 typedef struct	s_alias
 {
 	char			*key;
 	char			*value;
 	struct s_alias	*next;
 }				t_alias;
+
+/*
+** STRUCTURE :: HISTorique
+**   Liste chaînée des valeurs enregistrées dans l'historique
+**
+** VARIABLES
+**   char*			line		ligne de commande
+**   int			id			id de la ligne de commande
+*/
 
 typedef struct	s_hist
 {
@@ -106,9 +167,21 @@ typedef struct	s_hist
 }				t_hist;
 
 /*
-** env		-> environment variables
-** shvar	-> local variables
-** ftvar	-> local functions (cannot add functions yet)
+** STRUCTURE :: SYStem
+**   structure système, contenant tout ce dont le programme a besoin quasiment
+**   en permanence.
+**
+** VARIABLES
+**   struct termios	term_new	term_new
+**   struct termios	term_save	term_save
+**   t_alias*		alias		liste des alias définis
+**   t_btree*		cmds		arbre binaire des commandes
+**   t_lst*			history		historique < ? pourquoi pas le type hist ?
+**   int*			keymap		tableau d'ints contenant les touches actives
+**   char**			env			variable d'environnement
+**   char**			shvar		variables locales (set)
+**   char**			ftvar		variables locales fonctionnelles (ajouter une
+** 										 fonction est impossible pour le moment)
 */
 
 typedef struct	s_sys
@@ -125,7 +198,7 @@ typedef struct	s_sys
 }				t_sys;
 
 /*
-**	<-- Functions -->
+** FUNCTIONS
 */
 
 /*
