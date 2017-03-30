@@ -53,8 +53,8 @@
 **	 CONCAT_R			>> redirection droite double
 **	 REDIR_L				<  redirection gauche simple
 **	 CONCAT_L			<< redirection gauche double
-**	 PIPE_OUT			?
-**	 PIPE_IN			?
+**	 PIPE_OUT			sortie d'un pipe
+**	 PIPE_IN			entrée d'un pipe
 */
 
 # define PIPE			1
