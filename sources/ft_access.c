@@ -35,6 +35,7 @@ static char		*ft_trypath(char *name, char **path)
 		}
 	}
 	ft_log(TYPE_WARNING, ERROR_NOTFOUND);
+	ft_cmd_nfound(name);
 	return (NULL);
 }
 
@@ -58,6 +59,7 @@ char			*ft_access(char *name, char **env)
 	if ((path = ft_getpath(env)) == NULL)
 	{
 		ft_log(TYPE_WARNING, ERROR_ENV);
+		ft_cmd_nfound(name);
 		return (NULL);
 	}
 	tmp = ft_trypath(name, path);
