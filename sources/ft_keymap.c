@@ -33,6 +33,7 @@ static void	ft_key_print_type(size_t key)
 	str = (key == KEY_ENS) ? "END	" : str;
 	str = (key == KEY_OLE) ? "W-LEFT	" : str;
 	str = (key == KEY_ORI) ? "W-RIGHT	" : str;
+	str = (key == KEY_RST) ? "RESET	" : str;
 	if (str)
 		ft_putstr(str);
 }

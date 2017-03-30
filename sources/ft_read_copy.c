@@ -74,3 +74,16 @@ void		ft_read_cpy_past(char **str, size_t *n, char type_cpy, char new_cpy)
 	else
 		ft_read_past(&(*str), &(*n), buf);
 }
+
+void		ft_read_keymap_init(t_sys **sys)
+{
+	char	**tab;
+
+	if ((tab = malloc(sizeof(char *) * 3)) == NULL)
+		return ;
+	tab[0] = ft_strdup("keymap");
+	tab[1] = ft_strdup("--reset");
+	tab[2] = NULL;
+	ft_keymap(&((*sys)->keymap), tab, *sys);
+	ft_free_tab(tab);
+}

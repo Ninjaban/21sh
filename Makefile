@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/13 11:47:01 by jcarra            #+#    #+#              #
-#    Updated: 2017/03/29 17:15:38 by jcarra           ###   ########.fr        #
+#    Updated: 2017/03/30 18:15:00 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -47,6 +47,7 @@ SRC			=	ft_shell_excl.c \
 				ft_read.c \
 				ft_read_print.c \
 				ft_read_move.c \
+				ft_read_check.c \
 				ft_read_copy.c \
 				ft_history.c \
 				ft_history_tools.c \

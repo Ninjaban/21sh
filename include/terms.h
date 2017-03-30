@@ -30,6 +30,7 @@
 # define KEY_ENS_DEF 4610843
 # define KEY_OLE_DEF 23
 # define KEY_ORI_DEF 5
+# define KEY_RST_DEF 16
 
 # define KEY_EOF 0
 # define KEY_TAB 1
@@ -48,8 +49,9 @@
 # define KEY_ENS 12
 # define KEY_OLE 13
 # define KEY_ORI 14
+# define KEY_RST 15
 
-# define KEY_SIZE 15
+# define KEY_SIZE 16
 
 # include <curses.h>
 # include <term.h>

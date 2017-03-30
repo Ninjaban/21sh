@@ -41,7 +41,7 @@ char		*ft_getword(char *str, size_t pos)
 	return (ft_wordcpy(str, start, pos));
 }
 
-void		ft_opendir(t_btree **list, char *path)
+void		ft_opendir(t_btree **list, char *path, char diropen)
 {
 	DIR				*dir;
 	struct dirent	*files;
@@ -50,10 +50,16 @@ void		ft_opendir(t_btree **list, char *path)
 		return ;
 	while ((files = readdir(dir)) != NULL)
 		if (ft_strcmp(files->d_name, ".") && ft_strcmp(files->d_name, ".."))
-			btree_add_node(&(*list),
-				btree_create_node((files->d_type == DT_DIR) ?
+		{
+			if (diropen == TRUE)
+				btree_add_node(&(*list),
+					btree_create_node((files->d_type == DT_DIR) ?
 					ft_strjoin(files->d_name, "/") : ft_strdup(files->d_name)),
 					&ft_cmpf);
+			else if (files->d_type != DT_DIR)
+				btree_add_node(&(*list),
+					btree_create_node(ft_strdup(files->d_name)), &ft_cmpf);
+		}
 	closedir(dir);
 }
 
@@ -67,7 +73,7 @@ t_btree		*ft_getexec(char **path)
 		return (NULL);
 	list = btree_create_node(ft_strdup("null"));
 	while (path[n])
-		ft_opendir(&list, path[n++]);
+		ft_opendir(&list, path[n++], FALSE);
 	btree_add_node(&(list), btree_create_node(ft_strdup("alias")), &ft_cmpf);
 	btree_add_node(&(list), btree_create_node(ft_strdup("exit")), &ft_cmpf);
 	btree_add_node(&(list), btree_create_node(ft_strdup("unalias")), &ft_cmpf);

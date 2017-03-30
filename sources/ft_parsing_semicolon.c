@@ -32,11 +32,21 @@ static size_t	ft_parsing_semicolon_count(const char *str)
 
 static char		*ft_parsing_semicolon_new(const char *str)
 {
-	char	*tmp;
 	size_t	len;
 
 	len = ft_strlen(str) + (ft_parsing_semicolon_count(str) * 2);
-	return ((tmp = ft_strnew(len + 1)));
+	return (ft_strnew(len + 1));
+}
+
+static void		ft_parsing_semicolon_suite(char **tmp, char *str,
+											size_t *n, size_t *i)
+{
+	(*tmp)[(*i)++] = ' ';
+	while (str[(*n)] == '<' || str[(*n)] == '>' ||
+			str[(*n)] == '|' || str[(*n)] == '&')
+		(*tmp)[(*i)++] = str[(*n)++];
+	(*tmp)[(*i)] = ' ';
+	*n = *n - 1;
 }
 
 static char		*ft_parsing_semicolon_copy(char *tmp, char *str,
@@ -60,14 +70,7 @@ static char		*ft_parsing_semicolon_copy(char *tmp, char *str,
 		}
 		else if ((str[n] == '<' || str[n] == '>' ||
 				str[n] == '|' || str[n] == '&') && type == -1)
-		{
-			tmp[i++] = ' ';
-			while (str[n] == '<' || str[n] == '>' ||
-					str[n] == '|' || str[n] == '&')
-				tmp[i++] = str[n++];
-			tmp[i] = ' ';
-			n = n - 1;
-		}
+			ft_parsing_semicolon_suite(&tmp, str, &n, &i);
 		else
 			tmp[i] = str[n];
 		i = i + 1;
