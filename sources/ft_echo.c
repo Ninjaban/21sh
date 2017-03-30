@@ -15,38 +15,26 @@
 #include "shell.h"
 #include "error.h"
 
-static char	ft_echo_unescape(char c)
-{
-	int	n;
-
-	n = -1;
-	while (++n < ANSI_MAX)
-	{
-		if (c == ANSI_LIST[n])
-			return (ANSI_C_CHAR[n]);
-	}
-	return (c);
-}
-
 static void	ft_echo_token(char *str, char *token, size_t len)
 {
 	size_t	i;
 	size_t	n;
 
-	n = -1;
-	i = -1;
-	while (str[++n] && ++i < len)
+	n = 0;
+	i = 0;
+	while (str[n] && i < len)
 	{
-		if (IS_ESC(str[n]))
+		if (str[n] == '\n')
 		{
 			token[i] = 0x5c;
 			i++;
-			token[i] = ft_echo_unescape(str[n]);
+			token[i] = 'n';
 			n++;
 		}
 		else
 			token[i] = str[n];
-		ft_log(TYPE_INFO, token);
+		n++;
+		i++;
 	}
 	token[len] = '\0';
 }
