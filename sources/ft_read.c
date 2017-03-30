@@ -23,7 +23,7 @@ void		ft_sigint(int sig)
 {
 	if (sig != SIGINT)
 		return ;
-	ft_putendl_fd("", 0);
+	ft_putendl_fd("^C", 0);
 	ft_affprompt(g_nb, g_env);
 	if (g_line)
 	{

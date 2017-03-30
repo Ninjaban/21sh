@@ -37,7 +37,7 @@ static void	ft_parse_parenthesis_change_char(char **src, size_t *n, char c,
 	{
 		if ((*src)[*n] == c)
 			(*src)[*n] = r;
-		if ((*src)[*n] == '\\' && type == TRUE)
+		if ((*src)[*n] == '\\' && (type == TRUE || type == FALSE))
 			ft_parse_backslash(*src + *n);
 		*n = *n + 1;
 	}

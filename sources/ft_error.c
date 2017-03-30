@@ -51,3 +51,11 @@ void		ft_error(char *error)
 	ft_putstr_fd(" [\e[31mERROR\e[0m]   : ", 2);
 	ft_putendl_fd(error, 2);
 }
+
+void		ft_cmd_nfound(char *name)
+{
+	ft_putstr_fd(NAME, 2);
+	ft_putstr_fd(" [\e[31mERROR\e[0m]   : ", 2);
+	ft_putstr_fd(name, 2);
+	ft_putendl_fd(" -> Commande introuvable", 2);
+}

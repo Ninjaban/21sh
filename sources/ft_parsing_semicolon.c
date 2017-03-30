@@ -22,7 +22,8 @@ static size_t	ft_parsing_semicolon_count(const char *str)
 	n = 0;
 	while (str[n])
 	{
-		if (str[n] == ';')
+		if (str[n] == ';' || str[n] == '>' ||
+			str[n] == '<' || str[n] == '|' || str[n] == '&')
 			nbr = nbr + 1;
 		n = n + 1;
 	}
@@ -56,6 +57,16 @@ static char		*ft_parsing_semicolon_copy(char *tmp, char *str,
 			tmp[i++] = ' ';
 			tmp[i++] = ';';
 			tmp[i] = ' ';
+		}
+		else if ((str[n] == '<' || str[n] == '>' ||
+				str[n] == '|' || str[n] == '&') && type == -1)
+		{
+			tmp[i++] = ' ';
+			while (str[n] == '<' || str[n] == '>' ||
+					str[n] == '|' || str[n] == '&')
+				tmp[i++] = str[n++];
+			tmp[i] = ' ';
+			n = n - 1;
 		}
 		else
 			tmp[i] = str[n];

@@ -51,7 +51,7 @@
 # define TYPE_ERROR 2
 
 void			ft_log(char type, char *log);
-
+void			ft_cmd_nfound(char *name);
 void			ft_error(char *error);
 void			*ft_error_void(char *error);
 int				ft_error_int(char *error, int exit);

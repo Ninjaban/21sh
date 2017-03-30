@@ -70,6 +70,7 @@ void		ft_shell(t_sys *sys, int exit, char *str, char *tmp)
 {
 	if (ft_shell_init(&sys) == FALSE)
 		return ;
+	ft_log(TYPE_INFO, "Pour toutes informations, tapez 'help'");
 	while (exit == FALSE)
 	{
 		str = NULL;

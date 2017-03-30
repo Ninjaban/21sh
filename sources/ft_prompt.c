@@ -14,95 +14,102 @@
 #include "shell.h"
 #include "error.h"
 
-static int		ft_path(char **str, char **env)
-{
-	size_t	n;
-	char	**t;
-	char	bool;
-
-	if (str && *str)
-	{
-		bool = (ft_strncmp(*str, "!w", 1) == 0) ? FALSE : -1;
-		bool = (bool != FALSE && ft_strncmp(*str, "!W", 1) == 0) ? TRUE : bool;
-		if (bool != -1)
-		{
-			(*str)++;
-			if (!env)
-				return (-1);
-			n = ft_find_path(env, "PWD");
-			if (!env[n])
-				return (-1);
-			t = ft_strsplit(env[n], "=");
-			if (!t)
-				return (-1);
-			ft_prompt_path(t, bool);
-			ft_free_tab(t);
-			return (TRUE);
-		}
-	}
-	return (FALSE);
-}
-
-static int		ft_nbcmd(char **str, size_t nbcmd)
-{
-	if (str && *str)
-	{
-		if (ft_strncmp(*str, "!#", 1) == 0)
-		{
-			if (nbcmd == 0)
-				ft_putstr_fd("#", 0);
-			else
-				ft_putnbr_fd(nbcmd, 0);
-			(*str)++;
-			return (TRUE);
-		}
-	}
-	return (FALSE);
-}
-
-static int		ft_color_prompt(char **str)
+static char		ft_strjoinr(char **src, char *str)
 {
 	char	*tmp;
-	size_t	n;
 
-	if (str && *str)
-		if (**str == '\033')
+	if (!(*src))
+	{
+		if (!(tmp = ft_strdup(str)))
+			return (FALSE);
+	}
+	else if ((tmp = ft_strjoin(*src, str)) == NULL)
+	{
+		free(*src);
+		return (FALSE);
+	}
+	free(*src);
+	*src = tmp;
+	return (TRUE);
+}
+
+static char		ft_strjoinr_init(char **src, char *str, size_t n, char freestr)
+{
+	char		c;
+
+	if (!str)
+		return (FALSE);
+	c = str[n];
+	str[n] = '\0';
+	if (ft_strjoinr(&(*src), str) == FALSE)
+	{
+		if (freestr == TRUE)
+			free(str);
+		else
+			str[n] = c;
+		return (FALSE);
+	}
+	if (freestr == TRUE)
+		free(str);
+	else
+		str[n] = c;
+	return (TRUE);
+}
+
+static char		*ft_nbcmd(char *str, size_t nbcmd, size_t *n)
+{
+	if (str)
+	{
+		if (ft_strncmp(str, "!#", 1) == 0)
 		{
-			tmp = ft_strstr(*str, "m");
-			if (*tmp)
-			{
-				n = tmp - *str;
-				write(0, *str, n);
-				while (*str != tmp - 1)
-					(*str)++;
-				return (TRUE);
-			}
+			*n = *n + 2;
+			if (nbcmd == 0)
+				return (ft_strdup("#"));
+			else
+				return (ft_itoa(nbcmd));
 		}
-	return (FALSE);
+	}
+	return (NULL);
+}
+
+static void		ft_affprompt_norme(size_t nbcmd, char **env,
+									char *str, char **tmp)
+{
+	char		*ret;
+	size_t		n;
+	size_t		save;
+
+	n = 0;
+	save = 0;
+	while (str[n])
+	{
+		while (str[n] && (str[n] != '!' && str[n + 1] != '#') &&
+				(str[n] != '!' && (str[n + 1] != 'W' || str[n + 1] != 'w')))
+			n = n + 1;
+		if ((str[n] == '!' && str[n + 1] == '#') ||
+				(str[n] == '!' && (str[n + 1] == 'W' || str[n + 1] == 'w')))
+		{
+			ft_strjoinr_init(&(*tmp), str + save, n - save, FALSE);
+			ret = (str[n] == '!' && str[n + 1] == '#') ?
+				ft_nbcmd(str + n, nbcmd, &n) : ft_path(str + n, env, &n);
+			ft_strjoinr_init(&(*tmp), ret, ft_strlen(ret), TRUE);
+			save = n;
+		}
+		n = n + 1;
+	}
+	ft_strjoinr_init(&(*tmp), str + save, ft_strlen(str + save), FALSE);
 }
 
 void			ft_affprompt(size_t nbcmd, char **env)
 {
 	char	*str;
 	char	*tmp;
-	int		ret;
 
-	str = ft_strdup(PROMPT);
-	tmp = str;
-	if (str)
-	{
-		while (*str)
-		{
-			if (!ft_color_prompt(&str))
-				if (!ft_nbcmd(&str, nbcmd))
-				{
-					if (!(ret = ft_path(&str, env)))
-						ft_putchar_fd(*str, 0);
-					else if (ret == -1)
-						ft_putstr_fd("...", 0);
-				}
-			str++;
-		}
-		free(tmp);
-	}
+	if (!(str = ft_strdup(PROMPT)))
+		return ;
+	tmp = NULL;
+	ft_affprompt_norme(nbcmd, env, str, &tmp);
+	ft_putendl_fd(tmp, 0);
+	free(tmp);
+	free(str);
 }

@@ -18,7 +18,7 @@
 */
 
 # define NAME "21sh"
-# define PROMPT "\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)\n"
+# define PROMPT "\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)"
 # define HISTORY_SIZE 25
 # define FALSE 0
 # define TRUE 1
@@ -260,8 +260,8 @@ void			ft_free_hist(void *data);
 **	Prompt
 */
 
-void			ft_prompt_path(char **t, char b);
 void			ft_affprompt(size_t nbcmd, char **env);
+char			*ft_path(char *str, char **env, size_t *n);
 
 /*
 **	Read
