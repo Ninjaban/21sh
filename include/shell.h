@@ -40,21 +40,14 @@
 **   CMD				point virgule ;
 **   AND				double ET &&
 **   OR					double OU ||
-**   CHAR_CMD			?
-**   CHAR_AND			?
-**   CHAR_OR			?
 */
 
 # define CMD			3
 # define AND			4
 # define OR				5
-# define CHAR_CMD		-1
-# define CHAR_AND		-2
-# define CHAR_OR		-3
 
 /*
 ** DEFINES :: Mots clés de redirection
-**	 NOREDIR				N'est pas un caractère de redirection ?
 **	 PIPE				|  pipe
 **	 REDIR_R				>  redirection droite simple
 **	 CONCAT_R			>> redirection droite double
@@ -64,7 +57,6 @@
 **	 PIPE_IN			?
 */
 
-# define NOREDIR		0
 # define PIPE			1
 # define REDIR_R		2
 # define CONCAT_R		3
@@ -212,17 +204,16 @@ void			ft_tild_file(char **str, char c, char r);
 int				ft_check_alias(char **str, t_alias *alias, int n);
 int				ft_true_node(void *root, void *item);
 int				ft_false_node(void *root, void *item);
+int				ft_parsing_count_word(char const *s);
 int				ft_get_redir_fd(char *str, size_t i);
 char			*ft_varenv(char *str, t_sys *sys, char change);
 char			*ft_tild(char *str, char **env);
 char			*ft_parsing_semicolon(char *str);
+char			**ft_parsing_split(char const *s);
 t_cmd			*ft_parsecmd(char *str);
 t_node			*ft_new_node(char node, char *str, char redir, int fd);
 t_btree			*ft_parsing_line(char *str, t_sys *sys);
 t_btree			*ft_parsing(char *str, t_sys *sys);
-
-char			**ft_parsing_split(char const *s);
-int				ft_parsing_count_word(char const *s);
 
 /*
 **	Gestion d'erreur
@@ -234,16 +225,15 @@ void			*ft_gestion_error(char *str);
 **	Tools
 */
 
+void			ft_init_pwd(char ***env);
 int				ft_set_pwd(char ***env, char *str);
 int				ft_del_line(char ***env, size_t i);
 char			ft_delchar(char **str, size_t n);
-char			*ft_strcut(char *str, size_t s, size_t e);
 char			*ft_getenv(char **env, char *name);
 char			*ft_path_join(char *src, char *str);
 char			**ft_getpath(char **env);
 size_t			ft_fpath(char **env, char *str);
 size_t			ft_find_path(char **tab, char *str);
-void			ft_init_pwd(char ***env);
 
 /*
 **	Exec
@@ -315,9 +305,9 @@ t_btree			*ft_getexec(char **path);
 **	History
 */
 
+void			ft_list_push_back_id(t_lst **begin_list, char *line);
 int				ft_history_init(t_lst **history, char **env);
 t_lst			*ft_create_hist_elem(char *line);
-void			ft_list_push_back_id(t_lst **begin_list, char *line);
 
 /*
 **	Free

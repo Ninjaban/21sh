@@ -28,17 +28,6 @@ int			fputchar(int c)
 	return (0);
 }
 
-int			ft_goto(char *cmd, int col, int line)
-{
-	char	*str;
-
-	str = NULL;
-	if ((str = tgoto(tgetstr(cmd, NULL), col, line)) == NULL)
-		return (FALSE);
-	tputs(str, 1, fputchar);
-	return (TRUE);
-}
-
 int			ft_termcaps_change(struct termios *term)
 {
 	if (tcsetattr(0, TCSANOW, &(*term)) == -1)
