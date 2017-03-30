@@ -13,20 +13,6 @@
 #include "libft.h"
 #include "shell.h"
 
-char			*ft_strcut(char *str, size_t s, size_t e)
-{
-	size_t		n;
-	char		*new;
-
-	n = 0;
-	if ((new = malloc(e - s + 1)) == NULL)
-		return (NULL);
-	while (s < e)
-		new[n++] = str[s++];
-	new[n] = '\0';
-	return (new);
-}
-
 int				ft_check_alias(char **str, t_alias *alias, int n)
 {
 	t_alias		*tmp;
