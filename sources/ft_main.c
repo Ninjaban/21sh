@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 09:29:30 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/21 10:14:29 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/30 15:02:06 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,28 @@
 static int	ft_check_env(char **env)
 {
 	if (!env || !(env[0]) ||
-		ft_fpath(env, "PWD=") == ft_tablen(env) ||
 		ft_fpath(env, "HOME=") == ft_tablen(env))
 		return (FALSE);
+	return (TRUE);
+}
+
+static int	ft_check_path(char **t, char ***cpy)
+{
+	char	*pwd;
+	char	*var_pwd;
+
+	if (ft_fpath(t, "PWD=") == ft_tablen(t))
+	{
+		if ((pwd = ft_strnew(4096)) == NULL)
+		{
+			ft_free_tab(*cpy);
+			return (FALSE);
+		}
+		getcwd(pwd, 4096);
+		if ((var_pwd = ft_strjoin("PWD=", pwd)) != NULL)
+			ft_setenv(var_pwd, cpy, NULL, TRUE);
+		free(pwd);
+	}
 	return (TRUE);
 }
 
@@ -48,6 +67,8 @@ static char	**ft_tabcpy(char **t)
 			ft_free_tab(cpy);
 			return (NULL);
 		}
+	if (ft_check_path(t, &cpy) == FALSE)
+		return (NULL);
 	return (cpy);
 }
 

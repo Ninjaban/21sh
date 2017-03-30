@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:19:14 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/16 12:45:33 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/30 13:54:31 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # define ERROR_PERMS "Vous n'avez pas les droits suffisants."
 # define ERROR_EXEC "Erreur lors de l'execution."
 # define ERROR_SYNTAX "Erreur de syntaxe."
-# define ERROR_ENV "Erreur d'environement."
+# define ERROR_ENV "Erreur d'environnement."
 # define ERROR_RC "Erreur lors du traitement du ~/.42shrc."
 # define ERROR_HISTORY "Erreur lors du traitement de l'historique."
 # define ERROR_OPTION "Option invalide."

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 11:18:32 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/23 14:49:57 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/30 13:36:01 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,11 @@
 # define ANSI_C_1 0x07, 0x08, 0x1b, 0x0c, 0x0a, 0x0d, 0x09, 0x0b
 # define ANSI_C_2 0x5c, 0x27, 0x22, 0x3f
 # define ANSI_LIST (char [ANSI_MAX]){ANSI_C_1, ANSI_C_2}
+
+# define IS_ESC_1(x) (x == 0x07 || x == 0x08 || x == 0x1b || x == 0x0c)
+# define IS_ESC_2(x) (x == 0x0a || x == 0x0d || x == 0x09 || x == 0x0b)
+# define IS_ESC_3(x) (x == 0x5c || x == 0x27 || x == 0x22 || x == 0x3f)
+# define IS_ESC(x) (IS_ESC_1(x) || IS_ESC_2(x) || IS_ESC_3(x))
 
 # define IS_ANSI_1(x) (x == 'a' || x == 'b' || x == 'e' || x == 'f')
 # define IS_ANSI_2(x) (x == 'n' || x == 'r' || x == 't' || x == 'v')

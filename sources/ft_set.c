@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:16:47 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/16 13:02:04 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/30 10:32:41 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ static void		ft_set_tool(char *str, char ***env, char ***shvar)
 		return (ft_log(TYPE_ERROR, ERROR_SYNTAX));
 	}
 	else if ((n = ft_find_path(*env, tab[0])) != ft_tablen(*env))
-		ft_change_var(&(*env), str, n);
+		;
 	else if ((n = ft_find_path(*shvar, tab[0])) != ft_tablen(*shvar))
 		ft_change_var(&(*shvar), str, n);
 	else

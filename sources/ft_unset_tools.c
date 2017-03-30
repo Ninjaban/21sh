@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 10:41:32 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/10 10:53:23 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/30 15:41:36 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,9 @@ void	ft_init_pwd(char ***env)
 	char		*path;
 	char		*tmp;
 
-	if ((tmp = ft_getenv((*env), "HOME=")) == NULL)
+	if ((tmp = ft_strnew(4096)) == NULL)
 		return ;
+	getcwd(tmp, 4096);
 	path = ft_strjoin("PWD=", tmp);
 	free(tmp);
 	if (path)
