@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 10:41:32 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/30 15:41:36 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/03/31 13:31:07 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,18 +46,4 @@ int		ft_del_line(char ***env, size_t i)
 	ft_free_tab(*env);
 	(*env) = tab;
 	return (TRUE);
-}
-
-void	ft_init_pwd(char ***env)
-{
-	char		*path;
-	char		*tmp;
-
-	if ((tmp = ft_strnew(4096)) == NULL)
-		return ;
-	getcwd(tmp, 4096);
-	path = ft_strjoin("PWD=", tmp);
-	free(tmp);
-	if (path)
-		ft_setenv(path, &(*env), NULL, TRUE);
 }

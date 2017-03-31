@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 11:42:03 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/17 10:43:52 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 13:30:45 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,6 @@ static int		ft_unset_var(char ***env, char ***shvar, char *str)
 	m = ft_find_path(*shvar, str);
 	if (n == ft_tablen(*env) && m == ft_tablen(*shvar))
 		return (ft_error_int(ERROR_VNOTFOUND, FALSE));
-	else if (ft_strcmp(str, "PWD") == 0)
-		ft_init_pwd(&(*env));
 	else if (ft_strcmp(str, "HOME") != 0)
 		if (ft_del_line((n == ft_tablen(*env) ? &(*shvar) : &(*env)),
 						(n == ft_tablen(*env) ? m : n)) == FALSE)

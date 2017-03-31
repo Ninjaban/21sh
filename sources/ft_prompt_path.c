@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 12:45:58 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/16 14:42:48 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 13:10:29 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static char	*ft_prompt_path(char *t, char bool)
 	}
 }
 
-char		*ft_path(char *str, char **env, size_t *n)
+char		*ft_path(char *str, char **env, char **shvar, size_t *n)
 {
 	char	*t;
 	char	*ret;
@@ -51,7 +51,7 @@ char		*ft_path(char *str, char **env, size_t *n)
 			*n = *n + 2;
 			if (!env)
 				return (ft_strdup("..."));
-			if (!(t = ft_getenv(env, "PWD=")))
+			if (!(t = ft_getenv(env, shvar, "PWD=")))
 				return (ft_strdup("..."));
 			ret = ft_prompt_path(t, bool);
 			free(t);

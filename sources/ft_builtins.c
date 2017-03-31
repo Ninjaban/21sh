@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/13 14:42:42 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 10:47:59 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	ft_exec_builtins_other(t_cmd *cmds, t_sys **sys)
 	else if (ft_strcmp(cmds->name, "history") == 0)
 		return (ft_hist_built(cmds->argv, &((*sys)->history)));
 	else if (ft_strcmp(cmds->name, "help") == 0)
-		return (ft_help(cmds->argv, (*sys)->env));
+		return (ft_help(cmds->argv, (*sys)->env, (*sys)->env));
 	return (FALSE);
 }
 
@@ -47,7 +47,7 @@ int			ft_exec_builtins(t_cmd *cmds, t_sys **sys)
 	else if (ft_strcmp(cmds->name, "env") == 0)
 		return (ft_env(cmds->argv, (*sys)->env, &((*sys)->shvar)));
 	else if (ft_strcmp(cmds->name, "cd") == 0)
-		return (ft_chdir(&((*sys)->env), cmds->argv));
+		return (ft_chdir(&((*sys)->env), &((*sys)->shvar), cmds->argv));
 	else if (ft_exec_builtins_other(cmds, &(*sys)) == TRUE)
 		return (TRUE);
 	else

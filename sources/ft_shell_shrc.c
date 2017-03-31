@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:28:54 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 10:55:00 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int			ft_shrc_init(t_sys **sys, char *str, int fd)
 	char	*path;
 
 	(*sys)->alias = NULL;
-	tmp = ft_getenv((*sys)->env, "HOME=");
+	tmp = ft_getenv((*sys)->env, (*sys)->shvar, "HOME=");
 	path = ft_strjoin(tmp, "/.42shrc");
 	free(tmp);
 	if (access(path, F_OK) != 0 || (fd = open(path, O_RDONLY)) == -1)

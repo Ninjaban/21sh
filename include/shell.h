@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/21 10:53:01 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 15:46:48 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -207,7 +207,8 @@ int				ft_false_node(void *root, void *item);
 int				ft_parsing_count_word(char const *s);
 int				ft_get_redir_fd(char *str, size_t i);
 char			*ft_varenv(char *str, t_sys *sys, char change);
-char			*ft_tild(char *str, char **env);
+char			*ft_getpwd(char **env, char **shvar);
+char			*ft_tild(char *str, char **env, char **shvar);
 char			*ft_parsing_semicolon(char *str);
 char			**ft_parsing_split(char const *s);
 t_cmd			*ft_parsecmd(char *str);
@@ -225,11 +226,10 @@ void			*ft_gestion_error(char *str);
 **	Tools
 */
 
-void			ft_init_pwd(char ***env);
-int				ft_set_pwd(char ***env, char *str);
+int				ft_set_pwd(char ***env, char ***shvar, char *str);
 int				ft_del_line(char ***env, size_t i);
 char			ft_delchar(char **str, size_t n);
-char			*ft_getenv(char **env, char *name);
+char			*ft_getenv(char **env, char**shvar, char *name);
 char			*ft_path_join(char *src, char *str);
 char			**ft_getpath(char **env);
 size_t			ft_fpath(char **env, char *str);
@@ -247,7 +247,7 @@ void			*ft_exec_node(t_btree *root, t_sys **sys);
 void			*ft_exec(t_sys **sys, t_btree *node, char *tmp);
 int				ft_exec_open_file(char *str, char redir);
 int				ft_access_dir(char *path);
-char			*ft_access(char *name, char **env);
+char			*ft_access(char *name, char **env, char **shvar);
 
 /*
 **	Builtins
@@ -255,7 +255,7 @@ char			*ft_access(char *name, char **env);
 
 void			ft_path_trim(char **str);
 char			ft_keymap(int **keymap, char **argv, t_sys *sys);
-char			ft_help(char **av, char **env);
+char			ft_help(char **av, char **env, char **shvar);
 char			*ft_chdir_opt_p(char *path, char opt);
 char			*ft_hist_str(char *str);
 char			*ft_hist_id(t_lst *history, char *str);
@@ -268,10 +268,11 @@ int				ft_unsetenv(char ***env, char *str);
 int				ft_setenv(char *str, char ***env, char ***shvar, int b);
 int				ft_alias(t_cmd *cmd, t_alias **alias);
 int				ft_unalias(t_cmd *cmd, t_alias **alias);
-int				ft_chdir(char ***env, char **argv);
+int				ft_chdir(char ***env, char ***shvar, char **argv);
 int				ft_chdir_options(char **argv, char *opt);
 int				ft_chdir_set_path(char **path, char *str);
-int				ft_chdir_cdpath(char **path, char **cdpath, char **tab);
+int				ft_chdir_path_norme(int *res, char *path, char **tab,
+									char ****env);
 int				ft_set(char **cmd, char ***env, char ***shvar);
 int				ft_unset(char ***env, char ***shvar, char ***ftvar, char **cmd);
 int				ft_export(char **cmd, char ***env, char ***shvar);
@@ -285,12 +286,13 @@ t_alias			*ft_alias_new(char *key, char *value);
 **	Auto-completion
 */
 
-void			ft_completion(char **str, size_t pos, char **env,
+void			ft_completion(char **str, size_t pos, t_sys *sys,
 							char dassault);
 void			ft_removecompl(char **str);
 void			ft_opendir(t_btree **list, char *path, char diropen);
 void			ft_setcompletion(char **str, size_t pos, char *try, char tabul);
-void			ft_completion_norme(char *word, t_btree **list, char **env);
+void			ft_completion_norme(char *word, t_btree **list,
+									char **env, char **shvar);
 char			ft_checkcompl(char *str);
 char			*ft_getword(char *str, size_t pos);
 char			*ft_color(char *color, char *str);
@@ -306,7 +308,7 @@ t_btree			*ft_getexec(char **path);
 */
 
 void			ft_list_push_back_id(t_lst **begin_list, char *line);
-int				ft_history_init(t_lst **history, char **env);
+int				ft_history_init(t_lst **history, char **env, char **shvar);
 t_lst			*ft_create_hist_elem(char *line);
 
 /*
@@ -323,8 +325,8 @@ void			ft_free_hist(void *data);
 **	Prompt
 */
 
-void			ft_affprompt(size_t nbcmd, char **env);
-char			*ft_path(char *str, char **env, size_t *n);
+void			ft_affprompt(size_t nbcmd, char **env, char **shvar);
+char			*ft_path(char *str, char **env, char **shvar, size_t *n);
 
 /*
 **	Read
@@ -358,7 +360,8 @@ char			ft_signal_stop(void);
 void			ft_check_excl(t_sys **sys, char **str);
 void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp);
 void			ft_shell(t_sys *sys, int exit, char *str, char *tmp);
-int				ft_history_maj(t_lst **history, char *line, char **env);
+int				ft_history_maj(t_lst **history, char *line,
+								char **env, char **shvar);
 int				ft_shrc_init(t_sys **sys, char *str, int fd);
 int				ft_sys_init(t_sys **sys);
 

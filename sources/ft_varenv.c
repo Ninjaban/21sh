@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 08:30:52 by jcarra            #+#    #+#             */
-/*   Updated: 2016/12/12 09:54:02 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 13:33:53 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,18 @@
 #include "error.h"
 #include "shell.h"
 
-static char	*ft_getvalue(char *str, char **env)
+char		*ft_getpwd(char **env, char **shvar)
 {
-	char	*value;
+	char	*str;
 
-	value = ft_getenv(env, str);
-	return (value);
+	str = NULL;
+	if ((str = ft_strnew(4096)) == NULL || (getcwd(str, 4096) == NULL))
+	{
+		if (str)
+			free(str);
+		str = ft_getenv(env, shvar, "PWD=");
+	}
+	return (str);
 }
 
 static char	*ft_checkvalue(char *str, t_sys *sys)
@@ -36,10 +42,7 @@ static char	*ft_checkvalue(char *str, t_sys *sys)
 	c = str[n];
 	str[n] = '\0';
 	key = ft_strjoin(str, "=");
-	if (ft_fpath(sys->env, key) != ft_tablen(sys->env))
-		value = ft_getvalue(key, sys->env);
-	else
-		value = ft_getvalue(key, sys->shvar);
+	value = ft_getenv(sys->env, sys->shvar, key);
 	free(key);
 	str[n] = c;
 	return (value);

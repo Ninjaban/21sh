@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 09:04:01 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/10 10:46:00 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 12:58:41 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ static char		*ft_nbcmd(char *str, size_t nbcmd, size_t *n)
 	return (NULL);
 }
 
-static void		ft_affprompt_norme(size_t nbcmd, char **env,
+static void		ft_affprompt_norme(size_t nbcmd, char ***env,
 									char *str, char **tmp)
 {
 	char		*ret;
@@ -91,7 +91,7 @@ static void		ft_affprompt_norme(size_t nbcmd, char **env,
 		{
 			ft_strjoinr_init(&(*tmp), str + save, n - save, FALSE);
 			ret = (str[n] == '!' && str[n + 1] == '#') ?
-				ft_nbcmd(str + n, nbcmd, &n) : ft_path(str + n, env, &n);
+			ft_nbcmd(str + n, nbcmd, &n) : ft_path(str + n, env[0], env[1], &n);
 			ft_strjoinr_init(&(*tmp), ret, ft_strlen(ret), TRUE);
 			save = n;
 		}
@@ -100,15 +100,18 @@ static void		ft_affprompt_norme(size_t nbcmd, char **env,
 	ft_strjoinr_init(&(*tmp), str + save, ft_strlen(str + save), FALSE);
 }
 
-void			ft_affprompt(size_t nbcmd, char **env)
+void			ft_affprompt(size_t nbcmd, char **env, char **shvar)
 {
 	char	*str;
 	char	*tmp;
+	char	**tab[2];
 
 	if (!(str = ft_strdup(PROMPT)))
 		return ;
 	tmp = NULL;
-	ft_affprompt_norme(nbcmd, env, str, &tmp);
+	tab[0] = env;
+	tab[1] = shvar;
+	ft_affprompt_norme(nbcmd, tab, str, &tmp);
 	ft_putstr_fd(tmp, 0);
 	free(tmp);
 	free(str);

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/08 09:33:43 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:17:03 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 13:13:59 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,14 @@ size_t		g_position;
 size_t		g_nb;
 char		**g_line;
 char		**g_env;
+char		**g_shvar;
 
 void		ft_sigint(int sig)
 {
 	if (sig != SIGINT)
 		return ;
 	ft_putendl_fd("^C", 0);
-	ft_affprompt(g_nb, g_env);
+	ft_affprompt(g_nb, g_env, g_shvar);
 	if (g_line)
 	{
 		free(*g_line);
@@ -61,7 +62,8 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 		return ;
 	if (*i == (size_t)ft_list_size((*sys)->history))
 	{
-		ret = (char)ft_history_maj(&(*sys)->history, *str, (*sys)->env);
+		ret = (char)ft_history_maj(&(*sys)->history, *str,
+									(*sys)->env, (*sys)->shvar);
 		*i = (size_t)ft_list_size((*sys)->history) - ((ret) ? 1 : 0);
 	}
 	ft_read_move(&(*str), (*sys)->keymap[KEY_HOM], &(*pos), (*sys));
@@ -76,14 +78,20 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 	ft_print(*str, 0, *pos);
 }
 
+static void	ft_read_glob_init(size_t n, t_sys **sys)
+{
+	g_nb = n;
+	g_env = (*sys)->env;
+	g_shvar = (*sys)->shvar;
+	g_position = 0;
+}
+
 int			ft_read(char **str, t_sys **sys, size_t n, char exit)
 {
 	size_t	i;
 	int		c;
 
-	g_nb = n;
-	g_env = (*sys)->env;
-	g_position = 0;
+	ft_read_glob_init(n, sys);
 	i = (size_t)ft_list_size((*sys)->history);
 	*str = ft_strnew(1);
 	g_line = &(*str);

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/06 09:01:22 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/23 14:53:17 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 13:10:43 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,13 +100,19 @@ void		ft_setcompletion(char **str, size_t pos, char *try, char tabul)
 	*str = new;
 }
 
-void		ft_completion_norme(char *word, t_btree **list, char **env)
+void		ft_completion_norme(char *word, t_btree **list,
+								char **env, char **shvar)
 {
 	char	*tmp;
+	char	**path;
 
 	if (word[0] != '/' && (word[0] != '.' && word[1] != '/') &&
 			(word[0] != '.' && word[1] != '.' && word[2] != '/'))
-		*list = ft_getexec(ft_getpath(env));
+	{
+		if ((path = ft_getpath(env)) == NULL)
+			path = ft_getpath(shvar);
+		*list = ft_getexec(path);
+	}
 	tmp = ft_getcdir(word);
 	if (word[0] == '/' || tmp[0] != '/')
 		ft_opendir(&(*list), tmp, TRUE);

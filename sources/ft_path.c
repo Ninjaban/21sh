@@ -6,13 +6,24 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 18:40:13 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/02 11:47:19 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 13:15:48 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "shell.h"
 #include "error.h"
+
+char		*ft_path_join(char *src, char *str)
+{
+	char	*tmp;
+	char	*path;
+
+	tmp = ft_strjoin(src, "/");
+	path = ft_strjoin(tmp, str);
+	free(tmp);
+	return (path);
+}
 
 static void	ft_verifpath(char ***path)
 {

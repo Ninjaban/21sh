@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 16:02:28 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 11:14:53 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	char		**tab;
 	char		*tmp;
 
-	tmp = ft_tild(ft_varenv(str, sys, TRUE), sys->env);
+	tmp = ft_tild(ft_varenv(str, sys, TRUE), sys->env, sys->shvar);
 	tmp = ft_parsing_semicolon(tmp);
 	ft_parsing_alias(&tmp, sys);
 	ft_tild_file(&tmp, ';', '\a');

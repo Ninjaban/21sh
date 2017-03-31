@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 11:04:20 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/16 11:10:19 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 14:30:14 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ static void	ft_path_replace(char **str, char **split)
 	char	*tmp;
 	size_t	n;
 
-	trim = ft_strdup("");
+	if ((trim = ft_strdup("")) == NULL)
+		return ;
 	n = 0;
 	while (split[n])
 	{
@@ -38,7 +39,10 @@ static void	ft_path_replace(char **str, char **split)
 		n++;
 	}
 	if ((ft_strcmp(trim, "") == 0))
+	{
+		free(trim);
 		trim = ft_strdup("/");
+	}
 	ft_strdel(str);
 	*str = ft_strdup(trim);
 	ft_strdel(&trim);

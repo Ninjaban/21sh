@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:28:54 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 10:47:26 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,12 +43,12 @@ static char	*ft_help_strjoin(char *src, char *join)
 	return (new);
 }
 
-static char	*ft_help_getname(char **av, char **env)
+static char	*ft_help_getname(char **av, char **env, char **shvar)
 {
 	char	*home;
 	char	*path;
 
-	if ((home = ft_getenv(env, "HOME=")) == NULL)
+	if ((home = ft_getenv(env, shvar, "HOME=")) == NULL)
 		return (ft_error_void(ERROR_HELP));
 	if ((path = ft_help_strjoin(home, "/.help/")) == NULL)
 		return (ft_error_void(ERROR_ALLOC));
@@ -81,14 +81,14 @@ static char	**ft_help_init_argv(char *path)
 	return (argv);
 }
 
-char		ft_help(char **av, char **env)
+char		ft_help(char **av, char **env, char **shvar)
 {
 	char	**argv;
 	pid_t	child;
 
 	if (av[1] && ft_help_check(av[1]) == FALSE)
 		return (ft_error_int(ERROR_BUILTIN, FALSE));
-	if ((argv = ft_help_init_argv(ft_help_getname(av, env))) == NULL)
+	if ((argv = ft_help_init_argv(ft_help_getname(av, env, shvar))) == NULL)
 		return (FALSE);
 	if ((child = fork()) == -1)
 	{

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/01 12:00:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/01 12:00:00 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 12:41:48 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 static void	ft_read_completion(char **str, char c, size_t *pos, t_sys **sys)
 {
 	ft_completion(&(*str), (c == (*sys)->keymap[KEY_TAB]) ? (*pos) : (*pos) + 1,
-					(*sys)->env, (c == (*sys)->keymap[KEY_TAB]) ? 1 : 0);
+				(*sys), (c == (*sys)->keymap[KEY_TAB]) ? 1 : 0);
 	ft_print(*str, (*pos), (c == (*sys)->keymap[KEY_TAB]) ? 0 : 1);
 	if (c != (*sys)->keymap[KEY_TAB])
 		*pos = *pos + 1;
@@ -26,7 +26,7 @@ static void	ft_read_completion(char **str, char c, size_t *pos, t_sys **sys)
 
 static void	ft_read_check_completion(char **str, size_t *pos, t_sys **sys)
 {
-	ft_completion(&(*str), (*pos), (*sys)->env, 0);
+	ft_completion(&(*str), (*pos), (*sys), 0);
 	ft_print(*str, (*pos), 0);
 }
 

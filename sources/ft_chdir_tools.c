@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 18:53:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/16 11:04:54 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 14:30:05 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,29 +30,19 @@ static char	*ft_cvar(char *name, char *value)
 	return (var);
 }
 
-char		*ft_path_join(char *src, char *str)
-{
-	char	*tmp;
-	char	*path;
-
-	tmp = ft_strjoin(src, "/");
-	path = ft_strjoin(tmp, str);
-	free(tmp);
-	return (path);
-}
-
-int			ft_set_pwd(char ***env, char *str)
+int			ft_set_pwd(char ***env, char ***shvar, char *str)
 {
 	char	**pwd;
 
 	if ((pwd = ft_strsplit((*env)[ft_fpath((*env), "PWD=")], "=")) == NULL)
-	{
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-		return (FALSE);
-	}
-	ft_path_trim(&str);
-	ft_setenv(ft_cvar("OLDPWD", pwd[1]), &(*env), NULL, TRUE);
-	ft_setenv(ft_cvar("PWD", str), &(*env), NULL, TRUE);
+		if ((pwd = ft_strsplit((*shvar)[ft_fpath((*shvar), "PWD=")],
+								"=")) == NULL)
+		{
+			ft_log(TYPE_ERROR, ERROR_ALLOC);
+			return (FALSE);
+		}
+	ft_setenv(ft_cvar("OLDPWD", pwd[1]), &(*env), &(*shvar), TRUE);
+	ft_setenv(ft_cvar("PWD", str), &(*env), &(*shvar), TRUE);
 	ft_free_tab(pwd);
 	return (TRUE);
 }
@@ -68,7 +58,7 @@ size_t		ft_fpath(char **env, char *str)
 	return (n);
 }
 
-char		*ft_getenv(char **env, char *name)
+static char	*ft_getenv_sub(char **env, char *name)
 {
 	char	**t;
 	char	*str;
@@ -84,5 +74,14 @@ char		*ft_getenv(char **env, char *name)
 		return (NULL);
 	str = ft_strdup(t[1]);
 	ft_free_tab(t);
+	return (str);
+}
+
+char		*ft_getenv(char **env, char **shvar, char *name)
+{
+	char	*str;
+
+	if ((str = ft_getenv_sub(env, name)) == NULL)
+		str = ft_getenv_sub(shvar, name);
 	return (str);
 }

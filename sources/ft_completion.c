@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/06 09:01:22 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/30 09:11:59 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 12:40:09 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int			ft_cmpf(void *tree, void *item)
 	return (0);
 }
 
-void		ft_completion(char **str, size_t pos, char **env, char dassault)
+void		ft_completion(char **str, size_t pos, t_sys *sys, char dassault)
 {
 	t_btree			*list;
 	char			*word;
@@ -48,7 +48,7 @@ void		ft_completion(char **str, size_t pos, char **env, char dassault)
 	}
 	free(tmp);
 	list = NULL;
-	ft_completion_norme(word, &list, env);
+	ft_completion_norme(word, &list, sys->env, sys->shvar);
 	if ((tmp = ft_getprob(list, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);
 	free(word);

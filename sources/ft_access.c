@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 18:54:52 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/13 12:50:01 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 12:54:13 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static char		*ft_trypath(char *name, char **path)
 	return (NULL);
 }
 
-char			*ft_access(char *name, char **env)
+char			*ft_access(char *name, char **env, char **shvar)
 {
 	char		**path;
 	char		*tmp;
@@ -57,11 +57,12 @@ char			*ft_access(char *name, char **env)
 		return (tmp);
 	}
 	if ((path = ft_getpath(env)) == NULL)
-	{
-		ft_log(TYPE_WARNING, ERROR_ENV);
-		ft_cmd_nfound(name);
-		return (NULL);
-	}
+		if ((path = ft_getpath(shvar)) == NULL)
+		{
+			ft_log(TYPE_WARNING, ERROR_ENV);
+			ft_cmd_nfound(name);
+			return (NULL);
+		}
 	tmp = ft_trypath(name, path);
 	free(path);
 	return (tmp);

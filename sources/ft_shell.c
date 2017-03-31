@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:39:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/21 10:53:08 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 11:16:36 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ static char	ft_launcher_parse(char **str, t_sys **sys)
 
 	ft_check_parenthesis(&(*sys), &(*str), NULL);
 	ft_check_excl(&(*sys), &(*str));
-	if ((ft_history_maj(&((*sys)->history), *str, (*sys)->env)) == FALSE)
+	if ((ft_history_maj(&((*sys)->history),
+						*str, (*sys)->env, (*sys)->shvar)) == FALSE)
 		ft_log(TYPE_WARNING, ERROR_HISTORY);
 	else if ((tmp = ft_gestion_error(*str)) != NULL)
 		ft_log(TYPE_ERROR, tmp);
@@ -36,7 +37,7 @@ static char	ft_launcher(t_sys **sys, char **str, int *exit)
 	static size_t	n = 0;
 	char			*tmp;
 
-	ft_affprompt(++n, (*sys)->env);
+	ft_affprompt(++n, (*sys)->env, (*sys)->shvar);
 	signal(SIGINT, &ft_sigint);
 	if (ft_read(&(*str), &(*sys), n, FALSE) == FALSE)
 	{
@@ -57,7 +58,7 @@ static char	ft_launcher(t_sys **sys, char **str, int *exit)
 
 static char	ft_shell_init(t_sys **sys)
 {
-	if (ft_history_init(&(*sys)->history, (*sys)->env) == FALSE)
+	if (ft_history_init(&(*sys)->history, (*sys)->env, (*sys)->shvar) == FALSE)
 		return ((char)ft_error_int(ERROR_HISTORY, FALSE));
 	if (((*sys)->keymap = ft_keymap_init()) == NULL)
 		return ((char)ft_error_int(ERROR_KEYMAP, FALSE));

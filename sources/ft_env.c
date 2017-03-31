@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:02:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/09 11:04:36 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 13:05:49 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static void	ft_env_print(char **tab)
 			ft_putendl(tab[n++]);
 }
 
-static int	ft_env_launch(char **argv, char **tab, char **env, size_t n)
+static int	ft_env_launch(char **argv, char **tab, char ***env, size_t n)
 {
 	pid_t	child;
 	int		status;
@@ -65,7 +65,7 @@ static int	ft_env_launch(char **argv, char **tab, char **env, size_t n)
 		return (ft_error_int(ERROR_FORK, FALSE));
 	else if (child == 0)
 	{
-		name = ft_access(argv[n], env);
+		name = ft_access(argv[n], env[0], env[1]);
 		execve(name, argv + n, tab);
 		ft_log(TYPE_ERROR, ERROR_EXEC);
 		exit(1);
@@ -87,14 +87,17 @@ int			ft_env(char **argv, char **env, char ***shvar)
 {
 	size_t	n;
 	char	**tab;
+	char	**e[2];
 
 	n = (ft_strcmp(argv[1], "-i") == 0) ? 2 : 1;
 	tab = (ft_strcmp(argv[1], "-i") == 0) ?
 		ft_strsplit(" ", " ") : ft_tabcpy(env);
 	ft_env_set(argv, &tab, shvar, &n);
+	e[0] = env;
+	e[1] = *shvar;
 	if (argv[n] == NULL)
 		ft_env_print(tab);
-	else if (ft_env_launch(argv, tab, env, n) == FALSE)
+	else if (ft_env_launch(argv, tab, e, n) == FALSE)
 		return (FALSE);
 	ft_free_tab(tab);
 	return (TRUE);

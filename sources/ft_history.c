@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 08:55:19 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/15 15:52:05 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/03/31 10:49:52 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "error.h"
 #include "shell.h"
 
-static int	ft_history_file(char **env, int flag)
+static int	ft_history_file(char **env, char **shvar, int flag)
 {
 	int		fd;
 	char	*tmp;
@@ -22,7 +22,7 @@ static int	ft_history_file(char **env, int flag)
 
 	if (!env)
 		return (-1);
-	if ((tmp = ft_getenv(env, "HOME=")) == NULL)
+	if ((tmp = ft_getenv(env, shvar, "HOME=")) == NULL)
 		return (-1);
 	if ((path = ft_strjoin(tmp, "/.42sh_history")) == NULL)
 	{
@@ -44,7 +44,8 @@ static void	ft_history_suppr_first(t_lst **history)
 	(*history) = tmp;
 }
 
-int			ft_history_maj(t_lst **history, char *line, char **env)
+int			ft_history_maj(t_lst **history, char *line,
+							char **env, char **shvar)
 {
 	t_lst	*tmp;
 	char	*cpy;
@@ -53,7 +54,7 @@ int			ft_history_maj(t_lst **history, char *line, char **env)
 	if ((cpy = ft_strtrim(line)) == NULL)
 		return (FALSE);
 	free(cpy);
-	if ((fd = ft_history_file(env, O_TRUNC)) == -1)
+	if ((fd = ft_history_file(env, shvar, O_TRUNC)) == -1)
 		return (FALSE);
 	if (ft_list_size(*history) == HISTORY_SIZE)
 		ft_history_suppr_first(&(*history));
@@ -71,7 +72,7 @@ int			ft_history_maj(t_lst **history, char *line, char **env)
 	return (TRUE);
 }
 
-int			ft_history_init(t_lst **history, char **env)
+int			ft_history_init(t_lst **history, char **env, char **shvar)
 {
 	size_t	n;
 	char	*line;
@@ -81,7 +82,7 @@ int			ft_history_init(t_lst **history, char **env)
 		return (FALSE);
 	n = 0;
 	*history = NULL;
-	if ((fd = ft_history_file(env, 0)) == -1)
+	if ((fd = ft_history_file(env, shvar, 0)) == -1)
 		return (FALSE);
 	line = NULL;
 	while (n++ < HISTORY_SIZE && get_next_line(fd, &line) == 1)
