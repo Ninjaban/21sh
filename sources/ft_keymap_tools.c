@@ -74,6 +74,7 @@ char		ft_keymap_set(int **keymap, char **argv, t_sys *sys)
 	macro = (!ft_strcmp(argv[2], "W-LEFT")) ? (char)KEY_OLE : macro;
 	macro = (!ft_strcmp(argv[2], "W-RIGHT")) ? (char)KEY_ORI : macro;
 	macro = (!ft_strcmp(argv[2], "RESET")) ? (char)KEY_RST : macro;
+	macro = (!ft_strcmp(argv[2], "AUTO-COMPLETION")) ? (char)KEY_CPL : macro;
 	if (macro == -1)
 		return ((char)ft_error_int(ERROR_MACRO, FALSE));
 	ft_keymap_get(&(*keymap), macro, sys);
@@ -98,6 +99,7 @@ void		ft_keymap_reset(int **keymap)
 	(*keymap)[KEY_OLE] = KEY_OLE_DEF;
 	(*keymap)[KEY_ORI] = KEY_ORI_DEF;
 	(*keymap)[KEY_RST] = KEY_RST_DEF;
+	(*keymap)[KEY_CPL] = KEY_CPL_DEF;
 }
 
 int			*ft_keymap_init(void)

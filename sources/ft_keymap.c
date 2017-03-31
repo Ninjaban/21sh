@@ -18,22 +18,23 @@ static void	ft_key_print_type(size_t key)
 	char	*str;
 
 	str = NULL;
-	str = (key == KEY_EOF) ? "EOF	" : str;
-	str = (key == KEY_TAB) ? "TAB	" : str;
-	str = (key == KEY_RET) ? "RET	" : str;
-	str = (key == KEY_BAC) ? "BACK	" : str;
-	str = (key == KEY_DEL) ? "DEL	" : str;
-	str = (key == KEY_CPY) ? "COPY	" : str;
-	str = (key == KEY_PST) ? "PAST	" : str;
-	str = (key == KEY_UPS) ? "UP	" : str;
-	str = (key == KEY_DOW) ? "DOWN	" : str;
-	str = (key == KEY_RIG) ? "RIGHT	" : str;
-	str = (key == KEY_LEF) ? "LEFT	" : str;
-	str = (key == KEY_HOM) ? "START	" : str;
-	str = (key == KEY_ENS) ? "END	" : str;
-	str = (key == KEY_OLE) ? "W-LEFT	" : str;
-	str = (key == KEY_ORI) ? "W-RIGHT	" : str;
-	str = (key == KEY_RST) ? "RESET	" : str;
+	str = (key == KEY_EOF) ? "EOF		" : str;
+	str = (key == KEY_TAB) ? "TAB		" : str;
+	str = (key == KEY_RET) ? "RET		" : str;
+	str = (key == KEY_BAC) ? "BACK		" : str;
+	str = (key == KEY_DEL) ? "DEL		" : str;
+	str = (key == KEY_CPY) ? "COPY		" : str;
+	str = (key == KEY_PST) ? "PAST		" : str;
+	str = (key == KEY_UPS) ? "UP		" : str;
+	str = (key == KEY_DOW) ? "DOWN		" : str;
+	str = (key == KEY_RIG) ? "RIGHT		" : str;
+	str = (key == KEY_LEF) ? "LEFT		" : str;
+	str = (key == KEY_HOM) ? "START		" : str;
+	str = (key == KEY_ENS) ? "END		" : str;
+	str = (key == KEY_OLE) ? "W-LEFT		" : str;
+	str = (key == KEY_ORI) ? "W-RIGHT		" : str;
+	str = (key == KEY_RST) ? "RESET		" : str;
+	str = (key == KEY_CPL) ? "AUTO-COMPLETION	" : str;
 	if (str)
 		ft_putstr(str);
 }

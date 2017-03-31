@@ -109,7 +109,7 @@ void			ft_affprompt(size_t nbcmd, char **env)
 		return ;
 	tmp = NULL;
 	ft_affprompt_norme(nbcmd, env, str, &tmp);
-	ft_putendl_fd(tmp, 0);
+	ft_putstr_fd(tmp, 0);
 	free(tmp);
 	free(str);
 }

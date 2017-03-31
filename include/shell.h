@@ -29,7 +29,7 @@
 */
 
 # define NAME			"21sh"
-# define PROMPT			"\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)"
+# define PROMPT			"\e[34;1;4m$: commande nº!#\e[0m - (\e[31m!W\e[0m)\n"
 # define HISTORY_SIZE	25
 # define FALSE			0
 # define TRUE			1

@@ -19,9 +19,7 @@ void		ft_print(char *str, size_t pos, int inc)
 	static size_t	len_s = 0;
 	int				n;
 
-	n = (int)pos;
-	while (n-- > 0)
-		ft_putchar_fd('\b', 0);
+	ft_putchar_fd('\r', 0);
 	n = (int)len_s;
 	while (n-- > 0)
 		ft_putchar_fd(' ', 0);
@@ -63,13 +61,6 @@ void		ft_read_print(char **str, int c, size_t *pos, t_sys **sys)
 		free(n);
 		*str = tmp;
 	}
-	ft_completion(&(*str), (c == (*sys)->keymap[KEY_TAB]) ? (*pos) : (*pos) + 1,
-				(*sys)->env, (c == (*sys)->keymap[KEY_TAB]) ? 1 : 0);
-	ft_print(*str, (*pos), (c == (*sys)->keymap[KEY_TAB]) ? 0 : 1);
-	if (c != (*sys)->keymap[KEY_TAB])
-		*pos = *pos + 1;
-	else
-		ft_read_keyori(&(*str), &(*pos));
 }
 
 void		ft_read_suppr(char **str, size_t *pos)
