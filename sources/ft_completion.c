@@ -49,7 +49,7 @@ void		ft_completion(char **str, size_t pos, t_sys *sys, char dassault)
 	free(tmp);
 	list = NULL;
 	ft_completion_norme(word, &list, sys->env, sys->shvar);
-	if ((tmp = ft_getprob(list, ft_getpattern(word))) != NULL)
+	if (list && (tmp = ft_getprob(list, ft_getpattern(word))) != NULL)
 		ft_setcompletion(&(*str), pos, tmp, dassault);
 	free(word);
 	if (list)

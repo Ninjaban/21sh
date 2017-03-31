@@ -58,8 +58,7 @@ char		*ft_getprob(t_btree *list, char *str)
 	int		nb;
 
 	exit = FALSE;
-	if (!(tmp = list))
-		return (NULL);
+	tmp = list;
 	patt = ft_strjoin(str, "*");
 	while (exit == FALSE && (nb = ft_strcmp(tmp->item, str)) != 0)
 		if (((nb < 0) ? tmp->left : tmp->right) == NULL)

@@ -95,7 +95,8 @@ static void		ft_affprompt_norme(size_t nbcmd, char ***env,
 			ft_strjoinr_init(&(*tmp), ret, ft_strlen(ret), TRUE);
 			save = n;
 		}
-		n = n + 1;
+		if (str[n])
+			n = n + 1;
 	}
 	ft_strjoinr_init(&(*tmp), str + save, ft_strlen(str + save), FALSE);
 }
