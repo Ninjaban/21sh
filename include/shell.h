@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/31 15:46:48 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/03 11:45:13 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,8 @@
 # include <fcntl.h>
 # include <termios.h>
 # include <dirent.h>
+# include <sys/types.h>
+# include <pwd.h>
 # include "libft.h"
 
 /*

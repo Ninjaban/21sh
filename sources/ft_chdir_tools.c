@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 18:53:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/31 14:30:05 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/03 11:45:42 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,9 +79,15 @@ static char	*ft_getenv_sub(char **env, char *name)
 
 char		*ft_getenv(char **env, char **shvar, char *name)
 {
-	char	*str;
+	char			*str;
+	struct passwd	*pwuid;
 
 	if ((str = ft_getenv_sub(env, name)) == NULL)
 		str = ft_getenv_sub(shvar, name);
+	if (!str && ft_strcmp(name, "HOME=") == 0)
+	{
+		pwuid = getpwuid(getuid());
+		str = ft_strdup(pwuid->pw_dir);
+	}
 	return (str);
 }

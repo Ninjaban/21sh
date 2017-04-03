@@ -6,22 +6,13 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 09:29:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/30 15:02:06 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/03 11:44:39 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "shell.h"
 #include "error.h"
 #include "terms.h"
-
-static int	ft_check_env(char **env)
-{
-	if (!env || !(env[0]) ||
-		ft_fpath(env, "HOME=") == ft_tablen(env))
-		return (FALSE);
-	return (TRUE);
-}
 
 static int	ft_check_path(char **t, char ***cpy)
 {
@@ -49,8 +40,6 @@ static char	**ft_tabcpy(char **t)
 	int		n;
 
 	n = 0;
-	if (ft_check_env(t) == FALSE)
-		return (NULL);
 	if ((cpy = malloc(sizeof(char *) * (ft_tablen(t) + 1))) == NULL)
 	{
 		ft_log(TYPE_ERROR, ERROR_ALLOC);
