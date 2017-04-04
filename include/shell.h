@@ -223,6 +223,7 @@ t_btree			*ft_parsing(char *str, t_sys *sys);
 */
 
 void			*ft_gestion_error(char *str);
+char			*ft_gestion_error_check_redir(char *str);
 
 /*
 **	Tools

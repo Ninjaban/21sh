@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/03 13:41:38 by jcarra            #+#    #+#              #
-#    Updated: 2017/02/01 09:52:00 by jcarra           ###   ########.fr        #
+#    Updated: 2017/04/04 10:42:47 by jcarra           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -117,7 +117,7 @@ all		:		$(NAME)
 				@$(ECHO) '\033[32m>\033[0m libft : [\033[34mAll\033[0m] ->\033[32m	Ready\n\033[0m'
 
 $(NAME)	:		.part1 .part2 .part3 .part4 .part5
-				$(LIB) $(NAME) $(OBJS_PART1) $(OBJS_PART2) $(OBJS_BTREE) $(OBJS_LIST) $(OBJS_GNL)
+				@$(LIB) $(NAME) $(OBJS_PART1) $(OBJS_PART2) $(OBJS_BTREE) $(OBJS_LIST) $(OBJS_GNL)
 
 .part1:			$(OBJS_PART1)
 				@touch .part1
