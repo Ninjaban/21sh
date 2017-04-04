@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/04 10:57:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/04 10:57:00 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/04 11:28:23 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char		*ft_gestion_error_check_redir(char *str)
 	n = 0;
 	redir = FALSE;
 	quote = FALSE;
-	while(str[n])
+	while (str[n])
 	{
 		quote = ft_quotes(str[n], quote);
 		if ((str[n] == '>' || ft_strncmp(str + n, ">>", 1) == 0) &&
@@ -45,13 +45,12 @@ char		*ft_gestion_error_check_redir(char *str)
 		{
 			if (redir == TRUE)
 				return (ERROR_SYNTAX);
-			else
-				redir = TRUE;
+			redir = TRUE;
 		}
 		else if ((str[n] == '<' || ft_strncmp(str + n, "<<", 1) == 0 ||
 				str[n] == '|' || str[n] == ';' ||
 				ft_strncmp(str + n, "&&", 1) == 0 ||
-				ft_strncmp(str + n , "||", 1) == 0) && quote == FALSE)
+				ft_strncmp(str + n, "||", 1) == 0) && quote == FALSE)
 			redir = FALSE;
 		n = n + 1;
 	}
