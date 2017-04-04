@@ -10,9 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** FICHIER :: MAIN
+**   Fichier contenant le main, qui initialise le programme.
+**
+** LISTE DES FONCTIONS
+**    > ft_check_env
+**    > ft_check_path
+**    > ft_tabcpy
+**   main
+**
+** INCLUDES
+*/
+
 #include "shell.h"
 #include "error.h"
 #include "terms.h"
+
+/*
+** STATIQUE :: ft_check_path
+**   Check l'environnement à la recherche de la variable PWD
+**
+** PARAMETRES
+**   char**		t			environnement à checker
+**   char**		cpy			copie de l'environnement
+**
+** VARIABLES
+**   char*		pwd			chemin du dossier courant
+**   char*		var_pwd		PATH=chemin du dossier courant
+**
+** VALEUR DE RETOUR (int)
+**   Si la variable PWD ne peut pas être initialisée (si elle n'est pas
+**   présente dans l'environnement et qu'elle ne peut pas être récupérée,
+**   retourne FALSE. Sinon, retourne TRUE.
+*/
 
 static int	ft_check_path(char **t, char ***cpy)
 {
@@ -33,6 +64,21 @@ static int	ft_check_path(char **t, char ***cpy)
 	}
 	return (TRUE);
 }
+
+/*
+** STATIQUE :: ft_tabcpy
+**   Copie le tableau passé en paramètre.
+**
+** PARAMETRES
+**   char**		t			le tableau à copier
+**
+** VARIABLES
+**   char**		cpy			[RV] copie du tableau
+**   int		n			conteur pour parcourir le tableau
+**
+** VALEUR DE RETOUR (char**)
+**   En cas d'erreur, retourne NULL. Sinon, retourne le tableau copié.
+*/
 
 static char	**ft_tabcpy(char **t)
 {
@@ -60,6 +106,14 @@ static char	**ft_tabcpy(char **t)
 		return (NULL);
 	return (cpy);
 }
+
+/*
+** FONCTION :: main
+**   fonction main, qui initialise le shell avant de le lancer.
+**
+** VARIABLES
+**   t_sys*		sys			variable système
+*/
 
 int			main(int ac, char **av, char **env)
 {
