@@ -10,10 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** FICHIER :: ECHO
+**   Fichier contenant le built-in echo
+**
+** LISTE DES FONCTIONS
+**    > ft_echo_token
+**    > ft_echo_putstr
+**   ft_echo
+**
+** INCLUDES
+*/
+
 #include "libft.h"
 #include "ft_esc.h"
 #include "shell.h"
 #include "error.h"
+
+/*
+** STATIQUE :: ft_echo_token
+**   ?
+*/
 
 static void	ft_echo_token(char *str, char *token, size_t len)
 {
@@ -39,6 +56,21 @@ static void	ft_echo_token(char *str, char *token, size_t len)
 	token[len] = '\0';
 }
 
+/*
+** STATIQUE :: ft_echo_putstr
+**   Affiche la chaine de caractère passée en paramètre et gère les caractères
+**   d'échappement.
+**
+** PARAMETRES
+**   char*		str			chaîne à afficher
+**
+** VARIABLES
+**   char*		token		?
+**   size_t		n			curseur pour parcourir la chaîne
+**   size_t		len			longueur de la chaîne
+**   size_t		count		caractères supplémentaires liés aux échappés
+*/
+
 static void	ft_echo_putstr(char *str)
 {
 	char	*token;
@@ -63,6 +95,21 @@ static void	ft_echo_putstr(char *str)
 	ft_putstr(token);
 	free(token);
 }
+
+/*
+** FONCTION :: ft_echo
+**   Core du builtin echo : affiche le contenu des paramètres, dans l'ordre,
+**   séparés par un espace.
+**
+** PARAMETRES
+**   char**		argv		arguments
+**
+** VARIABLES
+**   size_t		n			curseur pour parcourir les arguments
+**
+** VALEUR DE RETOUR (int)
+**   Retourne toujours TRUE.
+*/
 
 int			ft_echo(char **argv)
 {
