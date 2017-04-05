@@ -29,7 +29,15 @@
 
 /*
 ** STATIQUE :: ft_echo_token
-**   ?
+**   Remplace les caractères avec backslash \ par leur équivalent normal
+**
+** PARAMETRES
+**   char*      str         la commande
+**   char*      token       le token
+**   size_t     len         taille du token
+**
+** VARIABLES
+**   size_t     i / n       curseurs pour parcourir token et str respectivement
 */
 
 static void	ft_echo_token(char *str, char *token, size_t len)
@@ -65,7 +73,7 @@ static void	ft_echo_token(char *str, char *token, size_t len)
 **   char*		str			chaîne à afficher
 **
 ** VARIABLES
-**   char*		token		?
+**   char*		token		stocke les caractères de type \x
 **   size_t		n			curseur pour parcourir la chaîne
 **   size_t		len			longueur de la chaîne
 **   size_t		count		caractères supplémentaires liés aux échappés
