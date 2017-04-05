@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/31 11:14:53 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/05 11:01:18 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 
 /*
 ** STATIQUE :: ft_parsing_multicmd
-**   Découpe la commande en fonction des redirection et des quotes et édite
+**   Découpe la commande en fonction des redirections et des quotes et édite
 **   l'arbre binaire en fonction. ?
 **
 ** PARAMETRES
@@ -36,7 +36,7 @@
 **   char*		str			commande courante
 **
 ** VARIABLES
-**   size_t		n			conteur pour parcourir str, à l'envers
+**   size_t		n			compteur pour parcourir str, à l'envers
 **   char		change		indicateur booléen pour les quotes
 */
 
@@ -110,14 +110,14 @@ static void		ft_add_node(t_btree **cmds, char **tab, int n)
 /*
 ** FONCTION :: ft_parsing_alias
 **   Check tous les mots de la commande, si c'est un alias, le remplace par
-**   la valeur correspondante (sauf en cas d'hinibiteur)
+**   la valeur correspondante (sauf en cas d'inhibiteur)
 **
 ** PARAMETRES
 **   char**		str			commandes à parser ?
 **   t_sys*		sys			variable système
 **
 ** VARIABLES
-**   size_t		n			Conteur pour parcourir les commandes ?
+**   size_t		n			compteur pour parcourir les commandes ?
 **   char		change		indicateur booléen pour les inhibiteurs ?
 */
 
@@ -206,7 +206,7 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 **
 ** VALEUR DE RETOUR (t_btree*)
 **   Une fois le parsing terminé, retourne l'arbre. Si une erreur est
-** survenue, retourne NULL.
+**   survenue, retourne NULL.
 */
 
 t_btree			*ft_parsing(char *str, t_sys *sys)
