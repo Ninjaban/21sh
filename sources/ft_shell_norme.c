@@ -51,9 +51,10 @@ static char	ft_parse_parenthesis_open_init(char *src)
 	return (-1);
 }
 
-void		ft_check_parenthesis(t_sys **sys, char **str, char *tmp)
+static void	ft_check_parenthesis(t_sys **sys, char **str)
 {
 	char		*new;
+	char		*tmp;
 	char		type;
 
 	while ((type = ft_parse_parenthesis_open_init(*str)) != -1)
@@ -61,11 +62,42 @@ void		ft_check_parenthesis(t_sys **sys, char **str, char *tmp)
 		ft_putstr((type == FALSE) ? "<dquotes>\n" : "<quotes>\n");
 		if (ft_read(&tmp, &(*sys), 0, FALSE) == FALSE)
 			ft_log(TYPE_WARNING, ERROR_READ);
-		new = ft_strjoin("\\n", tmp);
+		if (type == FALSE &&
+			(ft_strlen(*str) && (*str)[ft_strlen(*str) - 1] == '\\'))
+		{
+			ft_putendl("back");
+			(*str)[ft_strlen(*str) - 1] = '\0';
+			new = ft_strdup(tmp);
+		}
+		else
+			new = ft_strjoin("\\n", tmp);
 		free(tmp);
 		tmp = ft_strjoin(*str, new);
 		free(new);
 		free(*str);
 		*str = tmp;
 	}
+}
+
+void		ft_check_inhibitor(t_sys **sys, char **str)
+{
+	char		*new;
+	char		*tmp;
+
+	ft_check_parenthesis(&(*sys), &(*str));
+	ft_putendl(*str);
+	if (ft_strlen(*str))
+		while ((*str)[ft_strlen(*str) - 1] == '\\')
+		{
+			ft_putstr("<backslash>\n");
+			if (ft_read(&tmp, &(*sys), 0, FALSE) == FALSE)
+				ft_log(TYPE_WARNING, ERROR_READ);
+			(*str)[ft_strlen(*str) - 1] = '\0';
+			new = ft_strjoin(*str, tmp);
+			free(tmp);
+			free(*str);
+			*str = new;
+			ft_check_parenthesis(&(*sys), &(*str));
+			ft_putendl(*str);
+		}
 }
