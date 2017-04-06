@@ -18,7 +18,7 @@ static char	ft_launcher_parse(char **str, t_sys **sys)
 {
 	char	*tmp;
 
-	ft_check_parenthesis(&(*sys), &(*str), NULL);
+	ft_check_inhibitor(&(*sys), &(*str));
 	ft_check_excl(&(*sys), &(*str));
 	if ((ft_history_maj(&((*sys)->history),
 						*str, (*sys)->env, (*sys)->shvar)) == FALSE)

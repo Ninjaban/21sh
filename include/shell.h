@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/03 11:45:13 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/05 11:13:46 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -170,7 +170,7 @@ typedef struct	s_hist
 **   struct termios	term_save	term_save
 **   t_alias*		alias		liste des alias définis
 **   t_btree*		cmds		arbre binaire des commandes
-**   t_lst*			history		historique < ? pourquoi pas le type hist ?
+**   t_lst*			history		historique
 **   int*			keymap		tableau d'ints contenant les touches actives
 **   char**			env			variable d'environnement
 **   char**			shvar		variables locales (set)
@@ -361,7 +361,7 @@ char			ft_signal_stop(void);
 */
 
 void			ft_check_excl(t_sys **sys, char **str);
-void			ft_check_parenthesis(t_sys **sys, char **str, char *tmp);
+void			ft_check_inhibitor(t_sys **sys, char **str);
 void			ft_shell(t_sys *sys, int exit, char *str, char *tmp);
 int				ft_history_maj(t_lst **history, char *line,
 								char **env, char **shvar);

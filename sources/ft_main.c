@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 09:29:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/03 11:44:39 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/05 11:06:33 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ static int	ft_check_path(char **t, char ***cpy)
 **
 ** VARIABLES
 **   char**		cpy			[RV] copie du tableau
-**   int		n			conteur pour parcourir le tableau
+**   int		n			compteur pour parcourir le tableau
 **
 ** VALEUR DE RETOUR (char**)
 **   En cas d'erreur, retourne NULL. Sinon, retourne le tableau copié.
