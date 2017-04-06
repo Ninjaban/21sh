@@ -56,10 +56,10 @@ void		ft_read_move(char **str, int c, size_t *pos, t_sys *sys)
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
 	}
-	if (c == sys->keymap[KEY_HOM] && *pos > 0)
+	while (c == sys->keymap[KEY_HOM] && *pos > 0)
 	{
-		ft_putchar_fd('\r', 0);
-		*pos = 0;
+		ft_putchar_fd('\b', 0);
+		*pos = *pos - 1;
 	}
 	if (c == sys->keymap[KEY_RIG] && *pos < ft_strlen(*str))
 		ft_putchar_fd((*str)[(*pos)++], 0);

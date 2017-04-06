@@ -15,15 +15,18 @@
 char		*ft_strdup(char *src)
 {
 	char	*str;
-	int		n;
+	size_t	n;
 
-	n = -1;
+	n = 0;
 	if (!src)
 		return (NULL);
 	if ((str = malloc(ft_strlen(src) + 1)) == NULL)
 		return (NULL);
-	while (src[++n])
+	while (src[n])
+	{
 		str[n] = src[n];
+		n = n + 1;
+	}
 	str[n] = '\0';
 	return (str);
 }
