@@ -21,13 +21,17 @@ void		ft_read_cpy(char *str, size_t n, char **buf)
 	if (*buf)
 		free(*buf);
 	if ((*buf = malloc((tmp) ? ft_strlen(tmp) + 2 : 2)) == NULL)
+	{
+		free(tmp);
 		return ;
+	}
 	i = -1;
 	if (tmp)
 		while (tmp[++i])
 			(*buf)[i] = tmp[i];
 	else
 		i = 0;
+	free(tmp);
 	(*buf)[i++] = str[n];
 	(*buf)[i] = '\0';
 }
