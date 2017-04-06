@@ -78,16 +78,18 @@ char		*ft_gestion_error_check_redir(char *str)
 char 		ft_check_semicolon_syntax(char *cmd)
 {
     int		c;
+	char	b;
 
     c = 0;
     while (cmd[c])
     {
-        if (IS_REDIR_CHAR(cmd[c]))
+        if ((IS_REDIR_CHAR(cmd[c]) || c == ';') && (b = cmd[c]))
         {
             c++;
             while (cmd[c] && IS_BLANK(cmd[c]))
                 c++;
-            if (cmd[c] == ';')
+            if ((cmd[c] != b) && (cmd[c] == ';' || c == '\0'
+								  || IS_REDIR_CHAR(cmd[c])))
                 return (FALSE);
             c--;
         }
