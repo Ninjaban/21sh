@@ -89,7 +89,7 @@ void		*ft_gestion_error(char *str)
 			return (ft_return(tmp));
 		n = n + 1;
 	}
-	if (ft_check(tmp[ft_strlen(tmp) - 1], "<>|") == 1)
+	if (ft_check(tmp[ft_strlen(tmp) - 1], "<>|&") == 1)
 		return (ft_return(tmp));
 	free(tmp);
 	return (ft_gestion_error_check_redir(str));

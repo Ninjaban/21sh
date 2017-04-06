@@ -59,3 +59,4 @@ char		*ft_gestion_error_check_redir(char *str)
 	}
 	return (NULL);
 }
+

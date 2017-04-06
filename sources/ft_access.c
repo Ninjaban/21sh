@@ -66,7 +66,7 @@ char			*ft_access(char *name, char **env, char **shvar)
 			return (NULL);
 		}
 	tmp = ft_trypath(name, path);
-	free(path);
+	ft_free_tab(path);
 	return (tmp);
 }
 

@@ -19,7 +19,9 @@ void		ft_print(char *str, size_t pos, int inc)
 	static size_t	len_s = 0;
 	int				n;
 
-	ft_putchar_fd('\r', 0);
+	n = (int)pos;
+	while (n-- > 0)
+		ft_putchar_fd('\b', 0);
 	n = (int)len_s;
 	while (n-- > 0)
 		ft_putchar_fd(' ', 0);
