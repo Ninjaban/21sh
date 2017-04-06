@@ -83,13 +83,13 @@ char 		ft_check_semicolon_syntax(char *cmd)
     c = 0;
     while (cmd[c])
     {
-        if ((IS_REDIR_CHAR(cmd[c]) || c == ';') && (b = cmd[c]))
+        if ((IS_REDIR_CHAR(cmd[c]) || cmd[c] == ';'))
         {
+			b = cmd[c];
             c++;
             while (cmd[c] && IS_BLANK(cmd[c]))
                 c++;
-            if ((cmd[c] != b) && (cmd[c] == ';' || c == '\0'
-								  || IS_REDIR_CHAR(cmd[c])))
+            if ((cmd[c] != b) && (cmd[c] == ';' || c == '\0' || IS_REDIR_CHAR(cmd[c])))
                 return (FALSE);
             c--;
         }
