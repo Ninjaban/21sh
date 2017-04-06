@@ -89,14 +89,19 @@ char		ft_check_semicolon_syntax(char *cmd)
 	c = 0;
 	while (cmd[c])
 	{
+		b = cmd[c];
+		if ((cmd[c] == '"' || cmd[c] == '\"'))
+			while (cmd[c] && cmd[c] != b)
+				c++;
+		if (cmd[c] == '\0')
+			c--;
 		if ((IS_REDIR_CHAR(cmd[c]) || cmd[c] == ';'))
 		{
-			b = cmd[c];
 			c++;
 			while (cmd[c] && IS_BLANK(cmd[c]))
 				c++;
-			if ((cmd[c] != b) && (cmd[c] == ';' || cmd[c] == '\0' ||
-								IS_REDIR_CHAR(cmd[c])))
+			if ((cmd[c] != b && cmd[c] != '&') && (cmd[c] == ';'
+									|| cmd[c] == '\0' || IS_REDIR_CHAR(cmd[c])))
 				return (FALSE);
 			c--;
 		}
