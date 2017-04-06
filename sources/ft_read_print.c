@@ -17,10 +17,9 @@
 void		ft_print(char *str, size_t pos, int inc)
 {
 	static size_t	len_s = 0;
+	char			*tmp;
 	int				n;
 	int				i;
-
-	char			*tmp;
 
 	if ((tmp = ft_strnew(pos + (len_s * 2) + 3)) == NULL)
 		return ;

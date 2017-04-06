@@ -137,7 +137,6 @@ static int		ft_alias_add(t_cmd *cmd, t_alias **alias)
 **   t_alias*	tmp			curseur pour parcourir les alias
 */
 
-
 static void		ft_alias_aff(t_alias *alias)
 {
 	t_alias	*tmp;
