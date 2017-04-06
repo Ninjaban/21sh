@@ -82,9 +82,15 @@ void		ft_exec_read_file(t_node *node)
 
 	name = ft_strjoin("./", node->cmd->name);
 	if (access(name, F_OK) != 0)
+	{
+		ft_strdel(&name);
 		return (ft_error(ERROR_NOTFOUND));
+	}
 	if ((fd = open(name, O_RDONLY)) == -1)
+	{
+		ft_strdel(&name);
 		return (ft_error(ERROR_READ));
+	}
 	while (get_next_line(fd, &line) == 1)
 		ft_putendl(line);
 	exit(1);
