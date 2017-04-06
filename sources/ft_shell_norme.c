@@ -65,7 +65,6 @@ static void	ft_check_parenthesis(t_sys **sys, char **str)
 		if (type == FALSE &&
 			(ft_strlen(*str) && (*str)[ft_strlen(*str) - 1] == '\\'))
 		{
-			ft_putendl("back");
 			(*str)[ft_strlen(*str) - 1] = '\0';
 			new = ft_strdup(tmp);
 		}
@@ -85,7 +84,6 @@ void		ft_check_inhibitor(t_sys **sys, char **str)
 	char		*tmp;
 
 	ft_check_parenthesis(&(*sys), &(*str));
-	ft_putendl(*str);
 	if (ft_strlen(*str))
 		while ((*str)[ft_strlen(*str) - 1] == '\\')
 		{
@@ -98,6 +96,5 @@ void		ft_check_inhibitor(t_sys **sys, char **str)
 			free(*str);
 			*str = new;
 			ft_check_parenthesis(&(*sys), &(*str));
-			ft_putendl(*str);
 		}
 }
