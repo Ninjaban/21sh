@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/11 08:42:36 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/06 12:34:35 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,23 @@ static char		**ft_tabcpy(char **tab)
 	return (dst);
 }
 
+#include "error.h"
+
 t_cmd			*ft_parsecmd(char *str)
 {
 	t_cmd		*cmd;
 	char		**tab;
+	char 		*tmp;
 
 	ft_parse_parenthesis(&str, ' ', '\a');
+	tmp = ft_strtrim(str);
+	if (tmp)
+		free(tmp);
+	else
+	{
+		free(str);
+		return (NULL);
+	}
 	if ((tab = ft_strsplit(str, " \t")) == NULL || !tab[0])
 		return (NULL);
 	if ((cmd = malloc(sizeof(t_cmd))) == NULL)
