@@ -18,15 +18,23 @@ void		ft_print(char *str, size_t pos, int inc)
 {
 	static size_t	len_s = 0;
 	int				n;
+	int				i;
 
-	n = (int)pos;
-	while (n-- > 0)
-		ft_putchar_fd('\b', 0);
-	n = (int)len_s;
-	while (n-- > 0)
-		ft_putchar_fd(' ', 0);
-	while (len_s-- > 0)
-		ft_putchar_fd('\b', 0);
+	char			*tmp;
+
+	if ((tmp = ft_strnew(pos + (len_s * 2) + 3)) == NULL)
+		return ;
+	n = 0;
+	while (n < (int)pos)
+		tmp[n++] = '\b';
+	i = 0;
+	while (i < (int)len_s)
+		tmp[n + i++] = ' ';
+	while (len_s > 0)
+		tmp[n + i + len_s--] = '\b';
+	tmp[n + i] = '\b';
+	ft_putstr_fd(tmp, 0);
+	free(tmp);
 	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
 	n = (int)len_s - 1;
 	ft_putstr_fd(str, 0);

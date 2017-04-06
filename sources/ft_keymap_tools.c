@@ -106,8 +106,9 @@ int			*ft_keymap_init(void)
 {
 	int	*keymap;
 
-	if ((keymap = malloc(sizeof(int *) * KEY_SIZE)) == NULL)
+	if ((keymap = malloc(sizeof(int *) * (KEY_SIZE + 1))) == NULL)
 		return (NULL);
+	keymap[KEY_SIZE] = 0;
 	ft_keymap_reset(&keymap);
 	return (keymap);
 }

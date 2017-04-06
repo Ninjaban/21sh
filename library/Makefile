@@ -32,7 +32,8 @@ SRC_PART1		=	ft_strcmp.c \
 					ft_isprint.c \
 					ft_isascii.c \
 					ft_isoct.c \
-					ft_ishex.c
+					ft_ishex.c \
+					ft_bzero.c
 
 SRC_PART2		=   ft_esc_hex.c \
                     ft_eval_esc.c \
