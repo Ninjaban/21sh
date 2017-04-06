@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:41:52 by jcarra            #+#    #+#             */
-/*   Updated: 2017/02/17 12:05:31 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/06 17:05:15 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,11 +91,8 @@ void		*ft_gestion_error(char *str)
 	}
 	if (ft_check(tmp[ft_strlen(tmp) - 1], "<>|") == 1)
 		return (ft_return(tmp));
-	/*
 	if (!ft_check_semicolon_syntax(tmp))
 		return (ft_return(tmp));
 	free(tmp);
 	return (ft_gestion_error_check_redir(str));
-	 */
-	return (NULL);
 }

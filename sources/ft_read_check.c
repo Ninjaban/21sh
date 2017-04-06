@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/01 12:00:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/31 12:41:48 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/06 17:04:07 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ static char	ft_check_keymap(int c, int *keymap)
 	size_t	n;
 
 	n = 0;
-
 	while (n < KEY_SIZE)
 		if (c == keymap[n++])
 			return (TRUE);

@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/01 12:00:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/01 12:00:00 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/06 17:05:50 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static void		ft_parsing_semicolon_suite(char **tmp, char *str,
 	{
 		(*tmp)[(*i)++] = ' ';
 		while (str[(*n)] == '<' || str[(*n)] == '>' ||
-			   str[(*n)] == '|' || str[(*n)] == '&')
+				str[(*n)] == '|' || str[(*n)] == '&')
 			(*tmp)[(*i)++] = str[(*n)++];
 		(*tmp)[(*i)] = ' ';
 		*n = *n - 1;
@@ -53,12 +53,11 @@ static void		ft_parsing_semicolon_suite(char **tmp, char *str,
 	else
 	{
 		while (str[(*n)] == '<' || str[(*n)] == '>' ||
-			   str[(*n)] == '|' || str[(*n)] == '&')
+				str[(*n)] == '|' || str[(*n)] == '&')
 			(*tmp)[(*i)++] = str[(*n)++];
 		*n = *n - 1;
 		*i = *i - 1;
 	}
-
 }
 
 static char		*ft_parsing_semicolon_copy(char *tmp, char *str,
