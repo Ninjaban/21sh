@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 21:13:50 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/30 13:52:48 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/06 11:02:36 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,14 +54,13 @@ static void	ft_echo_token(char *str, char *token, size_t len)
 			token[i] = 0x5c;
 			i++;
 			token[i] = 'n';
-			n++;
 		}
 		else
 			token[i] = str[n];
 		n++;
 		i++;
 	}
-	token[len] = '\0';
+	token[i] = '\0';
 }
 
 /*
