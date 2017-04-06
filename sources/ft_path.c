@@ -38,6 +38,7 @@ static void	ft_verifpath(char ***path)
 			tmp = ft_strjoin((*path)[n], "/");
 			free((*path)[n]);
 			(*path)[n] = tmp;
+			free(tmp);
 		}
 		n = n + 1;
 	}

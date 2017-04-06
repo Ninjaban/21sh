@@ -29,10 +29,12 @@ static char		*ft_trypath(char *name, char **path)
 				return (tmp);
 			else
 			{
+				free(tmp);
 				ft_log(TYPE_WARNING, ERROR_PERMS);
 				return (NULL);
 			}
 		}
+		free(tmp);
 	}
 	ft_log(TYPE_WARNING, ERROR_NOTFOUND);
 	ft_cmd_nfound(name);
