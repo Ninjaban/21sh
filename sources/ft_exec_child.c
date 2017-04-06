@@ -91,6 +91,7 @@ void		ft_exec_read_file(t_node *node)
 		ft_strdel(&name);
 		return (ft_error(ERROR_READ));
 	}
+	ft_strdel(&name);
 	while (get_next_line(fd, &line) == 1)
 		ft_putendl(line);
 	exit(1);
