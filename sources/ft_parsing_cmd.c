@@ -34,6 +34,8 @@ static void		*ft_freturn(char *str, char **tab, t_cmd *cmd)
 		free(str);
 	if (tab)
 		ft_free_tab(tab);
+	if (cmd)
+		free(cmd);
 	return (NULL);
 }
 
