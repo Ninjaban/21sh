@@ -15,48 +15,83 @@
 
 char		ft_quotes(char c, char quotes)
 {
-	static char	save;
+    static char	save;
 
-	if (c != '\"' && c != '\'')
-		return (quotes);
-	if (quotes == TRUE)
-		return ((c == save) ? FALSE : TRUE);
-	else
-	{
-		save = c;
-		return (TRUE);
-	}
+    if (c != '\"' && c != '\'')
+        return (quotes);
+    if (quotes == TRUE)
+        return ((c == save) ? FALSE : TRUE);
+    else
+    {
+        save = c;
+        return (TRUE);
+    }
 }
 
 char		*ft_gestion_error_check_redir(char *str)
 {
-	size_t	n;
-	char	redir;
-	char	quote;
+    size_t	n;
+    char	redir;
+    char	quote;
 
-	n = 0;
-	redir = FALSE;
-	quote = FALSE;
-	while (str[n])
-	{
-		quote = ft_quotes(str[n], quote);
-		if ((str[n] == '>' || ft_strncmp(str + n, ">>", 1) == 0) &&
-				quote == FALSE)
-		{
-			if (redir == TRUE)
-				return (ERROR_SYNTAX);
-			redir = TRUE;
-			while (str[n] == '>')
-				n = n + 1;
-			n = n - 1;
-		}
-		else if ((str[n] == '<' || ft_strncmp(str + n, "<<", 1) == 0 ||
-				str[n] == '|' || str[n] == ';' ||
-				ft_strncmp(str + n, "&&", 1) == 0 ||
-				ft_strncmp(str + n, "||", 1) == 0) && quote == FALSE)
-			redir = FALSE;
-		n = n + 1;
-	}
-	return (NULL);
+    n = 0;
+    redir = FALSE;
+    quote = FALSE;
+    while (str[n])
+    {
+        quote = ft_quotes(str[n], quote);
+        if ((str[n] == '>' || ft_strncmp(str + n, ">>", 1) == 0) &&
+            quote == FALSE)
+        {
+            if (redir == TRUE)
+                return (ERROR_SYNTAX);
+            redir = TRUE;
+            while (str[n] == '>')
+                n = n + 1;
+            n = n - 1;
+        }
+        else if ((str[n] == '<' || ft_strncmp(str + n, "<<", 1) == 0 ||
+                  str[n] == '|' || str[n] == ';' ||
+                  ft_strncmp(str + n, "&&", 1) == 0 ||
+                  ft_strncmp(str + n, "||", 1) == 0) && quote == FALSE)
+            redir = FALSE;
+        n = n + 1;
+    }
+    return (NULL);
 }
 
+/*
+** FUNCTION :: CHECK SEMICOLON SYNTAX
+**   Check la syntaxe liée au point virgule ; (par ex [ls && ; pwd] ne doit pas
+** 	 fonctionner).
+**
+** PARAMETRES
+**   char*		cmd			la ligne de commande non trimée
+**
+** VARIABLES
+**	 int		c			curseur pour explorer cmd
+**
+** VALEUR DE RETOUR
+**   FALSE en cas d'erreur, TRUE sinon.
+**/
+
+char 		ft_check_semicolon_syntax(char *cmd)
+{
+    int		c;
+
+    c = 0;
+    while (cmd[c])
+    {
+        if (IS_REDIR_CHAR(cmd[c]))
+        {
+            c++;
+            while (cmd[c] && IS_BLANK(cmd[c]))
+                c++;
+            if (cmd[c] == ';')
+                return (FALSE);
+            c--;
+        }
+        c++;
+    }
+    return (TRUE);
+}
