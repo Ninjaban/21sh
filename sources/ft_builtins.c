@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** FICHIER :: ft_builtins
+**   Forêt de if pour gérer les builtins. caca.
+*/
+
 #include "libft.h"
 #include "shell.h"
 

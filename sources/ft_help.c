@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_shell.c                                         :+:      :+:    :+:   */
+/*   ft_help.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,6 +9,20 @@
 /*   Updated: 2017/03/31 10:47:26 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** FICHIER :: HELP
+**   Fichier contenant le built-in help
+**
+** LISTE DES FONCTIONS
+**    > ft_help_check
+**    > ft_help_strjoin
+**    > ft_help_getname
+**    > ft_help_init_argv
+**   ft_help
+**
+** INCLUDES
+*/
 
 #include "shell.h"
 #include "error.h"
@@ -43,6 +57,20 @@ static char	*ft_help_strjoin(char *src, char *join)
 	return (new);
 }
 
+/*
+** FONCTION :: ft_help_getname
+**   Prépare
+**
+** PARAMETRES
+**   char*		path		path du .help
+**
+** VARIABLES
+**   char**		argv		arguments
+**
+** VALEUR DE RETOUR (char**)
+**   Retourne NULL en cas d'erreur, ARGV autrement.
+*/
+
 static char	*ft_help_getname(char **av, char **env, char **shvar)
 {
 	char	*home;
@@ -58,6 +86,20 @@ static char	*ft_help_getname(char **av, char **env, char **shvar)
 		return (ft_error_void(ERROR_ALLOC));
 	return (path);
 }
+
+/*
+** FONCTION :: ft_help_init_argv
+**   Prépare les arguments de help en cat /file
+**
+** PARAMETRES
+**   char*		path		path du .help
+**
+** VARIABLES
+**   char**		argv		arguments
+**
+** VALEUR DE RETOUR (char**)
+**   Retourne NULL en cas d'erreur, ARGV autrement.
+*/
 
 static char	**ft_help_init_argv(char *path)
 {
@@ -80,6 +122,23 @@ static char	**ft_help_init_argv(char *path)
 	argv[2] = NULL;
 	return (argv);
 }
+
+/*
+** FONCTION :: ft_help
+**   Core du builtin help : affiche la liste des built ins
+**
+** PARAMETRES
+**   char**		av			arguments
+**   char**		env			environnement
+**   char**		shvar		variables locales
+**
+** VARIABLES
+**   char**		argv		arguments... ?
+** 	 pid_t		child		pid pour le fork
+**
+** VALEUR DE RETOUR (char)
+**   Retourne FALSE en cas d'erreur, TRUE autrement.
+*/
 
 char		ft_help(char **av, char **env, char **shvar)
 {
