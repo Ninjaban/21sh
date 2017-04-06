@@ -89,7 +89,8 @@ char 		ft_check_semicolon_syntax(char *cmd)
             c++;
             while (cmd[c] && IS_BLANK(cmd[c]))
                 c++;
-            if ((cmd[c] != b) && (cmd[c] == ';' || c == '\0' || IS_REDIR_CHAR(cmd[c])))
+            if ((cmd[c] != b) && (cmd[c] == ';' || cmd[c] == '\0' ||
+								  IS_REDIR_CHAR(cmd[c])))
                 return (FALSE);
             c--;
         }
