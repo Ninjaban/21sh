@@ -67,7 +67,10 @@ void		ft_exec_file(t_node *node, char redir)
 	else
 		fd = ft_atoi(node->cmd->name + 1);
 	while (get_next_line(0, &line) == 1)
+	{
 		ft_putendl_fd(line, fd);
+		ft_strdel(&line);
+	}
 	exit(1);
 }
 
