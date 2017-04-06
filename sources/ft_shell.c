@@ -48,7 +48,6 @@ static char	ft_launcher(t_sys **sys, char **str, int *exit)
 	if ((tmp = ft_strtrim(*str)) != NULL)
 	{
 		free(tmp);
-		ft_putendl(*str);
 		if (ft_launcher_parse(&(*str), &(*sys)) == TRUE)
 			return (TRUE);
 	}

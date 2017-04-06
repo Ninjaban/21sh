@@ -41,12 +41,24 @@ static char		*ft_parsing_semicolon_new(const char *str)
 static void		ft_parsing_semicolon_suite(char **tmp, char *str,
 											size_t *n, size_t *i)
 {
-	(*tmp)[(*i)++] = ' ';
-	while (str[(*n)] == '<' || str[(*n)] == '>' ||
-			str[(*n)] == '|' || str[(*n)] == '&')
-		(*tmp)[(*i)++] = str[(*n)++];
-	(*tmp)[(*i)] = ' ';
-	*n = *n - 1;
+	if (ft_strncmp(str + *n, ">&", 1) && ft_strncmp(str + *n, ">&", 1))
+	{
+		(*tmp)[(*i)++] = ' ';
+		while (str[(*n)] == '<' || str[(*n)] == '>' ||
+			   str[(*n)] == '|' || str[(*n)] == '&')
+			(*tmp)[(*i)++] = str[(*n)++];
+		(*tmp)[(*i)] = ' ';
+		*n = *n - 1;
+	}
+	else
+	{
+		while (str[(*n)] == '<' || str[(*n)] == '>' ||
+			   str[(*n)] == '|' || str[(*n)] == '&')
+			(*tmp)[(*i)++] = str[(*n)++];
+		*n = *n - 1;
+		*i = *i - 1;
+	}
+
 }
 
 static char		*ft_parsing_semicolon_copy(char *tmp, char *str,

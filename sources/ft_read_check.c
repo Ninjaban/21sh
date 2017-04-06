@@ -56,6 +56,18 @@ static void	ft_read_check_suite(int c, char **str, t_sys **sys, size_t *n)
 		cpy = FALSE;
 }
 
+static char	ft_check_keymap(int c, int *keymap)
+{
+	size_t	n;
+
+	n = 0;
+
+	while (n < KEY_SIZE)
+		if (c == keymap[n++])
+			return (TRUE);
+	return (FALSE);
+}
+
 char		ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 {
 	static char	autocompl = TRUE;
@@ -70,7 +82,8 @@ char		ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 		else
 			ft_print(*str, (*n), 0);
 	}
-	if ((ft_isprint(c) && c != (*sys)->keymap[KEY_TAB]) ||
+	if ((ft_isprint(c) && c != (*sys)->keymap[KEY_TAB] &&
+		ft_check_keymap(c, (*sys)->keymap) == FALSE) ||
 		(c == (*sys)->keymap[KEY_TAB] && autocompl == TRUE))
 	{
 		ft_read_print(&(*str), c, &(*n), &(*sys));
