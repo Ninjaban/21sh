@@ -12,6 +12,7 @@
 
 #include "libft.h"
 #include "shell.h"
+#include "error.h"
 
 static char		**ft_tabcpy(char **tab)
 {
@@ -27,39 +28,35 @@ static char		**ft_tabcpy(char **tab)
 	return (dst);
 }
 
-#include "error.h"
+static void		*ft_freturn(char *str, char **tab, t_cmd *cmd)
+{
+	if (str)
+		free(str);
+	if (tab)
+		ft_free_tab(tab);
+	return (NULL);
+}
 
 t_cmd			*ft_parsecmd(char *str)
 {
 	t_cmd		*cmd;
 	char		**tab;
-	char 		*tmp;
+	char		*tmp;
 
 	ft_parse_parenthesis(&str, ' ', '\a');
-	tmp = ft_strtrim(str);
-	if (tmp)
+	if ((tmp = ft_strtrim(str)))
 		free(tmp);
 	else
-	{
-		free(str);
-		return (NULL);
-	}
+		return (ft_freturn(str, NULL, NULL));
 	if ((tab = ft_strsplit(str, " \t")) == NULL || !tab[0])
 		return (NULL);
-	if ((cmd = malloc(sizeof(t_cmd))) == NULL)
-	{
-		ft_free_tab(tab);
-		return (NULL);
-	}
+	if (!(cmd = malloc(sizeof(t_cmd))))
+		return (ft_freturn(NULL, tab, NULL));
 	cmd->name = NULL;
 	cmd->argv = NULL;
 	ft_parenthesis_undo(&tab);
 	if ((cmd->name = ft_strdup(tab[0])) == NULL)
-	{
-		ft_free_tab(tab);
-		free(cmd);
-		return (NULL);
-	}
+		return (ft_freturn(NULL, tab, cmd));
 	cmd->argv = ft_tabcpy(tab);
 	ft_free_tab(tab);
 	free(str);
