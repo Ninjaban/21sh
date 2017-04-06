@@ -46,6 +46,9 @@ char		*ft_gestion_error_check_redir(char *str)
 			if (redir == TRUE)
 				return (ERROR_SYNTAX);
 			redir = TRUE;
+			while (str[n] == '>')
+				n = n + 1;
+			n = n - 1;
 		}
 		else if ((str[n] == '<' || ft_strncmp(str + n, "<<", 1) == 0 ||
 				str[n] == '|' || str[n] == ';' ||
