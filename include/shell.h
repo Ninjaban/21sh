@@ -76,10 +76,10 @@
 # define RIGHT 			1
 
 /*
- * DEFINES :: checks
- *   IS_REDIR_CHAR      si c'est un caractère de redirection (><&|)
- *   IS_BLANK           si c'est un caractère blanc (' ', '\t')
- */
+** DEFINES :: checks
+**   IS_REDIR_CHAR      si c'est un caractère de redirection (><&|)
+**   IS_BLANK           si c'est un caractère blanc (' ', '\t')
+*/
 
 # define IS_REDIR_CHAR(x) (x == '>' || x == '<' || x == '&' || x == '|')
 # define IS_BLANK(x) (x == ' ' || x == '\n')
@@ -233,7 +233,7 @@ t_btree			*ft_parsing(char *str, t_sys *sys);
 
 void			*ft_gestion_error(char *str);
 char			*ft_gestion_error_check_redir(char *str);
-char 		    ft_check_semicolon_syntax(char *cmd);
+char			ft_check_semicolon_syntax(char *cmd);
 
 /*
 **	Tools
