@@ -360,6 +360,13 @@ char			ft_read_check(int c, char **str, t_sys **sys, size_t *n);
 int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 
 /*
+**	Coloration Syntaxique
+*/
+
+char			*ft_read_color_first(char *str);
+void			ft_read_color_main(char *str);
+
+/*
 **	Signaux
 */
 

@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/jonathan/Project/21sh/include -I/home/jonathan/Project/21sh/library/include 
+C_INCLUDES = -I/home/jonathan/Project/42sh/include -I/home/jonathan/Project/42sh/library/include 
 

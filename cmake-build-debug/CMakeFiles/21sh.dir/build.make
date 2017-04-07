@@ -43,10 +43,10 @@ RM = /home/jonathan/Clion/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jonathan/Project/21sh
+CMAKE_SOURCE_DIR = /home/jonathan/Project/42sh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jonathan/Project/21sh/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jonathan/Project/42sh/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/21sh.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/21sh.dir/flags.make
 
 CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o: ../library/Btree/btree_add_node.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o   -c /home/jonathan/Project/21sh/library/Btree/btree_add_node.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o   -c /home/jonathan/Project/42sh/library/Btree/btree_add_node.c
 
 CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Btree/btree_add_node.c > CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Btree/btree_add_node.c > CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.i
 
 CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Btree/btree_add_node.c -o CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Btree/btree_add_node.c -o CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.s
 
 CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/21sh.dir/library/Btree/btree_add_node.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o: ../library/Btree/btree_apply_infix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o   -c /home/jonathan/Project/21sh/library/Btree/btree_apply_infix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o   -c /home/jonathan/Project/42sh/library/Btree/btree_apply_infix.c
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Btree/btree_apply_infix.c > CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Btree/btree_apply_infix.c > CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.i
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Btree/btree_apply_infix.c -o CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Btree/btree_apply_infix.c -o CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.s
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/21sh.dir/library/Btree/btree_apply_infix.c.o.provides.build: CMakeFil
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o: ../library/Btree/btree_apply_prefix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o   -c /home/jonathan/Project/21sh/library/Btree/btree_apply_prefix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o   -c /home/jonathan/Project/42sh/library/Btree/btree_apply_prefix.c
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Btree/btree_apply_prefix.c > CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Btree/btree_apply_prefix.c > CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.i
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Btree/btree_apply_prefix.c -o CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Btree/btree_apply_prefix.c -o CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.s
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/21sh.dir/library/Btree/btree_apply_prefix.c.o.provides.build: CMakeFi
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o: ../library/Btree/btree_apply_suffix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o   -c /home/jonathan/Project/21sh/library/Btree/btree_apply_suffix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o   -c /home/jonathan/Project/42sh/library/Btree/btree_apply_suffix.c
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Btree/btree_apply_suffix.c > CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Btree/btree_apply_suffix.c > CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.i
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Btree/btree_apply_suffix.c -o CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Btree/btree_apply_suffix.c -o CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.s
 
 CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/21sh.dir/library/Btree/btree_apply_suffix.c.o.provides.build: CMakeFi
 
 CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o: ../library/Btree/btree_create_node.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o   -c /home/jonathan/Project/21sh/library/Btree/btree_create_node.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o   -c /home/jonathan/Project/42sh/library/Btree/btree_create_node.c
 
 CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Btree/btree_create_node.c > CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Btree/btree_create_node.c > CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.i
 
 CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Btree/btree_create_node.c -o CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Btree/btree_create_node.c -o CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.s
 
 CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/21sh.dir/library/Btree/btree_create_node.c.o.provides.build: CMakeFil
 
 CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o: ../library/Btree/btree_insert_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o   -c /home/jonathan/Project/21sh/library/Btree/btree_insert_data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o   -c /home/jonathan/Project/42sh/library/Btree/btree_insert_data.c
 
 CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Btree/btree_insert_data.c > CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Btree/btree_insert_data.c > CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.i
 
 CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Btree/btree_insert_data.c -o CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Btree/btree_insert_data.c -o CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.s
 
 CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/21sh.dir/library/Btree/btree_insert_data.c.o.provides.build: CMakeFil
 
 CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o: ../library/GetNextLine/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o   -c /home/jonathan/Project/21sh/library/GetNextLine/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o   -c /home/jonathan/Project/42sh/library/GetNextLine/get_next_line.c
 
 CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/GetNextLine/get_next_line.c > CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/GetNextLine/get_next_line.c > CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.i
 
 CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/GetNextLine/get_next_line.c -o CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/GetNextLine/get_next_line.c -o CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.s
 
 CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/21sh.dir/library/GetNextLine/get_next_line.c.o.provides.build: CMakeF
 
 CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o: ../library/List/ft_create_elem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o   -c /home/jonathan/Project/21sh/library/List/ft_create_elem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o   -c /home/jonathan/Project/42sh/library/List/ft_create_elem.c
 
 CMakeFiles/21sh.dir/library/List/ft_create_elem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_create_elem.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_create_elem.c > CMakeFiles/21sh.dir/library/List/ft_create_elem.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_create_elem.c > CMakeFiles/21sh.dir/library/List/ft_create_elem.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_create_elem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_create_elem.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_create_elem.c -o CMakeFiles/21sh.dir/library/List/ft_create_elem.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_create_elem.c -o CMakeFiles/21sh.dir/library/List/ft_create_elem.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/21sh.dir/library/List/ft_create_elem.c.o.provides.build: CMakeFiles/2
 
 CMakeFiles/21sh.dir/library/List/ft_list_at.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_at.c.o: ../library/List/ft_list_at.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_at.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_at.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_at.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_at.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_at.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_at.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_at.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_at.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_at.c > CMakeFiles/21sh.dir/library/List/ft_list_at.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_at.c > CMakeFiles/21sh.dir/library/List/ft_list_at.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_at.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_at.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_at.c -o CMakeFiles/21sh.dir/library/List/ft_list_at.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_at.c -o CMakeFiles/21sh.dir/library/List/ft_list_at.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_at.c.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_at.c.o.provides.build: CMakeFiles/21sh.
 
 CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o: ../library/List/ft_list_clear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_clear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_clear.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_clear.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_clear.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_clear.c > CMakeFiles/21sh.dir/library/List/ft_list_clear.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_clear.c > CMakeFiles/21sh.dir/library/List/ft_list_clear.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_clear.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_clear.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_clear.c -o CMakeFiles/21sh.dir/library/List/ft_list_clear.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_clear.c -o CMakeFiles/21sh.dir/library/List/ft_list_clear.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_clear.c.o.provides.build: CMakeFiles/21
 
 CMakeFiles/21sh.dir/library/List/ft_list_del.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_del.c.o: ../library/List/ft_list_del.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_del.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_del.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_del.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_del.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_del.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_del.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_del.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_del.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_del.c > CMakeFiles/21sh.dir/library/List/ft_list_del.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_del.c > CMakeFiles/21sh.dir/library/List/ft_list_del.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_del.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_del.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_del.c -o CMakeFiles/21sh.dir/library/List/ft_list_del.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_del.c -o CMakeFiles/21sh.dir/library/List/ft_list_del.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_del.c.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_del.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o: ../library/List/ft_list_foreach.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_foreach.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_foreach.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_foreach.c > CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_foreach.c > CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_foreach.c -o CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_foreach.c -o CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_foreach.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/21sh.dir/library/List/ft_list_last.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_last.c.o: ../library/List/ft_list_last.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_last.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_last.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_last.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_last.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_last.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_last.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_last.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_last.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_last.c > CMakeFiles/21sh.dir/library/List/ft_list_last.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_last.c > CMakeFiles/21sh.dir/library/List/ft_list_last.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_last.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_last.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_last.c -o CMakeFiles/21sh.dir/library/List/ft_list_last.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_last.c -o CMakeFiles/21sh.dir/library/List/ft_list_last.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_last.c.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_last.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o: ../library/List/ft_list_push_back.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_push_back.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_push_back.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_push_back.c > CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_push_back.c > CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_push_back.c -o CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_push_back.c -o CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_push_back.c.o.provides.build: CMakeFile
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o: ../library/List/ft_list_push_front.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_push_front.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_push_front.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_push_front.c > CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_push_front.c > CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_push_front.c -o CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_push_front.c -o CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_push_front.c.o.provides.build: CMakeFil
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o: ../library/List/ft_list_push_params.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_push_params.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_push_params.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_push_params.c > CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_push_params.c > CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_push_params.c -o CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_push_params.c -o CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_push_params.c.o.provides.build: CMakeFi
 
 CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o: ../library/List/ft_list_reverse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_reverse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_reverse.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_reverse.c > CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_reverse.c > CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_reverse.c -o CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_reverse.c -o CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_reverse.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/21sh.dir/library/List/ft_list_size.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_size.c.o: ../library/List/ft_list_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_size.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_size.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_size.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_size.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_size.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_size.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_size.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_size.c > CMakeFiles/21sh.dir/library/List/ft_list_size.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_size.c > CMakeFiles/21sh.dir/library/List/ft_list_size.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_size.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_size.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_size.c -o CMakeFiles/21sh.dir/library/List/ft_list_size.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_size.c -o CMakeFiles/21sh.dir/library/List/ft_list_size.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_size.c.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_size.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o: ../library/List/ft_list_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o   -c /home/jonathan/Project/21sh/library/List/ft_list_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o   -c /home/jonathan/Project/42sh/library/List/ft_list_sort.c
 
 CMakeFiles/21sh.dir/library/List/ft_list_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/List/ft_list_sort.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/List/ft_list_sort.c > CMakeFiles/21sh.dir/library/List/ft_list_sort.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/List/ft_list_sort.c > CMakeFiles/21sh.dir/library/List/ft_list_sort.c.i
 
 CMakeFiles/21sh.dir/library/List/ft_list_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/List/ft_list_sort.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/List/ft_list_sort.c -o CMakeFiles/21sh.dir/library/List/ft_list_sort.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/List/ft_list_sort.c -o CMakeFiles/21sh.dir/library/List/ft_list_sort.c.s
 
 CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/21sh.dir/library/List/ft_list_sort.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o: ../library/Part_1/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_atoi.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_atoi.c > CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_atoi.c > CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_atoi.c -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_atoi.c -o CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_atoi.c.o.provides.build: CMakeFiles/21sh.d
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o: ../library/Part_1/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_isalnum.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_isalnum.c > CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_isalnum.c > CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_isalnum.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_isalnum.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isalnum.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o: ../library/Part_1/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_isalpha.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_isalpha.c > CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_isalpha.c > CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_isalpha.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_isalpha.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isalpha.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o: ../library/Part_1/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_isascii.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_isascii.c > CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_isascii.c > CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_isascii.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_isascii.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isascii.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o: ../library/Part_1/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_isdigit.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_isdigit.c > CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_isdigit.c > CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_isdigit.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_isdigit.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isdigit.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o: ../library/Part_1/ft_ishex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_ishex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_ishex.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_ishex.c > CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_ishex.c > CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_ishex.c -o CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_ishex.c -o CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_ishex.c.o.provides.build: CMakeFiles/21sh.
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o: ../library/Part_1/ft_isoct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_isoct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_isoct.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_isoct.c > CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_isoct.c > CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_isoct.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_isoct.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o.requires:
 
@@ -683,16 +683,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isoct.c.o.provides.build: CMakeFiles/21sh.
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o: ../library/Part_1/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_isprint.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_isprint.c > CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_isprint.c > CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_isprint.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_isprint.c -o CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o.requires:
 
@@ -707,16 +707,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_isprint.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o: ../library/Part_1/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_memset.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_memset.c > CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_memset.c > CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_memset.c -o CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_memset.c -o CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o.requires:
 
@@ -731,16 +731,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_memset.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o: ../library/Part_1/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strchr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o.requires:
 
@@ -755,16 +755,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strchr.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o: ../library/Part_1/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strcmp.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strcmp.c > CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strcmp.c > CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strcmp.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strcmp.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o.requires:
 
@@ -779,16 +779,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strcmp.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o: ../library/Part_1/ft_strcmp_case.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strcmp_case.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strcmp_case.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strcmp_case.c > CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strcmp_case.c > CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strcmp_case.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strcmp_case.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o.requires:
 
@@ -803,16 +803,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strcmp_case.c.o.provides.build: CMakeFiles
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o: ../library/Part_1/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strdup.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strdup.c > CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strdup.c > CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strdup.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strdup.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o.requires:
 
@@ -827,16 +827,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strdup.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o: ../library/Part_1/ft_strlchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strlchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strlchr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strlchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strlchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strlchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strlchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o.requires:
 
@@ -851,16 +851,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strlchr.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o: ../library/Part_1/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strlen.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strlen.c > CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strlen.c > CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strlen.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strlen.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o.requires:
 
@@ -875,16 +875,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strlen.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o: ../library/Part_1/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strncmp.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strncmp.c > CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strncmp.c > CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strncmp.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strncmp.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o.requires:
 
@@ -899,16 +899,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strncmp.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o: ../library/Part_1/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strnstr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strnstr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strnstr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strnstr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strnstr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o.requires:
 
@@ -923,16 +923,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strnstr.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o: ../library/Part_1/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strrchr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strrchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strrchr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strrchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strrchr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o.requires:
 
@@ -947,16 +947,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strrchr.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o: ../library/Part_1/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_strstr.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_strstr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_strstr.c > CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_strstr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_strstr.c -o CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o.requires:
 
@@ -971,16 +971,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_strstr.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o: ../library/Part_1/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_tolower.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_tolower.c > CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_tolower.c > CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_tolower.c -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_tolower.c -o CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o.requires:
 
@@ -995,16 +995,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_tolower.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o: ../library/Part_1/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o   -c /home/jonathan/Project/21sh/library/Part_1/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o   -c /home/jonathan/Project/42sh/library/Part_1/ft_toupper.c
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_1/ft_toupper.c > CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_1/ft_toupper.c > CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.i
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_1/ft_toupper.c -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_1/ft_toupper.c -o CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.s
 
 CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o.requires:
 
@@ -1019,16 +1019,16 @@ CMakeFiles/21sh.dir/library/Part_1/ft_toupper.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o: ../library/Part_2/ft_esc_hex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_esc_hex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_esc_hex.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_esc_hex.c > CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_esc_hex.c > CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_esc_hex.c -o CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_esc_hex.c -o CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o.requires:
 
@@ -1043,16 +1043,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_esc_hex.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o: ../library/Part_2/ft_eval_esc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_eval_esc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_eval_esc.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_eval_esc.c > CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_eval_esc.c > CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_eval_esc.c -o CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_eval_esc.c -o CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o.requires:
 
@@ -1067,16 +1067,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_eval_esc.c.o.provides.build: CMakeFiles/21
 
 CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o: ../library/Part_2/ft_evaluator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_evaluator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_evaluator.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_evaluator.c > CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_evaluator.c > CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_evaluator.c -o CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_evaluator.c -o CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o.requires:
 
@@ -1091,16 +1091,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_evaluator.c.o.provides.build: CMakeFiles/2
 
 CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o: ../library/Part_2/ft_explode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_explode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_explode.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_explode.c > CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_explode.c > CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_explode.c -o CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_explode.c -o CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o.requires:
 
@@ -1115,16 +1115,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_explode.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o: ../library/Part_2/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_itoa.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_itoa.c > CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_itoa.c > CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_itoa.c -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_itoa.c -o CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o.requires:
 
@@ -1139,16 +1139,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_itoa.c.o.provides.build: CMakeFiles/21sh.d
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o: ../library/Part_2/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_memalloc.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_memalloc.c > CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_memalloc.c > CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_memalloc.c -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_memalloc.c -o CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o.requires:
 
@@ -1163,16 +1163,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_memalloc.c.o.provides.build: CMakeFiles/21
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o: ../library/Part_2/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_memdel.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_memdel.c > CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_memdel.c > CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_memdel.c -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_memdel.c -o CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o.requires:
 
@@ -1187,16 +1187,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_memdel.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o: ../library/Part_2/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putchar.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putchar.c > CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putchar.c > CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putchar.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putchar.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o.requires:
 
@@ -1211,16 +1211,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putchar.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o: ../library/Part_2/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putchar_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putchar_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putchar_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putchar_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putchar_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o.requires:
 
@@ -1235,16 +1235,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putchar_fd.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o: ../library/Part_2/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putendl.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putendl.c > CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putendl.c > CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putendl.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putendl.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o.requires:
 
@@ -1259,16 +1259,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putendl.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o: ../library/Part_2/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putendl_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putendl_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putendl_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putendl_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putendl_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o.requires:
 
@@ -1283,16 +1283,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putendl_fd.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o: ../library/Part_2/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putnbr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putnbr.c > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putnbr.c > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putnbr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putnbr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o.requires:
 
@@ -1307,16 +1307,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putnbr.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o: ../library/Part_2/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putnbr_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putnbr_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putnbr_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putnbr_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putnbr_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o.requires:
 
@@ -1331,16 +1331,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putnbr_fd.c.o.provides.build: CMakeFiles/2
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o: ../library/Part_2/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putstr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putstr.c > CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putstr.c > CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putstr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putstr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o.requires:
 
@@ -1355,16 +1355,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putstr.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o: ../library/Part_2/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_putstr_fd.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_putstr_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_putstr_fd.c > CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_putstr_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_putstr_fd.c -o CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o.requires:
 
@@ -1379,16 +1379,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_putstr_fd.c.o.provides.build: CMakeFiles/2
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o: ../library/Part_2/ft_revnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_revnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_revnbr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_revnbr.c > CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_revnbr.c > CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_revnbr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_revnbr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o.requires:
 
@@ -1403,16 +1403,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_revnbr.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o: ../library/Part_2/ft_revstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_revstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_revstr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_revstr.c > CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_revstr.c > CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_revstr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_revstr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o.requires:
 
@@ -1427,16 +1427,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_revstr.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o: ../library/Part_2/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strclr.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strclr.c > CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strclr.c > CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strclr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strclr.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o.requires:
 
@@ -1451,16 +1451,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strclr.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o: ../library/Part_2/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strdel.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strdel.c > CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strdel.c > CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strdel.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strdel.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o.requires:
 
@@ -1475,16 +1475,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strdel.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o: ../library/Part_2/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strequ.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strequ.c > CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strequ.c > CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strequ.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strequ.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o.requires:
 
@@ -1499,16 +1499,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strequ.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o: ../library/Part_2/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_striter.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_striter.c > CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_striter.c > CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_striter.c -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_striter.c -o CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o.requires:
 
@@ -1523,16 +1523,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_striter.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o: ../library/Part_2/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_striteri.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_striteri.c > CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_striteri.c > CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_striteri.c -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_striteri.c -o CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o.requires:
 
@@ -1547,16 +1547,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_striteri.c.o.provides.build: CMakeFiles/21
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o: ../library/Part_2/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strjoin.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strjoin.c > CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strjoin.c > CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strjoin.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strjoin.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o.requires:
 
@@ -1571,16 +1571,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strjoin.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o: ../library/Part_2/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strmap.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strmap.c > CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strmap.c > CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strmap.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strmap.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o.requires:
 
@@ -1595,16 +1595,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strmap.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o: ../library/Part_2/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strmapi.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strmapi.c > CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strmapi.c > CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strmapi.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strmapi.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o.requires:
 
@@ -1619,16 +1619,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strmapi.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o: ../library/Part_2/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strnequ.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strnequ.c > CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strnequ.c > CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strnequ.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strnequ.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o.requires:
 
@@ -1643,16 +1643,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strnequ.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o: ../library/Part_2/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strnew.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strnew.c > CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strnew.c > CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strnew.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strnew.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o.requires:
 
@@ -1667,16 +1667,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strnew.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o: ../library/Part_2/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strsplit.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strsplit.c > CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strsplit.c > CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strsplit.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strsplit.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o.requires:
 
@@ -1691,16 +1691,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strsplit.c.o.provides.build: CMakeFiles/21
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o: ../library/Part_2/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strsub.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strsub.c > CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strsub.c > CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strsub.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strsub.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o.requires:
 
@@ -1715,16 +1715,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strsub.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o: ../library/Part_2/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_strtrim.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_strtrim.c > CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_strtrim.c > CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_strtrim.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_strtrim.c -o CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o.requires:
 
@@ -1739,16 +1739,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_strtrim.c.o.provides.build: CMakeFiles/21s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o: ../library/Part_2/ft_tablen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o   -c /home/jonathan/Project/21sh/library/Part_2/ft_tablen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o   -c /home/jonathan/Project/42sh/library/Part_2/ft_tablen.c
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/library/Part_2/ft_tablen.c > CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/library/Part_2/ft_tablen.c > CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.i
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/library/Part_2/ft_tablen.c -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/library/Part_2/ft_tablen.c -o CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.s
 
 CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o.requires:
 
@@ -1763,16 +1763,16 @@ CMakeFiles/21sh.dir/library/Part_2/ft_tablen.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/sources/ft_access.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_access.c.o: ../sources/ft_access.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/21sh.dir/sources/ft_access.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_access.c.o   -c /home/jonathan/Project/21sh/sources/ft_access.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/21sh.dir/sources/ft_access.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_access.c.o   -c /home/jonathan/Project/42sh/sources/ft_access.c
 
 CMakeFiles/21sh.dir/sources/ft_access.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_access.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_access.c > CMakeFiles/21sh.dir/sources/ft_access.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_access.c > CMakeFiles/21sh.dir/sources/ft_access.c.i
 
 CMakeFiles/21sh.dir/sources/ft_access.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_access.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_access.c -o CMakeFiles/21sh.dir/sources/ft_access.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_access.c -o CMakeFiles/21sh.dir/sources/ft_access.c.s
 
 CMakeFiles/21sh.dir/sources/ft_access.c.o.requires:
 
@@ -1787,16 +1787,16 @@ CMakeFiles/21sh.dir/sources/ft_access.c.o.provides.build: CMakeFiles/21sh.dir/so
 
 CMakeFiles/21sh.dir/sources/ft_alias.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_alias.c.o: ../sources/ft_alias.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/21sh.dir/sources/ft_alias.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_alias.c.o   -c /home/jonathan/Project/21sh/sources/ft_alias.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/21sh.dir/sources/ft_alias.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_alias.c.o   -c /home/jonathan/Project/42sh/sources/ft_alias.c
 
 CMakeFiles/21sh.dir/sources/ft_alias.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_alias.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_alias.c > CMakeFiles/21sh.dir/sources/ft_alias.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_alias.c > CMakeFiles/21sh.dir/sources/ft_alias.c.i
 
 CMakeFiles/21sh.dir/sources/ft_alias.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_alias.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_alias.c -o CMakeFiles/21sh.dir/sources/ft_alias.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_alias.c -o CMakeFiles/21sh.dir/sources/ft_alias.c.s
 
 CMakeFiles/21sh.dir/sources/ft_alias.c.o.requires:
 
@@ -1811,16 +1811,16 @@ CMakeFiles/21sh.dir/sources/ft_alias.c.o.provides.build: CMakeFiles/21sh.dir/sou
 
 CMakeFiles/21sh.dir/sources/ft_builtins.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_builtins.c.o: ../sources/ft_builtins.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/21sh.dir/sources/ft_builtins.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_builtins.c.o   -c /home/jonathan/Project/21sh/sources/ft_builtins.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/21sh.dir/sources/ft_builtins.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_builtins.c.o   -c /home/jonathan/Project/42sh/sources/ft_builtins.c
 
 CMakeFiles/21sh.dir/sources/ft_builtins.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_builtins.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_builtins.c > CMakeFiles/21sh.dir/sources/ft_builtins.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_builtins.c > CMakeFiles/21sh.dir/sources/ft_builtins.c.i
 
 CMakeFiles/21sh.dir/sources/ft_builtins.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_builtins.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_builtins.c -o CMakeFiles/21sh.dir/sources/ft_builtins.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_builtins.c -o CMakeFiles/21sh.dir/sources/ft_builtins.c.s
 
 CMakeFiles/21sh.dir/sources/ft_builtins.c.o.requires:
 
@@ -1835,16 +1835,16 @@ CMakeFiles/21sh.dir/sources/ft_builtins.c.o.provides.build: CMakeFiles/21sh.dir/
 
 CMakeFiles/21sh.dir/sources/ft_chdir.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_chdir.c.o: ../sources/ft_chdir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir.c.o   -c /home/jonathan/Project/21sh/sources/ft_chdir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir.c.o   -c /home/jonathan/Project/42sh/sources/ft_chdir.c
 
 CMakeFiles/21sh.dir/sources/ft_chdir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_chdir.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_chdir.c > CMakeFiles/21sh.dir/sources/ft_chdir.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_chdir.c > CMakeFiles/21sh.dir/sources/ft_chdir.c.i
 
 CMakeFiles/21sh.dir/sources/ft_chdir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_chdir.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_chdir.c -o CMakeFiles/21sh.dir/sources/ft_chdir.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_chdir.c -o CMakeFiles/21sh.dir/sources/ft_chdir.c.s
 
 CMakeFiles/21sh.dir/sources/ft_chdir.c.o.requires:
 
@@ -1859,16 +1859,16 @@ CMakeFiles/21sh.dir/sources/ft_chdir.c.o.provides.build: CMakeFiles/21sh.dir/sou
 
 CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o: ../sources/ft_chdir_cdpath.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o   -c /home/jonathan/Project/21sh/sources/ft_chdir_cdpath.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o   -c /home/jonathan/Project/42sh/sources/ft_chdir_cdpath.c
 
 CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_chdir_cdpath.c > CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_chdir_cdpath.c > CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.i
 
 CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_chdir_cdpath.c -o CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_chdir_cdpath.c -o CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.s
 
 CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o.requires:
 
@@ -1883,16 +1883,16 @@ CMakeFiles/21sh.dir/sources/ft_chdir_cdpath.c.o.provides.build: CMakeFiles/21sh.
 
 CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o: ../sources/ft_chdir_opt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o   -c /home/jonathan/Project/21sh/sources/ft_chdir_opt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o   -c /home/jonathan/Project/42sh/sources/ft_chdir_opt.c
 
 CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_chdir_opt.c > CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_chdir_opt.c > CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.i
 
 CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_chdir_opt.c -o CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_chdir_opt.c -o CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.s
 
 CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o.requires:
 
@@ -1907,16 +1907,16 @@ CMakeFiles/21sh.dir/sources/ft_chdir_opt.c.o.provides.build: CMakeFiles/21sh.dir
 
 CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o: ../sources/ft_chdir_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o   -c /home/jonathan/Project/21sh/sources/ft_chdir_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o   -c /home/jonathan/Project/42sh/sources/ft_chdir_tools.c
 
 CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_chdir_tools.c > CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_chdir_tools.c > CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.i
 
 CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_chdir_tools.c -o CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_chdir_tools.c -o CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.s
 
 CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o.requires:
 
@@ -1931,16 +1931,16 @@ CMakeFiles/21sh.dir/sources/ft_chdir_tools.c.o.provides.build: CMakeFiles/21sh.d
 
 CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o: ../sources/ft_chdir_trim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o   -c /home/jonathan/Project/21sh/sources/ft_chdir_trim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o   -c /home/jonathan/Project/42sh/sources/ft_chdir_trim.c
 
 CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_chdir_trim.c > CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_chdir_trim.c > CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.i
 
 CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_chdir_trim.c -o CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_chdir_trim.c -o CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.s
 
 CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o.requires:
 
@@ -1955,16 +1955,16 @@ CMakeFiles/21sh.dir/sources/ft_chdir_trim.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_completion.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_completion.c.o: ../sources/ft_completion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/21sh.dir/sources/ft_completion.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_completion.c.o   -c /home/jonathan/Project/21sh/sources/ft_completion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/21sh.dir/sources/ft_completion.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_completion.c.o   -c /home/jonathan/Project/42sh/sources/ft_completion.c
 
 CMakeFiles/21sh.dir/sources/ft_completion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_completion.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_completion.c > CMakeFiles/21sh.dir/sources/ft_completion.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_completion.c > CMakeFiles/21sh.dir/sources/ft_completion.c.i
 
 CMakeFiles/21sh.dir/sources/ft_completion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_completion.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_completion.c -o CMakeFiles/21sh.dir/sources/ft_completion.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_completion.c -o CMakeFiles/21sh.dir/sources/ft_completion.c.s
 
 CMakeFiles/21sh.dir/sources/ft_completion.c.o.requires:
 
@@ -1979,16 +1979,16 @@ CMakeFiles/21sh.dir/sources/ft_completion.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o: ../sources/ft_completion_norme.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o   -c /home/jonathan/Project/21sh/sources/ft_completion_norme.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o   -c /home/jonathan/Project/42sh/sources/ft_completion_norme.c
 
 CMakeFiles/21sh.dir/sources/ft_completion_norme.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_completion_norme.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_completion_norme.c > CMakeFiles/21sh.dir/sources/ft_completion_norme.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_completion_norme.c > CMakeFiles/21sh.dir/sources/ft_completion_norme.c.i
 
 CMakeFiles/21sh.dir/sources/ft_completion_norme.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_completion_norme.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_completion_norme.c -o CMakeFiles/21sh.dir/sources/ft_completion_norme.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_completion_norme.c -o CMakeFiles/21sh.dir/sources/ft_completion_norme.c.s
 
 CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o.requires:
 
@@ -2003,16 +2003,16 @@ CMakeFiles/21sh.dir/sources/ft_completion_norme.c.o.provides.build: CMakeFiles/2
 
 CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o: ../sources/ft_completion_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o   -c /home/jonathan/Project/21sh/sources/ft_completion_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o   -c /home/jonathan/Project/42sh/sources/ft_completion_tools.c
 
 CMakeFiles/21sh.dir/sources/ft_completion_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_completion_tools.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_completion_tools.c > CMakeFiles/21sh.dir/sources/ft_completion_tools.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_completion_tools.c > CMakeFiles/21sh.dir/sources/ft_completion_tools.c.i
 
 CMakeFiles/21sh.dir/sources/ft_completion_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_completion_tools.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_completion_tools.c -o CMakeFiles/21sh.dir/sources/ft_completion_tools.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_completion_tools.c -o CMakeFiles/21sh.dir/sources/ft_completion_tools.c.s
 
 CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o.requires:
 
@@ -2027,16 +2027,16 @@ CMakeFiles/21sh.dir/sources/ft_completion_tools.c.o.provides.build: CMakeFiles/2
 
 CMakeFiles/21sh.dir/sources/ft_delchar.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_delchar.c.o: ../sources/ft_delchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/21sh.dir/sources/ft_delchar.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_delchar.c.o   -c /home/jonathan/Project/21sh/sources/ft_delchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/21sh.dir/sources/ft_delchar.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_delchar.c.o   -c /home/jonathan/Project/42sh/sources/ft_delchar.c
 
 CMakeFiles/21sh.dir/sources/ft_delchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_delchar.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_delchar.c > CMakeFiles/21sh.dir/sources/ft_delchar.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_delchar.c > CMakeFiles/21sh.dir/sources/ft_delchar.c.i
 
 CMakeFiles/21sh.dir/sources/ft_delchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_delchar.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_delchar.c -o CMakeFiles/21sh.dir/sources/ft_delchar.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_delchar.c -o CMakeFiles/21sh.dir/sources/ft_delchar.c.s
 
 CMakeFiles/21sh.dir/sources/ft_delchar.c.o.requires:
 
@@ -2051,16 +2051,16 @@ CMakeFiles/21sh.dir/sources/ft_delchar.c.o.provides.build: CMakeFiles/21sh.dir/s
 
 CMakeFiles/21sh.dir/sources/ft_echo.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_echo.c.o: ../sources/ft_echo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/21sh.dir/sources/ft_echo.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_echo.c.o   -c /home/jonathan/Project/21sh/sources/ft_echo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/21sh.dir/sources/ft_echo.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_echo.c.o   -c /home/jonathan/Project/42sh/sources/ft_echo.c
 
 CMakeFiles/21sh.dir/sources/ft_echo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_echo.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_echo.c > CMakeFiles/21sh.dir/sources/ft_echo.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_echo.c > CMakeFiles/21sh.dir/sources/ft_echo.c.i
 
 CMakeFiles/21sh.dir/sources/ft_echo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_echo.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_echo.c -o CMakeFiles/21sh.dir/sources/ft_echo.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_echo.c -o CMakeFiles/21sh.dir/sources/ft_echo.c.s
 
 CMakeFiles/21sh.dir/sources/ft_echo.c.o.requires:
 
@@ -2075,16 +2075,16 @@ CMakeFiles/21sh.dir/sources/ft_echo.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_env.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_env.c.o: ../sources/ft_env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/21sh.dir/sources/ft_env.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_env.c.o   -c /home/jonathan/Project/21sh/sources/ft_env.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/21sh.dir/sources/ft_env.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_env.c.o   -c /home/jonathan/Project/42sh/sources/ft_env.c
 
 CMakeFiles/21sh.dir/sources/ft_env.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_env.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_env.c > CMakeFiles/21sh.dir/sources/ft_env.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_env.c > CMakeFiles/21sh.dir/sources/ft_env.c.i
 
 CMakeFiles/21sh.dir/sources/ft_env.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_env.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_env.c -o CMakeFiles/21sh.dir/sources/ft_env.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_env.c -o CMakeFiles/21sh.dir/sources/ft_env.c.s
 
 CMakeFiles/21sh.dir/sources/ft_env.c.o.requires:
 
@@ -2099,16 +2099,16 @@ CMakeFiles/21sh.dir/sources/ft_env.c.o.provides.build: CMakeFiles/21sh.dir/sourc
 
 CMakeFiles/21sh.dir/sources/ft_error.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_error.c.o: ../sources/ft_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/21sh.dir/sources/ft_error.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_error.c.o   -c /home/jonathan/Project/21sh/sources/ft_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/21sh.dir/sources/ft_error.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_error.c.o   -c /home/jonathan/Project/42sh/sources/ft_error.c
 
 CMakeFiles/21sh.dir/sources/ft_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_error.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_error.c > CMakeFiles/21sh.dir/sources/ft_error.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_error.c > CMakeFiles/21sh.dir/sources/ft_error.c.i
 
 CMakeFiles/21sh.dir/sources/ft_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_error.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_error.c -o CMakeFiles/21sh.dir/sources/ft_error.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_error.c -o CMakeFiles/21sh.dir/sources/ft_error.c.s
 
 CMakeFiles/21sh.dir/sources/ft_error.c.o.requires:
 
@@ -2123,16 +2123,16 @@ CMakeFiles/21sh.dir/sources/ft_error.c.o.provides.build: CMakeFiles/21sh.dir/sou
 
 CMakeFiles/21sh.dir/sources/ft_exec.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_exec.c.o: ../sources/ft_exec.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/21sh.dir/sources/ft_exec.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec.c.o   -c /home/jonathan/Project/21sh/sources/ft_exec.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/21sh.dir/sources/ft_exec.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec.c.o   -c /home/jonathan/Project/42sh/sources/ft_exec.c
 
 CMakeFiles/21sh.dir/sources/ft_exec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_exec.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_exec.c > CMakeFiles/21sh.dir/sources/ft_exec.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_exec.c > CMakeFiles/21sh.dir/sources/ft_exec.c.i
 
 CMakeFiles/21sh.dir/sources/ft_exec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_exec.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_exec.c -o CMakeFiles/21sh.dir/sources/ft_exec.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_exec.c -o CMakeFiles/21sh.dir/sources/ft_exec.c.s
 
 CMakeFiles/21sh.dir/sources/ft_exec.c.o.requires:
 
@@ -2147,16 +2147,16 @@ CMakeFiles/21sh.dir/sources/ft_exec.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_exec_child.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_exec_child.c.o: ../sources/ft_exec_child.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/21sh.dir/sources/ft_exec_child.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec_child.c.o   -c /home/jonathan/Project/21sh/sources/ft_exec_child.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/21sh.dir/sources/ft_exec_child.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec_child.c.o   -c /home/jonathan/Project/42sh/sources/ft_exec_child.c
 
 CMakeFiles/21sh.dir/sources/ft_exec_child.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_exec_child.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_exec_child.c > CMakeFiles/21sh.dir/sources/ft_exec_child.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_exec_child.c > CMakeFiles/21sh.dir/sources/ft_exec_child.c.i
 
 CMakeFiles/21sh.dir/sources/ft_exec_child.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_exec_child.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_exec_child.c -o CMakeFiles/21sh.dir/sources/ft_exec_child.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_exec_child.c -o CMakeFiles/21sh.dir/sources/ft_exec_child.c.s
 
 CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.requires:
 
@@ -2171,16 +2171,16 @@ CMakeFiles/21sh.dir/sources/ft_exec_child.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_exec_init.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_exec_init.c.o: ../sources/ft_exec_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/21sh.dir/sources/ft_exec_init.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec_init.c.o   -c /home/jonathan/Project/21sh/sources/ft_exec_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/21sh.dir/sources/ft_exec_init.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_exec_init.c.o   -c /home/jonathan/Project/42sh/sources/ft_exec_init.c
 
 CMakeFiles/21sh.dir/sources/ft_exec_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_exec_init.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_exec_init.c > CMakeFiles/21sh.dir/sources/ft_exec_init.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_exec_init.c > CMakeFiles/21sh.dir/sources/ft_exec_init.c.i
 
 CMakeFiles/21sh.dir/sources/ft_exec_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_exec_init.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_exec_init.c -o CMakeFiles/21sh.dir/sources/ft_exec_init.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_exec_init.c -o CMakeFiles/21sh.dir/sources/ft_exec_init.c.s
 
 CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.requires:
 
@@ -2195,16 +2195,16 @@ CMakeFiles/21sh.dir/sources/ft_exec_init.c.o.provides.build: CMakeFiles/21sh.dir
 
 CMakeFiles/21sh.dir/sources/ft_export.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_export.c.o: ../sources/ft_export.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/21sh.dir/sources/ft_export.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_export.c.o   -c /home/jonathan/Project/21sh/sources/ft_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/21sh.dir/sources/ft_export.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_export.c.o   -c /home/jonathan/Project/42sh/sources/ft_export.c
 
 CMakeFiles/21sh.dir/sources/ft_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_export.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_export.c > CMakeFiles/21sh.dir/sources/ft_export.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_export.c > CMakeFiles/21sh.dir/sources/ft_export.c.i
 
 CMakeFiles/21sh.dir/sources/ft_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_export.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_export.c -o CMakeFiles/21sh.dir/sources/ft_export.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_export.c -o CMakeFiles/21sh.dir/sources/ft_export.c.s
 
 CMakeFiles/21sh.dir/sources/ft_export.c.o.requires:
 
@@ -2219,16 +2219,16 @@ CMakeFiles/21sh.dir/sources/ft_export.c.o.provides.build: CMakeFiles/21sh.dir/so
 
 CMakeFiles/21sh.dir/sources/ft_free.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_free.c.o: ../sources/ft_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/21sh.dir/sources/ft_free.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_free.c.o   -c /home/jonathan/Project/21sh/sources/ft_free.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/21sh.dir/sources/ft_free.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_free.c.o   -c /home/jonathan/Project/42sh/sources/ft_free.c
 
 CMakeFiles/21sh.dir/sources/ft_free.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_free.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_free.c > CMakeFiles/21sh.dir/sources/ft_free.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_free.c > CMakeFiles/21sh.dir/sources/ft_free.c.i
 
 CMakeFiles/21sh.dir/sources/ft_free.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_free.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_free.c -o CMakeFiles/21sh.dir/sources/ft_free.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_free.c -o CMakeFiles/21sh.dir/sources/ft_free.c.s
 
 CMakeFiles/21sh.dir/sources/ft_free.c.o.requires:
 
@@ -2243,16 +2243,16 @@ CMakeFiles/21sh.dir/sources/ft_free.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o: ../sources/ft_gestion_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o   -c /home/jonathan/Project/21sh/sources/ft_gestion_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o   -c /home/jonathan/Project/42sh/sources/ft_gestion_error.c
 
 CMakeFiles/21sh.dir/sources/ft_gestion_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_gestion_error.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_gestion_error.c > CMakeFiles/21sh.dir/sources/ft_gestion_error.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_gestion_error.c > CMakeFiles/21sh.dir/sources/ft_gestion_error.c.i
 
 CMakeFiles/21sh.dir/sources/ft_gestion_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_gestion_error.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_gestion_error.c -o CMakeFiles/21sh.dir/sources/ft_gestion_error.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_gestion_error.c -o CMakeFiles/21sh.dir/sources/ft_gestion_error.c.s
 
 CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o.requires:
 
@@ -2267,16 +2267,16 @@ CMakeFiles/21sh.dir/sources/ft_gestion_error.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/sources/ft_hist_find.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_hist_find.c.o: ../sources/ft_hist_find.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/21sh.dir/sources/ft_hist_find.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_hist_find.c.o   -c /home/jonathan/Project/21sh/sources/ft_hist_find.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/21sh.dir/sources/ft_hist_find.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_hist_find.c.o   -c /home/jonathan/Project/42sh/sources/ft_hist_find.c
 
 CMakeFiles/21sh.dir/sources/ft_hist_find.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_hist_find.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_hist_find.c > CMakeFiles/21sh.dir/sources/ft_hist_find.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_hist_find.c > CMakeFiles/21sh.dir/sources/ft_hist_find.c.i
 
 CMakeFiles/21sh.dir/sources/ft_hist_find.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_hist_find.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_hist_find.c -o CMakeFiles/21sh.dir/sources/ft_hist_find.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_hist_find.c -o CMakeFiles/21sh.dir/sources/ft_hist_find.c.s
 
 CMakeFiles/21sh.dir/sources/ft_hist_find.c.o.requires:
 
@@ -2291,16 +2291,16 @@ CMakeFiles/21sh.dir/sources/ft_hist_find.c.o.provides.build: CMakeFiles/21sh.dir
 
 CMakeFiles/21sh.dir/sources/ft_hist_str.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_hist_str.c.o: ../sources/ft_hist_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/21sh.dir/sources/ft_hist_str.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_hist_str.c.o   -c /home/jonathan/Project/21sh/sources/ft_hist_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/21sh.dir/sources/ft_hist_str.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_hist_str.c.o   -c /home/jonathan/Project/42sh/sources/ft_hist_str.c
 
 CMakeFiles/21sh.dir/sources/ft_hist_str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_hist_str.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_hist_str.c > CMakeFiles/21sh.dir/sources/ft_hist_str.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_hist_str.c > CMakeFiles/21sh.dir/sources/ft_hist_str.c.i
 
 CMakeFiles/21sh.dir/sources/ft_hist_str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_hist_str.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_hist_str.c -o CMakeFiles/21sh.dir/sources/ft_hist_str.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_hist_str.c -o CMakeFiles/21sh.dir/sources/ft_hist_str.c.s
 
 CMakeFiles/21sh.dir/sources/ft_hist_str.c.o.requires:
 
@@ -2315,16 +2315,16 @@ CMakeFiles/21sh.dir/sources/ft_hist_str.c.o.provides.build: CMakeFiles/21sh.dir/
 
 CMakeFiles/21sh.dir/sources/ft_history.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_history.c.o: ../sources/ft_history.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/21sh.dir/sources/ft_history.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_history.c.o   -c /home/jonathan/Project/21sh/sources/ft_history.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/21sh.dir/sources/ft_history.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_history.c.o   -c /home/jonathan/Project/42sh/sources/ft_history.c
 
 CMakeFiles/21sh.dir/sources/ft_history.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_history.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_history.c > CMakeFiles/21sh.dir/sources/ft_history.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_history.c > CMakeFiles/21sh.dir/sources/ft_history.c.i
 
 CMakeFiles/21sh.dir/sources/ft_history.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_history.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_history.c -o CMakeFiles/21sh.dir/sources/ft_history.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_history.c -o CMakeFiles/21sh.dir/sources/ft_history.c.s
 
 CMakeFiles/21sh.dir/sources/ft_history.c.o.requires:
 
@@ -2339,16 +2339,16 @@ CMakeFiles/21sh.dir/sources/ft_history.c.o.provides.build: CMakeFiles/21sh.dir/s
 
 CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o: ../sources/ft_history_builtin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o   -c /home/jonathan/Project/21sh/sources/ft_history_builtin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o   -c /home/jonathan/Project/42sh/sources/ft_history_builtin.c
 
 CMakeFiles/21sh.dir/sources/ft_history_builtin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_history_builtin.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_history_builtin.c > CMakeFiles/21sh.dir/sources/ft_history_builtin.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_history_builtin.c > CMakeFiles/21sh.dir/sources/ft_history_builtin.c.i
 
 CMakeFiles/21sh.dir/sources/ft_history_builtin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_history_builtin.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_history_builtin.c -o CMakeFiles/21sh.dir/sources/ft_history_builtin.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_history_builtin.c -o CMakeFiles/21sh.dir/sources/ft_history_builtin.c.s
 
 CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o.requires:
 
@@ -2363,16 +2363,16 @@ CMakeFiles/21sh.dir/sources/ft_history_builtin.c.o.provides.build: CMakeFiles/21
 
 CMakeFiles/21sh.dir/sources/ft_history_tools.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_history_tools.c.o: ../sources/ft_history_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/21sh.dir/sources/ft_history_tools.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_history_tools.c.o   -c /home/jonathan/Project/21sh/sources/ft_history_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/21sh.dir/sources/ft_history_tools.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_history_tools.c.o   -c /home/jonathan/Project/42sh/sources/ft_history_tools.c
 
 CMakeFiles/21sh.dir/sources/ft_history_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_history_tools.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_history_tools.c > CMakeFiles/21sh.dir/sources/ft_history_tools.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_history_tools.c > CMakeFiles/21sh.dir/sources/ft_history_tools.c.i
 
 CMakeFiles/21sh.dir/sources/ft_history_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_history_tools.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_history_tools.c -o CMakeFiles/21sh.dir/sources/ft_history_tools.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_history_tools.c -o CMakeFiles/21sh.dir/sources/ft_history_tools.c.s
 
 CMakeFiles/21sh.dir/sources/ft_history_tools.c.o.requires:
 
@@ -2387,16 +2387,16 @@ CMakeFiles/21sh.dir/sources/ft_history_tools.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/sources/ft_init.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_init.c.o: ../sources/ft_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/21sh.dir/sources/ft_init.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_init.c.o   -c /home/jonathan/Project/21sh/sources/ft_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/21sh.dir/sources/ft_init.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_init.c.o   -c /home/jonathan/Project/42sh/sources/ft_init.c
 
 CMakeFiles/21sh.dir/sources/ft_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_init.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_init.c > CMakeFiles/21sh.dir/sources/ft_init.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_init.c > CMakeFiles/21sh.dir/sources/ft_init.c.i
 
 CMakeFiles/21sh.dir/sources/ft_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_init.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_init.c -o CMakeFiles/21sh.dir/sources/ft_init.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_init.c -o CMakeFiles/21sh.dir/sources/ft_init.c.s
 
 CMakeFiles/21sh.dir/sources/ft_init.c.o.requires:
 
@@ -2411,16 +2411,16 @@ CMakeFiles/21sh.dir/sources/ft_init.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_keymap.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_keymap.c.o: ../sources/ft_keymap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/21sh.dir/sources/ft_keymap.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_keymap.c.o   -c /home/jonathan/Project/21sh/sources/ft_keymap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/21sh.dir/sources/ft_keymap.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_keymap.c.o   -c /home/jonathan/Project/42sh/sources/ft_keymap.c
 
 CMakeFiles/21sh.dir/sources/ft_keymap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_keymap.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_keymap.c > CMakeFiles/21sh.dir/sources/ft_keymap.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_keymap.c > CMakeFiles/21sh.dir/sources/ft_keymap.c.i
 
 CMakeFiles/21sh.dir/sources/ft_keymap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_keymap.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_keymap.c -o CMakeFiles/21sh.dir/sources/ft_keymap.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_keymap.c -o CMakeFiles/21sh.dir/sources/ft_keymap.c.s
 
 CMakeFiles/21sh.dir/sources/ft_keymap.c.o.requires:
 
@@ -2435,16 +2435,16 @@ CMakeFiles/21sh.dir/sources/ft_keymap.c.o.provides.build: CMakeFiles/21sh.dir/so
 
 CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o: ../sources/ft_keymap_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o   -c /home/jonathan/Project/21sh/sources/ft_keymap_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o   -c /home/jonathan/Project/42sh/sources/ft_keymap_tools.c
 
 CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_keymap_tools.c > CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_keymap_tools.c > CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.i
 
 CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_keymap_tools.c -o CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_keymap_tools.c -o CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.s
 
 CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o.requires:
 
@@ -2459,16 +2459,16 @@ CMakeFiles/21sh.dir/sources/ft_keymap_tools.c.o.provides.build: CMakeFiles/21sh.
 
 CMakeFiles/21sh.dir/sources/ft_main.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_main.c.o: ../sources/ft_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/21sh.dir/sources/ft_main.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_main.c.o   -c /home/jonathan/Project/21sh/sources/ft_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/21sh.dir/sources/ft_main.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_main.c.o   -c /home/jonathan/Project/42sh/sources/ft_main.c
 
 CMakeFiles/21sh.dir/sources/ft_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_main.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_main.c > CMakeFiles/21sh.dir/sources/ft_main.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_main.c > CMakeFiles/21sh.dir/sources/ft_main.c.i
 
 CMakeFiles/21sh.dir/sources/ft_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_main.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_main.c -o CMakeFiles/21sh.dir/sources/ft_main.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_main.c -o CMakeFiles/21sh.dir/sources/ft_main.c.s
 
 CMakeFiles/21sh.dir/sources/ft_main.c.o.requires:
 
@@ -2483,16 +2483,16 @@ CMakeFiles/21sh.dir/sources/ft_main.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_parsing.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing.c.o: ../sources/ft_parsing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing.c > CMakeFiles/21sh.dir/sources/ft_parsing.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing.c > CMakeFiles/21sh.dir/sources/ft_parsing.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing.c -o CMakeFiles/21sh.dir/sources/ft_parsing.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing.c -o CMakeFiles/21sh.dir/sources/ft_parsing.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing.c.o.requires:
 
@@ -2507,16 +2507,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing.c.o.provides.build: CMakeFiles/21sh.dir/s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o: ../sources/ft_parsing_cmd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_cmd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_cmd.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing_cmd.c > CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_cmd.c > CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing_cmd.c -o CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_cmd.c -o CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o.requires:
 
@@ -2531,16 +2531,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing_cmd.c.o.provides.build: CMakeFiles/21sh.d
 
 CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o: ../sources/ft_parsing_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_init.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_init.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing_init.c > CMakeFiles/21sh.dir/sources/ft_parsing_init.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_init.c > CMakeFiles/21sh.dir/sources/ft_parsing_init.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_init.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing_init.c -o CMakeFiles/21sh.dir/sources/ft_parsing_init.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_init.c -o CMakeFiles/21sh.dir/sources/ft_parsing_init.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o.requires:
 
@@ -2555,16 +2555,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing_init.c.o.provides.build: CMakeFiles/21sh.
 
 CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o: ../sources/ft_parsing_node.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_node.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_node.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_node.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_node.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing_node.c > CMakeFiles/21sh.dir/sources/ft_parsing_node.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_node.c > CMakeFiles/21sh.dir/sources/ft_parsing_node.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing_node.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_node.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing_node.c -o CMakeFiles/21sh.dir/sources/ft_parsing_node.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_node.c -o CMakeFiles/21sh.dir/sources/ft_parsing_node.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o.requires:
 
@@ -2579,16 +2579,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing_node.c.o.provides.build: CMakeFiles/21sh.
 
 CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o: ../sources/ft_parsing_parenthesis.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_parenthesis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_parenthesis.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing_parenthesis.c > CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_parenthesis.c > CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing_parenthesis.c -o CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_parenthesis.c -o CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o.requires:
 
@@ -2603,16 +2603,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing_parenthesis.c.o.provides.build: CMakeFile
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o: ../sources/ft_parsing_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_split.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_split.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_split.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing_split.c > CMakeFiles/21sh.dir/sources/ft_parsing_split.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_split.c > CMakeFiles/21sh.dir/sources/ft_parsing_split.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_split.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing_split.c -o CMakeFiles/21sh.dir/sources/ft_parsing_split.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_split.c -o CMakeFiles/21sh.dir/sources/ft_parsing_split.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o.requires:
 
@@ -2627,16 +2627,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing_split.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o: ../sources/ft_parsing_split_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_split_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_split_tools.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing_split_tools.c > CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_split_tools.c > CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing_split_tools.c -o CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_split_tools.c -o CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o.requires:
 
@@ -2651,16 +2651,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing_split_tools.c.o.provides.build: CMakeFile
 
 CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o: ../sources/ft_parsing_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_tools.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_parsing_tools.c > CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_tools.c > CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.i
 
 CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_parsing_tools.c -o CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_tools.c -o CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.s
 
 CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o.requires:
 
@@ -2675,16 +2675,16 @@ CMakeFiles/21sh.dir/sources/ft_parsing_tools.c.o.provides.build: CMakeFiles/21sh
 
 CMakeFiles/21sh.dir/sources/ft_path.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_path.c.o: ../sources/ft_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/21sh.dir/sources/ft_path.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_path.c.o   -c /home/jonathan/Project/21sh/sources/ft_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/21sh.dir/sources/ft_path.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_path.c.o   -c /home/jonathan/Project/42sh/sources/ft_path.c
 
 CMakeFiles/21sh.dir/sources/ft_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_path.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_path.c > CMakeFiles/21sh.dir/sources/ft_path.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_path.c > CMakeFiles/21sh.dir/sources/ft_path.c.i
 
 CMakeFiles/21sh.dir/sources/ft_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_path.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_path.c -o CMakeFiles/21sh.dir/sources/ft_path.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_path.c -o CMakeFiles/21sh.dir/sources/ft_path.c.s
 
 CMakeFiles/21sh.dir/sources/ft_path.c.o.requires:
 
@@ -2699,16 +2699,16 @@ CMakeFiles/21sh.dir/sources/ft_path.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_prompt.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_prompt.c.o: ../sources/ft_prompt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/21sh.dir/sources/ft_prompt.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_prompt.c.o   -c /home/jonathan/Project/21sh/sources/ft_prompt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/21sh.dir/sources/ft_prompt.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_prompt.c.o   -c /home/jonathan/Project/42sh/sources/ft_prompt.c
 
 CMakeFiles/21sh.dir/sources/ft_prompt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_prompt.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_prompt.c > CMakeFiles/21sh.dir/sources/ft_prompt.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_prompt.c > CMakeFiles/21sh.dir/sources/ft_prompt.c.i
 
 CMakeFiles/21sh.dir/sources/ft_prompt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_prompt.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_prompt.c -o CMakeFiles/21sh.dir/sources/ft_prompt.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_prompt.c -o CMakeFiles/21sh.dir/sources/ft_prompt.c.s
 
 CMakeFiles/21sh.dir/sources/ft_prompt.c.o.requires:
 
@@ -2723,16 +2723,16 @@ CMakeFiles/21sh.dir/sources/ft_prompt.c.o.provides.build: CMakeFiles/21sh.dir/so
 
 CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o: ../sources/ft_prompt_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o   -c /home/jonathan/Project/21sh/sources/ft_prompt_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o   -c /home/jonathan/Project/42sh/sources/ft_prompt_path.c
 
 CMakeFiles/21sh.dir/sources/ft_prompt_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_prompt_path.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_prompt_path.c > CMakeFiles/21sh.dir/sources/ft_prompt_path.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_prompt_path.c > CMakeFiles/21sh.dir/sources/ft_prompt_path.c.i
 
 CMakeFiles/21sh.dir/sources/ft_prompt_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_prompt_path.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_prompt_path.c -o CMakeFiles/21sh.dir/sources/ft_prompt_path.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_prompt_path.c -o CMakeFiles/21sh.dir/sources/ft_prompt_path.c.s
 
 CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o.requires:
 
@@ -2747,16 +2747,16 @@ CMakeFiles/21sh.dir/sources/ft_prompt_path.c.o.provides.build: CMakeFiles/21sh.d
 
 CMakeFiles/21sh.dir/sources/ft_read.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_read.c.o: ../sources/ft_read.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/21sh.dir/sources/ft_read.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read.c.o   -c /home/jonathan/Project/21sh/sources/ft_read.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/21sh.dir/sources/ft_read.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read.c.o   -c /home/jonathan/Project/42sh/sources/ft_read.c
 
 CMakeFiles/21sh.dir/sources/ft_read.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read.c > CMakeFiles/21sh.dir/sources/ft_read.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_read.c > CMakeFiles/21sh.dir/sources/ft_read.c.i
 
 CMakeFiles/21sh.dir/sources/ft_read.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read.c -o CMakeFiles/21sh.dir/sources/ft_read.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_read.c -o CMakeFiles/21sh.dir/sources/ft_read.c.s
 
 CMakeFiles/21sh.dir/sources/ft_read.c.o.requires:
 
@@ -2771,16 +2771,16 @@ CMakeFiles/21sh.dir/sources/ft_read.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_read_copy.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_read_copy.c.o: ../sources/ft_read_copy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/21sh.dir/sources/ft_read_copy.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_copy.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_copy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/21sh.dir/sources/ft_read_copy.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_copy.c.o   -c /home/jonathan/Project/42sh/sources/ft_read_copy.c
 
 CMakeFiles/21sh.dir/sources/ft_read_copy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_copy.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read_copy.c > CMakeFiles/21sh.dir/sources/ft_read_copy.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_read_copy.c > CMakeFiles/21sh.dir/sources/ft_read_copy.c.i
 
 CMakeFiles/21sh.dir/sources/ft_read_copy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_copy.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read_copy.c -o CMakeFiles/21sh.dir/sources/ft_read_copy.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_read_copy.c -o CMakeFiles/21sh.dir/sources/ft_read_copy.c.s
 
 CMakeFiles/21sh.dir/sources/ft_read_copy.c.o.requires:
 
@@ -2795,16 +2795,16 @@ CMakeFiles/21sh.dir/sources/ft_read_copy.c.o.provides.build: CMakeFiles/21sh.dir
 
 CMakeFiles/21sh.dir/sources/ft_read_move.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_read_move.c.o: ../sources/ft_read_move.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/21sh.dir/sources/ft_read_move.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_move.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_move.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/21sh.dir/sources/ft_read_move.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_move.c.o   -c /home/jonathan/Project/42sh/sources/ft_read_move.c
 
 CMakeFiles/21sh.dir/sources/ft_read_move.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_move.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read_move.c > CMakeFiles/21sh.dir/sources/ft_read_move.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_read_move.c > CMakeFiles/21sh.dir/sources/ft_read_move.c.i
 
 CMakeFiles/21sh.dir/sources/ft_read_move.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_move.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read_move.c -o CMakeFiles/21sh.dir/sources/ft_read_move.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_read_move.c -o CMakeFiles/21sh.dir/sources/ft_read_move.c.s
 
 CMakeFiles/21sh.dir/sources/ft_read_move.c.o.requires:
 
@@ -2819,16 +2819,16 @@ CMakeFiles/21sh.dir/sources/ft_read_move.c.o.provides.build: CMakeFiles/21sh.dir
 
 CMakeFiles/21sh.dir/sources/ft_read_print.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_read_print.c.o: ../sources/ft_read_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/21sh.dir/sources/ft_read_print.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_print.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/21sh.dir/sources/ft_read_print.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_print.c.o   -c /home/jonathan/Project/42sh/sources/ft_read_print.c
 
 CMakeFiles/21sh.dir/sources/ft_read_print.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_print.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read_print.c > CMakeFiles/21sh.dir/sources/ft_read_print.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_read_print.c > CMakeFiles/21sh.dir/sources/ft_read_print.c.i
 
 CMakeFiles/21sh.dir/sources/ft_read_print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_print.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read_print.c -o CMakeFiles/21sh.dir/sources/ft_read_print.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_read_print.c -o CMakeFiles/21sh.dir/sources/ft_read_print.c.s
 
 CMakeFiles/21sh.dir/sources/ft_read_print.c.o.requires:
 
@@ -2843,16 +2843,16 @@ CMakeFiles/21sh.dir/sources/ft_read_print.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_set.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_set.c.o: ../sources/ft_set.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/21sh.dir/sources/ft_set.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_set.c.o   -c /home/jonathan/Project/21sh/sources/ft_set.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/21sh.dir/sources/ft_set.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_set.c.o   -c /home/jonathan/Project/42sh/sources/ft_set.c
 
 CMakeFiles/21sh.dir/sources/ft_set.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_set.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_set.c > CMakeFiles/21sh.dir/sources/ft_set.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_set.c > CMakeFiles/21sh.dir/sources/ft_set.c.i
 
 CMakeFiles/21sh.dir/sources/ft_set.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_set.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_set.c -o CMakeFiles/21sh.dir/sources/ft_set.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_set.c -o CMakeFiles/21sh.dir/sources/ft_set.c.s
 
 CMakeFiles/21sh.dir/sources/ft_set.c.o.requires:
 
@@ -2867,16 +2867,16 @@ CMakeFiles/21sh.dir/sources/ft_set.c.o.provides.build: CMakeFiles/21sh.dir/sourc
 
 CMakeFiles/21sh.dir/sources/ft_setenv.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_setenv.c.o: ../sources/ft_setenv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/21sh.dir/sources/ft_setenv.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_setenv.c.o   -c /home/jonathan/Project/21sh/sources/ft_setenv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/21sh.dir/sources/ft_setenv.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_setenv.c.o   -c /home/jonathan/Project/42sh/sources/ft_setenv.c
 
 CMakeFiles/21sh.dir/sources/ft_setenv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_setenv.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_setenv.c > CMakeFiles/21sh.dir/sources/ft_setenv.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_setenv.c > CMakeFiles/21sh.dir/sources/ft_setenv.c.i
 
 CMakeFiles/21sh.dir/sources/ft_setenv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_setenv.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_setenv.c -o CMakeFiles/21sh.dir/sources/ft_setenv.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_setenv.c -o CMakeFiles/21sh.dir/sources/ft_setenv.c.s
 
 CMakeFiles/21sh.dir/sources/ft_setenv.c.o.requires:
 
@@ -2891,16 +2891,16 @@ CMakeFiles/21sh.dir/sources/ft_setenv.c.o.provides.build: CMakeFiles/21sh.dir/so
 
 CMakeFiles/21sh.dir/sources/ft_shell.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_shell.c.o: ../sources/ft_shell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/21sh.dir/sources/ft_shell.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell.c.o   -c /home/jonathan/Project/21sh/sources/ft_shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/21sh.dir/sources/ft_shell.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell.c.o   -c /home/jonathan/Project/42sh/sources/ft_shell.c
 
 CMakeFiles/21sh.dir/sources/ft_shell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_shell.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_shell.c > CMakeFiles/21sh.dir/sources/ft_shell.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_shell.c > CMakeFiles/21sh.dir/sources/ft_shell.c.i
 
 CMakeFiles/21sh.dir/sources/ft_shell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_shell.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_shell.c -o CMakeFiles/21sh.dir/sources/ft_shell.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_shell.c -o CMakeFiles/21sh.dir/sources/ft_shell.c.s
 
 CMakeFiles/21sh.dir/sources/ft_shell.c.o.requires:
 
@@ -2915,16 +2915,16 @@ CMakeFiles/21sh.dir/sources/ft_shell.c.o.provides.build: CMakeFiles/21sh.dir/sou
 
 CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o: ../sources/ft_shell_excl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o   -c /home/jonathan/Project/21sh/sources/ft_shell_excl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o   -c /home/jonathan/Project/42sh/sources/ft_shell_excl.c
 
 CMakeFiles/21sh.dir/sources/ft_shell_excl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_shell_excl.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_shell_excl.c > CMakeFiles/21sh.dir/sources/ft_shell_excl.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_shell_excl.c > CMakeFiles/21sh.dir/sources/ft_shell_excl.c.i
 
 CMakeFiles/21sh.dir/sources/ft_shell_excl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_shell_excl.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_shell_excl.c -o CMakeFiles/21sh.dir/sources/ft_shell_excl.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_shell_excl.c -o CMakeFiles/21sh.dir/sources/ft_shell_excl.c.s
 
 CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o.requires:
 
@@ -2939,16 +2939,16 @@ CMakeFiles/21sh.dir/sources/ft_shell_excl.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o: ../sources/ft_shell_norme.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o   -c /home/jonathan/Project/21sh/sources/ft_shell_norme.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o   -c /home/jonathan/Project/42sh/sources/ft_shell_norme.c
 
 CMakeFiles/21sh.dir/sources/ft_shell_norme.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_shell_norme.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_shell_norme.c > CMakeFiles/21sh.dir/sources/ft_shell_norme.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_shell_norme.c > CMakeFiles/21sh.dir/sources/ft_shell_norme.c.i
 
 CMakeFiles/21sh.dir/sources/ft_shell_norme.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_shell_norme.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_shell_norme.c -o CMakeFiles/21sh.dir/sources/ft_shell_norme.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_shell_norme.c -o CMakeFiles/21sh.dir/sources/ft_shell_norme.c.s
 
 CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o.requires:
 
@@ -2963,16 +2963,16 @@ CMakeFiles/21sh.dir/sources/ft_shell_norme.c.o.provides.build: CMakeFiles/21sh.d
 
 CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o: ../sources/ft_shell_shrc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o   -c /home/jonathan/Project/21sh/sources/ft_shell_shrc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o   -c /home/jonathan/Project/42sh/sources/ft_shell_shrc.c
 
 CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_shell_shrc.c > CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_shell_shrc.c > CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.i
 
 CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_shell_shrc.c -o CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_shell_shrc.c -o CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.s
 
 CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o.requires:
 
@@ -2987,16 +2987,16 @@ CMakeFiles/21sh.dir/sources/ft_shell_shrc.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_signal.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_signal.c.o: ../sources/ft_signal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/21sh.dir/sources/ft_signal.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_signal.c.o   -c /home/jonathan/Project/21sh/sources/ft_signal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/21sh.dir/sources/ft_signal.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_signal.c.o   -c /home/jonathan/Project/42sh/sources/ft_signal.c
 
 CMakeFiles/21sh.dir/sources/ft_signal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_signal.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_signal.c > CMakeFiles/21sh.dir/sources/ft_signal.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_signal.c > CMakeFiles/21sh.dir/sources/ft_signal.c.i
 
 CMakeFiles/21sh.dir/sources/ft_signal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_signal.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_signal.c -o CMakeFiles/21sh.dir/sources/ft_signal.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_signal.c -o CMakeFiles/21sh.dir/sources/ft_signal.c.s
 
 CMakeFiles/21sh.dir/sources/ft_signal.c.o.requires:
 
@@ -3011,16 +3011,16 @@ CMakeFiles/21sh.dir/sources/ft_signal.c.o.provides.build: CMakeFiles/21sh.dir/so
 
 CMakeFiles/21sh.dir/sources/ft_sys.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_sys.c.o: ../sources/ft_sys.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/21sh.dir/sources/ft_sys.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_sys.c.o   -c /home/jonathan/Project/21sh/sources/ft_sys.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/21sh.dir/sources/ft_sys.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_sys.c.o   -c /home/jonathan/Project/42sh/sources/ft_sys.c
 
 CMakeFiles/21sh.dir/sources/ft_sys.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_sys.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_sys.c > CMakeFiles/21sh.dir/sources/ft_sys.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_sys.c > CMakeFiles/21sh.dir/sources/ft_sys.c.i
 
 CMakeFiles/21sh.dir/sources/ft_sys.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_sys.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_sys.c -o CMakeFiles/21sh.dir/sources/ft_sys.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_sys.c -o CMakeFiles/21sh.dir/sources/ft_sys.c.s
 
 CMakeFiles/21sh.dir/sources/ft_sys.c.o.requires:
 
@@ -3035,16 +3035,16 @@ CMakeFiles/21sh.dir/sources/ft_sys.c.o.provides.build: CMakeFiles/21sh.dir/sourc
 
 CMakeFiles/21sh.dir/sources/ft_unalias.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_unalias.c.o: ../sources/ft_unalias.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/21sh.dir/sources/ft_unalias.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unalias.c.o   -c /home/jonathan/Project/21sh/sources/ft_unalias.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/21sh.dir/sources/ft_unalias.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unalias.c.o   -c /home/jonathan/Project/42sh/sources/ft_unalias.c
 
 CMakeFiles/21sh.dir/sources/ft_unalias.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_unalias.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_unalias.c > CMakeFiles/21sh.dir/sources/ft_unalias.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_unalias.c > CMakeFiles/21sh.dir/sources/ft_unalias.c.i
 
 CMakeFiles/21sh.dir/sources/ft_unalias.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_unalias.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_unalias.c -o CMakeFiles/21sh.dir/sources/ft_unalias.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_unalias.c -o CMakeFiles/21sh.dir/sources/ft_unalias.c.s
 
 CMakeFiles/21sh.dir/sources/ft_unalias.c.o.requires:
 
@@ -3059,16 +3059,16 @@ CMakeFiles/21sh.dir/sources/ft_unalias.c.o.provides.build: CMakeFiles/21sh.dir/s
 
 CMakeFiles/21sh.dir/sources/ft_unset.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_unset.c.o: ../sources/ft_unset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/21sh.dir/sources/ft_unset.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unset.c.o   -c /home/jonathan/Project/21sh/sources/ft_unset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/21sh.dir/sources/ft_unset.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unset.c.o   -c /home/jonathan/Project/42sh/sources/ft_unset.c
 
 CMakeFiles/21sh.dir/sources/ft_unset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_unset.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_unset.c > CMakeFiles/21sh.dir/sources/ft_unset.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_unset.c > CMakeFiles/21sh.dir/sources/ft_unset.c.i
 
 CMakeFiles/21sh.dir/sources/ft_unset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_unset.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_unset.c -o CMakeFiles/21sh.dir/sources/ft_unset.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_unset.c -o CMakeFiles/21sh.dir/sources/ft_unset.c.s
 
 CMakeFiles/21sh.dir/sources/ft_unset.c.o.requires:
 
@@ -3083,16 +3083,16 @@ CMakeFiles/21sh.dir/sources/ft_unset.c.o.provides.build: CMakeFiles/21sh.dir/sou
 
 CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o: ../sources/ft_unset_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o   -c /home/jonathan/Project/21sh/sources/ft_unset_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o   -c /home/jonathan/Project/42sh/sources/ft_unset_tools.c
 
 CMakeFiles/21sh.dir/sources/ft_unset_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_unset_tools.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_unset_tools.c > CMakeFiles/21sh.dir/sources/ft_unset_tools.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_unset_tools.c > CMakeFiles/21sh.dir/sources/ft_unset_tools.c.i
 
 CMakeFiles/21sh.dir/sources/ft_unset_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_unset_tools.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_unset_tools.c -o CMakeFiles/21sh.dir/sources/ft_unset_tools.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_unset_tools.c -o CMakeFiles/21sh.dir/sources/ft_unset_tools.c.s
 
 CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o.requires:
 
@@ -3107,16 +3107,16 @@ CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o.provides.build: CMakeFiles/21sh.d
 
 CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o: ../sources/ft_unsetenv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o   -c /home/jonathan/Project/21sh/sources/ft_unsetenv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o   -c /home/jonathan/Project/42sh/sources/ft_unsetenv.c
 
 CMakeFiles/21sh.dir/sources/ft_unsetenv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_unsetenv.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_unsetenv.c > CMakeFiles/21sh.dir/sources/ft_unsetenv.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_unsetenv.c > CMakeFiles/21sh.dir/sources/ft_unsetenv.c.i
 
 CMakeFiles/21sh.dir/sources/ft_unsetenv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_unsetenv.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_unsetenv.c -o CMakeFiles/21sh.dir/sources/ft_unsetenv.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_unsetenv.c -o CMakeFiles/21sh.dir/sources/ft_unsetenv.c.s
 
 CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o.requires:
 
@@ -3131,16 +3131,16 @@ CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o.provides.build: CMakeFiles/21sh.dir/
 
 CMakeFiles/21sh.dir/sources/ft_varenv.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_varenv.c.o: ../sources/ft_varenv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/21sh.dir/sources/ft_varenv.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_varenv.c.o   -c /home/jonathan/Project/21sh/sources/ft_varenv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/21sh.dir/sources/ft_varenv.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_varenv.c.o   -c /home/jonathan/Project/42sh/sources/ft_varenv.c
 
 CMakeFiles/21sh.dir/sources/ft_varenv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_varenv.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_varenv.c > CMakeFiles/21sh.dir/sources/ft_varenv.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_varenv.c > CMakeFiles/21sh.dir/sources/ft_varenv.c.i
 
 CMakeFiles/21sh.dir/sources/ft_varenv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_varenv.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_varenv.c -o CMakeFiles/21sh.dir/sources/ft_varenv.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_varenv.c -o CMakeFiles/21sh.dir/sources/ft_varenv.c.s
 
 CMakeFiles/21sh.dir/sources/ft_varenv.c.o.requires:
 
@@ -3155,16 +3155,16 @@ CMakeFiles/21sh.dir/sources/ft_varenv.c.o.provides.build: CMakeFiles/21sh.dir/so
 
 CMakeFiles/21sh.dir/sources/match.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/match.c.o: ../sources/match.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/21sh.dir/sources/match.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/match.c.o   -c /home/jonathan/Project/21sh/sources/match.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/21sh.dir/sources/match.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/match.c.o   -c /home/jonathan/Project/42sh/sources/match.c
 
 CMakeFiles/21sh.dir/sources/match.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/match.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/match.c > CMakeFiles/21sh.dir/sources/match.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/match.c > CMakeFiles/21sh.dir/sources/match.c.i
 
 CMakeFiles/21sh.dir/sources/match.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/match.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/match.c -o CMakeFiles/21sh.dir/sources/match.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/match.c -o CMakeFiles/21sh.dir/sources/match.c.s
 
 CMakeFiles/21sh.dir/sources/match.c.o.requires:
 
@@ -3177,1914 +3177,18 @@ CMakeFiles/21sh.dir/sources/match.c.o.provides: CMakeFiles/21sh.dir/sources/matc
 CMakeFiles/21sh.dir/sources/match.c.o.provides.build: CMakeFiles/21sh.dir/sources/match.c.o
 
 
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o: ../unicode/libft/sources/btree/btree_apply_infix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_infix.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_infix.c > CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_infix.c -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o: ../unicode/libft/sources/btree/btree_apply_prefix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_prefix.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_prefix.c > CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_prefix.c -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o: ../unicode/libft/sources/btree/btree_apply_suffix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_suffix.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_suffix.c > CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_apply_suffix.c -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o: ../unicode/libft/sources/btree/btree_create_node.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_create_node.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_create_node.c > CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_create_node.c -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o: ../unicode/libft/sources/btree/btree_insert_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_insert_data.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_insert_data.c > CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_insert_data.c -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o: ../unicode/libft/sources/btree/btree_search_item.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_search_item.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_search_item.c > CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/btree/btree_search_item.c -o CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o: ../unicode/libft/sources/ft_is/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isalnum.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isalnum.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isalnum.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o: ../unicode/libft/sources/ft_is/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isalpha.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isalpha.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isalpha.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o: ../unicode/libft/sources/ft_is/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isascii.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isascii.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isascii.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o: ../unicode/libft/sources/ft_is/ft_isblank.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isblank.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isblank.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isblank.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o: ../unicode/libft/sources/ft_is/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isdigit.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isdigit.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isdigit.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o: ../unicode/libft/sources/ft_is/ft_ishex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_ishex.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_ishex.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_ishex.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o: ../unicode/libft/sources/ft_is/ft_isoct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isoct.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isoct.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isoct.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o: ../unicode/libft/sources/ft_is/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isprint.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isprint.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_isprint.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o: ../unicode/libft/sources/ft_is/ft_iswspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_iswspace.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_iswspace.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_is/ft_iswspace.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o: ../unicode/libft/sources/ft_lst/ft_del.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_del.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_del.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_del.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o: ../unicode/libft/sources/ft_lst/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o: ../unicode/libft/sources/ft_lst/ft_lstadd_ascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o: ../unicode/libft/sources/ft_lst/ft_lstadd_end.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd_end.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd_end.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstadd_end.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o: ../unicode/libft/sources/ft_lst/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstdel.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstdel.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstdel.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o: ../unicode/libft/sources/ft_lst/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstdelone.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstdelone.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstdelone.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o: ../unicode/libft/sources/ft_lst/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstiter.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstiter.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstiter.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o: ../unicode/libft/sources/ft_lst/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstmap.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstmap.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstmap.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o: ../unicode/libft/sources/ft_lst/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstnew.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstnew.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstnew.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o: ../unicode/libft/sources/ft_lst/ft_lstswap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstswap.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstswap.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_lst/ft_lstswap.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o: ../unicode/libft/sources/ft_mem/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_bzero.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_bzero.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_bzero.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o: ../unicode/libft/sources/ft_mem/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memalloc.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memalloc.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memalloc.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o: ../unicode/libft/sources/ft_mem/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memccpy.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memccpy.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memccpy.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o: ../unicode/libft/sources/ft_mem/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memchr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memchr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memchr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o: ../unicode/libft/sources/ft_mem/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memcmp.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memcmp.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memcmp.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o: ../unicode/libft/sources/ft_mem/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memcpy.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memcpy.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memcpy.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o: ../unicode/libft/sources/ft_mem/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memdel.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memdel.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memdel.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o: ../unicode/libft/sources/ft_mem/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memmove.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memmove.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memmove.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o: ../unicode/libft/sources/ft_mem/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memset.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memset.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_mem/ft_memset.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o: ../unicode/libft/sources/ft_put/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putchar.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putchar.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putchar.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o: ../unicode/libft/sources/ft_put/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putchar_fd.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putchar_fd.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putchar_fd.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o: ../unicode/libft/sources/ft_put/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putendl.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putendl.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putendl.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o: ../unicode/libft/sources/ft_put/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putendl_fd.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putendl_fd.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putendl_fd.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o: ../unicode/libft/sources/ft_put/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putnbr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putnbr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putnbr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o: ../unicode/libft/sources/ft_put/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putnbr_fd.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putnbr_fd.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putnbr_fd.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o: ../unicode/libft/sources/ft_put/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putstr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putstr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putstr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o: ../unicode/libft/sources/ft_put/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putstr_fd.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putstr_fd.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_put/ft_putstr_fd.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o: ../unicode/libft/sources/ft_str/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcat.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcat.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcat.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o: ../unicode/libft/sources/ft_str/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strchr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strchr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strchr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o: ../unicode/libft/sources/ft_str/ft_strcjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcjoin.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcjoin.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcjoin.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o: ../unicode/libft/sources/ft_str/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strclr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strclr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strclr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o: ../unicode/libft/sources/ft_str/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcmp.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcmp.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcmp.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o: ../unicode/libft/sources/ft_str/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcpy.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcpy.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strcpy.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o: ../unicode/libft/sources/ft_str/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strdel.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strdel.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strdel.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o: ../unicode/libft/sources/ft_str/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strdup.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strdup.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strdup.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o: ../unicode/libft/sources/ft_str/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strequ.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strequ.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strequ.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o: ../unicode/libft/sources/ft_str/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_striter.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_striter.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_striter.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o: ../unicode/libft/sources/ft_str/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_striteri.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_striteri.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_striteri.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o: ../unicode/libft/sources/ft_str/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strjoin.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strjoin.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strjoin.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o: ../unicode/libft/sources/ft_str/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strlcat.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strlcat.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strlcat.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o: ../unicode/libft/sources/ft_str/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strlen.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strlen.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strlen.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o: ../unicode/libft/sources/ft_str/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strmap.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strmap.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strmap.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o: ../unicode/libft/sources/ft_str/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strmapi.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strmapi.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strmapi.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o: ../unicode/libft/sources/ft_str/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncat.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncat.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncat.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o: ../unicode/libft/sources/ft_str/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncmp.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncmp.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncmp.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o: ../unicode/libft/sources/ft_str/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_191) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncpy.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncpy.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strncpy.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o: ../unicode/libft/sources/ft_str/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_192) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnequ.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnequ.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnequ.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o: ../unicode/libft/sources/ft_str/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnew.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnew.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnew.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o: ../unicode/libft/sources/ft_str/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnstr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnstr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strnstr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o: ../unicode/libft/sources/ft_str/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strrchr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strrchr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strrchr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o: ../unicode/libft/sources/ft_str/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strsplit.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strsplit.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strsplit.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o: ../unicode/libft/sources/ft_str/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strstr.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strstr.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strstr.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o: ../unicode/libft/sources/ft_str/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strsub.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strsub.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strsub.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o: ../unicode/libft/sources/ft_str/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strtrim.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strtrim.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_str/ft_strtrim.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o: ../unicode/libft/sources/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_atoi.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_atoi.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_atoi.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o: ../unicode/libft/sources/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_itoa.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_itoa.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_itoa.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o: ../unicode/libft/sources/ft_match.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_match.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_match.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_match.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o: ../unicode/libft/sources/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_tolower.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_tolower.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_tolower.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o: ../unicode/libft/sources/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/ft_toupper.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/ft_toupper.c > CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/ft_toupper.c -o CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o
-
-
-CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o: ../unicode/libft/sources/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building C object CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o   -c /home/jonathan/Project/21sh/unicode/libft/sources/get_next_line.c
-
-CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/libft/sources/get_next_line.c > CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.i
-
-CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/libft/sources/get_next_line.c -o CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.s
-
-CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.provides: CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.provides.build: CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o
-
-
-CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o: ../unicode/ft_esc_hex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building C object CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o   -c /home/jonathan/Project/21sh/unicode/ft_esc_hex.c
-
-CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/ft_esc_hex.c > CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.i
-
-CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/ft_esc_hex.c -o CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.s
-
-CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.provides: CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.provides.build: CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o
-
-
-CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o: ../unicode/ft_eval_esc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building C object CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o   -c /home/jonathan/Project/21sh/unicode/ft_eval_esc.c
-
-CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/ft_eval_esc.c > CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.i
-
-CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/ft_eval_esc.c -o CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.s
-
-CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.provides: CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.provides.build: CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o
-
-
-CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o: ../unicode/ft_evaluator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building C object CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o   -c /home/jonathan/Project/21sh/unicode/ft_evaluator.c
-
-CMakeFiles/21sh.dir/unicode/ft_evaluator.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/ft_evaluator.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/ft_evaluator.c > CMakeFiles/21sh.dir/unicode/ft_evaluator.c.i
-
-CMakeFiles/21sh.dir/unicode/ft_evaluator.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/ft_evaluator.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/ft_evaluator.c -o CMakeFiles/21sh.dir/unicode/ft_evaluator.c.s
-
-CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.provides: CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.provides.build: CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o
-
-
-CMakeFiles/21sh.dir/unicode/main.c.o: CMakeFiles/21sh.dir/flags.make
-CMakeFiles/21sh.dir/unicode/main.c.o: ../unicode/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building C object CMakeFiles/21sh.dir/unicode/main.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/unicode/main.c.o   -c /home/jonathan/Project/21sh/unicode/main.c
-
-CMakeFiles/21sh.dir/unicode/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/unicode/main.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/unicode/main.c > CMakeFiles/21sh.dir/unicode/main.c.i
-
-CMakeFiles/21sh.dir/unicode/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/unicode/main.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/unicode/main.c -o CMakeFiles/21sh.dir/unicode/main.c.s
-
-CMakeFiles/21sh.dir/unicode/main.c.o.requires:
-
-.PHONY : CMakeFiles/21sh.dir/unicode/main.c.o.requires
-
-CMakeFiles/21sh.dir/unicode/main.c.o.provides: CMakeFiles/21sh.dir/unicode/main.c.o.requires
-	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/unicode/main.c.o.provides.build
-.PHONY : CMakeFiles/21sh.dir/unicode/main.c.o.provides
-
-CMakeFiles/21sh.dir/unicode/main.c.o.provides.build: CMakeFiles/21sh.dir/unicode/main.c.o
-
-
 CMakeFiles/21sh.dir/sources/ft_help.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_help.c.o: ../sources/ft_help.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building C object CMakeFiles/21sh.dir/sources/ft_help.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_help.c.o   -c /home/jonathan/Project/21sh/sources/ft_help.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/21sh.dir/sources/ft_help.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_help.c.o   -c /home/jonathan/Project/42sh/sources/ft_help.c
 
 CMakeFiles/21sh.dir/sources/ft_help.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_help.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_help.c > CMakeFiles/21sh.dir/sources/ft_help.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_help.c > CMakeFiles/21sh.dir/sources/ft_help.c.i
 
 CMakeFiles/21sh.dir/sources/ft_help.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_help.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_help.c -o CMakeFiles/21sh.dir/sources/ft_help.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_help.c -o CMakeFiles/21sh.dir/sources/ft_help.c.s
 
 CMakeFiles/21sh.dir/sources/ft_help.c.o.requires:
 
@@ -5099,16 +3203,16 @@ CMakeFiles/21sh.dir/sources/ft_help.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.o: ../sources/ft_alias_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building C object CMakeFiles/21sh.dir/sources/ft_alias_init.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_alias_init.c.o   -c /home/jonathan/Project/21sh/sources/ft_alias_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/21sh.dir/sources/ft_alias_init.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_alias_init.c.o   -c /home/jonathan/Project/42sh/sources/ft_alias_init.c
 
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_alias_init.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_alias_init.c > CMakeFiles/21sh.dir/sources/ft_alias_init.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_alias_init.c > CMakeFiles/21sh.dir/sources/ft_alias_init.c.i
 
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_alias_init.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_alias_init.c -o CMakeFiles/21sh.dir/sources/ft_alias_init.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_alias_init.c -o CMakeFiles/21sh.dir/sources/ft_alias_init.c.s
 
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.requires:
 
@@ -5119,6 +3223,102 @@ CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.provides: CMakeFiles/21sh.dir/sour
 .PHONY : CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.provides
 
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_alias_init.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o: ../sources/ft_parsing_semicolon.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o   -c /home/jonathan/Project/42sh/sources/ft_parsing_semicolon.c
+
+CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_parsing_semicolon.c > CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.i
+
+CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_parsing_semicolon.c -o CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.s
+
+CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.provides: CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_read_check.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_check.c.o: ../sources/ft_read_check.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/21sh.dir/sources/ft_read_check.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_check.c.o   -c /home/jonathan/Project/42sh/sources/ft_read_check.c
+
+CMakeFiles/21sh.dir/sources/ft_read_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_check.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_read_check.c > CMakeFiles/21sh.dir/sources/ft_read_check.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_check.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_read_check.c -o CMakeFiles/21sh.dir/sources/ft_read_check.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_check.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_check.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_check.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_check.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_check.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_check.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_check.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_check.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o: ../sources/ft_gestion_error_redir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o   -c /home/jonathan/Project/42sh/sources/ft_gestion_error_redir.c
+
+CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_gestion_error_redir.c > CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.i
+
+CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_gestion_error_redir.c -o CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.s
+
+CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.provides: CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_read_color.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_color.c.o: ../sources/ft_read_color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_color.c.o   -c /home/jonathan/Project/42sh/sources/ft_read_color.c
+
+CMakeFiles/21sh.dir/sources/ft_read_color.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_color.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/42sh/sources/ft_read_color.c > CMakeFiles/21sh.dir/sources/ft_read_color.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_color.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_color.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/42sh/sources/ft_read_color.c -o CMakeFiles/21sh.dir/sources/ft_read_color.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_color.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_color.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_color.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_color.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_color.c.o
 
 
 # Object files for target 21sh
@@ -5253,87 +3453,12 @@ CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.provides.build: CMakeFiles/21sh.di
 "CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_varenv.c.o" \
 "CMakeFiles/21sh.dir/sources/match.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o" \
-"CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o" \
-"CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o" \
-"CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o" \
-"CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o" \
-"CMakeFiles/21sh.dir/unicode/main.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_help.c.o" \
-"CMakeFiles/21sh.dir/sources/ft_alias_init.c.o"
+"CMakeFiles/21sh.dir/sources/ft_alias_init.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_check.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_color.c.o"
 
 # External object files for target 21sh
 21sh_EXTERNAL_OBJECTS =
@@ -5468,90 +3593,15 @@ CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.provides.build: CMakeFiles/21sh.di
 21sh: CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_varenv.c.o
 21sh: CMakeFiles/21sh.dir/sources/match.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o
-21sh: CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o
-21sh: CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o
-21sh: CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o
-21sh: CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o
-21sh: CMakeFiles/21sh.dir/unicode/main.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_help.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_alias_init.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_check.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_color.c.o
 21sh: CMakeFiles/21sh.dir/build.make
 21sh: CMakeFiles/21sh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Linking C executable 21sh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Linking C executable 21sh"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/21sh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -5689,87 +3739,12 @@ CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o.req
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_varenv.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/match.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_infix.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_prefix.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_apply_suffix.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_create_node.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_insert_data.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/btree/btree_search_item.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalnum.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isalpha.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isascii.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isblank.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isdigit.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_ishex.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isoct.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_isprint.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_is/ft_iswspace.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_del.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_ascii.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstadd_end.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdel.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstdelone.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstiter.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstmap.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstnew.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_lst/ft_lstswap.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_bzero.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memalloc.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memccpy.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memchr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcmp.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memcpy.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memdel.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memmove.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_mem/ft_memset.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putchar_fd.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putendl_fd.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putnbr_fd.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_put/ft_putstr_fd.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcat.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strchr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcjoin.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strclr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcmp.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strcpy.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdel.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strdup.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strequ.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striter.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_striteri.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strjoin.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlcat.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strlen.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmap.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strmapi.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncat.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncmp.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strncpy.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnequ.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnew.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strnstr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strrchr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsplit.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strstr.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strsub.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_str/ft_strtrim.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_atoi.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_itoa.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_match.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_tolower.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/ft_toupper.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/libft/sources/get_next_line.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/ft_esc_hex.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/ft_eval_esc.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/ft_evaluator.c.o.requires
-CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/unicode/main.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_help.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_check.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_color.c.o.requires
 
 .PHONY : CMakeFiles/21sh.dir/requires
 
@@ -5778,6 +3753,6 @@ CMakeFiles/21sh.dir/clean:
 .PHONY : CMakeFiles/21sh.dir/clean
 
 CMakeFiles/21sh.dir/depend:
-	cd /home/jonathan/Project/21sh/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jonathan/Project/21sh /home/jonathan/Project/21sh /home/jonathan/Project/21sh/cmake-build-debug /home/jonathan/Project/21sh/cmake-build-debug /home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles/21sh.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jonathan/Project/42sh/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jonathan/Project/42sh /home/jonathan/Project/42sh /home/jonathan/Project/42sh/cmake-build-debug /home/jonathan/Project/42sh/cmake-build-debug /home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/21sh.dir/depend
 

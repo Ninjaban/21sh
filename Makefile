@@ -59,6 +59,7 @@ SRC		=	ft_access.c \
 			ft_prompt_path.c \
 			ft_read.c \
 			ft_read_check.c \
+			ft_read_color.c \
 			ft_read_copy.c \
 			ft_read_move.c \
 			ft_read_print.c \

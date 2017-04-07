@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "shell.h"
 #include "terms.h"
 
@@ -36,7 +35,8 @@ void		ft_print(char *str, size_t pos, int inc)
 	free(tmp);
 	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
 	n = (int)len_s - 1;
-	ft_putstr_fd(str, 0);
+	ft_read_color_main(str);
+//	ft_putstr_fd(str, 0);
 	while (n-- >= (int)pos + inc)
 		ft_putchar_fd('\b', 0);
 }
