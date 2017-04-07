@@ -34,11 +34,11 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	{
 		if (str[n] == '\x1b')
 		{
+			n = n + 1;
 			while (str[n] != '\033')
 				n = n + 1;
 			while (str[n] != 'm')
 				n = n + 1;
-			n = n + 1;
 		}
 		if (str[n] == '-')
 			return (n);
@@ -62,7 +62,6 @@ static char		*ft_read_color_hiphen_boucle(char *str, char *new)
 			new[n++] = str[i++];
 		if (str[i])
 		{
-			ft_putendl_fd(str + i, 0);
 			ft_strcopy_color(&new, "\x1b[38;5;69m", &n);
 			while (str[i] && str[i] != ' ' && str[i] != '\t')
 				new[n++] = str[i++];

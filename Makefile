@@ -10,7 +10,7 @@
 #                                                                              #
 #  **************************************************************************  #
 
-NAME		=	42sh
+NAME		=	21sh
 
 SRC		=	ft_access.c \
 			ft_alias.c \
@@ -62,6 +62,7 @@ SRC		=	ft_access.c \
 			ft_read_color.c \
 			ft_read_color_first.c \
 			ft_read_color_hyphen.c \
+			ft_read_color_inhibitor.c \
 			ft_read_copy.c \
 			ft_read_move.c \
 			ft_read_print.c \
