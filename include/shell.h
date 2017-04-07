@@ -363,8 +363,10 @@ int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 **	Coloration Syntaxique
 */
 
-char			*ft_read_color_first(char *str);
 void			ft_read_color_main(char *str);
+void			ft_strcopy_color(char **src, char *str, size_t *n);
+char			*ft_read_color_first(char *str);
+char			*ft_read_color_hiphen(char *str);
 
 /*
 **	Signaux

@@ -135,6 +135,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/21sh.dir/sources/ft_read_check.c.o"
   "CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o"
   "CMakeFiles/21sh.dir/sources/ft_read_color.c.o"
+  "CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o"
   "21sh.pdb"
   "21sh"
 )

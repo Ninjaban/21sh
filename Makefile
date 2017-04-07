@@ -6,11 +6,11 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/01 00:00:00 by jcarra            #+#    #+#              #
-#    Updated: 2017/04/06 08:54:05 by jcarra           ###   ########.fr        #
+#    Updated: 2017/01/01 00:00:00 by jcarra           ###   ########.fr        #
 #                                                                              #
 #  **************************************************************************  #
 
-NAME		=	21sh
+NAME		=	42sh
 
 SRC		=	ft_access.c \
 			ft_alias.c \
@@ -60,6 +60,8 @@ SRC		=	ft_access.c \
 			ft_read.c \
 			ft_read_check.c \
 			ft_read_color.c \
+			ft_read_color_first.c \
+			ft_read_color_hyphen.c \
 			ft_read_copy.c \
 			ft_read_move.c \
 			ft_read_print.c \
@@ -89,7 +91,7 @@ LIBS		=	$(LIB:%=$(DIRLIB)%)
 
 OBJS		=	$(SRCS:.c=.o)
 
-CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC) -g3
+CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC)
 LFLAGS		=	-lncurses
 
 CC		=	gcc

@@ -143,6 +143,6 @@ set(SOURCE_FILES
         sources/ft_unsetenv.c
         sources/ft_varenv.c
         sources/match.c
-        sources/ft_help.c sources/ft_alias_init.c sources/ft_parsing_semicolon.c sources/ft_read_check.c sources/ft_gestion_error_redir.c sources/ft_read_color.c)
+        sources/ft_help.c sources/ft_alias_init.c sources/ft_parsing_semicolon.c sources/ft_read_check.c sources/ft_gestion_error_redir.c sources/ft_read_color.c sources/ft_read_color_first.c)
 
 add_executable(21sh ${SOURCE_FILES})

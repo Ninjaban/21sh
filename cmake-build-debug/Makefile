@@ -3336,6 +3336,33 @@ sources/ft_read_color.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color.c.s
 .PHONY : sources/ft_read_color.c.s
 
+sources/ft_read_color_first.o: sources/ft_read_color_first.c.o
+
+.PHONY : sources/ft_read_color_first.o
+
+# target to build an object file
+sources/ft_read_color_first.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o
+.PHONY : sources/ft_read_color_first.c.o
+
+sources/ft_read_color_first.i: sources/ft_read_color_first.c.i
+
+.PHONY : sources/ft_read_color_first.i
+
+# target to preprocess a source file
+sources/ft_read_color_first.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_first.c.i
+.PHONY : sources/ft_read_color_first.c.i
+
+sources/ft_read_color_first.s: sources/ft_read_color_first.c.s
+
+.PHONY : sources/ft_read_color_first.s
+
+# target to generate assembly for a file
+sources/ft_read_color_first.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_first.c.s
+.PHONY : sources/ft_read_color_first.c.s
+
 sources/ft_read_copy.o: sources/ft_read_copy.c.o
 
 .PHONY : sources/ft_read_copy.o
@@ -4161,6 +4188,9 @@ help:
 	@echo "... sources/ft_read_color.o"
 	@echo "... sources/ft_read_color.i"
 	@echo "... sources/ft_read_color.s"
+	@echo "... sources/ft_read_color_first.o"
+	@echo "... sources/ft_read_color_first.i"
+	@echo "... sources/ft_read_color_first.s"
 	@echo "... sources/ft_read_copy.o"
 	@echo "... sources/ft_read_copy.i"
 	@echo "... sources/ft_read_copy.s"

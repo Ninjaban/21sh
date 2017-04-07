@@ -123,6 +123,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/jonathan/Project/42sh/sources/ft_read.c" "/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_read.c.o"
   "/home/jonathan/Project/42sh/sources/ft_read_check.c" "/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_read_check.c.o"
   "/home/jonathan/Project/42sh/sources/ft_read_color.c" "/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_read_color.c.o"
+  "/home/jonathan/Project/42sh/sources/ft_read_color_first.c" "/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o"
   "/home/jonathan/Project/42sh/sources/ft_read_copy.c" "/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_read_copy.c.o"
   "/home/jonathan/Project/42sh/sources/ft_read_move.c" "/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_read_move.c.o"
   "/home/jonathan/Project/42sh/sources/ft_read_print.c" "/home/jonathan/Project/42sh/cmake-build-debug/CMakeFiles/21sh.dir/sources/ft_read_print.c.o"
