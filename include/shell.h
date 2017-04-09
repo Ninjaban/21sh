@@ -368,6 +368,7 @@ void			ft_strcopy_color(char **src, char *str, size_t *n);
 char			*ft_read_color_inhibitor(char *str);
 char			*ft_read_color_first(char *str);
 char			*ft_read_color_hiphen(char *str);
+char			*ft_read_color_fd(char *str);
 char			*ft_read_color_redirect(char *str);
 
 /*

@@ -29,6 +29,7 @@ void		ft_read_color_main(char *str)
 	color = ft_read_color_inhibitor(color);
 	color = ft_read_color_first(color);
 	color = ft_read_color_hiphen(color);
+	color = ft_read_color_fd(color);
 	color = ft_read_color_redirect(color);
 	ft_putstr_fd(color, 0);
 	free(color);

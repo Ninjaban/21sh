@@ -463,7 +463,19 @@
 		<Unit filename="/home/jonathan/Project/21sh/sources/ft_read_color.c">
 			<Option target="21sh"/>
 		</Unit>
+		<Unit filename="/home/jonathan/Project/21sh/sources/ft_read_color_fd.c">
+			<Option target="21sh"/>
+		</Unit>
 		<Unit filename="/home/jonathan/Project/21sh/sources/ft_read_color_first.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/home/jonathan/Project/21sh/sources/ft_read_color_hyphen.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/home/jonathan/Project/21sh/sources/ft_read_color_inhibitor.c">
+			<Option target="21sh"/>
+		</Unit>
+		<Unit filename="/home/jonathan/Project/21sh/sources/ft_read_color_redirect.c">
 			<Option target="21sh"/>
 		</Unit>
 		<Unit filename="/home/jonathan/Project/21sh/sources/ft_read_copy.c">

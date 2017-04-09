@@ -3177,9 +3177,105 @@ CMakeFiles/21sh.dir/sources/match.c.o.provides: CMakeFiles/21sh.dir/sources/matc
 CMakeFiles/21sh.dir/sources/match.c.o.provides.build: CMakeFiles/21sh.dir/sources/match.c.o
 
 
+CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o: ../sources/ft_read_color_inhibitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_color_inhibitor.c
+
+CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read_color_inhibitor.c > CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read_color_inhibitor.c -o CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o: ../sources/ft_read_color_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_color_fd.c
+
+CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read_color_fd.c > CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read_color_fd.c -o CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o: ../sources/ft_read_color_hyphen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_color_hyphen.c
+
+CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read_color_hyphen.c > CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read_color_hyphen.c -o CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o
+
+
+CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o: CMakeFiles/21sh.dir/flags.make
+CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o: ../sources/ft_read_color_redirect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_color_redirect.c
+
+CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jonathan/Project/21sh/sources/ft_read_color_redirect.c > CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.i
+
+CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jonathan/Project/21sh/sources/ft_read_color_redirect.c -o CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.s
+
+CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.requires:
+
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.requires
+
+CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.provides: CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.requires
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.provides.build
+.PHONY : CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.provides
+
+CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.provides.build: CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o
+
+
 CMakeFiles/21sh.dir/sources/ft_help.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_help.c.o: ../sources/ft_help.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/21sh.dir/sources/ft_help.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/21sh.dir/sources/ft_help.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_help.c.o   -c /home/jonathan/Project/21sh/sources/ft_help.c
 
 CMakeFiles/21sh.dir/sources/ft_help.c.i: cmake_force
@@ -3203,7 +3299,7 @@ CMakeFiles/21sh.dir/sources/ft_help.c.o.provides.build: CMakeFiles/21sh.dir/sour
 
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.o: ../sources/ft_alias_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/21sh.dir/sources/ft_alias_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/21sh.dir/sources/ft_alias_init.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_alias_init.c.o   -c /home/jonathan/Project/21sh/sources/ft_alias_init.c
 
 CMakeFiles/21sh.dir/sources/ft_alias_init.c.i: cmake_force
@@ -3227,7 +3323,7 @@ CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o: ../sources/ft_parsing_semicolon.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o   -c /home/jonathan/Project/21sh/sources/ft_parsing_semicolon.c
 
 CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.i: cmake_force
@@ -3251,7 +3347,7 @@ CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/21sh.dir/sources/ft_read_check.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_read_check.c.o: ../sources/ft_read_check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/21sh.dir/sources/ft_read_check.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/21sh.dir/sources/ft_read_check.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_check.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_check.c
 
 CMakeFiles/21sh.dir/sources/ft_read_check.c.i: cmake_force
@@ -3275,7 +3371,7 @@ CMakeFiles/21sh.dir/sources/ft_read_check.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o: ../sources/ft_gestion_error_redir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o   -c /home/jonathan/Project/21sh/sources/ft_gestion_error_redir.c
 
 CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.i: cmake_force
@@ -3299,7 +3395,7 @@ CMakeFiles/21sh.dir/sources/ft_gestion_error_redir.c.o.provides.build: CMakeFile
 
 CMakeFiles/21sh.dir/sources/ft_read_color.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_read_color.c.o: ../sources/ft_read_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_color.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_color.c
 
 CMakeFiles/21sh.dir/sources/ft_read_color.c.i: cmake_force
@@ -3323,7 +3419,7 @@ CMakeFiles/21sh.dir/sources/ft_read_color.c.o.provides.build: CMakeFiles/21sh.di
 
 CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o: CMakeFiles/21sh.dir/flags.make
 CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o: ../sources/ft_read_color_first.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o   -c /home/jonathan/Project/21sh/sources/ft_read_color_first.c
 
 CMakeFiles/21sh.dir/sources/ft_read_color_first.c.i: cmake_force
@@ -3477,6 +3573,10 @@ CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o.provides.build: CMakeFiles/2
 "CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_varenv.c.o" \
 "CMakeFiles/21sh.dir/sources/match.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o" \
+"CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_help.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_alias_init.c.o" \
 "CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o" \
@@ -3618,6 +3718,10 @@ CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o.provides.build: CMakeFiles/2
 21sh: CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_varenv.c.o
 21sh: CMakeFiles/21sh.dir/sources/match.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o
+21sh: CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_help.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_alias_init.c.o
 21sh: CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o
@@ -3627,7 +3731,7 @@ CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o.provides.build: CMakeFiles/2
 21sh: CMakeFiles/21sh.dir/sources/ft_read_color_first.c.o
 21sh: CMakeFiles/21sh.dir/build.make
 21sh: CMakeFiles/21sh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Linking C executable 21sh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonathan/Project/21sh/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Linking C executable 21sh"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/21sh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -3765,6 +3869,10 @@ CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_unset_tools.c.o.req
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_unsetenv.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_varenv.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/match.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o.requires
+CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_help.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_alias_init.c.o.requires
 CMakeFiles/21sh.dir/requires: CMakeFiles/21sh.dir/sources/ft_parsing_semicolon.c.o.requires

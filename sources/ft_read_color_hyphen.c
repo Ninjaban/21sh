@@ -62,7 +62,7 @@ static char		*ft_read_color_hiphen_boucle(char *str, char *new)
 			new[n++] = str[i++];
 		if (str[i])
 		{
-			ft_strcopy_color(&new, "\x1b[38;5;69m", &n);
+			ft_strcopy_color(&new, "\x1b[38;5;87m", &n);
 			while (str[i] && str[i] != ' ' && str[i] != '\t')
 				new[n++] = str[i++];
 			ft_strcopy_color(&new, "\033[0m", &n);
@@ -76,7 +76,7 @@ char			*ft_read_color_hiphen(char *str)
 	char	*new;
 
 	if ((new = ft_strnew(ft_strlen(str) + (ft_count_hyphen(str) *
-			(ft_strlen("\x1b[38;5;69m") + ft_strlen("\033[0m"))) + 1)) == NULL)
+			(ft_strlen("\x1b[38;5;87m") + ft_strlen("\033[0m"))) + 1)) == NULL)
 		return (NULL);
 	new = ft_read_color_hiphen_boucle(str, new);
 	free(str);

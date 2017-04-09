@@ -12,7 +12,7 @@
 
 #include "shell.h"
 
-static int		ft_count_redirect(char *str)
+static int		ft_count_fd(char *str)
 {
 	int		nbr;
 	int		n;
@@ -21,8 +21,7 @@ static int		ft_count_redirect(char *str)
 	n = 0;
 	while (str[n])
 	{
-		if (str[n] == '|' || str[n] == '&' || str[n] == '<' ||
-			str[n] == '>' || str[n] == ';')
+		if (ft_strncmp(str + n, ">&", 1) == 0)
 			nbr = nbr + 1;
 		n = n + 1;
 	}
@@ -41,18 +40,18 @@ static size_t	ft_get_next_word(char *str, size_t n)
 			while (str[n] != 'm')
 				n = n + 1;
 		}
-		if (str[n] == '|' || str[n] == '<' || str[n] == '>' || str[n] == ';' ||
-				ft_strncmp(str + n, "||", 1) == 0 ||
-				ft_strncmp(str + n, "&&", 1) == 0 ||
-				ft_strncmp(str + n, ">>", 1) == 0 ||
-				ft_strncmp(str + n, "<<", 1) == 0)
+		if (ft_strncmp(str + n, ">&", 1) == 0 && ft_isdigit(str[n + 2]))
+		{
+			while (n > 0 && ft_isdigit(str[n - 1]))
+				n = n - 1;
 			return (n);
+		}
 		n = n + 1;
 	}
 	return (n);
 }
 
-static char		*ft_read_color_redirect_boucle(char *str, char *new)
+static char		*ft_read_color_fd_boucle(char *str, char *new)
 {
 	size_t		n;
 	size_t		i;
@@ -67,28 +66,27 @@ static char		*ft_read_color_redirect_boucle(char *str, char *new)
 			new[n++] = str[i++];
 		if (str[i])
 		{
-			ft_strcopy_color(&new, "\x1b[38;5;63m", &n);
+			ft_strcopy_color(&new, "\x1b[38;5;88m", &n);
+			while (ft_isdigit(str[i]))
+				new[n++] = str[i++];
 			new[n++] = str[i++];
-			if (str[i] == '|' || str[i] == '&' || str[i] == '<' ||
-					str[i] == '>')
+			new[n++] = str[i++];
+			while (ft_isdigit(str[i]))
 				new[n++] = str[i++];
 			ft_strcopy_color(&new, "\033[0m", &n);
-			while (str[i] == '|' || str[i] == '&' || str[i] == '<' ||
-					str[i] == '>')
-				new[n++] = str[i++];
 		}
 	}
 	return (new);
 }
 
-char			*ft_read_color_redirect(char *str)
+char			*ft_read_color_fd(char *str)
 {
 	char	*new;
 
-	if ((new = ft_strnew(ft_strlen(str) + (ft_count_redirect(str) *
-			(ft_strlen("\x1b[38;5;63m") + ft_strlen("\033[0m"))) + 1)) == NULL)
+	if ((new = ft_strnew(ft_strlen(str) + (ft_count_fd(str) *
+			(ft_strlen("\x1b[38;5;88m") + ft_strlen("\033[0m"))) + 1)) == NULL)
 		return (NULL);
-	new = ft_read_color_redirect_boucle(str, new);
+	new = ft_read_color_fd_boucle(str, new);
 	free(str);
 	return (new);
 }

@@ -60,6 +60,7 @@ SRC		=	ft_access.c \
 			ft_read.c \
 			ft_read_check.c \
 			ft_read_color.c \
+			ft_read_color_fd.c \
 			ft_read_color_first.c \
 			ft_read_color_hyphen.c \
 			ft_read_color_inhibitor.c \
@@ -93,7 +94,7 @@ LIBS		=	$(LIB:%=$(DIRLIB)%)
 
 OBJS		=	$(SRCS:.c=.o)
 
-CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC)
+CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC) -g3
 LFLAGS		=	-lncurses
 
 CC		=	gcc

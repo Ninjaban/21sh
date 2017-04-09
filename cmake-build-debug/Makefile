@@ -3336,6 +3336,33 @@ sources/ft_read_color.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color.c.s
 .PHONY : sources/ft_read_color.c.s
 
+sources/ft_read_color_fd.o: sources/ft_read_color_fd.c.o
+
+.PHONY : sources/ft_read_color_fd.o
+
+# target to build an object file
+sources/ft_read_color_fd.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.o
+.PHONY : sources/ft_read_color_fd.c.o
+
+sources/ft_read_color_fd.i: sources/ft_read_color_fd.c.i
+
+.PHONY : sources/ft_read_color_fd.i
+
+# target to preprocess a source file
+sources/ft_read_color_fd.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.i
+.PHONY : sources/ft_read_color_fd.c.i
+
+sources/ft_read_color_fd.s: sources/ft_read_color_fd.c.s
+
+.PHONY : sources/ft_read_color_fd.s
+
+# target to generate assembly for a file
+sources/ft_read_color_fd.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_fd.c.s
+.PHONY : sources/ft_read_color_fd.c.s
+
 sources/ft_read_color_first.o: sources/ft_read_color_first.c.o
 
 .PHONY : sources/ft_read_color_first.o
@@ -3362,6 +3389,87 @@ sources/ft_read_color_first.s: sources/ft_read_color_first.c.s
 sources/ft_read_color_first.c.s:
 	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_first.c.s
 .PHONY : sources/ft_read_color_first.c.s
+
+sources/ft_read_color_hyphen.o: sources/ft_read_color_hyphen.c.o
+
+.PHONY : sources/ft_read_color_hyphen.o
+
+# target to build an object file
+sources/ft_read_color_hyphen.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.o
+.PHONY : sources/ft_read_color_hyphen.c.o
+
+sources/ft_read_color_hyphen.i: sources/ft_read_color_hyphen.c.i
+
+.PHONY : sources/ft_read_color_hyphen.i
+
+# target to preprocess a source file
+sources/ft_read_color_hyphen.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.i
+.PHONY : sources/ft_read_color_hyphen.c.i
+
+sources/ft_read_color_hyphen.s: sources/ft_read_color_hyphen.c.s
+
+.PHONY : sources/ft_read_color_hyphen.s
+
+# target to generate assembly for a file
+sources/ft_read_color_hyphen.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_hyphen.c.s
+.PHONY : sources/ft_read_color_hyphen.c.s
+
+sources/ft_read_color_inhibitor.o: sources/ft_read_color_inhibitor.c.o
+
+.PHONY : sources/ft_read_color_inhibitor.o
+
+# target to build an object file
+sources/ft_read_color_inhibitor.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.o
+.PHONY : sources/ft_read_color_inhibitor.c.o
+
+sources/ft_read_color_inhibitor.i: sources/ft_read_color_inhibitor.c.i
+
+.PHONY : sources/ft_read_color_inhibitor.i
+
+# target to preprocess a source file
+sources/ft_read_color_inhibitor.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.i
+.PHONY : sources/ft_read_color_inhibitor.c.i
+
+sources/ft_read_color_inhibitor.s: sources/ft_read_color_inhibitor.c.s
+
+.PHONY : sources/ft_read_color_inhibitor.s
+
+# target to generate assembly for a file
+sources/ft_read_color_inhibitor.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_inhibitor.c.s
+.PHONY : sources/ft_read_color_inhibitor.c.s
+
+sources/ft_read_color_redirect.o: sources/ft_read_color_redirect.c.o
+
+.PHONY : sources/ft_read_color_redirect.o
+
+# target to build an object file
+sources/ft_read_color_redirect.c.o:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.o
+.PHONY : sources/ft_read_color_redirect.c.o
+
+sources/ft_read_color_redirect.i: sources/ft_read_color_redirect.c.i
+
+.PHONY : sources/ft_read_color_redirect.i
+
+# target to preprocess a source file
+sources/ft_read_color_redirect.c.i:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.i
+.PHONY : sources/ft_read_color_redirect.c.i
+
+sources/ft_read_color_redirect.s: sources/ft_read_color_redirect.c.s
+
+.PHONY : sources/ft_read_color_redirect.s
+
+# target to generate assembly for a file
+sources/ft_read_color_redirect.c.s:
+	$(MAKE) -f CMakeFiles/21sh.dir/build.make CMakeFiles/21sh.dir/sources/ft_read_color_redirect.c.s
+.PHONY : sources/ft_read_color_redirect.c.s
 
 sources/ft_read_copy.o: sources/ft_read_copy.c.o
 
@@ -4188,9 +4296,21 @@ help:
 	@echo "... sources/ft_read_color.o"
 	@echo "... sources/ft_read_color.i"
 	@echo "... sources/ft_read_color.s"
+	@echo "... sources/ft_read_color_fd.o"
+	@echo "... sources/ft_read_color_fd.i"
+	@echo "... sources/ft_read_color_fd.s"
 	@echo "... sources/ft_read_color_first.o"
 	@echo "... sources/ft_read_color_first.i"
 	@echo "... sources/ft_read_color_first.s"
+	@echo "... sources/ft_read_color_hyphen.o"
+	@echo "... sources/ft_read_color_hyphen.i"
+	@echo "... sources/ft_read_color_hyphen.s"
+	@echo "... sources/ft_read_color_inhibitor.o"
+	@echo "... sources/ft_read_color_inhibitor.i"
+	@echo "... sources/ft_read_color_inhibitor.s"
+	@echo "... sources/ft_read_color_redirect.o"
+	@echo "... sources/ft_read_color_redirect.i"
+	@echo "... sources/ft_read_color_redirect.s"
 	@echo "... sources/ft_read_copy.o"
 	@echo "... sources/ft_read_copy.i"
 	@echo "... sources/ft_read_copy.s"

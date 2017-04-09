@@ -42,7 +42,7 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	char		separator;
 
 	separator = FALSE;
-	if (n == 0)
+	if (n == 0 && ft_isalnum(str[n]))
 		return (n);
 	while (str[n])
 	{
