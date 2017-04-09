@@ -42,16 +42,18 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	char		separator;
 
 	separator = FALSE;
-	if (n == 0 && ft_isalnum(str[n]))
-		return (n);
+//	if (n == 0 && ft_isalnum(str[n]))
+	if (n == 0)
+		separator = TRUE;
 	while (str[n])
 	{
 		if (str[n] == '\x1b')
 		{
+			separator = FALSE;
 			n = n + 1;
-			while (str[n] != '\033')
+			while (str[n] && str[n] != '\033')
 				n = n + 1;
-			while (str[n] != 'm')
+			while (str[n] && str[n] != 'm')
 				n = n + 1;
 		}
 		if ((str[n] == ';') || (str[n] == '&' && str[n + 1] == '&') ||
@@ -59,7 +61,8 @@ static size_t	ft_get_next_word(char *str, size_t n)
 			separator = TRUE;
 		if (ft_isalnum(str[n]) && separator == TRUE)
 			return (n);
-		n = n + 1;
+		if (str[n])
+			n = n + 1;
 	}
 	return (n);
 }

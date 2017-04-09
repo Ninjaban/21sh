@@ -35,14 +35,15 @@ static size_t	ft_get_next_word(char *str, size_t n)
 		if (str[n] == '\x1b')
 		{
 			n = n + 1;
-			while (str[n] != '\033')
+			while (str[n] && str[n] != '\033')
 				n = n + 1;
-			while (str[n] != 'm')
+			while (str[n] && str[n] != 'm')
 				n = n + 1;
 		}
 		if (str[n] == '\"' || str[n] == '\'')
 			return (n);
-		n = n + 1;
+		if (str[n])
+			n = n + 1;
 	}
 	return (n);
 }
