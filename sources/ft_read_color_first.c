@@ -58,7 +58,8 @@ static size_t	ft_get_next_word(char *str, size_t n)
 		if ((str[n] == ';') || (str[n] == '&' && str[n + 1] == '&') ||
 			(str[n] == '|' && str[n + 1] == '|') || (str[n] == '|'))
 			separator = TRUE;
-		if (ft_isalnum(str[n]) && separator == TRUE)
+		if ((ft_isalnum(str[n]) || str[n] == '/' || str[n] == '.') &&
+														separator == TRUE)
 			return (n);
 		if (str[n])
 			n = n + 1;
