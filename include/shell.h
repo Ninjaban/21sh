@@ -365,6 +365,7 @@ int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 
 void			ft_read_color_main(char *str);
 void			ft_strcopy_color(char **src, char *str, size_t *n);
+char			ft_check_sep(char *str);
 char			*ft_read_color_inhibitor(char *str);
 char			*ft_read_color_first(char *str);
 char			*ft_read_color_hyphen(char *str);

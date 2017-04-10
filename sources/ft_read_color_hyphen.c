@@ -64,8 +64,13 @@ static char		*ft_read_color_hyphen_boucle(char *str, char *new)
 		if (str[i])
 		{
 			ft_strcopy_color(&new, "\x1b[38;5;87m", &n);
-			while (str[i] && str[i] != ' ' && str[i] != '\t')
+			while (str[i] && str[i] != ' ' && ft_check_sep(str + i) == FALSE)
+			{
+				if (str[i] == '\x1b')
+					while (str[i] && str[i] != 'm')
+						new[n++] = str[i++];
 				new[n++] = str[i++];
+			}
 			ft_strcopy_color(&new, "\033[0m", &n);
 		}
 	}

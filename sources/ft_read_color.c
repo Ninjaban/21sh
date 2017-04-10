@@ -12,6 +12,15 @@
 
 #include "shell.h"
 
+char		ft_check_sep(char *str)
+{
+	if (str[0] == ';' || str[0] == '|' || str[0] == '>' || str[0] == '<' ||
+			ft_strncmp(str, "||", 1) == 0 || ft_strncmp(str, "&&", 1) == 0 ||
+			ft_strncmp(str, ">>", 1) == 0 || ft_strncmp(str, "<<", 1) == 0)
+		return (TRUE);
+	return (FALSE);
+}
+
 void		ft_strcopy_color(char **src, char *str, size_t *n)
 {
 	while (*str)
