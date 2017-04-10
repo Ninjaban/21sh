@@ -54,14 +54,12 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	return (n);
 }
 
-static char		*ft_read_color_fd_boucle(char *str, char *new)
+static char		*ft_read_color_fd_boucle(char *str, char *new, size_t i)
 {
 	size_t		n;
-	size_t		i;
 	size_t		next;
 
 	n = 0;
-	i = 0;
 	while (str[i])
 	{
 		next = ft_get_next_word(str, i);
@@ -92,7 +90,7 @@ char			*ft_read_color_fd(char *str)
 	if ((new = ft_strnew(ft_strlen(str) + (ft_count_fd(str) *
 			(ft_strlen("\x1b[38;5;88m") + ft_strlen("\033[0m"))) + 1)) == NULL)
 		return (NULL);
-	new = ft_read_color_fd_boucle(str, new);
+	new = ft_read_color_fd_boucle(str, new, 0);
 	free(str);
 	return (new);
 }
