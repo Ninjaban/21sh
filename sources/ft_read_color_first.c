@@ -41,9 +41,7 @@ static size_t	ft_get_next_word(char *str, size_t n)
 {
 	char		separator;
 
-	separator = FALSE;
-	if (n == 0)
-		separator = TRUE;
+	separator = (n == 0) ? TRUE : FALSE;
 	while (str[n])
 	{
 		if (str[n] == '\x1b')
