@@ -86,6 +86,7 @@ static char	*ft_exec_else(t_btree *node, t_sys **sys, int *ret)
 			return (ERROR_FORK);
 		if ((tmp = ft_exec_node(node->left, &(*sys))) != NULL)
 			return (tmp);
+		wait(NULL);
 		exit(ft_error_int(ERROR_EXEC, 1));
 	}
 	*ret = ft_exec_parent(child);

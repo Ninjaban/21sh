@@ -22,11 +22,22 @@ void		ft_exec_child(t_node *node, t_sys **sys)
 	{
 		if ((name = ft_access(node->cmd->name,
 								(*sys)->env, (*sys)->shvar)) != NULL)
+		{
 			if (execve(name, node->cmd->argv, (*sys)->env) == -1)
-				ft_error(ERROR_EXEC);
+			{
+				wait(NULL);
+				exit(ft_error_int(ERROR_EXEC, 1));
+			}
+			wait(NULL);
+			exit(1);
+		}
 	}
 	else
+	{
+		wait(NULL);
 		exit((ft_exec_builtins(node->cmd, sys) == TRUE) ? 0 : 1);
+	}
+	wait(NULL);
 	exit(0);
 }
 

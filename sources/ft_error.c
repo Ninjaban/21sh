@@ -17,45 +17,83 @@
 void		ft_log(char type, char *log)
 {
 	char	*str;
+	char	*tmp1;
+	char	*tmp2;
+	char	*print;
 
 	if (type == TYPE_INFO)
-		str = " [\e[36mINFO\e[0m]    : ";
+		str = " [\033[36mINFO\033[0m]    : ";
 	else if (type == TYPE_WARNING)
-		str = " [\e[33mWARNING\e[0m] : ";
+		str = " [\033[33mWARNING\033[0m] : ";
 	else
-		str = " [\e[31mERROR\e[0m]   : ";
-	ft_putstr_fd(NAME, (type == TYPE_ERROR) ? 2 : 0);
-	ft_putstr_fd(str, (type == TYPE_ERROR) ? 2 : 0);
-	ft_putendl_fd(log, (type == TYPE_ERROR) ? 2 : 0);
+		str = " [\033[31mERROR\033[0m]   : ";
+	tmp1 = ft_strjoin(NAME, str);
+	tmp2 = ft_strjoin(tmp1, log);
+	print = ft_strjoin(tmp2, "\n");
+	ft_putstr_fd(print, (type == TYPE_ERROR) ? 2 : 0);
+	free(tmp1);
+	free(tmp2);
+	free(print);
 }
 
 void		*ft_error_void(char *error)
 {
-	ft_putstr_fd(NAME, 2);
-	ft_putstr_fd(" [\e[31mERROR\e[0m]   : ", 2);
-	ft_putendl_fd(error, 2);
+	char	*tmp1;
+	char	*tmp2;
+	char	*print;
+
+	tmp1 = ft_strjoin(NAME, " [\033[31mERROR\033[0m]   : ");
+	tmp2 = ft_strjoin(tmp1, error);
+	print = ft_strjoin(tmp2, "\n");
+	ft_putstr_fd(print, 2);
+	free(tmp1);
+	free(tmp2);
+	free(print);
 	return (NULL);
 }
 
 int			ft_error_int(char *error, int exit)
 {
-	ft_putstr_fd(NAME, 2);
-	ft_putstr_fd(" [\e[31mERROR\e[0m]   : ", 2);
-	ft_putendl_fd(error, 2);
+	char	*tmp1;
+	char	*tmp2;
+	char	*print;
+
+	tmp1 = ft_strjoin(NAME, " [\033[31mERROR\033[0m]   : ");
+	tmp2 = ft_strjoin(tmp1, error);
+	print = ft_strjoin(tmp2, "\n");
+	ft_putstr_fd(print, 2);
+	free(tmp1);
+	free(tmp2);
+	free(print);
 	return (exit);
 }
 
 void		ft_error(char *error)
 {
-	ft_putstr_fd(NAME, 2);
-	ft_putstr_fd(" [\e[31mERROR\e[0m]   : ", 2);
-	ft_putendl_fd(error, 2);
+	char *tmp1;
+	char *tmp2;
+	char *print;
+
+	tmp1 = ft_strjoin(NAME, " [\033[31mERROR\033[0m]   : ");
+	tmp2 = ft_strjoin(tmp1, error);
+	print = ft_strjoin(tmp2, "\n");
+	ft_putstr_fd(print, 2);
+	free(tmp1);
+	free(tmp2);
+	free(print);
 }
 
 void		ft_cmd_nfound(char *name)
 {
-	ft_putstr_fd(NAME, 2);
-	ft_putstr_fd(" [\e[31mERROR\e[0m]   : ", 2);
-	ft_putstr_fd(name, 2);
-	ft_putendl_fd(" -> Commande introuvable", 2);
+	char	*tmp1;
+	char	*tmp2;
+	char	*print;
+
+	tmp1 = ft_strjoin(NAME, " [\033[31mERROR\033[0m]   : ");
+	tmp2 = ft_strjoin(tmp1, name);
+	print = ft_strjoin(tmp2, " -> Commande introuvable\n");
+	ft_putstr_fd(print, 2);
+	free(tmp1);
+	free(tmp2);
+	free(print);
 }
