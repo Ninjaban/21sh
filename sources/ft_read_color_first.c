@@ -42,7 +42,6 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	char		separator;
 
 	separator = FALSE;
-//	if (n == 0 && ft_isalnum(str[n]))
 	if (n == 0)
 		separator = TRUE;
 	while (str[n])
@@ -83,7 +82,7 @@ static char		*ft_read_color_first_boucle(char *str, char *new)
 		if (str[i])
 		{
 			ft_strcopy_color(&new, "\x1b[38;5;214m", &n);
-			while (str[i] && ft_isalnum(str[i]))
+			while (str[i] && str[i] != ' ')
 				new[n++] = str[i++];
 			ft_strcopy_color(&new, "\033[0m", &n);
 		}

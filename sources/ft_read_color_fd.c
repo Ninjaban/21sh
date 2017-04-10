@@ -40,7 +40,9 @@ static size_t	ft_get_next_word(char *str, size_t n)
 			while (str[n] && str[n] != 'm')
 				n = n + 1;
 		}
-		if (ft_strncmp(str + n, ">&", 1) == 0 && ft_isdigit(str[n + 2]))
+		if (ft_strncmp(str + n, ">&", 1) == 0 &&
+				(ft_isdigit(str[n + 2]) || str[n + 2] == '-') &&
+				(n == 0 || str[n - 1] == ' ' || ft_isdigit(str[n - 1])))
 		{
 			while (n > 0 && ft_isdigit(str[n - 1]))
 				n = n - 1;
@@ -72,8 +74,11 @@ static char		*ft_read_color_fd_boucle(char *str, char *new)
 				new[n++] = str[i++];
 			new[n++] = str[i++];
 			new[n++] = str[i++];
-			while (ft_isdigit(str[i]))
+			if (str[i] == '-')
 				new[n++] = str[i++];
+			else
+				while (ft_isdigit(str[i]))
+					new[n++] = str[i++];
 			ft_strcopy_color(&new, "\033[0m", &n);
 		}
 	}

@@ -40,7 +40,7 @@ static size_t	ft_get_next_word(char *str, size_t n)
 			while (str[n] && str[n] != 'm')
 				n = n + 1;
 		}
-		if (str[n] == '-')
+		if (str[n] == '-' && (n == 0 || str[n - 1] == ' '))
 			return (n);
 		if (str[n])
 			n = n + 1;
@@ -48,7 +48,7 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	return (n);
 }
 
-static char		*ft_read_color_hiphen_boucle(char *str, char *new)
+static char		*ft_read_color_hyphen_boucle(char *str, char *new)
 {
 	size_t		n;
 	size_t		i;
@@ -72,14 +72,14 @@ static char		*ft_read_color_hiphen_boucle(char *str, char *new)
 	return (new);
 }
 
-char			*ft_read_color_hiphen(char *str)
+char			*ft_read_color_hyphen(char *str)
 {
 	char	*new;
 
 	if ((new = ft_strnew(ft_strlen(str) + (ft_count_hyphen(str) *
 			(ft_strlen("\x1b[38;5;87m") + ft_strlen("\033[0m"))) + 1)) == NULL)
 		return (NULL);
-	new = ft_read_color_hiphen_boucle(str, new);
+	new = ft_read_color_hyphen_boucle(str, new);
 	free(str);
 	return (new);
 }
