@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "shell.h"
 #include "error.h"
 
@@ -77,7 +76,6 @@ static char	*ft_exec_else(t_btree *node, t_sys **sys, int *ret)
 	char	*tmp;
 	pid_t	child;
 
-	tmp = NULL;
 	if ((child = fork()) == -1)
 		return (ERROR_FORK);
 	if (child == 0)

@@ -78,6 +78,7 @@
 # define KEY_ENS			12
 # define KEY_OLE			13
 # define KEY_ORI			14
+
 # define KEY_RST			15
 # define KEY_CPL			16
 

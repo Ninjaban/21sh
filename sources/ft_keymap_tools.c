@@ -20,7 +20,7 @@ static char	ft_keymap_check(int *keymap, int code, int macro)
 
 	n = 0;
 	while (n < KEY_SIZE)
-		if (keymap[n++] == code && (int)n != macro)
+		if (keymap[n++] == code && (int) n != macro)
 			return (TRUE);
 	return (FALSE);
 }
@@ -29,6 +29,7 @@ void		ft_keymap_get(int **keymap, char macro, t_sys *sys)
 {
 	int		c;
 
+	c = 0;
 	ft_log(TYPE_INFO, "Appuyez sur une touche : ");
 	ft_termcaps_change(&sys->term_new);
 	read(0, &c, sizeof(int));
@@ -106,7 +107,7 @@ int			*ft_keymap_init(void)
 {
 	int	*keymap;
 
-	if ((keymap = malloc(sizeof(int *) * (KEY_SIZE + 1))) == NULL)
+	if ((keymap = malloc(sizeof(int) * (KEY_SIZE + 1))) == NULL)
 		return (NULL);
 	keymap[KEY_SIZE] = 0;
 	ft_keymap_reset(&keymap);

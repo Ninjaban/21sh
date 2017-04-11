@@ -53,13 +53,13 @@ static void	ft_key_print_value(int value, char *str)
 	str = (value == KEY_BAC_DEF) ? "DELETE" : str;
 	if (str)
 	{
-		ft_putstr("\e[33;1m");
+		ft_putstr("\033[33;1m");
 		ft_putstr(str);
-		ft_putstr("\e[0m");
+		ft_putstr("\033[0m");
 	}
 	else if (value >= 1 && value <= 29)
 	{
-		ft_putstr("\x1b[38;5;27mCTRL\e[0m - ");
+		ft_putstr("\x1b[38;5;27mCTRL\033[0m - ");
 		ft_putchar((char)value + 64);
 	}
 	else if (value >= 30 && value <= 255)
@@ -75,7 +75,7 @@ static void	ft_keymap_print(int *keymap)
 	{
 		ft_putstr("\x1b[38;5;98m");
 		ft_key_print_type(n);
-		ft_putstr("\e[0m: ");
+		ft_putstr("\033[0m: ");
 		ft_key_print_value(keymap[n], NULL);
 		ft_putchar('\n');
 		n = n + 1;
