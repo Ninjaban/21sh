@@ -20,7 +20,7 @@ static char	ft_keymap_check(int *keymap, int code, int macro)
 
 	n = 0;
 	while (n < KEY_SIZE)
-		if (keymap[n++] == code && (int) n != macro)
+		if (keymap[n++] == code && (int)n != macro)
 			return (TRUE);
 	return (FALSE);
 }
