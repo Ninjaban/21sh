@@ -57,7 +57,7 @@ void		ft_read_past(char **str, size_t *n, char *buf)
 	ft_strjoinf(&tmp, *str + *n);
 	free(*str);
 	*str = tmp;
-	ft_print(*str, *n, (int)ft_strlen(buf));
+	ft_print(*str, *n, (int)ft_strlen(buf), FALSE);
 	*n = *n + ft_strlen(buf);
 }
 

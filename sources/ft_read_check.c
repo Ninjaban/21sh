@@ -17,7 +17,7 @@ static void	ft_read_completion(char **str, char c, size_t *pos, t_sys **sys)
 {
 	ft_completion(&(*str), (c == (*sys)->keymap[KEY_TAB]) ? (*pos) : (*pos) + 1,
 				(*sys), (c == (*sys)->keymap[KEY_TAB]) ? 1 : 0);
-	ft_print(*str, (*pos), (c == (*sys)->keymap[KEY_TAB]) ? 0 : 1);
+	ft_print(*str, (*pos), (c == (*sys)->keymap[KEY_TAB]) ? 0 : 1, FALSE);
 	if (c != (*sys)->keymap[KEY_TAB])
 		*pos = *pos + 1;
 	else
@@ -27,7 +27,7 @@ static void	ft_read_completion(char **str, char c, size_t *pos, t_sys **sys)
 static void	ft_read_check_completion(char **str, size_t *pos, t_sys **sys)
 {
 	ft_completion(&(*str), (*pos), (*sys), 0);
-	ft_print(*str, (*pos), 0);
+	ft_print(*str, (*pos), 0, FALSE);
 }
 
 static void	ft_read_check_suite(int c, char **str, t_sys **sys, size_t *n)
@@ -79,7 +79,7 @@ char		ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 		if (autocompl == TRUE)
 			ft_read_check_completion(&(*str), &(*n), &(*sys));
 		else
-			ft_print(*str, (*n), 0);
+			ft_print(*str, (*n), 0, FALSE);
 	}
 	if ((ft_isprint(c) && c != (*sys)->keymap[KEY_TAB] &&
 		ft_check_keymap(c, (*sys)->keymap) == FALSE) ||
@@ -89,7 +89,7 @@ char		ft_read_check(int c, char **str, t_sys **sys, size_t *n)
 		if (autocompl == TRUE)
 			ft_read_completion(&(*str), c, &(*n), &(*sys));
 		else
-			ft_print(*str, (*n)++, 1);
+			ft_print(*str, (*n)++, 1, FALSE);
 	}
 	ft_read_check_suite(c, &(*str), &(*sys), &(*n));
 	return (FALSE);

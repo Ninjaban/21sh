@@ -346,7 +346,7 @@ char			*ft_path(char *str, char **env, char **shvar, size_t *n);
 */
 
 void			ft_sigint(int sig);
-void			ft_print(char *str, size_t pos, int inc);
+void			ft_print(char *str, size_t pos, int inc, char resetstatic);
 void			ft_read_print(char **str, int c, size_t *pos, t_sys **sys);
 void			ft_read_suppr(char **str, size_t *pos);
 void			ft_read_delete(char **str, size_t *pos);

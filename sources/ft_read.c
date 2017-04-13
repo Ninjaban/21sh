@@ -24,7 +24,7 @@ void		ft_sigint(int sig)
 {
 	if (sig != SIGINT)
 		return ;
-	ft_print(*g_line, g_position, (int)(ft_strlen(*g_line) - g_position));
+	ft_print(*g_line, g_position, (int)(ft_strlen(*g_line) - g_position), TRUE);
 	ft_putendl_fd("^C", 0);
 	ft_affprompt(g_nb, g_env, g_shvar);
 	if (g_line)
@@ -42,7 +42,7 @@ static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 	if (*i >= (size_t)ft_list_size((*sys)->history))
 		return ;
 	*i = *i + 1;
-	ft_print("", *pos, 0);
+	ft_print("", *pos, 0, FALSE);
 	tmp = ft_list_at((*sys)->history, (unsigned int)(*i));
 	free(*str);
 	if (tmp)
@@ -50,7 +50,7 @@ static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 	else
 		*str = ft_strnew(1);
 	*pos = ft_strlen(*str);
-	ft_print(*str, 0, (int)*pos);
+	ft_print(*str, 0, (int)*pos, FALSE);
 }
 
 static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
@@ -66,7 +66,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 									(*sys)->env, (*sys)->shvar);
 		*i = (size_t)ft_list_size((*sys)->history) - ((ret) ? 1 : 0);
 	}
-	ft_print("", *pos, 0);
+	ft_print("", *pos, 0, FALSE);
 	if ((tmp = ft_list_at((*sys)->history, (unsigned int)(*i - 1))))
 	{
 		*i = *i - 1;
@@ -74,7 +74,7 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 		*str = ft_strdup(((t_hist *)(tmp->data))->line);
 	}
 	*pos = (tmp && *str) ? ft_strlen(*str) : 0;
-	ft_print(*str, 0, (int)*pos);
+	ft_print(*str, 0, (int)*pos, FALSE);
 }
 
 static void	ft_read_glob_init(size_t n, t_sys **sys)
@@ -107,7 +107,7 @@ int			ft_read(char **str, t_sys **sys, size_t n, char exit)
 		if (c == (*sys)->keymap[KEY_DOW])
 			ft_read_history_do(&(*str), &(*sys), &i, &g_position);
 	}
-	ft_print(*str, g_position, (int)(ft_strlen(*str) - g_position));
+	ft_print(*str, g_position, (int)(ft_strlen(*str) - g_position), TRUE);
 	ft_putchar_fd('\n', 0);
 	return (TRUE);
 }

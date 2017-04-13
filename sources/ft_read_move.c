@@ -44,7 +44,7 @@ void		ft_read_keyori(char **str, size_t *pos)
 	while (*pos + n < ft_strlen(*str) && (*str)[*pos + n] != ' ' &&
 			(*str)[*pos + n])
 		n = n + 1;
-	ft_print(*str, *pos, (int)n);
+	ft_print(*str, *pos, (int)n, FALSE);
 	*pos = *pos + n;
 }
 
@@ -52,9 +52,9 @@ void		ft_read_move(char **str, int c, size_t *pos, t_sys *sys)
 {
 	if (c == sys->keymap[KEY_RIG] || c == sys->keymap[KEY_ENS])
 		ft_print(*str, *pos, (c == sys->keymap[KEY_RIG]) ? 1 :
-							(int)ft_strlen(*str) - (int)*pos);
+							(int)ft_strlen(*str) - (int)*pos, FALSE);
 	else
-		ft_print(*str, *pos, 0);
+		ft_print(*str, *pos, 0, FALSE);
 	if (c == sys->keymap[KEY_LEF] && *pos > 0)
 	{
 		ft_putchar_fd('\b', 0);
