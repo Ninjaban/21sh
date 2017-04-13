@@ -41,8 +41,9 @@ static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 	if (*i >= (size_t)ft_list_size((*sys)->history))
 		return ;
 	*i = *i + 1;
-	ft_read_move(&(*str), (*sys)->keymap[KEY_HOM], &(*pos), (*sys));
-	ft_read_history_clear(*str);
+//	ft_read_move(&(*str), (*sys)->keymap[KEY_HOM], &(*pos), (*sys));
+	ft_print("", *pos, 0);
+//	ft_read_history_clear(*str);
 	tmp = ft_list_at((*sys)->history, (unsigned int)(*i));
 	free(*str);
 	if (tmp)
@@ -66,8 +67,9 @@ static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 									(*sys)->env, (*sys)->shvar);
 		*i = (size_t)ft_list_size((*sys)->history) - ((ret) ? 1 : 0);
 	}
-	ft_read_move(&(*str), (*sys)->keymap[KEY_HOM], &(*pos), (*sys));
-	ft_read_history_clear(*str);
+//	ft_read_move(&(*str), (*sys)->keymap[KEY_HOM], &(*pos), (*sys));
+	ft_print("", *pos, 0);
+//	ft_read_history_clear(*str);
 	if ((tmp = ft_list_at((*sys)->history, (unsigned int)(*i - 1))))
 	{
 		*i = *i - 1;
@@ -108,7 +110,7 @@ int			ft_read(char **str, t_sys **sys, size_t n, char exit)
 		if (c == (*sys)->keymap[KEY_DOW])
 			ft_read_history_do(&(*str), &(*sys), &i, &g_position);
 	}
-	ft_print(*str, g_position, 0);
+	ft_print(*str, ft_strlen(*str), 0);
 	ft_putchar_fd('\n', 0);
 	return (TRUE);
 }

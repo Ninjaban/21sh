@@ -28,6 +28,11 @@ void		ft_read_history_clear(char *str)
 
 void		ft_read_keyole(char **str, size_t *pos)
 {
+	if (*pos > 0 && (*str)[*pos - 1] == ' ')
+	{
+		ft_putchar_fd('\b', 0);
+		*pos = *pos - 1;
+	}
 	while (*pos > 0 && (*str)[*pos] == ' ')
 	{
 		ft_putchar_fd('\b', 0);
@@ -44,14 +49,14 @@ void		ft_read_keyori(char **str, size_t *pos)
 {
 	size_t	n;
 
-	n = 0;
+	n = ((*str)[*pos] && (*str)[*pos + 1] == ' ') ? 1 : 0;
 	while (*pos + n < ft_strlen(*str) && (*str)[*pos + n] == ' ' &&
 			(*str)[*pos + n])
 		n = n + 1;
 	while (*pos + n < ft_strlen(*str) && (*str)[*pos + n] != ' ' &&
 			(*str)[*pos + n])
 		n = n + 1;
-	ft_print(*str, *pos, n);
+	ft_print(*str, *pos, (int)n);
 	*pos = *pos + n;
 }
 

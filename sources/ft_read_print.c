@@ -23,7 +23,7 @@ void		ft_print(char *str, size_t pos, int inc)
 	if ((tmp = ft_strnew(pos + (len_s * 2) + 3)) == NULL)
 		return ;
 	n = 0;
-	while (n < (int)pos)
+	while (n < (int)pos - 1)
 		tmp[n++] = '\b';
 	i = 0;
 	while (i < (int)len_s)
@@ -31,12 +31,17 @@ void		ft_print(char *str, size_t pos, int inc)
 	while (len_s > 0)
 		tmp[n + i + len_s--] = '\b';
 	tmp[n + i] = '\b';
-	ft_putstr_fd(tmp, 0);
+	if (!(pos || !inc))
+		tmp[ft_strlen(tmp) - 1] = '\0';
+	if (!(pos == 0 && inc == 0))
+		ft_putstr_fd(tmp, 0);
+	else
+		ft_putstr_fd(" \b", 0);
 	free(tmp);
 	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
-	n = (int)len_s - 1;
+	n = (int)len_s;
 	ft_read_color_main(str);
-	while (n-- >= (int)pos + inc)
+	while (n-- > (int)pos + inc)
 		ft_putchar_fd('\b', 0);
 }
 
