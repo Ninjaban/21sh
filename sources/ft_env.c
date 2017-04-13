@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:02:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/13 12:14:47 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/13 12:22:14 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ int			ft_env(char **argv, char **env, char ***shvar)
 	char	**e[2];
 
 	n = 1;
-	while (argv[n] && argv[n][0] == '-')
+	while (argv[n] && argv[n][0] == '-' && argv[n][1])
 	{
 		m = 1;
 		while (argv[n][m] && argv[n][m] == 'i')
