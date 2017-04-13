@@ -20,11 +20,8 @@ void		ft_read_cpy(char *str, size_t n, char **buf)
 	tmp = (*buf) ? ft_strdup(*buf) : NULL;
 	if (*buf)
 		free(*buf);
-	if ((*buf = malloc((tmp) ? ft_strlen(tmp) + 2 : 2)) == NULL)
-	{
-		free(tmp);
-		return ;
-	}
+	if ((*buf = ft_strnew((tmp) ? ft_strlen(tmp) + 2 : 2)) == NULL)
+		return (free(tmp));
 	i = -1;
 	if (tmp)
 		while (tmp[++i])
@@ -32,8 +29,7 @@ void		ft_read_cpy(char *str, size_t n, char **buf)
 	else
 		i = 0;
 	free(tmp);
-	(*buf)[i++] = str[n];
-	(*buf)[i] = '\0';
+	(*buf)[i] = str[n];
 }
 
 void		ft_strjoinf(char **src, char *str)

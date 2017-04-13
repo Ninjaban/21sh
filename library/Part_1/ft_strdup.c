@@ -16,13 +16,15 @@ char		*ft_strdup(char *src)
 {
 	char	*str;
 	size_t	n;
+	size_t	len;
 
 	n = 0;
 	if (!src)
 		return (NULL);
-	if ((str = malloc(ft_strlen(src) + 1)) == NULL)
+	len = ft_strlen(src);
+	if ((str = malloc(len + 1)) == NULL)
 		return (NULL);
-	while (src[n])
+	while (n <= len)
 	{
 		str[n] = src[n];
 		n = n + 1;

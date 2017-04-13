@@ -88,7 +88,9 @@ int			ft_history_init(t_lst **history, char **env, char **shvar)
 	while (n++ < HISTORY_SIZE && get_next_line(fd, &line) == 1)
 	{
 		if (!(*history))
+		{
 			*history = ft_create_hist_elem(line);
+		}
 		else
 			ft_list_push_back_id(&(*history), line);
 		free(line);

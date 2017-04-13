@@ -129,9 +129,7 @@ void			ft_parsing_alias(char **str, t_sys *sys)
 
 	n = 0;
 	change = TRUE;
-	if (!(*str))
-		return ;
-	while ((*str)[n])
+	while (*str && (*str)[n])
 	{
 		if ((*str)[n] == '\"' || (*str)[n] == '\'')
 		{
