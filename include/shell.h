@@ -353,7 +353,6 @@ void			ft_read_delete(char **str, size_t *pos);
 void			ft_read_keyole(char **str, size_t *pos);
 void			ft_read_keyori(char **str, size_t *pos);
 void			ft_read_move(char **str, int c, size_t *pos, t_sys *sys);
-void			ft_read_history_clear(char *str);
 void			ft_read_cpy_past(char **str, size_t *n, char type, char new);
 void			ft_read_keymap_init(t_sys **sys);
 char			ft_read_check(int c, char **str, t_sys **sys, size_t *n);

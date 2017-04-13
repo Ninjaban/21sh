@@ -86,13 +86,12 @@ void		ft_read_suppr(char **str, size_t *pos)
 		if ((t = ft_strsplit(*str, "\a")) == NULL)
 			return ;
 		free(*str);
-		*str = (t[0] && t[1]) ? ft_strjoin(t[0], t[1]) : NULL;
-		*str = (!(*str)) ? ft_strdup(t[0]) : *str;
+		*str = (t[0] && t[1]) ? ft_strjoin(t[0], t[1]) : ft_strdup(t[0]);
 		*str = (!(*str)) ? ft_strnew(1) : *str;
 		ft_free_tab(t);
-		ft_print(*str, (*pos), 0);
-		if (*pos > ft_strlen(*str) && *pos > 0)
-			*pos = *pos - 1;
+		ft_print(*str, *pos, 1);
+		if ((*str)[*pos])
+			ft_putchar_fd('\b', 0);
 	}
 }
 

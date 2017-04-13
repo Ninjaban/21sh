@@ -92,7 +92,7 @@ void		ft_exec_read_file(t_node *node)
 	int		fd;
 
 	if (node->cmd->name[0] != '/' &&
-			 (node->cmd->name[0] != '.' && node->cmd->name[1] != '/'))
+			(node->cmd->name[0] != '.' && node->cmd->name[1] != '/'))
 		name = ft_strjoin("./", node->cmd->name);
 	if (access(name, F_OK) != 0)
 	{
