@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 10:41:32 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/31 13:31:07 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/13 11:36:42 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,14 @@ size_t	ft_find_path(char **tab, char *str)
 	if (!tab)
 		return (0);
 	while (tab[n])
-		if (ft_strncmp(tab[n++], str, ft_strlen(str) - 1) == 0)
-			return (n - 1);
+	{
+		if (ft_strncmp(tab[n], str, ft_strlen(str) - 1) == 0)
+		{
+			if (tab[n][ft_strlen(str)] == '=')
+				return (n);
+		}
+		n++;
+	}
 	return (n);
 }
 
