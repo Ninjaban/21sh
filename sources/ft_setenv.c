@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:06:46 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/10 12:11:53 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/13 13:10:12 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,10 @@ static int		ft_setenv_norme(char *str, char **tab, char ***env,
 			ft_unsetenv(shvar, tab[0]);
 			return (TRUE);
 		}
+		return (ft_error_int(ERROR_VNOTFOUND, FALSE));
 	}
 	else if (ft_tablen(tab) != 2)
-		return (ft_error_int("ERROR_SYNTAX", FALSE));
+		return (ft_error_int(ERROR_SYNTAX, FALSE));
 	return (FALSE);
 }
 

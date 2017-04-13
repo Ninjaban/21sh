@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/01 00:00:00 by jcarra            #+#    #+#              #
-#    Updated: 2017/01/01 00:00:00 by jcarra           ###   ########.fr        #
+#    Updated: 2017/04/13 13:01:50 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #  **************************************************************************  #
 
@@ -105,8 +105,12 @@ MAKE		=	make -C
 
 all		:	$(NAME)
 			@$(ECHO) '\033[32m>\033[0m $(NAME) : [\033[34mAll\033[0m] ->\033[32m\tReady\n\033[0m'
-$(NAME)		:	.libft .hide
+
+$(NAME)		:	.libft .hide .help
 			@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) $(LFLAGS)
+
+.help		:	./help
+				@cp -r ./help/ ~/.help
 
 .hide		:	$(OBJS)
 			@touch .hide
@@ -130,4 +134,3 @@ fclean		:	clean
 re		:	fclean all
 
 .PHONY		:	all clean fclean re
-

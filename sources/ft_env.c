@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 22:02:39 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/31 13:05:49 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/13 12:22:14 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,12 +86,21 @@ static int	ft_env_launch(char **argv, char **tab, char ***env, size_t n)
 int			ft_env(char **argv, char **env, char ***shvar)
 {
 	size_t	n;
+	size_t	m;
 	char	**tab;
 	char	**e[2];
 
-	n = (ft_strcmp(argv[1], "-i") == 0) ? 2 : 1;
-	tab = (ft_strcmp(argv[1], "-i") == 0) ?
-		ft_strsplit(" ", " ") : ft_tabcpy(env);
+	n = 1;
+	while (argv[n] && argv[n][0] == '-' && argv[n][1])
+	{
+		m = 1;
+		while (argv[n][m] && argv[n][m] == 'i')
+			m++;
+		if (argv[n][m])
+			return (ft_error_int(ERROR_OPTION, FALSE));
+		n++;
+	}
+	tab = (n > 1) ? ft_strsplit(" ", " ") : ft_tabcpy(env);
 	ft_env_set(argv, &tab, shvar, &n);
 	e[0] = env;
 	e[1] = *shvar;
