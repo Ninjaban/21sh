@@ -21,6 +21,8 @@ static int	ft_check(const char s, const char *c)
 	n = 0;
 	while (c[n] && c[n] != s)
 		n = n + 1;
+	if (!c[n])
+		return (0);
 	return ((c[n] == s) ? 1 : 0);
 }
 

@@ -49,6 +49,8 @@ int				ft_get_redir_fd(char *str, size_t i)
 	n = 1;
 	if (i == 0 || str[i] != '>')
 		return (1);
+	if (str[i - 1] == '&')
+		return (STD_ALL);
 	if (ft_isdigit(str[i - 1]) == FALSE)
 		return (1);
 	while (i - n > 0 && ft_isdigit(str[i - n]))

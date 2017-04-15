@@ -14,6 +14,16 @@
 #include "shell.h"
 #include "error.h"
 
+static void	ft_init_redir_all(int pdes[2], char way)
+{
+	if (dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT], STDIN_FILENO) == -1)
+		ft_log(TYPE_WARNING, "DUP FAIL");
+	if (dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT], STDOUT_FILENO) == -1)
+		ft_log(TYPE_WARNING, "DUP FAIL");
+	if (dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT], STDERR_FILENO) == -1)
+		ft_log(TYPE_WARNING, "DUP FAIL");
+}
+
 static void	ft_init_redir(t_node *node, int pdes[2], char way)
 {
 	int		stdout;
@@ -26,11 +36,13 @@ static void	ft_init_redir(t_node *node, int pdes[2], char way)
 			stdout = STDOUT_FILENO;
 		else if (node->fd == 2)
 			stdout = STDERR_FILENO;
+		else if (node->fd == -1)
+			ft_init_redir_all(pdes, way);
 		else
 			stdout = node->fd;
 		if (dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT],
-			(way == LEFT) ? stdout : STDIN_FILENO) == -1)
-			ft_log(TYPE_INFO, "DUP FAIL");
+				 (way == LEFT) ? stdout : STDIN_FILENO) == -1)
+			ft_log(TYPE_WARNING, "DUP FAIL");
 		close(pdes[(way == LEFT) ? PIPE_OUT : PIPE_IN]);
 	}
 }

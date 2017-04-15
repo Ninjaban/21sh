@@ -41,7 +41,8 @@ static char		*ft_parsing_semicolon_new(const char *str)
 static void		ft_parsing_semicolon_suite(char **tmp, char *str,
 											size_t *n, size_t *i)
 {
-	if (ft_strncmp(str + *n, ">&", 1) && ft_strncmp(str + *n, ">&", 1))
+	if (!(str[*n] == '>' && (*n > 0 &&
+			(ft_isdigit(str[*n - 1]) || str[*n - 1] == '&'))))
 	{
 		(*tmp)[(*i)++] = ' ';
 		while (str[(*n)] == '<' || str[(*n)] == '>' ||

@@ -65,6 +65,7 @@
 
 # define PIPE_OUT		0
 # define PIPE_IN		1
+# define STD_ALL		-1
 
 /*
 ** DEFINES :: ?
