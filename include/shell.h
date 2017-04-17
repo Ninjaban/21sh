@@ -82,7 +82,7 @@
 **   IS_BLANK           si c'est un caractère blanc (' ', '\t')
 */
 
-# define IS_REDIR_CHAR(x) (x == '>' || x == '<' || x == '&' || x == '|')
+# define IS_REDIR_CHAR(x) (x == '>' || x == '<' || x == '|')
 # define IS_BLANK(x) (x == ' ' || x == '\n')
 
 /*

@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/01 00:00:00 by jcarra            #+#    #+#              #
-#    Updated: 2017/04/17 11:52:18 by jcarra           ###   ########.fr        #
+#    Updated: 2017/04/17 17:03:17 by jcarra           ###   ########.fr        #
 #                                                                              #
 #  **************************************************************************  #
 
@@ -67,6 +67,7 @@ SRC		=	ft_access.c \
 			ft_read_color_redirect.c \
 			ft_read_copy.c \
 			ft_read_history.c \
+			ft_read_limit.c \
 			ft_read_move.c \
 			ft_read_print.c \
 			ft_set.c \
@@ -95,7 +96,7 @@ LIBS		=	$(LIB:%=$(DIRLIB)%)
 
 OBJS		=	$(SRCS:.c=.o)
 
-CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC)
+CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC) -g3
 LFLAGS		=	-lncurses
 
 CC		=	gcc

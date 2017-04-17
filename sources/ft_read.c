@@ -43,7 +43,10 @@ void		ft_sigwinch(int sig)
 	if (sig != SIGWINCH)
 		return ;
 	ioctl(0, TIOCGWINSZ, &window);
-	limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
+	if (window.ws_row && ((window.ws_row - 1) * window.ws_col))
+		limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
+	else
+		limit = 0;
 	ft_print(*g_line, g_position, 0, FALSE);
 }
 
@@ -54,12 +57,15 @@ void		ft_print(char *str, size_t pos, int inc, char resetstatic)
 	int				n;
 	int				i;
 
+//	printf("len : %zu\npos : %zu\nles : %zu\nlim : %zu\n", (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str), pos, len_s, limit);
 	if ((tmp = ft_strnew(pos + (len_s * 2) + 3)) == NULL)
-		return ;
+		return;
 	n = 0;
-	while (n < (int)pos - 1)
-		tmp[n++] = '\b';
+	if (pos)
+		while (n < ((pos - 1 < limit) ? (int)pos - 1 : (int)limit - 1))
+			tmp[n++] = '\b';
 	i = 0;
+	len_s = (len_s < limit) ? len_s : limit;
 	while (i < (int)len_s)
 		tmp[n + i++] = ' ';
 	while (len_s > 0)
@@ -72,9 +78,14 @@ void		ft_print(char *str, size_t pos, int inc, char resetstatic)
 	else
 		ft_putstr_fd(" \b", 0);
 	free(tmp);
+//	ft_putstr("|");
+//	sleep(1);
+//	ft_putstr("\b");
 	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
 //	n = (int)len_s;
-	ft_read_color_main(str, pos, limit);
+	ft_read_color_main(str, pos + inc, limit);
+//	while (n-- > (int)pos + inc)
+//		ft_putchar_fd('\b', 0);
 	if (resetstatic)
 		len_s = 0;
 }

@@ -147,6 +147,6 @@ set(SOURCE_FILES
         sources/ft_read_color_fd.c
         sources/ft_read_color_hyphen.c
         sources/ft_read_color_redirect.c
-        sources/ft_help.c sources/ft_alias_init.c sources/ft_parsing_semicolon.c sources/ft_read_check.c sources/ft_gestion_error_redir.c sources/ft_read_color.c sources/ft_read_color_first.c sources/ft_read_history.c)
+        sources/ft_help.c sources/ft_alias_init.c sources/ft_parsing_semicolon.c sources/ft_read_check.c sources/ft_gestion_error_redir.c sources/ft_read_color.c sources/ft_read_color_first.c sources/ft_read_history.c sources/ft_read_limit.c)
 
 add_executable(21sh ${SOURCE_FILES})

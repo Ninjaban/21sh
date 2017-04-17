@@ -41,5 +41,8 @@ void		ft_read_color_main(char *str, size_t pos, size_t limit)
 	color = ft_read_color_hyphen(color);
 	color = ft_read_color_redirect(color);
 	ft_putstr_limit(color, pos, limit);
+//	(void)pos;
+//	(void)limit;
+//	ft_putstr_fd(color, 0);
 	free(color);
 }

@@ -66,6 +66,34 @@ char		*ft_gestion_error_check_redir(char *str)
 	return (NULL);
 }
 
+
+static char 	ft_check_three_syntax(char *cmd)
+{
+	int			i;
+	int			w;
+	char 		b;
+
+	i = 0;
+	while (cmd[i])
+	{
+		if (cmd[i] == '&' || IS_REDIR_CHAR(cmd[i]))
+		{
+			w = 0;
+			b = cmd[i];
+			while (cmd[i] && (cmd[i] == b || IS_REDIR_CHAR(cmd[i])))
+			{
+				i++;
+				w++;
+			}
+			if (w > 2)
+				return (FALSE);
+			i--;
+		}
+		i++;
+	}
+	return (TRUE);
+}
+
 /*
 ** FUNCTION :: CHECK SEMICOLON SYNTAX
 **   Check la syntaxe liée au point virgule ; (par ex [ls && ; pwd] ne doit pas
@@ -87,6 +115,8 @@ char		ft_check_semicolon_syntax(char *cmd)
 	char	b;
 
 	c = 0;
+	if (!ft_check_three_syntax(cmd))
+		return (FALSE);
 	while (cmd[c])
 	{
 		b = cmd[c];
@@ -100,8 +130,9 @@ char		ft_check_semicolon_syntax(char *cmd)
 			c++;
 			while (cmd[c] && IS_BLANK(cmd[c]))
 				c++;
-			if ((cmd[c] != b && cmd[c] != '&') && (cmd[c] == ';'
-									|| cmd[c] == '\0' || IS_REDIR_CHAR(cmd[c])))
+			if ((cmd[c] != b) && (cmd[c] == ';' || cmd[c] == '\0' || IS_REDIR_CHAR(cmd[c])))
+				return (FALSE);
+			if (b == '&' && cmd[c] == ';')
 				return (FALSE);
 			c--;
 		}

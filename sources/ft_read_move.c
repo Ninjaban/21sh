@@ -53,7 +53,7 @@ void		ft_read_move(char **str, int c, size_t *pos, t_sys *sys)
 	if (c == sys->keymap[KEY_RIG] || c == sys->keymap[KEY_ENS])
 		ft_print(*str, *pos, (c == sys->keymap[KEY_RIG]) ? 1 :
 							(int)ft_strlen(*str) - (int)*pos, FALSE);
-	else if (ft_checkcompl(*str))
+	else
 		ft_print(*str, *pos, 0, FALSE);
 	if (c == sys->keymap[KEY_LEF] && *pos > 0)
 	{

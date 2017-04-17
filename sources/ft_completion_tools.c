@@ -82,6 +82,11 @@ t_btree		*ft_getexec(char **path)
 	btree_add_node(&(list), btree_create_node(ft_strdup("export")), &ft_cmpf);
 	btree_add_node(&(list), btree_create_node(ft_strdup("cd")), &ft_cmpf);
 	btree_add_node(&(list), btree_create_node(ft_strdup("keymap")), &ft_cmpf);
+	btree_add_node(&(list), btree_create_node(ft_strdup("history")), &ft_cmpf);
+	btree_add_node(&(list), btree_create_node(ft_strdup("help")), &ft_cmpf);
+	btree_add_node(&(list), btree_create_node(ft_strdup("set")), &ft_cmpf);
+	btree_add_node(&(list), btree_create_node(ft_strdup("unset")), &ft_cmpf);
+	btree_add_node(&(list), btree_create_node(ft_strdup("env")), &ft_cmpf);
 	ft_free_tab(path);
 	return (list);
 }
