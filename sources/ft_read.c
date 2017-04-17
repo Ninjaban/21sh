@@ -81,11 +81,15 @@ void		ft_print(char *str, size_t pos, int inc, char resetstatic)
 
 static void	ft_read_glob_init(size_t n, t_sys **sys)
 {
+	struct winsize	window;
+	
 	g_nb = n;
 	g_env = (*sys)->env;
 	g_shvar = (*sys)->shvar;
 	g_position = 0;
 	signal(SIGWINCH, &ft_sigwinch);
+	ioctl(0, TIOCGWINSZ, &window);
+	limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
 }
 
 int			ft_read(char **str, t_sys **sys, size_t n, char exit)
