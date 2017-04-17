@@ -74,14 +74,17 @@ void		ft_strsetmax(char *str, size_t n, size_t pos, size_t limit)
 
 	if (pos > limit - 3)
 		ft_putstr_fd("...", 0);
-	if (ft_strlen_nocolor(str + n) < limit - 1)
+	if (ft_strlen_nocolor(str + n) < limit - 2)
+	{
 		ft_putstr_fd(str + n, 0);
+		bs = ft_strlen_nocolor(str + n);
+	}
 	else
 	{
 		if (pos > limit - 3)
-			bs = ft_getpos(str + n, limit - 3);
+			bs = ft_getpos(str + n, limit - 4);
 		else
-			bs = ft_getpos(str + n, limit);
+			bs = ft_getpos(str + n, limit - 1);
 //		write(0, str + n, limit - 3);
 //		printf("%zu\n%zu\n%zu\n", ft_strlen_nocolor(str + n), limit - 3, ft_getpos(str + n, limit - 3));
 //		bs = ft_getpos(str + n, limit - 3);
@@ -90,8 +93,8 @@ void		ft_strsetmax(char *str, size_t n, size_t pos, size_t limit)
 		ft_putstr_fd(str + n, 0);
 		ft_putstr_fd("\033[0m...\b\b\b", 0);
 //		printf("%zu\n%zu\n", bs, pos - ft_strlen_nocolor(str));
+		bs = ft_strlen_nocolor(str + n) - 1;
 	}
-	bs = ft_strlen_nocolor(str + n) - 1;
 	str[n] = '\0';
 	while (bs-- > pos - ft_strlen_nocolor(str))
 		ft_putchar_fd('\b', 0);
