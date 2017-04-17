@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "get_next_line.h"
 
 int			ft_end(int ret, int size)
@@ -42,7 +43,7 @@ char		*ft_alloc(char **line, size_t len)
 {
 	char	*str;
 
-	if ((str = malloc(len + BUFFER_SIZE)) == NULL)
+	if ((str = ft_strnew(len + BUFFER_SIZE)) == NULL)
 		return (NULL);
 	if (len == 0)
 		return (str);
@@ -83,5 +84,5 @@ int			get_next_line(int const fd, char **line)
 {
 	if (!line)
 		return (-1);
-	return (ft_get_next_line(fd, &(*line), 0, -1));
+	return (ft_get_next_line(fd, &(*line), 0, 1));
 }
