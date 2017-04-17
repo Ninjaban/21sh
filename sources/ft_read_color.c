@@ -35,11 +35,15 @@ void		ft_read_color_main(char *str, size_t pos, size_t limit)
 	char	*color;
 
 	color = ft_strdup(str);
-	color = ft_read_color_inhibitor(color);
-	color = ft_read_color_first(color);
-	color = ft_read_color_fd(color);
-	color = ft_read_color_hyphen(color);
-	color = ft_read_color_redirect(color);
+	if (((ft_checkcompl(str) == 1) ?
+		ft_strlen(str) - 19 : ft_strlen(str)) <= limit)
+	{
+		color = ft_read_color_inhibitor(color);
+		color = ft_read_color_first(color);
+		color = ft_read_color_fd(color);
+		color = ft_read_color_hyphen(color);
+		color = ft_read_color_redirect(color);
+	}
 	ft_putstr_limit(color, pos, limit);
 //	(void)pos;
 //	(void)limit;

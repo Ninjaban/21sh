@@ -20,17 +20,21 @@ void		ft_read_keyole(char **str, size_t *pos)
 	{
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
+		ft_print(*str, *pos, 0, FALSE);
 	}
 	while (*pos > 0 && (*str)[*pos] == ' ')
 	{
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
+		ft_print(*str, *pos, 0, FALSE);
 	}
 	while (*pos > 0 && (*str)[*pos] != ' ')
 	{
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
+		ft_print(*str, *pos, 0, FALSE);
 	}
+	ft_print(*str, *pos, 0, FALSE);
 }
 
 void		ft_read_keyori(char **str, size_t *pos)
@@ -59,11 +63,13 @@ void		ft_read_move(char **str, int c, size_t *pos, t_sys *sys)
 	{
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
+		ft_print(*str, *pos, 0, FALSE);
 	}
 	while (c == sys->keymap[KEY_HOM] && *pos > 0)
 	{
 		ft_putchar_fd('\b', 0);
 		*pos = *pos - 1;
+		ft_print(*str, *pos, 0, FALSE);
 	}
 	if (c == sys->keymap[KEY_RIG] && *pos < ft_strlen(*str))
 		*pos = *pos + 1;
