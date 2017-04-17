@@ -30,7 +30,7 @@ void		ft_strcopy_color(char **src, char *str, size_t *n)
 	}
 }
 
-void		ft_read_color_main(char *str, size_t limit)
+void		ft_read_color_main(char *str, size_t pos, size_t limit)
 {
 	char	*color;
 
@@ -40,6 +40,6 @@ void		ft_read_color_main(char *str, size_t limit)
 	color = ft_read_color_fd(color);
 	color = ft_read_color_hyphen(color);
 	color = ft_read_color_redirect(color);
-	ft_putstr_limit(color, limit);
+	ft_putstr_limit(color, pos, limit);
 	free(color);
 }

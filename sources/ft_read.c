@@ -73,8 +73,8 @@ void		ft_print(char *str, size_t pos, int inc, char resetstatic)
 		ft_putstr_fd(" \b", 0);
 	free(tmp);
 	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
-	n = (int)len_s;
-	ft_read_color_main(str, limit);
+//	n = (int)len_s;
+	ft_read_color_main(str, pos, limit);
 	if (resetstatic)
 		len_s = 0;
 }
@@ -82,7 +82,7 @@ void		ft_print(char *str, size_t pos, int inc, char resetstatic)
 static void	ft_read_glob_init(size_t n, t_sys **sys)
 {
 	struct winsize	window;
-	
+
 	g_nb = n;
 	g_env = (*sys)->env;
 	g_shvar = (*sys)->shvar;

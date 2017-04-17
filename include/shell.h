@@ -360,7 +360,7 @@ void			ft_read_history_do(char **str, t_sys **sys,
 void			ft_read_history_up(char **str, t_sys **sys,
 									size_t *i, size_t *pos);
 void			ft_read_keymap_init(t_sys **sys);
-void			ft_putstr_limit(char *color, size_t limit);
+void			ft_putstr_limit(char *color, size_t pos, size_t limit);
 char			ft_read_check(int c, char **str, t_sys **sys, size_t *n);
 int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 
@@ -368,7 +368,7 @@ int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 **	Coloration Syntaxique
 */
 
-void			ft_read_color_main(char *str, size_t limit);
+void			ft_read_color_main(char *str, size_t pos, size_t limit);
 void			ft_strcopy_color(char **src, char *str, size_t *n);
 char			ft_check_sep(char *str);
 char			*ft_read_color_inhibitor(char *str);
