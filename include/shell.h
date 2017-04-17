@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 13:44:38 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/05 11:13:46 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/17 13:03:56 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -355,7 +355,12 @@ void			ft_read_keyole(char **str, size_t *pos);
 void			ft_read_keyori(char **str, size_t *pos);
 void			ft_read_move(char **str, int c, size_t *pos, t_sys *sys);
 void			ft_read_cpy_past(char **str, size_t *n, char type, char new);
+void			ft_read_history_do(char **str, t_sys **sys,
+									size_t *i, size_t *pos);
+void			ft_read_history_up(char **str, t_sys **sys,
+									size_t *i, size_t *pos);
 void			ft_read_keymap_init(t_sys **sys);
+void			ft_putstr_limit(char *color, size_t limit);
 char			ft_read_check(int c, char **str, t_sys **sys, size_t *n);
 int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 
@@ -363,7 +368,7 @@ int				ft_read(char **str, t_sys **sys, size_t n, char exit);
 **	Coloration Syntaxique
 */
 
-void			ft_read_color_main(char *str);
+void			ft_read_color_main(char *str, size_t limit);
 void			ft_strcopy_color(char **src, char *str, size_t *n);
 char			ft_check_sep(char *str);
 char			*ft_read_color_inhibitor(char *str);

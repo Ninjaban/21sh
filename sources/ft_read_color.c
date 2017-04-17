@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 13:32:17 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/09 16:45:59 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/17 13:04:04 by jcarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void		ft_strcopy_color(char **src, char *str, size_t *n)
 	}
 }
 
-void		ft_read_color_main(char *str)
+void		ft_read_color_main(char *str, size_t limit)
 {
 	char	*color;
 
@@ -40,6 +40,6 @@ void		ft_read_color_main(char *str)
 	color = ft_read_color_fd(color);
 	color = ft_read_color_hyphen(color);
 	color = ft_read_color_redirect(color);
-	ft_putstr_fd(color, 0);
+	ft_putstr_limit(color, limit);
 	free(color);
 }

@@ -16,6 +16,7 @@
 
 size_t		g_position;
 size_t		g_nb;
+size_t		limit;
 char		**g_line;
 char		**g_env;
 char		**g_shvar;
@@ -35,46 +36,47 @@ void		ft_sigint(int sig)
 	}
 }
 
-static void	ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
+void		ft_sigwinch(int sig)
 {
-	t_lst	*tmp;
+	struct winsize	window;
 
-	if (*i >= (size_t)ft_list_size((*sys)->history))
+	if (sig != SIGWINCH)
 		return ;
-	*i = *i + 1;
-	ft_print("", *pos, 0, FALSE);
-	tmp = ft_list_at((*sys)->history, (unsigned int)(*i));
-	free(*str);
-	if (tmp)
-		*str = ft_strdup(((t_hist *)(tmp->data))->line);
-	else
-		*str = ft_strnew(1);
-	*pos = ft_strlen(*str);
-	ft_print(*str, 0, (int)*pos, FALSE);
+	ioctl(0, TIOCGWINSZ, &window);
+	limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
+	ft_print(*g_line, g_position, 0, FALSE);
 }
 
-static void	ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
+void		ft_print(char *str, size_t pos, int inc, char resetstatic)
 {
-	t_lst	*tmp;
-	char	ret;
+	static size_t	len_s = 0;
+	char			*tmp;
+	int				n;
+	int				i;
 
-	if (*i == 0)
+	if ((tmp = ft_strnew(pos + (len_s * 2) + 3)) == NULL)
 		return ;
-	if (*i == (size_t)ft_list_size((*sys)->history))
-	{
-		ret = (char)ft_history_maj(&(*sys)->history, *str,
-									(*sys)->env, (*sys)->shvar);
-		*i = (size_t)ft_list_size((*sys)->history) - ((ret) ? 1 : 0);
-	}
-	ft_print("", *pos, 0, FALSE);
-	if ((tmp = ft_list_at((*sys)->history, (unsigned int)(*i - 1))))
-	{
-		*i = *i - 1;
-		free(*str);
-		*str = ft_strdup(((t_hist *)(tmp->data))->line);
-	}
-	*pos = (tmp && *str) ? ft_strlen(*str) : 0;
-	ft_print(*str, 0, (int)*pos, FALSE);
+	n = 0;
+	while (n < (int)pos - 1)
+		tmp[n++] = '\b';
+	i = 0;
+	while (i < (int)len_s)
+		tmp[n + i++] = ' ';
+	while (len_s > 0)
+		tmp[n + i + len_s--] = '\b';
+	tmp[n + i] = '\b';
+	if (!(pos || !inc))
+		tmp[ft_strlen(tmp) - 1] = '\0';
+	if (!(pos == 0 && inc == 0))
+		ft_putstr_fd(tmp, 0);
+	else
+		ft_putstr_fd(" \b", 0);
+	free(tmp);
+	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
+	n = (int)len_s;
+	ft_read_color_main(str, limit);
+	if (resetstatic)
+		len_s = 0;
 }
 
 static void	ft_read_glob_init(size_t n, t_sys **sys)
@@ -83,6 +85,7 @@ static void	ft_read_glob_init(size_t n, t_sys **sys)
 	g_env = (*sys)->env;
 	g_shvar = (*sys)->shvar;
 	g_position = 0;
+	signal(SIGWINCH, &ft_sigwinch);
 }
 
 int			ft_read(char **str, t_sys **sys, size_t n, char exit)
@@ -109,5 +112,6 @@ int			ft_read(char **str, t_sys **sys, size_t n, char exit)
 	}
 	ft_print(*str, g_position, (int)(ft_strlen(*str) - g_position), TRUE);
 	ft_putchar_fd('\n', 0);
+	signal(SIGWINCH, SIG_IGN);
 	return (TRUE);
 }
