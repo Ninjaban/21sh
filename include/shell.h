@@ -210,7 +210,8 @@ typedef struct	s_sys
 */
 
 void			ft_parenthesis_undo(char ***tab);
-void			ft_parse_parenthesis(char **str, char c, char r);
+void			ft_parse_parenthesis(char **str);
+void			ft_parse_parenthesis_open_init(char **src);
 void			ft_init_node(t_btree **cmds, char *str, int fd);
 void			ft_tild_file(char **str, char c, char r);
 int				ft_check_alias(char **str, t_alias *alias, int n);

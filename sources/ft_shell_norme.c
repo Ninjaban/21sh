@@ -36,7 +36,7 @@ static char	ft_parse_parenthesis_open_rec(char *str)
 	return (-1);
 }
 
-static char	ft_parse_parenthesis_open_init(char *src)
+static char	ft_parse_parenthesis_open(char *src)
 {
 	char	*str;
 	char	type;
@@ -57,7 +57,7 @@ static void	ft_check_parenthesis(t_sys **sys, char **str)
 	char		*tmp;
 	char		type;
 
-	while ((type = ft_parse_parenthesis_open_init(*str)) != -1)
+	while ((type = ft_parse_parenthesis_open(*str)) != -1)
 	{
 		ft_putstr((type == FALSE) ? "<dquotes>\n" : "<quotes>\n");
 		if (ft_read(&tmp, &(*sys), 0, FALSE) == FALSE)

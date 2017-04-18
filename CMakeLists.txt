@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(21sh)
+project(42sh)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -86,6 +86,7 @@ set(SOURCE_FILES
         library/Part_2/ft_tablen.c
         sources/ft_access.c
         sources/ft_alias.c
+        sources/ft_alias_init.c
         sources/ft_builtins.c
         sources/ft_chdir.c
         sources/ft_chdir_cdpath.c
@@ -105,6 +106,8 @@ set(SOURCE_FILES
         sources/ft_export.c
         sources/ft_free.c
         sources/ft_gestion_error.c
+        sources/ft_gestion_error_redir.c
+        sources/ft_help.c
         sources/ft_hist_find.c
         sources/ft_hist_str.c
         sources/ft_history.c
@@ -119,14 +122,25 @@ set(SOURCE_FILES
         sources/ft_parsing_init.c
         sources/ft_parsing_node.c
         sources/ft_parsing_parenthesis.c
+        sources/ft_parsing_semicolon.c
         sources/ft_parsing_split.c
         sources/ft_parsing_split_tools.c
         sources/ft_parsing_tools.c
         sources/ft_path.c
+        sources/ft_print.c
         sources/ft_prompt.c
         sources/ft_prompt_path.c
         sources/ft_read.c
+        sources/ft_read_check.c
+        sources/ft_read_color.c
+        sources/ft_read_color_fd.c
+        sources/ft_read_color_first.c
+        sources/ft_read_color_hyphen.c
+        sources/ft_read_color_inhibitor.c
+        sources/ft_read_color_redirect.c
         sources/ft_read_copy.c
+        sources/ft_read_history.c
+        sources/ft_read_limit.c
         sources/ft_read_move.c
         sources/ft_read_print.c
         sources/ft_set.c
@@ -142,11 +156,6 @@ set(SOURCE_FILES
         sources/ft_unset_tools.c
         sources/ft_unsetenv.c
         sources/ft_varenv.c
-        sources/match.c
-        sources/ft_read_color_inhibitor.c
-        sources/ft_read_color_fd.c
-        sources/ft_read_color_hyphen.c
-        sources/ft_read_color_redirect.c
-        sources/ft_help.c sources/ft_alias_init.c sources/ft_parsing_semicolon.c sources/ft_read_check.c sources/ft_gestion_error_redir.c sources/ft_read_color.c sources/ft_read_color_first.c sources/ft_read_history.c sources/ft_read_limit.c)
+        sources/match.c)
 
-add_executable(21sh ${SOURCE_FILES})
+add_executable(42sh ${SOURCE_FILES})

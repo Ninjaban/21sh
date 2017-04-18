@@ -61,7 +61,6 @@ void		ft_parse_parenthesis(char **str)
 	char		type;
 
 	n = 0;
-//	ft_parse_parenthesis_open_init(&(*str));
 	while ((*str)[n])
 	{
 		if ((*str)[n] == '\"' || (*str)[n] == '\'')
