@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 16:40:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/18 17:18:45 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/18 17:29:47 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,6 @@ void			ft_putstr_limit(char *str, size_t pos, size_t g_limit)
 	if (ft_strlen_nocolor(str) <= g_limit)
 	{
 		ft_putstr_fd(str, 0);
-		ft_putstr_fd(" \b", 0);
 		bs = ft_strlen_nocolor(str);
 		while (bs-- > pos)
 			ft_putchar_fd('\b', 0);
