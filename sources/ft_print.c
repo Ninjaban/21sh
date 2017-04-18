@@ -18,7 +18,7 @@ void	ft_print_norme(char **tmp, size_t pos, int inc)
 		return ;
 	if (!(pos || !inc))
 		(*tmp)[ft_strlen(*tmp) - 1] = '\0';
-	if (!(pos == 0 && inc == 0))
+	if (!(pos == 0 && inc == 0 && !ft_strlen(*tmp)))
 		ft_putstr_fd(*tmp, 0);
 	else
 		ft_putstr_fd(" \b", 0);

@@ -57,6 +57,7 @@ void		ft_read_suppr(char **str, size_t *pos)
 		*str = (t[0] && t[1]) ? ft_strjoin(t[0], t[1]) : ft_strdup(t[0]);
 		*str = (!(*str)) ? ft_strnew(1) : *str;
 		ft_free_tab(t);
+		ft_putstr(" \b");
 		ft_print(*str, *pos, 0, FALSE);
 	}
 }

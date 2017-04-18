@@ -28,6 +28,8 @@ void		ft_read_history_do(char **str, t_sys **sys, size_t *i, size_t *pos)
 		*str = ft_strnew(1);
 	*pos = ft_strlen(*str);
 	ft_print(*str, 0, (int)*pos, FALSE);
+	if (!ft_strlen(*str))
+		ft_putstr(" \b");
 }
 
 void		ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
