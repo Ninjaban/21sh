@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/04 10:57:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/04 11:28:23 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/18 18:02:05 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,11 +83,6 @@ char		*ft_gestion_error_check_redir(char *str)
 
 char		*ft_check_semicolon_syntax(char *cmd)
 {
-	/*
-	if (!ft_check_syntax_three(cmd) || !ft_check_syntax_start(cmd) ||
-			!ft_check_syntax_before(cmd) || !ft_check_syntax_twins(cmd))
-		return (ERROR_SYNTAX);
-	*/
 	if (!ft_check_syntax_three(cmd))
 	{
 		ft_putendl("THREE");
