@@ -21,6 +21,7 @@ SRC		=	ft_access.c \
 			ft_chdir_opt.c \
 			ft_chdir_tools.c \
 			ft_chdir_trim.c \
+			ft_check_syntax.c \
 			ft_completion.c \
 			ft_completion_norme.c \
 			ft_completion_tools.c \

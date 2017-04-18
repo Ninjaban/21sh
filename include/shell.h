@@ -80,10 +80,18 @@
 ** DEFINES :: checks
 **   IS_REDIR_CHAR      si c'est un caractère de redirection (><&|)
 **   IS_BLANK           si c'est un caractère blanc (' ', '\t')
+**   IS_INHIB           si c'est un caractère inhibiteur (quotes)
+**   IS_CHEV            (voir IS_CCA)
+**   IS_CCA		        si c'est une suite égale à &>>
 */
 
-# define IS_REDIR_CHAR(x) (x == '>' || x == '<' || x == '|')
-# define IS_BLANK(x) (x == ' ' || x == '\n')
+# define IS_REDIR_CHAR(x)	(x == '&' || x == '<' || x == '>' || x == '|')
+# define IS_BLANK(x)		(x ==' ' || x == '\n')
+# define IS_INHIB(x)		(x =='\'' || x == '"')
+# define IS_CHEV(x,y)		(x[y - 1] == '>')
+# define IS_CCA(x,y)		(IS_CHEV(x,y) && x[y - 2] == '>' && x[y - 3] == '&')
+# define IS_AC(x,y)			(x[y = 1] == '&' && x[y] == '>')
+
 
 /*
 ** INCLUDES
@@ -235,7 +243,11 @@ t_btree			*ft_parsing(char *str, t_sys *sys);
 
 void			*ft_gestion_error(char *str);
 char			*ft_gestion_error_check_redir(char *str);
-char			ft_check_semicolon_syntax(char *cmd);
+char			*ft_check_semicolon_syntax(char *cmd);
+char			ft_check_syntax_three(char *cmd);
+char			ft_check_syntax_start(char *cmd);
+char			ft_check_syntax_before(char *cmd);
+char			ft_check_syntax_twins(char *cmd);
 
 /*
 **	Tools

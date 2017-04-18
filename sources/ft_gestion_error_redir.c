@@ -66,34 +66,6 @@ char		*ft_gestion_error_check_redir(char *str)
 	return (NULL);
 }
 
-
-static char 	ft_check_three_syntax(char *cmd)
-{
-	int			i;
-	int			w;
-	char 		b;
-
-	i = 0;
-	while (cmd[i])
-	{
-		if (cmd[i] == '&' || IS_REDIR_CHAR(cmd[i]))
-		{
-			w = 0;
-			b = cmd[i];
-			while (cmd[i] && (cmd[i] == b || IS_REDIR_CHAR(cmd[i])))
-			{
-				i++;
-				w++;
-			}
-			if (w > 2)
-				return (FALSE);
-			i--;
-		}
-		i++;
-	}
-	return (TRUE);
-}
-
 /*
 ** FUNCTION :: CHECK SEMICOLON SYNTAX
 **   Check la syntaxe liée au point virgule ; (par ex [ls && ; pwd] ne doit pas
@@ -109,34 +81,32 @@ static char 	ft_check_three_syntax(char *cmd)
 **   FALSE en cas d'erreur, TRUE sinon.
 */
 
-char		ft_check_semicolon_syntax(char *cmd)
+char		*ft_check_semicolon_syntax(char *cmd)
 {
-	int		c;
-	char	b;
-
-	c = 0;
-	if (!ft_check_three_syntax(cmd))
-		return (FALSE);
-	while (cmd[c])
+	/*
+	if (!ft_check_syntax_three(cmd) || !ft_check_syntax_start(cmd) ||
+			!ft_check_syntax_before(cmd) || !ft_check_syntax_twins(cmd))
+		return (ERROR_SYNTAX);
+	*/
+	if (!ft_check_syntax_three(cmd))
 	{
-		b = cmd[c];
-		if ((cmd[c] == '"' || cmd[c] == '\"'))
-			while (cmd[c] && cmd[c] != b)
-				c++;
-		if (cmd[c] == '\0')
-			c--;
-		if ((IS_REDIR_CHAR(cmd[c]) || cmd[c] == ';'))
-		{
-			c++;
-			while (cmd[c] && IS_BLANK(cmd[c]))
-				c++;
-			if ((cmd[c] != b) && (cmd[c] == ';' || cmd[c] == '\0' || IS_REDIR_CHAR(cmd[c])))
-				return (FALSE);
-			if (b == '&' && cmd[c] == ';')
-				return (FALSE);
-			c--;
-		}
-		c++;
+		ft_putendl("THREE");
+		return (ERROR_SYNTAX);
 	}
-	return (TRUE);
+	if (!ft_check_syntax_start(cmd))
+	{
+		ft_putendl("START");
+		return (ERROR_SYNTAX);
+	}
+	if (!ft_check_syntax_before(cmd))
+	{
+		ft_putendl("BEFORE");
+		return (ERROR_SYNTAX);
+	}
+	if (!ft_check_syntax_twins(cmd))
+	{
+		ft_putendl("TWINS");
+		return (ERROR_SYNTAX);
+	}
+	return (NULL);
 }

@@ -85,7 +85,7 @@ static char		*ft_read_color_fd_boucle(char *str, char *new, size_t i)
 
 char			*ft_read_color_fd(char *str)
 {
-	char	*new;
+	char		*new;
 
 	if ((new = ft_strnew(ft_strlen(str) + (ft_count_fd(str) *
 			(ft_strlen("\x1b[38;5;88m") + ft_strlen("\033[0m"))) + 1)) == NULL)

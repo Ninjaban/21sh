@@ -93,7 +93,7 @@ void		*ft_gestion_error(char *str)
 	}
 	if (ft_check(tmp[ft_strlen(tmp) - 1], "<>|") == 1)
 		return (ft_return(tmp));
-	if (!ft_check_semicolon_syntax(tmp))
+	if (ft_check_semicolon_syntax(tmp))
 		return (ft_return(tmp));
 	free(tmp);
 	return (ft_gestion_error_check_redir(str));
