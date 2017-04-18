@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 09:13:56 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/11 08:42:36 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/18 17:32:34 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ static void	ft_parse_parenthesis_change_char(char **src, size_t *n)
 		(*src)[*n] = (char)((*src)[*n] * -1);
 		if ((*src)[*n] == '\\' * -1 && (type == TRUE || type == FALSE))
 			ft_parse_backslash(*src + *n);
-
 		*n = *n + 1;
 	}
 }
