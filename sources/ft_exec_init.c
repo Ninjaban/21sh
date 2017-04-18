@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 10:54:30 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/17 10:42:41 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/18 11:31:34 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static void	ft_init_redir(t_node *node, int pdes[2], char way)
 		else
 			stdout = node->fd;
 		if (node->fd != -1 && dup2(pdes[(way == LEFT) ? PIPE_IN : PIPE_OUT],
-				 (way == LEFT) ? stdout : STDIN_FILENO) == -1)
+				(way == LEFT) ? stdout : STDIN_FILENO) == -1)
 			ft_log(TYPE_WARNING, "DUP FAIL");
 		close(pdes[(way == LEFT) ? PIPE_OUT : PIPE_IN]);
 	}

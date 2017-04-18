@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 13:32:17 by jcarra            #+#    #+#             */
-/*   Updated: 2017/01/09 16:45:59 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/18 11:21:06 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,6 @@ void		ft_read_suppr(char **str, size_t *pos)
 		*str = (!(*str)) ? ft_strnew(1) : *str;
 		ft_free_tab(t);
 		ft_print(*str, *pos, 0, FALSE);
-//		if ((*str)[*pos])
-//			ft_putchar_fd('\b', 0);
 	}
 }
 

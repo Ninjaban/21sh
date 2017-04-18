@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/08 09:33:43 by jcarra            #+#    #+#             */
-/*   Updated: 2017/03/31 13:13:59 by mrajaona         ###   ########.fr       */
+/*   Updated: 2017/04/18 11:46:21 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 size_t		g_position;
 size_t		g_nb;
-size_t		limit;
+size_t		g_limit;
 char		**g_line;
 char		**g_env;
 char		**g_shvar;
@@ -44,9 +44,9 @@ void		ft_sigwinch(int sig)
 		return ;
 	ioctl(0, TIOCGWINSZ, &window);
 	if (window.ws_row && ((window.ws_row - 1) * window.ws_col))
-		limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
+		g_limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
 	else
-		limit = 0;
+		g_limit = 0;
 	ft_print(*g_line, g_position, 0, FALSE);
 }
 
@@ -57,35 +57,21 @@ void		ft_print(char *str, size_t pos, int inc, char resetstatic)
 	int				n;
 	int				i;
 
-//	printf("len : %zu\npos : %zu\nles : %zu\nlim : %zu\n", (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str), pos, len_s, limit);
 	if ((tmp = ft_strnew(pos + (len_s * 2) + 3)) == NULL)
-		return;
+		return ;
 	n = 0;
-	if (pos)
-		while (n < ((pos - 1 < limit) ? (int)pos - 1 : (int)limit - 1))
-			tmp[n++] = '\b';
+	while (pos && n < ((pos - 1 < g_limit) ? (int)pos - 1 : (int)g_limit - 1))
+		tmp[n++] = '\b';
 	i = 0;
-	len_s = (len_s < limit) ? len_s : limit;
+	len_s = (len_s < g_limit) ? len_s : g_limit;
 	while (i < (int)len_s)
 		tmp[n + i++] = ' ';
 	while (len_s > 0)
 		tmp[n + i + len_s--] = '\b';
 	tmp[n + i] = '\b';
-	if (!(pos || !inc))
-		tmp[ft_strlen(tmp) - 1] = '\0';
-	if (!(pos == 0 && inc == 0))
-		ft_putstr_fd(tmp, 0);
-	else
-		ft_putstr_fd(" \b", 0);
-	free(tmp);
-//	ft_putstr("|");
-//	sleep(1);
-//	ft_putstr("\b");
+	ft_print_norme(&tmp, pos, inc);
 	len_s = (ft_checkcompl(str) == 1) ? ft_strlen(str) - 19 : ft_strlen(str);
-//	n = (int)len_s;
-	ft_read_color_main(str, pos + inc, limit);
-//	while (n-- > (int)pos + inc)
-//		ft_putchar_fd('\b', 0);
+	ft_read_color_main(str, pos + inc, g_limit);
 	if (resetstatic)
 		len_s = 0;
 }
@@ -100,7 +86,7 @@ static void	ft_read_glob_init(size_t n, t_sys **sys)
 	g_position = 0;
 	signal(SIGWINCH, &ft_sigwinch);
 	ioctl(0, TIOCGWINSZ, &window);
-	limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
+	g_limit = (size_t)((window.ws_row - 1) * window.ws_col - 1);
 }
 
 int			ft_read(char **str, t_sys **sys, size_t n, char exit)

@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/01 00:00:00 by jcarra            #+#    #+#              #
-#    Updated: 2017/04/17 17:03:17 by jcarra           ###   ########.fr        #
+#    Updated: 2017/04/18 11:43:47 by mrajaona         ###   ########.fr        #
 #                                                                              #
 #  **************************************************************************  #
 
@@ -55,6 +55,7 @@ SRC		=	ft_access.c \
 			ft_parsing_split_tools.c \
 			ft_parsing_tools.c \
 			ft_path.c \
+			ft_print.c \
 			ft_prompt.c \
 			ft_prompt_path.c \
 			ft_read.c \

@@ -6,13 +6,13 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 16:40:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/17 16:40:00 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/18 11:33:34 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "shell.h"
 
-size_t			ft_strlen_nocolor(char *str)
+static size_t	ft_strlen_nocolor(char *str)
 {
 	size_t		n;
 	size_t		len;
@@ -37,7 +37,7 @@ size_t			ft_strlen_nocolor(char *str)
 	return (len);
 }
 
-size_t			ft_getpos(char *str, size_t pos)
+static size_t	ft_getpos(char *str, size_t pos)
 {
 	size_t		n;
 	size_t		len;
@@ -66,25 +66,23 @@ size_t			ft_getpos(char *str, size_t pos)
 	return (n);
 }
 
-#include <stdio.h>
-
-void		ft_strsetmax(char *str, size_t n, size_t pos, size_t limit)
+static void		ft_strsetmax(char *str, size_t n, size_t pos, size_t g_limit)
 {
 	size_t	bs;
 
-	if (pos > limit - 3)
+	if (pos > g_limit - 3)
 		ft_putstr_fd("...", 0);
-	if (ft_strlen_nocolor(str + n) < limit - 3)
+	if (ft_strlen_nocolor(str + n) < g_limit - 3)
 	{
 		ft_putstr_fd(str + n, 0);
 		bs = ft_strlen_nocolor(str + n);
 	}
 	else
 	{
-		if (pos > limit - 3)
-			bs = ft_getpos(str + n, limit - 3);
+		if (pos > g_limit - 3)
+			bs = ft_getpos(str + n, g_limit - 3);
 		else
-			bs = ft_getpos(str + n, limit - 0);
+			bs = ft_getpos(str + n, g_limit - 0);
 		str[bs + n - 1] = '\0';
 		ft_putstr_fd(str + n, 0);
 		ft_putstr_fd("\033[0m...\b\b\b", 0);
@@ -96,20 +94,20 @@ void		ft_strsetmax(char *str, size_t n, size_t pos, size_t limit)
 	free(str);
 }
 
-void		ft_putstr_limit(char *str, size_t pos, size_t limit)
+void			ft_putstr_limit(char *str, size_t pos, size_t g_limit)
 {
 	size_t	bs;
 
-	if (ft_strlen_nocolor(str) <= limit)
+	if (ft_strlen_nocolor(str) <= g_limit)
 	{
 		ft_putstr_fd(str, 0);
 		bs = ft_strlen_nocolor(str);
 		while (bs-- > pos)
 			ft_putchar_fd('\b', 0);
 	}
-	else if (limit > 20)
+	else if (g_limit > 20)
 	{
-		bs = (pos > limit - 3) ? ft_getpos(str, pos + 3 - (limit - 4)) : 0;
-		ft_strsetmax(ft_strdup(str), bs, pos, limit);
+		bs = (pos > g_limit - 3) ? ft_getpos(str, pos + 3 - (g_limit - 4)) : 0;
+		ft_strsetmax(ft_strdup(str), bs, pos, g_limit);
 	}
 }

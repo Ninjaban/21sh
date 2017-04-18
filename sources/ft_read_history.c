@@ -6,7 +6,7 @@
 /*   By: jcarra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 11:13:00 by jcarra            #+#    #+#             */
-/*   Updated: 2017/04/17 11:13:00 by jcarra           ###   ########.fr       */
+/*   Updated: 2017/04/18 11:21:47 by mrajaona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void		ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 	if (*i == (size_t)ft_list_size((*sys)->history))
 	{
 		ret = (char)ft_history_maj(&(*sys)->history, *str,
-								   (*sys)->env, (*sys)->shvar);
+									(*sys)->env, (*sys)->shvar);
 		*i = (size_t)ft_list_size((*sys)->history) - ((ret) ? 1 : 0);
 	}
 	ft_print("", *pos, 0, FALSE);
@@ -53,4 +53,3 @@ void		ft_read_history_up(char **str, t_sys **sys, size_t *i, size_t *pos)
 	*pos = (tmp && *str) ? ft_strlen(*str) : 0;
 	ft_print(*str, 0, (int)*pos, FALSE);
 }
-
