@@ -45,11 +45,11 @@ t_cmd			*ft_parsecmd(char *str)
 	char		**tab;
 	char		*tmp;
 
-	ft_parse_parenthesis(&str, ' ', '\a');
 	if ((tmp = ft_strtrim(str)))
 		free(tmp);
 	else
 		return (ft_freturn(str, NULL, NULL));
+	ft_parse_parenthesis(&str);
 	if ((tab = ft_strsplit(str, " \t")) == NULL || !tab[0])
 		return (NULL);
 	if (!(cmd = malloc(sizeof(t_cmd))))

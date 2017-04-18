@@ -19,7 +19,7 @@ static void	ft_parse_backslash(char *str)
 
 	n = 0;
 	if ((str)[n + 1] == 'n')
-		(str)[n] = '\n';
+		(str)[n] = '\n' * -1;
 	else
 		return ;
 	n = n + 1;
@@ -27,23 +27,22 @@ static void	ft_parse_backslash(char *str)
 		(str)[n - 1] = (str)[n];
 }
 
-static void	ft_parse_parenthesis_change_char(char **src, size_t *n, char c,
-												char r)
+static void	ft_parse_parenthesis_change_char(char **src, size_t *n)
 {
 	char	type;
 
 	type = ((*src)[(*n)++] == '\"') ? FALSE : TRUE;
 	while ((*src)[*n] && (*src)[*n] != ((!type) ? '\"' : '\''))
 	{
-		if ((*src)[*n] == c)
-			(*src)[*n] = r;
-		if ((*src)[*n] == '\\' && (type == TRUE || type == FALSE))
+		(*src)[*n] = (char)((*src)[*n] * -1);
+		if ((*src)[*n] == '\\' * -1 && (type == TRUE || type == FALSE))
 			ft_parse_backslash(*src + *n);
+
 		*n = *n + 1;
 	}
 }
 
-static void	ft_parse_parenthesis_open_init(char **src, char c, char r)
+void		ft_parse_parenthesis_open_init(char **src)
 {
 	size_t	i;
 
@@ -51,18 +50,18 @@ static void	ft_parse_parenthesis_open_init(char **src, char c, char r)
 	while ((*src)[i])
 	{
 		if ((*src)[i] == '\"' || (*src)[i] == '\'')
-			ft_parse_parenthesis_change_char(&(*src), &i, c, r);
+			ft_parse_parenthesis_change_char(&(*src), &i);
 		i = i + 1;
 	}
 }
 
-void		ft_parse_parenthesis(char **str, char c, char r)
+void		ft_parse_parenthesis(char **str)
 {
 	size_t		n;
 	char		type;
 
 	n = 0;
-	ft_parse_parenthesis_open_init(&(*str), c, r);
+//	ft_parse_parenthesis_open_init(&(*str));
 	while ((*str)[n])
 	{
 		if ((*str)[n] == '\"' || (*str)[n] == '\'')
@@ -89,8 +88,8 @@ void		ft_parenthesis_undo(char ***tab)
 		i = 0;
 		while ((*tab)[n][i])
 		{
-			if ((*tab)[n][i] == '\a')
-				(*tab)[n][i] = ' ';
+			if ((*tab)[n][i] < 0)
+				(*tab)[n][i] = (char)((*tab)[n][i] * -1);
 			i = i + 1;
 		}
 		n = n + 1;

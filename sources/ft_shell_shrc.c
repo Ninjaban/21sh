@@ -20,12 +20,16 @@ static void	ft_shrc_launch(t_sys **sys, char *str)
 
 	if ((tmp = ft_gestion_error(str)) != NULL)
 		ft_log(TYPE_WARNING, tmp);
-	else if ((cmds = ft_parsecmd(str)) == NULL)
-		ft_log(TYPE_ERROR, ERROR_ALLOC);
-	else if (ft_strcmp(cmds->name, "setenv") == 0)
-		ft_setenv(cmds->argv[1], &((*sys)->env), NULL, FALSE);
-	else if (ft_strcmp(cmds->name, "alias") == 0)
-		ft_alias(cmds, &((*sys)->alias));
+	else
+	{
+		ft_parse_parenthesis_open_init(&str);
+		if ((cmds = ft_parsecmd(str)) == NULL)
+			ft_log(TYPE_ERROR, ERROR_ALLOC);
+		else if (ft_strcmp(cmds->name, "setenv") == 0)
+			ft_setenv(cmds->argv[1], &((*sys)->env), NULL, FALSE);
+		else if (ft_strcmp(cmds->name, "alias") == 0)
+			ft_alias(cmds, &((*sys)->alias));
+	}
 	ft_free(&cmds, NULL, NULL);
 }
 
