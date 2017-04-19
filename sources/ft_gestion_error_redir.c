@@ -84,24 +84,12 @@ char		*ft_gestion_error_check_redir(char *str)
 char		*ft_check_semicolon_syntax(char *cmd)
 {
 	if (!ft_check_syntax_three(cmd))
-	{
-		ft_putendl("THREE");
 		return (ERROR_SYNTAX);
-	}
 	if (!ft_check_syntax_start(cmd))
-	{
-		ft_putendl("START");
 		return (ERROR_SYNTAX);
-	}
 	if (!ft_check_syntax_before(cmd))
-	{
-		ft_putendl("BEFORE");
 		return (ERROR_SYNTAX);
-	}
 	if (!ft_check_syntax_twins(cmd))
-	{
-		ft_putendl("TWINS");
 		return (ERROR_SYNTAX);
-	}
 	return (NULL);
 }
