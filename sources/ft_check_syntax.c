@@ -118,7 +118,7 @@ char		ft_check_syntax_twins(char *cmd)
 			i++;
 			while (IS_BLANK(cmd[i]))
 				i++;
-			if ((IS_REDIR_CHAR(cmd[i])) && (cmd[i] != b) && (!IS_AC(cmd, i)))
+			if ((IS_REDIR_CHAR(cmd[i])) && (cmd[i] != b) && (!IS_ACCA(cmd, i)))
 				return (FALSE);
 		}
 	}

@@ -90,7 +90,9 @@
 # define IS_INHIB(x)		(x =='\'' || x == '"')
 # define IS_CHEV(x,y)		(x[y - 1] == '>')
 # define IS_CCA(x,y)		(IS_CHEV(x,y) && x[y - 2] == '>' && x[y - 3] == '&')
-# define IS_AC(x,y)			(x[y = 1] == '&' && x[y] == '>')
+# define IS_AC(x,y)			(x[y - 1] == '&' && x[y] == '>')
+# define IS_CA(x,y)			(x[y - 1] == '>' && x[y] == '&')
+# define IS_ACCA(x,y)		(IS_AC(x,y) || IS_CA(x,y))
 
 /*
 ** INCLUDES
