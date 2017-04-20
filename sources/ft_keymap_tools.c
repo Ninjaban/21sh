@@ -45,7 +45,7 @@ void		ft_keymap_get(int **keymap, char macro, t_sys *sys)
 			c == KEY_RET_DEF || c == KEY_DEL_DEF || c == KEY_UPS_DEF ||
 			c == KEY_DOW_DEF || c == KEY_LEF_DEF || c == KEY_RIG_DEF ||
 			c == KEY_HOM_DEF || c == KEY_ENS_DEF)
-			(*keymap)[(int)macro] = c;
+			(*keymap)[(int) macro] = c;
 		else
 		{
 			ft_log(TYPE_ERROR, "Cette touche n'est pas utilisable.");

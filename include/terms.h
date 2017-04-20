@@ -48,7 +48,7 @@
 # define KEY_DEL_DEF		2117294875
 
 # define KEY_CPY_DEF		11
-# define KEY_PST_DEF		12
+# define KEY_PST_DEF		25
 
 # define KEY_UPS_DEF		4283163
 # define KEY_DOW_DEF		4348699

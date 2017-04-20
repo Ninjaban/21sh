@@ -99,3 +99,20 @@ int				ft_access_dir(char *path)
 	ft_log(TYPE_WARNING, ERROR_NOTDIR);
 	return (FALSE);
 }
+
+char			ft_access_dir_cplt(char *path)
+{
+	struct stat	*buf;
+
+	if (path && access(path, F_OK) != 0)
+		return (FALSE);
+	if (path && access(path, X_OK) != 0)
+		return (FALSE);
+	if ((buf = malloc(sizeof(struct stat))) == NULL)
+		return (FALSE);
+	if (stat(path, buf) == -1)
+		return (ft_free_int(buf, FALSE));
+	if (S_ISDIR(buf->st_mode))
+		return (ft_free_int(buf, TRUE));
+	return (FALSE);
+}

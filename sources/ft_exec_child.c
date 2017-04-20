@@ -91,9 +91,9 @@ void		ft_exec_read_file(t_node *node)
 	char	*line;
 	int		fd;
 
-	if (node->cmd->name[0] != '/' &&
-			(node->cmd->name[0] != '.' && node->cmd->name[1] != '/'))
-		name = ft_strjoin("./", node->cmd->name);
+	name = (node->cmd->name[0] != '/' &&
+			(node->cmd->name[0] != '.' && node->cmd->name[1] != '/')) ?
+			ft_strjoin("./", node->cmd->name) : ft_strdup(node->cmd->name);
 	if (access(name, F_OK) != 0)
 	{
 		ft_strdel(&name);

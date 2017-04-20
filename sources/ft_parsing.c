@@ -176,10 +176,10 @@ t_btree			*ft_parsing_line(char *str, t_sys *sys)
 	char		*tmp;
 
 	tmp = ft_tild(ft_varenv(str, sys, TRUE), sys->env, sys->shvar);
+	ft_parse_parenthesis_open_init(&tmp);
 	tmp = ft_parsing_semicolon(tmp);
 	ft_parsing_alias(&tmp, sys);
 	ft_tild_file(&tmp, ';', '\a');
-	ft_parse_parenthesis_open_init(&tmp);
 	if ((tab = ft_parsing_split(tmp)) == NULL)
 	{
 		free(str);

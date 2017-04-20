@@ -46,6 +46,8 @@ void		ft_parse_parenthesis_open_init(char **src)
 	size_t	i;
 
 	i = 0;
+	if (!src || !(*src))
+		return ;
 	while ((*src)[i])
 	{
 		if ((*src)[i] == '\"' || (*src)[i] == '\'')

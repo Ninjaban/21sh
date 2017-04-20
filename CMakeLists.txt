@@ -127,20 +127,15 @@ set(SOURCE_FILES
         sources/ft_parsing_split_tools.c
         sources/ft_parsing_tools.c
         sources/ft_path.c
-        sources/ft_print.c
         sources/ft_prompt.c
         sources/ft_prompt_path.c
         sources/ft_read.c
         sources/ft_read_check.c
         sources/ft_read_color.c
-        sources/ft_read_color_fd.c
         sources/ft_read_color_first.c
         sources/ft_read_color_hyphen.c
         sources/ft_read_color_inhibitor.c
-        sources/ft_read_color_redirect.c
         sources/ft_read_copy.c
-        sources/ft_read_history.c
-        sources/ft_read_limit.c
         sources/ft_read_move.c
         sources/ft_read_print.c
         sources/ft_set.c

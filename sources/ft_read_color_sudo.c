@@ -46,22 +46,19 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	{
 		if (str[n] == '\x1b')
 		{
-			while (str[n] && str[n] != 'm')
-				n = n + 1;
+			separator = FALSE;
 			n = n + 1;
-			separator = (!ft_strncmp("sudo", str + n, 3) &&
-						 !ft_isalnum(str[n + 4])) ? separator : FALSE;
 			while (str[n] && str[n] != '\033')
 				n = n + 1;
 			while (str[n] && str[n] != 'm')
 				n = n + 1;
-			n = n + 1;
 		}
 		if ((str[n] == ';') || (str[n] == '&' && str[n + 1] == '&') ||
 			(str[n] == '|' && str[n + 1] == '|') || (str[n] == '|'))
 			separator = TRUE;
 		if ((ft_isalnum(str[n]) || str[n] == '/' || str[n] == '.') &&
-														separator == TRUE)
+				!ft_strncmp("sudo", str + n, 3) && !ft_isalnum(str[n + 4]) &&
+				separator == TRUE)
 			return (n);
 		if (str[n])
 			n = n + 1;
@@ -69,7 +66,7 @@ static size_t	ft_get_next_word(char *str, size_t n)
 	return (n);
 }
 
-static char		*ft_read_color_first_boucle(char *str, char *new)
+static char		*ft_read_color_sudo_boucle(char *str, char *new)
 {
 	size_t		n;
 	size_t		i;
@@ -84,7 +81,7 @@ static char		*ft_read_color_first_boucle(char *str, char *new)
 			new[n++] = str[i++];
 		if (str[i])
 		{
-			ft_strcopy_color(&new, "\x1b[38;5;214m", &n);
+			ft_strcopy_color(&new, "\x1b[38;5;189m", &n);
 			while (str[i] && str[i] != ' ' && ft_check_sep(str + i) == FALSE)
 			{
 				if (str[i] == '\x1b')
@@ -98,14 +95,14 @@ static char		*ft_read_color_first_boucle(char *str, char *new)
 	return (new);
 }
 
-char			*ft_read_color_first(char *str)
+char			*ft_read_color_sudo(char *str)
 {
 	char	*new;
 
 	if ((new = ft_strnew(ft_strlen(str) + (ft_count_separator(str) *
-			(ft_strlen("\x1b[38;5;214m") + ft_strlen("\033[0m"))) + 1)) == NULL)
+			(ft_strlen("\x1b[38;5;189m") + ft_strlen("\033[0m"))) + 1)) == NULL)
 		return (NULL);
-	new = ft_read_color_first_boucle(str, new);
+	new = ft_read_color_sudo_boucle(str, new);
 	free(str);
 	return (new);
 }

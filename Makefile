@@ -6,7 +6,7 @@
 #    By: jcarra <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/01 00:00:00 by jcarra            #+#    #+#              #
-#    Updated: 2017/04/18 11:43:47 by mrajaona         ###   ########.fr        #
+#    Updated: 2017/01/01 00:00:00 by jcarra           ###   ########.fr        #
 #                                                                              #
 #  **************************************************************************  #
 
@@ -67,6 +67,7 @@ SRC		=	ft_access.c \
 			ft_read_color_hyphen.c \
 			ft_read_color_inhibitor.c \
 			ft_read_color_redirect.c \
+			ft_read_color_sudo.c \
 			ft_read_copy.c \
 			ft_read_history.c \
 			ft_read_limit.c \
@@ -98,7 +99,7 @@ LIBS		=	$(LIB:%=$(DIRLIB)%)
 
 OBJS		=	$(SRCS:.c=.o)
 
-CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC) -g3
+CFLAGS		=	-Wall -Wextra -Werror -I./$(DIRINC) -I./$(DIRLIB)$(DIRINC)
 LFLAGS		=	-lncurses
 
 CC		=	gcc
@@ -111,6 +112,10 @@ all		:	$(NAME)
 			@$(ECHO) '\033[32m>\033[0m $(NAME) : [\033[34mAll\033[0m] ->\033[32m\tReady\n\033[0m'
 $(NAME)		:	.libft .hide
 			@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) $(LFLAGS)
+
+%.o		:	%.c
+			@$(CC) -o $@ -c $< $(CFLAGS)
+			@$(ECHO) '-> \033[36m$@\033[0m\n'
 
 .hide		:	$(OBJS)
 			@touch .hide

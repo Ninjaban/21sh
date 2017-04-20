@@ -39,6 +39,7 @@ void		ft_read_color_main(char *str, size_t pos, size_t g_limit)
 		ft_strlen(str) - 19 : ft_strlen(str)) <= g_limit)
 	{
 		color = ft_read_color_inhibitor(color);
+		color = ft_read_color_sudo(color);
 		color = ft_read_color_first(color);
 		color = ft_read_color_fd(color);
 		color = ft_read_color_hyphen(color);

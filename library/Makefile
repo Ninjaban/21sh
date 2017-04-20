@@ -119,6 +119,10 @@ all		:		$(NAME)
 $(NAME)	:		.part1 .part2 .part3 .part4 .part5
 				@$(LIB) $(NAME) $(OBJS_PART1) $(OBJS_PART2) $(OBJS_BTREE) $(OBJS_LIST) $(OBJS_GNL)
 
+%.o		:	%.c
+			@$(CC) -o $@ -c $< $(CFLAGS)
+			@$(ECHO) '-> \033[36m$@\033[0m\n'
+
 .part1:			$(OBJS_PART1)
 				@touch .part1
 				@chmod 755 .part1

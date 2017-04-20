@@ -99,23 +99,43 @@ void		ft_setcompletion(char **str, size_t pos, char *try, char tabul)
 	*str = new;
 }
 
+char		*ft_completion_verif_relativepath(char *word)
+{
+	char	*relativepath;
+	char	*tmp;
+
+	relativepath = ft_strjoin("./", word);
+	tmp = ft_getcdir(relativepath);
+	if (!ft_strcmp(".", tmp) || ft_access_dir_cplt(tmp) != TRUE)
+	{
+		free(tmp);
+		return (NULL);
+	}
+	free(tmp);
+	return (relativepath);
+}
+
 void		ft_completion_norme(char *word, t_btree **list,
 								char **env, char **shvar)
 {
 	char	*tmp;
+	char	*relativepath;
 	char	**path;
 
+	relativepath = ft_completion_verif_relativepath(word);
 	if (word[0] != '/' && (word[0] != '.' && word[1] != '/') &&
-			(word[0] != '.' && word[1] != '.' && word[2] != '/'))
+			(word[0] != '.' && word[1] != '.' && word[2] != '/') &&
+			!relativepath)
 	{
 		if ((path = ft_getpath(env)) == NULL)
 			path = ft_getpath(shvar);
 		*list = ft_getexec(path);
 	}
 	tmp = ft_getcdir(word);
-	if (word[0] == '/' || tmp[0] != '/')
+	if (word[0] == '/' || tmp[0] != '/' || relativepath)
 		ft_opendir(&(*list), tmp, TRUE);
 	else
 		ft_opendir(&(*list), "./", TRUE);
 	free(tmp);
+	free(relativepath);
 }

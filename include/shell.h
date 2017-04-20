@@ -322,6 +322,7 @@ void			ft_setcompletion(char **str, size_t pos, char *try, char tabul);
 void			ft_completion_norme(char *word, t_btree **list,
 									char **env, char **shvar);
 char			ft_checkcompl(char *str);
+char			ft_access_dir_cplt(char *path);
 char			*ft_getword(char *str, size_t pos);
 char			*ft_color(char *color, char *str);
 char			*ft_getcdir(char *str);
@@ -387,6 +388,7 @@ void			ft_read_color_main(char *str, size_t pos, size_t limit);
 void			ft_strcopy_color(char **src, char *str, size_t *n);
 char			ft_check_sep(char *str);
 char			*ft_read_color_inhibitor(char *str);
+char			*ft_read_color_sudo(char *str);
 char			*ft_read_color_first(char *str);
 char			*ft_read_color_hyphen(char *str);
 char			*ft_read_color_fd(char *str);
